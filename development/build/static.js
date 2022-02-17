@@ -114,7 +114,7 @@ function getCopyTargets(shouldIncludeLockdown) {
       dest: `images`,
     },
     {
-      src: `./node_modules/@metamask/contract-metadata/images/`,
+      src: `./node_modules/ubq-contract-metadata/images/`,
       dest: `images/contract`,
     },
     {

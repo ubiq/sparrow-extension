@@ -26650,6 +26650,11 @@ u2f-api@0.2.7:
   resolved "https://registry.yarnpkg.com/u2f-api/-/u2f-api-0.2.7.tgz#17bf196b242f6bf72353d9858e6a7566cc192720"
   integrity sha512-fqLNg8vpvLOD5J/z4B6wpPg4Lvowz1nJ9xdHcCzdUPKcFE/qNCceV2gNZxSJd5vhAZemHr/K/hbzVA0zxB5mkg==
 
+ubq-contract-metadata@^1.32.0:
+  version "1.32.0"
+  resolved "https://registry.yarnpkg.com/ubq-contract-metadata/-/ubq-contract-metadata-1.32.0.tgz#234f3ee121f5dce2f036bc7ed039734f3a3c8dc8"
+  integrity sha512-aUHRmQxVWkusrBU8mYZ9MqK2U61lqEvuejH+/Z4oN0afCBWAv5Qu86l26ae6z6PAa632JiR3k4YQ3iu6FKcTCw==
+
 uint8arrays@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/uint8arrays/-/uint8arrays-1.1.0.tgz#d034aa65399a9fd213a1579e323f0b29f67d0ed2"

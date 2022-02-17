@@ -546,7 +546,7 @@
       "packages": {
         "@ethereumjs/common": true,
         "@ethereumjs/tx": true,
-        "@metamask/contract-metadata": true,
+        "ubq-contract-metadata": true,
         "@metamask/metamask-eth-abis": true,
         "abort-controller": true,
         "async-mutex": true,

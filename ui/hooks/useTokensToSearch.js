@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { shallowEqual, useSelector } from 'react-redux';
-import contractMap from '@metamask/contract-metadata';
+import contractMap from 'ubq-contract-metadata';
 import BigNumber from 'bignumber.js';
 import { isEqual, shuffle, uniqBy } from 'lodash';
 import { getTokenFiatAmount } from '../helpers/utils/token-util';
