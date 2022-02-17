@@ -437,7 +437,7 @@ describe('Actions', () => {
       actions._setBackgroundConnection(background);
 
       await store.dispatch(
-        actions.checkHardwareStatus(DEVICE_NAMES.LEDGER, `m/44'/60'/0'/0`),
+        actions.checkHardwareStatus(DEVICE_NAMES.LEDGER, `m/44'/108'/0'/0`),
       );
       expect(checkHardwareStatus.callCount).toStrictEqual(1);
     });
@@ -519,7 +519,7 @@ describe('Actions', () => {
       actions._setBackgroundConnection(background);
 
       await store.dispatch(
-        actions.connectHardware(DEVICE_NAMES.LEDGER, 0, `m/44'/60'/0'/0`),
+        actions.connectHardware(DEVICE_NAMES.LEDGER, 0, `m/44'/108'/0'/0`),
       );
       expect(connectHardware.callCount).toStrictEqual(1);
     });
@@ -569,7 +569,7 @@ describe('Actions', () => {
         actions.unlockHardwareWalletAccounts(
           [0],
           DEVICE_NAMES.LEDGER,
-          `m/44'/60'/0'/0`,
+          `m/44'/108'/0'/0`,
           '',
         ),
       );

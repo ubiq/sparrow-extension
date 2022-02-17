@@ -29,9 +29,9 @@ export const DefaultStory = () => {
   ]);
   const { metamask } = store.getState();
   const { accountArray, connectedAccounts } = metamask;
-  const LEDGER_LIVE_PATH = `m/44'/60'/0'/0/0`;
-  const MEW_PATH = `m/44'/60'/0'`;
-  const BIP44_PATH = `m/44'/60'/0'/0`;
+  const LEDGER_LIVE_PATH = `m/44'/108'/0'/0/0`;
+  const MEW_PATH = `m/44'/108'/0'`;
+  const BIP44_PATH = `m/44'/108'/0'/0`;
 
   const HD_PATHS = [
     { name: 'Ledger Live', value: LEDGER_LIVE_PATH },

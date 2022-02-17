@@ -20,18 +20,18 @@ import AccountList from './account-list';
 
 const U2F_ERROR = 'U2F';
 
-const LEDGER_LIVE_PATH = `m/44'/60'/0'/0/0`;
-const MEW_PATH = `m/44'/60'/0'`;
-const BIP44_PATH = `m/44'/60'/0'/0`;
+const LEDGER_LIVE_PATH = `m/44'/108'/0'/0/0`;
+const MEW_PATH = `m/44'/108'/0'`;
+const BIP44_PATH = `m/44'/108'/0'/0`;
 const LEDGER_HD_PATHS = [
   { name: 'Ledger Live', value: LEDGER_LIVE_PATH },
   { name: 'Legacy (MEW / MyCrypto)', value: MEW_PATH },
   { name: `BIP44 Standard (e.g. MetaMask, Trezor)`, value: BIP44_PATH },
 ];
 
-const LATTICE_STANDARD_BIP44_PATH = `m/44'/60'/0'/0/x`;
-const LATTICE_LEDGER_LIVE_PATH = `m/44'/60'/x'/0/0`;
-const LATTICE_MEW_PATH = `m/44'/60'/0'/x`;
+const LATTICE_STANDARD_BIP44_PATH = `m/44'/108'/0'/0/x`;
+const LATTICE_LEDGER_LIVE_PATH = `m/44'/108'/x'/0/0`;
+const LATTICE_MEW_PATH = `m/44'/108'/0'/x`;
 const LATTICE_HD_PATHS = [
   {
     name: `Standard (${LATTICE_STANDARD_BIP44_PATH})`,
