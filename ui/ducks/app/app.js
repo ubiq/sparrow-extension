@@ -37,7 +37,7 @@ export default function reduceApp(state = {}, action) {
     isMouseUser: false,
     defaultHdPaths: {
       trezor: `m/44'/108'/0'/0`,
-      ledger: `m/44'/108'/0'/0/0`,
+      ledger: `m/44'/108'/0'/0`,
       lattice: `m/44'/108'/0'/0`,
     },
     networksTabSelectedRpcUrl: '',

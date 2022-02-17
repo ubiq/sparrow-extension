@@ -29,13 +29,9 @@ export const DefaultStory = () => {
   ]);
   const { metamask } = store.getState();
   const { accountArray, connectedAccounts } = metamask;
-  const LEDGER_LIVE_PATH = `m/44'/108'/0'/0/0`;
-  const MEW_PATH = `m/44'/108'/0'`;
   const BIP44_PATH = `m/44'/108'/0'/0`;
 
   const HD_PATHS = [
-    { name: 'Ledger Live', value: LEDGER_LIVE_PATH },
-    { name: 'Legacy (MEW / MyCrypto)', value: MEW_PATH },
     { name: `BIP44 Standard (e.g. MetaMask, Trezor)`, value: BIP44_PATH },
   ];
 
