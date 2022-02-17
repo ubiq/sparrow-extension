@@ -13,7 +13,7 @@ import { errorCodes as rpcErrorCodes, ethErrors } from 'eth-rpc-errors';
 import { Mutex } from 'await-semaphore';
 import { stripHexPrefix } from 'ethereumjs-util';
 import log from 'loglevel';
-import TrezorKeyring from 'eth-trezor-keyring';
+import TrezorKeyring from 'ubq-trezor-keyring';
 import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring';
 import LatticeKeyring from 'eth-lattice-keyring';
 import { MetaMaskKeyring as QRHardwareKeyring } from '@keystonehq/metamask-airgapped-keyring';

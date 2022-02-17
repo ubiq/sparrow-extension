@@ -2008,7 +2008,7 @@
         "events": true
       }
     },
-    "eth-trezor-keyring": {
+    "ubq-trezor-keyring": {
       "globals": {
         "setTimeout": true
       },

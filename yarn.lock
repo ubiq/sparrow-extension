@@ -11138,16 +11138,6 @@ eth-simple-keyring@^4.2.0:
     ethereumjs-wallet "^1.0.1"
     events "^1.1.1"
 
-eth-trezor-keyring@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/eth-trezor-keyring/-/eth-trezor-keyring-0.9.1.tgz#10d78308c71966eadf94acc8acf7f7136311f31f"
-  integrity sha512-27k4pjHFG6z5F1dhpTfORONgtAPrF0BR+Qr+ygjYrjchmERJKkrgyqnJqkSGtHF6+XrgI8pKYiDTjo6CBPHVKw==
-  dependencies:
-    "@ethereumjs/tx" "^3.2.1"
-    ethereumjs-util "^7.0.9"
-    hdkey "0.8.0"
-    trezor-connect "8.2.3-extended"
-
 ethereum-bloom-filters@^1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/ethereum-bloom-filters/-/ethereum-bloom-filters-1.0.7.tgz#b7b80735e385dbb7f944ce6b4533e24511306060"
@@ -26654,6 +26644,16 @@ ubq-contract-metadata@^1.32.0:
   version "1.32.0"
   resolved "https://registry.yarnpkg.com/ubq-contract-metadata/-/ubq-contract-metadata-1.32.0.tgz#234f3ee121f5dce2f036bc7ed039734f3a3c8dc8"
   integrity sha512-aUHRmQxVWkusrBU8mYZ9MqK2U61lqEvuejH+/Z4oN0afCBWAv5Qu86l26ae6z6PAa632JiR3k4YQ3iu6FKcTCw==
+
+ubq-trezor-keyring@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/ubq-trezor-keyring/-/ubq-trezor-keyring-0.9.1.tgz#a49ad862a1b683ec35b93d42d8ef9f4d1f85c433"
+  integrity sha512-CHwSgs9J/jwe3+X1txHJRzj7vXk/9R5fZd2td6uf4JkUnZCd/xhdLP/FMRw+zQhTYy8+XbN1xNsAKBRZWw1S/w==
+  dependencies:
+    "@ethereumjs/tx" "^3.2.1"
+    ethereumjs-util "^7.0.9"
+    hdkey "0.8.0"
+    trezor-connect "8.2.3-extended"
 
 uint8arrays@1.1.0:
   version "1.1.0"
