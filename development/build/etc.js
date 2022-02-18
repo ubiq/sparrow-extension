@@ -39,8 +39,8 @@ function createZipTask(platform, buildType) {
   return async () => {
     const path =
       buildType === BuildType.main
-        ? `metamask-${platform}-${version}`
-        : `metamask-${buildType}-${platform}-${version}`;
+        ? `sparrow-${platform}-${version}`
+        : `sparrow-${buildType}-${platform}-${version}`;
     await pump(
       gulp.src(`dist/${platform}/**`),
       gulpZip(`${path}.zip`),
