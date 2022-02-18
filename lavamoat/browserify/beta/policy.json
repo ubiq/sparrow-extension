@@ -611,20 +611,6 @@
         "secp256k1": true
       }
     },
-    "@metamask/logo": {
-      "globals": {
-        "addEventListener": true,
-        "document.body.appendChild": true,
-        "document.createElementNS": true,
-        "innerHeight": true,
-        "innerWidth": true,
-        "requestAnimationFrame": true
-      },
-      "packages": {
-        "gl-mat4": true,
-        "gl-vec3": true
-      }
-    },
     "@metamask/object-multiplex": {
       "globals": {
         "console.warn": true
@@ -771,84 +757,6 @@
         "buffer": true,
         "component-type": true,
         "join-component": true
-      }
-    },
-    "@sentry/browser": {
-      "globals": {
-        "XMLHttpRequest": true,
-        "setTimeout": true
-      },
-      "packages": {
-        "@sentry/core": true,
-        "@sentry/types": true,
-        "@sentry/utils": true,
-        "tslib": true
-      }
-    },
-    "@sentry/core": {
-      "globals": {
-        "clearInterval": true,
-        "setInterval": true
-      },
-      "packages": {
-        "@sentry/hub": true,
-        "@sentry/minimal": true,
-        "@sentry/types": true,
-        "@sentry/utils": true,
-        "tslib": true
-      }
-    },
-    "@sentry/hub": {
-      "globals": {
-        "clearInterval": true,
-        "setInterval": true
-      },
-      "packages": {
-        "@sentry/types": true,
-        "@sentry/utils": true,
-        "tslib": true
-      }
-    },
-    "@sentry/integrations": {
-      "globals": {
-        "clearTimeout": true,
-        "console.error": true,
-        "console.log": true,
-        "setTimeout": true
-      },
-      "packages": {
-        "@sentry/types": true,
-        "@sentry/utils": true,
-        "localforage": true,
-        "tslib": true
-      }
-    },
-    "@sentry/minimal": {
-      "packages": {
-        "@sentry/hub": true,
-        "tslib": true
-      }
-    },
-    "@sentry/utils": {
-      "globals": {
-        "CustomEvent": true,
-        "DOMError": true,
-        "DOMException": true,
-        "Element": true,
-        "ErrorEvent": true,
-        "Event": true,
-        "Headers": true,
-        "Request": true,
-        "Response": true,
-        "XMLHttpRequest.prototype": true,
-        "clearTimeout": true,
-        "console.error": true,
-        "document": true,
-        "setTimeout": true
-      },
-      "packages": {
-        "process": true,
-        "tslib": true
       }
     },
     "@sindresorhus/is": {
@@ -4902,17 +4810,6 @@
         "readable-stream": true,
         "string_decoder": true,
         "util": true
-      }
-    },
-    "textarea-caret": {
-      "globals": {
-        "document.body.appendChild": true,
-        "document.body.removeChild": true,
-        "document.createElement": true,
-        "document.querySelector": true,
-        "getCaretCoordinates": "write",
-        "getComputedStyle": true,
-        "mozInnerScreenX": true
       }
     },
     "through": {

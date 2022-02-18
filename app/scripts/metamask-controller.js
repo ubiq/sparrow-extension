@@ -526,24 +526,6 @@ export default class MetamaskController extends EventEmitter {
           getAllAccounts: this.keyringController.getAccounts.bind(
             this.keyringController,
           ),
-          captureKeyringTypesWithMissingIdentities: (
-            identities = {},
-            accounts = [],
-          ) => {
-            const accountsMissingIdentities = accounts.filter(
-              (address) => !identities[address],
-            );
-            const keyringTypesWithMissingIdentities = accountsMissingIdentities.map(
-              (address) =>
-                this.keyringController.getKeyringForAccount(address)?.type,
-            );
-
-            const identitiesCount = Object.keys(identities || {}).length;
-
-            const accountTrackerCount = Object.keys(
-              this.accountTracker.store.getState().accounts || {},
-            ).length;
-          },
         }),
         ///: BEGIN:ONLY_INCLUDE_IN(flask)
         ...this.getSnapPermissionSpecifications(),
