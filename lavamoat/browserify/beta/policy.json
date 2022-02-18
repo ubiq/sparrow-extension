@@ -579,7 +579,7 @@
         "web3-provider-engine": true
       }
     },
-    "@metamask/eth-ledger-bridge-keyring": {
+    "ubq-ledger-bridge-keyring": {
       "globals": {
         "addEventListener": true,
         "console.log": true,

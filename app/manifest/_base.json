@@ -1,5 +1,5 @@
 {
-  "author": "https://metamask.io",
+  "author": "https://ubiqsmart.com",
   "background": {
     "page": "background.html",
     "persistent": true
@@ -14,7 +14,7 @@
       "128": "images/icon-128.png",
       "512": "images/icon-512.png"
     },
-    "default_title": "MetaMask",
+    "default_title": "Sparrow",
     "default_popup": "popup.html"
   },
   "commands": {
@@ -65,7 +65,8 @@
     "unlimitedStorage",
     "clipboardWrite",
     "http://localhost:8588/",
-    "https://*.infura.io/",
+    "https://*.octano.dev/",
+    "https://*.ubiqsmart.com/",
     "https://wallet.gridplus.io/*",
     "activeTab",
     "webRequest",
