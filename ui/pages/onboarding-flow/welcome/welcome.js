@@ -1,9 +1,7 @@
-import EventEmitter from 'events';
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
-import Mascot from '../../../components/ui/mascot';
 import Button from '../../../components/ui/button';
 import Typography from '../../../components/ui/typography/typography';
 import {
@@ -13,22 +11,21 @@ import {
 } from '../../../helpers/constants/design-system';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import { setFirstTimeFlowType } from '../../../store/actions';
-import { ONBOARDING_METAMETRICS } from '../../../helpers/constants/routes';
+import { ONBOARDING_CREATE_PASSWORD_ROUTE, ONBOARDING_IMPORT_WITH_SRP_ROUTE } from '../../../helpers/constants/routes';
 
 export default function OnboardingWelcome() {
   const t = useI18nContext();
   const dispatch = useDispatch();
   const history = useHistory();
-  const [eventEmitter] = useState(new EventEmitter());
 
   const onCreateClick = () => {
     dispatch(setFirstTimeFlowType('create'));
-    history.push(ONBOARDING_METAMETRICS);
+    history.push(ONBOARDING_CREATE_PASSWORD_ROUTE);
   };
 
   const onImportClick = () => {
     dispatch(setFirstTimeFlowType('import'));
-    history.push(ONBOARDING_METAMETRICS);
+    history.push(ONBOARDING_IMPORT_WITH_SRP_ROUTE);
   };
 
   return (
@@ -46,11 +43,7 @@ export default function OnboardingWelcome() {
             {t('welcomeToMetaMaskIntro')}
           </Typography>
           <div className="onboarding-welcome__mascot">
-            <Mascot
-              animationEventEmitter={eventEmitter}
-              width="250"
-              height="250"
-            />
+            <img src="images/icon-512.png" width="250" height="250" />
           </div>
         </div>
         <div>
