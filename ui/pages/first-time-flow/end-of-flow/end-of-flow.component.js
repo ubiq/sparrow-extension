@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Button from '../../../components/ui/button';
 import Snackbar from '../../../components/ui/snackbar';
 import MetaFoxLogo from '../../../components/ui/metafox-logo';
-import { SUPPORT_REQUEST_LINK } from '../../../helpers/constants/common';
 import { DEFAULT_ROUTE } from '../../../helpers/constants/routes';
 import { returnToOnboardingInitiator } from '../onboarding-initiator-util';
 
@@ -88,21 +87,6 @@ export default class EndOfFlowScreen extends PureComponent {
         </div>
         <div className="end-of-flow__text-3">
           {`• ${t('endOfFlowMessage6')}`}
-        </div>
-        <div className="end-of-flow__text-3">
-          •{' '}
-          {t('endOfFlowMessage7', [
-            <a
-              target="_blank"
-              key="metamaskSupportLink"
-              rel="noopener noreferrer"
-              href={SUPPORT_REQUEST_LINK}
-            >
-              <span className="first-time-flow__link-text">
-                {this.context.t('here')}
-              </span>
-            </a>,
-          ])}
         </div>
         <div className="first-time-flow__text-block end-of-flow__text-4">
           {`*${t('endOfFlowMessage8')}`}&nbsp;

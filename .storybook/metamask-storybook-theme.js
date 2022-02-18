@@ -1,7 +1,7 @@
 // .storybook/YourTheme.js
 
 import { create } from '@storybook/theming';
-import logo from '../app/images/logo/metamask-logo-horizontal.svg';
+import logo from '../app/images/logo/sparrow-logo-horizontal.png';
 
 export default create({
   base: 'light',
