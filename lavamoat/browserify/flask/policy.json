@@ -531,7 +531,7 @@
         "react-is": true
       }
     },
-    "sparrow-controllers": {
+    "@metamask/controllers": {
       "globals": {
         "Headers": true,
         "URL": true,
@@ -546,7 +546,7 @@
       "packages": {
         "@ethereumjs/common": true,
         "@ethereumjs/tx": true,
-        "ubq-contract-metadata": true,
+        "@metamask/contract-metadata": true,
         "@metamask/metamask-eth-abis": true,
         "abort-controller": true,
         "async-mutex": true,
@@ -563,10 +563,7 @@
         "ethereumjs-wallet": true,
         "ethers": true,
         "ethjs-unit": true,
-        "ethjs-util": true,
         "events": true,
-        "human-standard-collectible-abi": true,
-        "human-standard-token-abi": true,
         "immer": true,
         "isomorphic-fetch": true,
         "jsonschema": true,
@@ -577,24 +574,6 @@
         "uuid": true,
         "web3": true,
         "web3-provider-engine": true
-      }
-    },
-    "ubq-ledger-bridge-keyring": {
-      "globals": {
-        "addEventListener": true,
-        "console.log": true,
-        "document.createElement": true,
-        "document.head.appendChild": true,
-        "fetch": true,
-        "removeEventListener": true
-      },
-      "packages": {
-        "@ethereumjs/tx": true,
-        "buffer": true,
-        "eth-sig-util": true,
-        "ethereumjs-util": true,
-        "events": true,
-        "hdkey": true
       }
     },
     "@metamask/eth-token-tracker": {
@@ -610,11 +589,6 @@
         "ethjs-query": true,
         "human-standard-token-abi": true,
         "safe-event-emitter": true
-      }
-    },
-    "ubiqscan-link": {
-      "globals": {
-        "URL": true
       }
     },
     "@metamask/iframe-execution-environment-service": {
@@ -728,7 +702,7 @@
         "setTimeout": true
       },
       "packages": {
-        "sparrow-controllers": true,
+        "@metamask/controllers": true,
         "@metamask/object-multiplex": true,
         "@metamask/obs-store": true,
         "@metamask/post-message-stream": true,
@@ -1954,7 +1928,6 @@
         "addEventListener": true,
         "browser": true,
         "clearInterval": true,
-        "console.warn": true,
         "open": true,
         "setInterval": true
       },
@@ -2006,19 +1979,6 @@
         "ethereumjs-util": true,
         "ethereumjs-wallet": true,
         "events": true
-      }
-    },
-    "ubq-trezor-keyring": {
-      "globals": {
-        "setTimeout": true
-      },
-      "packages": {
-        "@ethereumjs/tx": true,
-        "buffer": true,
-        "ethereumjs-util": true,
-        "events": true,
-        "hdkey": true,
-        "trezor-connect": true
       }
     },
     "ethereum-bloom-filters": {
@@ -4803,6 +4763,51 @@
         "is-plain-obj": true
       }
     },
+    "sparrow-controllers": {
+      "globals": {
+        "Headers": true,
+        "URL": true,
+        "clearInterval": true,
+        "clearTimeout": true,
+        "console.error": true,
+        "console.log": true,
+        "fetch": true,
+        "setInterval": true,
+        "setTimeout": true
+      },
+      "packages": {
+        "@ethereumjs/common": true,
+        "@ethereumjs/tx": true,
+        "@metamask/metamask-eth-abis": true,
+        "abort-controller": true,
+        "async-mutex": true,
+        "buffer": true,
+        "eth-ens-namehash": true,
+        "eth-json-rpc-infura": true,
+        "eth-keyring-controller": true,
+        "eth-method-registry": true,
+        "eth-phishing-detect": true,
+        "eth-query": true,
+        "eth-rpc-errors": true,
+        "eth-sig-util": true,
+        "ethereumjs-util": true,
+        "ethereumjs-wallet": true,
+        "ethers": true,
+        "ethjs-unit": true,
+        "events": true,
+        "immer": true,
+        "isomorphic-fetch": true,
+        "jsonschema": true,
+        "multiformats": true,
+        "nanoid": true,
+        "punycode": true,
+        "single-call-balance-checker-abi": true,
+        "ubq-contract-metadata": true,
+        "uuid": true,
+        "web3": true,
+        "web3-provider-engine": true
+      }
+    },
     "stable": {
       "globals": {
         "define": true
@@ -5023,6 +5028,41 @@
     "typical": {
       "globals": {
         "define": true
+      }
+    },
+    "ubiqscan-link": {
+      "globals": {
+        "URL": true
+      }
+    },
+    "ubq-ledger-bridge-keyring": {
+      "globals": {
+        "addEventListener": true,
+        "console.log": true,
+        "document.createElement": true,
+        "document.head.appendChild": true,
+        "fetch": true
+      },
+      "packages": {
+        "@ethereumjs/tx": true,
+        "buffer": true,
+        "eth-sig-util": true,
+        "ethereumjs-util": true,
+        "events": true,
+        "hdkey": true
+      }
+    },
+    "ubq-trezor-keyring": {
+      "globals": {
+        "setTimeout": true
+      },
+      "packages": {
+        "@ethereumjs/tx": true,
+        "buffer": true,
+        "ethereumjs-util": true,
+        "events": true,
+        "hdkey": true,
+        "trezor-connect": true
       }
     },
     "uint8arrays": {
