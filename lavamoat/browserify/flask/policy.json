@@ -531,7 +531,7 @@
         "react-is": true
       }
     },
-    "@metamask/controllers": {
+    "sparrow-controllers": {
       "globals": {
         "Headers": true,
         "URL": true,
@@ -728,7 +728,7 @@
         "setTimeout": true
       },
       "packages": {
-        "@metamask/controllers": true,
+        "sparrow-controllers": true,
         "@metamask/object-multiplex": true,
         "@metamask/obs-store": true,
         "@metamask/post-message-stream": true,

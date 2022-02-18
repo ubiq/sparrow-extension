@@ -3,7 +3,7 @@ import {
   BaseController,
   BaseControllerV2,
   ControllerMessenger,
-} from '@metamask/controllers';
+} from 'sparrow-controllers';
 import ComposableObservableStore from './ComposableObservableStore';
 
 class OldExampleController extends BaseController {

@@ -7,7 +7,7 @@ import {
   ControllerMessenger,
   TokenListController,
   TokensController,
-} from '@metamask/controllers';
+} from 'sparrow-controllers';
 import { MAINNET, ROPSTEN } from '../../../shared/constants/network';
 import { toChecksumHexAddress } from '../../../shared/modules/hexstring-utils';
 import DetectTokensController from './detect-tokens';

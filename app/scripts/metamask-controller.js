@@ -34,7 +34,7 @@ import {
   CollectiblesController,
   AssetsContractController,
   CollectibleDetectionController,
-} from '@metamask/controllers';
+} from 'sparrow-controllers';
 import {
   PermissionController,
   SubjectMetadataController,
@@ -137,7 +137,7 @@ export const METAMASK_CONTROLLER_EVENTS = {
   // Fired after state changes that impact the extension badge (unapproved msg count)
   // The process of updating the badge happens in app/scripts/background.js.
   UPDATE_BADGE: 'updateBadge',
-  // TODO: Add this and similar enums to @metamask/controllers and export them
+  // TODO: Add this and similar enums to sparrow-controllers and export them
   APPROVAL_STATE_CHANGE: 'ApprovalController:stateChange',
 };
 
@@ -1003,7 +1003,7 @@ export default class MetamaskController extends EventEmitter {
    * changes.
    *
    * Some of the subscriptions in this method are ControllerMessenger selector
-   * event subscriptions. See the relevant @metamask/controllers documentation
+   * event subscriptions. See the relevant sparrow-controllers documentation
    * for more information.
    *
    * Note that account-related notifications emitted when the extension
