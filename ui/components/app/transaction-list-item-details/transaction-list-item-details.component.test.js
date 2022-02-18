@@ -96,7 +96,7 @@ describe('TransactionListItemDetails Component', () => {
     expect(child.find(Button)).toHaveLength(3);
   });
 
-  it('should disable the Copy Tx ID and View In Etherscan buttons when tx hash is missing', () => {
+  it('should disable the Copy Tx ID and View In Ubiqscan buttons when tx hash is missing', () => {
     const transaction = {
       history: [],
       id: 1,
@@ -139,7 +139,7 @@ describe('TransactionListItemDetails Component', () => {
     expect(buttons.at(1).prop('disabled')).toStrictEqual(true);
   });
 
-  it('should render functional Copy Tx ID and View In Etherscan buttons when tx hash exists', () => {
+  it('should render functional Copy Tx ID and View In Ubiqscan buttons when tx hash exists', () => {
     const transaction = {
       history: [],
       id: 1,

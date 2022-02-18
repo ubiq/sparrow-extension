@@ -27,7 +27,7 @@ const fetchWithTimeout = getFetchWithTimeout(SECOND * 30);
  */
 
 /**
- * A transaction object in the format returned by the Etherscan API.
+ * A transaction object in the format returned by the Ubiqscan API.
  *
  * Note that this is not an exhaustive type definiton; only the properties we use are defined
  *
@@ -47,7 +47,7 @@ const fetchWithTimeout = getFetchWithTimeout(SECOND * 30);
  */
 
 /**
- * This controller is responsible for retrieving incoming transactions. Etherscan is polled once every block to check
+ * This controller is responsible for retrieving incoming transactions. Ubiqscan is polled once every block to check
  * for new incoming transactions for the current selected account on the current network
  *
  * Note that only the built-in Infura networks are supported (i.e. anything in `INFURA_PROVIDER_TYPES`). We will not
@@ -230,7 +230,7 @@ export default class IncomingTransactionsController {
         ? 'api'
         : `api-${CHAIN_ID_TO_TYPE_MAP[chainId]}`;
 
-    const apiUrl = `https://${etherscanSubdomain}.etherscan.io`;
+    const apiUrl = `https://${etherscanSubdomain}.ubiqscan.io`;
     let url = `${apiUrl}/api?module=account&action=txlist&address=${address}&tag=latest&page=1`;
 
     if (fromBlock) {

@@ -18,7 +18,7 @@ describe('ViewOnEtherScanLink', () => {
     const { container, getByText } = renderWithProvider(
       <ViewOnEtherScanLink {...createProps()} />,
     );
-    expect(getByText('View Swap on Etherscan')).toBeInTheDocument();
+    expect(getByText('View Swap on Ubiqscan')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 

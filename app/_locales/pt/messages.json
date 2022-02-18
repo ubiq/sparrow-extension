@@ -97,7 +97,7 @@
     "message": "Introduza palavra-passe"
   },
   "etherscanView": {
-    "message": "Ver conta no Etherscan"
+    "message": "Ver conta no Ubiqscan"
   },
   "exportPrivateKey": {
     "message": "Exportar Chave Privada"

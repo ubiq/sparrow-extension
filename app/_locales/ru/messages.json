@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Не можете найти токен? Можно вручную добавить любой токен, вставив его адрес. Адреса контракта токена можно найти на $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Это позволит использовать эту сеть в MetaMask."
@@ -350,7 +350,7 @@
   },
   "blockExplorerSwapAction": {
     "message": "Обмен",
-    "description": "This is used with viewOnEtherscan e.g View Swap on Etherscan"
+    "description": "This is used with viewOnEtherscan e.g View Swap on Ubiqscan"
   },
   "blockExplorerUrl": {
     "message": "URL-адрес проводника блоков"
@@ -1009,10 +1009,10 @@
     "message": "Etherscan"
   },
   "etherscanView": {
-    "message": "Посмотреть счет на Etherscan"
+    "message": "Посмотреть счет на Ubiqscan"
   },
   "etherscanViewOn": {
-    "message": "Посмотреть на Etherscan"
+    "message": "Посмотреть на Ubiqscan"
   },
   "expandView": {
     "message": "Развернуть представление"
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Отображение входящих транзакций в вашем кошельке зависит от связи с $1. Etherscan получит доступ к вашему адресу Ethereum и вашему IP-адресу. Посмотрите $2.",
+    "message": "Отображение входящих транзакций в вашем кошельке зависит от связи с $1. Ubiqscan получит доступ к вашему адресу Ethereum и вашему IP-адресу. Посмотрите $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2464,7 +2464,7 @@
     "message": "Показать входящие транзакции"
   },
   "showIncomingTransactionsDescription": {
-    "message": "Выберите это, чтобы использовать Etherscan для отображения входящих транзакций в списке транзакций"
+    "message": "Выберите это, чтобы использовать Ubiqscan для отображения входящих транзакций в списке транзакций"
   },
   "showPermissions": {
     "message": "Показать разрешения"
@@ -2883,7 +2883,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "Всегда проверяйте адрес токена на $1.",
-    "description": "Points the user to Etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "Токен проверен только в 1 источнике."
@@ -3299,7 +3299,7 @@
     "description": "$1 is the action type. e.g (Account, Transaction, Swap) and $2 is the Custom Block Exporer URL"
   },
   "viewOnEtherscan": {
-    "message": "Смотреть 1$ на Etherscan",
+    "message": "Смотреть 1$ на Ubiqscan",
     "description": "$1 is the action type. e.g (Account, Transaction, Swap)"
   },
   "viewOnOpensea": {

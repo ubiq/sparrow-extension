@@ -51,7 +51,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Walang makitang token? Puwede kang manual na magdagdag ng anumang token sa pamamagitan ng pag-paste ng address nito. Makikita ang mga address ng kontrata ng token sa $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Bibigyang-daan nito na magamit ang network na ito sa MetaMask."
@@ -672,7 +672,7 @@
     "message": "Etherscan"
   },
   "etherscanView": {
-    "message": "Tingnan ang account sa Etherscan"
+    "message": "Tingnan ang account sa Ubiqscan"
   },
   "expandView": {
     "message": "I-expand ang view"
@@ -1632,7 +1632,7 @@
     "message": "Ipakita ang Mga Papasok na Transaksyon"
   },
   "showIncomingTransactionsDescription": {
-    "message": "Piliin ito para gamitin ang Etherscan sa pagpapakita ng mga papasok na transaksyon sa listahan ng mga transaksyon"
+    "message": "Piliin ito para gamitin ang Ubiqscan sa pagpapakita ng mga papasok na transaksyon sa listahan ng mga transaksyon"
   },
   "showPermissions": {
     "message": "Ipakita ang mga pahintulot"
@@ -1964,7 +1964,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "Palaging kumpirmahin ang address ng token sa $1.",
-    "description": "Points the user to Etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "Na-verify lang sa 1 source."

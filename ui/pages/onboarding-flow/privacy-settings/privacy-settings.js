@@ -60,7 +60,7 @@ export default function PrivacySettings() {
             description={t('onboardingShowIncomingTransactionsDescription', [
               <a
                 key="etherscan"
-                href="https://etherscan.io/"
+                href="https://ubiqscan.io/"
                 target="_blank"
                 rel="noreferrer"
               >

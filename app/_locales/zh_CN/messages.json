@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "找不到代币？您可以通过粘贴地址手动添加任何代币。代币合同地址可以在$1上找到。",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "这将允许在MetaMask中使用此网络。"
@@ -350,7 +350,7 @@
   },
   "blockExplorerSwapAction": {
     "message": "兑换 Swap",
-    "description": "This is used with viewOnEtherscan e.g View Swap on Etherscan"
+    "description": "This is used with viewOnEtherscan e.g View Swap on Ubiqscan"
   },
   "blockExplorerUrl": {
     "message": "区块浏览器"
@@ -1009,7 +1009,7 @@
     "message": "Etherscan（以太坊浏览器）"
   },
   "etherscanView": {
-    "message": "在 Etherscan（以太坊浏览器）上查看账户"
+    "message": "在 Ubiqscan（以太坊浏览器）上查看账户"
   },
   "etherscanViewOn": {
     "message": "在Etherscan上查看"
@@ -2464,7 +2464,7 @@
     "message": "显示收到的交易"
   },
   "showIncomingTransactionsDescription": {
-    "message": "选择该选项可使用 Etherscan（以太坊浏览器）（以太坊浏览器）在交易列表中显示收到的交易。"
+    "message": "选择该选项可使用 Ubiqscan（以太坊浏览器）（以太坊浏览器）在交易列表中显示收到的交易。"
   },
   "showPermissions": {
     "message": "显示权限"
@@ -2883,7 +2883,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "总是在$1上确认代币地址。",
-    "description": "Points the user to Etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "仅在 1 个源上验证。"

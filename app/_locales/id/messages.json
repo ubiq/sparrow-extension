@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Tidak dapat menemukan token? Tambahkan token secara manual dengan menempelkan alamatnya. Alamat kontrak token dapat ditemukan di $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Tindakan ini akan membantu jaringan ini agar dapat digunakan dengan MetaMask."
@@ -350,7 +350,7 @@
   },
   "blockExplorerSwapAction": {
     "message": "Swap",
-    "description": "This is used with viewOnEtherscan e.g View Swap on Etherscan"
+    "description": "This is used with viewOnEtherscan e.g View Swap on Ubiqscan"
   },
   "blockExplorerUrl": {
     "message": "URL Block Explorer"
@@ -1009,10 +1009,10 @@
     "message": "Etherscan"
   },
   "etherscanView": {
-    "message": "Lihat akun di Etherscan"
+    "message": "Lihat akun di Ubiqscan"
   },
   "etherscanViewOn": {
-    "message": "Lihat di Etherscan"
+    "message": "Lihat di Ubiqscan"
   },
   "expandView": {
     "message": "Perluas tampilan"
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Menampilkan transaksi masuk di dompet Anda bergantung pada komunikasi dengan $1. Etherscan akan mendapat akses ke alamat Ethereum dan alamat IP Anda. Lihat $2.",
+    "message": "Menampilkan transaksi masuk di dompet Anda bergantung pada komunikasi dengan $1. Ubiqscan akan mendapat akses ke alamat Ethereum dan alamat IP Anda. Lihat $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2464,7 +2464,7 @@
     "message": "Tampilkan Transaksi Masuk"
   },
   "showIncomingTransactionsDescription": {
-    "message": "Pilih ini untuk menggunakan Etherscan untuk menampilkan transaksi yang masuk di daftar transaksi"
+    "message": "Pilih ini untuk menggunakan Ubiqscan untuk menampilkan transaksi yang masuk di daftar transaksi"
   },
   "showPermissions": {
     "message": "Tampilkan Izin"
@@ -2883,7 +2883,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "Selalu konfirmasikan alamat token di $1.",
-    "description": "Points the user to Etherscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "Hanya diverifikasi di 1 sumber."
@@ -3299,7 +3299,7 @@
     "description": "$1 is the action type. e.g (Account, Transaction, Swap) and $2 is the Custom Block Exporer URL"
   },
   "viewOnEtherscan": {
-    "message": "Lihat $1 di Etherscan",
+    "message": "Lihat $1 di Ubiqscan",
     "description": "$1 is the action type. e.g (Account, Transaction, Swap)"
   },
   "viewOnOpensea": {

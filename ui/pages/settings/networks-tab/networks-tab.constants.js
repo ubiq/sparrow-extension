@@ -20,7 +20,7 @@ const defaultNetworksData = [
     rpcUrl: getRpcUrl({ network: MAINNET, excludeProjectId: true }),
     chainId: MAINNET_CHAIN_ID,
     ticker: 'ETH',
-    blockExplorerUrl: 'https://etherscan.io',
+    blockExplorerUrl: 'https://ubiqscan.io',
   },
   {
     labelKey: ROPSTEN,
@@ -29,7 +29,7 @@ const defaultNetworksData = [
     rpcUrl: getRpcUrl({ network: ROPSTEN, excludeProjectId: true }),
     chainId: ROPSTEN_CHAIN_ID,
     ticker: 'ETH',
-    blockExplorerUrl: 'https://ropsten.etherscan.io',
+    blockExplorerUrl: 'https://ropsten.ubiqscan.io',
   },
   {
     labelKey: RINKEBY,
@@ -38,7 +38,7 @@ const defaultNetworksData = [
     rpcUrl: getRpcUrl({ network: RINKEBY, excludeProjectId: true }),
     chainId: RINKEBY_CHAIN_ID,
     ticker: 'ETH',
-    blockExplorerUrl: 'https://rinkeby.etherscan.io',
+    blockExplorerUrl: 'https://rinkeby.ubiqscan.io',
   },
   {
     labelKey: GOERLI,
@@ -47,7 +47,7 @@ const defaultNetworksData = [
     rpcUrl: getRpcUrl({ network: GOERLI, excludeProjectId: true }),
     chainId: GOERLI_CHAIN_ID,
     ticker: 'ETH',
-    blockExplorerUrl: 'https://goerli.etherscan.io',
+    blockExplorerUrl: 'https://goerli.ubiqscan.io',
   },
   {
     labelKey: KOVAN,
@@ -56,7 +56,7 @@ const defaultNetworksData = [
     rpcUrl: getRpcUrl({ network: KOVAN, excludeProjectId: true }),
     chainId: KOVAN_CHAIN_ID,
     ticker: 'ETH',
-    blockExplorerUrl: 'https://kovan.etherscan.io',
+    blockExplorerUrl: 'https://kovan.ubiqscan.io',
   },
 ];
 
