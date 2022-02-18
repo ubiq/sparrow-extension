@@ -1,6 +1,5 @@
 import pify from 'pify';
 import log from 'loglevel';
-import { captureException } from '@sentry/browser';
 import { capitalize, isEqual } from 'lodash';
 import getBuyUrl from '../../app/scripts/lib/buy-url';
 import {
@@ -3057,7 +3056,6 @@ export function captureSingleException(error) {
         type: actionConstants.CAPTURE_SINGLE_EXCEPTION,
         value: error,
       });
-      captureException(Error(error));
     }
   };
 }

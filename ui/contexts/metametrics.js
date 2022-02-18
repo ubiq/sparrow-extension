@@ -8,7 +8,6 @@ import React, {
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
-import { captureException } from '@sentry/browser';
 
 import {
   getAccountType,
@@ -22,11 +21,6 @@ import { trackMetaMetricsEvent } from '../store/actions';
 import { getNativeCurrency } from '../ducks/metamask/metamask';
 
 export const MetaMetricsContext = createContext(() => {
-  captureException(
-    Error(
-      `MetaMetrics context function was called from a react node that is not a descendant of a MetaMetrics context provider`,
-    ),
-  );
 });
 
 export function MetaMetricsProvider({ children }) {

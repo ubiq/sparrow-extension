@@ -1,7 +1,6 @@
 // cross-browser connection to extension i18n API
 import React from 'react';
 import log from 'loglevel';
-import * as Sentry from '@sentry/browser';
 
 import { SECOND } from '../../../shared/constants/time';
 import getFetchWithTimeout from '../../../shared/modules/fetch-with-timeout';
@@ -31,7 +30,6 @@ export const getMessage = (localeCode, localeMessages, key, substitutions) => {
         missingMessageErrors[key] = new Error(
           `Unable to find value of key "${key}" for locale "${localeCode}"`,
         );
-        Sentry.captureException(missingMessageErrors[key]);
         log.error(missingMessageErrors[key]);
         if (process.env.IN_TEST) {
           throw missingMessageErrors[key];
@@ -83,7 +81,6 @@ export const getMessage = (localeCode, localeMessages, key, substitutions) => {
           `Insufficient number of substitutions for key "${key}" with locale "${localeCode}"`,
         );
         log.error(error);
-        Sentry.captureException(error);
       }
       return substitutions[substituteIndex];
     });

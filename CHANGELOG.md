@@ -1160,7 +1160,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add all icons to manifest ([#7431](https://github.com/MetaMask/metamask-extension/pull/7431))
 - Ensure Etherscan result is valid before reading it ([#7426](https://github.com/MetaMask/metamask-extension/pull/7426))
 - Update 512px icon ([#7434](https://github.com/MetaMask/metamask-extension/pull/7434))
-- Fix sourcemaps for Sentry ([#7410](https://github.com/MetaMask/metamask-extension/pull/7410))
 - Adds and end to end test for typed signature requests ([#7420](https://github.com/MetaMask/metamask-extension/pull/7420))
 - Add metricsEvent to contextTypes ([#7439](https://github.com/MetaMask/metamask-extension/pull/7439))
 - Added webRequest.RequestFilter to filter main_frame .eth requests ([#7419](https://github.com/MetaMask/metamask-extension/pull/7419))
@@ -1785,7 +1784,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [4.5.1] - 2018-04-03
 ### Uncategorized
 - Fix default network (should be mainnet not Rinkeby)
-- Fix Sentry automated error reporting endpoint
 
 ## [4.5.0] - 2018-04-02
 ### Uncategorized
@@ -1851,7 +1849,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.1.0] - 2018-02-27
 ### Uncategorized
-- Report failed txs to Sentry with more specific message
 - Fix internal feature flags being sometimes undefined
 - Standardized license to MIT
 
@@ -1885,7 +1882,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [3.13.7] - 2018-01-22
 ### Uncategorized
 - Add ability to bypass gas estimation loading indicator.
-- Forward failed transactions to Sentry error reporting service
 - Re-add changes from 3.13.5
 
 ## [3.13.6] - 2017-01-18

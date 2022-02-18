@@ -9,7 +9,6 @@ import log from 'loglevel';
 import extension from 'extensionizer';
 import { storeAsStream, storeTransformStream } from '@metamask/obs-store';
 import PortStream from 'extension-port-stream';
-import { captureException } from '@sentry/browser';
 
 import { ethErrors } from 'eth-rpc-errors';
 import {
@@ -40,7 +39,6 @@ import getObjStructure from './lib/getObjStructure';
 import setupEnsIpfsResolver from './lib/ens-ipfs/setup';
 /* eslint-enable import/first */
 
-const { sentry } = global;
 const firstTimeState = { ...rawFirstTimeState };
 
 log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'info');
@@ -162,18 +160,7 @@ async function loadStateFromPersistence() {
   if (versionedData && !versionedData.data) {
     // unable to recover, clear state
     versionedData = migrator.generateInitialState(firstTimeState);
-    sentry.captureMessage('MetaMask - Empty vault found - unable to recover');
   }
-
-  // report migration errors to sentry
-  migrator.on('error', (err) => {
-    // get vault structure without secrets
-    const vaultStructure = getObjStructure(versionedData);
-    sentry.captureException(err, {
-      // "extra" key is required by Sentry
-      extra: { vaultStructure },
-    });
-  });
 
   // migrate data
   versionedData = await migrator.migrateData(versionedData);
@@ -282,7 +269,6 @@ function setupController(initState, initLangCode) {
         // log error so we dont break the pipeline
         if (!dataPersistenceFailing) {
           dataPersistenceFailing = true;
-          captureException(err);
         }
         log.error('error setting state in local store:', err);
       }

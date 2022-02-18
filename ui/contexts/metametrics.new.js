@@ -13,7 +13,6 @@ import React, {
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { matchPath, useLocation, useRouteMatch } from 'react-router-dom';
-import { captureException, captureMessage } from '@sentry/browser';
 
 import { omit } from 'lodash';
 import { getEnvironmentType } from '../../app/scripts/lib/util';
@@ -45,11 +44,6 @@ import { trackMetaMetricsEvent, trackMetaMetricsPage } from '../store/actions';
  * @type {React.Context<UITrackEventMethod>}
  */
 export const MetaMetricsContext = createContext(() => {
-  captureException(
-    Error(
-      `MetaMetrics context function was called from a react node that is not a descendant of a MetaMetrics context provider`,
-    ),
-  );
 });
 
 const PATHS_TO_CHECK = Object.keys(PATH_NAME_MAP);
@@ -131,14 +125,7 @@ export function MetaMetricsProvider({ children }) {
     });
     // Start by checking for a missing match route. If this falls through to
     // the else if, then we know we have a matched route for tracking.
-    if (!match) {
-      captureMessage(`Segment page tracking found unmatched route`, {
-        extra: {
-          previousMatch,
-          currentPath: location.pathname,
-        },
-      });
-    } else if (
+    if (
       previousMatch.current !== match.path &&
       !(
         environmentType === 'notification' &&

@@ -12,7 +12,6 @@ import BetaWelcomeFooter from './beta-welcome-footer.component';
 export default class Welcome extends PureComponent {
   static propTypes = {
     history: PropTypes.object,
-    participateInMetaMetrics: PropTypes.bool,
     welcomeScreenSeen: PropTypes.bool,
   };
 
@@ -25,9 +24,9 @@ export default class Welcome extends PureComponent {
   }
 
   componentDidMount() {
-    const { history, participateInMetaMetrics, welcomeScreenSeen } = this.props;
+    const { history, welcomeScreenSeen } = this.props;
 
-    if (welcomeScreenSeen && participateInMetaMetrics !== null) {
+    if (welcomeScreenSeen) {
       history.push(INITIALIZE_CREATE_PASSWORD_ROUTE);
     } else if (welcomeScreenSeen) {
       history.push(INITIALIZE_SELECT_ACTION_ROUTE);

@@ -19,7 +19,6 @@ import LatticeKeyring from 'eth-lattice-keyring';
 import { MetaMaskKeyring as QRHardwareKeyring } from '@keystonehq/metamask-airgapped-keyring';
 import EthQuery from 'eth-query';
 import nanoid from 'nanoid';
-import { captureException } from '@sentry/browser';
 import {
   AddressBookController,
   ApprovalController,
@@ -305,7 +304,6 @@ export default class MetamaskController extends EventEmitter {
       version: this.platform.getVersion(),
       environment: process.env.METAMASK_ENVIRONMENT,
       initState: initState.MetaMetricsController,
-      captureException,
     });
 
     const gasFeeMessenger = this.controllerMessenger.getRestricted({
@@ -545,12 +543,6 @@ export default class MetamaskController extends EventEmitter {
             const accountTrackerCount = Object.keys(
               this.accountTracker.store.getState().accounts || {},
             ).length;
-
-            captureException(
-              new Error(
-                `Attempt to get permission specifications failed because their were ${accounts.length} accounts, but ${identitiesCount} identities, and the ${keyringTypesWithMissingIdentities} keyrings included accounts with missing identities. Meanwhile, there are ${accountTrackerCount} accounts in the account tracker.`,
-              ),
-            );
           },
         }),
         ///: BEGIN:ONLY_INCLUDE_IN(flask)

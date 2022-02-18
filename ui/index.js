@@ -5,7 +5,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import { getEnvironmentType } from '../app/scripts/lib/util';
 import { ALERT_TYPES } from '../shared/constants/alerts';
-import { SENTRY_STATE } from '../app/scripts/lib/setupSentry';
 import { ENVIRONMENT_TYPE_POPUP } from '../shared/constants/app';
 import * as actions from './store/actions';
 import configureStore from './store/store';
@@ -191,15 +190,6 @@ function setupDebuggingHelpers(store) {
       filterToCurrentNetwork: false,
     });
     return state;
-  };
-  window.getSentryState = function () {
-    const fullState = store.getState();
-    const debugState = maskObject(fullState, SENTRY_STATE);
-    return {
-      browser: window.navigator.userAgent,
-      store: debugState,
-      version: global.platform.getVersion(),
-    };
   };
 }
 

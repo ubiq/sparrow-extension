@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { captureException } from '@sentry/browser';
 import TransactionDetailItem from '../transaction-detail-item/transaction-detail-item.component';
 import fetchEstimatedL1Fee from '../../../helpers/utils/optimism/fetchEstimatedL1Fee';
 import { I18nContext } from '../../../contexts/i18n';
@@ -45,7 +44,6 @@ export default function MultilayerFeeMessage({
         const result = await fetchEstimatedL1Fee(global.eth, transaction);
         setLayer1Total(result);
       } catch (e) {
-        captureException(e);
         setLayer1Total(null);
       }
     };

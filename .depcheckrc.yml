@@ -18,7 +18,6 @@ ignores:
   - '@metamask/auto-changelog' # invoked as `auto-changelog`
   - '@metamask/forwarder'
   - '@metamask/test-dapp'
-  - '@sentry/cli' # invoked as `sentry-cli`
   - 'chromedriver'
   - 'depcheck' # ooo meta
   - 'ganache-cli'

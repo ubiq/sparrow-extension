@@ -39,9 +39,6 @@ const metamaskrc = require('rc')('metamask', {
   SEGMENT_BETA_WRITE_KEY: process.env.SEGMENT_BETA_WRITE_KEY,
   SEGMENT_FLASK_WRITE_KEY: process.env.SEGMENT_FLASK_WRITE_KEY,
   SEGMENT_PROD_WRITE_KEY: process.env.SEGMENT_PROD_WRITE_KEY,
-  SENTRY_DSN_DEV:
-    process.env.SENTRY_DSN_DEV ||
-    'https://f59f3dd640d2429d9d0e2445a87ea8e1@sentry.io/273496',
 });
 
 const { streamFlatMap } = require('../stream-flat-map.js');
@@ -208,12 +205,6 @@ function createScriptTasks({
       createTaskForBundleDisableConsole({ devMode, testing }),
     );
 
-    // this can run whenever
-    const installSentrySubtask = createTask(
-      `${taskPrefix}:sentry`,
-      createTaskForBundleSentry({ devMode, testing }),
-    );
-
     const phishingDetectSubtask = createTask(
       `${taskPrefix}:phishing-detect`,
       createTaskForBundlePhishingDetect({ devMode, testing }),
@@ -240,7 +231,6 @@ function createScriptTasks({
       standardSubtask,
       contentscriptSubtask,
       disableConsoleSubtask,
-      installSentrySubtask,
       phishingDetectSubtask,
     ].map((subtask) =>
       runInChildProcess(subtask, {
@@ -256,22 +246,6 @@ function createScriptTasks({
 
   function createTaskForBundleDisableConsole({ devMode, testing }) {
     const label = 'disable-console';
-    return createNormalBundle({
-      browserPlatforms,
-      buildType,
-      destFilepath: `${label}.js`,
-      devMode,
-      entryFilepath: `./app/scripts/${label}.js`,
-      ignoredFiles,
-      label,
-      testing,
-      policyOnly,
-      shouldLintFenceFiles,
-    });
-  }
-
-  function createTaskForBundleSentry({ devMode, testing }) {
-    const label = 'sentry-install';
     return createNormalBundle({
       browserPlatforms,
       buildType,
@@ -782,9 +756,6 @@ async function bundleIt(buildConfiguration, { reloadOnChange }) {
 
 function getEnvironmentVariables({ buildType, devMode, testing }) {
   const environment = getEnvironment({ devMode, testing });
-  if (environment === ENVIRONMENT.PRODUCTION && !process.env.SENTRY_DSN) {
-    throw new Error('Missing SENTRY_DSN environment variable');
-  }
   return {
     METAMASK_DEBUG: devMode,
     METAMASK_ENVIRONMENT: environment,
@@ -795,8 +766,6 @@ function getEnvironmentVariables({ buildType, devMode, testing }) {
     PUBNUB_SUB_KEY: process.env.PUBNUB_SUB_KEY || '',
     PUBNUB_PUB_KEY: process.env.PUBNUB_PUB_KEY || '',
     CONF: devMode ? metamaskrc : {},
-    SENTRY_DSN: process.env.SENTRY_DSN,
-    SENTRY_DSN_DEV: metamaskrc.SENTRY_DSN_DEV,
     INFURA_PROJECT_ID: getInfuraProjectId({ buildType, environment, testing }),
     SEGMENT_HOST: metamaskrc.SEGMENT_HOST,
     SEGMENT_WRITE_KEY: getSegmentWriteKey({ buildType, environment }),

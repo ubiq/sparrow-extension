@@ -2,8 +2,6 @@ import { createSlice } from '@reduxjs/toolkit';
 import BigNumber from 'bignumber.js';
 import log from 'loglevel';
 
-import { captureMessage } from '@sentry/browser';
-
 import {
   addToken,
   addUnapprovedTransaction,
@@ -805,7 +803,6 @@ export const fetchQuotesAndSetQuoteState = (
         log.debug(`Swap fetch order conflict detected; ignoring older request`);
         return;
       }
-      // TODO: Check for any errors we should expect to occur in production, and report others to Sentry
       log.error(`Error fetching quotes: `, e);
 
       dispatch(setSwapsErrorKey(ERROR_FETCHING_QUOTES));
@@ -878,13 +875,6 @@ export const signAndSendSwapsSmartTransaction = ({
     });
 
     if (!isContractAddressValid(usedTradeTxParams.to, chainId)) {
-      captureMessage('Invalid contract address', {
-        extra: {
-          token_from: swapMetaData.token_from,
-          token_to: swapMetaData.token_to,
-          contract_address: usedTradeTxParams.to,
-        },
-      });
       await dispatch(setSwapsErrorKey(SWAP_FAILED_ERROR));
       history.push(SWAPS_ERROR_ROUTE);
       return;
@@ -1116,13 +1106,6 @@ export const signAndSendTransactions = (history, metaMetricsEvent) => {
     });
 
     if (!isContractAddressValid(usedTradeTxParams.to, chainId)) {
-      captureMessage('Invalid contract address', {
-        extra: {
-          token_from: swapMetaData.token_from,
-          token_to: swapMetaData.token_to,
-          contract_address: usedTradeTxParams.to,
-        },
-      });
       await dispatch(setSwapsErrorKey(SWAP_FAILED_ERROR));
       history.push(SWAPS_ERROR_ROUTE);
       return;
