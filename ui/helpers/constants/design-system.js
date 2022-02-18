@@ -29,10 +29,6 @@ export const COLORS = {
   ALERT2: 'alert-2',
   ALERT3: 'alert-3',
   MAINNET: 'mainnet',
-  ROPSTEN: 'ropsten',
-  KOVAN: 'kovan',
-  RINKEBY: 'rinkeby',
-  GOERLI: 'goerli',
   TRANSPARENT: 'transparent',
   LOCALHOST: 'localhost',
 };

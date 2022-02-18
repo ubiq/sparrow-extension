@@ -155,7 +155,7 @@ class NetworkDropdown extends Component {
     const reversedRpcListDetail = rpcListDetail.slice().reverse();
 
     return reversedRpcListDetail.map((entry) => {
-      const { rpcUrl, chainId, ticker = 'ETH', nickname = '' } = entry;
+      const { rpcUrl, chainId, ticker = 'UBQ', nickname = '' } = entry;
       const isCurrentRpcTarget =
         provider.type === NETWORK_TYPE_RPC && rpcUrl === provider.rpcUrl;
 
@@ -228,14 +228,6 @@ class NetworkDropdown extends Component {
 
     if (providerName === 'mainnet') {
       name = this.context.t('mainnet');
-    } else if (providerName === 'ropsten') {
-      name = this.context.t('ropsten');
-    } else if (providerName === 'kovan') {
-      name = this.context.t('kovan');
-    } else if (providerName === 'rinkeby') {
-      name = this.context.t('rinkeby');
-    } else if (providerName === 'goerli') {
-      name = this.context.t('goerli');
     } else if (providerName === 'localhost') {
       name = this.context.t('localhost');
     } else {
@@ -283,16 +275,12 @@ class NetworkDropdown extends Component {
     const {
       history,
       hideNetworkDropdown,
-      shouldShowTestNetworks,
       showTestnetMessageInDropdown,
       hideTestNetMessage,
     } = this.props;
     const rpcListDetail = this.props.frequentRpcListDetail;
     const rpcListDetailWithoutLocalHost = rpcListDetail.filter(
       (rpc) => rpc.rpcUrl !== LOCALHOST_RPC_URL,
-    );
-    const rpcListDetailForLocalHost = rpcListDetail.filter(
-      (rpc) => rpc.rpcUrl === LOCALHOST_RPC_URL,
     );
     const isOpen = this.props.networkDropdownOpen;
     const { t } = this.context;
@@ -361,19 +349,6 @@ class NetworkDropdown extends Component {
             this.props.provider,
           )}
 
-          {shouldShowTestNetworks && (
-            <>
-              {this.renderNetworkEntry('ropsten')}
-              {this.renderNetworkEntry('kovan')}
-              {this.renderNetworkEntry('rinkeby')}
-              {this.renderNetworkEntry('goerli')}
-              {this.renderCustomRpcList(
-                rpcListDetailForLocalHost,
-                this.props.provider,
-                { isLocalHost: true },
-              )}
-            </>
-          )}
         </div>
 
         {this.renderAddCustomButton()}

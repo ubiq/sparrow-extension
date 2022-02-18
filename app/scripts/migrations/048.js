@@ -63,10 +63,10 @@ function transformState(state = {}) {
     state.PreferencesController.frequentRpcListDetail = [];
   }
   state.PreferencesController.frequentRpcListDetail.unshift({
-    rpcUrl: 'http://localhost:8545',
+    rpcUrl: 'http://localhost:8588',
     chainId: '0x539',
     ticker: 'ETH',
-    nickname: 'Localhost 8545',
+    nickname: 'Localhost 8588',
     rpcPrefs: {},
   });
 

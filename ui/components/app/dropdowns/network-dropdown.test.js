@@ -97,37 +97,6 @@ describe('Network Dropdown', () => {
       expect(colorIndicator.prop('borderColor')).toStrictEqual('mainnet');
     });
 
-    it('checks background color for second ColorIndicator', () => {
-      // find where test networks start in case there are custom RPCs
-      const colorIndicator = wrapper.find(ColorIndicator).at(testNetworkIndex);
-      expect(colorIndicator.prop('color')).toStrictEqual('ropsten');
-      expect(colorIndicator.prop('borderColor')).toStrictEqual('ropsten');
-    });
-
-    it('checks background color for third ColorIndicator', () => {
-      const colorIndicator = wrapper
-        .find(ColorIndicator)
-        .at(testNetworkIndex + 1);
-      expect(colorIndicator.prop('color')).toStrictEqual('kovan');
-      expect(colorIndicator.prop('borderColor')).toStrictEqual('kovan');
-    });
-
-    it('checks background color for fourth ColorIndicator', () => {
-      const colorIndicator = wrapper
-        .find(ColorIndicator)
-        .at(testNetworkIndex + 2);
-      expect(colorIndicator.prop('color')).toStrictEqual('rinkeby');
-      expect(colorIndicator.prop('borderColor')).toStrictEqual('rinkeby');
-    });
-
-    it('checks background color for fifth ColorIndicator', () => {
-      const colorIndicator = wrapper
-        .find(ColorIndicator)
-        .at(testNetworkIndex + 3);
-      expect(colorIndicator.prop('color')).toStrictEqual('goerli');
-      expect(colorIndicator.prop('borderColor')).toStrictEqual('goerli');
-    });
-
     it('checks background color for sixth ColorIndicator', () => {
       const colorIndicator = wrapper
         .find(ColorIndicator)

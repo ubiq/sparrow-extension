@@ -24,7 +24,7 @@ const propNewNetwork = {
 
 const propNetworkDisplay = {
   selectedNetwork: {
-    rpcUrl: 'http://localhost:8545',
+    rpcUrl: 'http://localhost:8588',
     chainId: '1337',
     ticker: 'ETH',
     label: 'LocalHost',

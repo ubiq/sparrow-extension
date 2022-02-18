@@ -30,12 +30,12 @@ const defaultNetworks = defaultNetworksData.map((network) => ({
 const MainnetProps = {
   network: defaultNetworks[0],
   networkIsSelected: false,
-  selectedRpcUrl: 'http://localhost:8545',
+  selectedRpcUrl: 'http://localhost:8588',
 };
 const testNetProps = {
   network: defaultNetworks[1],
   networkIsSelected: false,
-  selectedRpcUrl: 'http://localhost:8545',
+  selectedRpcUrl: 'http://localhost:8588',
 };
 
 describe('NetworksListItem Component', () => {

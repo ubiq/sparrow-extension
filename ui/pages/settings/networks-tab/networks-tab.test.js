@@ -9,14 +9,14 @@ const mockState = {
       chainId: '0x539',
       nickname: '',
       rpcPrefs: {},
-      rpcUrl: 'http://localhost:8545',
+      rpcUrl: 'http://localhost:8588',
       ticker: 'ETH',
       type: 'localhost',
     },
     frequentRpcListDetail: [],
   },
   appState: {
-    networksTabSelectedRpcUrl: 'http://localhost:8545',
+    networksTabSelectedRpcUrl: 'http://localhost:8588',
   },
 };
 

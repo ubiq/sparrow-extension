@@ -1194,7 +1194,7 @@ describe('Actions', () => {
 
       actions._setBackgroundConnection(background);
 
-      await store.dispatch(actions.setRpcTarget('http://localhost:8545'));
+      await store.dispatch(actions.setRpcTarget('http://localhost:8588'));
       expect(background.setCustomRpc.callCount).toStrictEqual(1);
     });
 

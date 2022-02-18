@@ -11,7 +11,7 @@ const mockState = {
       chainId: '0x539',
       nickname: '',
       rpcPrefs: {},
-      rpcUrl: 'http://localhost:8545',
+      rpcUrl: 'http://localhost:8588',
       ticker: 'ETH',
       type: 'localhost',
     },
@@ -33,7 +33,7 @@ const props = {
   networkIsSelected: true,
   networksToRender: defaultNetworks,
   selectedNetwork: {
-    rpcUrl: 'http://localhost:8545',
+    rpcUrl: 'http://localhost:8588',
     chainId: '1337',
     ticker: 'ETH',
     label: 'LocalHost',
@@ -73,9 +73,9 @@ describe('NetworksTabContent Component', () => {
     ).toBeInTheDocument();
 
     fireEvent.change(getByDisplayValue(props.selectedNetwork.label), {
-      target: { value: 'LocalHost 8545' },
+      target: { value: 'LocalHost 8588' },
     });
-    expect(await getByDisplayValue('LocalHost 8545')).toBeInTheDocument();
+    expect(await getByDisplayValue('LocalHost 8588')).toBeInTheDocument();
 
     fireEvent.change(getByDisplayValue(props.selectedNetwork.rpcUrl), {
       target: { value: 'test' },

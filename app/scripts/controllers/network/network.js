@@ -36,9 +36,9 @@ let defaultProviderConfigOpts;
 if (process.env.IN_TEST) {
   defaultProviderConfigOpts = {
     type: NETWORK_TYPE_RPC,
-    rpcUrl: 'http://localhost:8545',
+    rpcUrl: 'http://localhost:8588',
     chainId: '0x539',
-    nickname: 'Localhost 8545',
+    nickname: 'Localhost 8588',
   };
 } else if (process.env.METAMASK_DEBUG || env === 'test') {
   defaultProviderConfigOpts = { type: RINKEBY, chainId: RINKEBY_CHAIN_ID };

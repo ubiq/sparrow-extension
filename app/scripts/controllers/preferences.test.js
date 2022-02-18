@@ -249,7 +249,7 @@ describe('preferences controller', function () {
         ],
       );
       preferencesController.removeFromFrequentRpcList('other_rpc_url');
-      preferencesController.removeFromFrequentRpcList('http://localhost:8545');
+      preferencesController.removeFromFrequentRpcList('http://localhost:8588');
       preferencesController.removeFromFrequentRpcList('rpc_url');
       assert.deepEqual(
         preferencesController.store.getState().frequentRpcListDetail,

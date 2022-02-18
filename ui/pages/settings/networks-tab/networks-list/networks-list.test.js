@@ -31,7 +31,7 @@ const props = {
   networkDefaultedToProvider: false,
   networkIsSelected: false,
   networksToRender: defaultNetworks,
-  selectedRpcUrl: 'http://localhost:8545',
+  selectedRpcUrl: 'http://localhost:8588',
 };
 
 describe('NetworksList Component', () => {
