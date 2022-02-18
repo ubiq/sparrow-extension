@@ -1,11 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import { exportAsFile } from '../../../helpers/utils/util';
 import ToggleButton from '../../../components/ui/toggle-button';
 import TextField from '../../../components/ui/text-field';
 import Button from '../../../components/ui/button';
-import { MOBILE_SYNC_ROUTE } from '../../../helpers/constants/routes';
 import Dropdown from '../../../components/ui/dropdown';
 import Dialog from '../../../components/ui/dialog';
 
@@ -68,36 +66,6 @@ export default class AdvancedTab extends PureComponent {
       this.showTestNetworksRef.current.scrollIntoView({ behavior: 'smooth' });
       this.showTestNetworksRef.current.focus();
     }
-  }
-
-  renderMobileSync() {
-    const { t } = this.context;
-    const { history } = this.props;
-
-    return (
-      <div
-        className="settings-page__content-row"
-        data-testid="advanced-setting-mobile-sync"
-      >
-        <div className="settings-page__content-item">
-          <span>{t('syncWithMobile')}</span>
-        </div>
-        <div className="settings-page__content-item">
-          <div className="settings-page__content-item-col">
-            <Button
-              type="secondary"
-              large
-              onClick={(event) => {
-                event.preventDefault();
-                history.push(MOBILE_SYNC_ROUTE);
-              }}
-            >
-              {t('syncWithMobile')}
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
   }
 
   renderStateLogs() {
@@ -394,54 +362,6 @@ export default class AdvancedTab extends PureComponent {
     );
   }
 
-  renderThreeBoxControl() {
-    const { t } = this.context;
-    const {
-      threeBoxSyncingAllowed,
-      setThreeBoxSyncingPermission,
-      threeBoxDisabled,
-    } = this.props;
-
-    let allowed = threeBoxSyncingAllowed;
-    let description = t('syncWithThreeBoxDescription');
-
-    if (threeBoxDisabled) {
-      allowed = false;
-      description = t('syncWithThreeBoxDisabled');
-    }
-    return (
-      <div
-        className="settings-page__content-row"
-        data-testid="advanced-setting-3box"
-      >
-        <div className="settings-page__content-item">
-          <span>{t('syncWithThreeBox')}</span>
-          <div className="settings-page__content-description">
-            {description}
-          </div>
-        </div>
-        <div
-          className={classnames('settings-page__content-item', {
-            'settings-page__content-item--disabled': threeBoxDisabled,
-          })}
-        >
-          <div className="settings-page__content-item-col">
-            <ToggleButton
-              value={allowed}
-              onToggle={(value) => {
-                if (!threeBoxDisabled) {
-                  setThreeBoxSyncingPermission(!value);
-                }
-              }}
-              offLabel={t('off')}
-              onLabel={t('on')}
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   renderLedgerLiveControl() {
     const { t } = this.context;
     const {
@@ -654,7 +574,6 @@ export default class AdvancedTab extends PureComponent {
       <div className="settings-page__body">
         {warning ? <div className="settings-tab__error">{warning}</div> : null}
         {this.renderStateLogs()}
-        {this.renderMobileSync()}
         {this.renderResetAccount()}
         {this.renderAdvancedGasInputInline()}
         {this.renderHexDataOptIn()}
@@ -662,7 +581,6 @@ export default class AdvancedTab extends PureComponent {
         {this.renderToggleTestNetworks()}
         {this.renderUseNonceOptIn()}
         {this.renderAutoLockTimeLimit()}
-        {this.renderThreeBoxControl()}
         {this.renderIpfsGatewayControl()}
         {notUsingFirefox ? this.renderLedgerLiveControl() : null}
         {this.renderDismissSeedBackupReminderControl()}
