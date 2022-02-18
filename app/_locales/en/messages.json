@@ -301,7 +301,7 @@
     "message": "Auto-Lock Timer (minutes)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Set the idle time in minutes before MetaMask will become locked."
+    "message": "Set the idle time in minutes before Sparrow will become locked."
   },
   "average": {
     "message": "Average"
@@ -334,10 +334,10 @@
     "message": "Basic"
   },
   "betaMetamaskDescription": {
-    "message": "Trusted by millions, MetaMask is a secure wallet making the world of web3 accessible to all."
+    "message": "Trusted by millions, Sparrow is a secure wallet making the world of web3 accessible to all."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Use this version to test upcoming features before they’re released. Your use and feedback helps us build the best version of MetaMask possible. Your use of MetaMask Beta is subject to our standard $1 as well as our $2. As a Beta, there may be an increased risk of bugs. By proceeding, you accept and acknowledge these risks, as well as those risks found in our Terms and Beta Terms.",
+    "message": "Use this version to test upcoming features before they’re released. Your use and feedback helps us build the best version of Sparrow possible. Your use of Sparrow Beta is subject to our standard $1 as well as our $2. As a Beta, there may be an increased risk of bugs. By proceeding, you accept and acknowledge these risks, as well as those risks found in our Terms and Beta Terms.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -350,7 +350,7 @@
     "message": "MetaMask Beta Version"
   },
   "betaWelcome": {
-    "message": "Welcome to MetaMask Beta"
+    "message": "Welcome to Sparrow Beta"
   },
   "blockExplorerAccountAction": {
     "message": "Account",
@@ -397,14 +397,14 @@
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithTransakDescription": {
-    "message": "Transak supports debit card and bank transfers (depending on location) in 59+ countries. $1 deposits into your MetaMask account.",
+    "message": "Transak supports debit card and bank transfers (depending on location) in 59+ countries. $1 deposits into your Sparrow account.",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyWithWyre": {
     "message": "Buy ETH with Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lets you use a debit card to deposit ETH right in to your MetaMask account."
+    "message": "Wyre lets you use a debit card to deposit ETH right in to your Sparrow account."
   },
   "bytes": {
     "message": "Bytes"
@@ -452,7 +452,7 @@
     "description": "$1 is the chain id currently entered in the network form and $2 is the return value of nativeCurrency.symbol from chainlist.network"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "You need to use MetaMask on Google Chrome in order to connect to your Hardware Wallet."
+    "message": "You need to use Sparrow on Google Chrome in order to connect to your Hardware Wallet."
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "Click here to connect your Ledger via WebHID",
@@ -1009,7 +1009,7 @@
     "message": "Never share the phrase with anyone."
   },
   "endOfFlowMessage5": {
-    "message": "Be careful of phishing! MetaMask will never spontaneously ask for your Secret Recovery Phrase."
+    "message": "Be careful of phishing! Sparrow will never spontaneously ask for your Secret Recovery Phrase."
   },
   "endOfFlowMessage6": {
     "message": "If you need to back up your Secret Recovery Phrase again, you can find it in Settings -> Security."
@@ -1178,7 +1178,7 @@
   },
   "flaskWelcomeWarning2": {
     "message": "We do not guarantee the safety or stability of this extension. The new APIs offered by Flask are not hardened against phishing attacks, meaning that any site or snap that requires Flask might be a malicious attempt to steal your assets.",
-    "description": "This explains the risks of using MetaMask Flask"
+    "description": "This explains the risks of using Sparrow Flask"
   },
   "flaskWelcomeWarning3": {
     "message": "All Flask APIs are experimental. They may be changed or removed without notice, or they might stay on Flask indefinitely without ever being migrated to stable MetaMask. Use them at your own risk.",
@@ -1403,7 +1403,7 @@
     "message": "import using Secret Recovery Phrase"
   },
   "importAccountMsg": {
-    "message": "Imported accounts will not be associated with your originally created MetaMask account Secret Recovery Phrase. Learn more about imported accounts"
+    "message": "Imported accounts will not be associated with your originally created Sparrow account Secret Recovery Phrase. Learn more about imported accounts"
   },
   "importAccountSeedPhrase": {
     "message": "Import a wallet with Secret Recovery Phrase"
@@ -1810,7 +1810,7 @@
     "message": "Don't see your token?"
   },
   "mobileSyncWarning": {
-    "message": "The 'Sync with extension' feature is temporarily disabled. If you want to use your extension wallet on MetaMask mobile, then on your mobile app: go back to the wallet setup options and select the 'Import with Secret Recovery Phrase' option. Use your extension wallet's secret phrase to then import your wallet into mobile."
+    "message": "The 'Sync with extension' feature is temporarily disabled. If you want to use your extension wallet on Sparrow mobile, then on your mobile app: go back to the wallet setup options and select the 'Import with Secret Recovery Phrase' option. Use your extension wallet's secret phrase to then import your wallet into mobile."
   },
   "mustSelectOne": {
     "message": "Must select at least 1 token."
@@ -1930,7 +1930,7 @@
     "message": "New! NFT detection"
   },
   "newNFTsDetectedInfo": {
-    "message": "Allow MetaMask to automatically detect NFTs from Opensea and display in your MetaMask wallet."
+    "message": "Allow Sparrow to automatically detect NFTs from Opensea and display in your Sparrow wallet."
   },
   "newNetworkAdded": {
     "message": "“$1” was successfully added!"
@@ -2026,14 +2026,14 @@
   },
   "notifications1Title": {
     "message": "Swapping on mobile is here!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use Sparrow Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "Read more",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Stay up to date on MetaMask security best practices and get the latest security tips from official MetaMask support.",
+    "message": "Stay up to date on Sparrow security best practices and get the latest security tips from official Sparrow support.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -2045,7 +2045,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Get the best prices on token swaps right inside your wallet. MetaMask now connects you to multiple decentralized exchange aggregators and professional market makers on Binance Smart Chain.",
+    "message": "Get the best prices on token swaps right inside your wallet. Sparrow now connects you to multiple decentralized exchange aggregators and professional market makers on Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -2057,11 +2057,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "As of Chrome version 91, the API that enabled our Ledger support (U2F) no longer supports hardware wallets. MetaMask has implemented a new Ledger Live support that allows you to continue to connect to your Ledger device via the Ledger Live desktop app.",
+    "message": "As of Chrome version 91, the API that enabled our Ledger support (U2F) no longer supports hardware wallets. Sparrow has implemented a new Ledger Live support that allows you to continue to connect to your Ledger device via the Ledger Live desktop app.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "When interacting with your Ledger account in MetaMask, a new tab will open and you will be asked to open the Ledger Live app.  Once the app opens, you'll be asked to allow a WebSocket connection to your MetaMask account.  That's all!",
+    "message": "When interacting with your Ledger account in MetaMask, a new tab will open and you will be asked to open the Ledger Live app.  Once the app opens, you'll be asked to allow a WebSocket connection to your Sparrow account.  That's all!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -2089,7 +2089,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced Settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "As of MetaMask v10.4.0, you no longer need Ledger Live to connect your Ledger device to MetaMask.",
+    "message": "As of Sparrow v10.4.0, you no longer need Ledger Live to connect your Ledger device to MetaMask.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2146,10 +2146,10 @@
     "message": "Click the browser extension icon"
   },
   "onboardingPinExtensionDescription": {
-    "message": "Pin MetaMask on your browser so it's accessible and easy to view transaction confirmations."
+    "message": "Pin Sparrow on your browser so it's accessible and easy to view transaction confirmations."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "You can open MetaMask by clicking on the extension and access your wallet with 1 click."
+    "message": "You can open Sparrow by clicking on the extension and access your wallet with 1 click."
   },
   "onboardingPinExtensionDescription3": {
     "message": "Click browser extension icon to access it instantly"
@@ -2164,7 +2164,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Your MetaMask install is complete!"
+    "message": "Your Sparrow install is complete!"
   },
   "onboardingReturnNotice": {
     "message": "\"$1\" will close this tab and direct back to $2",
@@ -2185,8 +2185,8 @@
     "message": "Only connect with sites you trust."
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "Open MetaMask in full screen to connect your ledger via WebHID.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "message": "Open Sparrow in full screen to connect your ledger via WebHID.",
+    "description": "Shown to the user on the confirm screen when they are viewing Sparrow in a popup window but need to connect their ledger via webhid."
   },
   "openSourceCode": {
     "message": "Check the source code"
@@ -2210,7 +2210,7 @@
     "message": "Participate in MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participate in MetaMetrics to help us make MetaMask better"
+    "message": "Participate in MetaMetrics to help us make Sparrow better"
   },
   "password": {
     "message": "Password"
@@ -2219,10 +2219,10 @@
     "message": "Password not long enough"
   },
   "passwordSetupDetails": {
-    "message": "This password will unlock your MetaMask wallet only on this device. MetaMask can not recover this password."
+    "message": "This password will unlock your Sparrow wallet only on this device. Sparrow can not recover this password."
   },
   "passwordTermsWarning": {
-    "message": "I understand that MetaMask cannot recover this password for me. $1"
+    "message": "I understand that Sparrow cannot recover this password for me. $1"
   },
   "passwordsDontMatch": {
     "message": "Passwords Don't Match"
@@ -2369,7 +2369,7 @@
     "message": "Never share your Secret Recovery Phrase with anyone"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "The MetaMask team will never ask for your Secret Recovery Phrase"
+    "message": "The Sparrow team will never ask for your Secret Recovery Phrase"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Your Secret Recovery Phrase controls all of your accounts."
@@ -2841,7 +2841,7 @@
     "message": "Make sure your Lattice1 is ready to connect"
   },
   "step1LatticeWalletMsg": {
-    "message": "You can connect MetaMask to your Lattice1 device once it is set up and online. Unlock your device and have your Device ID ready. For more on using hardware wallets, $1",
+    "message": "You can connect Sparrow to your Lattice1 device once it is set up and online. Unlock your device and have your Device ID ready. For more on using hardware wallets, $1",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -2937,7 +2937,7 @@
     "message": "Edit limit"
   },
   "swapEnableDescription": {
-    "message": "This is required and gives MetaMask permission to swap your $1.",
+    "message": "This is required and gives Sparrow permission to swap your $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -2987,14 +2987,14 @@
     "message": "Gas fees on the previous screen are split between these two transactions."
   },
   "swapGasFeesSummary": {
-    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. MetaMask does not profit from gas fees.",
+    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. Sparrow does not profit from gas fees.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Slippage amount is very high."
   },
   "swapIncludesMMFee": {
-    "message": "Includes a $1% MetaMask fee.",
+    "message": "Includes a $1% Sparrow fee.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -3187,7 +3187,7 @@
     "message": "View in activity"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "This will switch the selected network within MetaMask to a previously added network:"
+    "message": "This will switch the selected network within Sparrow to a previously added network:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Allow this site to switch the network?"
@@ -3223,16 +3223,16 @@
     "message": "Make sure nobody else is looking at your screen when you scan this code"
   },
   "syncWithMobileComplete": {
-    "message": "Your data has been synced successfully. Enjoy the MetaMask mobile app!"
+    "message": "Your data has been synced successfully. Enjoy the Sparrow mobile app!"
   },
   "syncWithMobileDesc": {
-    "message": "You can sync your accounts and information with your mobile device. Open the MetaMask mobile app, go to \"Settings\" and tap on \"Sync from Browser Extension\""
+    "message": "You can sync your accounts and information with your mobile device. Open the Sparrow mobile app, go to \"Settings\" and tap on \"Sync from Browser Extension\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "If you just open the MetaMask Mobile app for the first time, just follow the steps in your phone."
+    "message": "If you just open the Sparrow Mobile app for the first time, just follow the steps in your phone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scan this code with your MetaMask mobile app"
+    "message": "Scan this code with your Sparrow mobile app"
   },
   "syncWithMobileTitle": {
     "message": "Sync with mobile"
@@ -3357,7 +3357,7 @@
     "message": "Gas fees are set by the network and fluctuate based on network traffic and transaction complexity."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. MetaMask does not profit from gas fees."
+    "message": "Gas fees are paid to crypto miners who process transactions on the $1 network. Sparrow does not profit from gas fees."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Amount + gas fee"
@@ -3449,11 +3449,11 @@
     "message": "Transaction insights not supported for this contract at this time."
   },
   "typePassword": {
-    "message": "Type your MetaMask password"
+    "message": "Type your Sparrow password"
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect Sparrow to Ledger devices."
   },
   "unapproved": {
     "message": "Unapproved"
@@ -3522,7 +3522,7 @@
     "message": "Use Token Detection"
   },
   "useTokenDetectionDescription": {
-    "message": "We use third-party APIs to detect and display new tokens sent to your wallet. Turn off if you don’t want MetaMask to pull data from those services."
+    "message": "We use third-party APIs to detect and display new tokens sent to your wallet. Turn off if you don’t want Sparrow to pull data from those services."
   },
   "usedByClients": {
     "message": "Used by a variety of different clients"
@@ -3622,7 +3622,7 @@
     "message": "Explore decentralized apps"
   },
   "welcomeLoginDescription": {
-    "message": "Use your MetaMask to login to decentralized apps - no signup needed."
+    "message": "Use your Sparrow to login to decentralized apps - no signup needed."
   },
   "welcomeLoginTitle": {
     "message": "Say hello to your wallet"
@@ -3631,7 +3631,7 @@
     "message": "Let's get started"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Trusted by millions, MetaMask is a secure wallet making the world of web3 accessible to all."
+    "message": "Trusted by millions, Sparrow is a secure wallet making the world of web3 accessible to all."
   },
   "whatsNew": {
     "message": "What's new",

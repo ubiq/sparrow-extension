@@ -441,7 +441,7 @@ export function isAddressLedger(state, address) {
 }
 
 /**
- * Given the redux state object, returns a boolean indicating whether the user has any Ledger accounts added to MetaMask (i.e. Ledger keyrings
+ * Given the redux state object, returns a boolean indicating whether the user has any Ledger accounts added to Sparrow (i.e. Ledger keyrings
  * in state)
  *
  * @param {Object} state - the redux state object

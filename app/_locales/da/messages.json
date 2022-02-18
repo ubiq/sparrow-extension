@@ -103,7 +103,7 @@
     "message": "Timer for automatisk udlogning (minutter)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Indstil den passive tid i minutter, før MetaMask automatisk logger dig ud"
+    "message": "Indstil den passive tid i minutter, før Sparrow automatisk logger dig ud"
   },
   "average": {
     "message": "Gennemsnit"
@@ -115,7 +115,7 @@
     "message": "Tilbage til Alle"
   },
   "backupApprovalInfo": {
-    "message": "Den hemmelige kode er påkrævet for at gendanne din pung, hvis du mister din enhed, glemmer dit kodeord, er nødt til at geninstallere MetaMask eller ønsker adgang til din pung fra en anden enhed."
+    "message": "Den hemmelige kode er påkrævet for at gendanne din pung, hvis du mister din enhed, glemmer dit kodeord, er nødt til at geninstallere Sparrow eller ønsker adgang til din pung fra en anden enhed."
   },
   "backupApprovalNotice": {
     "message": "Sikkerhedskopiér din Hemmelige Gendannelseskode for at holde din tegnebog og dine penge sikre."
@@ -164,7 +164,7 @@
     "message": "Kæde-ID"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Du skal bruge MetaMask i Google Chrome for at forbinde med din Hardware Wallet."
+    "message": "Du skal bruge Sparrow i Google Chrome for at forbinde med din Hardware Wallet."
   },
   "clickToRevealSeed": {
     "message": "Klik her for at se hemmelige ord"
@@ -323,7 +323,7 @@
     "message": "Del aldrig frasen med nogen."
   },
   "endOfFlowMessage5": {
-    "message": "Vær varsom med phishing! MetaMask vil aldrig spontant bede om din seedfrase."
+    "message": "Vær varsom med phishing! Sparrow vil aldrig spontant bede om din seedfrase."
   },
   "endOfFlowMessage6": {
     "message": "Hvis du får brug for at lave en backup af din seedfrase igen, kan du finde det under Indstillinger -> Sikkerhed."
@@ -646,7 +646,7 @@
     "message": "Deltag i MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Deltag i MetaMetrics for at hjælpe os med at gøre MetaMask bedre"
+    "message": "Deltag i MetaMetrics for at hjælpe os med at gøre Sparrow bedre"
   },
   "password": {
     "message": "Adgangskode"

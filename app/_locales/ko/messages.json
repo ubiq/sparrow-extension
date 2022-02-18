@@ -115,7 +115,7 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "이렇게 하면 MetaMask 내에서 이 네트워크를 사용할 수 있습니다."
+    "message": "이렇게 하면 Sparrow 내에서 이 네트워크를 사용할 수 있습니다."
   },
   "addEthereumChainConfirmationRisks": {
     "message": "MetaMask는 맞춤형 네트워크를 검증하지 않습니다."
@@ -325,7 +325,7 @@
     "message": "수백만 명이 신뢰하는 MetaMask(메타마스크)는 모든 사람이 web3의 세계에 접근할 수 있도록 하는 안전한 지갑입니다."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "이 버전을 사용하여 출시되기 전에 예정된 기능을 테스트해보세요. 귀하의 사용 및 피드백은 최고의 MetaMask 버전 구축에 도움이 됩니다. MetaMask 베타 사용은 표준 $1 및 $2 적용 대상입니다. 베타에서는 버그의 위험이 증가할 수 있습니다. 계속 진행하시면 이러한 위험과 당사 약관 및 베타 약관에 명시된 위험을 인정하고 수락하는 것입니다.",
+    "message": "이 버전을 사용하여 출시되기 전에 예정된 기능을 테스트해보세요. 귀하의 사용 및 피드백은 최고의 Sparrow 버전 구축에 도움이 됩니다. Sparrow 베타 사용은 표준 $1 및 $2 적용 대상입니다. 베타에서는 버그의 위험이 증가할 수 있습니다. 계속 진행하시면 이러한 위험과 당사 약관 및 베타 약관에 명시된 위험을 인정하고 수락하는 것입니다.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -381,7 +381,7 @@
     "message": "Wyre로 ETH 구매"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre를 사용하면 체크카드를 이용하여 ETH를 MetaMask 계정에 바로 예치할 수 있습니다."
+    "message": "Wyre를 사용하면 체크카드를 이용하여 ETH를 Sparrow 계정에 바로 예치할 수 있습니다."
   },
   "bytes": {
     "message": "바이트"
@@ -657,7 +657,7 @@
     "message": "데이터"
   },
   "dataBackupFoundInfo": {
-    "message": "일부 계정 데이터가 이전의 MetaMask 설치 도중에 백업되었습니다. 여기에는 설정, 연락처, 토큰이 포함될 수 있습니다. 지금 이 데이터를 복구할까요?"
+    "message": "일부 계정 데이터가 이전의 Sparrow 설치 도중에 백업되었습니다. 여기에는 설정, 연락처, 토큰이 포함될 수 있습니다. 지금 이 데이터를 복구할까요?"
   },
   "dataHex": {
     "message": "16진수"
@@ -1277,7 +1277,7 @@
     "message": "비밀 복구 구문을 사용해 가져오기"
   },
   "importAccountMsg": {
-    "message": "가져온 계정은 본래 생성한 MetaMask 계정 비밀 복구 구문과 연결하지 못합니다. 가져온 계정에 대해 자세히 알아보기"
+    "message": "가져온 계정은 본래 생성한 Sparrow 계정 비밀 복구 구문과 연결하지 못합니다. 가져온 계정에 대해 자세히 알아보기"
   },
   "importAccountSeedPhrase": {
     "message": "비밀 복구 구문으로 계정 가져오기"
@@ -1634,7 +1634,7 @@
     "message": "당사 제품의 가용성 향상을 위해 기본적인 사용 데이터를 수집하고자 합니다. 이 측정항목은..."
   },
   "metametricsTitle": {
-    "message": "6백만 명 이상의 사용자와 함께 MetaMask 기능 향상에 동참하세요."
+    "message": "6백만 명 이상의 사용자와 함께 Sparrow 기능 향상에 동참하세요."
   },
   "mismatchedChain": {
     "message": "이 체인 ID의 네트워크 세부 정보가 기록과 일치하지 않습니다. 진행하기 전에 $1을(를) 권장합니다.",
@@ -1651,7 +1651,7 @@
     "message": "토큰이 보이지 않나요?"
   },
   "mobileSyncWarning": {
-    "message": "'확장 프로그램과 동기화' 기능이 일시적으로 비활성화됩니다. MetaMask 모바일에서 확장 지갑을 사용하려면 모바일 앱에서 지갑 설정 옵션으로 돌아가 '비밀 복구 구문 가져오기' 옵션을 선택하세요. 확장 지갑의 비밀 구문을 사용하시면 지갑을 모바일로 가져올 수 있습니다."
+    "message": "'확장 프로그램과 동기화' 기능이 일시적으로 비활성화됩니다. Sparrow 모바일에서 확장 지갑을 사용하려면 모바일 앱에서 지갑 설정 옵션으로 돌아가 '비밀 복구 구문 가져오기' 옵션을 선택하세요. 확장 지갑의 비밀 구문을 사용하시면 지갑을 모바일로 가져올 수 있습니다."
   },
   "mustSelectOne": {
     "message": "토큰을 1개 이상 선택해야 합니다."
@@ -1761,7 +1761,7 @@
     "message": "신규! NFT 감지"
   },
   "newNFTsDetectedInfo": {
-    "message": "MetaMask가 Opensea에서 자동으로 NFT를 감지하고 MetaMask 지갑에 표시하도록 허용합니다."
+    "message": "MetaMask가 Opensea에서 자동으로 NFT를 감지하고 Sparrow 지갑에 표시하도록 허용합니다."
   },
   "newNetworkAdded": {
     "message": "“$1”가 성공적으로 추가되었습니다!"
@@ -1854,14 +1854,14 @@
   },
   "notifications1Title": {
     "message": "모바일 스왑은 여기서 진행됩니다!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use Sparrow Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "더 읽어보기",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "MetaMask 보안 관련 최신 모범 사례를 알아보고 공식 MetaMask 지원에서 최신 보안 팁을 확인하세요.",
+    "message": "MetaMask 보안 관련 최신 모범 사례를 알아보고 공식 Sparrow 지원에서 최신 보안 팁을 확인하세요.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1889,7 +1889,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "MetaMask에서 Ledger 계정을 이용하려면 새 탭이 열리고 Ledger Live 앱을 열라는 메시지가 표시됩니다.  앱이 열리면 MetaMask 계정에 대한 WebSocket 연결을 허용하라는 메시지가 표시됩니다. 그러면 성공입니다!",
+    "message": "MetaMask에서 Ledger 계정을 이용하려면 새 탭이 열리고 Ledger Live 앱을 열라는 메시지가 표시됩니다.  앱이 열리면 Sparrow 계정에 대한 WebSocket 연결을 허용하라는 메시지가 표시됩니다. 그러면 성공입니다!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -2014,7 +2014,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "전체 화면에서 MetaMask를 열어 WebHID를 통해 Ledger를 연결합니다.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing Sparrow in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
     "message": "옵션"
@@ -2035,7 +2035,7 @@
     "message": "MetaMetrics에 참여"
   },
   "participateInMetaMetricsDescription": {
-    "message": "MetaMetrics에 참여하여 MetaMask 개선에 도움을 주세요."
+    "message": "MetaMetrics에 참여하여 Sparrow 개선에 도움을 주세요."
   },
   "password": {
     "message": "비밀번호"
@@ -2044,7 +2044,7 @@
     "message": "비밀번호가 짧습니다."
   },
   "passwordSetupDetails": {
-    "message": "이 비밀번호는 이 기기에서만 MetaMask 지갑의 잠금을 해제합니다. MetaMask는 이 비밀번호를 복구할 수 없습니다."
+    "message": "이 비밀번호는 이 기기에서만 Sparrow 지갑의 잠금을 해제합니다. MetaMask는 이 비밀번호를 복구할 수 없습니다."
   },
   "passwordTermsWarning": {
     "message": "MetaMask가 이 비밀번호를 복구할 수 없음을 이해합니다. $1"
@@ -2740,7 +2740,7 @@
     "message": "슬리패지 금액이 아주 큽니다."
   },
   "swapIncludesMMFee": {
-    "message": "$1%의 MetaMask 요금이 포함됩니다.",
+    "message": "$1%의 Sparrow 요금이 포함됩니다.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -2969,10 +2969,10 @@
     "message": "이 코드를 스캔할 때는 다른 사람이 화면을 보지 못하게 하세요"
   },
   "syncWithMobileComplete": {
-    "message": "데이터가 동기화되었습니다. MetaMask 모바일 앱을 마음껏 이용하세요!"
+    "message": "데이터가 동기화되었습니다. Sparrow 모바일 앱을 마음껏 이용하세요!"
   },
   "syncWithMobileDesc": {
-    "message": "계정과 정보를 모바일 장치와 동기화할 수 있습니다. MetaMask 모바일 앱을 열고 \"설정\"으로 이동하여 \"브라우저 확장에서 동기화\"를 탭합니다."
+    "message": "계정과 정보를 모바일 장치와 동기화할 수 있습니다. Sparrow 모바일 앱을 열고 \"설정\"으로 이동하여 \"브라우저 확장에서 동기화\"를 탭합니다."
   },
   "syncWithMobileDescNewUsers": {
     "message": "MetaMask 모바일 앱을 처음 여는 경우라면 휴대폰에 나타나는 지시사항을 따르세요."
@@ -3187,7 +3187,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect Sparrow to Ledger devices."
   },
   "unapproved": {
     "message": "승인되지 않음"

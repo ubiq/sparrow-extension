@@ -103,7 +103,7 @@
     "message": "Timer för automatisk utloggning (minuter)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Ställ in efter hur lång tids inaktivitet som MetaMask automatiskt loggar ut"
+    "message": "Ställ in efter hur lång tids inaktivitet som Sparrow automatiskt loggar ut"
   },
   "average": {
     "message": "Genomsnitt"
@@ -115,7 +115,7 @@
     "message": "Tillbaka till Alla"
   },
   "backupApprovalInfo": {
-    "message": "Den hemliga koden krävs för att komma åt din plånbok ifall du tappar bort din enhet, glömmer ditt lösenord, behöver installera om MetaMask eller om du vill komma åt din plånbok på en annan enhet."
+    "message": "Den hemliga koden krävs för att komma åt din plånbok ifall du tappar bort din enhet, glömmer ditt lösenord, behöver installera om Sparrow eller om du vill komma åt din plånbok på en annan enhet."
   },
   "backupApprovalNotice": {
     "message": "Säkerhetskopiera din hemliga återställningskod för att se till att din plånbok och dina tillgångar är säkra."
@@ -158,7 +158,7 @@
     "message": "Avbruten"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Du måste använda MetaMask på Google Chrome för att ansluta till din hårdvaruplånbok."
+    "message": "Du måste använda Sparrow på Google Chrome för att ansluta till din hårdvaruplånbok."
   },
   "clickToRevealSeed": {
     "message": "Klicka här för att visa hemliga ord"
@@ -317,7 +317,7 @@
     "message": "Dela aldrig frasen med någon."
   },
   "endOfFlowMessage5": {
-    "message": "Se upp för nätfiske! MetaMask kommer aldrig att oväntat fråga om din seed phrase."
+    "message": "Se upp för nätfiske! Sparrow kommer aldrig att oväntat fråga om din seed phrase."
   },
   "endOfFlowMessage6": {
     "message": "Om du behöver säkerhetskopiera din nyckelfras igen, kan du hitta den i Inställningar -> Säkerhet"
@@ -649,7 +649,7 @@
     "message": "Delta i MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Delta i MetaMetrics för att hjälpa oss göra MetaMask bättre"
+    "message": "Delta i MetaMetrics för att hjälpa oss göra Sparrow bättre"
   },
   "password": {
     "message": "Lösenord"
@@ -927,10 +927,10 @@
     "message": "Du kan nu synka dina konton och din information med din mobil-enhet. Öppna MetaMasks mobil-app, gå till \"Inställningar\" och tryck på \"Synka från webbläsartillägg\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Om du öppnar MetaMask mobilapplikation för första gången behöver du bara följa stegen som visas i telefonen."
+    "message": "Om du öppnar Sparrow mobilapplikation för första gången behöver du bara följa stegen som visas i telefonen."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Skanna den här koden med din MetaMask mobilapplikation"
+    "message": "Skanna den här koden med din Sparrow mobilapplikation"
   },
   "syncWithMobileTitle": {
     "message": "Synka med mobil"

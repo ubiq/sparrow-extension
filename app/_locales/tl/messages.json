@@ -118,7 +118,7 @@
     "message": "Magpapahintulot ito sa network na ito na gamitin sa loob ng MetaMask."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "Ang MetaMask ay hindi nag-ve-verify ng mga custom na network."
+    "message": "Ang Sparrow ay hindi nag-ve-verify ng mga custom na network."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Alamin ang tungkol sa $1.",
@@ -325,7 +325,7 @@
     "message": "Ang Metamask na pinagkakatiwalaan ng milyun-milyon ay isang ligtas na wallet na ginagawang accessible ang mundo ng web3 para sa lahat."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Gamitin ang bersyong ito para subukan ang mga paparating na feature bago ilabas ang mga ito. Ang iyong paggamit at feedback ay nakakatulong sa amin na bumuo ng posibleng pinakamahusay na bersyon ng MetaMask. Ang paggamit mo ng MetaMask Beta ay napapailalim sa aming karaniwang $1 gayundin sa aming $2. Bilang Beta, maaaring tumaas ang panganib ng mga bug. Sa pagpapatuloy, tinatanggap at kinikilala mo ang mga panganib na ito, gayundin ang mga panganib na makikita sa aming Mga Tuntunin at Mga Tuntunin ng Beta.",
+    "message": "Gamitin ang bersyong ito para subukan ang mga paparating na feature bago ilabas ang mga ito. Ang iyong paggamit at feedback ay nakakatulong sa amin na bumuo ng posibleng pinakamahusay na bersyon ng MetaMask. Ang paggamit mo ng Sparrow Beta ay napapailalim sa aming karaniwang $1 gayundin sa aming $2. Bilang Beta, maaaring tumaas ang panganib ng mga bug. Sa pagpapatuloy, tinatanggap at kinikilala mo ang mga panganib na ito, gayundin ang mga panganib na makikita sa aming Mga Tuntunin at Mga Tuntunin ng Beta.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -335,10 +335,10 @@
     "message": "Mga Tuntunin"
   },
   "betaMetamaskVersion": {
-    "message": "Bersyon ng MetaMask Beta"
+    "message": "Bersyon ng Sparrow Beta"
   },
   "betaWelcome": {
-    "message": "Welcome sa MetaMask Beta"
+    "message": "Welcome sa Sparrow Beta"
   },
   "blockExplorerAccountAction": {
     "message": "Account",
@@ -369,7 +369,7 @@
     "message": "Bumuo ng iyong listahan ng contact"
   },
   "builtAroundTheWorld": {
-    "message": "Ang MetaMask ay dinisenyo at itinatag sa buong mundo."
+    "message": "Ang Sparrow ay dinisenyo at itinatag sa buong mundo."
   },
   "busy": {
     "message": "Busy"
@@ -381,7 +381,7 @@
     "message": "Bumili ng ETH gamit ang Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Nagbibigay-daan sa iyo ang Wyre na gumamit ng debit card para mag-deposit ng ETH sa mismong MetaMask account mo."
+    "message": "Nagbibigay-daan sa iyo ang Wyre na gumamit ng debit card para mag-deposit ng ETH sa mismong Sparrow account mo."
   },
   "bytes": {
     "message": "Bytes"
@@ -417,7 +417,7 @@
     "message": "Ang Chain ID na ito ay kasalukuyang ginagamit ng $1 network."
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Kailangan mong gamitin ang MetaMask sa Google Chrome para maikonekta sa iyong Hardware Wallet."
+    "message": "Kailangan mong gamitin ang Sparrow sa Google Chrome para maikonekta sa iyong Hardware Wallet."
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "Mag-click dito upang ikonekta ang iyong Ledger sa pamamagitan ng WebHID",
@@ -499,7 +499,7 @@
     "message": "Mayroon kang 1 account na nakakonekta sa site na ito."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "Ang MetaMask ay hindi nakakonekta sa site na ito. Para kumonekta sa isang web3 site, hanapin ang button na kumonekta sa site nila."
+    "message": "Ang Sparrow ay hindi nakakonekta sa site na ito. Para kumonekta sa isang web3 site, hanapin ang button na kumonekta sa site nila."
   },
   "connectedSites": {
     "message": "Mga nakakonektang site"
@@ -918,7 +918,7 @@
     "message": "Huwag kailanmang ibahagi ang parirala sa sinuman."
   },
   "endOfFlowMessage5": {
-    "message": "Mag-ingat sa phishing! Hindi kailanman basta na lang hihingin ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Mag-ingat sa phishing! Hindi kailanman basta na lang hihingin ng Sparrow ang iyong Secret Recovery Phrase."
   },
   "endOfFlowMessage6": {
     "message": "Kung kailangan mong i-back up ulit ang iyong Secret Recovery Phrase, makikita mo ito sa Mga Setting -> Seguridad."
@@ -928,7 +928,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "Hindi mababawi ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Hindi mababawi ng Sparrow ang iyong Secret Recovery Phrase."
   },
   "endOfFlowMessage9": {
     "message": "Matuto pa."
@@ -1277,7 +1277,7 @@
     "message": "i-import gamit ang Secret Recovery Phrase"
   },
   "importAccountMsg": {
-    "message": "Ang mga na-import na account ay hindi mauugnay sa orihinal mong nagawang Secret Recovery Phrase ng MetaMask account. Matuto pa tungkol sa mga na-import account"
+    "message": "Ang mga na-import na account ay hindi mauugnay sa orihinal mong nagawang Secret Recovery Phrase ng Sparrow account. Matuto pa tungkol sa mga na-import account"
   },
   "importAccountSeedPhrase": {
     "message": "Mag-import ng account gamit ang Secret Recovery Phrase"
@@ -1322,7 +1322,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "Hindi makakonekta ang MetaMask sa blockchain host. I-review ang posibleng mga dahilan $1.",
+    "message": "Hindi makakonekta ang Sparrow sa blockchain host. I-review ang posibleng mga dahilan $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1582,7 +1582,7 @@
     "message": "Ikinokonekta ka sa Ethereum at sa Decentralized Web."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "Kasalukuyang minementina ang MetaMask Swaps. Bumalik sa ibang pagkakataon."
+    "message": "Kasalukuyang minementina ang Sparrow Swaps. Bumalik sa ibang pagkakataon."
   },
   "metamaskVersion": {
     "message": "Bersyon ng MetaMask"
@@ -1598,7 +1598,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "Ang MetaMask ay.."
+    "message": "Ang Sparrow ay.."
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "Huwag mangolekta ng mga key, address, transaksyon, balanse, hash, o anumang personal na impormasyon"
@@ -1628,7 +1628,7 @@
     "message": "Tulungan Kaming Mapahusay ang MetaMask"
   },
   "metametricsOptInDescription": {
-    "message": "Gustong kunin ng MetaMask ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ethereum ecosystem."
+    "message": "Gustong kunin ng Sparrow ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ethereum ecosystem."
   },
   "metametricsOptInDescription2": {
     "message": "Nais naming mangalap ng pangunahing data ng paggamit upang mapabuti ang kakayahang magamit ang aming produkto. Ang mga sukatan na ito ay..."
@@ -1651,7 +1651,7 @@
     "message": "Hindi makita ang token mo?"
   },
   "mobileSyncWarning": {
-    "message": "Ang feature na 'I-sync gamit ang extension' ay pansamantalang hindi gumagana. Kung gusto mong gamitin ang iyong extension wallet sa MetaMask mobile, pagkatapos ay sa iyong mobile app: bumalik sa mga opsyon sa pag-setup ng wallet at piliin ang opsyong 'Mag-import gamit ang Secret Recovery Phrase'. Gamitin ang lihim na parirala ng iyong extension wallet upang pagkatapos ay i-import ang iyong wallet sa mobile."
+    "message": "Ang feature na 'I-sync gamit ang extension' ay pansamantalang hindi gumagana. Kung gusto mong gamitin ang iyong extension wallet sa Sparrow mobile, pagkatapos ay sa iyong mobile app: bumalik sa mga opsyon sa pag-setup ng wallet at piliin ang opsyong 'Mag-import gamit ang Secret Recovery Phrase'. Gamitin ang lihim na parirala ng iyong extension wallet upang pagkatapos ay i-import ang iyong wallet sa mobile."
   },
   "mustSelectOne": {
     "message": "Dapat pumili ng kahit 1 token lang."
@@ -1761,7 +1761,7 @@
     "message": "Bago! Pag-detect ng NFT"
   },
   "newNFTsDetectedInfo": {
-    "message": "Payagan ang MetaMask na awtomatikong i-detect ang mga NFT mula sa Opensea at ipakita sa iyong MetaMask wallet."
+    "message": "Payagan ang Sparrow na awtomatikong i-detect ang mga NFT mula sa Opensea at ipakita sa iyong Sparrow wallet."
   },
   "newNetworkAdded": {
     "message": "Ang “$1” matagumpay na naidagdag!"
@@ -1849,19 +1849,19 @@
     "message": "Hindi Sapat ang Gas"
   },
   "notifications1Description": {
-    "message": "Ang mga user ng MetaMask Mobile ay maaari na ngayong mag-swap ng mga token sa loob ng kanilang mobile wallet. I-scan ang QR code para makuha ang mobile app at magsimulang mag-swap.",
+    "message": "Ang mga user ng Sparrow Mobile ay maaari na ngayong mag-swap ng mga token sa loob ng kanilang mobile wallet. I-scan ang QR code para makuha ang mobile app at magsimulang mag-swap.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
     "message": "Narito ang pag-swap sa mobile!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use Sparrow Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "Magbasa pa",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Manatiling may alam sa pinakamagagandang kasanayan sa seguridad ng MetaMask at kunin ang pinakabagong tips ng seguridad mula sa opisyal na suporta ng MetaMask.",
+    "message": "Manatiling may alam sa pinakamagagandang kasanayan sa seguridad ng Sparrow at kunin ang pinakabagong tips ng seguridad mula sa opisyal na suporta ng MetaMask.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1873,7 +1873,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Kunin ang pinakamagagandang papremyo sa pag-swap ng token sa loob ng iyong wallet. Ikinokonekta ka na ngayon ng MetaMask sa maraming decentralized exchange aggregator at mga propesyonal na market maker sa Binance Smart Chain.",
+    "message": "Kunin ang pinakamagagandang papremyo sa pag-swap ng token sa loob ng iyong wallet. Ikinokonekta ka na ngayon ng Sparrow sa maraming decentralized exchange aggregator at mga propesyonal na market maker sa Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -1885,11 +1885,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Simula sa Chrome version 91, ang API na nagpapagana ng aming Ledger support (U2F) ay hindi na sumusuporta sa mga hardware wallet. Ang MetaMask ay nagpatupad ng bagong Ledger Live support na nagpapahintulot sa iyo na magpatuloy na kumonekta sa iyong Ledger device sa pamamgitan ng Ledger Live desktop app.",
+    "message": "Simula sa Chrome version 91, ang API na nagpapagana ng aming Ledger support (U2F) ay hindi na sumusuporta sa mga hardware wallet. Ang Sparrow ay nagpatupad ng bagong Ledger Live support na nagpapahintulot sa iyo na magpatuloy na kumonekta sa iyong Ledger device sa pamamgitan ng Ledger Live desktop app.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Kapag ginagamit ang iyong Ledger account sa MetaMask, ang bagong tab ay magbubukas at hihilingin sa iyo ng buksan ang Ledger Live app.  Kapag nabuksan na ang app, hihilingin sa iyo na payagan ang koneksyon ng WebSocket sa iyong MetaMask account.  Ganun lang!",
+    "message": "Kapag ginagamit ang iyong Ledger account sa MetaMask, ang bagong tab ay magbubukas at hihilingin sa iyo ng buksan ang Ledger Live app.  Kapag nabuksan na ang app, hihilingin sa iyo na payagan ang koneksyon ng WebSocket sa iyong Sparrow account.  Ganun lang!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1901,7 +1901,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "Isinama ng MetaMask v10.1.0 ang bagong support para sa mga transaksyong EIP-1559 kapag gumagamit ng mga Ledger device.",
+    "message": "Isinama ng Sparrow v10.1.0 ang bagong support para sa mga transaksyong EIP-1559 kapag gumagamit ng mga Ledger device.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -1917,7 +1917,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced Settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Para sa MetaMask v10.4.0, hindi mo na kailangang ikonekta ang Ledger Live sa iyong Ledger device sa MetaMask.",
+    "message": "Para sa Sparrow v10.4.0, hindi mo na kailangang ikonekta ang Ledger Live sa iyong Ledger device sa MetaMask.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -1974,10 +1974,10 @@
     "message": "Mag-click sa con ng browser extension"
   },
   "onboardingPinExtensionDescription": {
-    "message": "I-pin ang MetaMask sa iyong browser para madali itong ma-access at madaling makita ang mga kumpirmasyon ng transaksyon."
+    "message": "I-pin ang Sparrow sa iyong browser para madali itong ma-access at madaling makita ang mga kumpirmasyon ng transaksyon."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "Maaari mong buksan ang MetaMask sa pamamagitan ng pag-click sa extension at pag-accesss sa wallet mo sa 1 click lang."
+    "message": "Maaari mong buksan ang Sparrow sa pamamagitan ng pag-click sa extension at pag-accesss sa wallet mo sa 1 click lang."
   },
   "onboardingPinExtensionDescription3": {
     "message": "Mag-click sa icon ng browser extension para agad itong ma-access"
@@ -1992,7 +1992,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Ang pag-install ng iyong MetaMask ay kumpleto na!"
+    "message": "Ang pag-install ng iyong Sparrow ay kumpleto na!"
   },
   "onboardingReturnNotice": {
     "message": "Isasara ng \"$1\" ang tab na ito at ididirekta ka pabalik sa $2",
@@ -2013,8 +2013,8 @@
     "message": "Kumonekta lang sa mga site na pinagkakatiwalaan mo."
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "Buksan ang MetaMask sa buong screen para ikonekta ang ledger mo sa pamamagitan ng WebHID.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "message": "Buksan ang Sparrow sa buong screen para ikonekta ang ledger mo sa pamamagitan ng WebHID.",
+    "description": "Shown to the user on the confirm screen when they are viewing Sparrow in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
     "message": "Opsyonal"
@@ -2044,10 +2044,10 @@
     "message": "Hindi sapat ang haba ng password"
   },
   "passwordSetupDetails": {
-    "message": "Ang password na ito ay magbubukas lamang ng iyong MetaMask wallet sa device na ito. Hindi matatakpan ng MetaMask ang password na ito."
+    "message": "Ang password na ito ay magbubukas lamang ng iyong Sparrow wallet sa device na ito. Hindi matatakpan ng Sparrow ang password na ito."
   },
   "passwordTermsWarning": {
-    "message": "Nauunawaan ko na hindi matatakpan ng MetaMask ang password na ito para sa akin. $1"
+    "message": "Nauunawaan ko na hindi matatakpan ng Sparrow ang password na ito para sa akin. $1"
   },
   "passwordsDontMatch": {
     "message": "Hindi Magkatugma ang Mga Password"
@@ -2167,7 +2167,7 @@
     "message": "Huwag kailanman ibahagi ang iyong Secret Recovery Phrase sa sinuman"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "Hindi kailanman hihingin ng MetaMask team ang iyong Secret Recovery Phrase"
+    "message": "Hindi kailanman hihingin ng Sparrow team ang iyong Secret Recovery Phrase"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Kinokontrol ng iyong Secret Recovery Phrase ang lahat ng iyong account."
@@ -2431,7 +2431,7 @@
     "message": "Magtakda ng advanced privacy settings"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "Ginagamit ng MetaMask ang mga pinagkakatiwalaang serbisyo ng third-party na ito para mapahusay ang kakayahang magamit at kaligtasan ng produkto."
+    "message": "Ginagamit ng Sparrow ang mga pinagkakatiwalaang serbisyo ng third-party na ito para mapahusay ang kakayahang magamit at kaligtasan ng produkto."
   },
   "settings": {
     "message": "Mga Setting"
@@ -2591,7 +2591,7 @@
     "message": "Siguruhin na ang iyong Lattice1 ay handang ikonekta"
   },
   "step1LatticeWalletMsg": {
-    "message": "Maaari mong ikonekta ang MetaMask sa iyong Lattice1 device kapag na-set up na ito at online. I-unlock ang iyong device at ihanda ang iyong Device ID. Para sa higit pa sa paggamit ng mga wallet ng hardware, $1",
+    "message": "Maaari mong ikonekta ang Sparrow sa iyong Lattice1 device kapag na-set up na ito at online. I-unlock ang iyong device at ihanda ang iyong Device ID. Para sa higit pa sa paggamit ng mga wallet ng hardware, $1",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -2687,7 +2687,7 @@
     "message": "I-edit ang limitasyon"
   },
   "swapEnableDescription": {
-    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa MetaMask na i-swap ang iyong $1.",
+    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa Sparrow na i-swap ang iyong $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -2733,14 +2733,14 @@
     "message": "Ang mga gas fee sa nakaraang screen ay hinati sa dalawang transaksyon."
   },
   "swapGasFeesSummary": {
-    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang MetaMask ay hindi kumikita mula sa mga gas fee.",
+    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang Sparrow ay hindi kumikita mula sa mga gas fee.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Napakataas ng halaga ng slippage."
   },
   "swapIncludesMMFee": {
-    "message": "Kasama ang $1% MetaMask fee.",
+    "message": "Kasama ang $1% Sparrow fee.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -2933,7 +2933,7 @@
     "message": "Tingnan sa aktibidad"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Maglilipat ito sa napiling network sa loob ng MetaMask sa dating idinagdag na network:"
+    "message": "Maglilipat ito sa napiling network sa loob ng Sparrow sa dating idinagdag na network:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Payagan ang site na ito para lumipat ng network?"
@@ -2969,16 +2969,16 @@
     "message": "Tiyaking walang ibang nakakakita sa iyong screen kapag na-scan mo ang code na ito"
   },
   "syncWithMobileComplete": {
-    "message": "Matagumpay na na-sync ang iyong data. I-enjoy ang MetaMask mobile app!"
+    "message": "Matagumpay na na-sync ang iyong data. I-enjoy ang Sparrow mobile app!"
   },
   "syncWithMobileDesc": {
-    "message": "Puwede mong i-sync ang iyong mga account at impormasyon sa mobile device mo. Buksan ang MetaMask mobile app, pumunta sa \"Mga Setting\" at i-tap ang \"I-sync mula sa Browser Extension\""
+    "message": "Puwede mong i-sync ang iyong mga account at impormasyon sa mobile device mo. Buksan ang Sparrow mobile app, pumunta sa \"Mga Setting\" at i-tap ang \"I-sync mula sa Browser Extension\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Kung unang pagkakataon mong bubuksan ang MetaMask Mobile app, sundin lang ang mga hakbang sa iyong telepono."
+    "message": "Kung unang pagkakataon mong bubuksan ang Sparrow Mobile app, sundin lang ang mga hakbang sa iyong telepono."
   },
   "syncWithMobileScanThisCode": {
-    "message": "I-scan ang code na ito gamit ang iyong MetaMask mobile app"
+    "message": "I-scan ang code na ito gamit ang iyong Sparrow mobile app"
   },
   "syncWithMobileTitle": {
     "message": "I-sync sa mobile"
@@ -3076,7 +3076,7 @@
     "message": "Minungkahing site"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "I-edit upang gamitin ang nirerekomendang gas fee ng MetaMask batay sa pinakabagong block."
+    "message": "I-edit upang gamitin ang nirerekomendang gas fee ng Sparrow batay sa pinakabagong block."
   },
   "transactionDetailGasHeading": {
     "message": "Tinantiyang gas fee"
@@ -3091,7 +3091,7 @@
     "message": "Ang mga gas fee ay itinakda ng network at nagbabago-bago batay sa network traffic at pagiging kumplikado ng transaksyon."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang MetaMask ay hindi kumikita mula sa mga gas fee."
+    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang Sparrow ay hindi kumikita mula sa mga gas fee."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Halaga + gas fee"
@@ -3187,7 +3187,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect Sparrow to Ledger devices."
   },
   "unapproved": {
     "message": "Hindi inaprubahan"
@@ -3256,7 +3256,7 @@
     "message": "Gamitin ang Pag-detect ng Token"
   },
   "useTokenDetectionDescription": {
-    "message": "Gumagamit kami ng mga third-party na API para makita at magpakita ng mga bagong token na ipinadala sa iyong wallet. I-off kung ayaw mong makuha ng MetaMask ang data mula sa mga serbisyong iyon."
+    "message": "Gumagamit kami ng mga third-party na API para makita at magpakita ng mga bagong token na ipinadala sa iyong wallet. I-off kung ayaw mong makuha ng Sparrow ang data mula sa mga serbisyong iyon."
   },
   "usedByClients": {
     "message": "Ginagamit ng iba't ibang client"
@@ -3319,10 +3319,10 @@
     "message": "Tagumpay mong naprotektahan ang iyong wallet. Panatilihing ligtas ang iyong Secret Recovery Phrase at sikreto - pananagutan mo ito!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "Di mababawi ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Di mababawi ng Sparrow ang iyong Secret Recovery Phrase."
   },
   "walletCreationSuccessReminder2": {
-    "message": "Kailanman ay hindi hihingin ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Kailanman ay hindi hihingin ng Sparrow ang iyong Secret Recovery Phrase."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 sa sinuman o panganib na manakaw ang iyong pondo",
@@ -3356,7 +3356,7 @@
     "message": "Magsaliksik sa mga decentralized app"
   },
   "welcomeLoginDescription": {
-    "message": "Gamitin ang iyong MetaMask para mag-login sa mga decentralized app, hindi na kailangang mag-sign up."
+    "message": "Gamitin ang iyong Sparrow para mag-login sa mga decentralized app, hindi na kailangang mag-sign up."
   },
   "welcomeLoginTitle": {
     "message": "Mag-hello sa iyong wallet"

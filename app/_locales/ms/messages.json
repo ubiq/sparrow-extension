@@ -103,7 +103,7 @@
     "message": "Pemasa Logout Automatik (minit)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Tetapkan masa melahu dalam minit sebelum MetaMask log keluar secara automatik"
+    "message": "Tetapkan masa melahu dalam minit sebelum Sparrow log keluar secara automatik"
   },
   "average": {
     "message": "Purata"
@@ -146,7 +146,7 @@
     "message": "Beli ETH dengan Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre membolehkan anda menggunakan kad kredit untuk mendeposit ETH secara terus ke dalam akaun MetaMask anda."
+    "message": "Wyre membolehkan anda menggunakan kad kredit untuk mendeposit ETH secara terus ke dalam akaun Sparrow anda."
   },
   "bytes": {
     "message": "Bait"
@@ -164,7 +164,7 @@
     "message": "ID Rantaian"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Anda perlu menggunakan MetaMask di Google Chrome untuk menyambung kepada Dompet Perkakasan anda."
+    "message": "Anda perlu menggunakan Sparrow di Google Chrome untuk menyambung kepada Dompet Perkakasan anda."
   },
   "clickToRevealSeed": {
     "message": "Klik di sini untuk mendedahkan perkataan rahsia"
@@ -320,7 +320,7 @@
     "message": "Jangan sesekali kongsi frasa ini dengan sesiapa."
   },
   "endOfFlowMessage5": {
-    "message": "Berhati-hati dengan pemancingan data! MetaMask tidak akan sesekali meminta frasa benih anda secara tiba-tiba."
+    "message": "Berhati-hati dengan pemancingan data! Sparrow tidak akan sesekali meminta frasa benih anda secara tiba-tiba."
   },
   "endOfFlowMessage6": {
     "message": "Jika anda perlu membuat sandaran ungkapan benih anda sekali lagi, anda boleh lakukannya melalui Tetapan -> Keselamatan."
@@ -452,7 +452,7 @@
     "message": "Import Akaun"
   },
   "importAccountMsg": {
-    "message": "Akaun yang diimport tidak akan dikaitkan dengan frasa benih akaun MetaMask asal yang anda cipta. Ketahui lebih lanjut tentang akaun import"
+    "message": "Akaun yang diimport tidak akan dikaitkan dengan frasa benih akaun Sparrow asal yang anda cipta. Ketahui lebih lanjut tentang akaun import"
   },
   "importAccountSeedPhrase": {
     "message": "Import Akaun dengan Frasa Benih"
@@ -929,7 +929,7 @@
     "message": "Jika ini kali pertama anda membuka aplikasi mudah alih MetaMask, anda cuma perlu ikuti langkah-langkah di telefon anda."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Imbas kod ini dengan aplikasi mudah alih MetaMask anda"
+    "message": "Imbas kod ini dengan aplikasi mudah alih Sparrow anda"
   },
   "syncWithMobileTitle": {
     "message": "Segerakkan dengan mudah alih"
@@ -1017,7 +1017,7 @@
     "message": "Cuba lagi"
   },
   "typePassword": {
-    "message": "Taip kata laluan MetaMask anda"
+    "message": "Taip kata laluan Sparrow anda"
   },
   "unapproved": {
     "message": "Belum Diluluskan"

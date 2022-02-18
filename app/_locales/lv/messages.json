@@ -103,7 +103,7 @@
     "message": "Automātiskās izrakstīšanās taimeris (minūtes)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Iestatiet bezdarbības laiku minūtēs, pēc kura MetaMask veiks automātisku izrakstīšanu"
+    "message": "Iestatiet bezdarbības laiku minūtēs, pēc kura Sparrow veiks automātisku izrakstīšanu"
   },
   "average": {
     "message": "Vidēji"
@@ -115,7 +115,7 @@
     "message": "Atgriezties pie visiem"
   },
   "backupApprovalInfo": {
-    "message": "Šis slepenais kods ir nepieciešams, lai atjaunotu jūsu maku, ja pazaudējat ierīci, aizmirstat paroli, jāpārinstalē MetaMask vai vēlaties piekļūt makam no citas ierīces."
+    "message": "Šis slepenais kods ir nepieciešams, lai atjaunotu jūsu maku, ja pazaudējat ierīci, aizmirstat paroli, jāpārinstalē Sparrow vai vēlaties piekļūt makam no citas ierīces."
   },
   "backupApprovalNotice": {
     "message": "Dublējiet savu slepeno atgūšanas kodu, lai maks un līdzekļi atrastos drošībā."
@@ -146,7 +146,7 @@
     "message": "Pirkt ETH ar Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ļauj noguldīt ETH tieši jūsu MetaMask kontā, izmantojot kredītkarti."
+    "message": "Wyre ļauj noguldīt ETH tieši jūsu Sparrow kontā, izmantojot kredītkarti."
   },
   "bytes": {
     "message": "Baiti"
@@ -323,7 +323,7 @@
     "message": "Nekad neizpaudiet šo frāzi citiem cilvēkiem."
   },
   "endOfFlowMessage5": {
-    "message": "Uzmanieties no pikšķerēšanas! MetaMask nekad pēkšņi nelūgs norādīt atkopšanas frāzi."
+    "message": "Uzmanieties no pikšķerēšanas! Sparrow nekad pēkšņi nelūgs norādīt atkopšanas frāzi."
   },
   "endOfFlowMessage6": {
     "message": "Ja nepieciešams atkārtoti dublēt atkopšanas frāzi, varat to atrast, dodoties uz Iestatījumi -> Drošība."
@@ -459,7 +459,7 @@
     "message": "Importēt kontu"
   },
   "importAccountMsg": {
-    "message": "Importētie konti netiks piesaistīti sākotnēji izveidotā MetaMask konta atkopšanas frāzei. Uzziniet vairāk par importētajiem kontiem"
+    "message": "Importētie konti netiks piesaistīti sākotnēji izveidotā Sparrow konta atkopšanas frāzei. Uzziniet vairāk par importētajiem kontiem"
   },
   "importAccountSeedPhrase": {
     "message": "Importēt kontu ar atkopšanas frāzi"
@@ -936,16 +936,16 @@
     "message": "Pārliecinieties, ka neviens cits neskatās jūsu ekrānā, kad skenējat šo kodu."
   },
   "syncWithMobileComplete": {
-    "message": "Jūsu dati sekmīgi sinhronizēti. Patīkamu MetaMask mobilās lietotnes lietošanu!"
+    "message": "Jūsu dati sekmīgi sinhronizēti. Patīkamu Sparrow mobilās lietotnes lietošanu!"
   },
   "syncWithMobileDesc": {
-    "message": "Jūs varat sinhronizēt savus kontus un informāciju ar mobilo ierīci. Atveriet MetaMask mobilo lietotni, ejiet uz \"Iestatījumi\" un pieskarieties pie \"Sinhronizēt no pārlūka paplašinājuma\""
+    "message": "Jūs varat sinhronizēt savus kontus un informāciju ar mobilo ierīci. Atveriet Sparrow mobilo lietotni, ejiet uz \"Iestatījumi\" un pieskarieties pie \"Sinhronizēt no pārlūka paplašinājuma\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Ja esat pirmoreiz atvēris MetaMask mobilo lietotni, vienkārši sekojiet norādēm tālrunī."
+    "message": "Ja esat pirmoreiz atvēris Sparrow mobilo lietotni, vienkārši sekojiet norādēm tālrunī."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Noskenējiet šo kodu ar MetaMask mobilo lietotni"
+    "message": "Noskenējiet šo kodu ar Sparrow mobilo lietotni"
   },
   "syncWithMobileTitle": {
     "message": "Sinhronizēt ar tālruni"
@@ -1036,7 +1036,7 @@
     "message": "Mēģināt vēlreiz"
   },
   "typePassword": {
-    "message": "Ievadiet savu MetaMask paroli"
+    "message": "Ievadiet savu Sparrow paroli"
   },
   "unapproved": {
     "message": "Nav apstiprināts"

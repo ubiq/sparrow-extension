@@ -103,7 +103,7 @@
     "message": "Automatikus kijelentkezés időzítő (perc)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Adja meg a MetaMask automatikus kijelentkezéséig tartó tétlen állapot idejét percekben "
+    "message": "Adja meg a Sparrow automatikus kijelentkezéséig tartó tétlen állapot idejét percekben "
   },
   "average": {
     "message": "Átlag"
@@ -115,7 +115,7 @@
     "message": "Vissza az összeshez"
   },
   "backupApprovalInfo": {
-    "message": "Ez a titkos kód a tárca helyreállításához szükséges, ha elveszíti eszközét, elfelejti jelszavát, újra kell telepítenie a MetaMask alkalmazást, vagy ha a tárcájához egy másik eszközről szeretne hozzáférni."
+    "message": "Ez a titkos kód a tárca helyreállításához szükséges, ha elveszíti eszközét, elfelejti jelszavát, újra kell telepítenie a Sparrow alkalmazást, vagy ha a tárcájához egy másik eszközről szeretne hozzáférni."
   },
   "backupApprovalNotice": {
     "message": "Készíts biztonsági másolatot titkos helyreállítási kódodról, hogy pénztárcád és pénzalapod biztosítva legyen."
@@ -323,13 +323,13 @@
     "message": "Soha ne ossza meg senkivel a mondatot."
   },
   "endOfFlowMessage5": {
-    "message": "Vigyázzon az adathalászokkal! A MetaMask soha nem kéri spontán módon a seed mondatot."
+    "message": "Vigyázzon az adathalászokkal! A Sparrow soha nem kéri spontán módon a seed mondatot."
   },
   "endOfFlowMessage6": {
     "message": "Ha ismét biztonsági másolatot kell készítenie a seed mondatról, megtalálja azt a Beállítások -> Biztonság menüben."
   },
   "endOfFlowMessage8": {
-    "message": "A MetaMask nem tudta helyreállítani a seed mondatot. Tudjon meg többet."
+    "message": "A Sparrow nem tudta helyreállítani a seed mondatot. Tudjon meg többet."
   },
   "endOfFlowMessage9": {
     "message": "Bővebb információk."
@@ -658,7 +658,7 @@
     "message": "Vegyen részt a MetaMetrics-ben"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Vegyél részt a MetaMetricsben, hogy segíts a MetaMask fejlesztésében."
+    "message": "Vegyél részt a MetaMetricsben, hogy segíts a Sparrow fejlesztésében."
   },
   "password": {
     "message": "Jelszó"
@@ -933,16 +933,16 @@
     "message": "Győződjön meg arról, hogy senki nem látja a képernyőt, amikor beolvassa ezt a kódot"
   },
   "syncWithMobileComplete": {
-    "message": "Adatai szinkronizálása sikerült. Élvezze a MetaMask mobilalkalmazást!"
+    "message": "Adatai szinkronizálása sikerült. Élvezze a Sparrow mobilalkalmazást!"
   },
   "syncWithMobileDesc": {
-    "message": "Szinkronizálhatja fiókjait és adatait a mobilkészülékkel. Nyissa meg a MetaMask mobilalkalmazást, lépjen a \"Beállítások\" elemre, majd koppintson a \"Szinkronizálás a böngésző bővítményéből\" elemre."
+    "message": "Szinkronizálhatja fiókjait és adatait a mobilkészülékkel. Nyissa meg a Sparrow mobilalkalmazást, lépjen a \"Beállítások\" elemre, majd koppintson a \"Szinkronizálás a böngésző bővítményéből\" elemre."
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Ha most először nyitja meg a MetaMask mobilalkalmazást, kövesse a telefonon megadott lépéseket."
+    "message": "Ha most először nyitja meg a Sparrow mobilalkalmazást, kövesse a telefonon megadott lépéseket."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Olvasd be ezt a kódot MetaMask mobilalkalmazásoddal"
+    "message": "Olvasd be ezt a kódot Sparrow mobilalkalmazásoddal"
   },
   "syncWithMobileTitle": {
     "message": "Szinkronizálás mobillal"
@@ -1030,7 +1030,7 @@
     "message": "Újra"
   },
   "typePassword": {
-    "message": "Írd be MetaMask jelszavadat"
+    "message": "Írd be Sparrow jelszavadat"
   },
   "unapproved": {
     "message": "Jóvá nem hagyott"

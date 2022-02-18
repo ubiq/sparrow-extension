@@ -103,7 +103,7 @@
     "message": "Temporitzador de tancament de sessió automàtic (minuts)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Configura el temps de repòs com minuts abans que MetaMask tanqui la sessió automàticament"
+    "message": "Configura el temps de repòs com minuts abans que Sparrow tanqui la sessió automàticament"
   },
   "average": {
     "message": "Mitjana"
@@ -161,7 +161,7 @@
     "message": "Cadena ID"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Necessites fer servir MetaMask amb Google Chrome per a connectar-te al teu Moneder Hardware."
+    "message": "Necessites fer servir Sparrow amb Google Chrome per a connectar-te al teu Moneder Hardware."
   },
   "clickToRevealSeed": {
     "message": "Fes clic aquí per a revelar les paraules secretes"
@@ -320,7 +320,7 @@
     "message": "No comparteixis mai la frase amb ningú."
   },
   "endOfFlowMessage5": {
-    "message": "Estigues atent amb el phishing! MetaMask no et preguntarà mai espontàniament la teva frase de recuperació."
+    "message": "Estigues atent amb el phishing! Sparrow no et preguntarà mai espontàniament la teva frase de recuperació."
   },
   "endOfFlowMessage6": {
     "message": "Si necessites fer una còpia de seguretat de la teva frase de recuperació una altra vegada, la pots trobar a Configuració-> Seguretat."
@@ -649,7 +649,7 @@
     "message": "Participar a MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participa a MetaMetrics per ajudar-nos a fer MetaMask millor"
+    "message": "Participa a MetaMetrics per ajudar-nos a fer Sparrow millor"
   },
   "password": {
     "message": "Contrasenya"
@@ -924,7 +924,7 @@
     "message": "Pots sincronitzar els teus comptes i la teva informació amb el teu dispositiu mòbil. Obre l'app mòbil de MetaTask, ves a \"Configuració\" i \"Sincronitzar desde l"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Si acabes d'obrir l'app mòbil MetaMask per primer cop, tan sols has de seguir els passos del teu telèfon."
+    "message": "Si acabes d'obrir l'app mòbil Sparrow per primer cop, tan sols has de seguir els passos del teu telèfon."
   },
   "syncWithMobileScanThisCode": {
     "message": "Escaneja aquest codi amb la teva aplicació mòbil de MetaMask"

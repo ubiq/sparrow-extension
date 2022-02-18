@@ -103,7 +103,7 @@
     "message": "Brojač za automatsko odjavljivanje (minute)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Postavite stanje u mirovanju u minutama prije nego što se MetaMask automatski odjavi"
+    "message": "Postavite stanje u mirovanju u minutama prije nego što se Sparrow automatski odjavi"
   },
   "average": {
     "message": "Prosječno"
@@ -115,7 +115,7 @@
     "message": "Natrag na sve"
   },
   "backupApprovalInfo": {
-    "message": "Ovaj je sigurnosni kôd potreban za obnavljanje novčanika ako izgubite svoj uređaj, zaboravite svoju lozinku, morate ponovno instalirati MetaMask ili želite pristupiti svojem novčaniku na drugom uređaju."
+    "message": "Ovaj je sigurnosni kôd potreban za obnavljanje novčanika ako izgubite svoj uređaj, zaboravite svoju lozinku, morate ponovno instalirati Sparrow ili želite pristupiti svojem novčaniku na drugom uređaju."
   },
   "backupApprovalNotice": {
     "message": "Sigurnosno kopirajte svoj sigurnosni kôd za obnavljanje kako biste zaštitili svoj novčanik i sredstva."
@@ -164,7 +164,7 @@
     "message": "Identifikacijska oznaka bloka"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Trebate upotrebljavati MetaMask u pregledniku Google Chrome kako biste ga povezali s vašim hardverskim novčanikom."
+    "message": "Trebate upotrebljavati Sparrow u pregledniku Google Chrome kako biste ga povezali s vašim hardverskim novčanikom."
   },
   "clickToRevealSeed": {
     "message": "Ovdje kliknite za otkrivanje tajnih riječi"
@@ -323,13 +323,13 @@
     "message": "Nikada ne dijelite rečenicu ni s kim."
   },
   "endOfFlowMessage5": {
-    "message": "Pazite na krađu identiteta! Na usluzi MetaMask nikada vas se neće pitati početna rečenica."
+    "message": "Pazite na krađu identiteta! Na usluzi Sparrow nikada vas se neće pitati početna rečenica."
   },
   "endOfFlowMessage6": {
     "message": "Ako trebate ponovno sigurnosno kopirati svoju početnu rečenicu, možete je pronaći unutar stavke Postavke --> Sigurnost."
   },
   "endOfFlowMessage8": {
-    "message": "Osoblje MetaMask ne može obnoviti vašu početnu rečenicu. Saznajte više."
+    "message": "Osoblje Sparrow ne može obnoviti vašu početnu rečenicu. Saznajte više."
   },
   "endOfFlowMessage9": {
     "message": "Saznajte više."
@@ -939,7 +939,7 @@
     "message": "Možete sinkronizirati svoje račune i informacije s vašim mobilnim telefonom. Otvorite mobilnu aplikaciju MetaMask, idite u stavku „Postavke” i dodirnite „Sinkroniziraj iz dodatka preglednika”"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Kad otvorite mobilnu aplikaciju MetaMask po prvi puta, pridržavajte se koraka koji se prikazuju na telefonu."
+    "message": "Kad otvorite mobilnu aplikaciju Sparrow po prvi puta, pridržavajte se koraka koji se prikazuju na telefonu."
   },
   "syncWithMobileScanThisCode": {
     "message": "Skenirajte ovaj kôd uporabom mobilne aplikacije MetaMask"

@@ -45,7 +45,7 @@ export function formatDateWithYearContext(
   );
 }
 /**
- * Determines if the provided chainId is a default MetaMask chain
+ * Determines if the provided chainId is a default Sparrow chain
  *
  * @param {string} chainId - chainId to check
  */

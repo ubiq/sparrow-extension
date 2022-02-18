@@ -202,7 +202,7 @@ export default class TypedMessageManager extends EventEmitter {
           const activeChainId = parseInt(this._getCurrentChainId(), 16);
           assert.ok(
             !Number.isNaN(activeChainId),
-            `Cannot sign messages for chainId "${chainId}", because MetaMask is switching networks.`,
+            `Cannot sign messages for chainId "${chainId}", because Sparrow is switching networks.`,
           );
           if (typeof chainId === 'string') {
             chainId = parseInt(chainId, chainId.startsWith('0x') ? 16 : 10);

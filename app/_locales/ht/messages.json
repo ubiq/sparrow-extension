@@ -88,7 +88,7 @@
     "message": "Anilasyon Gaz Chaj"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Ou bezwen sèvi ak MetaMask sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
+    "message": "Ou bezwen sèvi ak Sparrow sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
   },
   "close": {
     "message": "Fèmen"
@@ -261,7 +261,7 @@
     "message": "Pòte Kont"
   },
   "importAccountMsg": {
-    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont MetaMask seed fraz. Aprann plis sou kont enpòte "
+    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont Sparrow seed fraz. Aprann plis sou kont enpòte "
   },
   "imported": {
     "message": "Pòte",

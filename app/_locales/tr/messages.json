@@ -325,7 +325,7 @@
     "message": "Milyonların güvendiği MetaMask, web3 dünyasını herkes için erişilebilir kılan güvenli bir cüzdandır."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Yayınlanmadan önce gelecek özellikleri test etmek için bu sürümü kullanın. Kullanımınız ve geri bildiriminiz mümkün olan en iyi MetaMask sürümünü oluşturmamıza yardımcı olur. MetMask Beta kullanımınız standart $1 ile ayrıca $2 bölümümüze tabidir. Beta sürümü olduğu için hatayla karşılaşma riskiniz daha yüksektir. Devam ederek bu riskleri ve aynı zamanda Şartlar ve Beta Şartları kısımlarında yer alan riskleri kabul eder ve onaylarsınız.",
+    "message": "Yayınlanmadan önce gelecek özellikleri test etmek için bu sürümü kullanın. Kullanımınız ve geri bildiriminiz mümkün olan en iyi Sparrow sürümünü oluşturmamıza yardımcı olur. MetMask Beta kullanımınız standart $1 ile ayrıca $2 bölümümüze tabidir. Beta sürümü olduğu için hatayla karşılaşma riskiniz daha yüksektir. Devam ederek bu riskleri ve aynı zamanda Şartlar ve Beta Şartları kısımlarında yer alan riskleri kabul eder ve onaylarsınız.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -381,7 +381,7 @@
     "message": "Wyre ile ETH satın al"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre, doğrudan MetaMask hesabınıza ETH yatırma işlemleri için banka kartı kullanmanıza izin verir."
+    "message": "Wyre, doğrudan Sparrow hesabınıza ETH yatırma işlemleri için banka kartı kullanmanıza izin verir."
   },
   "bytes": {
     "message": "Bayt"
@@ -918,7 +918,7 @@
     "message": "İfadeyi hiç kimseyle paylaşmayın."
   },
   "endOfFlowMessage5": {
-    "message": "Kimlik avına karşı dikkatli olun! MetaMask asla kendiliğinden Gizli Kurtarma İfadenizi istemez."
+    "message": "Kimlik avına karşı dikkatli olun! Sparrow asla kendiliğinden Gizli Kurtarma İfadenizi istemez."
   },
   "endOfFlowMessage6": {
     "message": "Gizli Kurtarma İfadenizi tekrar yedeklemeniz gerekirse Ayarlar -> Güvenlik kısmında bulabilirsiniz."
@@ -1277,7 +1277,7 @@
     "message": "Gizli Kurtarma İfadesi kullanarak içe aktar"
   },
   "importAccountMsg": {
-    "message": "İçe aktarılan hesaplar ilk olarak oluşturduğunuz MetaMask hesabı Gizli Kurtarma ifadenizle ilişkilendirilmez. İçe aktarılan hesaplar hakkında daha fazla bilgi edinin"
+    "message": "İçe aktarılan hesaplar ilk olarak oluşturduğunuz Sparrow hesabı Gizli Kurtarma ifadenizle ilişkilendirilmez. İçe aktarılan hesaplar hakkında daha fazla bilgi edinin"
   },
   "importAccountSeedPhrase": {
     "message": "Gizli Kurtarma İfadesi ile bir cüzdanı içe aktarın"
@@ -1651,7 +1651,7 @@
     "message": "Tokeninizi görmüyor musunuz?"
   },
   "mobileSyncWarning": {
-    "message": "\"Uzantı ile senkronize et\" özelliği geçici olarak devre dışı bırakılmış. MetaMask mobilde uzantı cüzdanınızı kullanmak istiyorsanız mobil uygulamaya gidin: cüzdan kurulum ayarlarına geri dönün ve \"Gizli Kurtarma İfadesi ile İçe Aktar\" seçeneğini seçin. Ardından cüzdanınızı mobil uygulamada içe aktarmak için uzantı cüzdanınızın gizli ifadesini kullanın."
+    "message": "\"Uzantı ile senkronize et\" özelliği geçici olarak devre dışı bırakılmış. Sparrow mobilde uzantı cüzdanınızı kullanmak istiyorsanız mobil uygulamaya gidin: cüzdan kurulum ayarlarına geri dönün ve \"Gizli Kurtarma İfadesi ile İçe Aktar\" seçeneğini seçin. Ardından cüzdanınızı mobil uygulamada içe aktarmak için uzantı cüzdanınızın gizli ifadesini kullanın."
   },
   "mustSelectOne": {
     "message": "En az bir token seçilmeli."
@@ -1761,7 +1761,7 @@
     "message": "Yeni! NFT algılama"
   },
   "newNFTsDetectedInfo": {
-    "message": "MetaMask'in otomatik olarak Opensea'den NFT'leri algılamasına ve MetaMask cüzdanınızda görüntülemesine izin verin."
+    "message": "MetaMask'in otomatik olarak Opensea'den NFT'leri algılamasına ve Sparrow cüzdanınızda görüntülemesine izin verin."
   },
   "newNetworkAdded": {
     "message": "\"$1\" başarılı bir şekilde eklendi!"
@@ -1854,14 +1854,14 @@
   },
   "notifications1Title": {
     "message": "Mobilde takas burada!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use Sparrow Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "Daha fazla bilgi",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "MetaMask en iyi güvenlik uygulamalarında güncel kalın ve resmi MetaMask desteğinden en son güvenlik ipuçlarını alın.",
+    "message": "MetaMask en iyi güvenlik uygulamalarında güncel kalın ve resmi Sparrow desteğinden en son güvenlik ipuçlarını alın.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1873,7 +1873,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Doğrudan cüzdanınızdan token takaslarında en iyi fiyatlara sahip olun. MetaMask artık Binance Smart Chain'deki birden fazla merkezi olmayan borsa toplayıcısı ve profesyonel piyasa oluşturucuyu bağlıyor.",
+    "message": "Doğrudan cüzdanınızdan token takaslarında en iyi fiyatlara sahip olun. Sparrow artık Binance Smart Chain'deki birden fazla merkezi olmayan borsa toplayıcısı ve profesyonel piyasa oluşturucuyu bağlıyor.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -1885,11 +1885,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Chrome 91 sürümünden itibaren Kayıt Defteri desteğimize olanak tanıyan API (U2F) artık donanım cüzdanları desteklememektedir. MetaMask Kayıt Defteri cihazınızı Ledger Live masaüstü uygulaması üzerinden bağlamanıza olanak tanıyan yeni bir Ledger Live desteğini hayata geçirmiştir.",
+    "message": "Chrome 91 sürümünden itibaren Kayıt Defteri desteğimize olanak tanıyan API (U2F) artık donanım cüzdanları desteklememektedir. Sparrow Kayıt Defteri cihazınızı Ledger Live masaüstü uygulaması üzerinden bağlamanıza olanak tanıyan yeni bir Ledger Live desteğini hayata geçirmiştir.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "MetaMask'te Kayıt Defteri hesabınız ile etkileşim kurarken yeni bir sekme açılacak ve sizden Ledger Live uygulamasını açmanız istenecektir. Uygulama açıldıktan sonra sizden MetaMask hesabınızla bir WebSocket bağlantısı kurulmasına izin vermeniz istenecektir. Hepsi bu!",
+    "message": "MetaMask'te Kayıt Defteri hesabınız ile etkileşim kurarken yeni bir sekme açılacak ve sizden Ledger Live uygulamasını açmanız istenecektir. Uygulama açıldıktan sonra sizden Sparrow hesabınızla bir WebSocket bağlantısı kurulmasına izin vermeniz istenecektir. Hepsi bu!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -2014,7 +2014,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "Kayıt defterinizi WebHID üzerinden bağlamak için MetaMask'i tam ekran açın.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing Sparrow in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
     "message": "İsteğe bağlı"
@@ -2044,7 +2044,7 @@
     "message": "Parola yeterince uzun değil"
   },
   "passwordSetupDetails": {
-    "message": "Bu parola MetaMask cüzdanınızın kilidini sadece bu cihazda açacaktır. MetaMask bu parolayı kurtaramaz."
+    "message": "Bu parola Sparrow cüzdanınızın kilidini sadece bu cihazda açacaktır. Sparrow bu parolayı kurtaramaz."
   },
   "passwordTermsWarning": {
     "message": "MetaMask'in benim için bu parolayı kurtaramayacağını anlıyorum. $1"
@@ -2342,7 +2342,7 @@
     "message": "Birileri sizden kurtarma ifadenizi istiyorsa büyük olasılıkla sizi dolandırmaya ve cüzdanınızdaki paraları çalmaya çalışıyordur"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Gizli Kurtarma İfadenizi MetaMask de dahil olmak üzere asla paylaşmayın!"
+    "message": "Gizli Kurtarma İfadenizi Sparrow de dahil olmak üzere asla paylaşmayın!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Gizli Kurtarma İfadesi nedir?"
@@ -2733,14 +2733,14 @@
     "message": "Önceki ekrandaki gaz ücretleri bu iki işlem arasında bölünmüştür."
   },
   "swapGasFeesSummary": {
-    "message": "Gaz ücretleri, $1 ağında işlemleri gerçekleştiren kripto madencilerine ödenir. MetaMask gaz ücretlerinden herhangi bir kazanç elde etmemektedir.",
+    "message": "Gaz ücretleri, $1 ağında işlemleri gerçekleştiren kripto madencilerine ödenir. Sparrow gaz ücretlerinden herhangi bir kazanç elde etmemektedir.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Fark tutarı çok yüksek."
   },
   "swapIncludesMMFee": {
-    "message": "%$1 MetaMask ücreti dahildir.",
+    "message": "%$1 Sparrow ücreti dahildir.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -2969,10 +2969,10 @@
     "message": "Bu kodu tararken hiç kimsenin ekranınıza bakmadığından emin olun"
   },
   "syncWithMobileComplete": {
-    "message": "Verileriniz başarılı bir şekilde senkronize edildi. MetaMask mobil uygulamasının tadını çıkarın!"
+    "message": "Verileriniz başarılı bir şekilde senkronize edildi. Sparrow mobil uygulamasının tadını çıkarın!"
   },
   "syncWithMobileDesc": {
-    "message": "Hesaplarınızı ve bilgilerinizi mobil cihazınızla senkronize edebilirsiniz. MetaMask mobil uygulamasını açın, \"Ayarlar\" kısmına gidin ve \"Tarayıcı Uzantısından Senkronize Et\" seçeneğine dokunun"
+    "message": "Hesaplarınızı ve bilgilerinizi mobil cihazınızla senkronize edebilirsiniz. Sparrow mobil uygulamasını açın, \"Ayarlar\" kısmına gidin ve \"Tarayıcı Uzantısından Senkronize Et\" seçeneğine dokunun"
   },
   "syncWithMobileDescNewUsers": {
     "message": "Metamask Mobil uygulamasını ilk defa açıyorsanız telefonunuzdaki adımları izleyin."
@@ -3091,7 +3091,7 @@
     "message": "Gaz ücretleri ağ tarafından belirlenir ve ağ trafiği ve işlem karmaşıklığına göre dalgalanır."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Gaz ücretleri, $1 ağında işlemleri gerçekleştiren kripto madencilerine ödenir. MetaMask gaz ücretlerinden herhangi bir kazanç elde etmemektedir."
+    "message": "Gaz ücretleri, $1 ağında işlemleri gerçekleştiren kripto madencilerine ödenir. Sparrow gaz ücretlerinden herhangi bir kazanç elde etmemektedir."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Tutar + gaz ücreti"
@@ -3187,7 +3187,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect Sparrow to Ledger devices."
   },
   "unapproved": {
     "message": "Onaylanmadı"
@@ -3256,7 +3256,7 @@
     "message": "Token Algılama Kullan"
   },
   "useTokenDetectionDescription": {
-    "message": "Cüzdanınıza gönderilen yeni tokenleri algılamak ve görüntülemek için üçüncü taraf API'leri kullanıyoruz. MetaMask tarafından bu hizmetlerden veri çekilmesini istemiyorsanız bunu kapatın."
+    "message": "Cüzdanınıza gönderilen yeni tokenleri algılamak ve görüntülemek için üçüncü taraf API'leri kullanıyoruz. Sparrow tarafından bu hizmetlerden veri çekilmesini istemiyorsanız bunu kapatın."
   },
   "usedByClients": {
     "message": "Çeşitli müşteriler tarafından kullanılıyor"

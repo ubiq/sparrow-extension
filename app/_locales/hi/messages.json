@@ -99,7 +99,7 @@
     "message": "एक उपनाम जोड़ें"
   },
   "addAcquiredTokens": {
-    "message": "आपके द्वारा MetaMask का उपयोग करके प्राप्त किए गए टोकन जोड़ें"
+    "message": "आपके द्वारा Sparrow का उपयोग करके प्राप्त किए गए टोकन जोड़ें"
   },
   "addAlias": {
     "message": "उपनाम जोड़ें"
@@ -115,7 +115,7 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "इससे इस नेटवर्क को MetaMask के अंदर उपयोग करने की अनुमति मिलेगी।"
+    "message": "इससे इस नेटवर्क को Sparrow के अंदर उपयोग करने की अनुमति मिलेगी।"
   },
   "addEthereumChainConfirmationRisks": {
     "message": "MetaMask कस्टम नेटवर्क को सत्यापित नहीं करता है।"
@@ -301,7 +301,7 @@
     "message": "सभी पर वापस"
   },
   "backupApprovalInfo": {
-    "message": "यदि आप अपना डिवाइस खो देते हैं, अपना पासवर्ड भूल जाते हैं, MetaMask को फिर से स्थापित करना हो या दूसरे डिवाइस पर अपने वॉलेट तक पहुंचना चाहते हों, तो आपके वॉलेट को पुनर्प्राप्त करने के लिए यह गुप्त कोड आवश्यक है।"
+    "message": "यदि आप अपना डिवाइस खो देते हैं, अपना पासवर्ड भूल जाते हैं, Sparrow को फिर से स्थापित करना हो या दूसरे डिवाइस पर अपने वॉलेट तक पहुंचना चाहते हों, तो आपके वॉलेट को पुनर्प्राप्त करने के लिए यह गुप्त कोड आवश्यक है।"
   },
   "backupApprovalNotice": {
     "message": "अपने वॉलेट और धन को सुरक्षित रखने के लिए अपने गुप्त रिकवरी कोड का बैकअप लें।"
@@ -322,10 +322,10 @@
     "message": "बेसिक"
   },
   "betaMetamaskDescription": {
-    "message": "लाखों लोगों का भरोसेमंद, MetaMask एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
+    "message": "लाखों लोगों का भरोसेमंद, Sparrow एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "आगामी फीचर के रिलीज़ होने से पहले उनके परीक्षण के लिए इस संस्करण का उपयोग करें। आपका उपयोग और फीडबैक हमें MetaMask के सर्वोत्तम संस्करण को संभव बनाने में मदद करता है। MetaMask बीटा का आपका उपयोग हमारे मानक $1 के साथ साथ $2 के अधीन है। बीटा के रूप में, वहां बग का खतरा बढ़ सकता है। आगे बढ़ने पर, आप इन खतरों को स्वीकार करते हैं और पहचानते हैं, साथ हीं साथ वो खतरे हमारे नियम औऱ बीटा नियम में पाए जाते हैं।",
+    "message": "आगामी फीचर के रिलीज़ होने से पहले उनके परीक्षण के लिए इस संस्करण का उपयोग करें। आपका उपयोग और फीडबैक हमें Sparrow के सर्वोत्तम संस्करण को संभव बनाने में मदद करता है। Sparrow बीटा का आपका उपयोग हमारे मानक $1 के साथ साथ $2 के अधीन है। बीटा के रूप में, वहां बग का खतरा बढ़ सकता है। आगे बढ़ने पर, आप इन खतरों को स्वीकार करते हैं और पहचानते हैं, साथ हीं साथ वो खतरे हमारे नियम औऱ बीटा नियम में पाए जाते हैं।",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -381,7 +381,7 @@
     "message": "Wyre के जरिए ETH खरीदें"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre आपको अपने MetaMask खाते में ETH जमा करने के लिए डेबिट कार्ड का उपयोग करने की सुविधा देता है।"
+    "message": "Wyre आपको अपने Sparrow खाते में ETH जमा करने के लिए डेबिट कार्ड का उपयोग करने की सुविधा देता है।"
   },
   "bytes": {
     "message": "बाइट"
@@ -417,7 +417,7 @@
     "message": "यह चेन ID वर्तमान में $1 नेटवर्क द्वारा उपयोग की जाती है।"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "अपने हार्डवेयर वॉलेट से कनेक्ट करने के लिए आपको Google Chrome पर MetaMask का उपयोग करने की आवश्यकता है।"
+    "message": "अपने हार्डवेयर वॉलेट से कनेक्ट करने के लिए आपको Google Chrome पर Sparrow का उपयोग करने की आवश्यकता है।"
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "अपने लेजर को WebHID के जरिये कनेक्ट करने के लिए यहां क्लिक करें",
@@ -918,7 +918,7 @@
     "message": "वाक्यांश को कभी भी किसी के साथ साझा न करें।"
   },
   "endOfFlowMessage5": {
-    "message": "फिशिंग से सावधान रहें! MetaMask कभी भी अनायास ही आपके गुप्त रिकवरी फ्रेज के बारे में नहीं पूछेगा।"
+    "message": "फिशिंग से सावधान रहें! Sparrow कभी भी अनायास ही आपके गुप्त रिकवरी फ्रेज के बारे में नहीं पूछेगा।"
   },
   "endOfFlowMessage6": {
     "message": "यदि आपको अपने गुप्त रिकवरी फ्रेज का फिर से बैकअप लेने की आवश्यकता है, तो आप इसे सेटिंग -> सुरक्षा में पा सकते हैं।"
@@ -1228,7 +1228,7 @@
     "message": "हार्डवेयर वॉलेट कनेक्ट करें"
   },
   "hardwareWalletsMsg": {
-    "message": "किसी हार्डवेयर वॉलेट का चयन करें, जिसे आप MetaMask के साथ उपयोग करना चाहते हैं।"
+    "message": "किसी हार्डवेयर वॉलेट का चयन करें, जिसे आप Sparrow के साथ उपयोग करना चाहते हैं।"
   },
   "here": {
     "message": "यहां",
@@ -1277,7 +1277,7 @@
     "message": "गुप्त रिकवरी फ्रेज का उपयोग करके आयात करें"
   },
   "importAccountMsg": {
-    "message": "आयातित खाते आपके मूल रूप से बनाए गए MetaMask खाते के गुप्त रिकवरी फ्रेज से संबद्ध नहीं होंगे। आयातित खातों के बारे में अधिक जानें"
+    "message": "आयातित खाते आपके मूल रूप से बनाए गए Sparrow खाते के गुप्त रिकवरी फ्रेज से संबद्ध नहीं होंगे। आयातित खातों के बारे में अधिक जानें"
   },
   "importAccountSeedPhrase": {
     "message": "गुप्त रिकवरी फ्रेज के साथ एक खाता आयात करें"
@@ -1462,7 +1462,7 @@
     "message": "लेजर लाइव ऐप खोलें और अनलॉक करें"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "अपने लेजर को MetaMask से कैसे कनेक्ट करना है, यह अनुकूलित करें। $1 की अनुशंसा की जाती है, लेकिन अन्य विकल्प उपलब्ध हैं। यहां और पढ़ें: $2",
+    "message": "अपने लेजर को Sparrow से कैसे कनेक्ट करना है, यह अनुकूलित करें। $1 की अनुशंसा की जाती है, लेकिन अन्य विकल्प उपलब्ध हैं। यहां और पढ़ें: $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1570,7 +1570,7 @@
     "message": "संदेश"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "अब MetaMask में आपके खाते के कनेक्शन पर आपका अधिक नियंत्रण है।"
+    "message": "अब Sparrow में आपके खाते के कनेक्शन पर आपका अधिक नियंत्रण है।"
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "अपने कनेक्ट किए गए खातों को प्रबंधित करने के लिए इसे क्लिक करें।"
@@ -1651,7 +1651,7 @@
     "message": "क्या अपना टोकन नहीं देख रहे हैं?"
   },
   "mobileSyncWarning": {
-    "message": "'एक्सटेंशन के साथ सिंक' फीचर अस्थायी रूप से अक्षम है। यदि आप MetaMask मोबाइल पर अपने एक्सटेंशन वॉलेट का उपयोग करना चाहते हैं, तो अपने मोबाइल ऐप पर: वॉलेट सेटअप ऑप्शन पर वापस जाएं और 'सीक्रेट रिकवरी फ्रेज के साथ इम्पोर्ट करें' विकल्प चुनें। फिर अपने वॉलेट को मोबाइल में इम्पोर्ट करने के लिए अपने एक्सटेंशन वॉलेट के सीक्रेट फ्रेज का उपयोग करें।"
+    "message": "'एक्सटेंशन के साथ सिंक' फीचर अस्थायी रूप से अक्षम है। यदि आप Sparrow मोबाइल पर अपने एक्सटेंशन वॉलेट का उपयोग करना चाहते हैं, तो अपने मोबाइल ऐप पर: वॉलेट सेटअप ऑप्शन पर वापस जाएं और 'सीक्रेट रिकवरी फ्रेज के साथ इम्पोर्ट करें' विकल्प चुनें। फिर अपने वॉलेट को मोबाइल में इम्पोर्ट करने के लिए अपने एक्सटेंशन वॉलेट के सीक्रेट फ्रेज का उपयोग करें।"
   },
   "mustSelectOne": {
     "message": "कम से कम 1 टोकन का चयन करना होगा।"
@@ -1761,7 +1761,7 @@
     "message": "नया! NFT डिटेक्शन"
   },
   "newNFTsDetectedInfo": {
-    "message": "MetaMask को Opensea से NFT का स्वचालित रूप से पता लगाने और अपने MetaMask वॉलेट में प्रदर्शित करने की अनुमति दें।"
+    "message": "MetaMask को Opensea से NFT का स्वचालित रूप से पता लगाने और अपने Sparrow वॉलेट में प्रदर्शित करने की अनुमति दें।"
   },
   "newNetworkAdded": {
     "message": "\"$1\" सफलतापूर्वक जोड़ा गया था!"
@@ -1854,14 +1854,14 @@
   },
   "notifications1Title": {
     "message": "मोबाइल पर स्वैपिंग यहां है!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use Sparrow Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "और पढ़ें",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "MetaMask सुरक्षा की सर्वोत्तम प्रथाओं पर अद्यतित रहें और आधिकारिक MetaMask सहायता से नवीनतम सुरक्षा युक्तियां प्राप्त करें।",
+    "message": "MetaMask सुरक्षा की सर्वोत्तम प्रथाओं पर अद्यतित रहें और आधिकारिक Sparrow सहायता से नवीनतम सुरक्षा युक्तियां प्राप्त करें।",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1873,7 +1873,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "अपने वॉलेट के अंदर ही टोकन स्वैप पर सर्वोत्तम मूल्य प्राप्त करें। MetaMask अब आपको Binance Smart Chain पर कई विकेन्द्रीकृत एक्सचेंज एग्रीगेटर और पेशेवर बाजार निर्माताओं से जोड़ता है।",
+    "message": "अपने वॉलेट के अंदर ही टोकन स्वैप पर सर्वोत्तम मूल्य प्राप्त करें। Sparrow अब आपको Binance Smart Chain पर कई विकेन्द्रीकृत एक्सचेंज एग्रीगेटर और पेशेवर बाजार निर्माताओं से जोड़ता है।",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -1885,11 +1885,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Chrome के संस्करण 91 से, वह API जो हमारे Ledger सपोर्ट (U2F) को सक्षम करती है वह अब हार्डवेयर वॉलेट का समर्थन नहीं करती। MetaMask ने एक नया Ledger Live सपोर्ट लागू किया है, जिसकी मदद से आप Ledger Live डेस्कटॉप ऐप के माध्यम से अपने Ledger डिवाइस से कनेक्ट करना जारी रख सकते हैं।",
+    "message": "Chrome के संस्करण 91 से, वह API जो हमारे Ledger सपोर्ट (U2F) को सक्षम करती है वह अब हार्डवेयर वॉलेट का समर्थन नहीं करती। Sparrow ने एक नया Ledger Live सपोर्ट लागू किया है, जिसकी मदद से आप Ledger Live डेस्कटॉप ऐप के माध्यम से अपने Ledger डिवाइस से कनेक्ट करना जारी रख सकते हैं।",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "MetaMask में अपने Ledger खाते पर काम करते समय, एक नया टैब खुल जाएगा और आपको Ledger Live ऐप खोलने के लिए कहा जाएगा।  ऐप खुलने के बाद, आपको अपने MetaMask खाते के लिए एक WebSocket कनेक्शन को अनुमति देने के लिए कहा जाएगा।  बस इतना ही!",
+    "message": "MetaMask में अपने Ledger खाते पर काम करते समय, एक नया टैब खुल जाएगा और आपको Ledger Live ऐप खोलने के लिए कहा जाएगा।  ऐप खुलने के बाद, आपको अपने Sparrow खाते के लिए एक WebSocket कनेक्शन को अनुमति देने के लिए कहा जाएगा।  बस इतना ही!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1974,10 +1974,10 @@
     "message": "ब्राउजर एक्सटेंशन आइकन पर क्लिक करें"
   },
   "onboardingPinExtensionDescription": {
-    "message": "अपने ब्राउजर पर MetaMask को पिन करें ताकि यह सुलभ हो और लेन-देन की पुष्टि को देखना आसान हो सके।"
+    "message": "अपने ब्राउजर पर Sparrow को पिन करें ताकि यह सुलभ हो और लेन-देन की पुष्टि को देखना आसान हो सके।"
   },
   "onboardingPinExtensionDescription2": {
-    "message": "आप एक्सटेंशन पर क्लिक करके MetaMask खोल सकते हैं और 1 क्लिक से अपने वॉलेट तक पहुंच सकते हैं।"
+    "message": "आप एक्सटेंशन पर क्लिक करके Sparrow खोल सकते हैं और 1 क्लिक से अपने वॉलेट तक पहुंच सकते हैं।"
   },
   "onboardingPinExtensionDescription3": {
     "message": "ब्राउजर एक्सटेंशन आइकन पर क्लिक करें ताकि इस तक तुरंत पहुंच सकें"
@@ -1992,7 +1992,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "आपका MetaMask इंस्टॉल पूरा हो गया है!"
+    "message": "आपका Sparrow इंस्टॉल पूरा हो गया है!"
   },
   "onboardingReturnNotice": {
     "message": "\"$1\" इस टैब को बंद कर देगा और वापस $2 पर ले जाएगा",
@@ -2013,8 +2013,8 @@
     "message": "केवल उन साइटों से कनेक्ट करें, जिन पर आप भरोसा करते हैं।"
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "अपने लेजर को WebHID के माध्यम से कनेक्ट करने के लिए MetaMask को पूर्ण स्क्रीन में खोलें।",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "message": "अपने लेजर को WebHID के माध्यम से कनेक्ट करने के लिए Sparrow को पूर्ण स्क्रीन में खोलें।",
+    "description": "Shown to the user on the confirm screen when they are viewing Sparrow in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
     "message": "वैकल्पिक"
@@ -2035,7 +2035,7 @@
     "message": "MetaMetrics में भाग लें"
   },
   "participateInMetaMetricsDescription": {
-    "message": "MetaMetrics में भाग लें, जिससे हमें MetaMask को बेहतर बनाने में मदद मिल सके"
+    "message": "MetaMetrics में भाग लें, जिससे हमें Sparrow को बेहतर बनाने में मदद मिल सके"
   },
   "password": {
     "message": "पासवर्ड"
@@ -2044,10 +2044,10 @@
     "message": "पासवर्ड की लंबाई पर्याप्त नहीं है"
   },
   "passwordSetupDetails": {
-    "message": "यह पासवर्ड आपके MetaMask वॉलेट को केवल इसी डिवाइस पर अनलॉक करेगा। MetaMask इस पासवर्ड को फिर से प्राप्त नहीं कर सकता है।"
+    "message": "यह पासवर्ड आपके Sparrow वॉलेट को केवल इसी डिवाइस पर अनलॉक करेगा। Sparrow इस पासवर्ड को फिर से प्राप्त नहीं कर सकता है।"
   },
   "passwordTermsWarning": {
-    "message": "मैं समझता हूं कि MetaMask मेरे लिए यह पासवर्ड फिर से प्राप्त नहीं कर सकता। $1"
+    "message": "मैं समझता हूं कि Sparrow मेरे लिए यह पासवर्ड फिर से प्राप्त नहीं कर सकता। $1"
   },
   "passwordsDontMatch": {
     "message": "पासवर्ड मेल नहीं खाते"
@@ -2342,7 +2342,7 @@
     "message": "यदि कोई व्यक्ति आपका रिकवरी फ्रेज मांगता है, तो संभावना है कि वे आपको धोखा देने का प्रयास कर रहे हैं।"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "कभी भी अपना गुप्त रिकवरी फ्रेज साझा न करें, MetaMask के साथ भी नहीं!"
+    "message": "कभी भी अपना गुप्त रिकवरी फ्रेज साझा न करें, Sparrow के साथ भी नहीं!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "गुप्त रिकवरी फ्रेज क्या है?"
@@ -2387,7 +2387,7 @@
     "message": "किसी खाते का चयन करें"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "यह खाता पहले ही MetaMask से जुड़ा हुआ है"
+    "message": "यह खाता पहले ही Sparrow से जुड़ा हुआ है"
   },
   "selectEachPhrase": {
     "message": "कृपया प्रत्येक फ्रेज का चयन करें, ताकि यह सुनिश्चित हो सके कि यह सही है।"
@@ -2687,7 +2687,7 @@
     "message": "सीमा संपादित करें"
   },
   "swapEnableDescription": {
-    "message": "यह आवश्यक है और MetaMask को आपके $1 को स्वैप करने की अनुमति देता है।",
+    "message": "यह आवश्यक है और Sparrow को आपके $1 को स्वैप करने की अनुमति देता है।",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -2733,14 +2733,14 @@
     "message": "पिछली स्क्रीन पर गैस शुल्क इन दो लेनदेन के बीच विभाजित हैं।"
   },
   "swapGasFeesSummary": {
-    "message": "क्रिप्टो खनिकों को गैस शुल्क का भुगतान किया जाता है जो $1 नेटवर्क पर लेन-देन की प्रक्रिया करते हैं। MetaMask को गैस शुल्क से लाभ नहीं होता है।",
+    "message": "क्रिप्टो खनिकों को गैस शुल्क का भुगतान किया जाता है जो $1 नेटवर्क पर लेन-देन की प्रक्रिया करते हैं। Sparrow को गैस शुल्क से लाभ नहीं होता है।",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "स्लिपेज राशि बहुत अधिक है।"
   },
   "swapIncludesMMFee": {
-    "message": "$1% MetaMask शुल्क शामिल है।",
+    "message": "$1% Sparrow शुल्क शामिल है।",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -2933,7 +2933,7 @@
     "message": "गतिविधि में देखें"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "इससे चयनित नेटवर्क को MetaMask के भीतर पहले से जोड़े गए नेटवर्क में बदल दिया जाएगा:"
+    "message": "इससे चयनित नेटवर्क को Sparrow के भीतर पहले से जोड़े गए नेटवर्क में बदल दिया जाएगा:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "इस साइट को नेटवर्क स्विच करने की अनुमति दें?"
@@ -2969,16 +2969,16 @@
     "message": "सुनिश्चित करें कि जब आप इस कोड को स्कैन कर रहे हों, तो आपकी स्क्रीन को कोई और न देख रहा हो"
   },
   "syncWithMobileComplete": {
-    "message": "आपका डेटा सफलतापूर्वक सिंक कर लिया गया है। MetaMask मोबाइल ऐप का आनंद लें!"
+    "message": "आपका डेटा सफलतापूर्वक सिंक कर लिया गया है। Sparrow मोबाइल ऐप का आनंद लें!"
   },
   "syncWithMobileDesc": {
-    "message": "आप अपने खाते और जानकारी को अपने मोबाइल डिवाइस के साथ सिंक कर सकते हैं। MetaMask मोबाइल ऐप खोलें, \"सेटिंग\" पर जाएं और \"ब्राउजर एक्सटेंशन से सिंक करें\" पर टैप करें"
+    "message": "आप अपने खाते और जानकारी को अपने मोबाइल डिवाइस के साथ सिंक कर सकते हैं। Sparrow मोबाइल ऐप खोलें, \"सेटिंग\" पर जाएं और \"ब्राउजर एक्सटेंशन से सिंक करें\" पर टैप करें"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "यदि आप पहली बार MetaMask मोबाइल ऐप खोलते हैं, तो बस अपने फोन में दिए गए चरणों का पालन करें।"
+    "message": "यदि आप पहली बार Sparrow मोबाइल ऐप खोलते हैं, तो बस अपने फोन में दिए गए चरणों का पालन करें।"
   },
   "syncWithMobileScanThisCode": {
-    "message": "इस कोड को अपने MetaMask मोबाइल ऐप से स्कैन करें"
+    "message": "इस कोड को अपने Sparrow मोबाइल ऐप से स्कैन करें"
   },
   "syncWithMobileTitle": {
     "message": "मोबाइल के साथ सिंक करें"
@@ -3076,7 +3076,7 @@
     "message": "साइट का सुझाव दिया गया"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "नवीनतम ब्लॉक के आधार पर MetaMask द्वारा अनुशंसित गैस शुल्क का उपयोग करने के लिए संपादित करें।"
+    "message": "नवीनतम ब्लॉक के आधार पर Sparrow द्वारा अनुशंसित गैस शुल्क का उपयोग करने के लिए संपादित करें।"
   },
   "transactionDetailGasHeading": {
     "message": "अनुमानित गैस शुल्क"
@@ -3091,7 +3091,7 @@
     "message": "गैस शुल्क नेटवर्क द्वारा निर्धारित किया जाता है और नेटवर्क ट्रैफिक और लेनदेन की जटिलता के आधार पर उतार-चढ़ाव होता है।"
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "क्रिप्टो खनिकों को गैस शुल्क का भुगतान किया जाता है जो $1 नेटवर्क पर लेन-देन की प्रक्रिया करते हैं। MetaMask को गैस शुल्क से लाभ नहीं होता है।"
+    "message": "क्रिप्टो खनिकों को गैस शुल्क का भुगतान किया जाता है जो $1 नेटवर्क पर लेन-देन की प्रक्रिया करते हैं। Sparrow को गैस शुल्क से लाभ नहीं होता है।"
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "राशि + गैस शुल्क"
@@ -3183,11 +3183,11 @@
     "message": "इस समय इस अनुबंध के लिए लेन-देन की जानकारी समर्थित नहीं है।"
   },
   "typePassword": {
-    "message": "अपना MetaMask पासवर्ड टाइप करें"
+    "message": "अपना Sparrow पासवर्ड टाइप करें"
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect Sparrow to Ledger devices."
   },
   "unapproved": {
     "message": "अस्वीकृत"
@@ -3256,7 +3256,7 @@
     "message": "टोकन डिटेक्शन का उपयोग करें"
   },
   "useTokenDetectionDescription": {
-    "message": "हम आपके वॉलेट में भेजे गए नए टोकन का पता लगाने और प्रदर्शित करने के लिए तीसरे-पक्ष API का उपयोग करते हैं। बंद करें यदि आप नहीं चाहते कि MetaMask उन सेवाओं से डेटा पुल करे।"
+    "message": "हम आपके वॉलेट में भेजे गए नए टोकन का पता लगाने और प्रदर्शित करने के लिए तीसरे-पक्ष API का उपयोग करते हैं। बंद करें यदि आप नहीं चाहते कि Sparrow उन सेवाओं से डेटा पुल करे।"
   },
   "usedByClients": {
     "message": "विभिन्न क्लाइंट द्वारा उपयोग किया जाता है"
@@ -3356,7 +3356,7 @@
     "message": "विकेन्द्रीकृत ऐप का अन्वेषण करें"
   },
   "welcomeLoginDescription": {
-    "message": "विकेंद्रीकृत ऐप में लॉगिन करने के लिए अपने MetaMask का उपयोग करें - किसी साइनअप की जरूरत नहीं है।"
+    "message": "विकेंद्रीकृत ऐप में लॉगिन करने के लिए अपने Sparrow का उपयोग करें - किसी साइनअप की जरूरत नहीं है।"
   },
   "welcomeLoginTitle": {
     "message": "अपने वॉलेट को हैलो कहें"
@@ -3365,7 +3365,7 @@
     "message": "चलिए शुरु करते हैं"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "लाखों लोगों का भरोसेमंद, MetaMask एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
+    "message": "लाखों लोगों का भरोसेमंद, Sparrow एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
   },
   "whatsNew": {
     "message": "नया क्या है",

@@ -1195,7 +1195,7 @@ export default class MetamaskController extends EventEmitter {
   /**
    * Gets network state relevant for external providers.
    *
-   * @param {Object} [memState] - The MetaMask memState. If not provided,
+   * @param {Object} [memState] - The Sparrow memState. If not provided,
    * this function will retrieve the most recent state.
    * @returns {Object} An object with relevant network state properties.
    */
@@ -2792,7 +2792,7 @@ export default class MetamaskController extends EventEmitter {
    * ).CustomGasSettings} [customGasSettings] - overrides to use for gas params
    *  instead of allowing this method to generate them
    * @param newTxMetaProps
-   * @returns {Object} MetaMask state
+   * @returns {Object} Sparrow state
    */
   async createCancelTransaction(
     originalTxId,
@@ -2819,7 +2819,7 @@ export default class MetamaskController extends EventEmitter {
    * ).CustomGasSettings} [customGasSettings] - overrides to use for gas params
    *  instead of allowing this method to generate them
    * @param newTxMetaProps
-   * @returns {Object} MetaMask state
+   * @returns {Object} Sparrow state
    */
   async createSpeedUpTransaction(
     originalTxId,
@@ -3500,7 +3500,7 @@ export default class MetamaskController extends EventEmitter {
   // misc
 
   /**
-   * A method for emitting the full MetaMask state to all registered listeners.
+   * A method for emitting the full Sparrow state to all registered listeners.
    *
    * @private
    */
@@ -3752,7 +3752,7 @@ export default class MetamaskController extends EventEmitter {
   // TODO: Replace isClientOpen methods with `controllerConnectionChanged` events.
   /* eslint-disable accessor-pairs */
   /**
-   * A method for recording whether the MetaMask user interface is open or not.
+   * A method for recording whether the Sparrow user interface is open or not.
    *
    * @param {boolean} open
    */

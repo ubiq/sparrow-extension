@@ -289,7 +289,7 @@
     "message": "Таймер автоблокировки (минуты)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Установите время бездействия в минутах, прежде чем MetaMask будет заблокирован."
+    "message": "Установите время бездействия в минутах, прежде чем Sparrow будет заблокирован."
   },
   "average": {
     "message": "Средний"
@@ -301,7 +301,7 @@
     "message": "Назад ко всем"
   },
   "backupApprovalInfo": {
-    "message": "Этот секретный код необходим для восстановления вашего кошелька в случае, если вы потеряете свое устройство, забудете пароль, вам придется переустановить MetaMask или захотите получить доступ к своему кошельку на другом устройстве."
+    "message": "Этот секретный код необходим для восстановления вашего кошелька в случае, если вы потеряете свое устройство, забудете пароль, вам придется переустановить Sparrow или захотите получить доступ к своему кошельку на другом устройстве."
   },
   "backupApprovalNotice": {
     "message": "Сделайте копию своей секретной фразы для восстановления, чтобы обезопасить свой кошелек и средства."
@@ -325,7 +325,7 @@
     "message": "MetaMask, которому доверяют миллионы, — это безопасный кошелек, предоставляющий всем доступ к миру web3."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Используйте эту версию для тестирования будущих функций перед их выпуском. Ваше использование и отзывы помогают нам создать лучшую из возможных версий MetaMask. За использование бета-версии MetaMask взимается наша стандартная комиссия $1 и наша комиссия $2. В бета-версии может быть повышенный риск ошибок. Продолжая, вы принимаете и признаете эти риски, а также риски, указанные в наших Условиях и Условиях бета-версии.",
+    "message": "Используйте эту версию для тестирования будущих функций перед их выпуском. Ваше использование и отзывы помогают нам создать лучшую из возможных версий MetaMask. За использование бета-версии Sparrow взимается наша стандартная комиссия $1 и наша комиссия $2. В бета-версии может быть повышенный риск ошибок. Продолжая, вы принимаете и признаете эти риски, а также риски, указанные в наших Условиях и Условиях бета-версии.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -417,7 +417,7 @@
     "message": "Этот ID цепочки в настоящее время используется сетью $1."
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Вам необходимо использовать MetaMask в Google Chrome, чтобы подключиться к аппаратному кошельку."
+    "message": "Вам необходимо использовать Sparrow в Google Chrome, чтобы подключиться к аппаратному кошельку."
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "Нажмите здесь, чтобы подключить свой леджер через WebHID",
@@ -918,7 +918,7 @@
     "message": "Никогда не сообщайте никому эту фразу."
   },
   "endOfFlowMessage5": {
-    "message": "Остерегайтесь фишинга! MetaMask никогда неожиданно не запросит вашу секретную фразу для восстановления."
+    "message": "Остерегайтесь фишинга! Sparrow никогда неожиданно не запросит вашу секретную фразу для восстановления."
   },
   "endOfFlowMessage6": {
     "message": "Если вам нужно снова создать резервную копию секретной фразы для восстановления, вы можете найти эту функцию в разделе «Настройки» -> «Безопасность»."
@@ -928,7 +928,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "Просто помните, что MetaMask не может восстановить секретную фразу для восстановления."
+    "message": "Просто помните, что Sparrow не может восстановить секретную фразу для восстановления."
   },
   "endOfFlowMessage9": {
     "message": "Узнайте подробнее."
@@ -1582,7 +1582,7 @@
     "message": "Подключение вас к Ethereum и децентрализованной сети..."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "Сервис обмена MetaMask на техобслуживании. Зайдите позже."
+    "message": "Сервис обмена Sparrow на техобслуживании. Зайдите позже."
   },
   "metamaskVersion": {
     "message": "Версия MetaMask"
@@ -1761,7 +1761,7 @@
     "message": "Новинка! Обнаружение NFT"
   },
   "newNFTsDetectedInfo": {
-    "message": "Разрешите MetaMask автоматически обнаруживать NFT из Opensea и отображать их в вашем кошельке MetaMask."
+    "message": "Разрешите Sparrow автоматически обнаруживать NFT из Opensea и отображать их в вашем кошельке MetaMask."
   },
   "newNetworkAdded": {
     "message": "«$1» успешно добавлен!"
@@ -1849,19 +1849,19 @@
     "message": "Недостаточно газа"
   },
   "notifications1Description": {
-    "message": "Теперь пользователи MetaMask Mobile могут обменивать токены в своем мобильном кошельке. Отсканируйте QR-код, чтобы скачать мобильное приложение и начать обмен.",
+    "message": "Теперь пользователи Sparrow Mobile могут обменивать токены в своем мобильном кошельке. Отсканируйте QR-код, чтобы скачать мобильное приложение и начать обмен.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
     "message": "Обмен на мобильном устройстве уже доступен!",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use Sparrow Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "Подробнее",
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Ознакомьтесь с методами безопасной работы в MetaMask и актуальными советами по безопасности на официальном сайте поддержки MetaMask.",
+    "message": "Ознакомьтесь с методами безопасной работы в Sparrow и актуальными советами по безопасности на официальном сайте поддержки MetaMask.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1873,7 +1873,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Получайте лучшие ценовые предложения на обмен токенов прямо в своем кошельке. Теперь через MetaMask можно взаимодействовать с несколькими децентрализованными агрегаторами обмена и профессиональными маркет-мейкерами в Binance Smart Chain.",
+    "message": "Получайте лучшие ценовые предложения на обмен токенов прямо в своем кошельке. Теперь через Sparrow можно взаимодействовать с несколькими децентрализованными агрегаторами обмена и профессиональными маркет-мейкерами в Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -1885,11 +1885,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Начиная с Chrome версии 91, API, обеспечивавший нашу поддержку леджеров (U2F), больше не поддерживают аппаратные кошельки . Компания MetaMask реализовала новую поддержку Ledger Live, которая позволяет по-прежнему подключаться к леджеру через приложение Ledger Live для ПК.",
+    "message": "Начиная с Chrome версии 91, API, обеспечивавший нашу поддержку леджеров (U2F), больше не поддерживают аппаратные кошельки . Компания Sparrow реализовала новую поддержку Ledger Live, которая позволяет по-прежнему подключаться к леджеру через приложение Ledger Live для ПК.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "При использовании счета вашего леджера в MetaMask откроется новая вкладка,и будет предложено открыть приложение Ledger Live.  Когда приложение откроется, вы увидите запрос разрешения на WebSocket-соединение с вашим счетом MetaMask.  Вот и все!",
+    "message": "При использовании счета вашего леджера в Sparrow откроется новая вкладка,и будет предложено открыть приложение Ledger Live.  Когда приложение откроется, вы увидите запрос разрешения на WebSocket-соединение с вашим счетом MetaMask.  Вот и все!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1917,7 +1917,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced Settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Начиная с версии MetaMask 10.4.0, вам больше не требуется Ledger Live для подключения леджера к MetaMask.",
+    "message": "Начиная с версии Sparrow 10.4.0, вам больше не требуется Ledger Live для подключения леджера к MetaMask.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -1974,7 +1974,7 @@
     "message": "Нажмите на значок расширения браузера"
   },
   "onboardingPinExtensionDescription": {
-    "message": "Закрепите расширение MetaMask в браузере для его постоянной доступности и легкого просмотра подтверждений транзакций."
+    "message": "Закрепите расширение Sparrow в браузере для его постоянной доступности и легкого просмотра подтверждений транзакций."
   },
   "onboardingPinExtensionDescription2": {
     "message": "Вы можете открыть MetaMask, нажав на расширение, и получить доступ к своему кошельку одним щелчком мыши."
@@ -1992,7 +1992,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Установка MetaMask завершена!"
+    "message": "Установка Sparrow завершена!"
   },
   "onboardingReturnNotice": {
     "message": "Кнопка «$1» закрывает эту вкладку и возвращает на сайт $2",
@@ -2013,8 +2013,8 @@
     "message": "Подключайтесь только к сайтам, которым доверяете."
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "Откройте MetaMask в полноэкранном режиме, чтобы подключить свой леджер через WebHID.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "message": "Откройте Sparrow в полноэкранном режиме, чтобы подключить свой леджер через WebHID.",
+    "description": "Shown to the user on the confirm screen when they are viewing Sparrow in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
     "message": "Необязательно"
@@ -2044,10 +2044,10 @@
     "message": "Пароль недостаточно длинный"
   },
   "passwordSetupDetails": {
-    "message": "Этот пароль разблокирует ваш кошелек MetaMask только на этом устройстве. MetaMask не может восстановить этот пароль."
+    "message": "Этот пароль разблокирует ваш кошелек Sparrow только на этом устройстве. Sparrow не может восстановить этот пароль."
   },
   "passwordTermsWarning": {
-    "message": "Я понимаю, что MetaMask не может восстановить этот пароль для меня. $1"
+    "message": "Я понимаю, что Sparrow не может восстановить этот пароль для меня. $1"
   },
   "passwordsDontMatch": {
     "message": "Пароли не совпадают"
@@ -2167,7 +2167,7 @@
     "message": "Никогда никому не сообщайте никому свою секретную фразу для восстановления."
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "Команда MetaMask никогда неожиданно не запросит вашу секретную фразу для восстановления"
+    "message": "Команда Sparrow никогда неожиданно не запросит вашу секретную фразу для восстановления"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Ваша секретная фраза для восстановления контролирует все ваши счета."
@@ -2591,7 +2591,7 @@
     "message": "Убедитесь, что Lattice1 готово к подключению"
   },
   "step1LatticeWalletMsg": {
-    "message": "Вы можете подключить MetaMask к своему устройству Lattice1, как только оно будет настроено и подключено к сети. Разблокируйте устройство и подготовьте свой идентификатор устройства. Подробнее об использовании аппаратных кошельков: $1",
+    "message": "Вы можете подключить Sparrow к своему устройству Lattice1, как только оно будет настроено и подключено к сети. Разблокируйте устройство и подготовьте свой идентификатор устройства. Подробнее об использовании аппаратных кошельков: $1",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -2687,7 +2687,7 @@
     "message": "Изменить лимит"
   },
   "swapEnableDescription": {
-    "message": "Это необходимо и дает MetaMask разрешение на обмен вашего $1.",
+    "message": "Это необходимо и дает Sparrow разрешение на обмен вашего $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -2733,14 +2733,14 @@
     "message": "Плата за газ, указанная на предыдущем экране, распределяется между этими двумя транзакциями."
   },
   "swapGasFeesSummary": {
-    "message": "Плата за газ переводится майнерам, которые обрабатывают транзакции в сети $1. MetaMask не получает прибыли от платы за газ.",
+    "message": "Плата за газ переводится майнерам, которые обрабатывают транзакции в сети $1. Sparrow не получает прибыли от платы за газ.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Сумма проскальзывания очень велика."
   },
   "swapIncludesMMFee": {
-    "message": "Включает комиссию MetaMask в размере $1%.",
+    "message": "Включает комиссию Sparrow в размере $1%.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -2975,7 +2975,7 @@
     "message": "Вы можете синхронизировать свои счета и информацию со своим мобильным устройством. Откройте мобильное приложение MetaMask, перейдите в раздел «Настройки» и нажмите «Синхронизировать из расширения браузера»."
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Если вы открываете приложение MetaMask Mobile в первый раз, просто следуйте инструкциям на телефоне."
+    "message": "Если вы открываете приложение Sparrow Mobile в первый раз, просто следуйте инструкциям на телефоне."
   },
   "syncWithMobileScanThisCode": {
     "message": "Отсканируйте этот код с помощью мобильного приложения MetaMask"
@@ -3076,7 +3076,7 @@
     "message": "Рекомендовано сайтом"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "Отредактируйте, чтобы использовать рекомендованную MetaMask плату за газ с учетом последнего блока."
+    "message": "Отредактируйте, чтобы использовать рекомендованную Sparrow плату за газ с учетом последнего блока."
   },
   "transactionDetailGasHeading": {
     "message": "Примерная плата за газ"
@@ -3091,7 +3091,7 @@
     "message": "Плата за газ устанавливается сетью и варьируется в зависимости от сетевого трафика и сложности транзакции."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Плата за газ переводится майнерам, которые обрабатывают транзакции в сети $1. MetaMask не получает прибыли от платы за газ."
+    "message": "Плата за газ переводится майнерам, которые обрабатывают транзакции в сети $1. Sparrow не получает прибыли от платы за газ."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Сумма + плата за газ"
@@ -3187,7 +3187,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect Sparrow to Ledger devices."
   },
   "unapproved": {
     "message": "Не одобрен"
@@ -3256,7 +3256,7 @@
     "message": "Использовать обнаружение токенов"
   },
   "useTokenDetectionDescription": {
-    "message": "Мы используем сторонние API для обнаружения и отображения новых токенов, отправленных в ваш кошелек. Отключите, если не хотите, чтобы MetaMask получал данные от этих служб."
+    "message": "Мы используем сторонние API для обнаружения и отображения новых токенов, отправленных в ваш кошелек. Отключите, если не хотите, чтобы Sparrow получал данные от этих служб."
   },
   "usedByClients": {
     "message": "Используется множеством разных клиентов"
@@ -3356,7 +3356,7 @@
     "message": "Ознакомьтесь с децентрализованными приложениями"
   },
   "welcomeLoginDescription": {
-    "message": "Используйте кошелек MetaMask для входа в децентрализованные приложения — регистрация не потребуется."
+    "message": "Используйте кошелек Sparrow для входа в децентрализованные приложения — регистрация не потребуется."
   },
   "welcomeLoginTitle": {
     "message": "Поприветствуйте свой кошелек"

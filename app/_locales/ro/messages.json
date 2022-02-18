@@ -103,7 +103,7 @@
     "message": "Temporizator deconectare automată (minute)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Setați perioada de inactivitate în minute înainte ca MetaMask să se deconecteze automat"
+    "message": "Setați perioada de inactivitate în minute înainte ca Sparrow să se deconecteze automat"
   },
   "average": {
     "message": "Mediu"
@@ -115,7 +115,7 @@
     "message": "Înapoi la toate"
   },
   "backupApprovalInfo": {
-    "message": "Acest cod secret este necesar pentru recuperarea portofelului în cazul în care pierdeți dispozitivul, uitați parola, trebuie să reinstalați MetaMask sau vreți să accesați portofelul de pe alt dispozitiv."
+    "message": "Acest cod secret este necesar pentru recuperarea portofelului în cazul în care pierdeți dispozitivul, uitați parola, trebuie să reinstalați Sparrow sau vreți să accesați portofelul de pe alt dispozitiv."
   },
   "backupApprovalNotice": {
     "message": "Creați o copie de rezervă a codului de recuperare secret pentru a vă menține portofelul și fondurile în siguranță."
@@ -164,7 +164,7 @@
     "message": "ID lanț"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Trebuie să folosiți MetaMask în Google Chrome pentru a vă conecta la portofelul hardware."
+    "message": "Trebuie să folosiți Sparrow în Google Chrome pentru a vă conecta la portofelul hardware."
   },
   "clickToRevealSeed": {
     "message": "Faceți clic aici pentru a arăta cuvintele secrete"
@@ -323,7 +323,7 @@
     "message": "Nu comunicați niciodată fraza cuiva."
   },
   "endOfFlowMessage5": {
-    "message": "Aveți grijă la phishing! MetaMask nu vă va cere niciodată în mod spontan expresia sursă."
+    "message": "Aveți grijă la phishing! Sparrow nu vă va cere niciodată în mod spontan expresia sursă."
   },
   "endOfFlowMessage6": {
     "message": "Dacă trebuie să vă salvați din nou fraza seed, puteți să o găsiți în Setări -> Securitate."
@@ -453,7 +453,7 @@
     "message": "Importare cont"
   },
   "importAccountMsg": {
-    "message": "Conturile importate nu vor fi asociate cu seedphrase-ul contului dumneavoastră MetaMask creat inițial. Aflați mai multe despre conturile importate"
+    "message": "Conturile importate nu vor fi asociate cu seedphrase-ul contului dumneavoastră Sparrow creat inițial. Aflați mai multe despre conturile importate"
   },
   "importAccountSeedPhrase": {
     "message": "Importați un cont cu fraza seed"
@@ -933,7 +933,7 @@
     "message": "Vă puteți sincroniza conturile și informațiile cu dispozitivul dvs. mobil. Deschideți aplicația mobilă MetaMask, mergeți la „Setări” și atingeți „Sincronizare de la extensia de browser”"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Dacă deschideți aplicația pentru mobil MetaMask pentru prima oară, urmați pașii afișați pe telefonul dvs."
+    "message": "Dacă deschideți aplicația pentru mobil Sparrow pentru prima oară, urmați pașii afișați pe telefonul dvs."
   },
   "syncWithMobileScanThisCode": {
     "message": "Scanați acest cod folosind aplicația dvs. mobilă MetaMask"

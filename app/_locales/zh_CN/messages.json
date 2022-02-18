@@ -99,7 +99,7 @@
     "message": "添加昵称"
   },
   "addAcquiredTokens": {
-    "message": "在 MetaMask 上添加获得的代币"
+    "message": "在 Sparrow 上添加获得的代币"
   },
   "addAlias": {
     "message": "添加别名"
@@ -289,7 +289,7 @@
     "message": "自动锁定定时（分钟）"
   },
   "autoLockTimeLimitDescription": {
-    "message": "请设置 MetaMask 自动锁定前的空闲时间（单位：分钟）"
+    "message": "请设置 Sparrow 自动锁定前的空闲时间（单位：分钟）"
   },
   "average": {
     "message": "平均值"
@@ -381,7 +381,7 @@
     "message": "使用 Wyre 购买 ETH"
   },
   "buyWithWyreDescription": {
-    "message": "您可以通过 Wyre 使用信用卡将 ETH 存入您的 MetaMask 账户。"
+    "message": "您可以通过 Wyre 使用信用卡将 ETH 存入您的 Sparrow 账户。"
   },
   "bytes": {
     "message": "字节"
@@ -417,7 +417,7 @@
     "message": "链路ID已经存在于现有的网络列表中。"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "您需要在谷歌浏览器（Google Chrome）上使用 MetaMask 才能连接到您的硬件钱包。"
+    "message": "您需要在谷歌浏览器（Google Chrome）上使用 Sparrow 才能连接到您的硬件钱包。"
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "点击这里通过WebHID连接到您的Ledger",
@@ -489,7 +489,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "使用 MetaMask 连接"
+    "message": "使用 Sparrow 连接"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "您有 $1 个账户连接到了该网站。",
@@ -657,7 +657,7 @@
     "message": "数据"
   },
   "dataBackupFoundInfo": {
-    "message": "您的部分账户数据已在之前安装的 MetaMask 时备份。其中可能包括您的设置、联系人和代币。您现在想恢复这些数据吗？"
+    "message": "您的部分账户数据已在之前安装的 Sparrow 时备份。其中可能包括您的设置、联系人和代币。您现在想恢复这些数据吗？"
   },
   "dataHex": {
     "message": "十六进制文件"
@@ -1228,7 +1228,7 @@
     "message": "连接硬件钱包"
   },
   "hardwareWalletsMsg": {
-    "message": "选择希望用于 MetaMask 的硬件钱包"
+    "message": "选择希望用于 Sparrow 的硬件钱包"
   },
   "here": {
     "message": "这里",
@@ -1277,7 +1277,7 @@
     "message": "使用账户助记词导入"
   },
   "importAccountMsg": {
-    "message": "导入的账户将不会与最初创建的 MetaMask 账户助记词相关联。了解更多有关导入账户的信息 。"
+    "message": "导入的账户将不会与最初创建的 Sparrow 账户助记词相关联。了解更多有关导入账户的信息 。"
   },
   "importAccountSeedPhrase": {
     "message": "使用账户助记词导入账户"
@@ -1570,7 +1570,7 @@
     "message": "消息"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "现在您可在 MetaMask 中对账户连接进行更多的控制。"
+    "message": "现在您可在 Sparrow 中对账户连接进行更多的控制。"
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "点击管理连接的账户。"
@@ -1625,7 +1625,7 @@
     "message": "发送匿名的点击和页面浏览事件信息"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "帮助我们让 MetaMask 变得更好"
+    "message": "帮助我们让 Sparrow 变得更好"
   },
   "metametricsOptInDescription": {
     "message": "MetaMask 希望收集使用数据，以更好地了解我们的用户如何与扩展进行互动。这些数据将被用于持续改进我们产品和 Ethereum 生态系统的可用性和用户体验。"
@@ -1854,7 +1854,7 @@
   },
   "notifications1Title": {
     "message": "在移动设备上交换！",
-    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use MetaMask Swaps on Mobile."
+    "description": "Title for a notification in the 'See What's New' popup. Tells users that they can now use Sparrow Swaps on Mobile."
   },
   "notifications3ActionText": {
     "message": "阅读更多",
@@ -2014,7 +2014,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "全屏打开MetaMask以通过WebHID连接您的ledger。",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing Sparrow in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
     "message": "可选"
@@ -2035,7 +2035,7 @@
     "message": "加入 MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "加入 MetaMetrics ，帮助我们改善 MetaMask 服务"
+    "message": "加入 MetaMetrics ，帮助我们改善 Sparrow 服务"
   },
   "password": {
     "message": "密码"
@@ -2687,7 +2687,7 @@
     "message": "修改限制"
   },
   "swapEnableDescription": {
-    "message": "这是必须的，并且允许 MetaMask 兑换您的 $1。",
+    "message": "这是必须的，并且允许 Sparrow 兑换您的 $1。",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -2753,7 +2753,7 @@
     "message": "MetaMask 手续费"
   },
   "swapMetaMaskFeeDescription": {
-    "message": "我们每次都能从顶级流动性资源中找到最好的价格。每次报价都会自动收取1%的手续费用，以支持 MetaMask 的持续发展，使其更加完善。",
+    "message": "我们每次都能从顶级流动性资源中找到最好的价格。每次报价都会自动收取1%的手续费用，以支持 Sparrow 的持续发展，使其更加完善。",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapNQuotesWithDot": {
@@ -2969,16 +2969,16 @@
     "message": "扫描这个代码时，请确保附近没有其他人在看您的屏幕。"
   },
   "syncWithMobileComplete": {
-    "message": "您的数据已同步成功。尽情体验 MetaMask 应用程序！"
+    "message": "您的数据已同步成功。尽情体验 Sparrow 应用程序！"
   },
   "syncWithMobileDesc": {
-    "message": "您可以使用个人移动设备同步个人账户与信息。打开 MetaMask 移动应用程序，进入“设置”选项，点击“通过浏览器扩展程序同步”"
+    "message": "您可以使用个人移动设备同步个人账户与信息。打开 Sparrow 移动应用程序，进入“设置”选项，点击“通过浏览器扩展程序同步”"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "如果您是首次启用 MetaMask 移动应用程序，请通过个人手机完成如下操作。"
+    "message": "如果您是首次启用 Sparrow 移动应用程序，请通过个人手机完成如下操作。"
   },
   "syncWithMobileScanThisCode": {
-    "message": "使用 MetaMask 应用程序扫描代码"
+    "message": "使用 Sparrow 应用程序扫描代码"
   },
   "syncWithMobileTitle": {
     "message": "使用移动设备进行同步"
@@ -3183,11 +3183,11 @@
     "message": "此时此合同不支持交易见解。"
   },
   "typePassword": {
-    "message": "输入您的 MetaMask 密码"
+    "message": "输入您的 Sparrow 密码"
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect Sparrow to Ledger devices."
   },
   "unapproved": {
     "message": "未批准"

@@ -103,7 +103,7 @@
     "message": "自動登出計時器（分）"
   },
   "autoLockTimeLimitDescription": {
-    "message": "設定閒置分鐘上限，時間到時 MetaMask 將自動登出"
+    "message": "設定閒置分鐘上限，時間到時 Sparrow 將自動登出"
   },
   "average": {
     "message": "平均"
@@ -149,7 +149,7 @@
     "message": "用 Wyre 購買 ETH"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre 讓你使用信用卡在 MetaMask 帳號中直接存入 ETH。"
+    "message": "Wyre 讓你使用信用卡在 Sparrow 帳號中直接存入 ETH。"
   },
   "bytes": {
     "message": "位元組"
@@ -167,7 +167,7 @@
     "message": "鏈 ID"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "您需要在 Google Chrome 瀏覽器使用 MetaMask 連結您的硬體錢包"
+    "message": "您需要在 Google Chrome 瀏覽器使用 Sparrow 連結您的硬體錢包"
   },
   "clickToRevealSeed": {
     "message": "點選顯示助憶詞"
@@ -437,7 +437,7 @@
     "message": "連線硬體錢包"
   },
   "hardwareWalletsMsg": {
-    "message": "選擇要連線到 MetaMask 的硬體錢包"
+    "message": "選擇要連線到 Sparrow 的硬體錢包"
   },
   "here": {
     "message": "這裡",
@@ -463,7 +463,7 @@
     "message": "匯入帳戶"
   },
   "importAccountMsg": {
-    "message": " 匯入的帳戶與您原有 MetaMask 帳戶的助憶詞並無關聯。請查看與匯入帳戶相關的資料 "
+    "message": " 匯入的帳戶與您原有 Sparrow 帳戶的助憶詞並無關聯。請查看與匯入帳戶相關的資料 "
   },
   "importAccountSeedPhrase": {
     "message": "利用助憶詞還原"
@@ -919,16 +919,16 @@
     "message": "掃描代碼時確保沒有其他人在看你的螢幕"
   },
   "syncWithMobileComplete": {
-    "message": "你的資料已成功同步。開始活用 MetaMask 移動 app！"
+    "message": "你的資料已成功同步。開始活用 Sparrow 移動 app！"
   },
   "syncWithMobileDesc": {
-    "message": "你可以用移動裝置同步帳號與資訊。開啟 MetaMask 移動 app，至「設定」並點擊「自瀏覽器擴充功能同步」"
+    "message": "你可以用移動裝置同步帳號與資訊。開啟 Sparrow 移動 app，至「設定」並點擊「自瀏覽器擴充功能同步」"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "如你是第一次開啟 MetaMask 移動 app，只要跟著手機上的指示操作即可。"
+    "message": "如你是第一次開啟 Sparrow 移動 app，只要跟著手機上的指示操作即可。"
   },
   "syncWithMobileScanThisCode": {
-    "message": "用你的 MetaMask 移動 app 掃描此代碼"
+    "message": "用你的 Sparrow 移動 app 掃描此代碼"
   },
   "syncWithMobileTitle": {
     "message": "和移動裝置同步"
