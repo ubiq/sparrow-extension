@@ -30,14 +30,14 @@ export const DefaultStory = (args) => <SiteIcon {...args} />;
 DefaultStory.storyName = 'Default';
 
 DefaultStory.args = {
-  name: 'eth',
-  icon: './images/eth_logo.svg',
+  name: 'ubq',
+  icon: './images/ubq_logo.svg',
   size: 24,
 };
 
 export const Fallback = (args) => <SiteIcon {...args} />;
 
 Fallback.args = {
-  name: 'eth',
+  name: 'ubq',
   size: 24,
 };

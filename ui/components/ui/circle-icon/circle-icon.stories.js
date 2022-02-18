@@ -33,5 +33,5 @@ DefaultStory.storyName = 'Default';
 
 DefaultStory.args = {
   iconSize: '42px',
-  iconSource: 'images/eth_logo.svg',
+  iconSource: 'images/ubq_logo.svg',
 };

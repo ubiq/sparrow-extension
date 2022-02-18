@@ -5,7 +5,7 @@ import SiteIcon from '.';
 describe('SiteIcon', () => {
   const args = {
     name: 'Snap name',
-    icon: './images/eth_logo.svg',
+    icon: './images/ubq_logo.svg',
     className: 'classname-test',
     fallbackClassName: 'fallback-classname-test',
   };

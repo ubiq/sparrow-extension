@@ -146,7 +146,7 @@ export const DefaultStory = (args) => {
   const children = [];
   for (let $i = 0; $i < items; $i++) {
     children.push(
-      <img width={size} height={size} src="./images/eth_logo.svg" />,
+      <img width={size} height={size} src="./images/ubq_logo.svg" />,
     );
   }
   return <Box {...rest}>{children}</Box>;
