@@ -3607,7 +3607,7 @@ export default class MetamaskController extends EventEmitter {
   async updateAndSetCustomRpc(
     rpcUrl,
     chainId,
-    ticker = 'ETH',
+    ticker = 'UBQ',
     nickname,
     rpcPrefs,
   ) {
@@ -3641,7 +3641,7 @@ export default class MetamaskController extends EventEmitter {
   async setCustomRpc(
     rpcUrl,
     chainId,
-    ticker = 'ETH',
+    ticker = 'UBQ',
     nickname = '',
     rpcPrefs = {},
   ) {

@@ -154,7 +154,7 @@ export const generateUseSelectorRouter = ({
 export function getTotalCostInETH(gwei, gasLimit) {
   return multiplyCurrencies(gwei, gasLimit, {
     fromDenomination: 'GWEI',
-    toDenomination: 'ETH',
+    toDenomination: 'UBQ',
     multiplicandBase: 10,
     multiplierBase: 10,
   });

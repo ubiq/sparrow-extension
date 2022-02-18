@@ -172,7 +172,7 @@ export default connect(
   mapDispatchToProps,
 )(SwapsGasCustomizationModalComponent);
 
-function sumHexWEIsToRenderableEth(hexWEIs, currencySymbol = 'ETH') {
+function sumHexWEIsToRenderableEth(hexWEIs, currencySymbol = 'UBQ') {
   const hexWEIsSum = hexWEIs.filter(Boolean).reduce(addHexes);
   return formatETHFee(
     getValueFromWeiHex({

@@ -689,9 +689,9 @@ export default class SwapsController {
       );
 
       const totalEthCost = conversionUtil(totalWeiCost, {
-        fromCurrency: 'ETH',
+        fromCurrency: 'UBQ',
         fromDenomination: 'WEI',
-        toDenomination: 'ETH',
+        toDenomination: 'UBQ',
         fromNumericBase: 'BN',
         numberOfDecimals: 6,
       });
@@ -704,9 +704,9 @@ export default class SwapsController {
         ? conversionUtil(
             totalWeiCost.minus(sourceAmount, 10), // sourceAmount is in wei
             {
-              fromCurrency: 'ETH',
+              fromCurrency: 'UBQ',
               fromDenomination: 'WEI',
-              toDenomination: 'ETH',
+              toDenomination: 'UBQ',
               fromNumericBase: 'BN',
               numberOfDecimals: 6,
             },

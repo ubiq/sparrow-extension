@@ -35,7 +35,7 @@ describe('BuildQuote', () => {
     const { getByText } = renderWithProvider(<BuildQuote {...props} />, store);
     expect(getByText('Swap from')).toBeInTheDocument();
     expect(getByText('Swap to')).toBeInTheDocument();
-    expect(getByText('ETH')).toBeInTheDocument();
+    expect(getByText('UBQ')).toBeInTheDocument();
     expect(getByText('Slippage Tolerance')).toBeInTheDocument();
     expect(getByText('2%')).toBeInTheDocument();
     expect(getByText('3%')).toBeInTheDocument();

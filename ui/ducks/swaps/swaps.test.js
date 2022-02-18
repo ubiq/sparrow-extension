@@ -14,7 +14,7 @@ const providerState = {
   nickname: '',
   rpcPrefs: {},
   rpcUrl: '',
-  ticker: 'ETH',
+  ticker: 'UBQ',
   type: 'mainnet',
 };
 

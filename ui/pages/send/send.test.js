@@ -65,7 +65,7 @@ const baseStore = {
     provider: {
       chainId: RINKEBY_CHAIN_ID,
     },
-    nativeCurrency: 'ETH',
+    nativeCurrency: 'UBQ',
     featureFlags: {
       sendHexData: false,
     },

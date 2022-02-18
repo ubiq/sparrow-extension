@@ -55,7 +55,7 @@ describe('View Price Quote Difference', () => {
       },
       slippage: 2,
       sourceTokenInfo: {
-        symbol: 'ETH',
+        symbol: 'UBQ',
         name: 'Ether',
         address: '0x0000000000000000000000000000000000000000',
         decimals: 18,

@@ -42,7 +42,7 @@ const tokenTransactionFilter = ({
   if (TOKEN_CATEGORY_HASH[type]) {
     return false;
   } else if (type === TRANSACTION_TYPES.SWAP) {
-    return destinationTokenSymbol === 'ETH' || sourceTokenSymbol === 'ETH';
+    return destinationTokenSymbol === 'UBQ' || sourceTokenSymbol === 'UBQ';
   }
   return true;
 };

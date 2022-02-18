@@ -11,7 +11,7 @@ const quoteDataRows = [
     rawNetworkFees: '10.25',
     slippage: '1%',
     sourceTokenDecimals: 18,
-    sourceTokenSymbol: 'ETH',
+    sourceTokenSymbol: 'UBQ',
     sourceTokenValue: '250000000000000000',
   },
   {
@@ -26,7 +26,7 @@ const quoteDataRows = [
     rawNetworkFees: '10.26',
     slippage: '1%',
     sourceTokenDecimals: 18,
-    sourceTokenSymbol: 'ETH',
+    sourceTokenSymbol: 'UBQ',
     sourceTokenValue: '250000000000000000',
   },
   {
@@ -41,7 +41,7 @@ const quoteDataRows = [
     rawNetworkFees: '10.27',
     slippage: '1%',
     sourceTokenDecimals: 18,
-    sourceTokenSymbol: 'ETH',
+    sourceTokenSymbol: 'UBQ',
     sourceTokenValue: '250000000000000000',
   },
   {
@@ -56,7 +56,7 @@ const quoteDataRows = [
     rawNetworkFees: '10.28',
     slippage: '1%',
     sourceTokenDecimals: 18,
-    sourceTokenSymbol: 'ETH',
+    sourceTokenSymbol: 'UBQ',
     sourceTokenValue: '250000000000000000',
   },
   {
@@ -71,7 +71,7 @@ const quoteDataRows = [
     rawNetworkFees: '10.29',
     slippage: '1%',
     sourceTokenDecimals: 18,
-    sourceTokenSymbol: 'ETH',
+    sourceTokenSymbol: 'UBQ',
     sourceTokenValue: '250000000000000000',
   },
   {
@@ -86,7 +86,7 @@ const quoteDataRows = [
     rawNetworkFees: '10.3',
     slippage: '1%',
     sourceTokenDecimals: 18,
-    sourceTokenSymbol: 'ETH',
+    sourceTokenSymbol: 'UBQ',
     sourceTokenValue: '250000000000000000',
   },
 ];

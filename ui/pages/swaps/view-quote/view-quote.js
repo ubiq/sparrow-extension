@@ -540,7 +540,7 @@ export default function ViewQuote() {
     .toString(16);
   const extraNetworkFeeTotalInEth = getValueFromWeiHex({
     value: extraNetworkFeeTotalInHexWEI,
-    toDenomination: 'ETH',
+    toDenomination: 'UBQ',
     numberOfDecimals: 4,
   });
 

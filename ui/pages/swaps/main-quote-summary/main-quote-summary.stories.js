@@ -20,7 +20,7 @@ export const DefaultStory = () => {
       <MainQuoteSummary
         sourceValue={text('sourceValue', '2000000000000000000')}
         sourceDecimals={number('sourceDecimals', 18)}
-        sourceSymbol={text('sourceSymbol', 'ETH')}
+        sourceSymbol={text('sourceSymbol', 'UBQ')}
         destinationValue={text('destinationValue', '200000000000000000')}
         destinationDecimals={number('destinationDecimals', 18)}
         destinationSymbol={text('destinationSymbol', 'ABC')}

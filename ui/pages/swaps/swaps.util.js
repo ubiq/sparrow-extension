@@ -520,7 +520,7 @@ export function getRenderableNetworkFeesForQuote({
 
   const ethFee = getValueFromWeiHex({
     value: totalWeiCost,
-    toDenomination: 'ETH',
+    toDenomination: 'UBQ',
     numberOfDecimals: 5,
   });
   const rawNetworkFees = getValueFromWeiHex({
@@ -715,7 +715,7 @@ export function getSwapsTokensReceivedFromTxMeta(
         aBase: 16,
         bBase: 16,
         fromDenomination: 'WEI',
-        toDenomination: 'ETH',
+        toDenomination: 'UBQ',
         toNumericBase: 'dec',
         numberOfDecimals: 6,
       },

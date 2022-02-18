@@ -12,7 +12,7 @@ describe('UserPreferencedCurrencyDisplay Component', () => {
       sinon.stub(currencyHook, 'useCurrencyDisplay').returns(['1', {}]);
       sinon
         .stub(currencyPrefHook, 'useUserPreferencedCurrency')
-        .returns({ currency: 'ETH', decimals: 6 });
+        .returns({ currency: 'UBQ', decimals: 6 });
     });
 
     afterEach(() => {

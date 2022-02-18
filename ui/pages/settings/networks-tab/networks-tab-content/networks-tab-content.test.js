@@ -12,7 +12,7 @@ const mockState = {
       nickname: '',
       rpcPrefs: {},
       rpcUrl: 'http://localhost:8588',
-      ticker: 'ETH',
+      ticker: 'UBQ',
       type: 'localhost',
     },
   },
@@ -35,7 +35,7 @@ const props = {
   selectedNetwork: {
     rpcUrl: 'http://localhost:8588',
     chainId: '1337',
-    ticker: 'ETH',
+    ticker: 'UBQ',
     label: 'LocalHost',
     blockExplorerUrl: '',
     viewOnly: false,

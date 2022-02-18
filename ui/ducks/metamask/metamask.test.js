@@ -39,7 +39,7 @@ describe('MetaMask Reducers', () => {
         cachedBalances: {},
         currentBlockGasLimit: '0x4c1878',
         conversionRate: 1200.88200327,
-        nativeCurrency: 'ETH',
+        nativeCurrency: 'UBQ',
         network: '3',
         provider: {
           type: 'testnet',
@@ -309,7 +309,7 @@ describe('MetaMask Reducers', () => {
 
     describe('getNativeCurrency()', () => {
       it('should return the ticker symbol of the selected network', () => {
-        expect(getNativeCurrency(mockState)).toStrictEqual('ETH');
+        expect(getNativeCurrency(mockState)).toStrictEqual('UBQ');
       });
     });
 

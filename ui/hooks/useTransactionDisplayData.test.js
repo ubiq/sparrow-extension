@@ -163,9 +163,9 @@ describe('useTransactionDisplayData', () => {
       } else if (selector === getShouldShowFiat) {
         return false;
       } else if (selector === getNativeCurrency) {
-        return 'ETH';
+        return 'UBQ';
       } else if (selector === getCurrentCurrency) {
-        return 'ETH';
+        return 'UBQ';
       } else if (selector === getCurrentChainId) {
         return MAINNET_CHAIN_ID;
       }

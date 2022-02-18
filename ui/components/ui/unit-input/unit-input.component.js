@@ -10,7 +10,7 @@ function removeLeadingZeroes(str) {
 }
 
 /**
- * Component that attaches a suffix or unit of measurement trailing user input, ex. 'ETH'. Also
+ * Component that attaches a suffix or unit of measurement trailing user input, ex. 'UBQ'. Also
  * allows rendering a child component underneath the input to, for example, display conversions of
  * the shown suffix.
  */

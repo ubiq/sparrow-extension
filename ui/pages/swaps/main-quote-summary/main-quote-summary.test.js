@@ -7,7 +7,7 @@ const createProps = (customProps = {}) => {
   return {
     sourceValue: '2000000000000000000',
     sourceDecimals: 18,
-    sourceSymbol: 'ETH',
+    sourceSymbol: 'UBQ',
     destinationValue: '200000000000000000',
     destinationDecimals: 18,
     destinationSymbol: 'BAT',

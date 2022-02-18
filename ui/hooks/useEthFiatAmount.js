@@ -31,7 +31,7 @@ export function useEthFiatAmount(
 
   if (
     !showFiat ||
-    currentCurrency.toUpperCase() === 'ETH' ||
+    currentCurrency.toUpperCase() === 'UBQ' ||
     conversionRate <= 0 ||
     ethAmount === undefined
   ) {

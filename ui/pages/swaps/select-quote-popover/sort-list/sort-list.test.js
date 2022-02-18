@@ -27,7 +27,7 @@ const createProps = (customProps = {}) => {
         rawNetworkFees: '10.25',
         slippage: 3,
         sourceTokenDecimals: 18,
-        sourceTokenSymbol: 'ETH',
+        sourceTokenSymbol: 'UBQ',
         sourceTokenValue: '250000000000000000',
       },
       {
@@ -42,7 +42,7 @@ const createProps = (customProps = {}) => {
         rawNetworkFees: '10.26',
         slippage: 3,
         sourceTokenDecimals: 18,
-        sourceTokenSymbol: 'ETH',
+        sourceTokenSymbol: 'UBQ',
         sourceTokenValue: '250000000000000000',
       },
       {
@@ -57,7 +57,7 @@ const createProps = (customProps = {}) => {
         rawNetworkFees: '10.27',
         slippage: 3,
         sourceTokenDecimals: 18,
-        sourceTokenSymbol: 'ETH',
+        sourceTokenSymbol: 'UBQ',
         sourceTokenValue: '250000000000000000',
       },
     ],

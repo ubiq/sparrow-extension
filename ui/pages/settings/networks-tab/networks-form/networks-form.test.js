@@ -26,7 +26,7 @@ const propNetworkDisplay = {
   selectedNetwork: {
     rpcUrl: 'http://localhost:8588',
     chainId: '1337',
-    ticker: 'ETH',
+    ticker: 'UBQ',
     label: 'LocalHost',
     blockExplorerUrl: '',
     viewOnly: false,

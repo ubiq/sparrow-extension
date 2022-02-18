@@ -155,7 +155,7 @@ export function formatBalance(
   balance,
   decimalsToKeep,
   needsParse = true,
-  ticker = 'ETH',
+  ticker = 'UBQ',
 ) {
   const parsed = needsParse ? parseBalance(balance) : balance.split('.');
   const beforeDecimal = parsed[0];

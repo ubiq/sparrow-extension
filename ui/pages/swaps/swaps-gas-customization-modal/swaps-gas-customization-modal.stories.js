@@ -25,7 +25,7 @@ export default {
 };
 
 // Convert Hex Wei to Decimal ETH
-const sumHexWEIsToRenderableEth = (hexWEIs, currencySymbol = 'ETH') => {
+const sumHexWEIsToRenderableEth = (hexWEIs, currencySymbol = 'UBQ') => {
   const hexWEIsSum = hexWEIs.filter(Boolean).reduce(addHexes);
   return formatETHFee(
     getValueFromWeiHex({

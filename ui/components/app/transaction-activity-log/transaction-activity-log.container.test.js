@@ -16,14 +16,14 @@ describe('TransactionActivityLog container', () => {
       const mockState = {
         metamask: {
           conversionRate: 280.45,
-          nativeCurrency: 'ETH',
+          nativeCurrency: 'UBQ',
           frequentRpcListDetail: [],
         },
       };
 
       expect(mapStateToProps(mockState)).toStrictEqual({
         conversionRate: 280.45,
-        nativeCurrency: 'ETH',
+        nativeCurrency: 'UBQ',
         rpcPrefs: {},
       });
     });
@@ -32,7 +32,7 @@ describe('TransactionActivityLog container', () => {
       const mockState = {
         metamask: {
           conversionRate: 280.45,
-          nativeCurrency: 'ETH',
+          nativeCurrency: 'UBQ',
           frequentRpcListDetail: [
             {
               rpcUrl: 'https://customnetwork.com/',
@@ -49,7 +49,7 @@ describe('TransactionActivityLog container', () => {
 
       expect(mapStateToProps(mockState)).toStrictEqual({
         conversionRate: 280.45,
-        nativeCurrency: 'ETH',
+        nativeCurrency: 'UBQ',
         rpcPrefs: {
           blockExplorerUrl: 'https://customblockexplorer.com/',
         },

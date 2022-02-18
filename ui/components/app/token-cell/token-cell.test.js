@@ -23,7 +23,7 @@ describe('Token Cell', () => {
       preferences: {},
       provider: {
         chainId: '0x1',
-        ticker: 'ETH',
+        ticker: 'UBQ',
         type: 'mainnet',
       },
     },

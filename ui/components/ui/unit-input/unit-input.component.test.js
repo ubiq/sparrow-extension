@@ -17,7 +17,7 @@ describe('UnitInput Component', () => {
 
       expect(wrapper).toHaveLength(1);
       expect(wrapper.find('.unit-input__suffix')).toHaveLength(1);
-      expect(wrapper.find('.unit-input__suffix').text()).toStrictEqual('ETH');
+      expect(wrapper.find('.unit-input__suffix').text()).toStrictEqual('UBQ');
     });
 
     it('should render properly with a child component', () => {

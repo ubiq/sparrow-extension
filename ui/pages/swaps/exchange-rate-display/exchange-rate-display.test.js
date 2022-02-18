@@ -7,7 +7,7 @@ const createProps = (customProps = {}) => {
   return {
     primaryTokenValue: '2000000000000000000',
     primaryTokenDecimals: 18,
-    primaryTokenSymbol: 'ETH',
+    primaryTokenSymbol: 'UBQ',
     secondaryTokenValue: '200000000000000000',
     secondaryTokenDecimals: 18,
     secondaryTokenSymbol: 'BAT',

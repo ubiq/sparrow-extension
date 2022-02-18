@@ -62,7 +62,7 @@ export function addFiat(...args) {
 
 export function getValueFromWeiHex({
   value,
-  fromCurrency = 'ETH',
+  fromCurrency = 'UBQ',
   toCurrency,
   conversionRate,
   numberOfDecimals,
@@ -82,7 +82,7 @@ export function getValueFromWeiHex({
 
 export function getTransactionFee({
   value,
-  fromCurrency = 'ETH',
+  fromCurrency = 'UBQ',
   toCurrency,
   conversionRate,
   numberOfDecimals,
@@ -111,7 +111,7 @@ export function formatCurrency(value, currencyCode) {
 
 export function convertTokenToFiat({
   value,
-  fromCurrency = 'ETH',
+  fromCurrency = 'UBQ',
   toCurrency,
   conversionRate,
   contractExchangeRate,

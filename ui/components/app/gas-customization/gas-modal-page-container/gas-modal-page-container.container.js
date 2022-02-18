@@ -318,7 +318,7 @@ function sumHexWEIsToRenderableEth(hexWEIs) {
   return formatETHFee(
     getValueFromWeiHex({
       value: hexWEIsSum,
-      toCurrency: 'ETH',
+      toCurrency: 'UBQ',
       numberOfDecimals: 6,
     }),
   );

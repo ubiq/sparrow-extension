@@ -207,7 +207,7 @@ describe('preferences controller', function () {
           {
             rpcUrl: 'rpc_url',
             chainId: '0x1',
-            ticker: 'ETH',
+            ticker: 'UBQ',
             nickname: '',
             rpcPrefs: {},
           },
@@ -220,7 +220,7 @@ describe('preferences controller', function () {
           {
             rpcUrl: 'rpc_url',
             chainId: '0x1',
-            ticker: 'ETH',
+            ticker: 'UBQ',
             nickname: '',
             rpcPrefs: {},
           },
@@ -242,7 +242,7 @@ describe('preferences controller', function () {
           {
             rpcUrl: 'rpc_url',
             chainId: '0x1',
-            ticker: 'ETH',
+            ticker: 'UBQ',
             nickname: '',
             rpcPrefs: {},
           },

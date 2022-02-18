@@ -35,19 +35,19 @@ const tests = [
   {
     input: {
       value: '0x1193461d01595930',
-      currency: 'ETH',
+      currency: 'UBQ',
       numberOfDecimals: 3,
     },
     result: {
       value: '1.266',
-      suffix: 'ETH',
+      suffix: 'UBQ',
       displayValue: '1.266 ETH',
     },
   },
   {
     input: {
       value: '0x1193461d01595930',
-      currency: 'ETH',
+      currency: 'UBQ',
       numberOfDecimals: 3,
       hideLabel: true,
     },
@@ -60,7 +60,7 @@ const tests = [
   {
     input: {
       value: '0x3b9aca00',
-      currency: 'ETH',
+      currency: 'UBQ',
       denomination: 'GWEI',
       hideLabel: true,
     },
@@ -73,7 +73,7 @@ const tests = [
   {
     input: {
       value: '0x3b9aca00',
-      currency: 'ETH',
+      currency: 'UBQ',
       denomination: 'WEI',
       hideLabel: true,
     },
@@ -86,7 +86,7 @@ const tests = [
   {
     input: {
       value: '0x3b9aca00',
-      currency: 'ETH',
+      currency: 'UBQ',
       numberOfDecimals: 100,
       hideLabel: true,
     },
@@ -106,7 +106,7 @@ describe('useCurrencyDisplay', () => {
         if (selector === getCurrentCurrency) {
           return 'usd';
         } else if (selector === getNativeCurrency) {
-          return 'ETH';
+          return 'UBQ';
         } else if (selector === getConversionRate) {
           return 280.45;
         }

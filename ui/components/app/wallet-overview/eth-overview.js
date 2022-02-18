@@ -66,7 +66,7 @@ const EthOverview = ({ className }) => {
 
   const enteredSwapsEvent = useNewMetricEvent({
     event: 'Swaps Opened',
-    properties: { source: 'Main View', active_currency: 'ETH' },
+    properties: { source: 'Main View', active_currency: 'UBQ' },
     category: 'swaps',
   });
   const defaultSwapsToken = useSelector(getSwapsDefaultToken);

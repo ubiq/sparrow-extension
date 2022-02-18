@@ -10,7 +10,7 @@ const mockState = {
       nickname: '',
       rpcPrefs: {},
       rpcUrl: 'http://localhost:8588',
-      ticker: 'ETH',
+      ticker: 'UBQ',
       type: 'localhost',
     },
     frequentRpcListDetail: [],

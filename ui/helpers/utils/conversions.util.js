@@ -119,7 +119,7 @@ export function decEthToConvertedCurrency(
   return conversionUtil(ethTotal, {
     fromNumericBase: 'dec',
     toNumericBase: 'dec',
-    fromCurrency: 'ETH',
+    fromCurrency: 'UBQ',
     toCurrency: convertedCurrency,
     numberOfDecimals: 2,
     conversionRate,
@@ -148,7 +148,7 @@ export function decETHToDecWEI(decEth) {
   return conversionUtil(decEth, {
     fromNumericBase: 'dec',
     toNumericBase: 'dec',
-    fromDenomination: 'ETH',
+    fromDenomination: 'UBQ',
     toDenomination: 'WEI',
   });
 }
@@ -158,7 +158,7 @@ export function hexWEIToDecETH(hexWEI) {
     fromNumericBase: 'hex',
     toNumericBase: 'dec',
     fromDenomination: 'WEI',
-    toDenomination: 'ETH',
+    toDenomination: 'UBQ',
   });
 }
 
@@ -193,7 +193,7 @@ export function sumHexWEIsToUnformattedFiat(
   const convertedTotal = decEthToConvertedCurrency(
     getValueFromWeiHex({
       value: hexWEIsSum,
-      toCurrency: 'ETH',
+      toCurrency: 'UBQ',
       numberOfDecimals: 4,
     }),
     convertedCurrency,

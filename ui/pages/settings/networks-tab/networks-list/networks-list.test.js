@@ -11,7 +11,7 @@ const mockState = {
       nickname: '',
       rpcPrefs: {},
       rpcUrl: 'https://rinkeby.infura.io/v3/undefined',
-      ticker: 'ETH',
+      ticker: 'UBQ',
       type: 'rinkeby',
     },
   },

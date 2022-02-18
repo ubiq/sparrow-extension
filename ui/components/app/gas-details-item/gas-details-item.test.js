@@ -61,7 +61,7 @@ describe('GasDetailsItem', () => {
       expect(screen.queryByText('Gas')).toBeInTheDocument();
       expect(screen.queryByText('(estimated)')).toBeInTheDocument();
       expect(screen.queryByText('Max fee:')).toBeInTheDocument();
-      expect(screen.queryAllByText('ETH').length).toBeGreaterThan(0);
+      expect(screen.queryAllByText('UBQ').length).toBeGreaterThan(0);
     });
   });
 
@@ -107,7 +107,7 @@ describe('GasDetailsItem', () => {
     render();
     await waitFor(() => {
       expect(screen.queryAllByTitle('0.0000315 ETH').length).toBeGreaterThan(0);
-      expect(screen.queryAllByText('ETH').length).toBeGreaterThan(0);
+      expect(screen.queryAllByText('UBQ').length).toBeGreaterThan(0);
     });
   });
 });

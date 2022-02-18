@@ -7,7 +7,7 @@ const createProps = (customProps = {}) => {
   return {
     onClose: jest.fn(),
     onSubmit: jest.fn(),
-    swapToSymbol: 'ETH',
+    swapToSymbol: 'UBQ',
     initialAggId: 'initialAggId',
     onQuoteDetailsIsOpened: jest.fn(),
     ...customProps,
