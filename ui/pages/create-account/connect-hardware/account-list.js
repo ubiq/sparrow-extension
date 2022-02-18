@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { getAccountLink } from '@metamask/etherscan-link';
+import { getAccountLink } from 'ubiqscan-link';
 
 import Button from '../../../components/ui/button';
 import Checkbox from '../../../components/ui/check-box';

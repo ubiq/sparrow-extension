@@ -5,7 +5,7 @@ import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import classnames from 'classnames';
 import { uniqBy, isEqual } from 'lodash';
 import { useHistory } from 'react-router-dom';
-import { getTokenTrackerLink } from '@metamask/etherscan-link';
+import { getTokenTrackerLink } from 'ubiqscan-link';
 import { MetaMetricsContext } from '../../../contexts/metametrics.new';
 import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
 import {

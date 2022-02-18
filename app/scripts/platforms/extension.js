@@ -1,5 +1,5 @@
 import extension from 'extensionizer';
-import { getBlockExplorerLink } from '@metamask/etherscan-link';
+import { getBlockExplorerLink } from 'ubiqscan-link';
 import { getEnvironmentType, checkForError } from '../lib/util';
 import { ENVIRONMENT_TYPE_BACKGROUND } from '../../../shared/constants/app';
 import { TRANSACTION_STATUSES } from '../../../shared/constants/transaction';

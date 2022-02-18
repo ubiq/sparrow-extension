@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import copyToClipboard from 'copy-to-clipboard';
-import { getBlockExplorerLink } from '@metamask/etherscan-link';
+import { getBlockExplorerLink } from 'ubiqscan-link';
 import SenderToRecipient from '../../ui/sender-to-recipient';
 import { DEFAULT_VARIANT } from '../../ui/sender-to-recipient/sender-to-recipient.constants';
 import Disclosure from '../../ui/disclosure';

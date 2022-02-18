@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getAccountLink } from '@metamask/etherscan-link';
+import { getAccountLink } from 'ubiqscan-link';
 
 import AccountModalContainer from '../account-modal-container';
 import QrView from '../../../ui/qr-code';

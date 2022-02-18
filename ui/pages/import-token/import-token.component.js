@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getTokenTrackerLink } from '@metamask/etherscan-link';
+import { getTokenTrackerLink } from 'ubiqscan-link';
 import contractMap from 'ubq-contract-metadata';
 import ZENDESK_URLS from '../../helpers/constants/zendesk-url';
 import {

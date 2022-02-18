@@ -2740,11 +2740,6 @@
     human-standard-token-abi "^1.0.2"
     safe-event-emitter "^1.0.1"
 
-"@metamask/etherscan-link@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@metamask/etherscan-link/-/etherscan-link-2.1.0.tgz#c0be8e68445b7b83cf85bcc03a56cdf8e256c973"
-  integrity sha512-ADuWlTUkFfN2vXlz81Bg/0BA+XRor+CdK1055p6k7H6BLIPoDKn9SBOFld9haQFuR9cKh/JYHcnlSIv5R4fUEw==
-
 "@metamask/forwarder@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@metamask/forwarder/-/forwarder-1.1.0.tgz#13829d8244bbf19ea658c0b20d21a77b67de0bdd"
@@ -26670,6 +26665,11 @@ u2f-api@0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/u2f-api/-/u2f-api-0.2.7.tgz#17bf196b242f6bf72353d9858e6a7566cc192720"
   integrity sha512-fqLNg8vpvLOD5J/z4B6wpPg4Lvowz1nJ9xdHcCzdUPKcFE/qNCceV2gNZxSJd5vhAZemHr/K/hbzVA0zxB5mkg==
+
+ubiqscan-link@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ubiqscan-link/-/ubiqscan-link-2.1.1.tgz#d9a4c049fa8dc0453f8660e81ceb0aa986260e06"
+  integrity sha512-T60QdMLYaDUNYu5NSmg0rRTUHUw8iF4uhX6pdgyUHJqmxs4DeZiP5cnu+adYdMLi/3afkiGU5jofEAba6SCZGg==
 
 ubq-contract-metadata@^1.32.0:
   version "1.32.0"

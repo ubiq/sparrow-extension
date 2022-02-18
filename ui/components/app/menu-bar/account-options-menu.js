@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getAccountLink } from '@metamask/etherscan-link';
+import { getAccountLink } from 'ubiqscan-link';
 
 import { showModal } from '../../../store/actions';
 import { CONNECTED_ROUTE } from '../../../helpers/constants/routes';

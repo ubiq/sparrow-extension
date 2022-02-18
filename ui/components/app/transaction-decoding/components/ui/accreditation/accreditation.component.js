@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getAccountLink } from '@metamask/etherscan-link';
+import { getAccountLink } from 'ubiqscan-link';
 import {
   getCurrentChainId,
   getRpcPrefsForCurrentProvider,

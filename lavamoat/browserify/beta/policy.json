@@ -612,7 +612,7 @@
         "safe-event-emitter": true
       }
     },
-    "@metamask/etherscan-link": {
+    "ubiqscan-link": {
       "globals": {
         "URL": true
       }

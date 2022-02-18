@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getAccountLink } from '@metamask/etherscan-link';
+import { getAccountLink } from 'ubiqscan-link';
 import { addToAddressBook } from '../../../../store/actions';
 import {
   getRpcPrefsForCurrentProvider,

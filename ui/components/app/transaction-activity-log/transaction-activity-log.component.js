@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import { getBlockExplorerLink } from '@metamask/etherscan-link';
+import { getBlockExplorerLink } from 'ubiqscan-link';
 import {
   getEthConversionFromWeiHex,
   getValueFromWeiHex,

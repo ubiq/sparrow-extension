@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { getTokenTrackerLink } from '@metamask/etherscan-link';
+import { getTokenTrackerLink } from 'ubiqscan-link';
 import { isEqual } from 'lodash';
 import Box from '../../ui/box';
 import Card from '../../ui/card';
