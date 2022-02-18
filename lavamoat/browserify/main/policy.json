@@ -672,6 +672,25 @@
         "events": true
       }
     },
+    "@metamask/smart-transactions-controller": {
+      "globals": {
+        "URLSearchParams": true,
+        "clearInterval": true,
+        "console.error": true,
+        "console.log": true,
+        "fetch": true,
+        "setInterval": true,
+        "setTimeout": true
+      },
+      "packages": {
+        "@metamask/controllers": true,
+        "bignumber.js": true,
+        "ethers": true,
+        "fast-json-patch": true,
+        "isomorphic-fetch": true,
+        "lodash": true
+      }
+    },
     "@metamask/snap-controllers": {
       "globals": {
         "URL": true,
