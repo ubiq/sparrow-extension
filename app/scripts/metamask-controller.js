@@ -14,7 +14,7 @@ import { Mutex } from 'await-semaphore';
 import { stripHexPrefix } from 'ethereumjs-util';
 import log from 'loglevel';
 import TrezorKeyring from 'ubq-trezor-keyring';
-import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring';
+import LedgerBridgeKeyring from 'ubq-ledger-bridge-keyring';
 import LatticeKeyring from 'eth-lattice-keyring';
 import { MetaMaskKeyring as QRHardwareKeyring } from '@keystonehq/metamask-airgapped-keyring';
 import EthQuery from 'eth-query';
