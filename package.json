@@ -119,7 +119,7 @@
     "@metamask/logo": "^3.1.1",
     "@metamask/obs-store": "^5.0.0",
     "@metamask/post-message-stream": "^4.0.0",
-    "@metamask/providers": "^8.1.1",
+    "sparrow-providers": "^8.1.1",
     "@metamask/rpc-methods": "^0.9.0",
     "@metamask/slip44": "^2.0.0",
     "@metamask/snap-controllers": "^0.9.0",
