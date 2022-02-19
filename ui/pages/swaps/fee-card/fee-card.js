@@ -8,7 +8,6 @@ import {
   BSC_CHAIN_ID,
   LOCALHOST_CHAIN_ID,
   POLYGON_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
   AVALANCHE_CHAIN_ID,
 } from '../../../../shared/constants/network';
 import TransactionDetail from '../../../components/app/transaction-detail/transaction-detail.component';
@@ -52,8 +51,6 @@ export default function FeeCard({
         return t('networkNamePolygon');
       case LOCALHOST_CHAIN_ID:
         return t('networkNameTestnet');
-      case RINKEBY_CHAIN_ID:
-        return t('networkNameRinkeby');
       case AVALANCHE_CHAIN_ID:
         return t('networkNameAvalanche');
       default:
