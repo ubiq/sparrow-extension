@@ -10,13 +10,11 @@ import {
 } from 'swappable-obj-proxy';
 import EthQuery from 'eth-query';
 import {
-  RINKEBY,
   MAINNET,
   INFURA_PROVIDER_TYPES,
   NETWORK_TYPE_RPC,
   NETWORK_TYPE_TO_ID_MAP,
   MAINNET_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
   INFURA_BLOCKED_KEY,
 } from '../../../../shared/constants/network';
 import { SECOND } from '../../../../shared/constants/time';
@@ -37,11 +35,9 @@ if (process.env.IN_TEST) {
   defaultProviderConfigOpts = {
     type: NETWORK_TYPE_RPC,
     rpcUrl: 'http://localhost:8588',
-    chainId: '0x539',
+    chainId: '0x8',
     nickname: 'Localhost 8588',
   };
-} else if (process.env.METAMASK_DEBUG || env === 'test') {
-  defaultProviderConfigOpts = { type: RINKEBY, chainId: RINKEBY_CHAIN_ID };
 } else {
   defaultProviderConfigOpts = { type: MAINNET, chainId: MAINNET_CHAIN_ID };
 }
@@ -375,7 +371,7 @@ export default class NetworkController extends EventEmitter {
         }
       }
     } catch (err) {
-      log.warn(`MetaMask - Infura availability check failed`, err);
+      log.warn(`Sparrow - Infura availability check failed`, err);
     }
   }
 

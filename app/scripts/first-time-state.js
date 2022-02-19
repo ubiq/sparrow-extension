@@ -13,7 +13,7 @@ const initialState = {
     frequentRpcListDetail: [
       {
         rpcUrl: 'http://localhost:8588',
-        chainId: '0x539',
+        chainId: '0x8',
         ticker: 'UBQ',
         nickname: 'Localhost 8588',
         rpcPrefs: {},
