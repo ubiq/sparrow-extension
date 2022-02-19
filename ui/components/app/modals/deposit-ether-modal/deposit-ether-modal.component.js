@@ -16,9 +16,6 @@ export default class DepositEtherModal extends Component {
     chainId: PropTypes.string.isRequired,
     isTestnet: PropTypes.bool.isRequired,
     isMainnet: PropTypes.bool.isRequired,
-    isBuyableTransakChain: PropTypes.bool.isRequired,
-    toWyre: PropTypes.func.isRequired,
-    toTransak: PropTypes.func.isRequired,
     address: PropTypes.string.isRequired,
     toFaucet: PropTypes.func.isRequired,
     hideWarning: PropTypes.func.isRequired,
@@ -91,13 +88,8 @@ export default class DepositEtherModal extends Component {
   render() {
     const {
       chainId,
-      toWyre,
-      toTransak,
-      address,
       toFaucet,
       isTestnet,
-      isMainnet,
-      isBuyableTransakChain,
     } = this.props;
     const { t } = this.context;
     const networkName = NETWORK_TO_NAME_MAP[chainId];
@@ -122,56 +114,6 @@ export default class DepositEtherModal extends Component {
         </div>
         <div className="page-container__content">
           <div className="deposit-ether-modal__buy-rows">
-            {this.renderRow({
-              logo: (
-                <div
-                  className="deposit-ether-modal__logo"
-                  style={{
-                    backgroundImage: "url('./images/wyre.svg')",
-                    height: '40px',
-                  }}
-                />
-              ),
-              title: t('buyWithWyre'),
-              text: t('buyWithWyreDescription'),
-              buttonLabel: t('continueToWyre'),
-              onButtonClick: () => {
-                this.context.metricsEvent({
-                  eventOpts: {
-                    category: 'Accounts',
-                    action: 'Deposit Ether',
-                    name: 'Click buy Ether via Wyre',
-                  },
-                });
-                toWyre(address);
-              },
-              hide: !isMainnet,
-            })}
-            {this.renderRow({
-              logo: (
-                <div
-                  className="deposit-ether-modal__logo"
-                  style={{
-                    backgroundImage: "url('./images/transak.svg')",
-                    height: '60px',
-                  }}
-                />
-              ),
-              title: t('buyCryptoWithTransak', [symbol]),
-              text: t('buyCryptoWithTransakDescription', [symbol]),
-              buttonLabel: t('continueToTransak'),
-              onButtonClick: () => {
-                this.context.metricsEvent({
-                  eventOpts: {
-                    category: 'Accounts',
-                    action: 'Deposit Ether',
-                    name: 'Click buy Ether via Transak',
-                  },
-                });
-                toTransak(address, chainId);
-              },
-              hide: !isBuyableTransakChain,
-            })}
             {this.renderRow({
               logo: (
                 <img

@@ -392,20 +392,6 @@
   "buy": {
     "message": "Buy"
   },
-  "buyCryptoWithTransak": {
-    "message": "Buy $1 with Transak",
-    "description": "$1 represents the cypto symbol to be purchased"
-  },
-  "buyCryptoWithTransakDescription": {
-    "message": "Transak supports debit card and bank transfers (depending on location) in 59+ countries. $1 deposits into your Sparrow account.",
-    "description": "$1 represents the cypto symbol to be purchased"
-  },
-  "buyWithWyre": {
-    "message": "Buy UBQ with Wyre"
-  },
-  "buyWithWyreDescription": {
-    "message": "Wyre lets you use a debit card to deposit UBQ right in to your Sparrow account."
-  },
   "bytes": {
     "message": "Bytes"
   },
@@ -564,20 +550,8 @@
   "connectingTo": {
     "message": "Connecting to $1"
   },
-  "connectingToGoerli": {
-    "message": "Connecting to Goerli Test Network"
-  },
-  "connectingToKovan": {
-    "message": "Connecting to Kovan Test Network"
-  },
   "connectingToMainnet": {
     "message": "Connecting to Ubiq Mainnet"
-  },
-  "connectingToRinkeby": {
-    "message": "Connecting to Rinkeby Test Network"
-  },
-  "connectingToRopsten": {
-    "message": "Connecting to Ropsten Test Network"
   },
   "contactUs": {
     "message": "Contact us"
@@ -587,12 +561,6 @@
   },
   "continue": {
     "message": "Continue"
-  },
-  "continueToTransak": {
-    "message": "Continue to Transak"
-  },
-  "continueToWyre": {
-    "message": "Continue to Wyre"
   },
   "contract": {
     "message": "Contract"
@@ -1331,9 +1299,6 @@
   "goBack": {
     "message": "Go Back"
   },
-  "goerli": {
-    "message": "Goerli Test Network"
-  },
   "grantedToWithColon": {
     "message": "Granted to:"
   },
@@ -1570,9 +1535,6 @@
   },
   "knownTokenWarning": {
     "message": "This action will edit tokens that are already listed in your wallet, which can be used to phish you. Only approve if you are certain that you mean to change what these tokens represent. Learn more about $1"
-  },
-  "kovan": {
-    "message": "Kovan Test Network"
   },
   "lastConnected": {
     "message": "Last Connected"
@@ -1880,9 +1842,6 @@
   },
   "networkNamePolygon": {
     "message": "Polygon"
-  },
-  "networkNameRinkeby": {
-    "message": "Rinkeby"
   },
   "networkNameTestnet": {
     "message": "Testnet"
@@ -2482,12 +2441,6 @@
   },
   "revealSeedWordsWarningTitle": {
     "message": "DO NOT share this phrase with anyone!"
-  },
-  "rinkeby": {
-    "message": "Rinkeby Test Network"
-  },
-  "ropsten": {
-    "message": "Ropsten Test Network"
   },
   "rpcUrl": {
     "message": "New RPC URL"
