@@ -1,10 +1,10 @@
 # Publishing Guide
 
-When publishing a new version of MetaMask, we follow this procedure:
+When publishing a new version of Sparrow, we follow this procedure:
 
 ## Overview
 
-The below diagram outlines our process for design, development, and release. Building MetaMask is a community affair, and many steps of the process invite participation from external contributors as indicated. All QA, code review, and release of new versions is done by members of the core MetaMask team.
+The below diagram outlines our process for design, development, and release. Building Sparrow is a community affair, and many steps of the process invite participation from external contributors as indicated. All QA, code review, and release of new versions is done by members of the core Sparrow team.
 
 <img width="664" alt="mm-dev-process" src="https://user-images.githubusercontent.com/1016190/56308059-36906000-60fb-11e9-8e61-6655bca0c54f.png">
 

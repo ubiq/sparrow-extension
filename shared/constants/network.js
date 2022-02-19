@@ -155,7 +155,7 @@ export const INFURA_BLOCKED_KEY = 'countryBlocked';
  * BERLIN - forked at block number 12,244,000, included typed transactions and
  *  optional access lists
  * LONDON - future, upcoming fork that introduces the baseFeePerGas, an amount
- *  of the ETH transaction fees that will be burned instead of given to the
+ *  of the UBQ transaction fees that will be burned instead of given to the
  *  miner. This change necessitated the third type of transaction envelope to
  *  specify maxFeePerGas and maxPriorityFeePerGas moving the fee bidding system
  *  to a second price auction model.

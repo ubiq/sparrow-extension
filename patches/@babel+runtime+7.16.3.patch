@@ -4,7 +4,7 @@ index 108b39a..e3c769b 100644
 +++ b/node_modules/@babel/runtime/helpers/construct.js
 @@ -1,26 +1,21 @@
 -var setPrototypeOf = require("./setPrototypeOf.js");
-+// All of MetaMask's supported browsers include `Reflect.construct` support, so
++// All of Sparrow's supported browsers include `Reflect.construct` support, so
 +// we don't need this polyfill.
  
 -var isNativeReflectConstruct = require("./isNativeReflectConstruct.js");

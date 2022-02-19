@@ -74,7 +74,7 @@ describe('conversion utils', () => {
         }),
       ).toStrictEqual('1500000000000000000');
     });
-    it('converts WEI to ETH', () => {
+    it('converts WEI to UBQ', () => {
       expect(
         conversionUtil('0xde0b6b3a7640000', {
           fromNumericBase: 'hex',
@@ -92,7 +92,7 @@ describe('conversion utils', () => {
         }),
       ).toStrictEqual('1.5');
     });
-    it('converts ETH to WEI', () => {
+    it('converts UBQ to WEI', () => {
       expect(
         conversionUtil('1', {
           fromNumericBase: 'dec',
@@ -108,7 +108,7 @@ describe('conversion utils', () => {
         }).toNumber(),
       ).toStrictEqual(1500000000000000000);
     });
-    it('converts ETH to GWEI', () => {
+    it('converts UBQ to GWEI', () => {
       expect(
         conversionUtil('1', {
           fromNumericBase: 'dec',
@@ -124,7 +124,7 @@ describe('conversion utils', () => {
         }).toNumber(),
       ).toStrictEqual(1500000000);
     });
-    it('converts ETH to USD', () => {
+    it('converts UBQ to USD', () => {
       expect(
         conversionUtil('1', {
           fromNumericBase: 'dec',
@@ -144,7 +144,7 @@ describe('conversion utils', () => {
         }),
       ).toStrictEqual('702.87');
     });
-    it('converts USD to ETH', () => {
+    it('converts USD to UBQ', () => {
       expect(
         conversionUtil('468.58', {
           fromNumericBase: 'dec',

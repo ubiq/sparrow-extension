@@ -99,7 +99,7 @@
     "message": "Thêm tên riêng"
   },
   "addAcquiredTokens": {
-    "message": "Thêm token mà bạn đã mua bằng MetaMask"
+    "message": "Thêm token mà bạn đã mua bằng Sparrow"
   },
   "addAlias": {
     "message": "Thêm biệt danh"
@@ -115,10 +115,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Thao tác này sẽ cho phép sử dụng mạng này trong MetaMask."
+    "message": "Thao tác này sẽ cho phép sử dụng mạng này trong Sparrow."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask không xác minh mạng tùy chỉnh."
+    "message": "Sparrow không xác minh mạng tùy chỉnh."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Tìm hiểu về $1.",
@@ -369,7 +369,7 @@
     "message": "Xây dựng danh sách liên hệ của bạn"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask được thiết kế và xây dựng trên khắp thế giới."
+    "message": "Sparrow được thiết kế và xây dựng trên khắp thế giới."
   },
   "busy": {
     "message": "Đang bận"
@@ -489,7 +489,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Kết nối với MetaMask"
+    "message": "Kết nối với Sparrow"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Bạn có $1 tài khoản kết nối với trang web này.",
@@ -499,7 +499,7 @@
     "message": "Bạn có 1 tài khoản kết nối với trang web này."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask chưa kết nối với trang web này. Để kết nối với một trang web trên web3, hãy tìm nút kết nối trên trang web của họ."
+    "message": "Sparrow chưa kết nối với trang web này. Để kết nối với một trang web trên web3, hãy tìm nút kết nối trên trang web của họ."
   },
   "connectedSites": {
     "message": "Trang web đã kết nối"
@@ -893,7 +893,7 @@
   },
   "enableToken": {
     "message": "bật $1",
-    "description": "$1 is a token symbol, e.g. ETH"
+    "description": "$1 is a token symbol, e.g. UBQ"
   },
   "encryptionPublicKeyNotice": {
     "message": "$1 muốn biết khóa mã hóa công khai của bạn. Bằng việc đồng ý, trang web này sẽ có thể gửi thông báo được mã hóa cho bạn.",
@@ -928,7 +928,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask không thể khôi phục Cụm mật khẩu khôi phục bí mật của bạn."
+    "message": "Sparrow không thể khôi phục Cụm mật khẩu khôi phục bí mật của bạn."
   },
   "endOfFlowMessage9": {
     "message": "Tìm hiểu thêm."
@@ -989,7 +989,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask đã gặp lỗi",
+    "message": "Sparrow đã gặp lỗi",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1006,7 +1006,7 @@
     "message": "Địa chỉ công khai trên Ethereum"
   },
   "etherscan": {
-    "message": "Etherscan"
+    "message": "Ubiqscan"
   },
   "etherscanView": {
     "message": "Xem tài khoản trên Ubiqscan"
@@ -1228,7 +1228,7 @@
     "message": "Kết nối với một ví cứng"
   },
   "hardwareWalletsMsg": {
-    "message": "Chọn một ví cứng mà bạn muốn sử dụng với MetaMask."
+    "message": "Chọn một ví cứng mà bạn muốn sử dụng với Sparrow."
   },
   "here": {
     "message": "tại đây",
@@ -1322,7 +1322,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask không thể kết nối với máy chủ chuỗi khối. Hãy xem xét các lý do tiềm ẩn $1.",
+    "message": "Sparrow không thể kết nối với máy chủ chuỗi khối. Hãy xem xét các lý do tiềm ẩn $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1347,7 +1347,7 @@
     "message": "Địa chỉ người nhận không hợp lệ"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Không phải mạng ETH, hãy đặt ở chữ viết thường"
+    "message": "Không phải mạng UBQ, hãy đặt ở chữ viết thường"
   },
   "invalidBlockExplorerURL": {
     "message": "URL trình khám phá khối không hợp lệ"
@@ -1462,7 +1462,7 @@
     "message": "Mở và mở khóa Ứng Dụng Ledger Live"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "Tùy chỉnh cách thức kết nối Ledger với MetaMask. Nên dùng $1, nhưng cũng có sẵn các tùy chọn khác. Đọc thêm tại đây: $2",
+    "message": "Tùy chỉnh cách thức kết nối Ledger với Sparrow. Nên dùng $1, nhưng cũng có sẵn các tùy chọn khác. Đọc thêm tại đây: $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1470,7 +1470,7 @@
   },
   "ledgerLive": {
     "message": "Ledger Live",
-    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to MetaMask."
+    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to Sparrow."
   },
   "ledgerLiveApp": {
     "message": "Ứng dụng Ledger Live"
@@ -1570,7 +1570,7 @@
     "message": "Thông báo"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Giờ đây, bạn có nhiều quyền kiểm soát hơn đối với các kết nối của tài khoản trong MetaMask."
+    "message": "Giờ đây, bạn có nhiều quyền kiểm soát hơn đối với các kết nối của tài khoản trong Sparrow."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Nhấn vào để quản lý các tài khoản đã kết nối của bạn."
@@ -1585,7 +1585,7 @@
     "message": "Tính năng Hoán đổi trên Sparrow đang được bảo trì. Vui lòng kiểm tra lại sau."
   },
   "metamaskVersion": {
-    "message": "Phiên bản MetaMask"
+    "message": "Phiên bản Sparrow"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Luôn cho phép bạn chọn không tham gia thông qua phần Cài đặt"
@@ -1598,7 +1598,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMask sẽ.."
+    "message": "Sparrow sẽ.."
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "Không bao giờ thu thập mã khóa, địa chỉ, giao dịch, số dư, mã băm hoặc bất kỳ thông tin cá nhân nào"
@@ -1625,16 +1625,16 @@
     "message": "Gửi các lượt nhấn và xem trang đã được ẩn danh"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "Giúp chúng tôi cải thiện MetaMask"
+    "message": "Giúp chúng tôi cải thiện Sparrow"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask muốn thu thập dữ liệu sử dụng để hiểu rõ hơn về cách người dùng tương tác với tiện ích. Chúng tôi sẽ dùng dữ liệu này để liên tục cải thiện độ hữu ích và trải nghiệm người dùng trên sản phẩm của mình và hệ sinh thái Ethereum."
+    "message": "Sparrow muốn thu thập dữ liệu sử dụng để hiểu rõ hơn về cách người dùng tương tác với tiện ích. Chúng tôi sẽ dùng dữ liệu này để liên tục cải thiện độ hữu ích và trải nghiệm người dùng trên sản phẩm của mình và hệ sinh thái Ethereum."
   },
   "metametricsOptInDescription2": {
     "message": "Chúng tôi muốn thu thập dữ liệu sử dụng cơ bản để cải thiện mức độ hữu ích của sản phẩm. Các chỉ số này sẽ..."
   },
   "metametricsTitle": {
-    "message": "Tham gia cùng hơn 6 Triệu người dùng để cải thiện MetaMask"
+    "message": "Tham gia cùng hơn 6 Triệu người dùng để cải thiện Sparrow"
   },
   "mismatchedChain": {
     "message": "Thông tin về mạng cho mã chuỗi này không khớp với hồ sơ của chúng tôi. Bạn nên $1 trước khi tiếp tục.",
@@ -1651,7 +1651,7 @@
     "message": "Không thấy token của mình?"
   },
   "mobileSyncWarning": {
-    "message": "Tính năng 'Đồng bộ với tiện ích' tạm thời bị tắt. Nếu bạn muốn sử dụng ví tiện ích trên thiết bị di động MetaMask, thì trên ứng dụng di động: hãy quay lại các tùy chọn thiết lập ví và chọn phương án 'Nhập bằng Cụm Mật Khẩu Khôi Phục Bí Mật'. Sử dụng cụm mật khẩu bí mật của ví tiện ích để nhập ví của bạn vào thiết bị di động."
+    "message": "Tính năng 'Đồng bộ với tiện ích' tạm thời bị tắt. Nếu bạn muốn sử dụng ví tiện ích trên thiết bị di động Sparrow, thì trên ứng dụng di động: hãy quay lại các tùy chọn thiết lập ví và chọn phương án 'Nhập bằng Cụm Mật Khẩu Khôi Phục Bí Mật'. Sử dụng cụm mật khẩu bí mật của ví tiện ích để nhập ví của bạn vào thiết bị di động."
   },
   "mustSelectOne": {
     "message": "Phải chọn ít nhất 1 token."
@@ -1670,7 +1670,7 @@
     "message": "Chia sẻ Phản Hồi của bạn"
   },
   "needHelpLinkText": {
-    "message": "Hỗ trợ về MetaMask"
+    "message": "Hỗ trợ về Sparrow"
   },
   "needHelpSubmitTicket": {
     "message": "Gửi Phiếu"
@@ -1770,7 +1770,7 @@
     "message": "Mật khẩu mới (tối thiểu 8 ký tự)"
   },
   "newToMetaMask": {
-    "message": "Bạn mới sử dụng MetaMask?"
+    "message": "Bạn mới sử dụng Sparrow?"
   },
   "newTotal": {
     "message": "Tổng mới"
@@ -1786,7 +1786,7 @@
   },
   "nextNonceWarning": {
     "message": "Số chỉ dùng một lần lớn hơn số chỉ dùng một lần gợi ý là $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to Sparrow's internal logic"
   },
   "nftTokenIdPlaceholder": {
     "message": "Nhập ID bộ sưu tập"
@@ -1861,7 +1861,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Luôn cập nhật các phương pháp bảo mật tốt nhất của Sparrow và nhận các mẹo mới nhất về bảo mật từ nhóm hỗ trợ chính thức của MetaMask.",
+    "message": "Luôn cập nhật các phương pháp bảo mật tốt nhất của Sparrow và nhận các mẹo mới nhất về bảo mật từ nhóm hỗ trợ chính thức của Sparrow.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -1889,7 +1889,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Khi tương tác với tài khoản Ledger của bạn trong MetaMask, một tab mới sẽ mở ra và bạn sẽ được yêu cầu mở ứng dụng Ledger Live.  Khi ứng dụng này mở ra, bạn sẽ được yêu cầu cho phép kết nối WebSocket với tài khoản Sparrow của mình.  Đơn giản vậy thôi!",
+    "message": "Khi tương tác với tài khoản Ledger của bạn trong Sparrow, một tab mới sẽ mở ra và bạn sẽ được yêu cầu mở ứng dụng Ledger Live.  Khi ứng dụng này mở ra, bạn sẽ được yêu cầu cho phép kết nối WebSocket với tài khoản Sparrow của mình.  Đơn giản vậy thôi!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1901,7 +1901,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "MetaMask v10.1.0 bao gồm hỗ trợ mới cho các giao dịch EIP-1559 khi sử dụng thiết bị Ledger.",
+    "message": "Sparrow v10.1.0 bao gồm hỗ trợ mới cho các giao dịch EIP-1559 khi sử dụng thiết bị Ledger.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -1983,7 +1983,7 @@
     "message": "Nhấn vào biểu tượng tiện ích trên trình duyệt để truy cập tức thì"
   },
   "onboardingPinExtensionLabel": {
-    "message": "Ghim MetaMask"
+    "message": "Ghim Sparrow"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2035,7 +2035,7 @@
     "message": "Tham gia MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Tham gia MetaMetrics để giúp chúng tôi cải thiện MetaMask"
+    "message": "Tham gia MetaMetrics để giúp chúng tôi cải thiện Sparrow"
   },
   "password": {
     "message": "Mật khẩu"
@@ -2097,7 +2097,7 @@
     "message": "Đơn vị tiền chính"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Chọn Gốc để ưu tiên hiển thị giá trị bằng đơn vị tiền gốc của chuỗi (ví dụ: ETH). Chọn Pháp định để ưu tiên hiển thị giá trị bằng đơn vị tiền pháp định mà bạn chọn."
+    "message": "Chọn Gốc để ưu tiên hiển thị giá trị bằng đơn vị tiền gốc của chuỗi (ví dụ: UBQ). Chọn Pháp định để ưu tiên hiển thị giá trị bằng đơn vị tiền pháp định mà bạn chọn."
   },
   "priorityFee": {
     "message": "Phí ưu tiên"
@@ -2342,7 +2342,7 @@
     "message": "Nếu ai đó hỏi bạn cụm mật khẩu khôi phục bí mật, thì họ đang cố gắng lừa đảo và đánh cắp tiền trong ví của bạn"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Đừng bao giờ cho ai biết cụm mật khẩu khôi phục bí mật, kể cả MetaMask!"
+    "message": "Đừng bao giờ cho ai biết cụm mật khẩu khôi phục bí mật, kể cả Sparrow!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Cụm mật khẩu khôi phục bí mật là gì?"
@@ -2387,7 +2387,7 @@
     "message": "Chọn một tài khoản"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Tài khoản này đã được kết nối với MetaMask"
+    "message": "Tài khoản này đã được kết nối với Sparrow"
   },
   "selectEachPhrase": {
     "message": "Vui lòng chọn từng cụm mật khẩu theo thứ tự để đảm bảo sự chính xác."
@@ -2431,7 +2431,7 @@
     "message": "Thiết lập cài đặt quyền riêng tư nâng cao"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask sử dụng các dịch vụ của bên thứ ba đáng tin cậy này để nâng cao sự hữu ích và an toàn của sản phẩm."
+    "message": "Sparrow sử dụng các dịch vụ của bên thứ ba đáng tin cậy này để nâng cao sự hữu ích và an toàn của sản phẩm."
   },
   "settings": {
     "message": "Cài đặt"
@@ -2573,7 +2573,7 @@
     "message": "Lỗi khi truy xuất nhật ký trạng thái."
   },
   "stateLogFileName": {
-    "message": "Nhật ký trạng thái của MetaMask"
+    "message": "Nhật ký trạng thái của Sparrow"
   },
   "stateLogs": {
     "message": "Nhật ký trạng thái"
@@ -2692,7 +2692,7 @@
   },
   "swapEnableTokenForSwapping": {
     "message": "Điều này sẽ $1 để hoán đổi",
-    "description": "$1 is for the 'enableToken' key, e.g. 'enable ETH'"
+    "description": "$1 is for the 'enableToken' key, e.g. 'enable UBQ'"
   },
   "swapEstimatedNetworkFees": {
     "message": "Phí mạng ước tính"
@@ -2740,7 +2740,7 @@
     "message": "Số tiền trượt giá rất cao."
   },
   "swapIncludesMMFee": {
-    "message": "Bao gồm $1% phí của MetaMask.",
+    "message": "Bao gồm $1% phí của Sparrow.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -2750,7 +2750,7 @@
     "message": "Mức trượt giá tối đa"
   },
   "swapMetaMaskFee": {
-    "message": "Phí của MetaMask"
+    "message": "Phí của Sparrow"
   },
   "swapMetaMaskFeeDescription": {
     "message": "Chúng tôi luôn tìm giá tốt nhất từ các nguồn thanh khoản hàng đầu. Phí $1% được tự động tính vào báo giá này.",
@@ -2770,7 +2770,7 @@
   },
   "swapPriceDifference": {
     "message": "Bạn sắp hoán đổi $1 $2 (~$3) lấy $4 $5 (~$6).",
-    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: ETH), and $3 and $6 are fiat currency amounts."
+    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: UBQ), and $3 and $6 are fiat currency amounts."
   },
   "swapPriceDifferenceTitle": {
     "message": "Chênh lệch giá ~$1%",
@@ -2883,7 +2883,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "Luôn xác nhận địa chỉ token trên $1.",
-    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Ubiqscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "Chỉ được xác minh trên 1 nguồn."
@@ -3319,10 +3319,10 @@
     "message": "Bạn đã bảo vệ thành công ví của mình. Hãy đảm bảo an toàn và bí mật cho Cụm Mật Khẩu Khôi Phục Bí Mật của bạn -- đây là trách nhiệm của bạn!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask không thể khôi phục Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
+    "message": "Sparrow không thể khôi phục Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask sẽ không bao giờ hỏi về Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
+    "message": "Sparrow sẽ không bao giờ hỏi về Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 với bất kỳ ai, nếu không bạn sẽ có nguy cơ bị mất tiền",
@@ -3344,7 +3344,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "Chào mừng bạn đến với MetaMask"
+    "message": "Chào mừng bạn đến với Sparrow"
   },
   "welcomeBack": {
     "message": "Chào mừng bạn trở lại!"
@@ -3369,7 +3369,7 @@
   },
   "whatsNew": {
     "message": "Xem tính năng mới",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to Sparrow."
   },
   "whatsThis": {
     "message": "Đây là gì?"

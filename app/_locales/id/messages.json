@@ -99,7 +99,7 @@
     "message": "Tambahkan nama panggilan"
   },
   "addAcquiredTokens": {
-    "message": "Tambahkan token yang Anda peroleh menggunakan MetaMask"
+    "message": "Tambahkan token yang Anda peroleh menggunakan Sparrow"
   },
   "addAlias": {
     "message": "Tambahkan alias"
@@ -115,10 +115,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Tindakan ini akan membantu jaringan ini agar dapat digunakan dengan MetaMask."
+    "message": "Tindakan ini akan membantu jaringan ini agar dapat digunakan dengan Sparrow."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask tidak memverifikasi jaringan kustom."
+    "message": "Sparrow tidak memverifikasi jaringan kustom."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Pelajari tentang $1.",
@@ -301,7 +301,7 @@
     "message": "Kembali ke Semua"
   },
   "backupApprovalInfo": {
-    "message": "Kode rahasia ini diperlukan untuk memulihkan dompet seandainya perangkat Anda hilang, lupa kata sandi, harus memasang kembali MetaMask, atau ingin mengakses dompet Anda di perangkat lain."
+    "message": "Kode rahasia ini diperlukan untuk memulihkan dompet seandainya perangkat Anda hilang, lupa kata sandi, harus memasang kembali Sparrow, atau ingin mengakses dompet Anda di perangkat lain."
   },
   "backupApprovalNotice": {
     "message": "Cadangkan Frasa Pemulihan Rahasia Anda untuk menjaga keamanan dompet dan dana Anda."
@@ -322,7 +322,7 @@
     "message": "Dasar"
   },
   "betaMetamaskDescription": {
-    "message": "MetaMask merupakan dompet aman yang dipercaya oleh jutaan orang, yang membuat dunia web3 dapat diakses oleh semua orang."
+    "message": "Sparrow merupakan dompet aman yang dipercaya oleh jutaan orang, yang membuat dunia web3 dapat diakses oleh semua orang."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "Gunakan versi ini untuk menguji fitur mendatang sebelum dirilis. Penggunaan dan masukan Anda membantu kami membangun versi Sparrow terbaik. Penggunaan Sparrow Beta Anda tunduk pada $1 standar kami dan $2 kami. Sebagai Beta, akan ada peningkatan risiko kekutu. Dengan melanjutkan, Anda menerima dan mengakui risiko ini, serta risiko yang ditemukan dalam Syarat dan Ketentuan Beta kami.",
@@ -335,7 +335,7 @@
     "message": "Syarat"
   },
   "betaMetamaskVersion": {
-    "message": "Versi Beta MetaMask"
+    "message": "Versi Beta Sparrow"
   },
   "betaWelcome": {
     "message": "Selamat datang di Sparrow Beta"
@@ -369,7 +369,7 @@
     "message": "Buat daftar kontak Anda"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask dirancang dan dibangun di seluruh dunia."
+    "message": "Sparrow dirancang dan dibangun di seluruh dunia."
   },
   "busy": {
     "message": "Sibuk"
@@ -489,7 +489,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Hubungkan Dengan MetaMask"
+    "message": "Hubungkan Dengan Sparrow"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Anda memiliki $1 akun yang terhubung ke situs ini.",
@@ -499,7 +499,7 @@
     "message": "Anda memiliki 1 akun yang terhubung ke situs ini."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask tidak terhubung ke situs ini. Untuk terhubung ke situs web3, temukan dan klik tombol hubungkan."
+    "message": "Sparrow tidak terhubung ke situs ini. Untuk terhubung ke situs web3, temukan dan klik tombol hubungkan."
   },
   "connectedSites": {
     "message": "Situs yang terhubung"
@@ -893,7 +893,7 @@
   },
   "enableToken": {
     "message": "aktifkan $1",
-    "description": "$1 is a token symbol, e.g. ETH"
+    "description": "$1 is a token symbol, e.g. UBQ"
   },
   "encryptionPublicKeyNotice": {
     "message": "$1 menginginkan kunci enkripsi publik Anda. Dengan menyetujui, situs ini akan dapat membuat pesan terenkripsi untuk Anda.",
@@ -928,7 +928,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask tidak dapat memulihkan Frasa Pemulihan Rahasia Anda."
+    "message": "Sparrow tidak dapat memulihkan Frasa Pemulihan Rahasia Anda."
   },
   "endOfFlowMessage9": {
     "message": "Pelajari selengkapnya."
@@ -989,7 +989,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask mengalami galat",
+    "message": "Sparrow mengalami galat",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1006,7 +1006,7 @@
     "message": "Alamat Publik Ethereum"
   },
   "etherscan": {
-    "message": "Etherscan"
+    "message": "Ubiqscan"
   },
   "etherscanView": {
     "message": "Lihat akun di Ubiqscan"
@@ -1228,7 +1228,7 @@
     "message": "Hubungkan dompet perangkat keras"
   },
   "hardwareWalletsMsg": {
-    "message": "Pilih dompet perangkat keras yang ingin Anda gunakan dengan MetaMask."
+    "message": "Pilih dompet perangkat keras yang ingin Anda gunakan dengan Sparrow."
   },
   "here": {
     "message": "di sini",
@@ -1322,7 +1322,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask tidak dapat terhubung ke host blockchain. Tinjau alasan yang mungkin $1.",
+    "message": "Sparrow tidak dapat terhubung ke host blockchain. Tinjau alasan yang mungkin $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1347,7 +1347,7 @@
     "message": "Alamat penerima tidak valid"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Bukan jaringan ETH, atur ke huruf kecil"
+    "message": "Bukan jaringan UBQ, atur ke huruf kecil"
   },
   "invalidBlockExplorerURL": {
     "message": "URL Block Explorer Tidak Valid"
@@ -1462,7 +1462,7 @@
     "message": "Buka dan buka Aplikasi Ledger Live"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "Sesuaikan cara Anda menghubungkan Ledger ke MetaMask. Kami merekomendasikan $1, tetapi opsi lain tersedia. Baca selengkapnya di sini: $2",
+    "message": "Sesuaikan cara Anda menghubungkan Ledger ke Sparrow. Kami merekomendasikan $1, tetapi opsi lain tersedia. Baca selengkapnya di sini: $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1470,7 +1470,7 @@
   },
   "ledgerLive": {
     "message": "Ledger Live",
-    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to MetaMask."
+    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to Sparrow."
   },
   "ledgerLiveApp": {
     "message": "Aplikasi Ledger Live"
@@ -1570,7 +1570,7 @@
     "message": "Pesan"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Kini, Anda memiliki kontrol lebih banyak atas koneksi akun Anda di MetaMask."
+    "message": "Kini, Anda memiliki kontrol lebih banyak atas koneksi akun Anda di Sparrow."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Klik untuk mengelola akun Anda yang terhubung."
@@ -1582,10 +1582,10 @@
     "message": "Menghubungkan Anda ke Ubiq dan Web Terdesentralisasi."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swap sedang dalam pemeliharaan. Harap periksa kembali nanti."
+    "message": "Sparrow Swap sedang dalam pemeliharaan. Harap periksa kembali nanti."
   },
   "metamaskVersion": {
-    "message": "Versi MetaMask"
+    "message": "Versi Sparrow"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Selalu izinkan Anda untuk keluar melalui Pengaturan"
@@ -1598,7 +1598,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMask akan.."
+    "message": "Sparrow akan.."
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "Jangan pernah mengumpulkan kunci, alamat, transaksi, saldo, hash, atau informasi pribadi apa pun"
@@ -1625,16 +1625,16 @@
     "message": "Kirim kejadian pageview & klik anonim"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "Bantu Kami Menyempurnakan MetaMask"
+    "message": "Bantu Kami Menyempurnakan Sparrow"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask ingin mengumpulkan data penggunaan untuk lebih memahami cara pengguna berinteraksi dengan ekstensi. Data ini akan digunakan untuk meningkatkan kegunaan dan pengalaman pengguna atas produk kami dan ekosistem Ubiq secara berkala."
+    "message": "Sparrow ingin mengumpulkan data penggunaan untuk lebih memahami cara pengguna berinteraksi dengan ekstensi. Data ini akan digunakan untuk meningkatkan kegunaan dan pengalaman pengguna atas produk kami dan ekosistem Ubiq secara berkala."
   },
   "metametricsOptInDescription2": {
     "message": "Kami ingin mengumpulkan data penggunaan dasar dalam rangka meningkatkan kegunaan produk kami. Metrik ini akan..."
   },
   "metametricsTitle": {
-    "message": "Bergabunglah bersama 6 Jt+ pengguna untuk meningkatkan MetaMask"
+    "message": "Bergabunglah bersama 6 Jt+ pengguna untuk meningkatkan Sparrow"
   },
   "mismatchedChain": {
     "message": "Detail jaringan untuk ID rantai ini tidak cocok dengan catatan kami. Kami menyarankan agar Anda $1 sebelum melanjutkan.",
@@ -1651,7 +1651,7 @@
     "message": "Tidak melihat token Anda?"
   },
   "mobileSyncWarning": {
-    "message": "Fitur 'Sinkronkan dengan ekstensi' dinonaktifkan untuk sementara waktu. Jika Anda ingin menggunakan dompet ekstensi Anda di ponsel MetaMask, maka pada aplikasi seluler Anda: kembali ke opsi pengaturan dompet dan pilih opsi 'Impor dengan Frasa Pemulihan Rahasia'. Gunakan frasa rahasia dompet ekstensi Anda untuk mengimpor dompet Anda ke ponsel nantinya."
+    "message": "Fitur 'Sinkronkan dengan ekstensi' dinonaktifkan untuk sementara waktu. Jika Anda ingin menggunakan dompet ekstensi Anda di ponsel Sparrow, maka pada aplikasi seluler Anda: kembali ke opsi pengaturan dompet dan pilih opsi 'Impor dengan Frasa Pemulihan Rahasia'. Gunakan frasa rahasia dompet ekstensi Anda untuk mengimpor dompet Anda ke ponsel nantinya."
   },
   "mustSelectOne": {
     "message": "Harus memilih minimal 1 token."
@@ -1670,7 +1670,7 @@
     "message": "Bagikan Masukan Anda"
   },
   "needHelpLinkText": {
-    "message": "Dukungan MetaMask"
+    "message": "Dukungan Sparrow"
   },
   "needHelpSubmitTicket": {
     "message": "Kirimkan Tiket"
@@ -1680,7 +1680,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Tidak dapat mengirim jumlah negatif ETH."
+    "message": "Tidak dapat mengirim jumlah negatif UBQ."
   },
   "networkDetails": {
     "message": "Detail Jaringan"
@@ -1770,7 +1770,7 @@
     "message": "Kata sandi baru (min 8 karakter)"
   },
   "newToMetaMask": {
-    "message": "Baru menggunakan MetaMask?"
+    "message": "Baru menggunakan Sparrow?"
   },
   "newTotal": {
     "message": "Total Baru"
@@ -1786,7 +1786,7 @@
   },
   "nextNonceWarning": {
     "message": "Nonce lebih tinggi dari nonce $1 yang disarankan",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to Sparrow's internal logic"
   },
   "nftTokenIdPlaceholder": {
     "message": "Masukkan ID koleksi"
@@ -1889,7 +1889,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Saat berinteraksi dengan akun Ledger Anda di MetaMask, tab baru akan terbuka dan Anda akan diminta untuk membuka aplikasi Ledger Live.  Setelah aplikasi tersebut terbuka, Anda akan diminta untuk mengizinkan koneksi WebSocket ke akun Sparrow Anda. Tidak diperlukan tindakan lebih lanjut!",
+    "message": "Saat berinteraksi dengan akun Ledger Anda di Sparrow, tab baru akan terbuka dan Anda akan diminta untuk membuka aplikasi Ledger Live.  Setelah aplikasi tersebut terbuka, Anda akan diminta untuk mengizinkan koneksi WebSocket ke akun Sparrow Anda. Tidak diperlukan tindakan lebih lanjut!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1901,7 +1901,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "MetaMask v10.1.0 menyertakan dukungan baru untuk transaksi EIP-1559 saat menggunakan perangkat Ledger.",
+    "message": "Sparrow v10.1.0 menyertakan dukungan baru untuk transaksi EIP-1559 saat menggunakan perangkat Ledger.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -1917,7 +1917,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced Settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Pada Sparrow v10.4.0, Anda tidak lagi memerlukan Ledger Live untuk menghubungkan perangkat Ledger Anda ke MetaMask.",
+    "message": "Pada Sparrow v10.4.0, Anda tidak lagi memerlukan Ledger Live untuk menghubungkan perangkat Ledger Anda ke Sparrow.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -1983,7 +1983,7 @@
     "message": "Klik ikon ekstensi peramban untuk mengaksesnya secara langsung"
   },
   "onboardingPinExtensionLabel": {
-    "message": "Sematkan MetaMask"
+    "message": "Sematkan Sparrow"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2097,7 +2097,7 @@
     "message": "Mata Uang Primer"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Pilih asal untuk memprioritaskan nilai yang ditampilkan dalam mata uang asal rantai (contoh, ETH). Pilih Fiat untuk memprioritaskan nilai yang ditampilkan dalam mata uang fiat yang Anda pilih."
+    "message": "Pilih asal untuk memprioritaskan nilai yang ditampilkan dalam mata uang asal rantai (contoh, UBQ). Pilih Fiat untuk memprioritaskan nilai yang ditampilkan dalam mata uang fiat yang Anda pilih."
   },
   "priorityFee": {
     "message": "Biaya prioritas"
@@ -2387,7 +2387,7 @@
     "message": "Pilih Akun"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Akun ini sudah terhubung ke MetaMask."
+    "message": "Akun ini sudah terhubung ke Sparrow."
   },
   "selectEachPhrase": {
     "message": "Pilih masing-masing frasa untuk memastikan kebenarannya."
@@ -2431,7 +2431,7 @@
     "message": "Atur pengaturan privasi lanjutan"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask menggunakan layanan pihak ketiga tepercaya ini untuk meningkatkan kegunaan dan keamanan produk."
+    "message": "Sparrow menggunakan layanan pihak ketiga tepercaya ini untuk meningkatkan kegunaan dan keamanan produk."
   },
   "settings": {
     "message": "Pengaturan"
@@ -2573,7 +2573,7 @@
     "message": "Galat pada log status pengambilan."
   },
   "stateLogFileName": {
-    "message": "Log Status MetaMask"
+    "message": "Log Status Sparrow"
   },
   "stateLogs": {
     "message": "Log Status"
@@ -2692,7 +2692,7 @@
   },
   "swapEnableTokenForSwapping": {
     "message": "Ini akan $1 untuk ditukar",
-    "description": "$1 is for the 'enableToken' key, e.g. 'enable ETH'"
+    "description": "$1 is for the 'enableToken' key, e.g. 'enable UBQ'"
   },
   "swapEstimatedNetworkFees": {
     "message": "Estimasi biaya jaringan"
@@ -2740,7 +2740,7 @@
     "message": "Jumlah slippage sangat tinggi."
   },
   "swapIncludesMMFee": {
-    "message": "Termasuk $1% biaya MetaMask.",
+    "message": "Termasuk $1% biaya Sparrow.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -2750,7 +2750,7 @@
     "message": "Slippage maks"
   },
   "swapMetaMaskFee": {
-    "message": "Biaya MetaMask"
+    "message": "Biaya Sparrow"
   },
   "swapMetaMaskFeeDescription": {
     "message": "Kami menemukan harga terbaik dari sumber likuiditas teratas, setiap waktu. Biaya sebesar $1% otomatis diperhitungkan ke kuotasi ini.",
@@ -2770,7 +2770,7 @@
   },
   "swapPriceDifference": {
     "message": "Anda akan menukar $1 $2 (~$3) untuk $4 $5 (~$6).",
-    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: ETH), and $3 and $6 are fiat currency amounts."
+    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: UBQ), and $3 and $6 are fiat currency amounts."
   },
   "swapPriceDifferenceTitle": {
     "message": "Perbedaan harga ~$1%",
@@ -2883,7 +2883,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "Selalu konfirmasikan alamat token di $1.",
-    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Ubiqscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "Hanya diverifikasi di 1 sumber."
@@ -2969,10 +2969,10 @@
     "message": "Pastikan tidak ada orang lain yang melihat layar Anda saat memindai kode ini"
   },
   "syncWithMobileComplete": {
-    "message": "Data Anda telah berhasil disinkronkan. Nikmati aplikasi seluler MetaMask!"
+    "message": "Data Anda telah berhasil disinkronkan. Nikmati aplikasi seluler Sparrow!"
   },
   "syncWithMobileDesc": {
-    "message": "Anda dapat menyinkronkan akun dan informasi dengan perangkat seluler Anda. Buka aplikasi seluler MetaMask, buka \"Pengaturan\" dan ketuk \"Sinkronkan dari Ekstensi Peramban\""
+    "message": "Anda dapat menyinkronkan akun dan informasi dengan perangkat seluler Anda. Buka aplikasi seluler Sparrow, buka \"Pengaturan\" dan ketuk \"Sinkronkan dari Ekstensi Peramban\""
   },
   "syncWithMobileDescNewUsers": {
     "message": "Jika Anda baru membuka aplikasi seluler Sparrow untuk pertama kali, cukup ikuti langkah-langkah yang ada di ponsel Anda."
@@ -3319,10 +3319,10 @@
     "message": "Anda telah berhasil melindungi dompet Anda. Jaga agar Frasa Pemulihan Rahasia tetap aman dan terlindungi -- ini merupakan tanggung jawab Anda!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask tidak dapat memulihkan Frasa Pemulihan Rahasia Anda."
+    "message": "Sparrow tidak dapat memulihkan Frasa Pemulihan Rahasia Anda."
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask tidak akan pernah menanyakan Frasa Pemulihan Rahasia Anda."
+    "message": "Sparrow tidak akan pernah menanyakan Frasa Pemulihan Rahasia Anda."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 dengan siapa pun atau dana Anda berisiko dicuri",
@@ -3344,7 +3344,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "Selamat datang di MetaMask"
+    "message": "Selamat datang di Sparrow"
   },
   "welcomeBack": {
     "message": "Selamat Datang Kembali!"
@@ -3365,11 +3365,11 @@
     "message": "Mari kita mulai"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "MetaMask merupakan dompet aman yang dipercaya oleh jutaan orang, yang membuat dunia web3 dapat diakses oleh semua orang."
+    "message": "Sparrow merupakan dompet aman yang dipercaya oleh jutaan orang, yang membuat dunia web3 dapat diakses oleh semua orang."
   },
   "whatsNew": {
     "message": "Apa yang baru",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to Sparrow."
   },
   "whatsThis": {
     "message": "Apa ini?"

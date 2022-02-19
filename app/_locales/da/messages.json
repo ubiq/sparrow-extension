@@ -33,7 +33,7 @@
     "message": "aktivitetslog"
   },
   "addAcquiredTokens": {
-    "message": "Tilføj de tokens du har erhvervet ved hjælp af MetaMask"
+    "message": "Tilføj de tokens du har erhvervet ved hjælp af Sparrow"
   },
   "addAlias": {
     "message": "Tilføj alias"
@@ -146,7 +146,7 @@
     "message": "Køb UBQ med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lader dig bruge et kreditkort til at indbetale UBQ på din MetaMask-konto."
+    "message": "Wyre lader dig bruge et kreditkort til at indbetale UBQ på din Sparrow-konto."
   },
   "bytes": {
     "message": "Byte"
@@ -329,7 +329,7 @@
     "message": "Hvis du får brug for at lave en backup af din seedfrase igen, kan du finde det under Indstillinger -> Sikkerhed."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask kan ikke gendanne din seed-sætning. Få mere at vide."
+    "message": "Sparrow kan ikke gendanne din seed-sætning. Få mere at vide."
   },
   "endOfFlowMessage9": {
     "message": "Lær mere. "
@@ -430,7 +430,7 @@
     "message": "Tilslut en hardware-tegnebog"
   },
   "hardwareWalletsMsg": {
-    "message": "Vælg en hardware-pung du vil bruge med MetaMask"
+    "message": "Vælg en hardware-pung du vil bruge med Sparrow"
   },
   "here": {
     "message": "her",
@@ -456,7 +456,7 @@
     "message": "Importer konto"
   },
   "importAccountMsg": {
-    "message": "Importerede konti vil ikke blive forbundet med din oprindeligt oprettede seed-sætning for din MetaMask-konto. Få mere at vide om importerede konti"
+    "message": "Importerede konti vil ikke blive forbundet med din oprindeligt oprettede seed-sætning for din Sparrow-konto. Få mere at vide om importerede konti"
   },
   "importAccountSeedPhrase": {
     "message": "Importér en Konto med Seedfrase"
@@ -487,7 +487,7 @@
     "message": "Modtageradressen er ugyldig"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Ikke ETH-netværk, sat til små bogstaver"
+    "message": "Ikke UBQ-netværk, sat til små bogstaver"
   },
   "invalidBlockExplorerURL": {
     "message": "Ugyldig Block Explorer-webadresse"
@@ -564,7 +564,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Kan ikke sende en negativ mængde ETH."
+    "message": "Kan ikke sende en negativ mængde UBQ."
   },
   "networkName": {
     "message": "Netværksnavn"
@@ -595,7 +595,7 @@
     "message": "Ny adgangskode (min. 8 tegn)"
   },
   "newToMetaMask": {
-    "message": "Ny på MetaMask?"
+    "message": "Ny på Sparrow?"
   },
   "newTotal": {
     "message": "Ny Sum"
@@ -674,7 +674,7 @@
     "message": "Primær Valuta"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Vælg lokal for fortrinsvis at vise værdier i kædens (f.eks. ETH) lokale valuta. Vælg Fiat for fortrinsvis at vise værdier i din valgte fiat valuta."
+    "message": "Vælg lokal for fortrinsvis at vise værdier i kædens (f.eks. UBQ) lokale valuta. Vælg Fiat for fortrinsvis at vise værdier i din valgte fiat valuta."
   },
   "privacyMsg": {
     "message": "Privatlivspolitik"
@@ -915,16 +915,16 @@
     "message": "Sørg for at der ikke er nogen der kigger på din skærm, når du scanner denne kode"
   },
   "syncWithMobileComplete": {
-    "message": "Dine data er blevet synkroniseret korrekt. Nyd MetaMask-mobilappen!"
+    "message": "Dine data er blevet synkroniseret korrekt. Nyd Sparrow-mobilappen!"
   },
   "syncWithMobileDesc": {
-    "message": "Du kan synkronisere dine konti og informationer med din mobilenhed. Åbn MetaMask-mobilappen, gå til \"Indstillinger\" og tryk på \"Synkroniser fra browserudvidelse\""
+    "message": "Du kan synkronisere dine konti og informationer med din mobilenhed. Åbn Sparrow-mobilappen, gå til \"Indstillinger\" og tryk på \"Synkroniser fra browserudvidelse\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Hvis du netop har åbnet MetaMask-mobilappen for første gang, skal du blot følge trinnene på din telefon."
+    "message": "Hvis du netop har åbnet Sparrow-mobilappen for første gang, skal du blot følge trinnene på din telefon."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scan denne kode med din MetaMask-mobilapp"
+    "message": "Scan denne kode med din Sparrow-mobilapp"
   },
   "syncWithMobileTitle": {
     "message": "Synkroniser med mobil"
@@ -1009,7 +1009,7 @@
     "message": "Prøv igen"
   },
   "typePassword": {
-    "message": "Skriv din MetaMask-adgangskode"
+    "message": "Skriv din Sparrow-adgangskode"
   },
   "unapproved": {
     "message": "Ikke godkendt"
@@ -1060,7 +1060,7 @@
     "message": "Besøg vores webside"
   },
   "welcome": {
-    "message": "Velkommen til MetaMask"
+    "message": "Velkommen til Sparrow"
   },
   "welcomeBack": {
     "message": "Velkommen tilbage!"

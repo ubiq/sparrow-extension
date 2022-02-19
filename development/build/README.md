@@ -1,8 +1,8 @@
-# The MetaMask Build System
+# The Sparrow Build System
 
 > _tl;dr_ `yarn dist` for prod, `yarn start` for local development
 
-This directory contains the MetaMask build system, which is used to build the MetaMask Extension such that it can be used in a supported browser.
+This directory contains the Sparrow build system, which is used to build the Sparrow Extension such that it can be used in a supported browser.
 From the repository root, the build system entry file is located at [`./development/build/index.js`](https://github.com/MetaMask/metamask-extension/blob/develop/development/build/index.js).
 
 Several package scripts invoke the build system.

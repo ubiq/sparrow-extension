@@ -189,7 +189,7 @@ export default function OnboardingFlow() {
         <Button
           className="onboarding-flow__twitter-button"
           type="link"
-          href="https://twitter.com/MetaMask"
+          href="https://twitter.com/ubiqsmart"
           target="_blank"
         >
           <span>{t('followUsOnTwitter')}</span>

@@ -27,7 +27,7 @@
     "message": "aktivite ki fèt"
   },
   "addAcquiredTokens": {
-    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk MetaMask"
+    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk Sparrow"
   },
   "addSuggestedTokens": {
     "message": "Ajoute Token Yo Sikjere W"
@@ -238,7 +238,7 @@
     "message": "Materyèl Wallet konekte"
   },
   "hardwareWalletsMsg": {
-    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak MetaMask"
+    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak Sparrow"
   },
   "here": {
     "message": "isit la",
@@ -332,10 +332,10 @@
     "message": "Mesaje"
   },
   "metamaskDescription": {
-    "message": "MetaMask sekirize idantite pou Ethereum."
+    "message": "Sparrow sekirize idantite pou Ethereum."
   },
   "metamaskVersion": {
-    "message": "MetaMask Vèsyon"
+    "message": "Sparrow Vèsyon"
   },
   "mustSelectOne": {
     "message": "Ou dwe chwazi omwen 1 token."
@@ -348,7 +348,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Pa ka voye kantite lajan negatif ETH."
+    "message": "Pa ka voye kantite lajan negatif UBQ."
   },
   "networks": {
     "message": "Rezo"
@@ -422,7 +422,7 @@
     "message": "Lajan ou itilize pi plis la"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Chwazi UBQ pou bay priyorite montre valè nan ETH. Chwazi Fiat priyorite montre valè nan lajan ou chwazi a."
+    "message": "Chwazi UBQ pou bay priyorite montre valè nan UBQ. Chwazi Fiat priyorite montre valè nan lajan ou chwazi a."
   },
   "privacyMsg": {
     "message": "Règleman sou enfòmasyon prive"
@@ -679,7 +679,7 @@
     "message": "Vizite sit entènèt nou an"
   },
   "welcome": {
-    "message": "Byenveni nan MetaMask"
+    "message": "Byenveni nan Sparrow"
   },
   "welcomeBack": {
     "message": "Bon Retou!"

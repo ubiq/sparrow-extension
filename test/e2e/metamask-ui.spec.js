@@ -11,7 +11,7 @@ const { ensureXServerIsRunning } = require('./x-server');
 const ganacheServer = new Ganache();
 const dappPort = 8080;
 
-describe('MetaMask', function () {
+describe('Sparrow', function () {
   let driver;
   let dappServer;
   let tokenAddress;
@@ -329,7 +329,7 @@ describe('MetaMask', function () {
     });
   });
 
-  describe('Send token from inside MetaMask', function () {
+  describe('Send token from inside Sparrow', function () {
     it('starts to send a transaction', async function () {
       await driver.clickElement('[data-testid="eth-overview-send"]');
       await driver.delay(regularDelayMs);
@@ -596,7 +596,7 @@ describe('MetaMask', function () {
       const gasFeeInEth = await driver.findElement(
         '.confirm-approve-content__transaction-details-content__secondary-fee',
       );
-      assert.equal(await gasFeeInEth.getText(), '0.0006 ETH');
+      assert.equal(await gasFeeInEth.getText(), '0.0006 UBQ');
     });
 
     it('edits the permission', async function () {

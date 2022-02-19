@@ -281,7 +281,7 @@
     "message": "ข้อความ"
   },
   "metamaskDescription": {
-    "message": "MetaMask คือที่เก็บตัวตนนิรภัยสำหรับอีเธอเรียม"
+    "message": "Sparrow คือที่เก็บตัวตนนิรภัยสำหรับอีเธอเรียม"
   },
   "mustSelectOne": {
     "message": "ต้องเลือกอย่างน้อย 1 โทเค็น"
@@ -316,7 +316,7 @@
     "message": "รหัสผ่านใหม่(ขั้นต่ำ 8 ตัวอักษร)"
   },
   "newToMetaMask": {
-    "message": "เพิ่งเริ่มใช้ MetaMask?"
+    "message": "เพิ่งเริ่มใช้ Sparrow?"
   },
   "newTransactionFee": {
     "message": "ค่าธรรมเนียมธุรกรรมใหม่"
@@ -334,7 +334,7 @@
     "message": "เปิด"
   },
   "participateInMetaMetricsDescription": {
-    "message": "เข้าร่วมใน MetaMetrics เพื่อช่วยเราในการพัฒนา MetaMask"
+    "message": "เข้าร่วมใน MetaMetrics เพื่อช่วยเราในการพัฒนา Sparrow"
   },
   "pastePrivateKey": {
     "message": "วางคีย์ส่วนตัวของคุณที่นี่:",

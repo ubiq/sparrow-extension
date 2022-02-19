@@ -52,7 +52,7 @@ export const MESSAGE_TYPE = {
 };
 
 /**
- * The different kinds of subjects that MetaMask may interact with, including
+ * The different kinds of subjects that Sparrow may interact with, including
  * third parties and itself (e.g. when the background communicated with the UI).
  */
 export const SUBJECT_TYPES = {

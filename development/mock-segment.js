@@ -31,10 +31,10 @@ function onError(error) {
  * logged to the console, along with the parsed Segment events included in the request (if
  * any)
  *
- * This can be used with the MetaMask extension by setting the `SEGMENT_HOST` environment
- * variable or config entry when building MetaMask.
+ * This can be used with the Sparrow extension by setting the `SEGMENT_HOST` environment
+ * variable or config entry when building Sparrow.
  *
- * For example, to build MetaMask for use with this mock Segment server, you could set the
+ * For example, to build Sparrow for use with this mock Segment server, you could set the
  * following values in `.metamaskrc` before building:
  *
  * SEGMENT_HOST='http://localhost:9090'

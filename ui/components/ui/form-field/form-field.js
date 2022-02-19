@@ -137,7 +137,7 @@ FormField.propTypes = {
    */
   titleText: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /**
-   * Show unit (eg. ETH)
+   * Show unit (eg. UBQ)
    */
   titleUnit: PropTypes.string,
   /**

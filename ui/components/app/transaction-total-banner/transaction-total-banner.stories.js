@@ -12,7 +12,7 @@ export const DefaultStory = () => {
       total="~18.73"
       detail={
         <>
-          Up to <strong>$19.81</strong> (0.01234 ETH)
+          Up to <strong>$19.81</strong> (0.01234 UBQ)
         </>
       }
       timing="Very likely in < 15 seconds"

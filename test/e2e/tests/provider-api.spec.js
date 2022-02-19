@@ -2,7 +2,7 @@ const { strict: assert } = require('assert');
 const { errorCodes } = require('eth-rpc-errors');
 const { convertToHexValue, withFixtures } = require('../helpers');
 
-describe('MetaMask', function () {
+describe('Sparrow', function () {
   const ganacheOptions = {
     accounts: [
       {

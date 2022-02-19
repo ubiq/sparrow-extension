@@ -321,7 +321,7 @@ export default class TransactionController extends EventEmitter {
               return reject(
                 cleanErrorStack(
                   ethErrors.provider.userRejectedRequest(
-                    'MetaMask Tx Signature: User denied transaction signature.',
+                    'Sparrow Tx Signature: User denied transaction signature.',
                   ),
                 ),
               );
@@ -335,7 +335,7 @@ export default class TransactionController extends EventEmitter {
               return reject(
                 cleanErrorStack(
                   ethErrors.rpc.internal(
-                    `MetaMask Tx Signature: Unknown problem: ${JSON.stringify(
+                    `Sparrow Tx Signature: Unknown problem: ${JSON.stringify(
                       finishedTxMeta.txParams,
                     )}`,
                   ),
@@ -769,7 +769,7 @@ export default class TransactionController extends EventEmitter {
 
   /**
    * Creates a new approved transaction to attempt to cancel a previously submitted transaction. The
-   * new transaction contains the same nonce as the previous, is a basic ETH transfer of 0x value to
+   * new transaction contains the same nonce as the previous, is a basic UBQ transfer of 0x value to
    * the sender's address, and has a higher gasPrice than that of the previous transaction.
    *
    * @param {number} originalTxId - the id of the txMeta that you want to attempt to cancel

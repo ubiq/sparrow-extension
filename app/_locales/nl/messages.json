@@ -147,7 +147,7 @@
     "message": "Account importeren"
   },
   "importAccountMsg": {
-    "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte MetaMask-account. Meer informatie over geïmporteerde accounts"
+    "message": " Geïmporteerde accounts worden niet gekoppeld aan de seedphrase van uw oorspronkelijk gemaakte Sparrow-account. Meer informatie over geïmporteerde accounts"
   },
   "imported": {
     "message": "geïmporteerd",
@@ -197,7 +197,7 @@
     "message": "Bericht"
   },
   "metamaskDescription": {
-    "message": "MetaMask is een veilige identiteitskluis voor Ethereum."
+    "message": "Sparrow is een veilige identiteitskluis voor Ethereum."
   },
   "mustSelectOne": {
     "message": "Moet ten minste één token selecteren."
@@ -372,7 +372,7 @@
     "message": "Bezoek onze website"
   },
   "welcome": {
-    "message": "Welkom bij MetaMask"
+    "message": "Welkom bij Sparrow"
   },
   "youSign": {
     "message": "U ondertekent"

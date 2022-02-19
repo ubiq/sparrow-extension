@@ -3,9 +3,9 @@
  *
  * @param {Object} opts - Options required to determine the correct url
  * @param {string} opts.chainId - The chainId for which to return a url
- * @param {string} opts.address - The address the bought ETH should be sent to.  Only relevant if chainId === '0x1'.
+ * @param {string} opts.address - The address the bought UBQ should be sent to.  Only relevant if chainId === '0x1'.
  * @param opts.service
- * @returns {string|undefined} The url at which the user can access ETH, while in the given chain. If the passed
+ * @returns {string|undefined} The url at which the user can access UBQ, while in the given chain. If the passed
  * chainId does not match any of the specified cases, or if no chainId is given, returns undefined.
  */
 export default async function getBuyUrl({ chainId, service }) {

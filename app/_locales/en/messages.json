@@ -961,7 +961,7 @@
   },
   "enableToken": {
     "message": "enable $1",
-    "description": "$1 is a token symbol, e.g. ETH"
+    "description": "$1 is a token symbol, e.g. UBQ"
   },
   "encryptionPublicKeyNotice": {
     "message": "$1 would like your public encryption key. By consenting, this site will be able to compose encrypted messages to you.",
@@ -1074,7 +1074,7 @@
     "message": "Ethereum Public Address"
   },
   "etherscan": {
-    "message": "Etherscan"
+    "message": "Ubiqscan"
   },
   "etherscanView": {
     "message": "View account on Ubiqscan"
@@ -1814,7 +1814,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Can not send negative amounts of ETH."
+    "message": "Can not send negative amounts of UBQ."
   },
   "network": {
     "message": "Network:"
@@ -2276,7 +2276,7 @@
     "message": "Primary Currency"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency."
+    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. UBQ). Select Fiat to prioritize displaying values in your selected fiat currency."
   },
   "priorityFee": {
     "message": "Priority fee"
@@ -2896,7 +2896,7 @@
   },
   "stxSuccessDescription": {
     "message": "Your $1 is now available.",
-    "description": "$1 is a token symbol, e.g. ETH"
+    "description": "$1 is a token symbol, e.g. UBQ"
   },
   "stxTooltip": {
     "message": "Simulate transactions before submitting to decrease transaction costs and reduce failures."
@@ -3004,7 +3004,7 @@
   },
   "swapEnableTokenForSwapping": {
     "message": "This will $1 for swapping",
-    "description": "$1 is for the 'enableToken' key, e.g. 'enable ETH'"
+    "description": "$1 is for the 'enableToken' key, e.g. 'enable UBQ'"
   },
   "swapEstimatedNetworkFees": {
     "message": "Estimated network fees"
@@ -3086,7 +3086,7 @@
   },
   "swapPriceDifference": {
     "message": "You are about to swap $1 $2 (~$3) for $4 $5 (~$6).",
-    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: ETH), and $3 and $6 are fiat currency amounts."
+    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: UBQ), and $3 and $6 are fiat currency amounts."
   },
   "swapPriceDifferenceTitle": {
     "message": "Price difference of ~$1%",
@@ -3199,7 +3199,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "Always confirm the token address on $1.",
-    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Ubiqscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "Only verified on 1 source."

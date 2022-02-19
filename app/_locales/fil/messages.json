@@ -30,7 +30,7 @@
     "message": "log ng aktibidad"
   },
   "addAcquiredTokens": {
-    "message": "Idagdag ang mga token na nakuha mo gamit ang MetaMask"
+    "message": "Idagdag ang mga token na nakuha mo gamit ang Sparrow"
   },
   "addAlias": {
     "message": "Magdagdag ng alias"
@@ -94,7 +94,7 @@
     "message": "Auto-Logout Timer (minuto)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "I-set ang idle time na minuto bago awtomatikong mag-log out ang MetaMask"
+    "message": "I-set ang idle time na minuto bago awtomatikong mag-log out ang Sparrow"
   },
   "back": {
     "message": "Bumalik"
@@ -103,7 +103,7 @@
     "message": "Bumalik sa Lahat"
   },
   "backupApprovalInfo": {
-    "message": "Ang secret code na ito ay kinakailangan para ma-recover ang iyong wallet kung sakaling mawawala mo ang iyong device, nakalimutan mo ang iyong password, kailangan mong i-install ulit ang MetaMask, o gusto mong i-access ang iyong wallet sa ibang device."
+    "message": "Ang secret code na ito ay kinakailangan para ma-recover ang iyong wallet kung sakaling mawawala mo ang iyong device, nakalimutan mo ang iyong password, kailangan mong i-install ulit ang Sparrow, o gusto mong i-access ang iyong wallet sa ibang device."
   },
   "backupApprovalNotice": {
     "message": "I-back up ang iyong Secret Recovery code para panatilihing secure ang iyong wallet at pondo."
@@ -400,7 +400,7 @@
     "message": "Magkonekta ng hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "Pumili ng hardware wallet na gusto mong gamitin sa MetaMask"
+    "message": "Pumili ng hardware wallet na gusto mong gamitin sa Sparrow"
   },
   "here": {
     "message": "dito",
@@ -505,7 +505,7 @@
     "message": "Kinokonekta ka sa Ubiq at sa Decentralized Web."
   },
   "metamaskVersion": {
-    "message": "Bersyon ng MetaMask"
+    "message": "Bersyon ng Sparrow"
   },
   "mustSelectOne": {
     "message": "Dapat pumili ng kahit 1 token."
@@ -518,7 +518,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Hindi makakapagpadala ng mga negative na halaga ng ETH."
+    "message": "Hindi makakapagpadala ng mga negative na halaga ng UBQ."
   },
   "networkName": {
     "message": "Pangalan ng Network"
@@ -545,7 +545,7 @@
     "message": "Bagong Password (min 8 char)"
   },
   "newToMetaMask": {
-    "message": "Bago ka ba sa MetaMask?"
+    "message": "Bago ka ba sa Sparrow?"
   },
   "newTotal": {
     "message": "Bagong Total"
@@ -596,7 +596,7 @@
     "message": "Makilahok sa MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Makilahok sa MetaMetrics para tulungan kaming mas pagandahin ang MetaMask"
+    "message": "Makilahok sa MetaMetrics para tulungan kaming mas pagandahin ang Sparrow"
   },
   "passwordNotLongEnough": {
     "message": "Hindi sapat ang haba ng password"
@@ -621,7 +621,7 @@
     "message": "Pangunahing Currency"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Piliin ang native para bigyang priyoridad ang pagpapakita ng mga halaga sa native currency ng chain (hal. ETH). Piliin ang Fiat para bigyang priyoridad ang pagpapakita ng mga halaga sa napili mong fiat currency."
+    "message": "Piliin ang native para bigyang priyoridad ang pagpapakita ng mga halaga sa native currency ng chain (hal. UBQ). Piliin ang Fiat para bigyang priyoridad ang pagpapakita ng mga halaga sa napili mong fiat currency."
   },
   "privacyMsg": {
     "message": "Patakaran sa Privacy"
@@ -943,7 +943,7 @@
     "message": "Subukang muli"
   },
   "typePassword": {
-    "message": "I-type ang iyong password sa MetaMask"
+    "message": "I-type ang iyong password sa Sparrow"
   },
   "unapproved": {
     "message": "Hindi inaprubahan"
@@ -991,7 +991,7 @@
     "message": "Bisitahin ang aming web site"
   },
   "welcome": {
-    "message": "Welcome sa MetaMask"
+    "message": "Welcome sa Sparrow"
   },
   "welcomeBack": {
     "message": "Welcome Ulit!"

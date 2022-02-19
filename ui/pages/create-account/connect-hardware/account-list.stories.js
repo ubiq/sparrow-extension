@@ -32,7 +32,7 @@ export const DefaultStory = () => {
   const BIP44_PATH = `m/44'/108'/0'/0`;
 
   const HD_PATHS = [
-    { name: `BIP44 Standard (e.g. MetaMask, Trezor)`, value: BIP44_PATH },
+    { name: `BIP44 Standard (e.g. Sparrow, Trezor)`, value: BIP44_PATH },
   ];
 
   const onAccountChange = (account) => {

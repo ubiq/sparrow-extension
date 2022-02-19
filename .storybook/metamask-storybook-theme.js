@@ -5,7 +5,7 @@ import logo from '../app/images/logo/sparrow-logo-horizontal.png';
 
 export default create({
   base: 'light',
-  brandTitle: 'MetaMask Storybook',
+  brandTitle: 'Sparrow Storybook',
   brandImage: logo,
 
   // Typography

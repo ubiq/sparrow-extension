@@ -35,7 +35,7 @@ then
 fi
 
 git \
-    -c user.name='MetaMask Bot' \
+    -c user.name='Sparrow Bot' \
     -c user.email='metamaskbot@users.noreply.github.com' \
     commit --message "${CIRCLE_BRANCH/-/ }" \
         CHANGELOG.md package.json

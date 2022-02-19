@@ -33,7 +33,7 @@
     "message": "darbību žurnāls"
   },
   "addAcquiredTokens": {
-    "message": "Pievienojiet marķierus, ko ieguvāt, izmantojot MetaMask"
+    "message": "Pievienojiet marķierus, ko ieguvāt, izmantojot Sparrow"
   },
   "addAlias": {
     "message": "Pievienot segvārdu"
@@ -164,7 +164,7 @@
     "message": "Ķēdes ID"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "MetaMask ir jāpalaiž pārlūkprogrammā Google Chrome, lai varētu pievienot aparatūras maku."
+    "message": "Sparrow ir jāpalaiž pārlūkprogrammā Google Chrome, lai varētu pievienot aparatūras maku."
   },
   "clickToRevealSeed": {
     "message": "Klikšķiniet šeit, lai skatītu slepenos vārdus"
@@ -329,7 +329,7 @@
     "message": "Ja nepieciešams atkārtoti dublēt atkopšanas frāzi, varat to atrast, dodoties uz Iestatījumi -> Drošība."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask nevar atjaunot jūsu atkopšanas frāzi. Uzzināt vairāk."
+    "message": "Sparrow nevar atjaunot jūsu atkopšanas frāzi. Uzzināt vairāk."
   },
   "endOfFlowMessage9": {
     "message": "Uzzināt vairāk."
@@ -433,7 +433,7 @@
     "message": "Pieslēdziet aparatūras maku"
   },
   "hardwareWalletsMsg": {
-    "message": "Atlasiet aparatūras maku lietošanai ar MetaMask"
+    "message": "Atlasiet aparatūras maku lietošanai ar Sparrow"
   },
   "here": {
     "message": "šeit",
@@ -563,7 +563,7 @@
     "message": "Veido savienojumu ar Ubiq un decentralizēto tīmekli."
   },
   "metamaskVersion": {
-    "message": "MetaMask versija"
+    "message": "Sparrow versija"
   },
   "mustSelectOne": {
     "message": "Jāatlasa vismaz 1 marķieris."
@@ -607,7 +607,7 @@
     "message": "Jauna parole (vism. 8 rakstzīmes)"
   },
   "newToMetaMask": {
-    "message": "Nepazīstat MetaMask?"
+    "message": "Nepazīstat Sparrow?"
   },
   "newTotal": {
     "message": "Jaunā kopsumma"
@@ -689,7 +689,7 @@
     "message": "Primārā valūta"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Atlasīt vietējo, lai piešķirtu attēlotajām vērtībām prioritātes ķēdes vietējā vērtībā (piemēram, ETH). Atlasiet Fiat, lai piešķirtu augstāku prioritāti vērtībām jūsu atlasītajā fiat valūtā."
+    "message": "Atlasīt vietējo, lai piešķirtu attēlotajām vērtībām prioritātes ķēdes vietējā vērtībā (piemēram, UBQ). Atlasiet Fiat, lai piešķirtu augstāku prioritāti vērtībām jūsu atlasītajā fiat valūtā."
   },
   "privacyMsg": {
     "message": "Privātuma politika"
@@ -1087,7 +1087,7 @@
     "message": "Apmeklējiet mūsu tīmekļa vietni"
   },
   "welcome": {
-    "message": "Laipni lūgti MetaMask"
+    "message": "Laipni lūgti Sparrow"
   },
   "welcomeBack": {
     "message": "Ar atgriešanos!"

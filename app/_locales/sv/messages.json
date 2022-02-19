@@ -33,7 +33,7 @@
     "message": "aktivitetslogg"
   },
   "addAcquiredTokens": {
-    "message": "Lägg till de tokens du har skaffat med MetaMask"
+    "message": "Lägg till de tokens du har skaffat med Sparrow"
   },
   "addAlias": {
     "message": "Lägg till alias"
@@ -146,7 +146,7 @@
     "message": "Köp UBQ med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre låter dig använda ett kreditkort för att sätta in UBQ direkt på ditt MetaMask-konto."
+    "message": "Wyre låter dig använda ett kreditkort för att sätta in UBQ direkt på ditt Sparrow-konto."
   },
   "cancel": {
     "message": "Avbryt"
@@ -323,7 +323,7 @@
     "message": "Om du behöver säkerhetskopiera din nyckelfras igen, kan du hitta den i Inställningar -> Säkerhet"
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask kan inte återställa din seedphrase. Läs mer."
+    "message": "Sparrow kan inte återställa din seedphrase. Läs mer."
   },
   "endOfFlowMessage9": {
     "message": "Lär dig mer."
@@ -427,7 +427,7 @@
     "message": "Anslut en hårdvaruplånbok"
   },
   "hardwareWalletsMsg": {
-    "message": "Välj en hårdvaruplånbok som du vill använda med MetaMask"
+    "message": "Välj en hårdvaruplånbok som du vill använda med Sparrow"
   },
   "here": {
     "message": "här",
@@ -453,7 +453,7 @@
     "message": "Importera konto"
   },
   "importAccountMsg": {
-    "message": "Importerade konton kommer inte att kopplas till din ursprungligen skapade seedphrase för ditt MetaMask-konto. Läs mer om importerade konton"
+    "message": "Importerade konton kommer inte att kopplas till din ursprungligen skapade seedphrase för ditt Sparrow-konto. Läs mer om importerade konton"
   },
   "importAccountSeedPhrase": {
     "message": "Importera konto med"
@@ -484,7 +484,7 @@
     "message": "Mottagarens adress är ogiltig"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Ej ETH-nätverk, ange med små bokstäver"
+    "message": "Ej UBQ-nätverk, ange med små bokstäver"
   },
   "invalidBlockExplorerURL": {
     "message": "Ogiltig Block Explorer URL"
@@ -551,7 +551,7 @@
     "message": "Ansluter dig mot Ubiq och den decentraliserade webben."
   },
   "metamaskVersion": {
-    "message": "MetaMask-version"
+    "message": "Sparrow-version"
   },
   "mustSelectOne": {
     "message": "Minst 1 token måste väljas."
@@ -564,7 +564,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Kan inte skicka negativa summor av ETH."
+    "message": "Kan inte skicka negativa summor av UBQ."
   },
   "networkName": {
     "message": "Nätverksnamn"
@@ -595,7 +595,7 @@
     "message": "Nytt lösenord (minst 8 tecken)"
   },
   "newToMetaMask": {
-    "message": "Ny på MetaMask?"
+    "message": "Ny på Sparrow?"
   },
   "newTotal": {
     "message": "Ny totalsumma"
@@ -677,7 +677,7 @@
     "message": "Primär valuta"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Välj native för att prioritera visning av värden i den ursprungliga valutan i kedjan (t.ex. ETH). Välj Fiat för att prioritera visning av värden i din valda fiatvaluta."
+    "message": "Välj native för att prioritera visning av värden i den ursprungliga valutan i kedjan (t.ex. UBQ). Välj Fiat för att prioritera visning av värden i din valda fiatvaluta."
   },
   "privacyMsg": {
     "message": "Integritetspolicy"
@@ -1015,7 +1015,7 @@
     "message": "Försök igen"
   },
   "typePassword": {
-    "message": "Ange ditt MetaMask-lösenord"
+    "message": "Ange ditt Sparrow-lösenord"
   },
   "unapproved": {
     "message": "Inte godkänd"
@@ -1066,7 +1066,7 @@
     "message": "Besök vår hemsida"
   },
   "welcome": {
-    "message": "Välkommen till MetaMask"
+    "message": "Välkommen till Sparrow"
   },
   "welcomeBack": {
     "message": "Välkommen tillbaka!"

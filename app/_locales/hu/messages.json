@@ -33,7 +33,7 @@
     "message": "tevékenységi napló"
   },
   "addAcquiredTokens": {
-    "message": "Adja hozzá MetaMask-kal a kapott érméket"
+    "message": "Adja hozzá Sparrow-kal a kapott érméket"
   },
   "addAlias": {
     "message": "Álnév hozzáadása"
@@ -143,10 +143,10 @@
     "message": "Az ön böngészője nem támogatott..."
   },
   "buyWithWyre": {
-    "message": "Vásároljon ETH-t a Wyre-rel"
+    "message": "Vásároljon UBQ-t a Wyre-rel"
   },
   "buyWithWyreDescription": {
-    "message": "A Wyre segítségével egyensen a MetaMaks fiókjában tehet letétbe ETH-t."
+    "message": "A Wyre segítségével egyensen a MetaMaks fiókjában tehet letétbe UBQ-t."
   },
   "bytes": {
     "message": "Bájtok"
@@ -164,7 +164,7 @@
     "message": "Lánc azonosítója"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "A MetaMask-ot Google Chrome-mal kell használnia a Hardveres pénztárcához való csatlakozáshoz."
+    "message": "A Sparrow-ot Google Chrome-mal kell használnia a Hardveres pénztárcához való csatlakozáshoz."
   },
   "clickToRevealSeed": {
     "message": "Kattintson ide a titkos szavak megjelenítéséhez"
@@ -433,7 +433,7 @@
     "message": "Hardveres tárca csatlakoztatása"
   },
   "hardwareWalletsMsg": {
-    "message": "Válassza ki a MetaMask-kal használni kívánt hardveres pénztárcát"
+    "message": "Válassza ki a Sparrow-kal használni kívánt hardveres pénztárcát"
   },
   "here": {
     "message": "itt",
@@ -459,7 +459,7 @@
     "message": "Fiók importálása"
   },
   "importAccountMsg": {
-    "message": "Az importált fiókot nem társítjuk az eredetileg létrehozott MetaMask-fiók seed mondatához. További információ az importált fiókokról"
+    "message": "Az importált fiókot nem társítjuk az eredetileg létrehozott Sparrow-fiók seed mondatához. További információ az importált fiókokról"
   },
   "importAccountSeedPhrase": {
     "message": "Fiók importálása seed mondat segítségével"
@@ -560,7 +560,7 @@
     "message": "Csatlakozás az Ethereumhoz és a decentralizált hálózathoz."
   },
   "metamaskVersion": {
-    "message": "MetaMask verzió"
+    "message": "Sparrow verzió"
   },
   "mustSelectOne": {
     "message": "Legalább 1 tokent ki kell választania."
@@ -573,7 +573,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Nem lehet negatív mennyiségű ETH-t küldeni."
+    "message": "Nem lehet negatív mennyiségű UBQ-t küldeni."
   },
   "networkName": {
     "message": "Hálózat neve"
@@ -604,7 +604,7 @@
     "message": "Új jelszó (minimum 8 karakter)"
   },
   "newToMetaMask": {
-    "message": "Új a MetaMask-on?"
+    "message": "Új a Sparrow-on?"
   },
   "newTotal": {
     "message": "Új végösszeg"
@@ -686,7 +686,7 @@
     "message": "Elsődleges pénznem"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Válaszd a helyit, hogy az értékek elsősorban a helyi pénznemben jelenjenek meg (pl. ETH). Válaszd a Fiatot, hogy az értékek elsősorban a választott fiat pénznemben jelenjenek meg."
+    "message": "Válaszd a helyit, hogy az értékek elsősorban a helyi pénznemben jelenjenek meg (pl. UBQ). Válaszd a Fiatot, hogy az értékek elsősorban a választott fiat pénznemben jelenjenek meg."
   },
   "privacyMsg": {
     "message": "Adatvédelmi szabályzat"

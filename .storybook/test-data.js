@@ -111,12 +111,12 @@ const state = {
           "snap_confirm": {}
         },
         "manifest": {
-          "description": "An example MetaMask Snap.",
+          "description": "An example Sparrow Snap.",
           "initialPermissions": {
             "snap_confirm": {}
           },
           "manifestVersion": "0.1",
-          "proposedName": "MetaMask Example Snap",
+          "proposedName": "Sparrow Example Snap",
           "repository": {
             "type": "git",
             "url": "https://github.com/MetaMask/snaps-skunkworks.git"
@@ -1306,7 +1306,7 @@ const state = {
       "local:http://localhost:8080/": {
         extensionId: null,
         iconUrl: null,
-        name: "MetaMask Example Snap",
+        name: "Sparrow Example Snap",
         origin: "local:http://localhost:8080/",
         subjectType: "snap",
         svgIcon: "<svg>...</svg>",

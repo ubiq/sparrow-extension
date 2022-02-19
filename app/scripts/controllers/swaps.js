@@ -144,7 +144,7 @@ export default class SwapsController {
       typeof refreshRates.stxBatchStatus !== 'number'
     ) {
       throw new Error(
-        `MetaMask - invalid response for refreshRates: ${response}`,
+        `Sparrow - invalid response for refreshRates: ${response}`,
       );
     }
     // We presently use milliseconds in the UI.

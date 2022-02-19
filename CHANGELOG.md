@@ -115,7 +115,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#12399](https://github.com/MetaMask/metamask-extension/pull/12399): Update the "Account Details" view
   - Change "Close" icon color from gray -> black
   - Display the entire account address
-  - Use rounded style for "View on Etherscan" and "Export Private Key" buttons
+  - Use rounded style for "View on Ubiqscan" and "Export Private Key" buttons
 - [#12824](https://github.com/MetaMask/metamask-extension/pull/12824): Add multilayer fee to token approval screen
 
 ### Fixed
@@ -193,7 +193,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [10.5.0]
 ### Added
-- [#12411](https://github.com/MetaMask/metamask-extension/pull/12411): Add support for connecting Ledger devices to MetaMask via WebHID
+- [#12411](https://github.com/MetaMask/metamask-extension/pull/12411): Add support for connecting Ledger devices to Sparrow via WebHID
 - [#12501](https://github.com/MetaMask/metamask-extension/pull/12501): Add "What's New" notification regarding Ledger WebHID support
 
 ### Removed
@@ -218,13 +218,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#12252](https://github.com/MetaMask/metamask-extension/pull/12252): Support type "0" transactions on EIP-1559 networks
 
 ### Changed
-- [#12100](https://github.com/MetaMask/metamask-extension/pull/12100): Use more descriptive language for "View on Etherscan" links
+- [#12100](https://github.com/MetaMask/metamask-extension/pull/12100): Use more descriptive language for "View on Ubiqscan" links
 - [#12279](https://github.com/MetaMask/metamask-extension/pull/12279): Remove autofocus from gas limit input in the advanced gas popup
 - [#12096](https://github.com/MetaMask/metamask-extension/pull/12096): Standardize appearance of buttons across the extension
 - [#12304](https://github.com/MetaMask/metamask-extension/pull/12304): Remove duplicate Cancel button on the Send screen
 - [#12331](https://github.com/MetaMask/metamask-extension/pull/12331): Update "off" color for toggle buttons
 - [#12330](https://github.com/MetaMask/metamask-extension/pull/12330): Standardize truncation for address display throughout the extension
-- [#12384](https://github.com/MetaMask/metamask-extension/pull/12384): Move "View on Etherscan" link to the top of the account menu
+- [#12384](https://github.com/MetaMask/metamask-extension/pull/12384): Move "View on Ubiqscan" link to the top of the account menu
 
 ### Fixed
 - [#12229](https://github.com/MetaMask/metamask-extension/pull/12229): Fix whitespace validation issue for seed phrase entry (Restore Your Account)
@@ -257,7 +257,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#12042](https://github.com/MetaMask/metamask-extension/pull/12042): Add Max Fee Per Gas to transaction breakdown
 - [#11999](https://github.com/MetaMask/metamask-extension/pull/11999): Add eth_feeHistory to API callable by dapps
 - [#11849](https://github.com/MetaMask/metamask-extension/pull/11849): Add subtitles for additional languages (Secret Recovery Phrase Video)
-- [#11772](https://github.com/MetaMask/metamask-extension/pull/11772): Add tooltip to better explain possible effects of setting gas fees below MetaMask's estimates
+- [#11772](https://github.com/MetaMask/metamask-extension/pull/11772): Add tooltip to better explain possible effects of setting gas fees below Sparrow's estimates
 - [#11796](https://github.com/MetaMask/metamask-extension/pull/11796): Add "Max fee" label to maximum fee amount in edit gas display
 
 ### Changed
@@ -341,7 +341,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [10.0.0]
 ### Added
 - [#11694](https://github.com/MetaMask/metamask-extension/pull/11694): Add support for EIP-1559 transactions
-- [#11625](https://github.com/MetaMask/metamask-extension/pull/11625): Added new tokens to MetaMask's default list
+- [#11625](https://github.com/MetaMask/metamask-extension/pull/11625): Added new tokens to Sparrow's default list
 - [#11401](https://github.com/MetaMask/metamask-extension/pull/11401): Add Skylink support to ENS resolver
 - [#11387](https://github.com/MetaMask/metamask-extension/pull/11387): Call Wyre’s API via our backend to generate Wyre’s Checkout URL
 - [#11376](https://github.com/MetaMask/metamask-extension/pull/11376): Add support for fiat on-ramp via Transak
@@ -361,7 +361,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#11356](https://github.com/MetaMask/metamask-extension/pull/11356): Fix position of home notifications to bottom of the screen
 - [#11338](https://github.com/MetaMask/metamask-extension/pull/11338): Updating "Secret Recovery code" text to "Secret Recovery Phrase" in backup notification
 - [#11322](https://github.com/MetaMask/metamask-extension/pull/11322): Make send screen MAX button accessible via keyboard
-- [#11285](https://github.com/MetaMask/metamask-extension/pull/11285): Updating "MetaMask designed and built" message 🌎
+- [#11285](https://github.com/MetaMask/metamask-extension/pull/11285): Updating "Sparrow designed and built" message 🌎
 
 ### Fixed
 - [#11586](https://github.com/MetaMask/metamask-extension/pull/11586): Fix display of warning when entering an invalid seed phrase on the import screen
@@ -386,7 +386,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [9.8.2]
 ### Changed
-- [#11545](https://github.com/MetaMask/metamask-extension/pull/11545): Allow MetaMask Swaps to support Polygon network
+- [#11545](https://github.com/MetaMask/metamask-extension/pull/11545): Allow Sparrow Swaps to support Polygon network
 
 ### Fixed
 - [#11565](https://github.com/MetaMask/metamask-extension/pull/11565): Fix gas limit estimation for some tokens on custom networks
@@ -413,7 +413,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [9.7.1]
 ### Fixed
-- [#11426](https://github.com/MetaMask/metamask-extension/pull/11426): Fixed bug that broke transaction speed up and cancel, when attempting those actions immediately after opening MetaMask
+- [#11426](https://github.com/MetaMask/metamask-extension/pull/11426): Fixed bug that broke transaction speed up and cancel, when attempting those actions immediately after opening Sparrow
 
 ## [9.7.0]
 ### Added
@@ -502,7 +502,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [9.5.3]
 ### Fixed
-- Fixes bug that made MetaMask unusable and displayed 'Minified React error #130' on certain networks and accounts ([#11103](https://github.com/MetaMask/metamask-extension/pull/11103))
+- Fixes bug that made Sparrow unusable and displayed 'Minified React error #130' on certain networks and accounts ([#11103](https://github.com/MetaMask/metamask-extension/pull/11103))
 - Prevent big number error when attempting to view transaction list ([#11015](https://github.com/MetaMask/metamask-extension/pull/11015))
 
 ## [9.5.2]
@@ -516,10 +516,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [9.5.0] - 2021-04-28
 ### Added
-- Adding popup display to show new MetaMask notifications ([#10583](https://github.com/MetaMask/metamask-extension/pull/10583))
-- Add menu with "View on Etherscan" and "Account details" links to ETH asset page ([#10938](https://github.com/MetaMask/metamask-extension/pull/10938))
+- Adding popup display to show new Sparrow notifications ([#10583](https://github.com/MetaMask/metamask-extension/pull/10583))
+- Add menu with "View on Ubiqscan" and "Account details" links to ETH asset page ([#10938](https://github.com/MetaMask/metamask-extension/pull/10938))
 - Add view account details menu item to token page menu ([#10932](https://github.com/MetaMask/metamask-extension/pull/10932))
-- Adding new links to contact MetaMask support ([#10895](https://github.com/MetaMask/metamask-extension/pull/10895))
+- Adding new links to contact Sparrow support ([#10895](https://github.com/MetaMask/metamask-extension/pull/10895))
 - Adding option to set Custom Nonce to Confirm Approve Page ([#10595](https://github.com/MetaMask/metamask-extension/pull/10595))
 - Adding recovery phrase video to onboarding process ([#10717](https://github.com/MetaMask/metamask-extension/pull/10717))
 - add trezor HD path for ledger wallets ([#10616](https://github.com/MetaMask/metamask-extension/pull/10616))
@@ -538,7 +538,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hide the suggested token pane when not on Mainnet or test network ([#10702](https://github.com/MetaMask/metamask-extension/pull/10702))
 - Prevents autocomplete text from displaying in the Add Token input ([#10700](https://github.com/MetaMask/metamask-extension/pull/10700))
 - Removing hard references to 12 word seed phrases in copy ([#10704](https://github.com/MetaMask/metamask-extension/pull/10704))
-- Add MetaMask to list of BIP44 HD path examples ([#10703](https://github.com/MetaMask/metamask-extension/pull/10703))
+- Add Sparrow to list of BIP44 HD path examples ([#10703](https://github.com/MetaMask/metamask-extension/pull/10703))
 - Change 'Send ETH' title to 'Send' in the send flow ([#10651](https://github.com/MetaMask/metamask-extension/pull/10651))
 - Don't render faucet row in deposit modal for custom chains ([#10674](https://github.com/MetaMask/metamask-extension/pull/10674))
 
@@ -550,14 +550,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Prevent network dropdown label highlighting ([#10643](https://github.com/MetaMask/metamask-extension/pull/10643))
 - Ensure swaps detail height doesn't create jump in vertical height ([#10644](https://github.com/MetaMask/metamask-extension/pull/10644))
 - Position the 3dot menu in the same spot on asset screen and home screen ([#10642](https://github.com/MetaMask/metamask-extension/pull/10642))
-- Ensure MetaMask works correctly when on a custom network that shares a chain id with a default Infura network ([#10594](https://github.com/MetaMask/metamask-extension/pull/10594))
+- Ensure Sparrow works correctly when on a custom network that shares a chain id with a default Infura network ([#10594](https://github.com/MetaMask/metamask-extension/pull/10594))
 - Fixed bug that prevented speeding up cancelled transactions ([#10579](https://github.com/MetaMask/metamask-extension/pull/10579))
 - Fixes hidden token bug when zero balance preference is on ([#10630](https://github.com/MetaMask/metamask-extension/pull/10630))
 - Removing double click bug from delete custom network modal ([#10628](https://github.com/MetaMask/metamask-extension/pull/10628))
 
 ## [9.4.0] - 2021-04-15
 ### Added
-- Notify users when MetaMask is unable to connect to the blockchain host ([#10883](https://github.com/MetaMask/metamask-extension/pull/10883))
+- Notify users when Sparrow is unable to connect to the blockchain host ([#10883](https://github.com/MetaMask/metamask-extension/pull/10883))
 
 ## [9.3.0] - 2021-04-02
 ### Added
@@ -581,7 +581,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add setting to hide zero balance tokens ([#10486](https://github.com/MetaMask/metamask-extension/pull/10486))
 
 ### Changed
-- Update references to MetaMask support ([#10563](https://github.com/MetaMask/metamask-extension/pull/10563))
+- Update references to Sparrow support ([#10563](https://github.com/MetaMask/metamask-extension/pull/10563))
 - Update Italian translation ([#10126](https://github.com/MetaMask/metamask-extension/pull/10126))
 
 ### Fixed
@@ -742,11 +742,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add alt text for images in list items ([#9847](https://github.com/MetaMask/metamask-extension/pull/9847))
 - Ensure watchAsset returns errors for invalid token symbols ([#9960](https://github.com/MetaMask/metamask-extension/pull/9960))
 - Adds tokens from v1.19.0 of metamask/contract-metadata to add token lists ([#9968](https://github.com/MetaMask/metamask-extension/pull/9968))
-- Etherscan links support Goerli network ([#9970](https://github.com/MetaMask/metamask-extension/pull/9970))
+- Ubiqscan links support Goerli network ([#9970](https://github.com/MetaMask/metamask-extension/pull/9970))
 - Show price impact warnings on swaps quote screen ([#9899](https://github.com/MetaMask/metamask-extension/pull/9899))
 - Replace use of ethgasstation ([#9867](https://github.com/MetaMask/metamask-extension/pull/9867))
 - Show correct gas estimates when users don't have sufficient balance for contract transaction ([#9984](https://github.com/MetaMask/metamask-extension/pull/9984))
-- Add 48x48 MetaMask icon for use by browsers ([#9993](https://github.com/MetaMask/metamask-extension/pull/9993))
+- Add 48x48 Sparrow icon for use by browsers ([#9993](https://github.com/MetaMask/metamask-extension/pull/9993))
 
 ## [8.1.5] - 2020-11-19
 ### Uncategorized
@@ -757,7 +757,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Move add contact button in fullscreen/expanded view of settings lower to expose the close button. ([#9883](https://github.com/MetaMask/metamask-extension/pull/9883))
 - Add token verification message to swaps build quote screen ([#9891](https://github.com/MetaMask/metamask-extension/pull/9891))
 - Show failed token balance updates ([#9896](https://github.com/MetaMask/metamask-extension/pull/9896))
-- Update asset page etherscan link to the address-filtered token page on Etherscan ([#9909](https://github.com/MetaMask/metamask-extension/pull/9909))
+- Update asset page etherscan link to the address-filtered token page on Ubiqscan ([#9909](https://github.com/MetaMask/metamask-extension/pull/9909))
 - Revert "Show a 'send eth' button on home screen in full screen mode" ([#9910](https://github.com/MetaMask/metamask-extension/pull/9910))
 - Ensure "Known contract address" warning is shown on send screen even when changing asset ([#9907](https://github.com/MetaMask/metamask-extension/pull/9907))
 - Fix display of Ledger connection error ([#9911](https://github.com/MetaMask/metamask-extension/pull/9911))
@@ -824,7 +824,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update swaps network fee tooltip ([#9614](https://github.com/MetaMask/metamask-extension/pull/9614))
 - Prevent reducing the gas limit for swaps ([#9623](https://github.com/MetaMask/metamask-extension/pull/9623))
 - Fix UI crash when trying to render estimated time remaining of non-submitted transaction ([#9630](https://github.com/MetaMask/metamask-extension/pull/9630))
-- Update View Quote page to better represent the MetaMask fee ([#9633](https://github.com/MetaMask/metamask-extension/pull/9633))
+- Update View Quote page to better represent the Sparrow fee ([#9633](https://github.com/MetaMask/metamask-extension/pull/9633))
 
 ## [8.1.1] - 2020-10-15
 ### Uncategorized
@@ -846,7 +846,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Allow the "Localhost 8545" network to be edited, and require a chain ID to be specified for it ([#9551](https://github.com/MetaMask/metamask-extension/pull/9551))
 - Validate custom network chain IDs against endpoint `eth_chainId` return values ([#9491](https://github.com/MetaMask/metamask-extension/pull/9491))
 - Require chain IDs to be specified for custom networks ([#9487](https://github.com/MetaMask/metamask-extension/pull/9487))
-- Add MetaMask Swaps 🌻 ([#9482](https://github.com/MetaMask/metamask-extension/pull/9482))
+- Add Sparrow Swaps 🌻 ([#9482](https://github.com/MetaMask/metamask-extension/pull/9482))
 - Fix data backup feature ([#9422](https://github.com/MetaMask/metamask-extension/pull/9422))
 - Improve gas input UI by using tooltip instead of a modal to communicate gas data ([#9434](https://github.com/MetaMask/metamask-extension/pull/9434))
 - Improve visual style and layout of the basic tab of the customize gas modal ([#9433](https://github.com/MetaMask/metamask-extension/pull/9433))
@@ -870,7 +870,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hide gas price/speed estimate button, and link to advanced gas modal, in send flow on non-main network ([#9189](https://github.com/MetaMask/metamask-extension/pull/9189))
 - Improve visual styling of back button in account modal ([#9184](https://github.com/MetaMask/metamask-extension/pull/9184))
 - Fix vertical align of the network name in network dropdown button ([#9152](https://github.com/MetaMask/metamask-extension/pull/9152))
-- Use new Euclid font throughout MetaMask ([#9073](https://github.com/MetaMask/metamask-extension/pull/9073))
+- Use new Euclid font throughout Sparrow ([#9073](https://github.com/MetaMask/metamask-extension/pull/9073))
 
 ## [8.0.10] - 2020-09-16
 ### Uncategorized
@@ -886,7 +886,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [8.0.8] - 2020-08-14
 ### Uncategorized
-- Fix Etherscan redirect on notification click ([#9211](https://github.com/MetaMask/metamask-extension/pull/9211))
+- Fix Ubiqscan redirect on notification click ([#9211](https://github.com/MetaMask/metamask-extension/pull/9211))
 - Reduce volume of web3 usage metrics ([#9237](https://github.com/MetaMask/metamask-extension/pull/9237))
 - Permit all-caps addresses ([#9227](https://github.com/MetaMask/metamask-extension/pull/9227))
 
@@ -1158,7 +1158,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update badge colour ([#7430](https://github.com/MetaMask/metamask-extension/pull/7430))
 - Utilize the full size of icon space ([#7408](https://github.com/MetaMask/metamask-extension/pull/7408))
 - Add all icons to manifest ([#7431](https://github.com/MetaMask/metamask-extension/pull/7431))
-- Ensure Etherscan result is valid before reading it ([#7426](https://github.com/MetaMask/metamask-extension/pull/7426))
+- Ensure Ubiqscan result is valid before reading it ([#7426](https://github.com/MetaMask/metamask-extension/pull/7426))
 - Update 512px icon ([#7434](https://github.com/MetaMask/metamask-extension/pull/7434))
 - Adds and end to end test for typed signature requests ([#7420](https://github.com/MetaMask/metamask-extension/pull/7420))
 - Add metricsEvent to contextTypes ([#7439](https://github.com/MetaMask/metamask-extension/pull/7439))
@@ -1315,7 +1315,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Document hotfix protocol ([#6589](https://github.com/MetaMask/metamask-extension/pull/6589))
 - Add codeowner for package-lock-old.json package-lock.json package.json packagelock-old.json files ([#6738](https://github.com/MetaMask/metamask-extension/pull/6738))
 - Add loading view to notification.html ([#6648](https://github.com/MetaMask/metamask-extension/pull/6648))
-- Add brave as a platform type for MetaMask ([#6731](https://github.com/MetaMask/metamask-extension/pull/6731))
+- Add brave as a platform type for Sparrow ([#6731](https://github.com/MetaMask/metamask-extension/pull/6731))
 
 ## [6.7.1] - 2019-07-28
 ### Uncategorized
@@ -1330,7 +1330,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Wrap smaller custom block explorer url text ([#6714](https://github.com/MetaMask/metamask-extension/pull/6714))
 - Pin ethereumjs-tx ([#6706](https://github.com/MetaMask/metamask-extension/pull/6706))
 - Fix styles on 'import account' page, update help link ([#6700](https://github.com/MetaMask/metamask-extension/pull/6700))
-- Started adding visual documentation of MetaMask plugin components with the account menu component first ([#6775](https://github.com/MetaMask/metamask-extension/pull/6775))
+- Started adding visual documentation of Sparrow plugin components with the account menu component first ([#6775](https://github.com/MetaMask/metamask-extension/pull/6775))
 
 ## [6.6.2] - 2019-07-17
 ### Uncategorized
@@ -1506,7 +1506,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix confirm screen for sending ether tx with hex data ([#6008](https://github.com/MetaMask/metamask-extension/pull/6008))
 - Refine app description ([#5999](https://github.com/MetaMask/metamask-extension/pull/5999))
 - Harden Drizzle test runner script ([#5997](https://github.com/MetaMask/metamask-extension/pull/5997))
-- Fix bug where MetaMask user calls non-standard ERC20 methods such as `mint`, `tokenData` will be `undefined` and an uncaught error will break the UI ([#5995](https://github.com/MetaMask/metamask-extension/pull/5995))
+- Fix bug where Sparrow user calls non-standard ERC20 methods such as `mint`, `tokenData` will be `undefined` and an uncaught error will break the UI ([#5995](https://github.com/MetaMask/metamask-extension/pull/5995))
 - Fixed a word in french translation ([#5970](https://github.com/MetaMask/metamask-extension/pull/5970))
 - Fix Component#componentDidUpdate usage ([#5977](https://github.com/MetaMask/metamask-extension/pull/5977))
 - Add scrolling button to account list ([#5992](https://github.com/MetaMask/metamask-extension/pull/5992))
@@ -1561,7 +1561,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Trim whitespace from seed phrase during import ([#5827](https://github.com/MetaMask/metamask-extension/pull/5827))
 - Show Connect Requests count in extension badge ([#5832](https://github.com/MetaMask/metamask-extension/pull/5832))
 - Increase Token Symbol length to twelve ([#5816](https://github.com/MetaMask/metamask-extension/pull/5816))
-- With the EIP 1102 updates, MetaMask _does_ now open itself when visiting some websites. Changed the wording here to clarify that MetaMask will not open itself to ask you for your seed phrase. ([#5819](https://github.com/MetaMask/metamask-extension/pull/5819))
+- With the EIP 1102 updates, Sparrow _does_ now open itself when visiting some websites. Changed the wording here to clarify that Sparrow will not open itself to ask you for your seed phrase. ([#5819](https://github.com/MetaMask/metamask-extension/pull/5819))
 - Bump Node version to 8.13 ([#5810](https://github.com/MetaMask/metamask-extension/pull/5810))
 - Add Firefox and Brave support for Trezor ([#5797](https://github.com/MetaMask/metamask-extension/pull/5797))
 - Fix usage of setState in ConfirmTransactionBase#handleSubmit ([#5799](https://github.com/MetaMask/metamask-extension/pull/5799))
@@ -1699,7 +1699,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix for Brave i18n getAcceptLanguages. ([#4524](https://github.com/MetaMask/metamask-extension/pull/4524))
 - Fix bug where nonce mutex was never released. ([#4557](https://github.com/MetaMask/metamask-extension/pull/4557))
 - Add phishing notice. ([#4566](https://github.com/MetaMask/metamask-extension/pull/4566))
-- Allow Copying Token Addresses and link to Token on Etherscan. ([#4591](https://github.com/MetaMask/metamask-extension/pull/4591))
+- Allow Copying Token Addresses and link to Token on Ubiqscan. ([#4591](https://github.com/MetaMask/metamask-extension/pull/4591))
 
 ## [4.7.4] - 2018-06-05
 ### Uncategorized
@@ -1795,7 +1795,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [4.4.0] - 2018-03-27
 ### Uncategorized
 - Internationalization: Taiwanese, Thai, Slovenian
-- Fixes bug where MetaMask would not open once its storage grew too large.
+- Fixes bug where Sparrow would not open once its storage grew too large.
 - Updates design of new-ui Add Token screen
 - New-ui can send to ens addresses
 - Update new-ui button styles
@@ -1817,7 +1817,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a welcome screen to new-ui onboarding flow
 - Make new-ui create password screen responsive
 - Hide network dropdown before account is initialized
-- Fix bug that could prevent MetaMask from saving the latest vault.
+- Fix bug that could prevent Sparrow from saving the latest vault.
 
 ## [4.2.0] - 2018-03-06
 ### Uncategorized
@@ -1831,7 +1831,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.1.3] - 2018-03-02
 ### Uncategorized
-- Ensure MetaMask's inpage provider is named MetamaskInpageProvider to keep some sites from breaking.
+- Ensure Sparrow's inpage provider is named MetamaskInpageProvider to keep some sites from breaking.
 - Add retry transaction button back into classic ui.
 - Add network dropdown styles to support long custom RPC urls
 
@@ -1854,13 +1854,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.0.0] - 2018-02-22
 ### Uncategorized
-- Introduce new MetaMask user interface.
+- Introduce new Sparrow user interface.
 
 ## [3.14.2] - 2018-02-27
 ### Uncategorized
 - Fix bug where log subscriptions would break when switching network.
 - Fix bug where storage values were cached across blocks.
-- Add MetaMask light client [testing container](https://github.com/MetaMask/mesh-testing)
+- Add Sparrow light client [testing container](https://github.com/MetaMask/mesh-testing)
 
 ## [3.14.1] - 2018-02-01
 ### Uncategorized
@@ -1940,7 +1940,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [3.11.2] - 2017-10-21
 ### Uncategorized
 - Fix bug where reject button would sometimes not work.
-- Fixed bug where sometimes MetaMask's connection to a page would be unreliable.
+- Fixed bug where sometimes Sparrow's connection to a page would be unreliable.
 
 ## [3.11.1] - 2017-10-20
 ### Uncategorized
@@ -2025,9 +2025,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Make eth_sign deprecation warning less noisy
 - Add useful link to eth_sign deprecation warning.
 - Fix bug with network version serialization over synchronous RPC
-- Add MetaMask version to state logs.
+- Add Sparrow version to state logs.
 - Add the total amount of tokens when multiple tokens are added under the token list
-- Use HTTPS links for Etherscan.
+- Use HTTPS links for Ubiqscan.
 - Update Support center link to new one with HTTPS.
 - Make web3 deprecation notice more useful by linking to a descriptive article.
 
@@ -2212,7 +2212,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.6.3] - 2017-05-09
 ### Uncategorized
-- Fix bug that could stop newer versions of Geth from working with MetaMask.
+- Fix bug that could stop newer versions of Geth from working with Sparrow.
 
 ## [3.6.2] - 2017-05-08
 ### Uncategorized
@@ -2362,7 +2362,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.13.9] - 2016-11-21
 ### Uncategorized
 - Add support for the new, default Ropsten Test Network.
-- Fix bug that would cause MetaMask to occasionally lose its StreamProvider connection and drop requests.
+- Fix bug that would cause Sparrow to occasionally lose its StreamProvider connection and drop requests.
 - Fix bug that would cause the Custom RPC menu item to not appear when Localhost 8545 was selected.
 - Point ropsten faucet button to actual faucet.
 - Phase out ethereumjs-util from our encryptor module.
@@ -2413,8 +2413,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.13.2] - 2016-10-04
 ### Uncategorized
 - Fix bug where chosen FIAT exchange rate does no persist when switching networks
-- Fix additional parameters that made MetaMask sometimes receive errors from Parity.
-- Fix bug where invalid transactions would still open the MetaMask popup.
+- Fix additional parameters that made Sparrow sometimes receive errors from Parity.
+- Fix bug where invalid transactions would still open the Sparrow popup.
 - Removed hex prefix from private key export, to increase compatibility with Geth, MyEtherWallet, and Jaxx.
 
 ## [2.13.1] - 2016-09-23
@@ -2430,13 +2430,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.12.1] - 2016-09-14
 ### Uncategorized
-- Fixed bug where if you send a transaction from within MetaMask extension the popup notification opens up.
+- Fixed bug where if you send a transaction from within Sparrow extension the popup notification opens up.
 - Fixed bug where some tx errors would block subsequent txs until the plugin was refreshed.
 
 ## [2.12.0] - 2016-09-14
 ### Uncategorized
 - Add a QR button to the Account detail screen
-- Fixed bug where opening MetaMask could close a non-metamask popup.
+- Fixed bug where opening Sparrow could close a non-metamask popup.
 - Fixed memory leak that caused occasional crashes.
 
 ## [2.11.1] - 2016-09-13
@@ -2447,10 +2447,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Uncategorized
 - Fix bug where pending transactions from Test net (or other networks) show up In Main net.
 - Add fiat conversion values to more views.
-- On fresh install, open a new tab with the MetaMask Introduction video. Does not open on update.
+- On fresh install, open a new tab with the Sparrow Introduction video. Does not open on update.
 - Block negative values from transactions.
 - Fixed a memory leak.
-- MetaMask logo now renders as super lightweight SVG, improving compatibility and performance.
+- Sparrow logo now renders as super lightweight SVG, improving compatibility and performance.
 - Now showing loading indication during vault unlocking, to clarify behavior for users who are experiencing slow unlocks.
 - Now only initially creates one wallet when restoring a vault, to reduce some users' confusion.
 
@@ -2461,7 +2461,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.10.1] - 2016-09-02
 ### Uncategorized
 - Fix bug where provider menu did not allow switching to custom network from a custom network.
-- Sending a transaction from within MetaMask no longer triggers a popup.
+- Sending a transaction from within Sparrow no longer triggers a popup.
 - The ability to build without livereload features (such as for production) can be enabled with the gulp --disableLiveReload flag.
 - Fix Ethereum JSON RPC Filters bug.
 
@@ -2480,9 +2480,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Uncategorized
 - Added static image as fallback for when WebGL isn't supported.
 - Transaction history now has a hard limit.
-- Added info link on account screen that visits Etherscan.
+- Added info link on account screen that visits Ubiqscan.
 - Fixed bug where a message signing request would be lost if the vault was locked.
-- Added shortcut to open MetaMask (Ctrl+Alt+M or Cmd+Opt/Alt+M)
+- Added shortcut to open Sparrow (Ctrl+Alt+M or Cmd+Opt/Alt+M)
 - Prevent API calls in tests.
 - Fixed bug where sign message confirmation would sometimes render blank.
 
@@ -2521,7 +2521,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Uncategorized
 - Added a Warning screen about storing ETH
 - Add buy Button!
-- MetaMask now throws descriptive errors when apps try to use synchronous web3 methods.
+- Sparrow now throws descriptive errors when apps try to use synchronous web3 methods.
 - Removed firefox-specific line in manifest.
 
 ## [2.6.2] - 2016-07-20
@@ -2561,7 +2561,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.4.5] - 2016-06-29
 ### Uncategorized
-- Fixed bug where MetaMask interfered with PDF loading.
+- Fixed bug where Sparrow interfered with PDF loading.
 - Moved switch account icon into menu bar.
 - Changed status shapes to be a yellow warning sign for failure and ellipsis for pending transactions.
 - Now enforce 20 character limit on wallet names.
@@ -2702,7 +2702,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Uncategorized
 - Added ability to send ether.
 - Fixed bugs related to using Javascript numbers, which lacked appropriate precision.
-- Replaced Etherscan main-net provider with our own production RPC.
+- Replaced Ubiqscan main-net provider with our own production RPC.
 
 ## [1.4.0] - 2016-04-08
 ### Uncategorized

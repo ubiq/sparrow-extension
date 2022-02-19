@@ -120,7 +120,7 @@ export default class DetectTokensController {
         result = await this._getTokenBalances(tokensSlice);
       } catch (error) {
         warn(
-          `MetaMask - DetectTokensController single call balance fetch failed`,
+          `Sparrow - DetectTokensController single call balance fetch failed`,
           error,
         );
         return;

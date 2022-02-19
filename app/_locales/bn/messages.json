@@ -33,7 +33,7 @@
     "message": "কার্যকলাপের লগ"
   },
   "addAcquiredTokens": {
-    "message": "MetaMask ব্যবহার করে আপনি যে টোকেনগুলি অর্জন করেছেন সেগুলি যোগ করুন"
+    "message": "Sparrow ব্যবহার করে আপনি যে টোকেনগুলি অর্জন করেছেন সেগুলি যোগ করুন"
   },
   "addAlias": {
     "message": "উপনাম যোগ করুন"
@@ -103,7 +103,7 @@
     "message": "স্বয়ংক্রিয়-লগ আউট টাইমার (মিনিট)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "MetaMask স্বয়ংক্রিয়ভাবে লগ আউট করার আগে নিষ্ক্রিয় থাকার সময় মিনিটে সেট করুন"
+    "message": "Sparrow স্বয়ংক্রিয়ভাবে লগ আউট করার আগে নিষ্ক্রিয় থাকার সময় মিনিটে সেট করুন"
   },
   "average": {
     "message": "গড়"
@@ -329,7 +329,7 @@
     "message": "আপনাকে আপনার সীড আবার ব্যাকআপ করতে হলে, আপনি সেটি সেটিংস -> নিরাপত্তায় পাবেন।"
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask আপনার সীডফ্রেজ পুনরুদ্ধার করতে পারবে না। আরও জানুন।"
+    "message": "Sparrow আপনার সীডফ্রেজ পুনরুদ্ধার করতে পারবে না। আরও জানুন।"
   },
   "endOfFlowMessage9": {
     "message": "আরও জানুন।"
@@ -356,7 +356,7 @@
     "message": "Ethereum পাবলিক অ্যাড্রেস"
   },
   "etherscanView": {
-    "message": "Etherscan এ অ্যাকাউন্ট দেখুন"
+    "message": "Ubiqscan এ অ্যাকাউন্ট দেখুন"
   },
   "expandView": {
     "message": "ভিউ সম্প্রসারিত করুন"
@@ -567,7 +567,7 @@
     "message": "আপনার Ubiq এবং ছড়িয়ে ছিটিয়ে থাকা ওয়েবের সাথে সংযোগ করছে। "
   },
   "metamaskVersion": {
-    "message": "MetaMask সংস্করণ"
+    "message": "Sparrow সংস্করণ"
   },
   "mustSelectOne": {
     "message": "অবশ্যই অন্তত 1টি টোকেন নির্বাচন করতে হবে।"
@@ -611,7 +611,7 @@
     "message": "নতুন পাসওয়ার্ড (অন্তত 8 অক্ষরের)"
   },
   "newToMetaMask": {
-    "message": "MetaMask এ নতুন?"
+    "message": "Sparrow এ নতুন?"
   },
   "newTotal": {
     "message": "নতুন সমষ্টি"
@@ -665,7 +665,7 @@
     "message": "MetaMetrics এ অংশগ্রহণ করুন"
   },
   "participateInMetaMetricsDescription": {
-    "message": "MetaMask কে আরও উন্নত করতে আমাদের সহায়তা করার জন্য MetaMetrics এ অংশগ্রহণ করুন"
+    "message": "Sparrow কে আরও উন্নত করতে আমাদের সহায়তা করার জন্য MetaMetrics এ অংশগ্রহণ করুন"
   },
   "password": {
     "message": "পাসওয়ার্ড"
@@ -693,7 +693,7 @@
     "message": "প্রাথমিক মুদ্রা"
   },
   "primaryCurrencySettingDescription": {
-    "message": "চেনটিতে (যেমন ETH) দেশীয় মুদ্রায় মানগুলি প্রদর্শনকে অগ্রাধিকার দিতে দেশীয় নির্বাচন করুন। আপনার নির্দেশিত মুদ্রায় মানগুলির প্রদর্শনকে অগ্রাধিকার দিতে নির্দেশিত নির্বাচন করুন।"
+    "message": "চেনটিতে (যেমন UBQ) দেশীয় মুদ্রায় মানগুলি প্রদর্শনকে অগ্রাধিকার দিতে দেশীয় নির্বাচন করুন। আপনার নির্দেশিত মুদ্রায় মানগুলির প্রদর্শনকে অগ্রাধিকার দিতে নির্দেশিত নির্বাচন করুন।"
   },
   "privacyMsg": {
     "message": "সম্মত হয়েছেন"
@@ -1091,7 +1091,7 @@
     "message": "আমাদের ওয়েবসাইট দেখুন"
   },
   "welcome": {
-    "message": "MetaMask এ স্বাগতম"
+    "message": "Sparrow এ স্বাগতম"
   },
   "welcomeBack": {
     "message": "পুনরায় স্বাগত!"

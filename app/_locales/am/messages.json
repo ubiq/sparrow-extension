@@ -27,7 +27,7 @@
     "message": "የእንቅስቃሴ ምዝግብ ማስታወሻ"
   },
   "addAcquiredTokens": {
-    "message": "MetaMask በመጠቀም የገዟቸውን ተለዋጭ ስሞች ያክሉ"
+    "message": "Sparrow በመጠቀም የገዟቸውን ተለዋጭ ስሞች ያክሉ"
   },
   "addAlias": {
     "message": "ተለዋጭ ስም አክል"
@@ -97,7 +97,7 @@
     "message": "በራስ ሰር ዘግቶ መውጫ ሰዓት ቆጣሪ (ደቂቃ)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "MetaMask በራስ ሰር መንገድ ዘግቶ ከመውጣቱ በፊት የቦዘነ ጊዜን በደቂቃዎች ሙላ"
+    "message": "Sparrow በራስ ሰር መንገድ ዘግቶ ከመውጣቱ በፊት የቦዘነ ጊዜን በደቂቃዎች ሙላ"
   },
   "average": {
     "message": "አማካይ"
@@ -320,7 +320,7 @@
     "message": "የዘር ሐረግዎን በድጋሚ መጠባበቂያ ለመያዝ ከፈለጉ፣ በቅንብሮች -> ግላዊነት ውስጥ ሊያገኙት ይችላሉ።"
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask የዘር ሐረግዎን መልሶ ማግኘት አልቻለም። ተጨማሪ መረጃ ያግኙ።"
+    "message": "Sparrow የዘር ሐረግዎን መልሶ ማግኘት አልቻለም። ተጨማሪ መረጃ ያግኙ።"
   },
   "endOfFlowMessage9": {
     "message": "ተጨማሪ ይማሩ"
@@ -678,7 +678,7 @@
     "message": "ተቀዳሚ የገንዘብ ዓይነት"
   },
   "primaryCurrencySettingDescription": {
-    "message": "ዋጋዎች በራሳቸው የሰንሰለት ገንዘብ ዓይነት (ለምሳሌ ETH) በቅድሚያ እንዲታዪ ይምረጡ። ዋጋዎች በተመረጠ የፊያት ገንዘብ ዓይነት እንዲታዩ ደግሞ ፊያትን ይምረጡ።"
+    "message": "ዋጋዎች በራሳቸው የሰንሰለት ገንዘብ ዓይነት (ለምሳሌ UBQ) በቅድሚያ እንዲታዪ ይምረጡ። ዋጋዎች በተመረጠ የፊያት ገንዘብ ዓይነት እንዲታዩ ደግሞ ፊያትን ይምረጡ።"
   },
   "privacyMsg": {
     "message": "የግለኝነት መጠበቂያ ህግ"

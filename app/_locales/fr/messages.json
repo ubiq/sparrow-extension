@@ -99,7 +99,7 @@
     "message": "Ajouter un pseudo"
   },
   "addAcquiredTokens": {
-    "message": "Ajouter les jetons que vous avez acquis par l’intermédiaire de MetaMask"
+    "message": "Ajouter les jetons que vous avez acquis par l’intermédiaire de Sparrow"
   },
   "addAlias": {
     "message": "Ajouter un alias"
@@ -115,10 +115,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Cela permettra d’utiliser ce réseau dans MetaMask."
+    "message": "Cela permettra d’utiliser ce réseau dans Sparrow."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask ne vérifie pas les réseaux personnalisés."
+    "message": "Sparrow ne vérifie pas les réseaux personnalisés."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "En savoir plus sur $1.",
@@ -322,10 +322,10 @@
     "message": "Général"
   },
   "betaMetamaskDescription": {
-    "message": "MetaMask est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
+    "message": "Sparrow est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Utilisez cette version pour tester les futures fonctionnalités avant leur lancement. Votre utilisation et vos commentaires nous aident à développer la meilleure version possible de MetaMask. Votre utilisation de Sparrow Beta est conditionnée par notre norme $1, ainsi que par notre $2. Il s’agit de la version bêta, présentant un risque de bogues plus élevé. En continuant, vous acceptez et reconnaissez ce risque, ainsi que ceux mentionnés dans nos Conditions d’utilisation et nos Conditions bêta.",
+    "message": "Utilisez cette version pour tester les futures fonctionnalités avant leur lancement. Votre utilisation et vos commentaires nous aident à développer la meilleure version possible de Sparrow. Votre utilisation de Sparrow Beta est conditionnée par notre norme $1, ainsi que par notre $2. Il s’agit de la version bêta, présentant un risque de bogues plus élevé. En continuant, vous acceptez et reconnaissez ce risque, ainsi que ceux mentionnés dans nos Conditions d’utilisation et nos Conditions bêta.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -369,7 +369,7 @@
     "message": "Créez votre liste de contacts"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask est conçu et établi dans le monde entier."
+    "message": "Sparrow est conçu et établi dans le monde entier."
   },
   "busy": {
     "message": "Occupé"
@@ -381,7 +381,7 @@
     "message": "Acheter des UBQ avec Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vous permet d’utiliser une carte de crédit pour déposer des UBQ directement sur votre compte MetaMask."
+    "message": "Wyre vous permet d’utiliser une carte de crédit pour déposer des UBQ directement sur votre compte Sparrow."
   },
   "bytes": {
     "message": "Octets"
@@ -489,7 +489,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Connectez-vous avec MetaMask"
+    "message": "Connectez-vous avec Sparrow"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Vous avez $1 comptes connectés à ce site.",
@@ -499,7 +499,7 @@
     "message": "Vous avez 1 compte connecté à ce site."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask n’est pas connecté à ce site. Pour vous connecter à un site web3, cliquez sur le bouton de connexion."
+    "message": "Sparrow n’est pas connecté à ce site. Pour vous connecter à un site web3, cliquez sur le bouton de connexion."
   },
   "connectedSites": {
     "message": "Sites connectés"
@@ -657,7 +657,7 @@
     "message": "Données"
   },
   "dataBackupFoundInfo": {
-    "message": "Certaines données de votre compte ont été sauvegardées lors d’une précédente installation de MetaMask. Il peut s’agir de vos paramètres, contacts et jetons. Souhaitez-vous restaurer ces données maintenant ?"
+    "message": "Certaines données de votre compte ont été sauvegardées lors d’une précédente installation de Sparrow. Il peut s’agir de vos paramètres, contacts et jetons. Souhaitez-vous restaurer ces données maintenant ?"
   },
   "dataHex": {
     "message": "Hex"
@@ -893,7 +893,7 @@
   },
   "enableToken": {
     "message": "activer $1",
-    "description": "$1 is a token symbol, e.g. ETH"
+    "description": "$1 is a token symbol, e.g. UBQ"
   },
   "encryptionPublicKeyNotice": {
     "message": "$1 aimerait avoir votre clé publique de cryptage. En y consentant, ce site sera en mesure de vous composer des messages cryptés.",
@@ -928,7 +928,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask ne peut pas récupérer votre phrase de départ."
+    "message": "Sparrow ne peut pas récupérer votre phrase de départ."
   },
   "endOfFlowMessage9": {
     "message": "En savoir plus."
@@ -989,7 +989,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask a rencontré une erreur",
+    "message": "Sparrow a rencontré une erreur",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1006,7 +1006,7 @@
     "message": "Adresse publique d’Ethereum"
   },
   "etherscan": {
-    "message": "Etherscan"
+    "message": "Ubiqscan"
   },
   "etherscanView": {
     "message": "Afficher le compte sur Ubiqscan"
@@ -1228,7 +1228,7 @@
     "message": "Connecter un portefeuille matériel"
   },
   "hardwareWalletsMsg": {
-    "message": "Selectionnez le portefeuille matériel que vous voulez utiliser avec MetaMask"
+    "message": "Selectionnez le portefeuille matériel que vous voulez utiliser avec Sparrow"
   },
   "here": {
     "message": "ici",
@@ -1277,7 +1277,7 @@
     "message": "importer en utilisant la phrase secrète de récupération"
   },
   "importAccountMsg": {
-    "message": "Les comptes importés ne seront pas associés à la phrase secrète de récupération que vous avez créée au départ dans MetaMask. En savoir plus sur les comptes importés"
+    "message": "Les comptes importés ne seront pas associés à la phrase secrète de récupération que vous avez créée au départ dans Sparrow. En savoir plus sur les comptes importés"
   },
   "importAccountSeedPhrase": {
     "message": "Importez un compte avec une phrase mnémotechnique"
@@ -1322,7 +1322,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask ne peut pas se connecter à l’hôte de la blockchain. Vérifiez les éventuelles raisons $1.",
+    "message": "Sparrow ne peut pas se connecter à l’hôte de la blockchain. Vérifiez les éventuelles raisons $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1347,7 +1347,7 @@
     "message": "L’adresse du destinataire n’est pas valide"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Pas de réseau ETH, régler en minuscules"
+    "message": "Pas de réseau UBQ, régler en minuscules"
   },
   "invalidBlockExplorerURL": {
     "message": "URL de l’explorateur de blocs invalide"
@@ -1462,7 +1462,7 @@
     "message": "Ouvrez et déverrouillez l’application Ledger Live"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "Personnalisez la façon dont vous souhaitez connecter votre Ledger à MetaMask. $1 est recommandé, mais d’autres options sont disponibles. En savoir plus ici : $2",
+    "message": "Personnalisez la façon dont vous souhaitez connecter votre Ledger à Sparrow. $1 est recommandé, mais d’autres options sont disponibles. En savoir plus ici : $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1470,7 +1470,7 @@
   },
   "ledgerLive": {
     "message": "Ledger Live",
-    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to MetaMask."
+    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to Sparrow."
   },
   "ledgerLiveApp": {
     "message": "Appli Ledger Live"
@@ -1570,7 +1570,7 @@
     "message": "Message"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Vous avez maintenant davantage de contrôle sur les connexions de vos comptes dans MetaMask."
+    "message": "Vous avez maintenant davantage de contrôle sur les connexions de vos comptes dans Sparrow."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Cliquez pour gérer vos comptes connectés."
@@ -1579,13 +1579,13 @@
     "message": "Le bouton d’état de connexion indique si le site Web que vous visitez est connecté à votre compte actuellement sélectionné."
   },
   "metamaskDescription": {
-    "message": "MetaMask est un coffre sécurisé pour votre identité sur Ethereum."
+    "message": "Sparrow est un coffre sécurisé pour votre identité sur Ethereum."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swaps est en cours de maintenance. Nous vous invitons à revenir plus tard."
+    "message": "Sparrow Swaps est en cours de maintenance. Nous vous invitons à revenir plus tard."
   },
   "metamaskVersion": {
-    "message": "Version de MetaMask"
+    "message": "Version de Sparrow"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Toujours pouvoir vous désinscrire via les Paramètres"
@@ -1598,7 +1598,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMask :"
+    "message": "Sparrow :"
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "Ne collectera jamais vos clés, adresses, transactions, soldes, hachages ou toute autre information personnelle"
@@ -1625,16 +1625,16 @@
     "message": "Enverra des événements de clics et de pages vues anonymisés"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "Aidez-nous à améliorer MetaMask"
+    "message": "Aidez-nous à améliorer Sparrow"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask souhaite recueillir des données d’utilisation afin de mieux comprendre comment nos utilisateurs interagissent avec l’extension. Elles seront utilisées pour améliorer en permanence la convivialité et l’expérience utilisateur de notre produit et de l’écosystème Ethereum."
+    "message": "Sparrow souhaite recueillir des données d’utilisation afin de mieux comprendre comment nos utilisateurs interagissent avec l’extension. Elles seront utilisées pour améliorer en permanence la convivialité et l’expérience utilisateur de notre produit et de l’écosystème Ethereum."
   },
   "metametricsOptInDescription2": {
     "message": "Nous aimerions recueillir des données d’utilisation de base pour améliorer la convivialité de notre produit. Ces indicateurs seront…"
   },
   "metametricsTitle": {
-    "message": "Rejoignez plus de 6 M d’utilisateurs pour améliorer MetaMask"
+    "message": "Rejoignez plus de 6 M d’utilisateurs pour améliorer Sparrow"
   },
   "mismatchedChain": {
     "message": "Les détails du réseau pour cet ID de chaîne ne correspondent pas à nos registres. Nous vous recommandons de $1 avant de poursuivre.",
@@ -1670,7 +1670,7 @@
     "message": "Partagez vos commentaires"
   },
   "needHelpLinkText": {
-    "message": "Assistance MetaMask"
+    "message": "Assistance Sparrow"
   },
   "needHelpSubmitTicket": {
     "message": "Envoyer un ticket"
@@ -1761,7 +1761,7 @@
     "message": "Nouveau ! Détection de NFT"
   },
   "newNFTsDetectedInfo": {
-    "message": "Cela permet à Sparrow de détecter automatiquement les NFT d’Opensea et de les afficher dans votre portefeuille MetaMask."
+    "message": "Cela permet à Sparrow de détecter automatiquement les NFT d’Opensea et de les afficher dans votre portefeuille Sparrow."
   },
   "newNetworkAdded": {
     "message": "« $1 » a été ajouté avec succès !"
@@ -1786,7 +1786,7 @@
   },
   "nextNonceWarning": {
     "message": "Le nonce est supérieur au nonce suggéré de $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to Sparrow's internal logic"
   },
   "nftTokenIdPlaceholder": {
     "message": "Saisissez l’ID du collectible"
@@ -1889,7 +1889,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Lorsque vous interagissez avec votre compte Ledger dans MetaMask, un nouvel onglet s’ouvre et vous invite à ouvrir l’application Ledger Live. Une fois celle-ci lancée, vous devrez autoriser une connexion WebSocket à votre compte MetaMask. Et le tour est joué !",
+    "message": "Lorsque vous interagissez avec votre compte Ledger dans Sparrow, un nouvel onglet s’ouvre et vous invite à ouvrir l’application Ledger Live. Une fois celle-ci lancée, vous devrez autoriser une connexion WebSocket à votre compte Sparrow. Et le tour est joué !",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -1901,7 +1901,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "MetaMask v10.1.0 inclut une nouvelle prise en charge des transactions EIP-1559 en cas d’utilisation d’appareils Ledger.",
+    "message": "Sparrow v10.1.0 inclut une nouvelle prise en charge des transactions EIP-1559 en cas d’utilisation d’appareils Ledger.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -1917,7 +1917,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced Settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Depuis MetaMask v10.4.0, vous n’avez plus besoin de Ledger Live pour connecter votre appareil Ledger à MetaMask.",
+    "message": "Depuis Sparrow v10.4.0, vous n’avez plus besoin de Ledger Live pour connecter votre appareil Ledger à Sparrow.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -1983,7 +1983,7 @@
     "message": "Cliquez sur l’icône d’extension du navigateur pour y accéder instantanément"
   },
   "onboardingPinExtensionLabel": {
-    "message": "Épingler MetaMask"
+    "message": "Épingler Sparrow"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2035,7 +2035,7 @@
     "message": "Participer à MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participez à MetaMetrics pour nous aider à améliorer MetaMask"
+    "message": "Participez à MetaMetrics pour nous aider à améliorer Sparrow"
   },
   "password": {
     "message": "Mot de passe"
@@ -2097,7 +2097,7 @@
     "message": "Devise principale"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Sélectionnez « natif » pour donner la priorité à l’affichage des valeurs dans la devise native de la chaîne (par ex. ETH). Sélectionnez « fiduciaire » pour donner la priorité à l’affichage des valeurs dans la devise de votre choix."
+    "message": "Sélectionnez « natif » pour donner la priorité à l’affichage des valeurs dans la devise native de la chaîne (par ex. UBQ). Sélectionnez « fiduciaire » pour donner la priorité à l’affichage des valeurs dans la devise de votre choix."
   },
   "priorityFee": {
     "message": "Frais de priorité"
@@ -2342,7 +2342,7 @@
     "message": "Si quelqu’un vous demande votre phrase de récupération, il est probable qu’il essaie de vous arnaquer pour dérober les fonds de votre portefeuille"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Ne partagez jamais, au grand jamais, votre phrase secrète de récupération, pas même avec MetaMask !"
+    "message": "Ne partagez jamais, au grand jamais, votre phrase secrète de récupération, pas même avec Sparrow !"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Qu’est-ce qu’une phrase secrète de récupération ?"
@@ -2387,7 +2387,7 @@
     "message": "Sélectionner un compte"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Ce compte a déjà été connecté à MetaMask"
+    "message": "Ce compte a déjà été connecté à Sparrow"
   },
   "selectEachPhrase": {
     "message": "Veuillez sélectionner chaque phrase afin de vous assurer qu’elle est correcte."
@@ -2431,7 +2431,7 @@
     "message": "Définir des paramètres de confidentialité avancés"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask utilise ces services tiers de confiance pour améliorer la convivialité et la sécurité des produits."
+    "message": "Sparrow utilise ces services tiers de confiance pour améliorer la convivialité et la sécurité des produits."
   },
   "settings": {
     "message": "Paramètres"
@@ -2573,7 +2573,7 @@
     "message": "Erreur lors du chargement des journaux d’état."
   },
   "stateLogFileName": {
-    "message": "Journaux d’état MetaMask"
+    "message": "Journaux d’état Sparrow"
   },
   "stateLogs": {
     "message": "Journaux d’état"
@@ -2692,7 +2692,7 @@
   },
   "swapEnableTokenForSwapping": {
     "message": "Ce sera $1 pour le swap",
-    "description": "$1 is for the 'enableToken' key, e.g. 'enable ETH'"
+    "description": "$1 is for the 'enableToken' key, e.g. 'enable UBQ'"
   },
   "swapEstimatedNetworkFees": {
     "message": "Frais de réseau estimés"
@@ -2750,7 +2750,7 @@
     "message": "Glissement maximal"
   },
   "swapMetaMaskFee": {
-    "message": "Frais MetaMask"
+    "message": "Frais Sparrow"
   },
   "swapMetaMaskFeeDescription": {
     "message": "Nous recherchons systématiquement le meilleur prix auprès des meilleures sources de liquidité. Une commission de $1 % est automatiquement incluse dans cette cotation.",
@@ -2770,7 +2770,7 @@
   },
   "swapPriceDifference": {
     "message": "Vous êtes sur le point d’effectuer un swap de $1 $2 (~$3) contre $4 $5 (~$6).",
-    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: ETH), and $3 and $6 are fiat currency amounts."
+    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: UBQ), and $3 and $6 are fiat currency amounts."
   },
   "swapPriceDifferenceTitle": {
     "message": "Différence de prix de ~$1",
@@ -2883,7 +2883,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "Confirmez toujours l’adresse du jeton sur $1.",
-    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Ubiqscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "Vérification effectuée uniquement sur 1 source."
@@ -2972,13 +2972,13 @@
     "message": "Vos données ont été synchronisées avec succès. Profitez de l’application mobile Sparrow !"
   },
   "syncWithMobileDesc": {
-    "message": "Vous pouvez synchroniser vos comptes et vos informations avec votre appareil mobile. Ouvrez l’application mobile MetaMask, allez dans « Paramètres » et appuyez sur « Synchroniser depuis l’extension de navigateur »"
+    "message": "Vous pouvez synchroniser vos comptes et vos informations avec votre appareil mobile. Ouvrez l’application mobile Sparrow, allez dans « Paramètres » et appuyez sur « Synchroniser depuis l’extension de navigateur »"
   },
   "syncWithMobileDescNewUsers": {
     "message": "Si vous ouvrez l’application Sparrow Mobile pour la première fois, suivez simplement les étapes dans votre téléphone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scannez ce code avec votre application mobile MetaMask"
+    "message": "Scannez ce code avec votre application mobile Sparrow"
   },
   "syncWithMobileTitle": {
     "message": "Synchroniser avec le mobile"
@@ -3319,10 +3319,10 @@
     "message": "Votre portefeuille est bien protégé. Conservez votre phrase secrète de récupération en sécurité et en toute discrétion. C’est votre responsabilité !"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask ne peut pas restaurer votre phrase secrète de récupération."
+    "message": "Sparrow ne peut pas restaurer votre phrase secrète de récupération."
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask ne vous demandera jamais votre phrase secrète de récupération."
+    "message": "Sparrow ne vous demandera jamais votre phrase secrète de récupération."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 avec n’importe qui, sinon vous risquez de voir vos fonds subtilisés",
@@ -3344,7 +3344,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "Bienvenue dans MetaMask"
+    "message": "Bienvenue dans Sparrow"
   },
   "welcomeBack": {
     "message": "Bienvenue à nouveau !"
@@ -3365,11 +3365,11 @@
     "message": "C’est parti !"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "MetaMask est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
+    "message": "Sparrow est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
   },
   "whatsNew": {
     "message": "Nouveautés",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to Sparrow."
   },
   "whatsThis": {
     "message": "Qu’est-ce que c’est ?"

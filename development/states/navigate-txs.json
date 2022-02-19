@@ -109,7 +109,7 @@
         "id": 2389644572638771,
         "loadingDefaults": false,
         "metamaskNetworkId": "4",
-        "origin": "MetaMask",
+        "origin": "Sparrow",
         "status": "unapproved",
         "time": 1538844175144,
         "txParams": {
@@ -130,7 +130,7 @@
         "id": 2389644572638772,
         "loadingDefaults": false,
         "metamaskNetworkId": "4",
-        "origin": "MetaMask",
+        "origin": "Sparrow",
         "status": "unapproved",
         "time": 1538844178492,
         "txParams": {

@@ -193,12 +193,12 @@ function parseArgv() {
 
   const entryTask = argv._[0];
   if (!entryTask) {
-    throw new Error('MetaMask build: No entry task specified.');
+    throw new Error('Sparrow build: No entry task specified.');
   }
 
   const buildType = argv[NamedArgs.BuildType];
   if (!(buildType in BuildType)) {
-    throw new Error(`MetaMask build: Invalid build type: "${buildType}"`);
+    throw new Error(`Sparrow build: Invalid build type: "${buildType}"`);
   }
 
   // Manually default this to `false` for dev builds only.

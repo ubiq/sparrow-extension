@@ -352,7 +352,7 @@ export async function getERC20Balance(token, accountAddress) {
 // that necessitate this logic are listed below:
 // 1. when the amount sent changes when sending a token due to the amount being
 //    part of the hex encoded data property of the transaction.
-// 2. when updating the data property while sending NATIVE currency (ex: ETH)
+// 2. when updating the data property while sending NATIVE currency (ex: UBQ)
 //    because the data parameter defines function calls that the EVM will have
 //    to execute which is where a large chunk of gas is potentially consumed.
 // 3. when the recipient changes while sending a token due to the recipient's
@@ -360,7 +360,7 @@ export async function getERC20Balance(token, accountAddress) {
 //    transaction
 // 4. when the asset being sent changes due to the contract address and details
 //    of the token being included in the hex encoded data property of the
-//    transaction. If switching to NATIVE currency (ex: ETH), the gasLimit will
+//    transaction. If switching to NATIVE currency (ex: UBQ), the gasLimit will
 //    change due to hex data being removed (unless supplied by user).
 // This method computes the gasLimit estimate which is written to state in an
 // action handler in extraReducers.

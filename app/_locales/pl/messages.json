@@ -33,7 +33,7 @@
     "message": "dziennik aktywności"
   },
   "addAcquiredTokens": {
-    "message": "Dodaj tokeny pozyskane przy pomocy MetaMask"
+    "message": "Dodaj tokeny pozyskane przy pomocy Sparrow"
   },
   "addAlias": {
     "message": "Dodaj alias"
@@ -146,7 +146,7 @@
     "message": "Kup UBQ poprzez Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Dzięki Wyre możesz użyć karty kredytowej, aby wpłacić UBQ bezpośrednio na swoje konto MetaMask."
+    "message": "Dzięki Wyre możesz użyć karty kredytowej, aby wpłacić UBQ bezpośrednio na swoje konto Sparrow."
   },
   "bytes": {
     "message": "Bajty"
@@ -329,7 +329,7 @@
     "message": "Jeśli zajdzie konieczność ponownego wykonania kopii zapasowej frazy seed, znajdziesz ją w Ustawieniach -> Zabezpieczenia."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask nie może odzyskać Twojej frazy seed. Dowiedz się więcej."
+    "message": "Sparrow nie może odzyskać Twojej frazy seed. Dowiedz się więcej."
   },
   "endOfFlowMessage9": {
     "message": "Dowiedz się więcej."
@@ -463,7 +463,7 @@
     "message": "Importuj konto"
   },
   "importAccountMsg": {
-    "message": " Importowane konta nie będą powiązane z Twoją pierwotną frazą seed MetaMask. Dowiedz się więcej o importowaniu kont "
+    "message": " Importowane konta nie będą powiązane z Twoją pierwotną frazą seed Sparrow. Dowiedz się więcej o importowaniu kont "
   },
   "importAccountSeedPhrase": {
     "message": "Zaimportuj konto za pomocą frazy seed"
@@ -494,7 +494,7 @@
     "message": "Nieprawidłowy adres odbiorcy"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "To nie jest sieć ETH, zmień na małe litery"
+    "message": "To nie jest sieć UBQ, zmień na małe litery"
   },
   "invalidBlockExplorerURL": {
     "message": "Nieprawidłowe Block Explorer URI"
@@ -561,10 +561,10 @@
     "message": "Wiadomość"
   },
   "metamaskDescription": {
-    "message": "MetaMask to bezpieczny portfel dla Ethereum."
+    "message": "Sparrow to bezpieczny portfel dla Ethereum."
   },
   "metamaskVersion": {
-    "message": "Wersja MetaMask"
+    "message": "Wersja Sparrow"
   },
   "mustSelectOne": {
     "message": "Należy wybrać co najmniej 1 token."
@@ -577,7 +577,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Nie można wysłać ujemnych ilości ETH."
+    "message": "Nie można wysłać ujemnych ilości UBQ."
   },
   "networkName": {
     "message": "Nazwa sieci"
@@ -608,7 +608,7 @@
     "message": "Nowe hasło (min. 8 znaków)"
   },
   "newToMetaMask": {
-    "message": "Pierwszy raz w MetaMask?"
+    "message": "Pierwszy raz w Sparrow?"
   },
   "newTotal": {
     "message": "Nowa suma"
@@ -659,7 +659,7 @@
     "message": "Weź udział w MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Weź udział w MetaMetrics, aby pomóc nam ulepszyć MetaMask"
+    "message": "Weź udział w MetaMetrics, aby pomóc nam ulepszyć Sparrow"
   },
   "password": {
     "message": "Hasło"
@@ -687,7 +687,7 @@
     "message": "Waluta podstawowa"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Wybierz walutę natywną, aby preferować wyświetlanie wartości w walucie natywnej łańcucha (np. ETH). Wybierz walutę fiat, aby preferować wyświetlanie wartości w wybranej przez siebie walucie fiat."
+    "message": "Wybierz walutę natywną, aby preferować wyświetlanie wartości w walucie natywnej łańcucha (np. UBQ). Wybierz walutę fiat, aby preferować wyświetlanie wartości w wybranej przez siebie walucie fiat."
   },
   "privacyMsg": {
     "message": "Polityka prywatności"
@@ -931,16 +931,16 @@
     "message": "Upewnij się, że nikt inny nie patrzy na Twój ekran podczas skanowania tego kodu"
   },
   "syncWithMobileComplete": {
-    "message": "Twoje dane zostały zsynchronizowane. Miłego korzystania z aplikacji mobilnej MetaMask!"
+    "message": "Twoje dane zostały zsynchronizowane. Miłego korzystania z aplikacji mobilnej Sparrow!"
   },
   "syncWithMobileDesc": {
-    "message": "Możesz synchronizować swoje konta i informacje z urządzeniem mobilnym. Otwórz aplikację mobilną MetaMask, przejdź do „Ustawień” i wybierz opcję „Synchronizuj z rozszerzeniem przeglądarki”."
+    "message": "Możesz synchronizować swoje konta i informacje z urządzeniem mobilnym. Otwórz aplikację mobilną Sparrow, przejdź do „Ustawień” i wybierz opcję „Synchronizuj z rozszerzeniem przeglądarki”."
   },
   "syncWithMobileDescNewUsers": {
     "message": "Jeśli po raz pierwszy otwierasz aplikację Sparrow Mobile, postępuj zgodnie z instrukcjami w telefonie."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Zeskanuj ten kod za pomocą aplikacji mobilnej MetaMask"
+    "message": "Zeskanuj ten kod za pomocą aplikacji mobilnej Sparrow"
   },
   "syncWithMobileTitle": {
     "message": "Synchronizuj z telefonem"
@@ -949,7 +949,7 @@
     "message": "Regulamin"
   },
   "testFaucet": {
-    "message": "Źródło testowego ETH"
+    "message": "Źródło testowego UBQ"
   },
   "thisWillCreate": {
     "message": "Utworzony zostanie nowy portfel i fraza seed"
@@ -1079,7 +1079,7 @@
     "message": "Odwiedź naszą stronę"
   },
   "welcome": {
-    "message": "Witaj w MetaMask"
+    "message": "Witaj w Sparrow"
   },
   "welcomeBack": {
     "message": "Witaj z powrotem!"

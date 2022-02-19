@@ -143,7 +143,7 @@
     "message": "Teie lehitsejat ei toetata..."
   },
   "buyWithWyre": {
-    "message": "Ostke ETH-d Wyre'iga"
+    "message": "Ostke UBQ-d Wyre'iga"
   },
   "buyWithWyreDescription": {
     "message": "Wyre võimaldab kasutada krediitkaarti, et teha UBQ sissemakse otse MetaMaski kontole."
@@ -329,7 +329,7 @@
     "message": "Kui peate oma seemnefraasi uuesti varundama, leiate selle valikust Settings (Seaded) -> Security (Turvalisus)."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask ei saa teie seemnefraasi taastada. Lisateave."
+    "message": "Sparrow ei saa teie seemnefraasi taastada. Lisateave."
   },
   "endOfFlowMessage9": {
     "message": "Lisateave."
@@ -490,7 +490,7 @@
     "message": "Saaja aadress on vale"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Kehtetu ETH-võrk, kasutage väiketähti"
+    "message": "Kehtetu UBQ-võrk, kasutage väiketähti"
   },
   "invalidBlockExplorerURL": {
     "message": "Vale Block Explorer URL"
@@ -683,7 +683,7 @@
     "message": "Põhivaluuta"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Valige omavääring, et prioriseerida vääringu kuvamist ahela omavääringus (nt ETH). Valige Fiat, et prioriseerida vääringu kuvamist valitud fiat-vääringus."
+    "message": "Valige omavääring, et prioriseerida vääringu kuvamist ahela omavääringus (nt UBQ). Valige Fiat, et prioriseerida vääringu kuvamist valitud fiat-vääringus."
   },
   "privacyMsg": {
     "message": "privaatsuspoliitika"

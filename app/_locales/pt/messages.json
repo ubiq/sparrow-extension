@@ -150,7 +150,7 @@
     "message": "Importar Conta"
   },
   "importAccountMsg": {
-    "message": "Contas importadas não irão ser associadas com a frase seed da conta criada originalmente pelo MetaMask. Saiba mais sobre contas importadas."
+    "message": "Contas importadas não irão ser associadas com a frase seed da conta criada originalmente pelo Sparrow. Saiba mais sobre contas importadas."
   },
   "imported": {
     "message": "Importado",
@@ -213,7 +213,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Não é possível enviar valores negativos de ETH."
+    "message": "Não é possível enviar valores negativos de UBQ."
   },
   "networks": {
     "message": "Redes"
@@ -379,7 +379,7 @@
     "message": "Visite o nosso site"
   },
   "welcome": {
-    "message": "Bem-vindo ao MetaMask"
+    "message": "Bem-vindo ao Sparrow"
   },
   "youSign": {
     "message": "Está a assinar"

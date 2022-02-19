@@ -59,7 +59,7 @@ txMeta = {
       "value": "0x3b9aca00"
     }]
   ], // I've removed most of history for this
-  "origin": "MetaMask", //debug
+  "origin": "Sparrow", //debug
   "nonceDetails": {
     "params": {
       "highestLocallyConfirmed": 0,

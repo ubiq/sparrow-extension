@@ -33,7 +33,7 @@
     "message": "veiklos žurnalas"
   },
   "addAcquiredTokens": {
-    "message": "Pridėkite žetonus, kuriuos gavote naudodamiesi „MetaMask“"
+    "message": "Pridėkite žetonus, kuriuos gavote naudodamiesi „Sparrow“"
   },
   "addAlias": {
     "message": "Pridėti alternatyvųjį vardą"
@@ -103,7 +103,7 @@
     "message": "Automatinio atjungimo laikmatis (minutės)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Nustatykite laukimo  trukmę minutėmis iki „MetaMask“ automatinio atsijungimo"
+    "message": "Nustatykite laukimo  trukmę minutėmis iki „Sparrow“ automatinio atsijungimo"
   },
   "average": {
     "message": "Vidurkis"
@@ -115,7 +115,7 @@
     "message": "Atgal prie visų"
   },
   "backupApprovalInfo": {
-    "message": "Šis slaptas kodas reikalingas norint atkurti jūsų slaptažodinę, jeigu pamestumėte savo įrenginį, pamirštumėte savo slaptažodį, iš naujo įdiegtumėte „MetaMask“, taip pat norint pasiekti slaptažodinę iš kito įrenginio."
+    "message": "Šis slaptas kodas reikalingas norint atkurti jūsų slaptažodinę, jeigu pamestumėte savo įrenginį, pamirštumėte savo slaptažodį, iš naujo įdiegtumėte „Sparrow“, taip pat norint pasiekti slaptažodinę iš kito įrenginio."
   },
   "backupApprovalNotice": {
     "message": "Pasidarykite atsarginę savo slapto atkūrimo kodo kopiją, kad jūsų slaptažodinė ir fondai būtų saugūs."
@@ -146,7 +146,7 @@
     "message": "Pirkti UBQ su „Wyre“"
   },
   "buyWithWyreDescription": {
-    "message": "„Wyre“ leidžia naudotis kreditine kortele norint įnešti UBQ tiesiai į jūsų „MetaMask“ paskyrą."
+    "message": "„Wyre“ leidžia naudotis kreditine kortele norint įnešti UBQ tiesiai į jūsų „Sparrow“ paskyrą."
   },
   "bytes": {
     "message": "Baitai"
@@ -164,7 +164,7 @@
     "message": "Grandinės ID"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Norėdami prisijungti prie aparatinės įrangos slaptažodinės, „MetaMask“ naudokitės „Google Chrome“ naršyklėje."
+    "message": "Norėdami prisijungti prie aparatinės įrangos slaptažodinės, „Sparrow“ naudokitės „Google Chrome“ naršyklėje."
   },
   "clickToRevealSeed": {
     "message": "Spustelėkite čia, kad atidengtumėte slaptus žodžius"
@@ -323,13 +323,13 @@
     "message": "Niekam niekada nepasakykite šios frazės."
   },
   "endOfFlowMessage5": {
-    "message": "Saugokitės informacijos vagių! „MetaMask“ niekada spontaniškai neklaus jūsų atkūrimo frazės."
+    "message": "Saugokitės informacijos vagių! „Sparrow“ niekada spontaniškai neklaus jūsų atkūrimo frazės."
   },
   "endOfFlowMessage6": {
     "message": "Jeigu reikia dar kartą padaryti jūsų atkūrimo frazės kopiją, ją galite rasti pasirinkę Nuostatos -> Sauga."
   },
   "endOfFlowMessage8": {
-    "message": "„MetaMask“ negali atkurti jūsų atkūrimo frazės. Sužinokite daugiau."
+    "message": "„Sparrow“ negali atkurti jūsų atkūrimo frazės. Sužinokite daugiau."
   },
   "endOfFlowMessage9": {
     "message": "Sužinokite daugiau."
@@ -356,7 +356,7 @@
     "message": "„Ethereum“ viešasis adresas"
   },
   "etherscanView": {
-    "message": "Peržiūrėti paskyrą „Etherscan“ programoje"
+    "message": "Peržiūrėti paskyrą „Ubiqscan“ programoje"
   },
   "expandView": {
     "message": "Išskleisti rodinį"
@@ -463,7 +463,7 @@
     "message": "Importuoti paskyrą"
   },
   "importAccountMsg": {
-    "message": "Importuotos paskyros nebus susietos su pirmiau sukurta „MetaMask“ paskyros atkūrimo fraze. Sužinokite daugiau apie importuotas paskyras"
+    "message": "Importuotos paskyros nebus susietos su pirmiau sukurta „Sparrow“ paskyros atkūrimo fraze. Sužinokite daugiau apie importuotas paskyras"
   },
   "importAccountSeedPhrase": {
     "message": "Importuoti paskyrą su atkūrimo fraze"
@@ -567,7 +567,7 @@
     "message": "Prijungiame jus prie „Ethereum“ ir decentralizuotojo žiniatinklio."
   },
   "metamaskVersion": {
-    "message": "„MetaMask“ versija"
+    "message": "„Sparrow“ versija"
   },
   "mustSelectOne": {
     "message": "Turite pasirinkti bent 1 žetoną."
@@ -611,7 +611,7 @@
     "message": "Naujas slaptažodis (bent 8 ženklai)"
   },
   "newToMetaMask": {
-    "message": "Tik pradedate naudotis „MetaMask“?"
+    "message": "Tik pradedate naudotis „Sparrow“?"
   },
   "newTotal": {
     "message": "Nauja bendra suma"
@@ -665,7 +665,7 @@
     "message": "Dalyvaukite „MetaMetrics“"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Dalyvaukite „MetaMetrics“ ir padėkite mums tobulinti „MetaMask“"
+    "message": "Dalyvaukite „MetaMetrics“ ir padėkite mums tobulinti „Sparrow“"
   },
   "password": {
     "message": "Slaptažodis"
@@ -693,7 +693,7 @@
     "message": "Pagrindinė valiuta"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Rinkitės vietinę, kad vertės pirmiausia būtų rodomos vietine grandinės valiuta (pvz., ETH). Rinkitės standartinę, kad vertės pirmiausia būtų rodomos jūsų pasirinkta standartine valiuta."
+    "message": "Rinkitės vietinę, kad vertės pirmiausia būtų rodomos vietine grandinės valiuta (pvz., UBQ). Rinkitės standartinę, kad vertės pirmiausia būtų rodomos jūsų pasirinkta standartine valiuta."
   },
   "privacyMsg": {
     "message": "Privatumo politika"
@@ -940,16 +940,16 @@
     "message": "Pasirūpinkite, kad jums nuskaitant šį kodą niekas nežiūrėtų į jūsų ekraną."
   },
   "syncWithMobileComplete": {
-    "message": "Jūsų duomenys sėkmingai sinchronizuoti. Mėgaukitės „MetaMask“ mobiliąja programa! "
+    "message": "Jūsų duomenys sėkmingai sinchronizuoti. Mėgaukitės „Sparrow“ mobiliąja programa! "
   },
   "syncWithMobileDesc": {
-    "message": "Galite sinchronizuoti paskyrą ir informaciją su savo mobiliuoju įrenginiu. Atverkite „MetaMask“ mobiliąją programą, eikite į „Nuostatos“ ir palieskite „Sinchronizuoti iš naršyklės plėtinio“"
+    "message": "Galite sinchronizuoti paskyrą ir informaciją su savo mobiliuoju įrenginiu. Atverkite „Sparrow“ mobiliąją programą, eikite į „Nuostatos“ ir palieskite „Sinchronizuoti iš naršyklės plėtinio“"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Jeigu „MetaMask“ mobiliąją programą atveriate tik pirmą kartą, tiesiog sekite veiksmus telefone."
+    "message": "Jeigu „Sparrow“ mobiliąją programą atveriate tik pirmą kartą, tiesiog sekite veiksmus telefone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Nuskaitykite šį kodą su savo „MetaMask“ mobiliąja programa"
+    "message": "Nuskaitykite šį kodą su savo „Sparrow“ mobiliąja programa"
   },
   "syncWithMobileTitle": {
     "message": "Sinchronizuoti su mobiliuoju"
@@ -1040,7 +1040,7 @@
     "message": "Bandyti dar kartą"
   },
   "typePassword": {
-    "message": "Įveskite savo „MetaMask“ slaptažodį"
+    "message": "Įveskite savo „Sparrow“ slaptažodį"
   },
   "unapproved": {
     "message": "Nepatvirtinta"
@@ -1091,7 +1091,7 @@
     "message": "Apsilankykite mūsų svetainėje"
   },
   "welcome": {
-    "message": "Sveiki, tai „MetaMask“"
+    "message": "Sveiki, tai „Sparrow“"
   },
   "welcomeBack": {
     "message": "Sveiki sugrįžę!"

@@ -41,7 +41,7 @@
     "message": "سجل النشاط"
   },
   "addAcquiredTokens": {
-    "message": "أضف العملات الرمزية التي اكتسبتها باستخدام MetaMask"
+    "message": "أضف العملات الرمزية التي اكتسبتها باستخدام Sparrow"
   },
   "addAlias": {
     "message": "إضافة اسم مستعار"
@@ -441,7 +441,7 @@
     "message": "الاتصال بمحفظة hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "حدد محفظة أجهزة ترغب في استخدامها مع MetaMask"
+    "message": "حدد محفظة أجهزة ترغب في استخدامها مع Sparrow"
   },
   "here": {
     "message": "هنا",
@@ -581,7 +581,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "لا يمكن إرسال مبالغ سلبية من ETH."
+    "message": "لا يمكن إرسال مبالغ سلبية من UBQ."
   },
   "networkName": {
     "message": "اسم الشبكة"
@@ -612,7 +612,7 @@
     "message": "كلمة مرور جديدة (8 أحرف كحد أدنى)"
   },
   "newToMetaMask": {
-    "message": "هل انت جديد في MetaMask؟"
+    "message": "هل انت جديد في Sparrow؟"
   },
   "newTotal": {
     "message": "إجمالي جديد"
@@ -694,7 +694,7 @@
     "message": "العملة الأساسية"
   },
   "primaryCurrencySettingDescription": {
-    "message": "حدد خيار \"المحلية\" لتحديد أولويات عرض القيم بالعملة المحلية للسلسلة (مثلاً ETH). حدد Fiat لتحديد أولويات عرض القيم بعملات fiat المحددة الخاصة بك."
+    "message": "حدد خيار \"المحلية\" لتحديد أولويات عرض القيم بالعملة المحلية للسلسلة (مثلاً UBQ). حدد Fiat لتحديد أولويات عرض القيم بعملات fiat المحددة الخاصة بك."
   },
   "privacyMsg": {
     "message": "سياسة الخصوصية"
@@ -1092,7 +1092,7 @@
     "message": "قم بزيارة موقعنا على الإنترنت"
   },
   "welcome": {
-    "message": "مرحباً بك في MetaMask"
+    "message": "مرحباً بك في Sparrow"
   },
   "welcomeBack": {
     "message": "نرحب بعودتك!"

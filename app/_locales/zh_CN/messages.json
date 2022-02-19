@@ -301,7 +301,7 @@
     "message": "返回全部"
   },
   "backupApprovalInfo": {
-    "message": "如果不慎丢失个人设备，忘记密码，或者需要重新安装 MetaMask，亦或是需在另一台设备上打开钱包，请使用该保密码恢复个人钱包数据。"
+    "message": "如果不慎丢失个人设备，忘记密码，或者需要重新安装 Sparrow，亦或是需在另一台设备上打开钱包，请使用该保密码恢复个人钱包数据。"
   },
   "backupApprovalNotice": {
     "message": "请备份您的账户助记词，保证您的钱包和资金安全。"
@@ -378,7 +378,7 @@
     "message": "购买"
   },
   "buyWithWyre": {
-    "message": "使用 Wyre 购买 ETH"
+    "message": "使用 Wyre 购买 UBQ"
   },
   "buyWithWyreDescription": {
     "message": "您可以通过 Wyre 使用信用卡将 UBQ 存入您的 Sparrow 账户。"
@@ -499,7 +499,7 @@
     "message": "您有 1 个账户连接到了该网站。"
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask 没有连接这个网站。要连接到 web3 网站，请在他们的网站上找到连接按钮。"
+    "message": "Sparrow 没有连接这个网站。要连接到 web3 网站，请在他们的网站上找到连接按钮。"
   },
   "connectedSites": {
     "message": "已连接的网站"
@@ -893,7 +893,7 @@
   },
   "enableToken": {
     "message": "启用 $1",
-    "description": "$1 is a token symbol, e.g. ETH"
+    "description": "$1 is a token symbol, e.g. UBQ"
   },
   "encryptionPublicKeyNotice": {
     "message": "$1 希望得到您的加密公钥。同意后该网站将可以向您发送加密信息。",
@@ -918,7 +918,7 @@
     "message": "不向任何任何人分享该账户助记词。"
   },
   "endOfFlowMessage5": {
-    "message": "谨防网络钓鱼！MetaMask 绝不会主动要求您提供个人账户助记词。"
+    "message": "谨防网络钓鱼！Sparrow 绝不会主动要求您提供个人账户助记词。"
   },
   "endOfFlowMessage6": {
     "message": "如果您需要再次备份账户助记词，请通过设置 -> 安全选项完成该操作。"
@@ -928,7 +928,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask 无法恢复您的账户助记词。"
+    "message": "Sparrow 无法恢复您的账户助记词。"
   },
   "endOfFlowMessage9": {
     "message": "了解详情。"
@@ -989,7 +989,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask 遇到了一个错误",
+    "message": "Sparrow 遇到了一个错误",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1470,7 +1470,7 @@
   },
   "ledgerLive": {
     "message": "Ledger Live",
-    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to MetaMask."
+    "description": "The name of a desktop app that can be used with your ledger device. We can also use it to connect a users Ledger device to Sparrow."
   },
   "ledgerLiveApp": {
     "message": "Ledger Live应用程序"
@@ -1582,10 +1582,10 @@
     "message": "将您与 Ubiq 和去中心化网络连接起来。"
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swaps 正在进行维护。请稍后访问。"
+    "message": "Sparrow Swaps 正在进行维护。请稍后访问。"
   },
   "metamaskVersion": {
-    "message": "MetaMask 版本"
+    "message": "Sparrow 版本"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "始终允许您通过设置选择退出"
@@ -1598,7 +1598,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMask……"
+    "message": "Sparrow……"
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "永不收集密钥、地址、交易记录、余额、哈希或任何个人信息"
@@ -1628,7 +1628,7 @@
     "message": "帮助我们让 Sparrow 变得更好"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask 希望收集使用数据，以更好地了解我们的用户如何与扩展进行互动。这些数据将被用于持续改进我们产品和 Ubiq 生态系统的可用性和用户体验。"
+    "message": "Sparrow 希望收集使用数据，以更好地了解我们的用户如何与扩展进行互动。这些数据将被用于持续改进我们产品和 Ubiq 生态系统的可用性和用户体验。"
   },
   "metametricsOptInDescription2": {
     "message": "我们想要收集基本使用数据以提高我们产品的可用性。这些数据将..."
@@ -1680,7 +1680,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "不能发负值的 ETH。"
+    "message": "不能发负值的 UBQ。"
   },
   "networkDetails": {
     "message": "网络详细信息"
@@ -1770,7 +1770,7 @@
     "message": "新密码（至少 8 个字符）"
   },
   "newToMetaMask": {
-    "message": "第一次使用 MetaMask？"
+    "message": "第一次使用 Sparrow？"
   },
   "newTotal": {
     "message": "新总额"
@@ -1786,7 +1786,7 @@
   },
   "nextNonceWarning": {
     "message": "Nonce 高于建议的 nouce 值 $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to Sparrow's internal logic"
   },
   "nftTokenIdPlaceholder": {
     "message": "输入收藏ID"
@@ -2573,7 +2573,7 @@
     "message": "检索状态日志时出错。"
   },
   "stateLogFileName": {
-    "message": "MetaMask 状态日志"
+    "message": "Sparrow 状态日志"
   },
   "stateLogs": {
     "message": "状态日志"
@@ -2692,7 +2692,7 @@
   },
   "swapEnableTokenForSwapping": {
     "message": "这需要$1进行交换。",
-    "description": "$1 is for the 'enableToken' key, e.g. 'enable ETH'"
+    "description": "$1 is for the 'enableToken' key, e.g. 'enable UBQ'"
   },
   "swapEstimatedNetworkFees": {
     "message": "预计网络手续费"
@@ -2750,7 +2750,7 @@
     "message": "最大滑点"
   },
   "swapMetaMaskFee": {
-    "message": "MetaMask 手续费"
+    "message": "Sparrow 手续费"
   },
   "swapMetaMaskFeeDescription": {
     "message": "我们每次都能从顶级流动性资源中找到最好的价格。每次报价都会自动收取1%的手续费用，以支持 Sparrow 的持续发展，使其更加完善。",
@@ -2770,7 +2770,7 @@
   },
   "swapPriceDifference": {
     "message": "您将兑换 $1 $2（~$3）为 $4 $5（~$6）。",
-    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: ETH), and $3 and $6 are fiat currency amounts."
+    "description": "This message represents the price slippage for the swap.  $1 and $4 are a number (ex: 2.89), $2 and $5 are symbols (ex: UBQ), and $3 and $6 are fiat currency amounts."
   },
   "swapPriceDifferenceTitle": {
     "message": "价格差异 ~$1%",
@@ -2883,7 +2883,7 @@
   },
   "swapTokenVerificationMessage": {
     "message": "总是在$1上确认代币地址。",
-    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Etherscan\" followed by an info icon that shows more info on hover."
+    "description": "Points the user to Ubiqscan as a place they can verify information about a token. $1 is replaced with the translation for \"Ubiqscan\" followed by an info icon that shows more info on hover."
   },
   "swapTokenVerificationOnlyOneSource": {
     "message": "仅在 1 个源上验证。"
@@ -3344,7 +3344,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "欢迎使用 MetaMask"
+    "message": "欢迎使用 Sparrow"
   },
   "welcomeBack": {
     "message": "欢迎回来！"
@@ -3369,7 +3369,7 @@
   },
   "whatsNew": {
     "message": "新功能",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to Sparrow."
   },
   "whatsThis": {
     "message": "这是什么？"

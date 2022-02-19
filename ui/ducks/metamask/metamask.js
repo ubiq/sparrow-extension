@@ -44,7 +44,7 @@ export default function reduceMetamask(state = {}, action) {
     firstTimeFlowType: null,
     completedOnboarding: false,
     knownMethodData: {},
-    participateInMetaMetrics: null,
+    participateInMetaMetrics: false,
     nextNonce: null,
     conversionRate: null,
     nativeCurrency: 'UBQ',

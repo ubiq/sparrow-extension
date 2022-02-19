@@ -14,7 +14,7 @@ import createId from '../../../shared/modules/random-id';
  * @property {number} id An id to track and identify the message object
  * @property {Object} msgParams The parameters to pass to the encryptionPublicKey method once the request is
  * approved.
- * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within MetaMask.
+ * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within Sparrow.
  * @property {string} msgParams.data A hex string conversion of the raw buffer data of the request
  * @property {number} time The epoch time at which the this message was created
  * @property {string} status Indicates whether the request is 'unapproved', 'approved', 'received' or 'rejected'
@@ -75,7 +75,7 @@ export default class EncryptionPublicKeyManager extends EventEmitter {
   addUnapprovedMessageAsync(address, req) {
     return new Promise((resolve, reject) => {
       if (!address) {
-        reject(new Error('MetaMask Message: address field is required.'));
+        reject(new Error('Sparrow Message: address field is required.'));
         return;
       }
       const msgId = this.addUnapprovedMessage(address, req);
@@ -87,14 +87,14 @@ export default class EncryptionPublicKeyManager extends EventEmitter {
           case 'rejected':
             reject(
               ethErrors.provider.userRejectedRequest(
-                'MetaMask EncryptionPublicKey: User denied message EncryptionPublicKey.',
+                'Sparrow EncryptionPublicKey: User denied message EncryptionPublicKey.',
               ),
             );
             return;
           default:
             reject(
               new Error(
-                `MetaMask EncryptionPublicKey: Unknown problem: ${JSON.stringify(
+                `Sparrow EncryptionPublicKey: Unknown problem: ${JSON.stringify(
                   address,
                 )}`,
               ),
@@ -163,8 +163,8 @@ export default class EncryptionPublicKeyManager extends EventEmitter {
    * Approves a EncryptionPublicKey. Sets the message status via a call to this.setMsgStatusApproved, and returns a promise
    * with any the message params modified for proper providing.
    *
-   * @param {Object} msgParams - The msgParams to be used when eth_getEncryptionPublicKey is called, plus data added by MetaMask.
-   * @param {Object} msgParams.metamaskId - Added to msgParams for tracking and identification within MetaMask.
+   * @param {Object} msgParams - The msgParams to be used when eth_getEncryptionPublicKey is called, plus data added by Sparrow.
+   * @param {Object} msgParams.metamaskId - Added to msgParams for tracking and identification within Sparrow.
    * @returns {Promise<object>} Promises the msgParams object with metamaskId removed.
    */
   approveMessage(msgParams) {

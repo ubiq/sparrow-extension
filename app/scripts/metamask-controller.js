@@ -2076,7 +2076,7 @@ export default class MetamaskController extends EventEmitter {
       keyring.setHdPath(hdPath);
     }
     if (deviceName === DEVICE_NAMES.LATTICE) {
-      keyring.appName = 'MetaMask';
+      keyring.appName = 'Sparrow';
     }
     if (deviceName === DEVICE_NAMES.TREZOR) {
       const model = keyring.getModel();
@@ -2945,7 +2945,7 @@ export default class MetamaskController extends EventEmitter {
       const { hostname } = new URL(sender.url);
       // Check if new connection is blocked if phishing detection is on
       if (usePhishDetect && this.phishingController.test(hostname)) {
-        log.debug('MetaMask - sending phishing warning for', hostname);
+        log.debug('Sparrow - sending phishing warning for', hostname);
         this.sendPhishingWarning(connectionStream, hostname);
         return;
       }
@@ -3844,7 +3844,7 @@ export default class MetamaskController extends EventEmitter {
   }
 
   /**
-   * Locks MetaMask
+   * Locks Sparrow
    */
   setLocked() {
     const [trezorKeyring] = this.keyringController.getKeyringsByType(

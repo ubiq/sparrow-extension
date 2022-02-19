@@ -33,7 +33,7 @@
     "message": "jurnal activitate"
   },
   "addAcquiredTokens": {
-    "message": "Adăugați token-urile pe care le-ați achiziționat folosind MetaMask"
+    "message": "Adăugați token-urile pe care le-ați achiziționat folosind Sparrow"
   },
   "addAlias": {
     "message": "Adăugare alias"
@@ -146,7 +146,7 @@
     "message": "Cumpărați UBQ cu Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vă permite să folosiți un card de credit pentru a depune UBQ direct în contul dvs. MetaMask."
+    "message": "Wyre vă permite să folosiți un card de credit pentru a depune UBQ direct în contul dvs. Sparrow."
   },
   "bytes": {
     "message": "Octeți"
@@ -329,7 +329,7 @@
     "message": "Dacă trebuie să vă salvați din nou fraza seed, puteți să o găsiți în Setări -> Securitate."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask nu vă poate recupera expresia sursă. Aflați mai multe."
+    "message": "Sparrow nu vă poate recupera expresia sursă. Aflați mai multe."
   },
   "endOfFlowMessage9": {
     "message": "Aflați mai multe."
@@ -427,7 +427,7 @@
     "message": "Conectați un portofel hardware"
   },
   "hardwareWalletsMsg": {
-    "message": "Selectați un portofel hardware pe care doriți să îl folosiți cu MetaMask"
+    "message": "Selectați un portofel hardware pe care doriți să îl folosiți cu Sparrow"
   },
   "here": {
     "message": "aici",
@@ -484,7 +484,7 @@
     "message": "Adresa destinatarului nu este validă"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Nu este rețea ETH, setați pe minuscule"
+    "message": "Nu este rețea UBQ, setați pe minuscule"
   },
   "invalidBlockExplorerURL": {
     "message": "URL Block Explorer nevalid"
@@ -554,7 +554,7 @@
     "message": "Vă conectăm la Ubiq și la Internetul descentralizat."
   },
   "metamaskVersion": {
-    "message": "Versiune MetaMask"
+    "message": "Versiune Sparrow"
   },
   "mustSelectOne": {
     "message": "Trebuie să selectați cel puțin 1 simbol."
@@ -567,7 +567,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Nu se pot trimite sume negative de ETH."
+    "message": "Nu se pot trimite sume negative de UBQ."
   },
   "networkName": {
     "message": "Numele rețelei"
@@ -598,7 +598,7 @@
     "message": "Parola Nouă (minimum 8 caractere)"
   },
   "newToMetaMask": {
-    "message": "Nefamiliarizat cu MetaMask?"
+    "message": "Nefamiliarizat cu Sparrow?"
   },
   "newTotal": {
     "message": "Total nou"
@@ -652,7 +652,7 @@
     "message": "Participați la MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Alăturați-vă MetaMetrics pentru a ne ajuta să îmbunătățim MetaMask."
+    "message": "Alăturați-vă MetaMetrics pentru a ne ajuta să îmbunătățim Sparrow."
   },
   "password": {
     "message": "Parolă"
@@ -680,7 +680,7 @@
     "message": "Moneda principală"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Selectați nativ pentru a prioritiza valorile afișate în moneda nativă a lanțului (ex. ETH). Selectați Fiat pentru a prioritiza valorile afișate în moneda selectată fiat."
+    "message": "Selectați nativ pentru a prioritiza valorile afișate în moneda nativă a lanțului (ex. UBQ). Selectați Fiat pentru a prioritiza valorile afișate în moneda selectată fiat."
   },
   "privacyMsg": {
     "message": "Politica de Confidențialitate"
@@ -927,16 +927,16 @@
     "message": "Asigurați-vă că nimeni altcineva nu poate vedea ecranul dvs. când scanați acest cod"
   },
   "syncWithMobileComplete": {
-    "message": "Datele dvs. au fost sincronizate cu succes. Bucurați-vă de aplicația mobilă MetaMask!"
+    "message": "Datele dvs. au fost sincronizate cu succes. Bucurați-vă de aplicația mobilă Sparrow!"
   },
   "syncWithMobileDesc": {
-    "message": "Vă puteți sincroniza conturile și informațiile cu dispozitivul dvs. mobil. Deschideți aplicația mobilă MetaMask, mergeți la „Setări” și atingeți „Sincronizare de la extensia de browser”"
+    "message": "Vă puteți sincroniza conturile și informațiile cu dispozitivul dvs. mobil. Deschideți aplicația mobilă Sparrow, mergeți la „Setări” și atingeți „Sincronizare de la extensia de browser”"
   },
   "syncWithMobileDescNewUsers": {
     "message": "Dacă deschideți aplicația pentru mobil Sparrow pentru prima oară, urmați pașii afișați pe telefonul dvs."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scanați acest cod folosind aplicația dvs. mobilă MetaMask"
+    "message": "Scanați acest cod folosind aplicația dvs. mobilă Sparrow"
   },
   "syncWithMobileTitle": {
     "message": "Sincronizați cu mobilul"
@@ -1021,7 +1021,7 @@
     "message": "Încearcă din nou"
   },
   "typePassword": {
-    "message": "Scrieți parola dvs. pentru MetaMask"
+    "message": "Scrieți parola dvs. pentru Sparrow"
   },
   "unapproved": {
     "message": "Neaprobat"
@@ -1072,7 +1072,7 @@
     "message": "Accesați site-ul nostru"
   },
   "welcome": {
-    "message": "Bun venit la MetaMask"
+    "message": "Bun venit la Sparrow"
   },
   "welcomeBack": {
     "message": "Bine ai revenit!"

@@ -30,7 +30,7 @@
     "message": "活動紀錄"
   },
   "addAcquiredTokens": {
-    "message": "將您已經擁有的代幣顯示於 MetaMask"
+    "message": "將您已經擁有的代幣顯示於 Sparrow"
   },
   "addAlias": {
     "message": "新增化名"
@@ -115,7 +115,7 @@
     "message": "回到所有"
   },
   "backupApprovalInfo": {
-    "message": "在裝置遺失、忘記密碼、需要重新安裝 MetaMask、或是想在另一裝置開啟錢包的情形下，你需要此秘密代碼來復原錢包。"
+    "message": "在裝置遺失、忘記密碼、需要重新安裝 Sparrow、或是想在另一裝置開啟錢包的情形下，你需要此秘密代碼來復原錢包。"
   },
   "backupApprovalNotice": {
     "message": "備份你的秘密還原代碼，安全防護錢包與資金。"
@@ -146,10 +146,10 @@
     "message": "買"
   },
   "buyWithWyre": {
-    "message": "用 Wyre 購買 ETH"
+    "message": "用 Wyre 購買 UBQ"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre 讓你使用信用卡在 Sparrow 帳號中直接存入 ETH。"
+    "message": "Wyre 讓你使用信用卡在 Sparrow 帳號中直接存入 UBQ。"
   },
   "bytes": {
     "message": "位元組"
@@ -323,13 +323,13 @@
     "message": "不要分享此助記祠給任何人"
   },
   "endOfFlowMessage5": {
-    "message": "小心網路釣魚！MetaMask 永遠不會主動詢問你的助記詞。"
+    "message": "小心網路釣魚！Sparrow 永遠不會主動詢問你的助記詞。"
   },
   "endOfFlowMessage6": {
     "message": "如你需要再次備份助記詞，可至設定 -> 安全。"
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask 無法還原你的助記詞。暸解更多"
+    "message": "Sparrow 無法還原你的助記詞。暸解更多"
   },
   "endOfFlowMessage9": {
     "message": "深入瞭解。"
@@ -558,10 +558,10 @@
     "message": "訊息"
   },
   "metamaskDescription": {
-    "message": "MetaMask 是以太坊安全身份識別金庫"
+    "message": "Sparrow 是以太坊安全身份識別金庫"
   },
   "metamaskVersion": {
-    "message": "MetaMask 版本"
+    "message": "Sparrow 版本"
   },
   "mustSelectOne": {
     "message": "必須選擇至少 1 代幣"
@@ -605,7 +605,7 @@
     "message": "新密碼（至少8個字元）"
   },
   "newToMetaMask": {
-    "message": "新來到 MetaMask？"
+    "message": "新來到 Sparrow？"
   },
   "newTotal": {
     "message": "總費用"
@@ -653,7 +653,7 @@
     "message": "參與 MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "參與 MetaMetrics 來協助我們打造更好的 MetaMask"
+    "message": "參與 MetaMetrics 來協助我們打造更好的 Sparrow"
   },
   "password": {
     "message": "密碼"
@@ -1070,7 +1070,7 @@
     "message": "造訪我們的網站"
   },
   "welcome": {
-    "message": "歡迎來到 MetaMask"
+    "message": "歡迎來到 Sparrow"
   },
   "welcomeBack": {
     "message": "歡迎回來!"

@@ -23,7 +23,7 @@ const U2F_ERROR = 'U2F';
 const MEW_PATH = `m/44'/108'/0'`;
 const BIP44_PATH = `m/44'/108'/0'/0`;
 const LEDGER_HD_PATHS = [
-  { name: `BIP44 Standard (e.g. MetaMask, Trezor)`, value: BIP44_PATH },
+  { name: `BIP44 Standard (e.g. Sparrow, Trezor)`, value: BIP44_PATH },
 ];
 
 const LATTICE_STANDARD_BIP44_PATH = `m/44'/108'/0'/0/x`;
@@ -36,7 +36,7 @@ const LATTICE_HD_PATHS = [
 
 const TREZOR_TESTNET_PATH = `m/44'/1'/0'/0`;
 const TREZOR_HD_PATHS = [
-  { name: `BIP44 Standard (e.g. MetaMask, Trezor)`, value: BIP44_PATH },
+  { name: `BIP44 Standard (e.g. Sparrow, Trezor)`, value: BIP44_PATH },
   { name: `Trezor Testnets`, value: TREZOR_TESTNET_PATH },
 ];
 

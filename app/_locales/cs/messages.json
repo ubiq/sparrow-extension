@@ -226,7 +226,7 @@
     "message": "Zpráva"
   },
   "metamaskDescription": {
-    "message": "MetaMask je bezpečný osobní trezor pro Ethereum."
+    "message": "Sparrow je bezpečný osobní trezor pro Ethereum."
   },
   "mustSelectOne": {
     "message": "Musíte zvolit aspoň 1 token."
@@ -239,7 +239,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Nelze odeslat zápornou částku ETH."
+    "message": "Nelze odeslat zápornou částku UBQ."
   },
   "networks": {
     "message": "Sítě"
@@ -426,7 +426,7 @@
     "message": "Navštivte naši stránku"
   },
   "welcome": {
-    "message": "Vítejte v MetaMask"
+    "message": "Vítejte v Sparrow"
   },
   "youSign": {
     "message": "Podepisujete"

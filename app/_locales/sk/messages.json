@@ -33,7 +33,7 @@
     "message": "protokol aktivity"
   },
   "addAcquiredTokens": {
-    "message": "Pridajte tokeny, ktoré ste získali pomocou MetaMask"
+    "message": "Pridajte tokeny, ktoré ste získali pomocou Sparrow"
   },
   "addAlias": {
     "message": "Pridať alias"
@@ -140,7 +140,7 @@
     "message": "Kúpte UBQ s Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vám umožňuje použiť kreditnú kartu na vloženie depozitu UBQ priamo na váš účet MetaMask."
+    "message": "Wyre vám umožňuje použiť kreditnú kartu na vloženie depozitu UBQ priamo na váš účet Sparrow."
   },
   "bytes": {
     "message": "Bajty"
@@ -158,7 +158,7 @@
     "message": "ID reťazca"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Ak sa chcete pripojiť k svojej hardvérovej peňaženke, musíte v Google Chrome použiť MetaMask."
+    "message": "Ak sa chcete pripojiť k svojej hardvérovej peňaženke, musíte v Google Chrome použiť Sparrow."
   },
   "clickToRevealSeed": {
     "message": "Kliknutím sem odkryjete tajné slová"
@@ -323,7 +323,7 @@
     "message": "Ak potrebujete backup frázu znova zálohovať, nájdete ju v časti Nastavenia -> Zabezpečenie."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask nemôže obnoviť vašu seed frázu. Zistiť viac."
+    "message": "Sparrow nemôže obnoviť vašu seed frázu. Zistiť viac."
   },
   "endOfFlowMessage9": {
     "message": "Dozvedieť sa viac."
@@ -431,7 +431,7 @@
     "message": "Pripojiť hardvérovú peňaženku"
   },
   "hardwareWalletsMsg": {
-    "message": "Vyberte hardvérovú peňaženku, ktorú chcete používať s MetaMask"
+    "message": "Vyberte hardvérovú peňaženku, ktorú chcete používať s Sparrow"
   },
   "here": {
     "message": "zde",
@@ -481,7 +481,7 @@
     "message": "Adresa příjemce je neplatná"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Nie sieť ETH, nastaviť malé písmená"
+    "message": "Nie sieť UBQ, nastaviť malé písmená"
   },
   "invalidBlockExplorerURL": {
     "message": "Neplatné Block Explorer URI"
@@ -536,10 +536,10 @@
     "message": "Zpráva"
   },
   "metamaskDescription": {
-    "message": "MetaMask je bezpečný osobní trezor pro Ethereum."
+    "message": "Sparrow je bezpečný osobní trezor pro Ethereum."
   },
   "metamaskVersion": {
-    "message": "Verzia MetaMask"
+    "message": "Verzia Sparrow"
   },
   "mustSelectOne": {
     "message": "Musíte zvolit aspoň 1 token."
@@ -552,7 +552,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Nelze odeslat zápornou částku ETH."
+    "message": "Nelze odeslat zápornou částku UBQ."
   },
   "networkName": {
     "message": "Názov siete"
@@ -583,7 +583,7 @@
     "message": "Nové heslo (min 8 znaků)"
   },
   "newToMetaMask": {
-    "message": "Ste noví na MetaMask?"
+    "message": "Ste noví na Sparrow?"
   },
   "newTotal": {
     "message": "Nový súčet"
@@ -634,7 +634,7 @@
     "message": "Zúčastnite sa na MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Zúčastnite sa na MetaMetrics a pomôžte nám vylepšiť MetaMask"
+    "message": "Zúčastnite sa na MetaMetrics a pomôžte nám vylepšiť Sparrow"
   },
   "password": {
     "message": "Heslo"
@@ -662,7 +662,7 @@
     "message": "Primárna mena"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Vyberte natívne, ak chcete priorizovať zobrazovanie hodnôt v natívnej mene reťazca (napr. ETH). Ak chcete priorizovať zobrazovanie hodnôt vo svojej vybranej mene fiat, zvoľte možnosť Fiat."
+    "message": "Vyberte natívne, ak chcete priorizovať zobrazovanie hodnôt v natívnej mene reťazca (napr. UBQ). Ak chcete priorizovať zobrazovanie hodnôt vo svojej vybranej mene fiat, zvoľte možnosť Fiat."
   },
   "privacyMsg": {
     "message": "Zásady ochrany osobních údajů"
@@ -900,16 +900,16 @@
     "message": "Pri skenovaní tohto kódu sa uistite, že sa nikto iný nedíva na vašu obrazovku"
   },
   "syncWithMobileComplete": {
-    "message": "Vaše údaje boli úspešne synchronizované. Užite si mobilnú aplikáciu MetaMask!"
+    "message": "Vaše údaje boli úspešne synchronizované. Užite si mobilnú aplikáciu Sparrow!"
   },
   "syncWithMobileDesc": {
-    "message": "Svoje účty a informácie môžete synchronizovať so svojim mobilným zariadením. Otvorte mobilnú aplikáciu MetaMask, prejdite na „Nastavenia“ a kliknite na „Synchronizovať z rozšírenia prehliadača“."
+    "message": "Svoje účty a informácie môžete synchronizovať so svojim mobilným zariadením. Otvorte mobilnú aplikáciu Sparrow, prejdite na „Nastavenia“ a kliknite na „Synchronizovať z rozšírenia prehliadača“."
   },
   "syncWithMobileDescNewUsers": {
     "message": "Ak otvoríte mobilnú aplikáciu Sparrow prvýkrát, postupujte podľa pokynov v telefóne."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Naskenujte tento kód pomocou mobilnej aplikácie MetaMask"
+    "message": "Naskenujte tento kód pomocou mobilnej aplikácie Sparrow"
   },
   "syncWithMobileTitle": {
     "message": "Synchronizácia s mobilom"
@@ -1048,7 +1048,7 @@
     "message": "Navštivte naši stránku"
   },
   "welcome": {
-    "message": "Vitajte v MetaMask"
+    "message": "Vitajte v Sparrow"
   },
   "welcomeBack": {
     "message": "Vitajte späť!"

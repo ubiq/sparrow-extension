@@ -65,7 +65,7 @@ async function lintTransformedFile(content, filePath) {
   // a transformed file.
   if (lintResult === undefined) {
     throw new Error(
-      `MetaMask build: Transformed file "${filePath}" appears to be ignored by ESLint.`,
+      `Sparrow build: Transformed file "${filePath}" appears to be ignored by ESLint.`,
     );
   }
 
@@ -82,6 +82,6 @@ async function lintTransformedFile(content, filePath) {
     }, '');
 
   throw new Error(
-    `MetaMask build: Lint errors encountered for transformed file "${filePath}":\n\n${errorsString}`,
+    `Sparrow build: Lint errors encountered for transformed file "${filePath}":\n\n${errorsString}`,
   );
 }

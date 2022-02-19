@@ -59,7 +59,7 @@ describe('Deploy contract and call contract methods', function () {
         await driver.waitUntilXWindowHandles(3);
         windowHandles = await driver.getAllWindowHandles();
         await driver.switchToWindowWithTitle(
-          'MetaMask Notification',
+          'Sparrow Notification',
           windowHandles,
         );
         await driver.clickElement({ text: 'Data', tag: 'button' });
@@ -87,14 +87,14 @@ describe('Deploy contract and call contract methods', function () {
         const completedTxText = await completedTx.getText();
         assert.equal(completedTxText, 'Contract Deployment');
 
-        // calls and confirms a contract method where ETH is sent
+        // calls and confirms a contract method where UBQ is sent
         await driver.switchToWindow(dapp);
         await driver.clickElement('#depositButton');
         await driver.waitUntilXWindowHandles(3);
         await driver.delay(5000);
         windowHandles = await driver.getAllWindowHandles();
         await driver.switchToWindowWithTitle(
-          'MetaMask Notification',
+          'Sparrow Notification',
           windowHandles,
         );
         await driver.delay(regularDelayMs);
@@ -120,7 +120,7 @@ describe('Deploy contract and call contract methods', function () {
         await driver.delay(5000);
         windowHandles = await driver.getAllWindowHandles();
         await driver.switchToWindowWithTitle(
-          'MetaMask Notification',
+          'Sparrow Notification',
           windowHandles,
         );
         await driver.delay(regularDelayMs);

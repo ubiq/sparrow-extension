@@ -46,7 +46,7 @@ function injectScript(content) {
     container.insertBefore(scriptTag, container.children[0]);
     container.removeChild(scriptTag);
   } catch (error) {
-    console.error('MetaMask: Provider injection failed.', error);
+    console.error('Sparrow: Provider injection failed.', error);
   }
 }
 
@@ -73,10 +73,10 @@ async function setupStreams() {
   extensionMux.ignoreStream(LEGACY_PUBLIC_CONFIG); // TODO:LegacyProvider: Delete
 
   pump(pageMux, pageStream, pageMux, (err) =>
-    logStreamDisconnectWarning('MetaMask Inpage Multiplex', err),
+    logStreamDisconnectWarning('Sparrow Inpage Multiplex', err),
   );
   pump(extensionMux, extensionStream, extensionMux, (err) => {
-    logStreamDisconnectWarning('MetaMask Background Multiplex', err);
+    logStreamDisconnectWarning('Sparrow Background Multiplex', err);
     notifyInpageOfStreamFailure();
   });
 
@@ -100,7 +100,7 @@ async function setupStreams() {
   legacyExtensionMux.setMaxListeners(25);
 
   pump(legacyPageMux, legacyPageStream, legacyPageMux, (err) =>
-    logStreamDisconnectWarning('MetaMask Legacy Inpage Multiplex', err),
+    logStreamDisconnectWarning('Sparrow Legacy Inpage Multiplex', err),
   );
   pump(
     legacyExtensionMux,
@@ -108,7 +108,7 @@ async function setupStreams() {
     getNotificationTransformStream(),
     legacyExtensionMux,
     (err) => {
-      logStreamDisconnectWarning('MetaMask Background Legacy Multiplex', err);
+      logStreamDisconnectWarning('Sparrow Background Legacy Multiplex', err);
       notifyInpageOfStreamFailure();
     },
   );
@@ -131,7 +131,7 @@ function forwardTrafficBetweenMuxes(channelName, muxA, muxB) {
   const channelB = muxB.createStream(channelName);
   pump(channelA, channelB, channelA, (error) =>
     console.debug(
-      `MetaMask: Muxed traffic for channel "${channelName}" failed.`,
+      `Sparrow: Muxed traffic for channel "${channelName}" failed.`,
       error,
     ),
   );
@@ -148,7 +148,7 @@ function forwardNamedTrafficBetweenMuxes(
   const channelB = muxB.createStream(channelBName);
   pump(channelA, channelB, channelA, (error) =>
     console.debug(
-      `MetaMask: Muxed traffic between channels "${channelAName}" and "${channelBName}" failed.`,
+      `Sparrow: Muxed traffic between channels "${channelAName}" and "${channelBName}" failed.`,
       error,
     ),
   );
@@ -176,7 +176,7 @@ function getNotificationTransformStream() {
  */
 function logStreamDisconnectWarning(remoteLabel, error) {
   console.debug(
-    `MetaMask: Content script lost connection to "${remoteLabel}".`,
+    `Sparrow: Content script lost connection to "${remoteLabel}".`,
     error,
   );
 }
@@ -300,7 +300,7 @@ function blockedDomainCheck() {
  * Redirects the current page to a phishing information page
  */
 function redirectToPhishingWarning() {
-  console.debug('MetaMask: Routing to Phishing Warning component.');
+  console.debug('Sparrow: Routing to Phishing Warning component.');
   const extensionURL = extension.runtime.getURL('phishing.html');
   window.location.href = `${extensionURL}#${querystring.stringify({
     hostname: window.location.hostname,
