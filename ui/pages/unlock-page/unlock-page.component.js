@@ -26,14 +26,6 @@ export default class UnlockPage extends Component {
      * onSumbit handler when form is submitted
      */
     onSubmit: PropTypes.func,
-    /**
-     * Force update metamask data state
-     */
-    forceUpdateMetamaskState: PropTypes.func,
-    /**
-     * Event handler to show metametrics modal
-     */
-    showOptInModal: PropTypes.func,
   };
 
   state = {
@@ -56,7 +48,7 @@ export default class UnlockPage extends Component {
     event.stopPropagation();
 
     const { password } = this.state;
-    const { onSubmit, forceUpdateMetamaskState } = this.props;
+    const { onSubmit } = this.props;
 
     if (password === '' || this.submitting) {
       return;
@@ -68,10 +60,6 @@ export default class UnlockPage extends Component {
     try {
       await onSubmit(password);
     } catch ({ message }) {
-      if (message === 'Incorrect password') {
-        const newState = await forceUpdateMetamaskState();
-      }
-
       this.setState({ error: message });
       this.submitting = false;
     }

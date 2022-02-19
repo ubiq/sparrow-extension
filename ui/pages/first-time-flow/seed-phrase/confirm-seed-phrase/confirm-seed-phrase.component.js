@@ -77,14 +77,6 @@ export default class ConfirmSeedPhrase extends PureComponent {
     }
 
     try {
-      this.context.metricsEvent({
-        eventOpts: {
-          category: 'Onboarding',
-          action: 'Seed Phrase Setup',
-          name: 'Verify Complete',
-        },
-      });
-
       setSeedPhraseBackedUp(true).then(async () => {
         initializeThreeBox();
         history.replace(INITIALIZE_END_OF_FLOW_ROUTE);

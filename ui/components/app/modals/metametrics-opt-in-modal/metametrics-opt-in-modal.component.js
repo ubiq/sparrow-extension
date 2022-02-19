@@ -15,7 +15,7 @@ export default class MetaMetricsOptInModal extends Component {
   };
 
   render() {
-    const { metricsEvent, t } = this.context;
+    const { t } = this.context;
     const { setParticipateInMetaMetrics, hideModal } = this.props;
 
     return (
@@ -108,19 +108,6 @@ export default class MetaMetricsOptInModal extends Component {
             <PageContainerFooter
               onCancel={() => {
                 setParticipateInMetaMetrics(false).then(() => {
-                  metricsEvent(
-                    {
-                      eventOpts: {
-                        category: 'Onboarding',
-                        action: 'Metrics Option',
-                        name: 'Metrics Opt Out',
-                      },
-                      isOptIn: true,
-                    },
-                    {
-                      excludeMetaMetricsId: true,
-                    },
-                  );
                   hideModal();
                 });
               }}
@@ -128,14 +115,6 @@ export default class MetaMetricsOptInModal extends Component {
               hideCancel={false}
               onSubmit={() => {
                 setParticipateInMetaMetrics(true).then(() => {
-                  metricsEvent({
-                    eventOpts: {
-                      category: 'Onboarding',
-                      action: 'Metrics Option',
-                      name: 'Metrics Opt In',
-                    },
-                    isOptIn: true,
-                  });
                   hideModal();
                 });
               }}

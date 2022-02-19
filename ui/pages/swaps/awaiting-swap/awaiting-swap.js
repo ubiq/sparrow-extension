@@ -269,9 +269,7 @@ export default function AwaitingSwap({
   return (
     <div className="awaiting-swap">
       <div className="awaiting-swap__content">
-        {!(swapComplete || errorKey) && (
-          <img src="images/icon-128.png" />
-        )}
+        {!(swapComplete || errorKey) && <img src="images/icon-128.png" />}
         <div className="awaiting-swap__status-image">{statusImage}</div>
         <div className="awaiting-swap__header">{headerText}</div>
         <div className="awaiting-swap__main-description">{descriptionText}</div>

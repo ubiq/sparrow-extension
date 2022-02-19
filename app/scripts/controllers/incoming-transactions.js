@@ -49,9 +49,7 @@ const fetchWithTimeout = getFetchWithTimeout(SECOND * 30);
  * Note that only the built-in Infura networks are supported (i.e. anything in `INFURA_PROVIDER_TYPES`). We will not
  * attempt to retrieve incoming transactions on any custom RPC endpoints.
  */
-const etherscanSupportedNetworks = [
-  MAINNET_CHAIN_ID,
-];
+const etherscanSupportedNetworks = [MAINNET_CHAIN_ID];
 
 export default class IncomingTransactionsController {
   constructor(opts = {}) {

@@ -18,7 +18,6 @@ export default class AppHeader extends PureComponent {
     hideNetworkIndicator: PropTypes.bool,
     disabled: PropTypes.bool,
     disableNetworkIndicator: PropTypes.bool,
-    isAccountMenuOpen: PropTypes.bool,
     onClick: PropTypes.func,
   };
 
@@ -44,13 +43,6 @@ export default class AppHeader extends PureComponent {
     }
 
     if (networkDropdownOpen === false) {
-      this.context.metricsEvent({
-        eventOpts: {
-          category: 'Navigation',
-          action: 'Home',
-          name: 'Opened Network Menu',
-        },
-      });
       showNetworkDropdown();
     } else {
       hideNetworkDropdown();
@@ -63,7 +55,6 @@ export default class AppHeader extends PureComponent {
       toggleAccountMenu,
       selectedAddress,
       disabled,
-      isAccountMenuOpen,
     } = this.props;
 
     return (
@@ -74,14 +65,6 @@ export default class AppHeader extends PureComponent {
           })}
           onClick={() => {
             if (!disabled) {
-              !isAccountMenuOpen &&
-                this.context.metricsEvent({
-                  eventOpts: {
-                    category: 'Navigation',
-                    action: 'Home',
-                    name: 'Opened Main Menu',
-                  },
-                });
               toggleAccountMenu();
             }
           }}

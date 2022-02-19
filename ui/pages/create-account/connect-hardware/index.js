@@ -243,26 +243,9 @@ class ConnectHardwareForm extends Component {
       description,
     )
       .then((_) => {
-        this.context.metricsEvent({
-          eventOpts: {
-            category: 'Accounts',
-            action: 'Connected Hardware Wallet',
-            name: `Connected Account with: ${device}`,
-          },
-        });
         history.push(mostRecentOverviewPage);
       })
       .catch((e) => {
-        this.context.metricsEvent({
-          eventOpts: {
-            category: 'Accounts',
-            action: 'Connected Hardware Wallet',
-            name: 'Error connecting hardware wallet',
-          },
-          customVariables: {
-            error: e.message,
-          },
-        });
         this.setState({ error: e.message });
       });
   };

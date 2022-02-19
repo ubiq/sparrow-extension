@@ -42,14 +42,6 @@ export default class RevealSeedPhrase extends PureComponent {
     const { isShowingSeedPhrase } = this.state;
     const { history } = this.props;
 
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Onboarding',
-        action: 'Seed Phrase Setup',
-        name: 'Advance to Verify',
-      },
-    });
-
     if (!isShowingSeedPhrase) {
       return;
     }
@@ -64,14 +56,6 @@ export default class RevealSeedPhrase extends PureComponent {
       setCompletedOnboarding,
       onboardingInitiator,
     } = this.props;
-
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Onboarding',
-        action: 'Seed Phrase Setup',
-        name: 'Remind me later',
-      },
-    });
 
     await Promise.all([setCompletedOnboarding(), setSeedPhraseBackedUp(false)]);
 
@@ -102,13 +86,6 @@ export default class RevealSeedPhrase extends PureComponent {
           <div
             className="reveal-seed-phrase__secret-blocker"
             onClick={() => {
-              this.context.metricsEvent({
-                eventOpts: {
-                  category: 'Onboarding',
-                  action: 'Seed Phrase Setup',
-                  name: 'Revealed Words',
-                },
-              });
               this.setState({ isShowingSeedPhrase: true });
             }}
           >

@@ -62,16 +62,6 @@ export default class PermissionPageContainer extends Component {
     return Object.keys(props.request.permissions || {});
   }
 
-  componentDidMount() {
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Auth',
-        action: 'Connect',
-        name: 'Tab Opened',
-      },
-    });
-  }
-
   onCancel = () => {
     const { request, rejectPermissionsRequest } = this.props;
     rejectPermissionsRequest(request.metadata.id);

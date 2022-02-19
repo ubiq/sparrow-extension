@@ -43,8 +43,7 @@ import { trackMetaMetricsEvent, trackMetaMetricsPage } from '../store/actions';
 /**
  * @type {React.Context<UITrackEventMethod>}
  */
-export const MetaMetricsContext = createContext(() => {
-});
+export const MetaMetricsContext = createContext();
 
 const PATHS_TO_CHECK = Object.keys(PATH_NAME_MAP);
 

@@ -36,13 +36,6 @@ export default class ExperimentalTab extends PureComponent {
             <ToggleButton
               value={useTokenDetection}
               onToggle={(value) => {
-                this.context.metricsEvent({
-                  eventOpts: {
-                    category: 'Settings',
-                    action: 'Token Detection',
-                    name: 'Token Detection',
-                  },
-                });
                 setUseTokenDetection(!value);
               }}
               offLabel={t('off')}
@@ -80,13 +73,6 @@ export default class ExperimentalTab extends PureComponent {
             <ToggleButton
               value={useCollectibleDetection}
               onToggle={(value) => {
-                this.context.metricsEvent({
-                  eventOpts: {
-                    category: 'Settings',
-                    action: 'Collectible Detection',
-                    name: 'Collectible Detection',
-                  },
-                });
                 if (!value && !openSeaEnabled) {
                   setOpenSeaEnabled(!value);
                 }
@@ -126,13 +112,6 @@ export default class ExperimentalTab extends PureComponent {
             <ToggleButton
               value={openSeaEnabled}
               onToggle={(value) => {
-                this.context.metricsEvent({
-                  eventOpts: {
-                    category: 'Settings',
-                    action: 'Enabled/Disable OpenSea',
-                    name: 'Enabled/Disable OpenSea',
-                  },
-                });
                 // value is positive when being toggled off
                 if (value && useCollectibleDetection) {
                   setUseCollectibleDetection(false);
@@ -174,13 +153,6 @@ export default class ExperimentalTab extends PureComponent {
             <ToggleButton
               value={eip1559V2Enabled}
               onToggle={(value) => {
-                this.context.metricsEvent({
-                  eventOpts: {
-                    category: 'Settings',
-                    action: 'Enabled/Disable OpenSea',
-                    name: 'Enabled/Disable OpenSea',
-                  },
-                });
                 setEIP1559V2Enabled(!value);
               }}
               offLabel={t('off')}

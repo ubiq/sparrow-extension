@@ -61,10 +61,8 @@ export default function LoadingSwapsQuotes({
   );
   const numberOfQuotes = aggregatorNames.length;
   const mascotContainer = useRef();
-  const currentMascotContainer = mascotContainer.current;
 
   const [quoteCount, updateQuoteCount] = useState(0);
-  const [setMidpointTarget] = useState(null);
 
   useEffect(() => {
     let timeoutLength;
@@ -93,19 +91,6 @@ export default function LoadingSwapsQuotes({
       clearTimeout(quoteCountTimeout);
     };
   }, [quoteCount, loadingComplete, onDone, numberOfQuotes]);
-
-  useEffect(() => {
-    if (currentMascotContainer) {
-      const {
-        top,
-        left,
-        width,
-        height,
-      } = currentMascotContainer.getBoundingClientRect();
-      const center = { x: left + width / 2, y: top + height / 2 };
-      setMidpointTarget(center);
-    }
-  }, [currentMascotContainer]);
 
   return (
     <div className="loading-swaps-quotes">

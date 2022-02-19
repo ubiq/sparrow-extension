@@ -94,14 +94,6 @@ export default class TransactionListItemDetails extends PureComponent {
     const { primaryTransaction: transaction } = transactionGroup;
     const { hash } = transaction;
 
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Navigation',
-        action: 'Activity Log',
-        name: 'Copied Transaction ID',
-      },
-    });
-
     this.setState({ justCopied: true }, () => {
       copyToClipboard(hash);
       setTimeout(() => this.setState({ justCopied: false }), SECOND);
@@ -224,24 +216,6 @@ export default class TransactionListItemDetails extends PureComponent {
                 recipientNickname={recipientNickname}
                 senderName={senderNickname}
                 senderAddress={senderAddress}
-                onRecipientClick={() => {
-                  this.context.metricsEvent({
-                    eventOpts: {
-                      category: 'Navigation',
-                      action: 'Activity Log',
-                      name: 'Copied "To" Address',
-                    },
-                  });
-                }}
-                onSenderClick={() => {
-                  this.context.metricsEvent({
-                    eventOpts: {
-                      category: 'Navigation',
-                      action: 'Activity Log',
-                      name: 'Copied "From" Address',
-                    },
-                  });
-                }}
               />
             </div>
             <div className="transaction-list-item-details__cards-container">

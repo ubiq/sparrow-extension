@@ -63,8 +63,7 @@ export default class SignatureRequest extends PureComponent {
     const {
       fromAccount,
       txData: {
-        msgParams: { data, origin, version },
-        type,
+        msgParams: { data, origin },
       },
       cancel,
       sign,
@@ -73,36 +72,13 @@ export default class SignatureRequest extends PureComponent {
     } = this.props;
     const { address: fromAddress } = fromAccount;
     const { message, domain = {}, primaryType, types } = JSON.parse(data);
-    const { metricsEvent } = this.context;
 
     const onSign = (event) => {
       sign(event);
-      metricsEvent({
-        eventOpts: {
-          category: 'Transactions',
-          action: 'Sign Request',
-          name: 'Confirm',
-        },
-        customVariables: {
-          type,
-          version,
-        },
-      });
     };
 
     const onCancel = (event) => {
       cancel(event);
-      metricsEvent({
-        eventOpts: {
-          category: 'Transactions',
-          action: 'Sign Request',
-          name: 'Cancel',
-        },
-        customVariables: {
-          type,
-          version,
-        },
-      });
     };
 
     const messageIsScrollable =

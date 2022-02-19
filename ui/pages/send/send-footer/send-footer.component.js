@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual } from 'lodash';
 import PageContainerFooter from '../../../components/ui/page-container/page-container-footer';
 import {
   CONFIRM_TRANSACTION_ROUTE,
@@ -18,8 +17,6 @@ export default class SendFooter extends Component {
     to: PropTypes.string,
     toAccounts: PropTypes.array,
     sendStage: PropTypes.string,
-    sendErrors: PropTypes.object,
-    gasEstimateType: PropTypes.string,
     mostRecentOverviewPage: PropTypes.string.isRequired,
     cancelTx: PropTypes.func,
     draftTransactionID: PropTypes.string,
@@ -52,57 +49,15 @@ export default class SendFooter extends Component {
 
   async onSubmit(event) {
     event.preventDefault();
-    const {
-      addToAddressBookIfNew,
-      sign,
-      to,
-      toAccounts,
-      history,
-      gasEstimateType,
-    } = this.props;
-    const { metricsEvent } = this.context;
+    const { addToAddressBookIfNew, sign, to, toAccounts, history } = this.props;
 
     // TODO: add nickname functionality
     await addToAddressBookIfNew(to, toAccounts);
     const promise = sign();
 
     Promise.resolve(promise).then(() => {
-      metricsEvent({
-        eventOpts: {
-          category: 'Transactions',
-          action: 'Edit Screen',
-          name: 'Complete',
-        },
-        customVariables: {
-          gasChanged: gasEstimateType,
-        },
-      });
       history.push(CONFIRM_TRANSACTION_ROUTE);
     });
-  }
-
-  componentDidUpdate(prevProps) {
-    const { sendErrors } = this.props;
-    const { metricsEvent } = this.context;
-    if (
-      Object.keys(sendErrors).length > 0 &&
-      isEqual(sendErrors, prevProps.sendErrors) === false
-    ) {
-      const errorField = Object.keys(sendErrors).find((key) => sendErrors[key]);
-      const errorMessage = sendErrors[errorField];
-
-      metricsEvent({
-        eventOpts: {
-          category: 'Transactions',
-          action: 'Edit Screen',
-          name: 'Error',
-        },
-        customVariables: {
-          errorField,
-          errorMessage,
-        },
-      });
-    }
   }
 
   render() {

@@ -11,7 +11,10 @@ import {
 } from '../../../helpers/constants/design-system';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import { setFirstTimeFlowType } from '../../../store/actions';
-import { ONBOARDING_CREATE_PASSWORD_ROUTE, ONBOARDING_IMPORT_WITH_SRP_ROUTE } from '../../../helpers/constants/routes';
+import {
+  ONBOARDING_CREATE_PASSWORD_ROUTE,
+  ONBOARDING_IMPORT_WITH_SRP_ROUTE,
+} from '../../../helpers/constants/routes';
 
 export default function OnboardingWelcome() {
   const t = useI18nContext();

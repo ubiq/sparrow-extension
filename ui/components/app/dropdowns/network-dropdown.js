@@ -91,7 +91,6 @@ class NetworkDropdown extends Component {
     setRpcTarget: PropTypes.func.isRequired,
     hideNetworkDropdown: PropTypes.func.isRequired,
     frequentRpcListDetail: PropTypes.array.isRequired,
-    shouldShowTestNetworks: PropTypes.bool,
     networkDropdownOpen: PropTypes.bool.isRequired,
     displayInvalidCustomNetworkAlert: PropTypes.func.isRequired,
     showConfirmDeleteNetworkModal: PropTypes.func.isRequired,
@@ -101,23 +100,8 @@ class NetworkDropdown extends Component {
   };
 
   handleClick(newProviderType) {
-    const {
-      provider: { type: providerType },
-      setProviderType,
-    } = this.props;
-    const { metricsEvent } = this.context;
+    const { setProviderType } = this.props;
 
-    metricsEvent({
-      eventOpts: {
-        category: 'Navigation',
-        action: 'Home',
-        name: 'Switched Networks',
-      },
-      customVariables: {
-        fromNetwork: providerType,
-        toNetwork: newProviderType,
-      },
-    });
     setProviderType(newProviderType);
   }
 
@@ -348,7 +332,6 @@ class NetworkDropdown extends Component {
             rpcListDetailWithoutLocalHost,
             this.props.provider,
           )}
-
         </div>
 
         {this.renderAddCustomButton()}

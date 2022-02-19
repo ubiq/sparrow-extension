@@ -44,13 +44,6 @@ export default class ConfirmDecryptMessage extends Component {
 
   copyMessage = () => {
     copyToClipboard(this.state.rawMessage);
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Messages',
-        action: 'Decrypt Message Copy',
-        name: 'Copy',
-      },
-    });
     this.setState({ hasCopied: true });
     setTimeout(() => this.setState({ hasCopied: false }), SECOND * 3);
   };
@@ -251,7 +244,7 @@ export default class ConfirmDecryptMessage extends Component {
       mostRecentOverviewPage,
       txData,
     } = this.props;
-    const { metricsEvent, t } = this.context;
+    const { t } = this.context;
 
     return (
       <div className="request-decrypt-message__footer">
@@ -261,13 +254,6 @@ export default class ConfirmDecryptMessage extends Component {
           className="request-decrypt-message__footer__cancel-button"
           onClick={async (event) => {
             await cancelDecryptMessage(txData, event);
-            metricsEvent({
-              eventOpts: {
-                category: 'Messages',
-                action: 'Decrypt Message Request',
-                name: 'Cancel',
-              },
-            });
             clearConfirmTransaction();
             history.push(mostRecentOverviewPage);
           }}
@@ -280,13 +266,6 @@ export default class ConfirmDecryptMessage extends Component {
           className="request-decrypt-message__footer__sign-button"
           onClick={async (event) => {
             await decryptMessage(txData, event);
-            metricsEvent({
-              eventOpts: {
-                category: 'Messages',
-                action: 'Decrypt Message Request',
-                name: 'Confirm',
-              },
-            });
             clearConfirmTransaction();
             history.push(mostRecentOverviewPage);
           }}

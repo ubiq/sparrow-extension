@@ -5,7 +5,6 @@ import Button from '../../components/ui/button';
 import Identicon from '../../components/ui/identicon';
 import TokenBalance from '../../components/ui/token-balance';
 import { I18nContext } from '../../contexts/i18n';
-import { MetaMetricsContext } from '../../contexts/metametrics';
 import ZENDESK_URLS from '../../helpers/constants/zendesk-url';
 import { isEqualCaseInsensitive } from '../../helpers/utils/util';
 
@@ -61,22 +60,7 @@ const ConfirmAddSuggestedToken = (props) => {
     tokens,
   } = props;
 
-  const metricsEvent = useContext(MetaMetricsContext);
   const t = useContext(I18nContext);
-
-  const tokenAddedEvent = (asset) => {
-    metricsEvent({
-      event: 'Token Added',
-      category: 'Wallet',
-      sensitiveProperties: {
-        token_symbol: asset.symbol,
-        token_contract_address: asset.address,
-        token_decimal_precision: asset.decimals,
-        unlisted: asset.unlisted,
-        source: 'dapp',
-      },
-    });
-  };
 
   const knownTokenActionableMessage = useMemo(() => {
     return (
@@ -188,9 +172,8 @@ const ConfirmAddSuggestedToken = (props) => {
             disabled={suggestedAssets.length === 0}
             onClick={async () => {
               await Promise.all(
-                suggestedAssets.map(async ({ asset, id }) => {
+                suggestedAssets.map(async ({ id }) => {
                   await acceptWatchAsset(id);
-                  tokenAddedEvent(asset);
                 }),
               );
               history.push(mostRecentOverviewPage);

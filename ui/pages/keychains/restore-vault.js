@@ -35,13 +35,6 @@ class RestoreVaultPage extends Component {
 
     leaveImportSeedScreenState();
     await createNewVaultAndRestore(password, seedPhrase);
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Retention',
-        action: 'userEntersSeedPhrase',
-        name: 'onboardingRestoredVault',
-      },
-    });
     initializeThreeBox();
     history.push(DEFAULT_ROUTE);
   };

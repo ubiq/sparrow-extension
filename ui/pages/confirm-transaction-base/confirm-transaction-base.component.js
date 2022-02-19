@@ -25,10 +25,7 @@ import { PRIMARY, SECONDARY } from '../../helpers/constants/common';
 import TextField from '../../components/ui/text-field';
 import ActionableMessage from '../../components/ui/actionable-message';
 import Disclosure from '../../components/ui/disclosure';
-import {
-  TRANSACTION_TYPES,
-  TRANSACTION_STATUSES,
-} from '../../../shared/constants/transaction';
+import { TRANSACTION_STATUSES } from '../../../shared/constants/transaction';
 import { getMethodName } from '../../helpers/utils/metrics';
 import {
   getTransactionTypeTitle,
@@ -107,7 +104,6 @@ export default class ConfirmTransactionBase extends Component {
     currentNetworkUnapprovedTxs: PropTypes.object,
     customGas: PropTypes.object,
     // Component props
-    actionKey: PropTypes.string,
     contentComponent: PropTypes.node,
     dataComponent: PropTypes.node,
     dataHexComponent: PropTypes.node,
@@ -268,28 +264,6 @@ export default class ConfirmTransactionBase extends Component {
   }
 
   handleEditGas() {
-    const {
-      actionKey,
-      txData: { origin },
-      methodData = {},
-    } = this.props;
-
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Transactions',
-        action: 'Confirm Screen',
-        name: 'User clicks "Edit" on gas',
-      },
-      customVariables: {
-        recipientKnown: null,
-        functionType:
-          actionKey ||
-          getMethodName(methodData.name) ||
-          TRANSACTION_TYPES.CONTRACT_INTERACTION,
-        origin,
-      },
-    });
-
     this.setState({ editingGas: true });
   }
 
@@ -714,31 +688,7 @@ export default class ConfirmTransactionBase extends Component {
   }
 
   handleEdit() {
-    const {
-      txData,
-      tokenData,
-      tokenProps,
-      onEdit,
-      actionKey,
-      txData: { origin },
-      methodData = {},
-    } = this.props;
-
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Transactions',
-        action: 'Confirm Screen',
-        name: 'Edit Transaction',
-      },
-      customVariables: {
-        recipientKnown: null,
-        functionType:
-          actionKey ||
-          getMethodName(methodData.name) ||
-          TRANSACTION_TYPES.CONTRACT_INTERACTION,
-        origin,
-      },
-    });
+    const { txData, tokenData, tokenProps, onEdit } = this.props;
 
     onEdit({ txData, tokenData, tokenProps });
   }
@@ -925,23 +875,7 @@ export default class ConfirmTransactionBase extends Component {
 
   componentDidMount() {
     this._isMounted = true;
-    const {
-      toAddress,
-      txData: { origin } = {},
-      getNextNonce,
-      tryReverseResolveAddress,
-    } = this.props;
-    const { metricsEvent } = this.context;
-    metricsEvent({
-      eventOpts: {
-        category: 'Transactions',
-        action: 'Confirm Screen',
-        name: 'Confirm: Started',
-      },
-      customVariables: {
-        origin,
-      },
-    });
+    const { toAddress, getNextNonce, tryReverseResolveAddress } = this.props;
 
     getNextNonce();
     if (toAddress) {

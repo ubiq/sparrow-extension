@@ -259,10 +259,9 @@ export default class SignatureRequestOriginal extends Component {
       history,
       mostRecentOverviewPage,
       sign,
-      txData: { type },
       hardwareWalletRequiresConnection,
     } = this.props;
-    const { metricsEvent, t } = this.context;
+    const { t } = this.context;
 
     return (
       <div className="request-signature__footer">
@@ -272,16 +271,6 @@ export default class SignatureRequestOriginal extends Component {
           className="request-signature__footer__cancel-button"
           onClick={async (event) => {
             await cancel(event);
-            metricsEvent({
-              eventOpts: {
-                category: 'Transactions',
-                action: 'Sign Request',
-                name: 'Cancel',
-              },
-              customVariables: {
-                type,
-              },
-            });
             clearConfirmTransaction();
             history.push(mostRecentOverviewPage);
           }}
@@ -296,16 +285,6 @@ export default class SignatureRequestOriginal extends Component {
           disabled={hardwareWalletRequiresConnection}
           onClick={async (event) => {
             await sign(event);
-            metricsEvent({
-              eventOpts: {
-                category: 'Transactions',
-                action: 'Sign Request',
-                name: 'Confirm',
-              },
-              customVariables: {
-                type,
-              },
-            });
             clearConfirmTransaction();
             history.push(mostRecentOverviewPage);
           }}

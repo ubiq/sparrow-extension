@@ -20,18 +20,6 @@ export default class ImportWithSeedPhrase extends PureComponent {
   };
 
   UNSAFE_componentWillMount() {
-    this._onBeforeUnload = () =>
-      this.context.metricsEvent({
-        eventOpts: {
-          category: 'Onboarding',
-          action: 'Import Seed Phrase',
-          name: 'Close window on import screen',
-        },
-        customVariables: {
-          errorLabel: 'Seed Phrase Error',
-          errorMessage: this.state.seedPhraseError,
-        },
-      });
     window.addEventListener('beforeunload', this._onBeforeUnload);
   }
 
@@ -48,13 +36,6 @@ export default class ImportWithSeedPhrase extends PureComponent {
     } = this.props;
 
     await onSubmit(password, seedPhrase);
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Onboarding',
-        action: 'Import Seed Phrase',
-        name: 'Import Complete',
-      },
-    });
 
     await setSeedPhraseBackedUp(true);
     initializeThreeBox();
@@ -70,13 +51,6 @@ export default class ImportWithSeedPhrase extends PureComponent {
           <a
             onClick={(e) => {
               e.preventDefault();
-              this.context.metricsEvent({
-                eventOpts: {
-                  category: 'Onboarding',
-                  action: 'Import Seed Phrase',
-                  name: 'Go Back from Onboarding Import',
-                },
-              });
               this.props.history.push(INITIALIZE_SELECT_ACTION_ROUTE);
             }}
             href="#"

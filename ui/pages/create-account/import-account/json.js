@@ -116,23 +116,9 @@ class JsonImportSubview extends Component {
       .then(({ selectedAddress }) => {
         if (selectedAddress) {
           history.push(mostRecentOverviewPage);
-          this.context.metricsEvent({
-            eventOpts: {
-              category: 'Accounts',
-              action: 'Import Account',
-              name: 'Imported Account with JSON',
-            },
-          });
           displayWarning(null);
         } else {
           displayWarning(t('importAccountError'));
-          this.context.metricsEvent({
-            eventOpts: {
-              category: 'Accounts',
-              action: 'Import Account',
-              name: 'Error importing JSON',
-            },
-          });
           setSelectedAddress(firstAddress);
         }
       })

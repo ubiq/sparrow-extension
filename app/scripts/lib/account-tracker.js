@@ -14,13 +14,9 @@ import log from 'loglevel';
 import pify from 'pify';
 import Web3 from 'web3';
 import SINGLE_CALL_BALANCES_ABI from 'single-call-balance-checker-abi';
-import {
-  MAINNET_CHAIN_ID,
-} from '../../../shared/constants/network';
+import { MAINNET_CHAIN_ID } from '../../../shared/constants/network';
 
-import {
-  SINGLE_CALL_BALANCES_ADDRESS,
-} from '../constants/contracts';
+import { SINGLE_CALL_BALANCES_ADDRESS } from '../constants/contracts';
 import { bnToHex } from './util';
 
 /**

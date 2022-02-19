@@ -43,24 +43,10 @@ class PrivateKeyImportView extends Component {
     importNewAccount('Private Key', [privateKey])
       .then(({ selectedAddress }) => {
         if (selectedAddress) {
-          this.context.metricsEvent({
-            eventOpts: {
-              category: 'Accounts',
-              action: 'Import Account',
-              name: 'Imported Account with Private Key',
-            },
-          });
           history.push(mostRecentOverviewPage);
           displayWarning(null);
         } else {
           displayWarning(t('importAccountError'));
-          this.context.metricsEvent({
-            eventOpts: {
-              category: 'Accounts',
-              action: 'Import Account',
-              name: 'Error importing with Private Key',
-            },
-          });
           setSelectedAddress(firstAddress);
         }
       })

@@ -19,17 +19,11 @@ export default class Welcome extends PureComponent {
     t: PropTypes.func,
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     const { history, welcomeScreenSeen } = this.props;
 
     if (welcomeScreenSeen) {
       history.push(INITIALIZE_CREATE_PASSWORD_ROUTE);
-    } else if (welcomeScreenSeen) {
-      history.push(INITIALIZE_SELECT_ACTION_ROUTE);
     }
   }
 
@@ -43,7 +37,7 @@ export default class Welcome extends PureComponent {
     return (
       <div className="welcome-page__wrapper">
         <div className="welcome-page">
-          <img src="images/icon-128.png" width="125" height="125"/>
+          <img src="images/icon-128.png" width="125" height="125" />
           {isBeta() ? <BetaWelcomeFooter /> : <WelcomeFooter />}
           <Button
             type="primary"

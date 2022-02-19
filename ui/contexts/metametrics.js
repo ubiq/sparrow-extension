@@ -20,8 +20,7 @@ import { getEnvironmentType } from '../../app/scripts/lib/util';
 import { trackMetaMetricsEvent } from '../store/actions';
 import { getNativeCurrency } from '../ducks/metamask/metamask';
 
-export const MetaMetricsContext = createContext(() => {
-});
+export const MetaMetricsContext = createContext();
 
 export function MetaMetricsProvider({ children }) {
   const txData = useSelector(txDataSelector) || {};

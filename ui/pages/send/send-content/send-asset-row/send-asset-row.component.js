@@ -87,16 +87,6 @@ export default class SendAssetRow extends Component {
         isShowingDropdown: false,
       },
       () => {
-        this.context.metricsEvent({
-          eventOpts: {
-            category: 'Transactions',
-            action: 'Send Screen',
-            name: 'User clicks "Assets" dropdown',
-          },
-          customVariables: {
-            assetSelected: this.getAssetSelected(type, token),
-          },
-        });
         this.props.updateSendAsset({
           type,
           details: type === ASSET_TYPES.NATIVE ? null : token,

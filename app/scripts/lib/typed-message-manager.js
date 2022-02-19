@@ -294,21 +294,8 @@ export default class TypedMessageManager extends EventEmitter {
    * Sets a TypedMessage status to 'rejected' via a call to this._setMsgStatus.
    *
    * @param {number} msgId - The id of the TypedMessage to reject.
-   * @param reason
    */
-  rejectMsg(msgId, reason = undefined) {
-    if (reason) {
-      const msg = this.getMsg(msgId);
-      this.metricsEvent({
-        event: reason,
-        category: 'Transactions',
-        properties: {
-          action: 'Sign Request',
-          version: msg.msgParams.version,
-          type: msg.type,
-        },
-      });
-    }
+  rejectMsg(msgId) {
     this._setMsgStatus(msgId, 'rejected');
   }
 

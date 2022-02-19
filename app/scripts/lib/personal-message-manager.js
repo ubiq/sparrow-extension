@@ -80,9 +80,7 @@ export default class PersonalMessageManager extends EventEmitter {
   addUnapprovedMessageAsync(msgParams, req) {
     return new Promise((resolve, reject) => {
       if (!msgParams.from) {
-        reject(
-          new Error('Sparrow Message Signature: from field is required.'),
-        );
+        reject(new Error('Sparrow Message Signature: from field is required.'));
         return;
       }
       const msgId = this.addUnapprovedMessage(msgParams, req);
@@ -224,20 +222,8 @@ export default class PersonalMessageManager extends EventEmitter {
    * Sets a PersonalMessage status to 'rejected' via a call to this._setMsgStatus.
    *
    * @param {number} msgId - The id of the PersonalMessage to reject.
-   * @param reason
    */
-  rejectMsg(msgId, reason = undefined) {
-    if (reason) {
-      const msg = this.getMsg(msgId);
-      this.metricsEvent({
-        event: reason,
-        category: 'Transactions',
-        properties: {
-          action: 'Sign Request',
-          type: msg.type,
-        },
-      });
-    }
+  rejectMsg(msgId) {
     this._setMsgStatus(msgId, 'rejected');
   }
 

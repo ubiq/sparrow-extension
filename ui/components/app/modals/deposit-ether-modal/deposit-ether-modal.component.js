@@ -15,8 +15,6 @@ export default class DepositEtherModal extends Component {
   static propTypes = {
     chainId: PropTypes.string.isRequired,
     isTestnet: PropTypes.bool.isRequired,
-    isMainnet: PropTypes.bool.isRequired,
-    address: PropTypes.string.isRequired,
     toFaucet: PropTypes.func.isRequired,
     hideWarning: PropTypes.func.isRequired,
     hideModal: PropTypes.func.isRequired,
@@ -86,11 +84,7 @@ export default class DepositEtherModal extends Component {
   }
 
   render() {
-    const {
-      chainId,
-      toFaucet,
-      isTestnet,
-    } = this.props;
+    const { chainId, toFaucet, isTestnet } = this.props;
     const { t } = this.context;
     const networkName = NETWORK_TO_NAME_MAP[chainId];
     const symbol = BUYABLE_CHAINS_MAP[chainId].nativeCurrency;
