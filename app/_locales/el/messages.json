@@ -224,19 +224,19 @@
     "message": "Ποσό"
   },
   "appDescription": {
-    "message": "Ένα Πορτοφόλι Ethereum στο Πρόγραμμα Περιήγησής σας",
+    "message": "Ένα Πορτοφόλι Ubiq στο Πρόγραμμα Περιήγησής σας",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Αγορά"
   },
   "buyWithWyre": {
-    "message": "Αγοράστε ETH με το Wyre"
+    "message": "Αγοράστε UBQ με το Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Το Wyre σας επιτρέπει να χρησιμοποιήσετε μια πιστωτική κάρτα για να καταθέσετε ETH απευθείας στον λογαριασμό σας MetaTask."
+    "message": "Το Wyre σας επιτρέπει να χρησιμοποιήσετε μια πιστωτική κάρτα για να καταθέσετε UBQ απευθείας στον λογαριασμό σας MetaTask."
   },
   "bytes": {
     "message": "Bytes"
@@ -1190,11 +1190,11 @@
     "message": "Γενικά"
   },
   "getEther": {
-    "message": "Λάβετε Ether"
+    "message": "Λάβετε UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Πάρτε Ether από μια πηγή για το $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Έναρξη"
@@ -1476,7 +1476,7 @@
     "message": "Εφαρμογή Ledger Live"
   },
   "ledgerLocked": {
-    "message": "Δεν είναι δυνατή η σύνδεση με τη συσκευή Ledger. Βεβαιωθείτε ότι η συσκευή σας είναι ξεκλειδωμένη και ότι η εφαρμογή Ethereum είναι ανοιχτή."
+    "message": "Δεν είναι δυνατή η σύνδεση με τη συσκευή Ledger. Βεβαιωθείτε ότι η συσκευή σας είναι ξεκλειδωμένη και ότι η εφαρμογή Ubiq είναι ανοιχτή."
   },
   "ledgerTimeout": {
     "message": "Το Ledger Live καθυστερεί πάρα πολύ για να ανταποκριθεί ή τελείωσε το χρονικό όριο σύνδεσης. Βεβαιωθείτε ότι η εφαρμογή Ledger Live είναι ανοικτή και ότι η συσκευή σας είναι ξεκλειδωμένη."
@@ -1579,7 +1579,7 @@
     "message": "Το κουμπί κατάστασης σύνδεσης εμφανίζει αν η ιστοσελίδα που επισκέπτεστε είναι συνδεδεμένη με τον τρέχοντα επιλεγμένο λογαριασμό σας."
   },
   "metamaskDescription": {
-    "message": "Σύνδεση με το Ethereum και τον Αποκεντρωμένο Ιστό."
+    "message": "Σύνδεση με το Ubiq και τον Αποκεντρωμένο Ιστό."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "Συντήρηση των ανταλλαγών MetaMask. Παρακαλούμε ελέγξτε αργότερα."
@@ -1905,7 +1905,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Για να ολοκληρώσετε τις συναλλαγές στο Ethereum Mainnet, βεβαιωθείτε ότι η συσκευή Ledger έχει το πιο πρόσφατο υλισμικό.",
+    "message": "Για να ολοκληρώσετε τις συναλλαγές στο Ubiq Mainnet, βεβαιωθείτε ότι η συσκευή Ledger έχει το πιο πρόσφατο υλισμικό.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Η εμφάνιση των εισερχόμενων συναλλαγών στο πορτοφόλι σας βασίζεται σε επικοινωνία με το $1. Το Ubiqscan θα έχει πρόσβαση στη διεύθυνση Ethereum σας και τη διεύθυνση IP σας. Δείτε $2.",
+    "message": "Η εμφάνιση των εισερχόμενων συναλλαγών στο πορτοφόλι σας βασίζεται σε επικοινωνία με το $1. Το Ubiqscan θα έχει πρόσβαση στη διεύθυνση Ubiq σας και τη διεύθυνση IP σας. Δείτε $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "Αποστολή $1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Ορίστε ρυθμίσεις απορρήτου για προχωρημένους"
@@ -2669,7 +2669,7 @@
     "message": "Επιβεβαιώστε με το υλικό πορτοφόλι σας"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "Στην εφαρμογή Ethereum στο Ledger, μεταβείτε στις \"Ρυθμίσεις\" και επιτρέψτε τα δεδομένα συμβολαίου. Στη συνέχεια, δοκιμάστε ξανά την ανταλλαγή σας."
+    "message": "Στην εφαρμογή Ubiq στο Ledger, μεταβείτε στις \"Ρυθμίσεις\" και επιτρέψτε τα δεδομένα συμβολαίου. Στη συνέχεια, δοκιμάστε ξανά την ανταλλαγή σας."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Τα δεδομένα συμβολαίου δεν είναι ενεργοποιημένα στο Ledger σας"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Τα τέλη συναλλαγών καταβάλλονται σε κρυπτο-miners που επεξεργάζονται συναλλαγές στο δίκτυο $1. Το Sparrow δεν επωφελείται από τα τέλη συναλλαγών.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Το ποσό ολίσθησης είναι πολύ υψηλό."
@@ -3034,7 +3034,7 @@
     "message": "Απαιτείται δεκαδικό Token."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Νέο! Η βελτιωμένη ανίχνευση token είναι διαθέσιμη στο Ethereum Mainnet ως πειραματικό χαρακτηριστικό. $1"
+    "message": "Νέο! Η βελτιωμένη ανίχνευση token είναι διαθέσιμη στο Ubiq Mainnet ως πειραματικό χαρακτηριστικό. $1"
   },
   "tokenSymbol": {
     "message": "Σύμβολο Token"

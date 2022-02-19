@@ -63,19 +63,19 @@
     "message": "Sumă"
   },
   "appDescription": {
-    "message": "Un portofel Ethereum în browserul dvs.",
+    "message": "Un portofel Ubiq în browserul dvs.",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Browserul dvs. nu este compatibil..."
   },
   "buyWithWyre": {
-    "message": "Cumpărați ETH cu Wyre"
+    "message": "Cumpărați UBQ cu Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vă permite să folosiți un card de credit pentru a depune ETH direct în contul dvs. MetaMask."
+    "message": "Wyre vă permite să folosiți un card de credit pentru a depune UBQ direct în contul dvs. MetaMask."
   },
   "bytes": {
     "message": "Octeți"
@@ -203,7 +203,7 @@
     "message": "Se conectează la rețeaua de test Kovan"
   },
   "connectingToMainnet": {
-    "message": "Se conectează la rețeaua Ethereum principală"
+    "message": "Se conectează la rețeaua Ubiq principală"
   },
   "connectingToRinkeby": {
     "message": "Se conectează la Rețeaua de test Rinkeby"
@@ -335,7 +335,7 @@
     "message": "Aflați mai multe."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Numele ENS nu s-a găsit pe rețeaua curentă. Încercați să comutați la Rețeaua Ethereum principală."
+    "message": "Numele ENS nu s-a găsit pe rețeaua curentă. Încercați să comutați la Rețeaua Ubiq principală."
   },
   "ensRegistrationError": {
     "message": "Eroare la înregistrarea numelui ENS"
@@ -405,11 +405,11 @@
     "message": "Suma gaz folosită"
   },
   "getEther": {
-    "message": "Obțineți Ether"
+    "message": "Obțineți UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Obțineți Ether de la un robinet pentru $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Începe"
@@ -536,7 +536,7 @@
     "message": "Deconectați-vă"
   },
   "mainnet": {
-    "message": "Rețeaua Ethereum principală"
+    "message": "Rețeaua Ubiq principală"
   },
   "max": {
     "message": "Maximum"
@@ -551,7 +551,7 @@
     "message": "Mesaj"
   },
   "metamaskDescription": {
-    "message": "Vă conectăm la Ethereum și la Internetul descentralizat."
+    "message": "Vă conectăm la Ubiq și la Internetul descentralizat."
   },
   "metamaskVersion": {
     "message": "Versiune MetaMask"

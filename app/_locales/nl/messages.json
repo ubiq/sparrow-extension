@@ -19,15 +19,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -123,11 +123,11 @@
     "message": "Gasprijs (GWEI)"
   },
   "getEther": {
-    "message": "Krijg Ether"
+    "message": "Krijg UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Haal Ether uit een kraan voor de $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "here": {
     "message": "hier",
@@ -210,7 +210,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Kan geen negatieve hoeveelheden ETH verzenden."
+    "message": "Kan geen negatieve hoeveelheden UBQ verzenden."
   },
   "networks": {
     "message": "netwerken"

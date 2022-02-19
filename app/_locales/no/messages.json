@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Nettleseren din støttes ikke ..."
   },
   "buyWithWyre": {
-    "message": "Kjøp ETH med Wyre"
+    "message": "Kjøp UBQ med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lar deg bruke et kredittkort for å sette inn ETH rett på MetaMask-kontoen din."
+    "message": "Wyre lar deg bruke et kredittkort for å sette inn UBQ rett på MetaMask-kontoen din."
   },
   "cancel": {
     "message": "Avbryt"
@@ -409,7 +409,7 @@
   },
   "getEtherFromFaucet": {
     "message": "Få Ether fra en kran for $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Kom i gang"
@@ -551,7 +551,7 @@
     "message": "Melding "
   },
   "metamaskDescription": {
-    "message": "Kobler deg til Ethereum og det desentraliserte nettet."
+    "message": "Kobler deg til Ubiq og det desentraliserte nettet."
   },
   "metamaskVersion": {
     "message": "MetaMask-versjon "

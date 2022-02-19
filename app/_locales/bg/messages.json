@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Браузърът ви не се поддържа ..."
   },
   "buyWithWyre": {
-    "message": "Купете ETH с Wyre"
+    "message": "Купете UBQ с Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ви позволява да използвате кредитна карта, за да депозирате ETH право във вашата Sparrow сметка."
+    "message": "Wyre ви позволява да използвате кредитна карта, за да депозирате UBQ право във вашата Sparrow сметка."
   },
   "bytes": {
     "message": "Байта"
@@ -412,7 +412,7 @@
   },
   "getEtherFromFaucet": {
     "message": "Вземете Ether от фосет за $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Първи стъпки"
@@ -490,7 +490,7 @@
     "message": "Адресът на получателя е невалиден"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Не е ETH мрежа, задаване на малки букви"
+    "message": "Не е UBQ мрежа, задаване на малки букви"
   },
   "invalidBlockExplorerURL": {
     "message": "Невалиден Block Explorer URL адрес"
@@ -560,7 +560,7 @@
     "message": "Съобщение"
   },
   "metamaskDescription": {
-    "message": "Свързва ви с Ethereum и децентрализираната мрежа."
+    "message": "Свързва ви с Ubiq и децентрализираната мрежа."
   },
   "metamaskVersion": {
     "message": "Версия на MetaMask"

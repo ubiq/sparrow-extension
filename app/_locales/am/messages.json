@@ -57,19 +57,19 @@
     "message": "ሰርዝ "
   },
   "appDescription": {
-    "message": "በማሰሺያዎ ውስጥ የ Ethereum ቋት",
+    "message": "በማሰሺያዎ ውስጥ የ Ubiq ቋት",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -140,7 +140,7 @@
     "message": "ETH በ Wyre ይግዙ"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ክሬዲት ካርድ ተጠቅመው ETH በቀጥታ በ Sparrow መለያዎ ላይ እንዲያስቀምጡ ያስችልዎታል።"
+    "message": "Wyre ክሬዲት ካርድ ተጠቅመው UBQ በቀጥታ በ Sparrow መለያዎ ላይ እንዲያስቀምጡ ያስችልዎታል።"
   },
   "bytes": {
     "message": "ባይት"
@@ -197,7 +197,7 @@
     "message": "ከ Kovan የሙከራ አውታረ መረብ መገናኘት"
   },
   "connectingToMainnet": {
-    "message": "ከዋናው የ Ethereum አውታረ መረብ ጋር መገናኘት"
+    "message": "ከዋናው የ Ubiq አውታረ መረብ ጋር መገናኘት"
   },
   "connectingToRinkeby": {
     "message": "ከ Rinkeby የሙከራ አውታረ መረብ ጋር በመገናኘት ላይ"
@@ -326,7 +326,7 @@
     "message": "ተጨማሪ ይማሩ"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "የ ENS ስም በአሁኑ ኔትወርክ ላይ አልተገኘም። ወደ ዋናው የ Ethereum አውታረ መረብ ለመቀየር ይሞክሩ።"
+    "message": "የ ENS ስም በአሁኑ ኔትወርክ ላይ አልተገኘም። ወደ ዋናው የ Ubiq አውታረ መረብ ለመቀየር ይሞክሩ።"
   },
   "ensRegistrationError": {
     "message": "በ ENS የስም ምዝገባ ላይ የተፈጠረ ስህተት"
@@ -403,11 +403,11 @@
     "message": "አጠቃላይ"
   },
   "getEther": {
-    "message": "Ether ያግኙ"
+    "message": "UBQ ያግኙ"
   },
   "getEtherFromFaucet": {
-    "message": "Ether ከቧንቧ በ$1ያግኙ",
-    "description": "Displays network name for Ether faucet"
+    "message": "UBQ ከቧንቧ በ$1ያግኙ",
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "አስጀማሪ መመሪያ"
@@ -534,7 +534,7 @@
     "message": "ዘግተህ ውጣ"
   },
   "mainnet": {
-    "message": "ዋነኛ የ Ethereum አውታረ መረብ "
+    "message": "ዋነኛ የ Ubiq አውታረ መረብ "
   },
   "max": {
     "message": "ከፍተኛ"
@@ -549,7 +549,7 @@
     "message": "መልዕክት"
   },
   "metamaskDescription": {
-    "message": "ከ Ethereum እና ያልተማከለ መረብ ጋር እርስዎን ማገናኘት።"
+    "message": "ከ Ubiq እና ያልተማከለ መረብ ጋር እርስዎን ማገናኘት።"
   },
   "metamaskVersion": {
     "message": "የ Sparrow ስሪት"
@@ -565,7 +565,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "አሉታዊ የ ETH መጠኖችን መላክ አይቻልም።"
+    "message": "አሉታዊ የ UBQ መጠኖችን መላክ አይቻልም።"
   },
   "networkName": {
     "message": "የአውታረ መረብ ስም"

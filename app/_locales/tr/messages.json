@@ -224,19 +224,19 @@
     "message": "Tutar"
   },
   "appDescription": {
-    "message": "Tarayıcında bir Ethereum Cüzdanı",
+    "message": "Tarayıcında bir Ubiq Cüzdanı",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Satın Al"
   },
   "buyWithWyre": {
-    "message": "Wyre ile ETH satın al"
+    "message": "Wyre ile UBQ satın al"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre, doğrudan Sparrow hesabınıza ETH yatırma işlemleri için banka kartı kullanmanıza izin verir."
+    "message": "Wyre, doğrudan Sparrow hesabınıza UBQ yatırma işlemleri için banka kartı kullanmanıza izin verir."
   },
   "bytes": {
     "message": "Bayt"
@@ -941,7 +941,7 @@
     "message": "ENS için Uygun Olmayan Karakter."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS adı geçerli ağda bulunamadı. Ethereum Mainnet'e geçmeyi deneyin."
+    "message": "ENS adı geçerli ağda bulunamadı. Ubiq Mainnet'e geçmeyi deneyin."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Ağ ENS desteklemiyor"
@@ -1190,11 +1190,11 @@
     "message": "Genel"
   },
   "getEther": {
-    "message": "Ether Al"
+    "message": "UBQ Al"
   },
   "getEtherFromFaucet": {
     "message": "Musluktan $1 karşılığı Ether alın",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Başlarken"
@@ -1456,7 +1456,7 @@
     "message": "Ayarlar > Gelişmiş kısmının altında Ledger Live'i Kullan seçeneğini etkinleştirin"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "Kayıt Defteri cihazınızı bağlayın ve Ethereum uygulamasını seçin"
+    "message": "Kayıt Defteri cihazınızı bağlayın ve Ubiq uygulamasını seçin"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Ledger Live Uygulamasını açın ve kilidini açın"
@@ -1476,7 +1476,7 @@
     "message": "Ledger Live Uygulaması"
   },
   "ledgerLocked": {
-    "message": "Kayıt defteri cihazına bağlanılamıyor. Lütfen cihazınızın kilidinin açık ve Ethereum uygulamasının açık olduğundan emin olun."
+    "message": "Kayıt defteri cihazına bağlanılamıyor. Lütfen cihazınızın kilidinin açık ve Ubiq uygulamasının açık olduğundan emin olun."
   },
   "ledgerTimeout": {
     "message": "Ledger Live'ın yanıt vermesi çok uzun sürdü ya da bağlantı zaman aşımına uğradı. Ledger Live uygulamasının açık olduğundan ve cihazınızın kilidinin açık olduğundan emin olun."
@@ -1579,7 +1579,7 @@
     "message": "Bağlantı durumu düğmesi ziyaret ettiğiniz web sitesinin şu anda seçilen hesabınıza bağlı olup olmadığını gösterir."
   },
   "metamaskDescription": {
-    "message": "Sizi Ethereum ve Merkezi Olmayan Webe bağlar."
+    "message": "Sizi Ubiq ve Merkezi Olmayan Webe bağlar."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "MetaMask Takas İşlemleri bakımda. Lütfen daha sonra tekrar kontrol edin."
@@ -1628,7 +1628,7 @@
     "message": "MetaMask'i geliştirmemize yardımcı olun"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask, kullanıcılarımızın uzantıyı nasıl kullandıklarını daha iyi anlamak amacıyla kullanım verilerini toplamak istiyor. Bu veriler ürünümüzün ve Ethereum eko-sisteminin kullanılabilirliği ve kullanıcı deneyimini geliştirmek için sürekli olarak kullanılacaktır."
+    "message": "MetaMask, kullanıcılarımızın uzantıyı nasıl kullandıklarını daha iyi anlamak amacıyla kullanım verilerini toplamak istiyor. Bu veriler ürünümüzün ve Ubiq eko-sisteminin kullanılabilirliği ve kullanıcı deneyimini geliştirmek için sürekli olarak kullanılacaktır."
   },
   "metametricsOptInDescription2": {
     "message": "Ürünümüzün kullanılabilirliğini geliştirmek için temel kullanım verilerini toplamak istiyoruz. Bu ölçümler..."
@@ -1680,7 +1680,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Negatif tutarlarda ETH gönderilemez."
+    "message": "Negatif tutarlarda UBQ gönderilemez."
   },
   "networkDetails": {
     "message": "Ağ Bilgileri"
@@ -1905,7 +1905,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "İşlemleri Ethereum Mainnet'te tamamlamak için Kayıt Defteri cihazınızın son donanım yazılımına sahip olduğundan emin olun.",
+    "message": "İşlemleri Ubiq Mainnet'te tamamlamak için Kayıt Defteri cihazınızın son donanım yazılımına sahip olduğundan emin olun.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Cüzdanınıza gelen işlemlerin gösterilmesi $1 ile iletişime bağlıdır. Ubiqscan, Ethereum adresinize ve IP adresinize erişim sağlayacaktır. Şunu görüntüleyin: $2.",
+    "message": "Cüzdanınıza gelen işlemlerin gösterilmesi $1 ile iletişime bağlıdır. Ubiqscan, Ubiq adresinize ve IP adresinize erişim sağlayacaktır. Şunu görüntüleyin: $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "$1 Gönderiliyor",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Gelişmiş gizlilik ayarlarını yapın"
@@ -2612,7 +2612,7 @@
     "message": "Ledger cüzdanını bağlayın"
   },
   "step2LedgerWalletMsg": {
-    "message": "Cüzdanınızı doğrudan bilgisayara bağlayın. Kayıt defterinizin kilidini açın ve Ethereum uygulamasını açın. Donanım cüzdanı cihazınızın kullanımı hakkında daha fazla bilgi için $1.",
+    "message": "Cüzdanınızı doğrudan bilgisayara bağlayın. Kayıt defterinizin kilidini açın ve Ubiq uygulamasını açın. Donanım cüzdanı cihazınızın kullanımı hakkında daha fazla bilgi için $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -2669,7 +2669,7 @@
     "message": "Donanım cüzdanınızla onaylayın"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "Kayıt defterinizdeki Ethereum uygulamasında \"Ayarlar\" öğesine gidin ve sözleşme verilerine izin verin. Ardından takas işleminizi tekrar deneyin."
+    "message": "Kayıt defterinizdeki Ubiq uygulamasında \"Ayarlar\" öğesine gidin ve sözleşme verilerine izin verin. Ardından takas işleminizi tekrar deneyin."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Sözleşme verileriniz Kayıt Defterinizde etkinleştirilmemiş"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Gaz ücretleri, $1 ağında işlemleri gerçekleştiren kripto madencilerine ödenir. Sparrow gaz ücretlerinden herhangi bir kazanç elde etmemektedir.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Fark tutarı çok yüksek."
@@ -3034,7 +3034,7 @@
     "message": "Token ondalık değeri gerekli."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Yeni! Deney aşamasında olan bir özellik olarak Ethereum Mainnet'te gelişmiş token algılama mevcut. $1"
+    "message": "Yeni! Deney aşamasında olan bir özellik olarak Ubiq Mainnet'te gelişmiş token algılama mevcut. $1"
   },
   "tokenSymbol": {
     "message": "Token Sembolü"

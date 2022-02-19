@@ -112,15 +112,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -204,10 +204,10 @@
     "message": "Compra"
   },
   "buyWithWyre": {
-    "message": "Compra ETH con Wyre"
+    "message": "Compra UBQ con Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ti consente di usare la carta di credito per depositare ETH direttamente nel tuo account MetaMask."
+    "message": "Wyre ti consente di usare la carta di credito per depositare UBQ direttamente nel tuo account MetaMask."
   },
   "canToggleInSettings": {
     "message": "Puoi riabilitare questa notifica in Impostazioni -> Avvisi."
@@ -314,7 +314,7 @@
     "message": "Connessione alla Rete di test Kovan"
   },
   "connectingToMainnet": {
-    "message": "Connessione alla Rete Ethereum Principale"
+    "message": "Connessione alla Rete Ubiq Principale"
   },
   "connectingToRinkeby": {
     "message": "Connessione alla Rete di test Rinkeby"
@@ -563,7 +563,7 @@
     "message": "Tempi di Elaborazione Stimati"
   },
   "ethereumPublicAddress": {
-    "message": "Indirizzo pubblico Ethereum "
+    "message": "Indirizzo pubblico Ubiq "
   },
   "etherscanView": {
     "message": "Vedi account su Ubiqscan"
@@ -663,11 +663,11 @@
     "message": "Generale"
   },
   "getEther": {
-    "message": "Ottieni Ether"
+    "message": "Ottieni UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Ottieni Get Ether da un faucet per $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Inizia"
@@ -848,7 +848,7 @@
     "message": "Tempo di inattività troppo lungo"
   },
   "mainnet": {
-    "message": "Rete Ethereum Principale"
+    "message": "Rete Ubiq Principale"
   },
   "max": {
     "message": "Massimo"
@@ -922,7 +922,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Non puoi inviare una quantità di ETH negativa."
+    "message": "Non puoi inviare una quantità di UBQ negativa."
   },
   "networkName": {
     "message": "Nome Rete"
@@ -1068,7 +1068,7 @@
     "message": "Moneta Primaria"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Seleziona ETH per privilegiare la visualizzazione dei valori nella moneta nativa della blockhain. Seleziona Fiat per privilegiare la visualizzazione dei valori nella moneta selezionata."
+    "message": "Seleziona UBQ per privilegiare la visualizzazione dei valori nella moneta nativa della blockhain. Seleziona Fiat per privilegiare la visualizzazione dei valori nella moneta selezionata."
   },
   "privacyMsg": {
     "message": "Politica sulla Privacy"

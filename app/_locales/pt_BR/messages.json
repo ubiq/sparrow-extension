@@ -224,19 +224,19 @@
     "message": "Valor"
   },
   "appDescription": {
-    "message": "Uma carteira de Ethereum no seu navegador",
+    "message": "Uma carteira de Ubiq no seu navegador",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Comprar"
   },
   "buyWithWyre": {
-    "message": "Comprar ETH com Wyre"
+    "message": "Comprar UBQ com Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Com o Wyre, você pode usar um cartão de débito para depositar ETH diretamente na sua conta da MetaMask."
+    "message": "Com o Wyre, você pode usar um cartão de débito para depositar UBQ diretamente na sua conta da MetaMask."
   },
   "bytes": {
     "message": "Bytes"
@@ -1224,11 +1224,11 @@
     "message": "Geral"
   },
   "getEther": {
-    "message": "Obter Ether"
+    "message": "Obter UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Obtenha Ether de um faucet para $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Comece agora"
@@ -1509,7 +1509,7 @@
     "message": "Aplicativo Ledger Live"
   },
   "ledgerLocked": {
-    "message": "Não é possível conectar ao dispositivo Ledger. Certifique-se de que seu dispositivo esteja desbloqueado e que o aplicativo Ethereum esteja aberto."
+    "message": "Não é possível conectar ao dispositivo Ledger. Certifique-se de que seu dispositivo esteja desbloqueado e que o aplicativo Ubiq esteja aberto."
   },
   "ledgerTimeout": {
     "message": "O Ledger Live está demorando muito para responder ou a conexão expirou. Certifique-se de que o aplicativo do Ledger Live esteja aberto e que seu dispositivo esteja desbloqueado."
@@ -1609,7 +1609,7 @@
     "message": "O botão de status da conexão mostra se o website que você está visitando está conectado à conta selecionada no momento."
   },
   "metamaskDescription": {
-    "message": "Conectando você ao Ethereum e à web descentralizada."
+    "message": "Conectando você ao Ubiq e à web descentralizada."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "O Sparrow Swaps está em manutenção. Verifique novamente mais tarde."
@@ -2029,7 +2029,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "A exibição de transações recebidas na sua carteira depende de comunicação com $1. O Ubiqscan terá acesso ao seu endereço Ethereum e ao seu endereço IP. Veja $2.",
+    "message": "A exibição de transações recebidas na sua carteira depende de comunicação com $1. O Ubiqscan terá acesso ao seu endereço Ubiq e ao seu endereço IP. Veja $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2461,7 +2461,7 @@
   },
   "sendingNativeAsset": {
     "message": "Enviando $1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Definir configurações avançadas de privacidade"
@@ -2705,7 +2705,7 @@
     "message": "Confirme com sua carteira de hardware"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "No aplicativo do Ethereum em seu Ledger, vá para \"Configurações\" e habilite os dados do contrato. Em seguida, tente sua troca novamente."
+    "message": "No aplicativo do Ubiq em seu Ledger, vá para \"Configurações\" e habilite os dados do contrato. Em seguida, tente sua troca novamente."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Os dados do contrato não estão habilitados em seu Ledger"
@@ -2770,7 +2770,7 @@
   },
   "swapGasFeesSummary": {
     "message": "As taxas de gás são pagas aos mineradores de criptoativos que processam as transações na rede de $1. A Sparrow não lucra com taxas de gás.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "O valor de slippage está muito alto."
@@ -3073,7 +3073,7 @@
     "message": "A casa decimal do token é necessária."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Novidade! A detecção aprimorada de token está disponível na Mainnet do Ethereum como uma funcionalidade experimental. $1"
+    "message": "Novidade! A detecção aprimorada de token está disponível na Mainnet do Ubiq como uma funcionalidade experimental. $1"
   },
   "tokenId": {
     "message": "ID do token"

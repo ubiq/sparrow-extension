@@ -228,15 +228,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -381,7 +381,7 @@
     "message": "使用 Wyre 购买 ETH"
   },
   "buyWithWyreDescription": {
-    "message": "您可以通过 Wyre 使用信用卡将 ETH 存入您的 Sparrow 账户。"
+    "message": "您可以通过 Wyre 使用信用卡将 UBQ 存入您的 Sparrow 账户。"
   },
   "bytes": {
     "message": "字节"
@@ -525,7 +525,7 @@
     "message": "正在连接到 Kovan 测试网络"
   },
   "connectingToMainnet": {
-    "message": "正在连接到以太坊 Ethereum 主网"
+    "message": "正在连接到以太坊 Ubiq 主网"
   },
   "connectingToRinkeby": {
     "message": "正在连接到 Rinkeby 测试网络"
@@ -1003,7 +1003,7 @@
     "message": "由于目前主要的燃料估算服务不可用，因此提供了备用燃料价格。"
   },
   "ethereumPublicAddress": {
-    "message": "以太坊 Ethereum 公开地址"
+    "message": "以太坊 Ubiq 公开地址"
   },
   "etherscan": {
     "message": "Etherscan（以太坊浏览器）"
@@ -1190,11 +1190,11 @@
     "message": "通用"
   },
   "getEther": {
-    "message": "获取 Ether"
+    "message": "获取 UBQ"
   },
   "getEtherFromFaucet": {
-    "message": "从水管获取 $1 网络的 Ether",
-    "description": "Displays network name for Ether faucet"
+    "message": "从水管获取 $1 网络的 UBQ",
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "开始使用"
@@ -1347,7 +1347,7 @@
     "message": "接收方地址无效"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "非 ETH 网络，请使用小写"
+    "message": "非 UBQ 网络，请使用小写"
   },
   "invalidBlockExplorerURL": {
     "message": "无效的区块浏览器 URL"
@@ -1532,7 +1532,7 @@
     "message": "以后的交易将在这个时候之后排队。最后一次看到的价格是在一段时间之前。"
   },
   "mainnet": {
-    "message": "以太坊 Ethereum 主网络"
+    "message": "以太坊 Ubiq 主网络"
   },
   "makeAnotherSwap": {
     "message": "创建一个新的交换"
@@ -1579,7 +1579,7 @@
     "message": "连接状态按钮显示所访问的网站是否与您当前选择的账户连接。"
   },
   "metamaskDescription": {
-    "message": "将您与 Ethereum 和去中心化网络连接起来。"
+    "message": "将您与 Ubiq 和去中心化网络连接起来。"
   },
   "metamaskSwapsOfflineDescription": {
     "message": "MetaMask Swaps 正在进行维护。请稍后访问。"
@@ -1628,7 +1628,7 @@
     "message": "帮助我们让 Sparrow 变得更好"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask 希望收集使用数据，以更好地了解我们的用户如何与扩展进行互动。这些数据将被用于持续改进我们产品和 Ethereum 生态系统的可用性和用户体验。"
+    "message": "MetaMask 希望收集使用数据，以更好地了解我们的用户如何与扩展进行互动。这些数据将被用于持续改进我们产品和 Ubiq 生态系统的可用性和用户体验。"
   },
   "metametricsOptInDescription2": {
     "message": "我们想要收集基本使用数据以提高我们产品的可用性。这些数据将..."
@@ -2097,7 +2097,7 @@
     "message": "主要货币"
   },
   "primaryCurrencySettingDescription": {
-    "message": "请选择“本地”，优先显示当地货币链价值（如 ETH ）。选择“货币”则优先以所选货币作为价值显示单位。"
+    "message": "请选择“本地”，优先显示当地货币链价值（如 UBQ ）。选择“货币”则优先以所选货币作为价值显示单位。"
   },
   "priorityFee": {
     "message": "优先费用"
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "正在发送$1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "设置高级隐私设置"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "燃料费用支付给在$1网络上处理交易的加密矿工。MetaMask不会从燃料费用中获利。",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "翻转数量非常高。"
@@ -3250,7 +3250,7 @@
     "message": "使用网络钓鱼检测"
   },
   "usePhishingDetectionDescription": {
-    "message": "显示针对 Ethereum 用户钓鱼域名的警告。"
+    "message": "显示针对 Ubiq 用户钓鱼域名的警告。"
   },
   "useTokenDetection": {
     "message": "使用代币检测"

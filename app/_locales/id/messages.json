@@ -224,19 +224,19 @@
     "message": "Jumlah"
   },
   "appDescription": {
-    "message": "Dompet Ethereum pada Peramban Anda",
+    "message": "Dompet Ubiq pada Peramban Anda",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Beli"
   },
   "buyWithWyre": {
-    "message": "Beli ETH dengan Wyre"
+    "message": "Beli UBQ dengan Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre memungkinkan Anda menggunakan kartu debit untuk menyetorkan ETH langsung di akun Sparrow Anda."
+    "message": "Wyre memungkinkan Anda menggunakan kartu debit untuk menyetorkan UBQ langsung di akun Sparrow Anda."
   },
   "bytes": {
     "message": "Byte"
@@ -525,7 +525,7 @@
     "message": "Menghubungkan ke Jaringan Uji Kovan"
   },
   "connectingToMainnet": {
-    "message": "Menghubungkan ke Ethereum Mainnet"
+    "message": "Menghubungkan ke Ubiq Mainnet"
   },
   "connectingToRinkeby": {
     "message": "Menghubungkan ke Jaringan Uji Rinkeby"
@@ -941,7 +941,7 @@
     "message": "Karakter Ilegal untuk ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nama ENS tidak ditemukan pada jaringan saat ini. Coba untuk beralih ke Ethereum Mainnet."
+    "message": "Nama ENS tidak ditemukan pada jaringan saat ini. Coba untuk beralih ke Ubiq Mainnet."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Jaringan tidak mendukung ENS"
@@ -1190,11 +1190,11 @@
     "message": "Umum"
   },
   "getEther": {
-    "message": "Dapatkan Ether"
+    "message": "Dapatkan UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Dapatkan Ether dari keran untuk $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Mulai"
@@ -1476,7 +1476,7 @@
     "message": "Aplikasi Ledger Live"
   },
   "ledgerLocked": {
-    "message": "Tidak dapat terhubung ke perangkat Ledger. Pastikan perangkat Anda tidak terkunci dan aplikasi Ethereum terbuka."
+    "message": "Tidak dapat terhubung ke perangkat Ledger. Pastikan perangkat Anda tidak terkunci dan aplikasi Ubiq terbuka."
   },
   "ledgerTimeout": {
     "message": "Respons Ledger Live terlalu lama atau waktu koneksi habis. Pastikan aplikasi Ledger Live terbuka dan perangkat Anda tidak terkunci."
@@ -1579,7 +1579,7 @@
     "message": "Tombol status koneksi menunjukkan apakah situs web yang Anda kunjungi terhubung ke akun Anda yang dipilih saat ini."
   },
   "metamaskDescription": {
-    "message": "Menghubungkan Anda ke Ethereum dan Web Terdesentralisasi."
+    "message": "Menghubungkan Anda ke Ubiq dan Web Terdesentralisasi."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "MetaMask Swap sedang dalam pemeliharaan. Harap periksa kembali nanti."
@@ -1628,7 +1628,7 @@
     "message": "Bantu Kami Menyempurnakan MetaMask"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask ingin mengumpulkan data penggunaan untuk lebih memahami cara pengguna berinteraksi dengan ekstensi. Data ini akan digunakan untuk meningkatkan kegunaan dan pengalaman pengguna atas produk kami dan ekosistem Ethereum secara berkala."
+    "message": "MetaMask ingin mengumpulkan data penggunaan untuk lebih memahami cara pengguna berinteraksi dengan ekstensi. Data ini akan digunakan untuk meningkatkan kegunaan dan pengalaman pengguna atas produk kami dan ekosistem Ubiq secara berkala."
   },
   "metametricsOptInDescription2": {
     "message": "Kami ingin mengumpulkan data penggunaan dasar dalam rangka meningkatkan kegunaan produk kami. Metrik ini akan..."
@@ -1905,7 +1905,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Untuk menyelesaikan transaksi di Ethereum Mainnet, pastikan perangkat Ledger Anda memiliki firmware terbaru.",
+    "message": "Untuk menyelesaikan transaksi di Ubiq Mainnet, pastikan perangkat Ledger Anda memiliki firmware terbaru.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Menampilkan transaksi masuk di dompet Anda bergantung pada komunikasi dengan $1. Ubiqscan akan mendapat akses ke alamat Ethereum dan alamat IP Anda. Lihat $2.",
+    "message": "Menampilkan transaksi masuk di dompet Anda bergantung pada komunikasi dengan $1. Ubiqscan akan mendapat akses ke alamat Ubiq dan alamat IP Anda. Lihat $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "Mengirim $1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Atur pengaturan privasi lanjutan"
@@ -2669,7 +2669,7 @@
     "message": "Konfirmasikan dengan dompet perangkat keras Anda"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "Di aplikasi Ethereum di Ledger Anda, buka \"Pengaturan\" dan izinkan data kontrak. Lalu, coba lagi swap Anda."
+    "message": "Di aplikasi Ubiq di Ledger Anda, buka \"Pengaturan\" dan izinkan data kontrak. Lalu, coba lagi swap Anda."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Data kontrak tidak diaktifkan di Ledger Anda"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Biaya gas dibayarkan kepada penambang kripto yang memproses transaksi di jaringan $1. Sparrow tidak mengambil keuntungan dari biaya gas.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Jumlah slippage sangat tinggi."
@@ -3034,7 +3034,7 @@
     "message": "Desimal token diperlukan."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Baru! Deteksi token yang ditingkatkan tersedia di Ethereum Mainnet sebagai fitur eksperimental. $1"
+    "message": "Baru! Deteksi token yang ditingkatkan tersedia di Ubiq Mainnet sebagai fitur eksperimental. $1"
   },
   "tokenSymbol": {
     "message": "Simbol Token"

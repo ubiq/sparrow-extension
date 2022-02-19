@@ -63,19 +63,19 @@
     "message": "Кількість"
   },
   "appDescription": {
-    "message": "Гаманець Ethereum у вашому браузері",
+    "message": "Гаманець Ubiq у вашому браузері",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Ваш браузер не підтримується..."
   },
   "buyWithWyre": {
-    "message": "Купити ETH через Wyre"
+    "message": "Купити UBQ через Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre дає змогу використовувати кредитну картку для внесення валюти ETH безпосередньо у свій гаманець MetaMask."
+    "message": "Wyre дає змогу використовувати кредитну картку для внесення валюти UBQ безпосередньо у свій гаманець MetaMask."
   },
   "bytes": {
     "message": "Байти"
@@ -335,7 +335,7 @@
     "message": "Дізнатись більше."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Ім'я ENS не знайдено у даній мережі. Спробуйте перейти у Ethereum Mainnet."
+    "message": "Ім'я ENS не знайдено у даній мережі. Спробуйте перейти у Ubiq Mainnet."
   },
   "ensRegistrationError": {
     "message": "Помилка у реєстрації ENS ім'я"
@@ -416,7 +416,7 @@
   },
   "getEtherFromFaucet": {
     "message": "Отримайте Ether з крану за $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Почати"
@@ -564,7 +564,7 @@
     "message": "Повідомлення"
   },
   "metamaskDescription": {
-    "message": "Під'єднуємо вас до Ethereum та децентралізованої мережі."
+    "message": "Під'єднуємо вас до Ubiq та децентралізованої мережі."
   },
   "metamaskVersion": {
     "message": "Версія MetaMask"

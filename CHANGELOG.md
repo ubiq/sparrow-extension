@@ -2426,7 +2426,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Uncategorized
 - Add Parity compatibility, fixing Geth dependency issues.
 - Add a link to the transaction in history that goes to https://metamask.github.io/eth-tx-viz to help visualize transactions and to where they are going.
-- Show "Buy Ether" button and warning on tx confirmation when sender balance is insufficient
+- Show "Buy UBQ" button and warning on tx confirmation when sender balance is insufficient
 
 ## [2.12.1] - 2016-09-14
 ### Uncategorized

@@ -136,15 +136,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -243,10 +243,10 @@
     "message": "Bumili"
   },
   "buyWithWyre": {
-    "message": "Bumili ng ETH gamit ang Wyre"
+    "message": "Bumili ng UBQ gamit ang Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Binibigyang-daan ka ng Wyre na gumamit ng debit card para mag-deposit ng ETH sa mismong Sparrow account mo."
+    "message": "Binibigyang-daan ka ng Wyre na gumamit ng debit card para mag-deposit ng UBQ sa mismong Sparrow account mo."
   },
   "bytes": {
     "message": "Bytes"
@@ -374,7 +374,7 @@
     "message": "Kumokonekta sa Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Kumokonekta sa Ethereum Mainnet"
+    "message": "Kumokonekta sa Ubiq Mainnet"
   },
   "connectingToRinkeby": {
     "message": "Kumokonekta sa Rinkeby Test Network"
@@ -610,7 +610,7 @@
     "description": "$1 is the return value of eth_chainId from an RPC endpoint"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Hindi nahanap ang ENS name sa kasalukuyang network. Subukang lumipat sa Ethereum Mainnet."
+    "message": "Hindi nahanap ang ENS name sa kasalukuyang network. Subukang lumipat sa Ubiq Mainnet."
   },
   "ensRegistrationError": {
     "message": "Nagka-error sa pag-register ng ENS name"
@@ -778,11 +778,11 @@
     "message": "Pangkalahatan"
   },
   "getEther": {
-    "message": "Kunin ang Ether"
+    "message": "Kunin ang UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Kunin ang Ether mula sa isang faucet sa halagang $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Magsimula"
@@ -894,7 +894,7 @@
     "message": "Hindi valid ang address ng tatanggap"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Hindi ETH network, itakda sa maliliit na letra"
+    "message": "Hindi UBQ network, itakda sa maliliit na letra"
   },
   "invalidBlockExplorerURL": {
     "message": "Invalid na URL ng Block Explorer"
@@ -969,7 +969,7 @@
     "message": "Ledger Live App"
   },
   "ledgerLocked": {
-    "message": "Hindi makakonekta sa Ledger device. Pakitiyak na naka-unlock ang iyong device at nakabukas ang Ethereum app."
+    "message": "Hindi makakonekta sa Ledger device. Pakitiyak na naka-unlock ang iyong device at nakabukas ang Ubiq app."
   },
   "ledgerTimeout": {
     "message": "Masyadong natatagalan ang Ledger Live para tumugon o nakakaranas ito ng timeout sa koneksyon. Tiyaking nakabukas ang Ledger Live app at naka-unlock ang iyong device."
@@ -1029,7 +1029,7 @@
     "message": "Makikita sa button ng status ng koneksyon kung nakakonekta ang website na binibisita mo sa kasalukuyan mong napiling account."
   },
   "metamaskDescription": {
-    "message": "Ikinokonekta ka sa Ethereum at sa Decentralized Web."
+    "message": "Ikinokonekta ka sa Ubiq at sa Decentralized Web."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "Kasalukuyang minementina ang Sparrow Swaps. Bumalik sa ibang pagkakataon."
@@ -1066,7 +1066,7 @@
     "message": "Tulungan Kaming Mapahusay ang MetaMask"
   },
   "metametricsOptInDescription": {
-    "message": "Gustong kunin ng Sparrow ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ethereum ecosystem."
+    "message": "Gustong kunin ng Sparrow ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ubiq ecosystem."
   },
   "mismatchedChain": {
     "message": "Ang mga detalye ng network para sa chain ID na ito ay hindi tumutugma sa aming mga record. Inirerekomenda naming $1 ka bago magpatuloy.",
@@ -1731,7 +1731,7 @@
     "message": "I-plug in ang Ledger wallet"
   },
   "step2LedgerWalletMsg": {
-    "message": "Direktang ikonekta ang iyong wallet sa computer mo.  I-unlock ang iyong Ledger at buksan ang Ethereum app. Para sa higit pang impormasyon tungkol sa paggamit ng iyong hardware wallet device, $1.",
+    "message": "Direktang ikonekta ang iyong wallet sa computer mo.  I-unlock ang iyong Ledger at buksan ang Ubiq app. Para sa higit pang impormasyon tungkol sa paggamit ng iyong hardware wallet device, $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -1784,7 +1784,7 @@
     "message": "Kumpirmahin ang iyong hardware wallet"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "Sa Ethereum app sa iyong Ledger, pumunta sa \"Mga Setting\" at payagan ang data ng kontrata. Pagkatapos ay subukan ulit ang iyong pag-swap."
+    "message": "Sa Ubiq app sa iyong Ledger, pumunta sa \"Mga Setting\" at payagan ang data ng kontrata. Pagkatapos ay subukan ulit ang iyong pag-swap."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Hindi naka-enable sa iyong Ledger ang data ng kontrata"

@@ -25,15 +25,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -79,7 +79,7 @@
     "message": "เชื่อมต่อกับ $1"
   },
   "connectingToMainnet": {
-    "message": "เชื่อมต่อกับเครือข่าย Ethereum หลัก"
+    "message": "เชื่อมต่อกับเครือข่าย Ubiq หลัก"
   },
   "connectingToRopsten": {
     "message": "เชื่อมต่อกับเครือข่ายทดสอบ Ropsten"
@@ -202,7 +202,7 @@
   },
   "getEtherFromFaucet": {
     "message": "รับอีเธอร์ที่ปล่อยจาก $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "here": {
     "message": "ที่นี่",
@@ -241,7 +241,7 @@
     "message": "แอดแดรสผู้รับไม่ถูกต้อง"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "ไม่ใช่เครือข่าย ETH ตั้งเป็นตัวพิมพ์เล็ก"
+    "message": "ไม่ใช่เครือข่าย UBQ ตั้งเป็นตัวพิมพ์เล็ก"
   },
   "invalidBlockExplorerURL": {
     "message": "Block Explorer URI ไม่ถูกต้อง"

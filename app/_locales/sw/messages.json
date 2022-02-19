@@ -63,19 +63,19 @@
     "message": "Kiasi"
   },
   "appDescription": {
-    "message": "Waleti ya Ethereum kwenye Kivinjari chako",
+    "message": "Waleti ya Ubiq kwenye Kivinjari chako",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -140,10 +140,10 @@
     "message": "Kivinjari chaku hakiwezeshwi..."
   },
   "buyWithWyre": {
-    "message": "Nunua ETH kwa kutumia Wyre"
+    "message": "Nunua UBQ kwa kutumia Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre inakuwezesha kutumia kadi ya benki kuweka ETH moja kwa moja kwenye akaunti yako ya MetaMask."
+    "message": "Wyre inakuwezesha kutumia kadi ya benki kuweka UBQ moja kwa moja kwenye akaunti yako ya MetaMask."
   },
   "cancel": {
     "message": "Ghairi"
@@ -402,11 +402,11 @@
     "message": "Jumla"
   },
   "getEther": {
-    "message": "Pata Ether"
+    "message": "Pata UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Pata Ether kutoka kwenye mfereji $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Anza"
@@ -542,7 +542,7 @@
     "message": "Ujumbe"
   },
   "metamaskDescription": {
-    "message": "Kukuunganisha kwenye Ethereum na Wavutiu Uliotawanywa."
+    "message": "Kukuunganisha kwenye Ubiq na Wavutiu Uliotawanywa."
   },
   "metamaskVersion": {
     "message": "Toleo la MetaMask"

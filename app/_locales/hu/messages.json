@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -203,7 +203,7 @@
     "message": "Csatlakozás a Kovan teszthálózathoz"
   },
   "connectingToMainnet": {
-    "message": "Csatlakozás a fő Ethereum hálózathoz"
+    "message": "Csatlakozás a fő Ubiq hálózathoz"
   },
   "connectingToRinkeby": {
     "message": "Kapcsolódás a Rinkeby Teszthálózathoz"
@@ -335,7 +335,7 @@
     "message": "Bővebb információk."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS név nem található a jelenlegi hálózaton. Próbálj váltani Ethereum főhálózatra."
+    "message": "ENS név nem található a jelenlegi hálózaton. Próbálj váltani Ubiq főhálózatra."
   },
   "ensRegistrationError": {
     "message": "Hiba történt az ENS név regisztrációjakor"
@@ -408,11 +408,11 @@
     "message": "Általános"
   },
   "getEther": {
-    "message": "Ether beszerzése"
+    "message": "UBQ beszerzése"
   },
   "getEtherFromFaucet": {
     "message": "Szerezzen Ethert pénzcsapból a(z) $1-ért",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Első lépések"
@@ -490,7 +490,7 @@
     "message": "A címzett címe érvénytelen "
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Nem ETH hálózat, állítsa kisbetűre"
+    "message": "Nem UBQ hálózat, állítsa kisbetűre"
   },
   "invalidBlockExplorerURL": {
     "message": "Helytelen Block Explorer URL"
@@ -542,7 +542,7 @@
     "message": "Kilépés"
   },
   "mainnet": {
-    "message": "Fő Ethereum hálózat"
+    "message": "Fő Ubiq hálózat"
   },
   "max": {
     "message": "Maximum"

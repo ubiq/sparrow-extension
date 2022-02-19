@@ -64,15 +64,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -206,7 +206,7 @@
     "message": "連線到 Kovan 測試網路"
   },
   "connectingToMainnet": {
-    "message": "連線到主 Ethereum 網路"
+    "message": "連線到主 Ubiq 網路"
   },
   "connectingToRinkeby": {
     "message": "連線到 Rinkeby 測試網路"
@@ -416,7 +416,7 @@
   },
   "getEtherFromFaucet": {
     "message": "從水管取得 $1 以太幣。",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "開始使用"
@@ -494,7 +494,7 @@
     "message": "接收位址錯誤"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "非 ETH 網路，設定至小寫"
+    "message": "非 UBQ 網路，設定至小寫"
   },
   "invalidBlockExplorerURL": {
     "message": "無效的區塊鏈瀏覽器 URL"

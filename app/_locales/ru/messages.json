@@ -224,19 +224,19 @@
     "message": "Сумма"
   },
   "appDescription": {
-    "message": "Кошелек Ethereum в вашем браузере",
+    "message": "Кошелек Ubiq в вашем браузере",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Купить"
   },
   "buyWithWyre": {
-    "message": "Купить ETH с помощью Wyre"
+    "message": "Купить UBQ с помощью Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre позволяет использовать дебетовую карту для внесения ETH прямо на ваш счет MetaMask."
+    "message": "Wyre позволяет использовать дебетовую карту для внесения UBQ прямо на ваш счет MetaMask."
   },
   "bytes": {
     "message": "Байты"
@@ -525,7 +525,7 @@
     "message": "Подключение к тестовой сети Kovan..."
   },
   "connectingToMainnet": {
-    "message": "Подключение к сети Ethereum Mainnet..."
+    "message": "Подключение к сети Ubiq Mainnet..."
   },
   "connectingToRinkeby": {
     "message": "Подключение к тестовой сети Rinkeby..."
@@ -941,7 +941,7 @@
     "message": "Недопустимый символ для ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Имя ENS не найдено в текущей сети. Попробуйте переключиться на сеть Ethereum Mainnet."
+    "message": "Имя ENS не найдено в текущей сети. Попробуйте переключиться на сеть Ubiq Mainnet."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Сеть не поддерживает ENS"
@@ -1190,11 +1190,11 @@
     "message": "Общее"
   },
   "getEther": {
-    "message": "Получить Ether"
+    "message": "Получить UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Получите Ether из крана для $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Начало работы"
@@ -1476,7 +1476,7 @@
     "message": "приложение Ledger Live"
   },
   "ledgerLocked": {
-    "message": "Не удалось подключиться к леджеру. Убедитесь, что устройство разблокировано и приложение Ethereum открыто."
+    "message": "Не удалось подключиться к леджеру. Убедитесь, что устройство разблокировано и приложение Ubiq открыто."
   },
   "ledgerTimeout": {
     "message": "Ledger Live слишком долго не отвечает, или время ожидания подключения истекло. Убедитесь, что приложение Ledger Live открыто и устройство разблокировано."
@@ -1532,7 +1532,7 @@
     "message": "Последующие транзакции будут помещены в очередь после этой. Последний раз эту цену видели некоторое время назад."
   },
   "mainnet": {
-    "message": "Сеть Ethereum Mainnet"
+    "message": "Сеть Ubiq Mainnet"
   },
   "makeAnotherSwap": {
     "message": "Создать новый обмен"
@@ -1579,7 +1579,7 @@
     "message": "Кнопка статуса подключения показывает, подключен ли посещаемый вами веб-сайт, к выбранному вами в настоящее время счету."
   },
   "metamaskDescription": {
-    "message": "Подключение вас к Ethereum и децентрализованной сети..."
+    "message": "Подключение вас к Ubiq и децентрализованной сети..."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "Сервис обмена Sparrow на техобслуживании. Зайдите позже."
@@ -1905,7 +1905,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Перед выполнением транзакций в сети Ethereum Mainnet убедитесь, что в вашем леджере установлена последняя версия прошивки.",
+    "message": "Перед выполнением транзакций в сети Ubiq Mainnet убедитесь, что в вашем леджере установлена последняя версия прошивки.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Отображение входящих транзакций в вашем кошельке зависит от связи с $1. Ubiqscan получит доступ к вашему адресу Ethereum и вашему IP-адресу. Посмотрите $2.",
+    "message": "Отображение входящих транзакций в вашем кошельке зависит от связи с $1. Ubiqscan получит доступ к вашему адресу Ubiq и вашему IP-адресу. Посмотрите $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "Отправка $1...",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Задать дополнительные настройки конфиденциальности"
@@ -2669,7 +2669,7 @@
     "message": "Подтвердите с помощью аппаратного кошелька"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "В приложении Ethereum на леджере перейдите в раздел «Настройки» и разрешите использование данных о контракте. Затем попробуйте повторить обмен."
+    "message": "В приложении Ubiq на леджере перейдите в раздел «Настройки» и разрешите использование данных о контракте. Затем попробуйте повторить обмен."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "На леджере не включены данные о контракте"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Плата за газ переводится майнерам, которые обрабатывают транзакции в сети $1. Sparrow не получает прибыли от платы за газ.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Сумма проскальзывания очень велика."
@@ -3034,7 +3034,7 @@
     "message": "Укажите число десятичных знаков токена."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Новинка! Улучшенное обнаружение токенов доступно в сети Ethereum Mainnet в качестве экспериментальной функции. $1"
+    "message": "Новинка! Улучшенное обнаружение токенов доступно в сети Ubiq Mainnet в качестве экспериментальной функции. $1"
   },
   "tokenSymbol": {
     "message": "Символ токена"

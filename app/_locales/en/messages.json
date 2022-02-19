@@ -401,10 +401,10 @@
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyWithWyre": {
-    "message": "Buy ETH with Wyre"
+    "message": "Buy UBQ with Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lets you use a debit card to deposit ETH right in to your Sparrow account."
+    "message": "Wyre lets you use a debit card to deposit UBQ right in to your Sparrow account."
   },
   "bytes": {
     "message": "Bytes"
@@ -1041,7 +1041,7 @@
     "message": "Illegal Character for ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS name not found on the current network. Try switching to Ethereum Mainnet."
+    "message": "ENS name not found on the current network. Try switching to Ubiq Mainnet."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Network does not support ENS"
@@ -1319,11 +1319,11 @@
     "message": "General"
   },
   "getEther": {
-    "message": "Get Ether"
+    "message": "Get UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Get Ether from a faucet for the $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Get Started"
@@ -1494,7 +1494,7 @@
     "message": "Recipient address is invalid"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Not ETH network, set to lowercase"
+    "message": "Not UBQ network, set to lowercase"
   },
   "invalidAssetType": {
     "message": "This asset is an NFT and needs to be re-added on the Import NFTs page found under the NFTs tab"
@@ -2657,7 +2657,7 @@
   },
   "sendingNativeAsset": {
     "message": "Sending $1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Set advanced privacy settings"

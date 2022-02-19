@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Vaš pregledač nije podržan..."
   },
   "buyWithWyre": {
-    "message": "Kupite ETH preko servisa Wyre"
+    "message": "Kupite UBQ preko servisa Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vam dozvoljava da koristite kreditnu karticu kako biste deponovali ETH pravo na vaš Sparrow nalog."
+    "message": "Wyre vam dozvoljava da koristite kreditnu karticu kako biste deponovali UBQ pravo na vaš Sparrow nalog."
   },
   "bytes": {
     "message": "Bajtovi"
@@ -200,7 +200,7 @@
     "message": "Povezuje se na test mrežu Kovan"
   },
   "connectingToMainnet": {
-    "message": "Povezuje se na glavnu Ethereum mrežu"
+    "message": "Povezuje se na glavnu Ubiq mrežu"
   },
   "connectingToRinkeby": {
     "message": "Poezivanje na Rinkeby Test mrežu"
@@ -332,7 +332,7 @@
     "message": "Saznajte više."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS ime nije nađeno na trenutnoj mreži. Probajte da se prebacite na glavnu Ethereum mrežu."
+    "message": "ENS ime nije nađeno na trenutnoj mreži. Probajte da se prebacite na glavnu Ubiq mrežu."
   },
   "ensRegistrationError": {
     "message": "Greška u registraciji ENS imena."
@@ -409,11 +409,11 @@
     "message": "Opšte"
   },
   "getEther": {
-    "message": "Nabavite Ether"
+    "message": "Nabavite UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Preuzmite Ether sa slavine za $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Започнимо"
@@ -491,7 +491,7 @@
     "message": "Adresa primaoca nije važeća"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Nije ETH mreža, podešeno na mala slova"
+    "message": "Nije UBQ mreža, podešeno na mala slova"
   },
   "invalidBlockExplorerURL": {
     "message": "Nevažeći Block Explorer URL"
@@ -543,7 +543,7 @@
     "message": "Odjavi se"
   },
   "mainnet": {
-    "message": "Glavna Ethereum mreža"
+    "message": "Glavna Ubiq mreža"
   },
   "max": {
     "message": "Maksimum"
@@ -555,7 +555,7 @@
     "message": "Poruka"
   },
   "metamaskDescription": {
-    "message": "Povezivanje na Ethereum i decentralizovani veb."
+    "message": "Povezivanje na Ubiq i decentralizovani veb."
   },
   "metamaskVersion": {
     "message": "MetaMask verzija"

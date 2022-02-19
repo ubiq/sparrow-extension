@@ -224,19 +224,19 @@
     "message": "Montant"
   },
   "appDescription": {
-    "message": "Extension Ethereum pour navigateur",
+    "message": "Extension Ubiq pour navigateur",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Acheter"
   },
   "buyWithWyre": {
-    "message": "Acheter des ETH avec Wyre"
+    "message": "Acheter des UBQ avec Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vous permet d’utiliser une carte de crédit pour déposer des ETH directement sur votre compte MetaMask."
+    "message": "Wyre vous permet d’utiliser une carte de crédit pour déposer des UBQ directement sur votre compte MetaMask."
   },
   "bytes": {
     "message": "Octets"
@@ -941,7 +941,7 @@
     "message": "Caractère invalide pour l’ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nom ENS non trouvé sur le réseau actuel. Essayez de passer au réseau Ethereum principal."
+    "message": "Nom ENS non trouvé sur le réseau actuel. Essayez de passer au réseau Ubiq principal."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Le réseau ne prend pas en charge l’ENS"
@@ -1190,11 +1190,11 @@
     "message": "Général"
   },
   "getEther": {
-    "message": "Obtenir des Ether"
+    "message": "Obtenir des UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Obtenir de l’Ether d’une faucet pour $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Démarrer"
@@ -1476,7 +1476,7 @@
     "message": "Appli Ledger Live"
   },
   "ledgerLocked": {
-    "message": "Impossible de se connecter au dispositif Ledger. Veuillez vous assurer que votre périphérique est déverrouillé et que l’application Ethereum est ouverte."
+    "message": "Impossible de se connecter au dispositif Ledger. Veuillez vous assurer que votre périphérique est déverrouillé et que l’application Ubiq est ouverte."
   },
   "ledgerTimeout": {
     "message": "Ledger Live met trop de temps à répondre ou la connexion est interrompue. Assurez-vous que l’application Ledger Live est bien ouverte et que votre appareil est déverrouillé."
@@ -1905,7 +1905,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Pour effectuer des transactions sur Ethereum Mainnet, assurez-vous que votre appareil Ledger dispose du dernier micrologiciel.",
+    "message": "Pour effectuer des transactions sur Ubiq Mainnet, assurez-vous que votre appareil Ledger dispose du dernier micrologiciel.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "L’affichage des transactions entrantes dans votre portefeuille repose sur la communication avec $1. Ubiqscan aura accès à votre adresse Ethereum et à votre adresse IP. Voir $2.",
+    "message": "L’affichage des transactions entrantes dans votre portefeuille repose sur la communication avec $1. Ubiqscan aura accès à votre adresse Ubiq et à votre adresse IP. Voir $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "Envoi de $1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Définir des paramètres de confidentialité avancés"
@@ -2669,7 +2669,7 @@
     "message": "Confirmez avec votre portefeuille matériel"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "Dans l’application Ethereum de votre Ledger, allez dans « Paramètres » et autorisez les données de contrat. Ensuite, retentez votre swap."
+    "message": "Dans l’application Ubiq de votre Ledger, allez dans « Paramètres » et autorisez les données de contrat. Ensuite, retentez votre swap."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Les données de contrat ne sont pas activées sur votre Ledger"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Les frais de carburant sont payés aux mineurs de cryptomonnaies qui traitent les transactions sur le réseau $1. Sparrow ne tire aucun profit des frais de carburant.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Le montant du glissement est très élevé."

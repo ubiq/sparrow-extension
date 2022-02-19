@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Din webbläsare stöds inte..."
   },
   "buyWithWyre": {
-    "message": "Köp ETH med Wyre"
+    "message": "Köp UBQ med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre låter dig använda ett kreditkort för att sätta in ETH direkt på ditt MetaMask-konto."
+    "message": "Wyre låter dig använda ett kreditkort för att sätta in UBQ direkt på ditt MetaMask-konto."
   },
   "cancel": {
     "message": "Avbryt"
@@ -329,7 +329,7 @@
     "message": "Lär dig mer."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-namnet hittades inte i det aktuella nätverket. Prova att byta till Ethereum Mainnet."
+    "message": "ENS-namnet hittades inte i det aktuella nätverket. Prova att byta till Ubiq Mainnet."
   },
   "ensRegistrationError": {
     "message": "Fel i ENS-namnregistrering"
@@ -402,11 +402,11 @@
     "message": "Allmänt"
   },
   "getEther": {
-    "message": "Skaffa Ether"
+    "message": "Skaffa UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Få Ether från en kran för $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Komma igång"
@@ -548,7 +548,7 @@
     "message": "Meddelande"
   },
   "metamaskDescription": {
-    "message": "Ansluter dig mot Ethereum och den decentraliserade webben."
+    "message": "Ansluter dig mot Ubiq och den decentraliserade webben."
   },
   "metamaskVersion": {
     "message": "MetaMask-version"

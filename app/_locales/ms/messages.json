@@ -63,19 +63,19 @@
     "message": "Jumlah"
   },
   "appDescription": {
-    "message": "Dompat Ethereum di Pelayar anda",
+    "message": "Dompat Ubiq di Pelayar anda",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Pelayar anda tidak disokong..."
   },
   "buyWithWyre": {
-    "message": "Beli ETH dengan Wyre"
+    "message": "Beli UBQ dengan Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre membolehkan anda menggunakan kad kredit untuk mendeposit ETH secara terus ke dalam akaun Sparrow anda."
+    "message": "Wyre membolehkan anda menggunakan kad kredit untuk mendeposit UBQ secara terus ke dalam akaun Sparrow anda."
   },
   "bytes": {
     "message": "Bait"
@@ -203,7 +203,7 @@
     "message": "Menyambungkan kepada Rangkaian Ujian Kovan"
   },
   "connectingToMainnet": {
-    "message": "Menyambung kepada Rangkaian Ethereum Utama"
+    "message": "Menyambung kepada Rangkaian Ubiq Utama"
   },
   "connectingToRinkeby": {
     "message": "Menyambung kepada Rangkaian Ujian Rinkeby"
@@ -332,7 +332,7 @@
     "message": "Ketahui lebih lanjut."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nama ENS tidak ditemui di rangkaian semasa. Cuba beralih kepada Rangkaian Ethereum Utama."
+    "message": "Nama ENS tidak ditemui di rangkaian semasa. Cuba beralih kepada Rangkaian Ubiq Utama."
   },
   "ensRegistrationError": {
     "message": "Ralat dalam pendaftaran nama ENS"
@@ -405,11 +405,11 @@
     "message": "Am"
   },
   "getEther": {
-    "message": "Dapatkan Ether"
+    "message": "Dapatkan UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Dapatkan Ether daripada pili untuk $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Bermula"
@@ -535,7 +535,7 @@
     "message": "Log keluar"
   },
   "mainnet": {
-    "message": "Rangkaian Ethereum Utama"
+    "message": "Rangkaian Ubiq Utama"
   },
   "max": {
     "message": "Maks"
@@ -547,7 +547,7 @@
     "message": "Mesej"
   },
   "metamaskDescription": {
-    "message": "Menyambungkan anda kepada Ethereum dan Web Ternyahpusat."
+    "message": "Menyambungkan anda kepada Ubiq dan Web Ternyahpusat."
   },
   "metamaskVersion": {
     "message": "Versi MetaMask"
@@ -563,7 +563,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Tidak boleh hantar amaun ETH negatif."
+    "message": "Tidak boleh hantar amaun UBQ negatif."
   },
   "networkName": {
     "message": "Nama Rangkaian"

@@ -224,19 +224,19 @@
     "message": "Số tiền"
   },
   "appDescription": {
-    "message": "Ví Ethereum trên trình duyệt của bạn",
+    "message": "Ví Ubiq trên trình duyệt của bạn",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Mua"
   },
   "buyWithWyre": {
-    "message": "Mua ETH qua Wyre"
+    "message": "Mua UBQ qua Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre cho phép bạn dùng thẻ ghi nợ để nạp ETH trực tiếp vào tài khoản Sparrow của mình."
+    "message": "Wyre cho phép bạn dùng thẻ ghi nợ để nạp UBQ trực tiếp vào tài khoản Sparrow của mình."
   },
   "bytes": {
     "message": "Byte"
@@ -1190,11 +1190,11 @@
     "message": "Chung"
   },
   "getEther": {
-    "message": "Nhận Ether"
+    "message": "Nhận UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Nhận Ether từ một vòi dành cho $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Bắt đầu"
@@ -1579,7 +1579,7 @@
     "message": "Nút trạng thái kết nối sẽ hiển thị nếu trang web mà bạn đang truy cập được kết nối với tài khoản bạn đang chọn."
   },
   "metamaskDescription": {
-    "message": "Kết nối bạn với Ethereum và trang Web phi tập trung."
+    "message": "Kết nối bạn với Ubiq và trang Web phi tập trung."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "Tính năng Hoán đổi trên Sparrow đang được bảo trì. Vui lòng kiểm tra lại sau."
@@ -1680,7 +1680,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Không thể gửi số lượng ETH âm."
+    "message": "Không thể gửi số lượng UBQ âm."
   },
   "networkDetails": {
     "message": "Thông tin về mạng"
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Việc hiển thị các giao dịch đến trong ví của bạn tùy thuộc vào quá trình truyền tin với $1. Ubiqscan sẽ có quyền truy cập vào địa chỉ Ethereum và địa chỉ IP của bạn. Xem $2.",
+    "message": "Việc hiển thị các giao dịch đến trong ví của bạn tùy thuộc vào quá trình truyền tin với $1. Ubiqscan sẽ có quyền truy cập vào địa chỉ Ubiq và địa chỉ IP của bạn. Xem $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "Gửi $1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Thiết lập cài đặt quyền riêng tư nâng cao"
@@ -2669,7 +2669,7 @@
     "message": "Xác nhận ví cứng của bạn"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "Trong ứng dụng Ethereum trên Ledger của bạn, hãy chuyển đến phần \"Cài đặt\" và cho phép dữ liệu hợp đồng. Sau đó, thử hoán đổi lại."
+    "message": "Trong ứng dụng Ubiq trên Ledger của bạn, hãy chuyển đến phần \"Cài đặt\" và cho phép dữ liệu hợp đồng. Sau đó, thử hoán đổi lại."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Chưa bật dữ liệu hợp đồng trên Ledger của bạn"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Phí gas được trả cho thợ đào tiền điện tử, họ là những người xử lý các giao dịch trên mạng $1. Sparrow không thu lợi nhuận từ phí gas.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Số tiền trượt giá rất cao."
@@ -3034,7 +3034,7 @@
     "message": "Cần có số thập phân của token."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Mới! Tính năng phát hiện token được cải tiến hiện đã có sẵn trên Mạng chính thức của Ethereum dưới dạng một tính năng thử nghiệm. $1"
+    "message": "Mới! Tính năng phát hiện token được cải tiến hiện đã có sẵn trên Mạng chính thức của Ubiq dưới dạng một tính năng thử nghiệm. $1"
   },
   "tokenSymbol": {
     "message": "Ký hiệu token"

@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Din browser er ikke understøttet..."
   },
   "buyWithWyre": {
-    "message": "Køb ETH med Wyre"
+    "message": "Køb UBQ med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lader dig bruge et kreditkort til at indbetale ETH på din MetaMask-konto."
+    "message": "Wyre lader dig bruge et kreditkort til at indbetale UBQ på din MetaMask-konto."
   },
   "bytes": {
     "message": "Byte"
@@ -203,7 +203,7 @@
     "message": "Forbinder til Kovan Testnetværk"
   },
   "connectingToMainnet": {
-    "message": "Forbinder til dit Primære Ethereum Netværk"
+    "message": "Forbinder til dit Primære Ubiq Netværk"
   },
   "connectingToRinkeby": {
     "message": "Forbinder til Rinkeby-testnetværk"
@@ -408,11 +408,11 @@
     "message": "Generelt"
   },
   "getEther": {
-    "message": "Hent Ether"
+    "message": "Hent UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Hent Ether fra en hane til $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Kom godt i gang"
@@ -551,7 +551,7 @@
     "message": "Besked"
   },
   "metamaskDescription": {
-    "message": "Som forbinder dig til Ethereum og de decentraliserede internet."
+    "message": "Som forbinder dig til Ubiq og de decentraliserede internet."
   },
   "mustSelectOne": {
     "message": "Skal vælge mindst 1 token."

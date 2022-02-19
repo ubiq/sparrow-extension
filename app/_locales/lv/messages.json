@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -143,10 +143,10 @@
     "message": "Jūsu pārlūkprogramma netiek atbalstīta..."
   },
   "buyWithWyre": {
-    "message": "Pirkt ETH ar Wyre"
+    "message": "Pirkt UBQ ar Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ļauj noguldīt ETH tieši jūsu Sparrow kontā, izmantojot kredītkarti."
+    "message": "Wyre ļauj noguldīt UBQ tieši jūsu Sparrow kontā, izmantojot kredītkarti."
   },
   "bytes": {
     "message": "Baiti"
@@ -203,7 +203,7 @@
     "message": "Savienojas ar Kovan testa tīklu"
   },
   "connectingToMainnet": {
-    "message": "Savienojas ar galveno Ethereum tīklu"
+    "message": "Savienojas ar galveno Ubiq tīklu"
   },
   "connectingToRinkeby": {
     "message": "Pieslēdzas Rinkeby testa tīklam"
@@ -335,7 +335,7 @@
     "message": "Uzzināt vairāk."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Šajā tīklā ENS nosaukums nav atrasts. Pamēģiniet pārslēgties uz galveno Ethereum tīklu."
+    "message": "Šajā tīklā ENS nosaukums nav atrasts. Pamēģiniet pārslēgties uz galveno Ubiq tīklu."
   },
   "ensRegistrationError": {
     "message": "Kļūda ENS vārda reģistrācijā"
@@ -408,11 +408,11 @@
     "message": "Vispārīgi"
   },
   "getEther": {
-    "message": "Saņemt Ether"
+    "message": "Saņemt UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Vai vēlaties $1 iegūt Ether no krāna?",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Sākt darbu"
@@ -490,7 +490,7 @@
     "message": "Nederīga saņēmēja adrese"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Nav ETH tīkls, iestatīti mazie burti"
+    "message": "Nav UBQ tīkls, iestatīti mazie burti"
   },
   "invalidBlockExplorerURL": {
     "message": "Nederīgs Block Explorer URL"
@@ -545,7 +545,7 @@
     "message": "Izrakstīties"
   },
   "mainnet": {
-    "message": "Galvenais Ethereum tīkls"
+    "message": "Galvenais Ubiq tīkls"
   },
   "max": {
     "message": "Maks."
@@ -560,7 +560,7 @@
     "message": "Ziņojums"
   },
   "metamaskDescription": {
-    "message": "Veido savienojumu ar Ethereum un decentralizēto tīmekli."
+    "message": "Veido savienojumu ar Ubiq un decentralizēto tīmekli."
   },
   "metamaskVersion": {
     "message": "MetaMask versija"
@@ -576,7 +576,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Nav iespējams nosūtīt negatīvu ETH summu."
+    "message": "Nav iespējams nosūtīt negatīvu UBQ summu."
   },
   "networkName": {
     "message": "Tīkla nosaukums"

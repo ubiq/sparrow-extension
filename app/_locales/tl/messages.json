@@ -228,15 +228,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,10 +378,10 @@
     "message": "Bilhin"
   },
   "buyWithWyre": {
-    "message": "Bumili ng ETH gamit ang Wyre"
+    "message": "Bumili ng UBQ gamit ang Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Nagbibigay-daan sa iyo ang Wyre na gumamit ng debit card para mag-deposit ng ETH sa mismong Sparrow account mo."
+    "message": "Nagbibigay-daan sa iyo ang Wyre na gumamit ng debit card para mag-deposit ng UBQ sa mismong Sparrow account mo."
   },
   "bytes": {
     "message": "Bytes"
@@ -525,7 +525,7 @@
     "message": "Kumokonekta sa Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Kumokonekta sa Ethereum Mainnet"
+    "message": "Kumokonekta sa Ubiq Mainnet"
   },
   "connectingToRinkeby": {
     "message": "Kumokonekta sa Rinkeby Test Network"
@@ -941,7 +941,7 @@
     "message": "Mga ilegal na Character para sa ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Hindi nahanapa ang ENS name sa kasalukuyang network. Subukang lumipat sa Ethereum Mainnet."
+    "message": "Hindi nahanapa ang ENS name sa kasalukuyang network. Subukang lumipat sa Ubiq Mainnet."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Hindi sinusuportahan ng network ang ENS"
@@ -1190,11 +1190,11 @@
     "message": "Pangkalahatan"
   },
   "getEther": {
-    "message": "Kunin ang Ether"
+    "message": "Kunin ang UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Kunin ang Ether mula sa isang faucet sa halagang $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Magsimula"
@@ -1347,7 +1347,7 @@
     "message": "Hindi valid ang address ng tatanggap"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Hindi ETH network, itakda sa maliliit na letra"
+    "message": "Hindi UBQ network, itakda sa maliliit na letra"
   },
   "invalidBlockExplorerURL": {
     "message": "Hindi Valid ang URL ng Block Explorer"
@@ -1456,7 +1456,7 @@
     "message": "Paganahin ang Gamitin ang Ledger Live sa ilalim ng Settings > Advanced"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "I-plug in ang iyong Ledger device at piliin ang Ethereum app"
+    "message": "I-plug in ang iyong Ledger device at piliin ang Ubiq app"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Buksan at i-unlock ang Ledger Live App"
@@ -1579,7 +1579,7 @@
     "message": "Makikita sa button ng status ng koneksyon kung nakakonekta ang website na binibisita mo sa kasalukuyan mong napiling account."
   },
   "metamaskDescription": {
-    "message": "Ikinokonekta ka sa Ethereum at sa Decentralized Web."
+    "message": "Ikinokonekta ka sa Ubiq at sa Decentralized Web."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "Kasalukuyang minementina ang Sparrow Swaps. Bumalik sa ibang pagkakataon."
@@ -1628,7 +1628,7 @@
     "message": "Tulungan Kaming Mapahusay ang MetaMask"
   },
   "metametricsOptInDescription": {
-    "message": "Gustong kunin ng Sparrow ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ethereum ecosystem."
+    "message": "Gustong kunin ng Sparrow ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ubiq ecosystem."
   },
   "metametricsOptInDescription2": {
     "message": "Nais naming mangalap ng pangunahing data ng paggamit upang mapabuti ang kakayahang magamit ang aming produkto. Ang mga sukatan na ito ay..."
@@ -1905,7 +1905,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Para makumpleto ang mga transaksyon sa Ethereum Mainnet, siguruhin na ang iyong Ledger device ay may pinakabagong firmware.",
+    "message": "Para makumpleto ang mga transaksyon sa Ubiq Mainnet, siguruhin na ang iyong Ledger device ay may pinakabagong firmware.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -1999,7 +1999,7 @@
     "description": "Return the user to the site that initiated onboarding"
   },
   "onboardingShowIncomingTransactionsDescription": {
-    "message": "Ang pagpapakita ng mga papasok na transaksyon sa iyong wallet ay umaasa sa pakikipag-ugnayan sa $1. Magkakaroon ng access ang Ubiqscan sa iyong Ethereum address at iyong IP address. Tingnan ang $2.",
+    "message": "Ang pagpapakita ng mga papasok na transaksyon sa iyong wallet ay umaasa sa pakikipag-ugnayan sa $1. Magkakaroon ng access ang Ubiqscan sa iyong Ubiq address at iyong IP address. Tingnan ang $2.",
     "description": "$1 is a clickable link with text defined by the 'etherscan' key. $2 is a clickable link with text defined by the 'privacyMsg' key."
   },
   "onboardingUsePhishingDetectionDescription": {
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "Nagpapadala ng $1",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Magtakda ng advanced privacy settings"
@@ -2612,7 +2612,7 @@
     "message": "I-plug sa Ledger wallet"
   },
   "step2LedgerWalletMsg": {
-    "message": "Direktang ikonekta ang iyong wallet sa iyong computer. I-unlock ang iyong Ledger at buksan ang Ethereum app. Para sa higit pa sa paggamit ng iyong hardware wallet device, $1.",
+    "message": "Direktang ikonekta ang iyong wallet sa iyong computer. I-unlock ang iyong Ledger at buksan ang Ubiq app. Para sa higit pa sa paggamit ng iyong hardware wallet device, $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -2669,7 +2669,7 @@
     "message": "Kumpirmahin gamit ang iyong hardware wallet"
   },
   "swapContractDataDisabledErrorDescription": {
-    "message": "Sa Ethereum app sa iyong Ledger, magpunta sa \"Settings\" at payagan ang contract data. Pagkatapos ay subukan muli ang iyong pag-swap."
+    "message": "Sa Ubiq app sa iyong Ledger, magpunta sa \"Settings\" at payagan ang contract data. Pagkatapos ay subukan muli ang iyong pag-swap."
   },
   "swapContractDataDisabledErrorTitle": {
     "message": "Ang data ng contract ay hindi pinagagana sa iyong Ledger"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang Sparrow ay hindi kumikita mula sa mga gas fee.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Napakataas ng halaga ng slippage."
@@ -3034,7 +3034,7 @@
     "message": "Kailangan ng token decimal."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Bago! Ang pinahusay na pagtukoy ng token ay magagamit sa Ethereum Mainnet bilang isang pang-eksperimentong feature. $1"
+    "message": "Bago! Ang pinahusay na pagtukoy ng token ay magagamit sa Ubiq Mainnet bilang isang pang-eksperimentong feature. $1"
   },
   "tokenSymbol": {
     "message": "Simbolo ng Token"

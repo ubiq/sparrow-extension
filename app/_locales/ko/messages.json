@@ -228,15 +228,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -378,7 +378,7 @@
     "message": "구매"
   },
   "buyWithWyre": {
-    "message": "Wyre로 ETH 구매"
+    "message": "Wyre로 UBQ 구매"
   },
   "buyWithWyreDescription": {
     "message": "Wyre를 사용하면 체크카드를 이용하여 ETH를 Sparrow 계정에 바로 예치할 수 있습니다."
@@ -1190,11 +1190,11 @@
     "message": "일반"
   },
   "getEther": {
-    "message": "Ether 얻기"
+    "message": "UBQ 얻기"
   },
   "getEtherFromFaucet": {
     "message": "$1용 포시트에서 Ether 얻기",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "시작하기"
@@ -1680,7 +1680,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "음수 ETH 양은 전송할 수 없습니다."
+    "message": "음수 UBQ 양은 전송할 수 없습니다."
   },
   "networkDetails": {
     "message": "네트워크 세부 정보"
@@ -2425,7 +2425,7 @@
   },
   "sendingNativeAsset": {
     "message": "$1 보내기",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "개인정보 설정 고급 지정"
@@ -2734,7 +2734,7 @@
   },
   "swapGasFeesSummary": {
     "message": "가스요금은 $1 네트워크에서 거래를 처리하는 암호화폐 채굴자에게 지급됩니다. MetaMask는 가스 요금으로 수익을 창출하지 않습니다.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "슬리패지 금액이 아주 큽니다."

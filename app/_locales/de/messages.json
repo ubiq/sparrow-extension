@@ -228,15 +228,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approvalAndAggregatorTxFeeCost": {
@@ -381,7 +381,7 @@
     "message": "ETH mit Wyre kaufen"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre ermöglicht Ihnen die Verwendung einer Kreditkarte zum direkten Einzahlen von ETH auf Ihr MetaMask-Konto."
+    "message": "Wyre ermöglicht Ihnen die Verwendung einer Kreditkarte zum direkten Einzahlen von UBQ auf Ihr MetaMask-Konto."
   },
   "bytes": {
     "message": "Bytes"
@@ -533,7 +533,7 @@
     "message": " Verbinde zum Kovan Testnetzwerk"
   },
   "connectingToMainnet": {
-    "message": "Verbinde zum Ethereum Mainnet"
+    "message": "Verbinde zum Ubiq Mainnet"
   },
   "connectingToRinkeby": {
     "message": " Verbinde zum Rinkeby Testnetzwerk"
@@ -951,7 +951,7 @@
     "message": "Unzulässiges Zeichen für ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-Name wurde im aktuellen Netzwerk nicht gefunden. Versuchen Sie, zum Ethereum Mainnet zu wechseln."
+    "message": "ENS-Name wurde im aktuellen Netzwerk nicht gefunden. Versuchen Sie, zum Ubiq Mainnet zu wechseln."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Netzwerk unterstützt kein ENS"
@@ -1200,11 +1200,11 @@
     "message": "Allgemein"
   },
   "getEther": {
-    "message": "Ether holen"
+    "message": "UBQ holen"
   },
   "getEtherFromFaucet": {
-    "message": "Ether für $1 vom Faucet holen",
-    "description": "Displays network name for Ether faucet"
+    "message": "UBQ für $1 vom Faucet holen",
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Erste Schritte"
@@ -1459,7 +1459,7 @@
     "message": "Nutzen Sie Ledger Live unter Einstellungen > Erweitert"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "Schließen Sie Ihr Ledger Gerät an und wählen Sie die Ethereum App aus"
+    "message": "Schließen Sie Ihr Ledger Gerät an und wählen Sie die Ubiq App aus"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Ledger Live App öffnen und entsperren"
@@ -1680,7 +1680,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Negative ETH Beträge können nicht versendet werden."
+    "message": "Negative UBQ Beträge können nicht versendet werden."
   },
   "networkDetails": {
     "message": "Netzwerkdetails"
@@ -1902,7 +1902,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Um Transaktionen auf Ethereum Mainnet abzuschließen, stellen Sie sicher, dass Ihr Ledger-Gerät die neueste Firmware hat.",
+    "message": "Um Transaktionen auf Ubiq Mainnet abzuschließen, stellen Sie sicher, dass Ihr Ledger-Gerät die neueste Firmware hat.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -2419,7 +2419,7 @@
   },
   "sendingNativeAsset": {
     "message": "$1 senden",
-    "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
+    "description": "$1 represents the native currency symbol for the current network (e.g. UBQ or BNB)"
   },
   "setAdvancedPrivacySettings": {
     "message": "Erweiterte Privatsphäre-Einstellungen festlegen"
@@ -2728,7 +2728,7 @@
   },
   "swapGasFeesSummary": {
     "message": "Gasgebühren werden an Krypto-Miner gezahlt, die Transaktionen im $1-Netzwerk verarbeiten. Sparrow profitiert nicht von den Gasgebühren.",
-    "description": "$1 is the selected network, e.g. Ethereum or BSC"
+    "description": "$1 is the selected network, e.g. Ubiq or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Der Slippage-Betrag ist sehr hoch."
@@ -3031,7 +3031,7 @@
     "message": "Token Dezimalstellen erforderlich."
   },
   "tokenDetectionAnnouncement": {
-    "message": "Neu! Verbesserte Token Erkennung ist im Ethereum Mainnet als experimentelle Funktion verfügbar. $1"
+    "message": "Neu! Verbesserte Token Erkennung ist im Ubiq Mainnet als experimentelle Funktion verfügbar. $1"
   },
   "tokenSymbol": {
     "message": "Tokensymbol"
@@ -3247,7 +3247,7 @@
     "message": "Phishing-Erkennung verwenden"
   },
   "usePhishingDetectionDescription": {
-    "message": "Zeigt eine Warnung für Phishing-Domänen, die Ethereum Benutzer ansprechen"
+    "message": "Zeigt eine Warnung für Phishing-Domänen, die Ubiq Benutzer ansprechen"
   },
   "useTokenDetection": {
     "message": "Token-Erkennung verwenden"

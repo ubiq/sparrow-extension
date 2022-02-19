@@ -57,19 +57,19 @@
     "message": "Halaga"
   },
   "appDescription": {
-    "message": "Isang Ethereum Wallet sa iyong Browser",
+    "message": "Isang Ubiq Wallet sa iyong Browser",
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -128,10 +128,10 @@
     "message": "Hindi sinusuportahan ang iyong Browser..."
   },
   "buyWithWyre": {
-    "message": "Bumili ng ETH gamit ang Wyre"
+    "message": "Bumili ng UBQ gamit ang Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Binibigyang-daan ka ng Wyre na gumamit ng credit card para magdeposito ng ETH nang direkta sa iyong Sparrow account."
+    "message": "Binibigyang-daan ka ng Wyre na gumamit ng credit card para magdeposito ng UBQ nang direkta sa iyong Sparrow account."
   },
   "cancel": {
     "message": "Kanselahin"
@@ -182,7 +182,7 @@
     "message": "Kumokonekta sa Kovan Test Network"
   },
   "connectingToMainnet": {
-    "message": "Kumokonekta sa Ethereum Mainnet"
+    "message": "Kumokonekta sa Ubiq Mainnet"
   },
   "connectingToRinkeby": {
     "message": "Kumokonekta sa Rinkeby Test Network"
@@ -311,7 +311,7 @@
     "message": "Matuto pa."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Hindi nakita ang ENS name sa kasalukuyang network. Subukang lumipat sa Ethereum Mainnet."
+    "message": "Hindi nakita ang ENS name sa kasalukuyang network. Subukang lumipat sa Ubiq Mainnet."
   },
   "ensRegistrationError": {
     "message": "May error sa pagrerehistro ng ENS name"
@@ -381,11 +381,11 @@
     "message": "Pangkalahatan"
   },
   "getEther": {
-    "message": "Kumuha ng Ether"
+    "message": "Kumuha ng UBQ"
   },
   "getEtherFromFaucet": {
     "message": "Kumuha ng Ether mula sa isang faucet para sa $1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "Magsimula"
@@ -451,7 +451,7 @@
     "message": "Hindi valid ang address ng recipient"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Hindi ito isang ETH network, i-set sa lowercase"
+    "message": "Hindi ito isang UBQ network, i-set sa lowercase"
   },
   "invalidBlockExplorerURL": {
     "message": "Hindi valid ang Block Explorer URL"
@@ -502,7 +502,7 @@
     "message": "Mensahe"
   },
   "metamaskDescription": {
-    "message": "Kinokonekta ka sa Ethereum at sa Decentralized Web."
+    "message": "Kinokonekta ka sa Ubiq at sa Decentralized Web."
   },
   "metamaskVersion": {
     "message": "Bersyon ng MetaMask"

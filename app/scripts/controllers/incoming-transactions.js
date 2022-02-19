@@ -43,7 +43,7 @@ const fetchWithTimeout = getFetchWithTimeout(SECOND * 30);
  * @property {string} nonce - The transaction nonce, in decimal
  * @property {string} timeStamp - The timestamp for the transaction, in seconds
  * @property {string} to - The hex-prefixed address of the recipient
- * @property {string} value - The amount of ETH sent in this transaction, in decimal WEI
+ * @property {string} value - The amount of UBQ sent in this transaction, in decimal WEI
  */
 
 /**

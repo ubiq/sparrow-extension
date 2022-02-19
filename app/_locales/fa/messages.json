@@ -67,15 +67,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Sparrow",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Sparrow Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Sparrow Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -146,7 +146,7 @@
     "message": "ETH را توسط Wyre خریداری نمایید"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre به شما اجازه میدهد تا یک کردیت کارت را جهت پرداخت ETH مستقیمًا به حساب Sparrow تان استفاده نمایید."
+    "message": "Wyre به شما اجازه میدهد تا یک کردیت کارت را جهت پرداخت UBQ مستقیمًا به حساب Sparrow تان استفاده نمایید."
   },
   "bytes": {
     "message": "بایت ها"
@@ -416,7 +416,7 @@
   },
   "getEtherFromFaucet": {
     "message": "اخذ ایتر از یک فاست برای 1$1",
-    "description": "Displays network name for Ether faucet"
+    "description": "Displays network name for UBQ faucet"
   },
   "getStarted": {
     "message": "شروع به کار"
@@ -494,7 +494,7 @@
     "message": "آدرس دریافت کننده نامعتبر است"
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "شبکه ETH نه، به حروف کوچک تنظیم کنید"
+    "message": "شبکه UBQ نه، به حروف کوچک تنظیم کنید"
   },
   "invalidBlockExplorerURL": {
     "message": "Block Explorer URL نا معتبر"
@@ -580,7 +580,7 @@
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "نمیتوان مبالغ منفی ETH را ارسال کرد."
+    "message": "نمیتوان مبالغ منفی UBQ را ارسال کرد."
   },
   "networkName": {
     "message": "نام شبکه"
