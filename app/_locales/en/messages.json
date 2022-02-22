@@ -42,7 +42,7 @@
     "message": "QR-based HW Wallet"
   },
   "QRHardwareWalletSteps2Description": {
-    "message": "AirGap Vault & Ngrave (Coming Soon)"
+    "message": "Ngrave (Coming Soon)"
   },
   "about": {
     "message": "About"
@@ -190,6 +190,12 @@
   },
   "aggregatorFeeCost": {
     "message": "Aggregator network fee"
+  },
+  "airgapVault": {
+    "message": "AirGap Vault"
+  },
+  "airgapVaultTutorial": {
+    "message": " (Tutorials)"
   },
   "alertDisableTooltip": {
     "message": "This can be changed in \"Settings > Alerts\""
@@ -1773,6 +1779,12 @@
   "missingNFT": {
     "message": "Don't see your NFT?"
   },
+  "missingSetting": {
+    "message": "Can't find a setting?"
+  },
+  "missingSettingRequest": {
+    "message": "Request here"
+  },
   "missingToken": {
     "message": "Don't see your token?"
   },
@@ -2480,6 +2492,9 @@
   "searchResults": {
     "message": "Search Results"
   },
+  "searchSettings": {
+    "message": "Search in settings"
+  },
   "searchTokens": {
     "message": "Search Tokens"
   },
@@ -2628,6 +2643,9 @@
   },
   "settings": {
     "message": "Settings"
+  },
+  "settingsSearchMatchingNotFound": {
+    "message": "No matching results found"
   },
   "show": {
     "message": "Show"

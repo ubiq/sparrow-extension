@@ -14,7 +14,6 @@
     "dist": "yarn build prod",
     "build": "yarn lavamoat:build",
     "build:dev": "node development/build/index.js",
-    "build:prod": "node development/build/index.js prod",
     "start:test": "yarn build testDev",
     "benchmark:chrome": "SELENIUM_BROWSER=chrome node test/e2e/benchmark.js",
     "benchmark:firefox": "SELENIUM_BROWSER=firefox node test/e2e/benchmark.js",
@@ -152,7 +151,7 @@
     "eth-query": "^2.1.2",
     "eth-rpc-errors": "^4.0.2",
     "eth-sig-util": "^3.0.0",
-    "ubq-trezor-keyring": "^0.9.1",
+    "ubq-trezor-keyring": "^0.10.0",
     "ethereum-ens-network-map": "^1.0.2",
     "ethereumjs-abi": "^0.6.4",
     "ethereumjs-util": "^7.0.10",
@@ -410,7 +409,8 @@
       "ganache>keccak": false,
       "ganache>leveldown": false,
       "geckodriver": true,
-      "react-devtools>electron": true
+      "react-devtools>electron": true,
+      "ubq-trezor-keyring>trezor-connect>@trezor/transport>protobufjs": false
     }
   }
 }
