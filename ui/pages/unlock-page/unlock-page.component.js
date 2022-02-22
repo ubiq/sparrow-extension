@@ -19,7 +19,7 @@ export default class UnlockPage extends Component {
      */
     isUnlocked: PropTypes.bool,
     /**
-     * onClick handler for "import using Secret Recovery Phrase" link
+     * onClick handler for "Forgot password?" link
      */
     onRestore: PropTypes.func,
     /**
@@ -123,15 +123,14 @@ export default class UnlockPage extends Component {
           </form>
           {this.renderSubmitButton()}
           <div className="unlock-page__links">
-            {t('importAccountText', [
-              <button
-                key="import-account"
-                className="unlock-page__link unlock-page__link--import"
-                onClick={() => onRestore()}
-              >
-                {t('importAccountLinkText')}
-              </button>,
-            ])}
+            <Button
+              type="link"
+              key="import-account"
+              className="unlock-page__link"
+              onClick={() => onRestore()}
+            >
+              {t('forgotPassword')}
+            </Button>
           </div>
         </div>
       </div>
