@@ -18,6 +18,7 @@ ignores:
   - '@metamask/auto-changelog' # invoked as `auto-changelog`
   - '@metamask/forwarder'
   - '@metamask/test-dapp'
+  - '@metamask/design-tokens' # Only imported in index.css
   - 'chromedriver'
   - 'depcheck' # ooo meta
   - 'ganache-cli'

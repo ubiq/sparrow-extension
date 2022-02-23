@@ -60,6 +60,7 @@ import {
 
 import Typography from '../../components/ui/typography/typography';
 import { MIN_GAS_LIMIT_DEC } from '../send/send.constants';
+import { NETWORK_TO_NAME_MAP } from '../../../shared/constants/network';
 
 import TransactionAlerts from './transaction-alerts';
 
@@ -312,6 +313,7 @@ export default class ConfirmTransactionBase extends Component {
     const hasSimulationError = Boolean(txData.simulationFails);
     const renderSimulationFailureWarning =
       hasSimulationError && !userAcknowledgedGasMissing;
+    const networkName = NETWORK_TO_NAME_MAP[txData.chainId];
 
     const renderTotalMaxAmount = () => {
       if (
@@ -559,6 +561,10 @@ export default class ConfirmTransactionBase extends Component {
             this.setUserAcknowledgedGasMissing()
           }
           userAcknowledgedGasMissing={userAcknowledgedGasMissing}
+          chainId={txData.chainId}
+          nativeCurrency={nativeCurrency}
+          networkName={networkName}
+          type={txData.type}
         />
         <TransactionDetail
           disabled={isDisabled()}
@@ -1046,6 +1052,7 @@ export default class ConfirmTransactionBase extends Component {
           handleCloseEditGas={() => this.handleCloseEditGas()}
           currentTransaction={txData}
           supportsEIP1559V2={this.supportsEIP1559V2}
+          nativeCurrency={nativeCurrency}
         />
       </TransactionModalContextProvider>
     );
