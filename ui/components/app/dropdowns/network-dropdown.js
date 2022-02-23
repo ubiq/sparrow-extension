@@ -17,10 +17,7 @@ import { COLORS, SIZES } from '../../../helpers/constants/design-system';
 import { getShowTestNetworks } from '../../../selectors';
 import { getEnvironmentType } from '../../../../app/scripts/lib/util';
 import { ENVIRONMENT_TYPE_POPUP } from '../../../../shared/constants/app';
-import {
-  ADD_NETWORK_ROUTE,
-  ADVANCED_ROUTE,
-} from '../../../helpers/constants/routes';
+import { ADD_NETWORK_ROUTE } from '../../../helpers/constants/routes';
 import { Dropdown, DropdownMenuItem } from './dropdown';
 
 // classes from nodes of the toggle element.
@@ -94,8 +91,6 @@ class NetworkDropdown extends Component {
     networkDropdownOpen: PropTypes.bool.isRequired,
     displayInvalidCustomNetworkAlert: PropTypes.func.isRequired,
     showConfirmDeleteNetworkModal: PropTypes.func.isRequired,
-    showTestnetMessageInDropdown: PropTypes.bool.isRequired,
-    hideTestNetMessage: PropTypes.func.isRequired,
     history: PropTypes.object,
   };
 
@@ -256,12 +251,7 @@ class NetworkDropdown extends Component {
   }
 
   render() {
-    const {
-      history,
-      hideNetworkDropdown,
-      showTestnetMessageInDropdown,
-      hideTestNetMessage,
-    } = this.props;
+    const { hideNetworkDropdown } = this.props;
     const rpcListDetail = this.props.frequentRpcListDetail;
     const rpcListDetailWithoutLocalHost = rpcListDetail.filter(
       (rpc) => rpc.rpcUrl !== LOCALHOST_RPC_URL,
@@ -299,30 +289,6 @@ class NetworkDropdown extends Component {
         <div className="network-dropdown-header">
           <div className="network-dropdown-title">{t('networks')}</div>
           <div className="network-dropdown-divider" />
-          {showTestnetMessageInDropdown ? (
-            <div className="network-dropdown-content">
-              {t('toggleTestNetworks', [
-                <a
-                  href="#"
-                  key="advancedSettingsLink"
-                  className="network-dropdown-content--link"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    hideNetworkDropdown();
-                    history.push(`${ADVANCED_ROUTE}#show-testnets`);
-                  }}
-                >
-                  {t('showHide')}
-                </a>,
-              ])}
-              <button
-                onClick={hideTestNetMessage}
-                className="network-dropdown-content--dismiss"
-              >
-                {t('dismiss')}
-              </button>
-            </div>
-          ) : null}
         </div>
 
         <div className="network-dropdown-list">

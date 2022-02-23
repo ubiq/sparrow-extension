@@ -25,7 +25,10 @@ import { PRIMARY, SECONDARY } from '../../helpers/constants/common';
 import TextField from '../../components/ui/text-field';
 import ActionableMessage from '../../components/ui/actionable-message';
 import Disclosure from '../../components/ui/disclosure';
-import { TRANSACTION_STATUSES } from '../../../shared/constants/transaction';
+import {
+  TRANSACTION_TYPES,
+  TRANSACTION_STATUSES,
+} from '../../../shared/constants/transaction';
 import { getMethodName } from '../../helpers/utils/metrics';
 import {
   getTransactionTypeTitle,

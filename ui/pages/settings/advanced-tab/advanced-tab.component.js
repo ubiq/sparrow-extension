@@ -36,12 +36,8 @@ export default class AdvancedTab extends PureComponent {
     sendHexData: PropTypes.bool,
     setAdvancedInlineGasFeatureFlag: PropTypes.func,
     advancedInlineGas: PropTypes.bool,
-    showFiatInTestnets: PropTypes.bool,
-    showTestNetworks: PropTypes.bool,
     autoLockTimeLimit: PropTypes.number,
     setAutoLockTimeLimit: PropTypes.func.isRequired,
-    setShowFiatConversionOnTestnetsPreference: PropTypes.func.isRequired,
-    setShowTestNetworks: PropTypes.func.isRequired,
     setIpfsGateway: PropTypes.func.isRequired,
     ipfsGateway: PropTypes.string.isRequired,
     ledgerTransportType: PropTypes.oneOf(Object.values(LEDGER_TRANSPORT_TYPES)),
@@ -75,37 +71,6 @@ export default class AdvancedTab extends PureComponent {
   componentDidMount() {
     const { t } = this.context;
     handleSettingsRefs(t, t('advanced'), this.settingsRefs);
-  }
-
-  renderMobileSync() {
-    const { t } = this.context;
-    const { history } = this.props;
-
-    return (
-      <div
-        ref={this.settingsRefs[1]}
-        className="settings-page__content-row"
-        data-testid="advanced-setting-mobile-sync"
-      >
-        <div className="settings-page__content-item">
-          <span>{t('syncWithMobile')}</span>
-        </div>
-        <div className="settings-page__content-item">
-          <div className="settings-page__content-item-col">
-            <Button
-              type="secondary"
-              large
-              onClick={(event) => {
-                event.preventDefault();
-                history.push(MOBILE_SYNC_ROUTE);
-              }}
-            >
-              {t('syncWithMobile')}
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
   }
 
   renderStateLogs() {
@@ -233,71 +198,6 @@ export default class AdvancedTab extends PureComponent {
             <ToggleButton
               value={advancedInlineGas}
               onToggle={(value) => setAdvancedInlineGasFeatureFlag(!value)}
-              offLabel={t('off')}
-              onLabel={t('on')}
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  renderToggleTestNetworks() {
-    const { t } = this.context;
-    const { showTestNetworks, setShowTestNetworks } = this.props;
-
-    return (
-      <div
-        ref={this.settingsRefs[6]}
-        className="settings-page__content-row"
-        data-testid="advanced-setting-show-testnet-conversion"
-      >
-        <div className="settings-page__content-item">
-          <span>{t('showTestnetNetworks')}</span>
-          <div className="settings-page__content-description">
-            {t('showTestnetNetworksDescription')}
-          </div>
-        </div>
-        <div className="settings-page__content-item">
-          <div className="settings-page__content-item-col">
-            <ToggleButton
-              value={showTestNetworks}
-              onToggle={(value) => setShowTestNetworks(!value)}
-              offLabel={t('off')}
-              onLabel={t('on')}
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  renderShowConversionInTestnets() {
-    const { t } = this.context;
-    const {
-      showFiatInTestnets,
-      setShowFiatConversionOnTestnetsPreference,
-    } = this.props;
-
-    return (
-      <div
-        ref={this.settingsRefs[5]}
-        className="settings-page__content-row"
-        data-testid="advanced-setting-show-testnet-conversion"
-      >
-        <div className="settings-page__content-item">
-          <span>{t('showFiatConversionInTestnets')}</span>
-          <div className="settings-page__content-description">
-            {t('showFiatConversionInTestnetsDescription')}
-          </div>
-        </div>
-        <div className="settings-page__content-item">
-          <div className="settings-page__content-item-col">
-            <ToggleButton
-              value={showFiatInTestnets}
-              onToggle={(value) =>
-                setShowFiatConversionOnTestnetsPreference(!value)
-              }
               offLabel={t('off')}
               onLabel={t('on')}
             />
@@ -619,8 +519,6 @@ export default class AdvancedTab extends PureComponent {
         {this.renderResetAccount()}
         {this.renderAdvancedGasInputInline()}
         {this.renderHexDataOptIn()}
-        {this.renderShowConversionInTestnets()}
-        {this.renderToggleTestNetworks()}
         {this.renderUseNonceOptIn()}
         {this.renderAutoLockTimeLimit()}
         {this.renderIpfsGatewayControl()}
