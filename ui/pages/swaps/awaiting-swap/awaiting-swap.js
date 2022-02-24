@@ -16,6 +16,7 @@ import {
   getUSDConversionRate,
   isHardwareWallet,
   getHardwareWalletType,
+  getSwapsDefaultToken,
 } from '../../../selectors';
 
 import {
@@ -31,6 +32,7 @@ import {
   getSmartTransactionsEnabled,
   getFromTokenInputValue,
   getMaxSlippage,
+  setSwapsFromToken,
 } from '../../../ducks/swaps/swaps';
 import Box from '../../../components/ui/box';
 import {
@@ -79,6 +81,7 @@ export default function AwaitingSwap({
   const usdConversionRate = useSelector(getUSDConversionRate);
   const chainId = useSelector(getCurrentChainId);
   const rpcPrefs = useSelector(getRpcPrefsForCurrentProvider, shallowEqual);
+  const defaultSwapsToken = useSelector(getSwapsDefaultToken, isEqual);
 
   const [trackedQuotesExpiredEvent, setTrackedQuotesExpiredEvent] = useState(
     false,
@@ -122,11 +125,6 @@ export default function AwaitingSwap({
   };
   const quotesExpiredEvent = useNewMetricEvent({
     event: 'Quotes Timed Out',
-    sensitiveProperties,
-    category: 'swaps',
-  });
-  const makeAnotherSwapEvent = useNewMetricEvent({
-    event: 'Make Another Swap',
     sensitiveProperties,
     category: 'swaps',
   });
@@ -248,9 +246,9 @@ export default function AwaitingSwap({
       <Box marginBottom={3}>
         <a
           href="#"
-          onClick={() => {
-            makeAnotherSwapEvent();
-            dispatch(navigateBackToBuildQuote(history));
+          onClick={async () => {
+            await dispatch(navigateBackToBuildQuote(history));
+            dispatch(setSwapsFromToken(defaultSwapsToken));
           }}
         >
           {t('makeAnotherSwap')}

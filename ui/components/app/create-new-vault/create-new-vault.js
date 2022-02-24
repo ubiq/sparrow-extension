@@ -1,16 +1,11 @@
-import { ethers } from 'ethers';
 import React, { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import TextField from '../../ui/text-field';
 import Button from '../../ui/button';
-import { clearClipboard } from '../../../helpers/utils/util';
 import CheckBox from '../../ui/check-box';
 import Typography from '../../ui/typography';
-import { COLORS } from '../../../helpers/constants/design-system';
-import { parseSecretRecoveryPhrase } from './parse-secret-recovery-phrase';
-
-const { isValidMnemonic } = ethers.utils;
+import SrpInput from '../srp-input';
 
 export default function CreateNewVault({
   disabled = false,
@@ -23,31 +18,9 @@ export default function CreateNewVault({
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [seedPhrase, setSeedPhrase] = useState('');
-  const [seedPhraseError, setSeedPhraseError] = useState('');
-  const [showSeedPhrase, setShowSeedPhrase] = useState(false);
   const [termsChecked, setTermsChecked] = useState(false);
 
   const t = useI18nContext();
-
-  const onSeedPhraseChange = useCallback(
-    (rawSeedPhrase) => {
-      let newSeedPhraseError = '';
-
-      if (rawSeedPhrase) {
-        const parsedSeedPhrase = parseSecretRecoveryPhrase(rawSeedPhrase);
-        const wordCount = parsedSeedPhrase.split(/\s/u).length;
-        if (wordCount % 3 !== 0 || wordCount > 24 || wordCount < 12) {
-          newSeedPhraseError = t('seedPhraseReq');
-        } else if (!isValidMnemonic(parsedSeedPhrase)) {
-          newSeedPhraseError = t('invalidSeedPhrase');
-        }
-      }
-
-      setSeedPhrase(rawSeedPhrase);
-      setSeedPhraseError(newSeedPhraseError);
-    },
-    [setSeedPhrase, setSeedPhraseError, t],
-  );
 
   const onPasswordChange = useCallback(
     (newPassword) => {
@@ -91,8 +64,7 @@ export default function CreateNewVault({
     seedPhrase &&
     (!includeTerms || termsChecked) &&
     !passwordError &&
-    !confirmPasswordError &&
-    !seedPhraseError;
+    !confirmPasswordError;
 
   const onImport = useCallback(
     async (event) => {
@@ -102,17 +74,13 @@ export default function CreateNewVault({
         return;
       }
 
-      await onSubmit(password, parseSecretRecoveryPhrase(seedPhrase));
+      await onSubmit(password, seedPhrase);
     },
     [isValid, onSubmit, password, seedPhrase],
   );
 
   const toggleTermsCheck = useCallback(() => {
     setTermsChecked((currentTermsChecked) => !currentTermsChecked);
-  }, []);
-
-  const toggleShowSeedPhrase = useCallback(() => {
-    setShowSeedPhrase((currentShowSeedPhrase) => !currentShowSeedPhrase);
   }, []);
 
   const termsOfUse = t('acceptTermsOfUse', [
@@ -130,56 +98,7 @@ export default function CreateNewVault({
   return (
     <form className="create-new-vault__form" onSubmit={onImport}>
       <div className="create-new-vault__srp-section">
-        <label
-          htmlFor="create-new-vault__srp"
-          className="create-new-vault__srp-label"
-        >
-          <Typography>{t('secretRecoveryPhrase')}</Typography>
-        </label>
-        {showSeedPhrase ? (
-          <textarea
-            id="create-new-vault__srp"
-            className="create-new-vault__srp-shown"
-            onChange={(e) => onSeedPhraseChange(e.target.value)}
-            onPaste={clearClipboard}
-            value={seedPhrase}
-            placeholder={t('seedPhrasePlaceholder')}
-            autoComplete="off"
-          />
-        ) : (
-          <TextField
-            id="create-new-vault__srp"
-            type="password"
-            onChange={(e) => onSeedPhraseChange(e.target.value)}
-            value={seedPhrase}
-            placeholder={t('seedPhrasePlaceholderPaste')}
-            autoComplete="off"
-            onPaste={clearClipboard}
-          />
-        )}
-        {seedPhraseError ? (
-          <Typography
-            color={COLORS.ERROR1}
-            tag="span"
-            className="create-new-vault__srp-error"
-          >
-            {seedPhraseError}
-          </Typography>
-        ) : null}
-        <div className="create-new-vault__show-srp">
-          <CheckBox
-            id="create-new-vault__show-srp-checkbox"
-            checked={showSeedPhrase}
-            onClick={toggleShowSeedPhrase}
-            title={t('showSeedPhrase')}
-          />
-          <label
-            className="create-new-vault__show-srp-label"
-            htmlFor="create-new-vault__show-srp-checkbox"
-          >
-            <Typography tag="span">{t('showSeedPhrase')}</Typography>
-          </label>
-        </div>
+        <SrpInput onChange={setSeedPhrase} />
       </div>
       <TextField
         id="password"
