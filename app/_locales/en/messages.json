@@ -982,7 +982,7 @@
     "message": "Use OpenSea's API to fetch NFT data. NFT auto-detection relies on OpenSea's API, and will not be available when this is turned off."
   },
   "enableSmartTransactions": {
-    "message": "Enable smart transactions"
+    "message": "Enable Smart Transactions"
   },
   "enableToken": {
     "message": "enable $1",
@@ -2465,7 +2465,7 @@
     "message": "Reset Wallet"
   },
   "resetWalletSubHeader": {
-    "message": "MetaMask does not keep a copy of your password. If you’re having trouble unlocking your account, you will need to reset your wallet. You can do this by providing the Secret Recovery Phrase you used when you set up your wallet."
+    "message": "Sparrow does not keep a copy of your password. If you’re having trouble unlocking your account, you will need to reset your wallet. You can do this by providing the Secret Recovery Phrase you used when you set up your wallet."
   },
   "resetWalletUsingSRP": {
     "message": "This action will delete your current wallet and Secret Recovery Phrase from this device, along with the list of accounts you’ve curated. After resetting with a Secret Recovery Phrase, you’ll see a list of accounts based on the Secret Recovery Phrase you use to reset. This new list will automatically include accounts that have a balance. You’ll also be able to $1 created previously. Custom accounts that you’ve imported will need to be $2, and any custom tokens you’ve added to an account will need to be $3 as well."
@@ -2902,19 +2902,19 @@
     "message": "Store this phrase in a password manager like 1Password."
   },
   "stxAreHere": {
-    "message": "Smart transactions are here!"
+    "message": "Smart Transactions are here!"
   },
   "stxBenefit1": {
-    "message": "Decrease transaction costs"
+    "message": "Minimize transaction costs"
   },
   "stxBenefit2": {
-    "message": "Reduce failures & minimize costs"
+    "message": "Reduce transaction failures"
   },
   "stxBenefit3": {
-    "message": "Protect from front-running"
+    "message": "Eliminate stuck transactions"
   },
   "stxBenefit4": {
-    "message": "Eliminate stuck transactions"
+    "message": "Prevent front-running"
   },
   "stxCancelled": {
     "message": "Swap would have failed"
@@ -2926,7 +2926,7 @@
     "message": "Try your swap again. We’ll be here to protect you against similar risks next time."
   },
   "stxDescription": {
-    "message": "Smart transactions use Sparrow smart contracts to simulate transactions before submitting in order to..."
+    "message": "Sparrow Swaps just got a whole lot smarter! Enabling Smart Transactions will allow Sparrow to programmatically optimize your Swap to help:"
   },
   "stxFailure": {
     "message": "Swap failed"
@@ -2948,7 +2948,7 @@
     "message": "Privately submitting the Swap..."
   },
   "stxSubDescription": {
-    "message": "Enabling allows Sparrow to simulate transactions, proactively cancel bad transactions and sign Sparrow Swaps transactions for you."
+    "message": "* Smart Transactions will attempt to submit your transaction privately, multiple times. If all attempts fail, the transaction will be broadcast publicly to ensure your Swap successfully goes through."
   },
   "stxSuccess": {
     "message": "Swap complete!"

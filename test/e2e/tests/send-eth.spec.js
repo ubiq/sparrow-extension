@@ -91,6 +91,7 @@ describe('Send ETH from inside Sparrow using default gas', function () {
   });
 });
 
+/* eslint-disable-next-line mocha/max-top-level-suites */
 describe('Send ETH from inside Sparrow using advanced gas modal', function () {
   const ganacheOptions = {
     accounts: [
