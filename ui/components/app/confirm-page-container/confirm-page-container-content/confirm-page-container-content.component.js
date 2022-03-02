@@ -53,6 +53,8 @@ export default class ConfirmPageContainerContent extends Component {
     currentTransaction: PropTypes.string,
     nativeCurrency: PropTypes.string,
     networkName: PropTypes.string,
+    toAddress: PropTypes.string,
+    transactionType: PropTypes.string,
   };
 
   renderContent() {
@@ -125,6 +127,8 @@ export default class ConfirmPageContainerContent extends Component {
       currentTransaction,
       nativeCurrency,
       networkName,
+      toAddress,
+      transactionType,
     } = this.props;
 
     const primaryAction = hideUserAcknowledgedGasMissing
@@ -176,6 +180,8 @@ export default class ConfirmPageContainerContent extends Component {
           nonce={nonce}
           origin={origin}
           hideTitle={hideTitle}
+          toAddress={toAddress}
+          transactionType={transactionType}
         />
         {this.renderContent()}
         {!supportsEIP1559V2 &&

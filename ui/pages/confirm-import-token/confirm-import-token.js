@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useState } from 'react';
+import React, { useCallback, useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import {
@@ -11,7 +11,6 @@ import TokenBalance from '../../components/ui/token-balance';
 import { I18nContext } from '../../contexts/i18n';
 import { getMostRecentOverviewPage } from '../../ducks/history/history';
 import { getPendingTokens } from '../../ducks/metamask/metamask';
-import { useNewMetricEvent } from '../../hooks/useMetricEvent';
 import { addTokens, clearPendingTokens } from '../../store/actions';
 
 const getTokenName = (name, symbol) => {
@@ -26,29 +25,12 @@ const ConfirmImportToken = () => {
   const mostRecentOverviewPage = useSelector(getMostRecentOverviewPage);
   const pendingTokens = useSelector(getPendingTokens);
 
-  const [addedToken, setAddedToken] = useState({});
-
-  const trackTokenAddedEvent = useNewMetricEvent({
-    event: 'Token Added',
-    category: 'Wallet',
-    sensitiveProperties: {
-      token_symbol: addedToken.symbol,
-      token_contract_address: addedToken.address,
-      token_decimal_precision: addedToken.decimals,
-      unlisted: addedToken.unlisted,
-      source: addedToken.isCustom ? 'custom' : 'list',
-    },
-  });
-
   const handleAddTokens = useCallback(async () => {
     await dispatch(addTokens(pendingTokens));
 
     const addedTokenValues = Object.values(pendingTokens);
     const firstTokenAddress = addedTokenValues?.[0].address?.toLowerCase();
 
-    addedTokenValues.forEach((pendingToken) => {
-      setAddedToken({ ...pendingToken });
-    });
     dispatch(clearPendingTokens());
 
     if (firstTokenAddress) {
@@ -57,12 +39,6 @@ const ConfirmImportToken = () => {
       history.push(mostRecentOverviewPage);
     }
   }, [dispatch, history, mostRecentOverviewPage, pendingTokens]);
-
-  useEffect(() => {
-    if (Object.keys(addedToken).length) {
-      trackTokenAddedEvent();
-    }
-  }, [addedToken, trackTokenAddedEvent]);
 
   useEffect(() => {
     if (Object.keys(pendingTokens).length === 0) {
