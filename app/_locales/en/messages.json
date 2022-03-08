@@ -710,6 +710,9 @@
     "message": "$1 has recommended this price.",
     "description": "$1 represents the Dapp's origin"
   },
+  "darkTheme": {
+    "message": "Dark"
+  },
   "data": {
     "message": "Data"
   },
@@ -744,6 +747,9 @@
   },
   "decryptRequest": {
     "message": "Decrypt request"
+  },
+  "defaultTheme": {
+    "message": "Default"
   },
   "delete": {
     "message": "Delete"
@@ -3391,6 +3397,12 @@
   },
   "testFaucet": {
     "message": "Test Faucet"
+  },
+  "theme": {
+    "message": "Theme"
+  },
+  "themeDescription": {
+    "message": "Choose your preferred MetaMask theme."
   },
   "thisWillCreate": {
     "message": "This will create a new wallet and Secret Recovery Phrase"
