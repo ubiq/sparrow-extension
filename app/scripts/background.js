@@ -15,6 +15,7 @@ import {
   ENVIRONMENT_TYPE_POPUP,
   ENVIRONMENT_TYPE_NOTIFICATION,
   ENVIRONMENT_TYPE_FULLSCREEN,
+  PLATFORM_FIREFOX,
 } from '../../shared/constants/app';
 import { SECOND } from '../../shared/constants/time';
 import {
@@ -36,6 +37,7 @@ import MetamaskController, {
 import rawFirstTimeState from './first-time-state';
 import getFirstPreferredLangCode from './lib/get-first-preferred-lang-code';
 import setupEnsIpfsResolver from './lib/ens-ipfs/setup';
+import { getPlatform } from './lib/util';
 /* eslint-enable import/first */
 
 const firstTimeState = { ...rawFirstTimeState };
@@ -330,10 +332,20 @@ function setupController(initState, initLangCode) {
    */
   function connectRemote(remotePort) {
     const processName = remotePort.name;
-    const isMetaMaskInternalProcess = metamaskInternalProcessHash[processName];
 
     if (metamaskBlockedPorts.includes(remotePort.name)) {
       return;
+    }
+
+    let isMetaMaskInternalProcess = false;
+    const sourcePlatform = getPlatform();
+
+    if (sourcePlatform === PLATFORM_FIREFOX) {
+      isMetaMaskInternalProcess = metamaskInternalProcessHash[processName];
+    } else {
+      isMetaMaskInternalProcess =
+        remotePort.sender.origin ===
+        `chrome-extension://${extension.runtime.id}`;
     }
 
     if (isMetaMaskInternalProcess) {
