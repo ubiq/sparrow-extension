@@ -16,7 +16,8 @@ import {
   setTradeTxId,
   stopPollingForQuotes,
   updateAndApproveTx,
-  updateTransaction,
+  updateSwapApprovalTransaction,
+  updateSwapTransaction,
   resetBackgroundSwapsState,
   setSwapsLiveness,
   setSwapsFeatureFlags,
@@ -905,6 +906,9 @@ export const signAndSendSwapsSmartTransaction = ({
       const smartTransactionFees = await dispatch(
         fetchSwapsSmartTransactionFees(unsignedTransaction),
       );
+      unsignedTransaction.gas = `0x${decimalToHex(
+        smartTransactionFees?.gasLimit || 0,
+      )}`;
       const uuid = await dispatch(
         signAndSendSmartTransaction({
           unsignedTransaction,
@@ -1135,15 +1139,10 @@ export const signAndSendTransactions = (history, metaMetricsEvent) => {
       );
       await dispatch(setApproveTxId(approveTxMeta.id));
       finalApproveTxMeta = await dispatch(
-        updateTransaction(
-          {
-            ...approveTxMeta,
-            estimatedBaseFee: decEstimatedBaseFee,
-            type: TRANSACTION_TYPES.SWAP_APPROVAL,
-            sourceTokenSymbol: sourceTokenInfo.symbol,
-          },
-          true,
-        ),
+        updateSwapApprovalTransaction(approveTxMeta.id, {
+          type: TRANSACTION_TYPES.SWAP_APPROVAL,
+          sourceTokenSymbol: sourceTokenInfo.symbol,
+        }),
       );
       try {
         await dispatch(updateAndApproveTx(finalApproveTxMeta, true));
@@ -1179,21 +1178,17 @@ export const signAndSendTransactions = (history, metaMetricsEvent) => {
       return;
     }
     const finalTradeTxMeta = await dispatch(
-      updateTransaction(
-        {
-          ...tradeTxMeta,
-          estimatedBaseFee: decEstimatedBaseFee,
-          sourceTokenSymbol: sourceTokenInfo.symbol,
-          destinationTokenSymbol: destinationTokenInfo.symbol,
-          type: TRANSACTION_TYPES.SWAP,
-          destinationTokenDecimals: destinationTokenInfo.decimals,
-          destinationTokenAddress: destinationTokenInfo.address,
-          swapMetaData,
-          swapTokenValue,
-          approvalTxId: finalApproveTxMeta?.id,
-        },
-        true,
-      ),
+      updateSwapTransaction(tradeTxMeta.id, {
+        estimatedBaseFee: decEstimatedBaseFee,
+        sourceTokenSymbol: sourceTokenInfo.symbol,
+        destinationTokenSymbol: destinationTokenInfo.symbol,
+        type: TRANSACTION_TYPES.SWAP,
+        destinationTokenDecimals: destinationTokenInfo.decimals,
+        destinationTokenAddress: destinationTokenInfo.address,
+        swapMetaData,
+        swapTokenValue,
+        approvalTxId: finalApproveTxMeta?.id,
+      }),
     );
     try {
       await dispatch(updateAndApproveTx(finalTradeTxMeta, true));
