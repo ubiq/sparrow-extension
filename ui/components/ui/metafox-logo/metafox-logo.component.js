@@ -33,7 +33,6 @@ export default class MetaFoxLogo extends PureComponent {
             'app-header__metafox-logo--horizontal': !isOnboarding,
             'onboarding-app-header__metafox-logo--horizontal': isOnboarding,
           })}
-          alt=""
         />
         <img
           {...iconProps}
