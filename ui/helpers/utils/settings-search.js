@@ -200,14 +200,6 @@ export function getSettingsRoutes(t) {
       id: 22,
     },
     {
-      tab: t('securityAndPrivacy'),
-      section: t('participateInMetaMetrics'),
-      description: t('participateInMetaMetricsDescription'),
-      route: `${SECURITY_ROUTE}#metrametrics`,
-      image: 'security-icon.svg',
-      id: 23,
-    },
-    {
       tab: t('alerts'),
       section: t('alertSettingsUnconnectedAccount'),
       description: t('alertSettingsUnconnectedAccount'),

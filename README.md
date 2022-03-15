@@ -16,7 +16,6 @@ To learn how to contribute to the Sparrow project itself, visit our [Internal Do
 - Install dependencies: `yarn setup` (not the usual install command)
 - Copy the `.metamaskrc.dist` file to `.metamaskrc`
     - Replace the `INFURA_PROJECT_ID` value with your own personal [Infura Project ID](https://infura.io/docs).
-    - If debugging MetaMetrics, you'll need to add a value for `SEGMENT_WRITE_KEY` [Segment write key](https://segment.com/docs/connections/find-writekey/).
 - Build the project to the `./dist/` folder with `yarn dist`.
 
 Uncompressed builds can be found in `/dist`, compressed builds can be found in `/builds` once they're built.

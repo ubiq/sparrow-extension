@@ -46,8 +46,6 @@ async function setupFetchMocking(driver) {
         url.match(/^http(s)?:\/\/api\.metaswap\.codefi\.network\/gasPrices/u)
       ) {
         return { json: async () => clone(mockResponses.gasPricesBasic) };
-      } else if (url.match(/chromeextensionmm/u)) {
-        return { json: async () => clone(mockResponses.metametrics) };
       } else if (url.match(/^https:\/\/(api2\.metaswap\.codefi\.network)/u)) {
         if (url.match(/featureFlags$/u)) {
           return { json: async () => clone(mockResponses.swaps.featureFlags) };

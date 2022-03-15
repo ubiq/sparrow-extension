@@ -1030,37 +1030,6 @@
   "metamaskVersion": {
     "message": "Bersyon ng Sparrow"
   },
-  "metametricsCommitmentsAllowOptOut": {
-    "message": "Palagi kang papayagang mag-opt out sa pamamagitan ng Mga Setting"
-  },
-  "metametricsCommitmentsBoldNever": {
-    "message": "Huwag Kailanman",
-    "description": "This string is localized separately from some of the commitments so that we can bold it"
-  },
-  "metametricsCommitmentsIntro": {
-    "message": "Gagawin ng Sparrow ang sumusunod..."
-  },
-  "metametricsCommitmentsNeverCollectIP": {
-    "message": "$1 kolektahin ang iyong IP address",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverCollectKeysEtc": {
-    "message": "$1 nangongolekta ng mga key, address, transaksyon, balanse, hash, o anumang personal na impormasyon",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverSellDataForProfit": {
-    "message": "$1 nagbebenta ng data para pagkakitaan. Kahit kailan!",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsSendAnonymizedEvents": {
-    "message": "Magpapadala ng mga anonymous na kaganapang pag-click at pagtingin sa page"
-  },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Tulungan Kaming Mapahusay ang Sparrow"
-  },
-  "metametricsOptInDescription": {
-    "message": "Gustong kunin ng Sparrow ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ubiq ecosystem."
-  },
   "mismatchedChain": {
     "message": "Ang mga detalye ng network para sa chain ID na ito ay hindi tumutugma sa aming mga record. Inirerekomenda naming $1 ka bago magpatuloy.",
     "description": "$1 is a clickable link with text defined by the 'mismatchedChainLinkText' key"
@@ -1284,12 +1253,6 @@
   },
   "parameters": {
     "message": "Mga Parameter"
-  },
-  "participateInMetaMetrics": {
-    "message": "Sumali sa MetaMetrics"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Sumali sa MetaMetrics para mas mapahusay namin ang Sparrow"
   },
   "password": {
     "message": "Password"

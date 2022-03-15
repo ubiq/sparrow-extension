@@ -651,12 +651,6 @@
   "parameters": {
     "message": "Parameetrid"
   },
-  "participateInMetaMetrics": {
-    "message": "Osalege MetaMetricsis"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Osalege MetaMetricsis, et aidata meil MetaMaski paremaks teha"
-  },
   "password": {
     "message": "Parool"
   },

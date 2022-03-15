@@ -7,7 +7,6 @@ import '../ui/css/index.scss';
 import localeList from '../app/_locales/index.json';
 import * as allLocales from './locales';
 import { I18nProvider, LegacyI18nProvider } from './i18n';
-import MetaMetricsProviderStorybook from './metametrics';
 import testData from './test-data.js';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
@@ -99,7 +98,6 @@ const metamaskDecorator = (story, context) => {
   return (
     <Provider store={store}>
       <Router history={history}>
-        <MetaMetricsProviderStorybook>
           <I18nProvider
             currentLocale={currentLocale}
             current={current}
@@ -107,7 +105,6 @@ const metamaskDecorator = (story, context) => {
           >
             <LegacyI18nProvider>{story()}</LegacyI18nProvider>
           </I18nProvider>
-        </MetaMetricsProviderStorybook>
       </Router>
     </Provider>
   );

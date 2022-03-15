@@ -85,10 +85,6 @@ const t = (key) => {
       return 'Use Phishing Detection';
     case 'usePhishingDetectionDescription':
       return 'Display a warning for phishing domains targeting Ethereum users';
-    case 'participateInMetaMetrics':
-      return 'Participate in MetaMetrics';
-    case 'participateInMetaMetricsDescription':
-      return 'Participate in MetaMetrics to help us make MetaMask better';
     case 'alerts':
       return 'Alerts';
     case 'alertSettingsUnconnectedAccount':
@@ -339,15 +335,6 @@ describe('Settings Search Utils', () => {
           image: 'security-icon.svg',
           route: '/settings/security#phishing-detection',
           section: 'Use Phishing Detection',
-          tab: 'Security & Privacy',
-        },
-        {
-          description:
-            'Participate in MetaMetrics to help us make MetaMask better',
-          id: 23,
-          image: 'security-icon.svg',
-          route: '/settings/security#metrametrics',
-          section: 'Participate in MetaMetrics',
           tab: 'Security & Privacy',
         },
         {

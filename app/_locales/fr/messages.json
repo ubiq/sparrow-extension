@@ -1580,55 +1580,6 @@
   "metamaskVersion": {
     "message": "Version de Sparrow"
   },
-  "metametricsCommitmentsAllowOptOut": {
-    "message": "Toujours pouvoir vous désinscrire via les Paramètres"
-  },
-  "metametricsCommitmentsAllowOptOut2": {
-    "message": "Toujours pouvoir se désinscrire via les Paramètres"
-  },
-  "metametricsCommitmentsBoldNever": {
-    "message": "Jamais",
-    "description": "This string is localized separately from some of the commitments so that we can bold it"
-  },
-  "metametricsCommitmentsIntro": {
-    "message": "Sparrow :"
-  },
-  "metametricsCommitmentsNeverCollect": {
-    "message": "Ne collectera jamais vos clés, adresses, transactions, soldes, hachages ou toute autre information personnelle"
-  },
-  "metametricsCommitmentsNeverCollectIP": {
-    "message": "Ne collectera $1 votre adresse IP complète",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverCollectKeysEtc": {
-    "message": "Ne collectera $1 vos clés, adresses, transactions, soldes, hachages ou toute autre information personnelle",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverIP": {
-    "message": "Ne collectera jamais votre adresse IP complète"
-  },
-  "metametricsCommitmentsNeverSell": {
-    "message": "Ne vendra jamais de données à des fins lucratives. Jamais !"
-  },
-  "metametricsCommitmentsNeverSellDataForProfit": {
-    "message": "Ne vendra $1 de données à des fins lucratives. Jamais !",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsSendAnonymizedEvents": {
-    "message": "Enverra des événements de clics et de pages vues anonymisés"
-  },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Aidez-nous à améliorer Sparrow"
-  },
-  "metametricsOptInDescription": {
-    "message": "Sparrow souhaite recueillir des données d’utilisation afin de mieux comprendre comment nos utilisateurs interagissent avec l’extension. Elles seront utilisées pour améliorer en permanence la convivialité et l’expérience utilisateur de notre produit et de l’écosystème Ethereum."
-  },
-  "metametricsOptInDescription2": {
-    "message": "Nous aimerions recueillir des données d’utilisation de base pour améliorer la convivialité de notre produit. Ces indicateurs seront…"
-  },
-  "metametricsTitle": {
-    "message": "Rejoignez plus de 6 M d’utilisateurs pour améliorer Sparrow"
-  },
   "mismatchedChain": {
     "message": "Les détails du réseau pour cet ID de chaîne ne correspondent pas à nos registres. Nous vous recommandons de $1 avant de poursuivre.",
     "description": "$1 is a clickable link with text defined by the 'mismatchedChainLinkText' key"
@@ -2020,12 +1971,6 @@
   },
   "parameters": {
     "message": "Paramètres"
-  },
-  "participateInMetaMetrics": {
-    "message": "Participer à MetaMetrics"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Participez à MetaMetrics pour nous aider à améliorer Sparrow"
   },
   "password": {
     "message": "Mot de passe"

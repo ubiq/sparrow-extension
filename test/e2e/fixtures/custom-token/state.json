@@ -43,10 +43,6 @@
     "KeyringController": {
       "vault": "{\"data\":\"s6TpYjlUNsn7ifhEFTkuDGBUM1GyOlPrim7JSjtfIxgTt8/6MiXgiR/CtFfR4dWW2xhq85/NGIBYEeWrZThGdKGarBzeIqBfLFhw9n509jprzJ0zc2Rf+9HVFGLw+xxC4xPxgCS0IIWeAJQ+XtGcHmn0UZXriXm8Ja4kdlow6SWinB7sr/WM3R0+frYs4WgllkwggDf2/Tv6VHygvLnhtzp6hIJFyTjh+l/KnyJTyZW1TkZhDaNDzX3SCOHT\",\"iv\":\"FbeHDAW5afeWNORfNJBR0Q==\",\"salt\":\"TxZ+WbCW6891C9LK/hbMAoUsSEW1E8pyGLVBU6x5KR8=\"}"
     },
-    "MetaMetricsController": {
-      "metaMetricsId": "0xff3e952b9f5a27ffcab42b0b4abf689e77dcc1f9f441871dc962d622b089fb51",
-      "participateInMetaMetrics": true
-    },
     "NetworkController": {
       "network": "1337",
       "networkDetails": {

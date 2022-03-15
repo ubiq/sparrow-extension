@@ -654,12 +654,6 @@
   "parameters": {
     "message": "Parametri"
   },
-  "participateInMetaMetrics": {
-    "message": "Sudjelujte u anketi MetaMetrics"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Sudjelujte u anketi MetaMetrics kako biste nam pomogli poboljšati uslugu Sparrow"
-  },
   "password": {
     "message": "Zaporka"
   },

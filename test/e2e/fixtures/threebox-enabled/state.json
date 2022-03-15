@@ -121,10 +121,6 @@
       "date": 1575697234195,
       "version": "7.7.0"
     },
-    "MetaMetricsController": {
-      "metaMetricsId": null,
-      "participateInMetaMetrics": false
-    },
     "ThreeBoxController": {
       "threeBoxSyncingAllowed": true,
       "showRestorePrompt": true,

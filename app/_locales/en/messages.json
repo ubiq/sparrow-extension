@@ -1774,55 +1774,6 @@
   "metamaskVersion": {
     "message": "Sparrow Version"
   },
-  "metametricsCommitmentsAllowOptOut": {
-    "message": "Always allow you to opt-out via Settings"
-  },
-  "metametricsCommitmentsAllowOptOut2": {
-    "message": "Always be able to opt-out via Settings"
-  },
-  "metametricsCommitmentsBoldNever": {
-    "message": "Never",
-    "description": "This string is localized separately from some of the commitments so that we can bold it"
-  },
-  "metametricsCommitmentsIntro": {
-    "message": "Sparrow will.."
-  },
-  "metametricsCommitmentsNeverCollect": {
-    "message": "Never collect keys, addresses, transactions, balances, hashes, or any personal information"
-  },
-  "metametricsCommitmentsNeverCollectIP": {
-    "message": "$1 collect your full IP address",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverCollectKeysEtc": {
-    "message": "$1 collect keys, addresses, transactions, balances, hashes, or any personal information",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverIP": {
-    "message": "Never collect your full IP address"
-  },
-  "metametricsCommitmentsNeverSell": {
-    "message": "Never sell data for profit. Ever!"
-  },
-  "metametricsCommitmentsNeverSellDataForProfit": {
-    "message": "$1 sell data for profit. Ever!",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsSendAnonymizedEvents": {
-    "message": "Send anonymized click & pageview events"
-  },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Help us improve Sparrow"
-  },
-  "metametricsOptInDescription": {
-    "message": "Sparrow would like to gather usage data to better understand how our users interact with the extension. This data will be used to continually improve the usability and user experience of our product and the Ubiq ecosystem."
-  },
-  "metametricsOptInDescription2": {
-    "message": "We would like to gather basic usage data to improve the usability of our product.  These metrics will..."
-  },
-  "metametricsTitle": {
-    "message": "Join 6M+ users to improve Sparrow"
-  },
   "mismatchedChain": {
     "message": "The network details for this chain ID do not match our records. We recommend that you $1 before proceeding.",
     "description": "$1 is a clickable link with text defined by the 'mismatchedChainLinkText' key"
@@ -2245,12 +2196,6 @@
   },
   "parameters": {
     "message": "Parameters"
-  },
-  "participateInMetaMetrics": {
-    "message": "Participate in MetaMetrics"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Participate in MetaMetrics to help us make Sparrow better"
   },
   "password": {
     "message": "Password"

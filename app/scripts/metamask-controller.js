@@ -115,8 +115,6 @@ import DetectTokensController from './controllers/detect-tokens';
 import SwapsController from './controllers/swaps';
 import accountImporter from './account-import-strategies';
 import seedPhraseVerifier from './lib/seed-phrase-verifier';
-import MetaMetricsController from './controllers/metametrics';
-import { segment } from './lib/segment';
 import createMetaRPCHandler from './lib/createMetaRPCHandler';
 import {
   CaveatMutatorFactories,
@@ -298,24 +296,6 @@ export default class MetamaskController extends EventEmitter {
           getCollectiblesState: () => this.collectiblesController.state,
         },
       ));
-
-    this.metaMetricsController = new MetaMetricsController({
-      segment,
-      preferencesStore: this.preferencesController.store,
-      onNetworkDidChange: this.networkController.on.bind(
-        this.networkController,
-        NETWORK_EVENTS.NETWORK_DID_CHANGE,
-      ),
-      getNetworkIdentifier: this.networkController.getNetworkIdentifier.bind(
-        this.networkController,
-      ),
-      getCurrentChainId: this.networkController.getCurrentChainId.bind(
-        this.networkController,
-      ),
-      version: this.platform.getVersion(),
-      environment: process.env.METAMASK_ENVIRONMENT,
-      initState: initState.MetaMetricsController,
-    });
 
     const gasFeeMessenger = this.controllerMessenger.getRestricted({
       name: 'GasFeeController',
@@ -637,9 +617,6 @@ export default class MetamaskController extends EventEmitter {
         this.keyringController.memStore,
       ),
       version,
-      trackMetaMetricsEvent: this.metaMetricsController.trackEvent.bind(
-        this.metaMetricsController,
-      ),
     });
 
     this.txController = new TransactionController({
@@ -666,23 +643,6 @@ export default class MetamaskController extends EventEmitter {
       ),
       provider: this.provider,
       blockTracker: this.blockTracker,
-      createEventFragment: this.metaMetricsController.createEventFragment.bind(
-        this.metaMetricsController,
-      ),
-      updateEventFragment: this.metaMetricsController.updateEventFragment.bind(
-        this.metaMetricsController,
-      ),
-      finalizeEventFragment: this.metaMetricsController.finalizeEventFragment.bind(
-        this.metaMetricsController,
-      ),
-      getEventFragmentById: this.metaMetricsController.getEventFragmentById.bind(
-        this.metaMetricsController,
-      ),
-      trackMetaMetricsEvent: this.metaMetricsController.trackEvent.bind(
-        this.metaMetricsController,
-      ),
-      getParticipateInMetrics: () =>
-        this.metaMetricsController.state.participateInMetaMetrics,
       getEIP1559GasFeeEstimates: this.gasFeeController.fetchGasFeeEstimates.bind(
         this.gasFeeController,
       ),
@@ -709,8 +669,6 @@ export default class MetamaskController extends EventEmitter {
           rpcPrefs = rpcSettings?.rpcPrefs ?? {};
         }
         this.platform.showTransactionNotification(txMeta, rpcPrefs);
-
-        const { txReceipt } = txMeta;
 
         // if this is a transferFrom method generated from within the app it may be a collectible transfer transaction
         // in which case we will want to check and update ownership status of the transferred collectible.
@@ -746,26 +704,6 @@ export default class MetamaskController extends EventEmitter {
             );
           }
         }
-
-        const metamaskState = await this.getState();
-
-        if (txReceipt && txReceipt.status === '0x0') {
-          this.metaMetricsController.trackEvent(
-            {
-              event: 'Tx Status Update: On-Chain Failure',
-              category: 'Background',
-              properties: {
-                action: 'Transactions',
-                errorMessage: txMeta.simulationFails?.reason,
-                numberOfTokens: metamaskState.tokens.length,
-                numberOfAccounts: Object.keys(metamaskState.accounts).length,
-              },
-            },
-            {
-              matomoEvent: true,
-            },
-          );
-        }
       }
     });
 
@@ -780,32 +718,13 @@ export default class MetamaskController extends EventEmitter {
     });
 
     this.networkController.lookupNetwork();
-    this.messageManager = new MessageManager({
-      metricsEvent: this.metaMetricsController.trackEvent.bind(
-        this.metaMetricsController,
-      ),
-    });
-    this.personalMessageManager = new PersonalMessageManager({
-      metricsEvent: this.metaMetricsController.trackEvent.bind(
-        this.metaMetricsController,
-      ),
-    });
-    this.decryptMessageManager = new DecryptMessageManager({
-      metricsEvent: this.metaMetricsController.trackEvent.bind(
-        this.metaMetricsController,
-      ),
-    });
-    this.encryptionPublicKeyManager = new EncryptionPublicKeyManager({
-      metricsEvent: this.metaMetricsController.trackEvent.bind(
-        this.metaMetricsController,
-      ),
-    });
+    this.messageManager = new MessageManager({});
+    this.personalMessageManager = new PersonalMessageManager({});
+    this.decryptMessageManager = new DecryptMessageManager({});
+    this.encryptionPublicKeyManager = new EncryptionPublicKeyManager({});
     this.typedMessageManager = new TypedMessageManager({
       getCurrentChainId: this.networkController.getCurrentChainId.bind(
         this.networkController,
-      ),
-      metricsEvent: this.metaMetricsController.trackEvent.bind(
-        this.metaMetricsController,
       ),
     });
 
@@ -841,9 +760,6 @@ export default class MetamaskController extends EventEmitter {
           this.txController,
         ),
         provider: this.provider,
-        trackMetaMetricsEvent: this.metaMetricsController.trackEvent.bind(
-          this.metaMetricsController,
-        ),
       },
       undefined,
       initState.SmartTransactionsController,
@@ -872,7 +788,6 @@ export default class MetamaskController extends EventEmitter {
       TransactionController: this.txController.store,
       KeyringController: this.keyringController.store,
       PreferencesController: this.preferencesController.store,
-      MetaMetricsController: this.metaMetricsController.store,
       AddressBookController: this.addressBookController,
       CurrencyController: this.currencyRateController,
       NetworkController: this.networkController.store,
@@ -910,7 +825,6 @@ export default class MetamaskController extends EventEmitter {
         TypesMessageManager: this.typedMessageManager.memStore,
         KeyringController: this.keyringController.memStore,
         PreferencesController: this.preferencesController.store,
-        MetaMetricsController: this.metaMetricsController.store,
         AddressBookController: this.addressBookController,
         CurrencyController: this.currencyRateController,
         AlertController: this.alertController.store,
@@ -1101,15 +1015,6 @@ export default class MetamaskController extends EventEmitter {
 
     this.controllerMessenger.subscribe(
       `${this.snapController.name}:snapInstalled`,
-      (snapId) => {
-        this.metaMetricsController.trackEvent({
-          event: 'Snap Installed',
-          category: 'Snaps',
-          properties: {
-            snap_id: snapId,
-          },
-        });
-      },
     );
     ///: END:ONLY_INCLUDE_IN
   }
@@ -1265,7 +1170,6 @@ export default class MetamaskController extends EventEmitter {
       ensController,
       gasFeeController,
       keyringController,
-      metaMetricsController,
       networkController,
       notificationController,
       onboardingController,
@@ -1305,9 +1209,6 @@ export default class MetamaskController extends EventEmitter {
       ),
       setIpfsGateway: preferencesController.setIpfsGateway.bind(
         preferencesController,
-      ),
-      setParticipateInMetaMetrics: metaMetricsController.setParticipateInMetaMetrics.bind(
-        metaMetricsController,
       ),
       setCurrentLocale: preferencesController.setCurrentLocale.bind(
         preferencesController,
@@ -1507,9 +1408,6 @@ export default class MetamaskController extends EventEmitter {
       addUnapprovedTransaction: txController.addUnapprovedTransaction.bind(
         txController,
       ),
-      createTransactionEventFragment: txController.createTransactionEventFragment.bind(
-        txController,
-      ),
       getTransactions: txController.getTransactions.bind(txController),
 
       updateEditableParams: txController.updateEditableParams.bind(
@@ -1687,23 +1585,6 @@ export default class MetamaskController extends EventEmitter {
       ),
       setStatusRefreshInterval: smartTransactionsController.setStatusRefreshInterval.bind(
         smartTransactionsController,
-      ),
-
-      // MetaMetrics
-      trackMetaMetricsEvent: metaMetricsController.trackEvent.bind(
-        metaMetricsController,
-      ),
-      trackMetaMetricsPage: metaMetricsController.trackPage.bind(
-        metaMetricsController,
-      ),
-      createEventFragment: metaMetricsController.createEventFragment.bind(
-        metaMetricsController,
-      ),
-      updateEventFragment: metaMetricsController.updateEventFragment.bind(
-        metaMetricsController,
-      ),
-      finalizeEventFragment: metaMetricsController.finalizeEventFragment.bind(
-        metaMetricsController,
       ),
 
       // approval controller
@@ -3294,9 +3175,6 @@ export default class MetamaskController extends EventEmitter {
         ),
         requestUserApproval: this.approvalController.addAndShowApprovalRequest.bind(
           this.approvalController,
-        ),
-        sendMetrics: this.metaMetricsController.trackEvent.bind(
-          this.metaMetricsController,
         ),
 
         // Permission-related

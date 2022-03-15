@@ -3,14 +3,6 @@ import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
 import { I18nProvider, LegacyI18nProvider } from '../contexts/i18n';
-import {
-  MetaMetricsProvider,
-  LegacyMetaMetricsProvider,
-} from '../contexts/metametrics';
-import {
-  MetaMetricsProvider as NewMetaMetricsProvider,
-  LegacyMetaMetricsProvider as NewLegacyMetaMetricsProvider,
-} from '../contexts/metametrics.new';
 import ErrorPage from './error';
 import Routes from './routes';
 
@@ -40,19 +32,11 @@ class Index extends PureComponent {
     return (
       <Provider store={store}>
         <HashRouter hashType="noslash">
-          <MetaMetricsProvider>
-            <LegacyMetaMetricsProvider>
-              <NewMetaMetricsProvider>
-                <NewLegacyMetaMetricsProvider>
-                  <I18nProvider>
-                    <LegacyI18nProvider>
-                      <Routes />
-                    </LegacyI18nProvider>
-                  </I18nProvider>
-                </NewLegacyMetaMetricsProvider>
-              </NewMetaMetricsProvider>
-            </LegacyMetaMetricsProvider>
-          </MetaMetricsProvider>
+          <I18nProvider>
+            <LegacyI18nProvider>
+              <Routes />
+            </LegacyI18nProvider>
+          </I18nProvider>
         </HashRouter>
       </Provider>
     );

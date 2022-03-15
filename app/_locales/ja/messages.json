@@ -1580,55 +1580,6 @@
   "metamaskVersion": {
     "message": "MetaMaskのバージョン"
   },
-  "metametricsCommitmentsAllowOptOut": {
-    "message": "いつでも設定からオプトアウトできるようにします"
-  },
-  "metametricsCommitmentsAllowOptOut2": {
-    "message": "いつでも設定でオプトアウトできます"
-  },
-  "metametricsCommitmentsBoldNever": {
-    "message": "実行しない",
-    "description": "This string is localized separately from some of the commitments so that we can bold it"
-  },
-  "metametricsCommitmentsIntro": {
-    "message": "MetaMaskが実行する内容"
-  },
-  "metametricsCommitmentsNeverCollect": {
-    "message": "キー、アドレス、トランザクション、残高、ハッシュなど、いかなる個人情報も収集されることはありません"
-  },
-  "metametricsCommitmentsNeverCollectIP": {
-    "message": "$1が完全なIPアドレスを収集することはありません",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverCollectKeysEtc": {
-    "message": "$1は、キー、アドレス、トランザクション、残高、ハッシュなど、いかなる個人情報も収集しません",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverIP": {
-    "message": "完全なIPアドレスは収集されません"
-  },
-  "metametricsCommitmentsNeverSell": {
-    "message": "決して利益目的にデータを販売することはありません!"
-  },
-  "metametricsCommitmentsNeverSellDataForProfit": {
-    "message": "$1が営利目的でデータを販売することは決してありません。",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsSendAnonymizedEvents": {
-    "message": "匿名化されたクリック・ページビューイベントを送信します"
-  },
-  "metametricsHelpImproveMetaMask": {
-    "message": "MetaMaskの品質向上へのご協力のお願い"
-  },
-  "metametricsOptInDescription": {
-    "message": "MetaMaskでは、ユーザーによる拡張機能の利用状況についてよりよく理解するため、基本的な使用状況データを収集させていただきたいと考えています。このデータは、当社の製品およびイーサリアムエコシステムの使いやすさとユーザーエクスペリエンスを継続的に改善するために使用されます。"
-  },
-  "metametricsOptInDescription2": {
-    "message": "弊社の製品をより使いやすくするために、基本的な使用データを収集したいと考えています. これらの指標は..."
-  },
-  "metametricsTitle": {
-    "message": "6百万人以上のユーザーと共に、MetaMaskの改善にご協力ください"
-  },
   "mismatchedChain": {
     "message": "このチェーンIDのネットワーク詳細が、レコードと一致しません。続行する前に$1をお勧めします。",
     "description": "$1 is a clickable link with text defined by the 'mismatchedChainLinkText' key"
@@ -2020,12 +1971,6 @@
   },
   "parameters": {
     "message": "パラメーター"
-  },
-  "participateInMetaMetrics": {
-    "message": "MetaMetricsに参加"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "MetaMetricsに参加して、MetaMaskの改善にご協力ください"
   },
   "password": {
     "message": "パスワード"

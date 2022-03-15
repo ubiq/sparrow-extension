@@ -104,11 +104,6 @@ describe('Sparrow', function () {
       await driver.delay(largeDelayMs);
     });
 
-    it('clicks the "No thanks" option on the metametrics opt-in screen', async function () {
-      await driver.clickElement('.btn-secondary');
-      await driver.delay(largeDelayMs);
-    });
-
     it('accepts a secure password', async function () {
       await driver.fill(
         '.first-time-flow__form #create-password',

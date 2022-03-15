@@ -18,7 +18,6 @@ jest.mock('../../../../store/actions', () => ({
   getGasFeeTimeEstimate: jest
     .fn()
     .mockImplementation(() => Promise.resolve('unknown')),
-  createTransactionEventFragment: jest.fn(),
 }));
 
 const MOCK_FEE_ESTIMATE = {

@@ -125,7 +125,6 @@
         "transactionTime": false
       },
       "knownMethodData": {},
-      "participateInMetaMetrics": false,
       "firstTimeFlowType": "create",
       "currentLocale": "en",
       "identities": {
@@ -140,7 +139,6 @@
         "useNativeCurrencyAsPrimaryCurrency": true
       },
       "completedOnboarding": true,
-      "metaMetricsId": null,
       "ipfsGateway": "dweb.link",
       "selectedAddress": "0x5cfe73b6021e818b776b421b1c4db2474086a7e1"
     },

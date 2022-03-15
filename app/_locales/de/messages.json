@@ -1580,55 +1580,6 @@
   "metamaskVersion": {
     "message": "Sparrow-Version"
   },
-  "metametricsCommitmentsAllowOptOut": {
-    "message": "Erlaubt Ihnen immer die Abmeldung über Einstellungen"
-  },
-  "metametricsCommitmentsAllowOptOut2": {
-    "message": "Sie können sich immer über die Einstellungen abmelden"
-  },
-  "metametricsCommitmentsBoldNever": {
-    "message": "Nie",
-    "description": "This string is localized separately from some of the commitments so that we can bold it"
-  },
-  "metametricsCommitmentsIntro": {
-    "message": "MetaMaske wird.."
-  },
-  "metametricsCommitmentsNeverCollect": {
-    "message": "Erfassen Sie niemals Schlüssel, Adressen, Transaktionen, Salden, Hashes oder persönliche Informationen"
-  },
-  "metametricsCommitmentsNeverCollectIP": {
-    "message": "$1 Erfassen Sie Ihre vollständige IP-Adresse",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverCollectKeysEtc": {
-    "message": "$ erfassen Sie Schlüssel, Adressen, Transaktionen, Salden, Hashes oder persönliche Informationen",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverIP": {
-    "message": "Erfassen Sie nie Ihre vollständige IP-Adresse"
-  },
-  "metametricsCommitmentsNeverSell": {
-    "message": "Verkaufen Sie niemals Daten mit Gewinnabsicht. Niemals!"
-  },
-  "metametricsCommitmentsNeverSellDataForProfit": {
-    "message": "1 $ Daten für Gewinn verkaufen. Immer!",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsSendAnonymizedEvents": {
-    "message": "Anonymisierte Ereignisse für Klicks und Seitenaufrufe senden"
-  },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Hilf uns Sparrow zu verbessern"
-  },
-  "metametricsOptInDescription": {
-    "message": "Sparrow möchte Nutzungsdaten sammeln, um besser zu verstehen, wie unsere Nutzer mit der Erweiterung umgehen. Diese Daten werden verwendet, um die Benutzerfreundlichkeit und das Benutzererlebnis unseres Produkts und des Ethereum-Ökosystems kontinuierlich zu verbessern."
-  },
-  "metametricsOptInDescription2": {
-    "message": "Wir würden gerne grundlegende Nutzungsdaten sammeln, um die Benutzerfreundlichkeit unseres Produkts zu verbessern.  Diese Metriken werden..."
-  },
-  "metametricsTitle": {
-    "message": "6M+ Benutzern beitreten um Sparrow zu verbessern"
-  },
   "mismatchedChain": {
     "message": "Die Netzwerkdetails für diese Ketten-ID stimmen nicht mit unseren Aufzeichnungen überein. Wir empfehlen Ihnen $1, bevor Sie fortfahren.",
     "description": "$1 is a clickable link with text defined by the 'mismatchedChainLinkText' key"
@@ -2017,12 +1968,6 @@
   },
   "parameters": {
     "message": "Parameter"
-  },
-  "participateInMetaMetrics": {
-    "message": "Bei MetaMetrics teilnehmen"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Nehmen Sie an MetaMetrics teil, um uns bei der Verbesserung von Sparrow zu helfen"
   },
   "password": {
     "message": "Passwort"

@@ -763,14 +763,6 @@
         "reselect": true
       }
     },
-    "@segment/loosely-validate-event": {
-      "packages": {
-        "assert": true,
-        "buffer": true,
-        "component-type": true,
-        "join-component": true
-      }
-    },
     "@sindresorhus/is": {
       "packages": {
         "is-buffer": true,
@@ -899,26 +891,6 @@
         "fast-deep-equal": true
       }
     },
-    "analytics-node": {
-      "globals": {
-        "clearTimeout": true,
-        "console.log": true,
-        "setImmediate": true,
-        "setTimeout": true
-      },
-      "packages": {
-        "@segment/loosely-validate-event": true,
-        "assert": true,
-        "axios": true,
-        "axios-retry": true,
-        "lodash.isstring": true,
-        "md5": true,
-        "ms": true,
-        "process": true,
-        "remove-trailing-slash": true,
-        "uuid": true
-      }
-    },
     "asap": {
       "globals": {
         "clearInterval": true,
@@ -989,30 +961,6 @@
       "packages": {
         "process": true,
         "timers-browserify": true
-      }
-    },
-    "axios": {
-      "globals": {
-        "FormData": true,
-        "URLSearchParams": true,
-        "XMLHttpRequest": true,
-        "btoa": true,
-        "console.warn": true,
-        "document": true,
-        "location.href": true,
-        "navigator": true,
-        "setTimeout": true
-      },
-      "packages": {
-        "process": true
-      }
-    },
-    "axios-retry": {
-      "globals": {
-        "setTimeout": true
-      },
-      "packages": {
-        "is-retry-allowed": true
       }
     },
     "babel-runtime": {
@@ -3439,13 +3387,6 @@
     "mafmt": {
       "packages": {
         "multiaddr": true
-      }
-    },
-    "md5": {
-      "packages": {
-        "charenc": true,
-        "crypt": true,
-        "is-buffer": true
       }
     },
     "md5.js": {

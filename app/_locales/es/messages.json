@@ -1014,37 +1014,6 @@
   "metamaskVersion": {
     "message": "Versión de Sparrow"
   },
-  "metametricsCommitmentsAllowOptOut": {
-    "message": "Permitirle siempre optar por no participar a través de Configuración"
-  },
-  "metametricsCommitmentsBoldNever": {
-    "message": "Nunca",
-    "description": "This string is localized separately from some of the commitments so that we can bold it"
-  },
-  "metametricsCommitmentsIntro": {
-    "message": "Sparrow…"
-  },
-  "metametricsCommitmentsNeverCollectIP": {
-    "message": "$1 recopilará su dirección IP completa",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverCollectKeysEtc": {
-    "message": "$1 recopilará claves, direcciones, transacciones, saldos, hashes o cualquier otra información personal",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverSellDataForProfit": {
-    "message": "$1 venderá datos con afán de lucro. ¡Jamás!",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsSendAnonymizedEvents": {
-    "message": "Enviar eventos de vistas de página y clics anónimos"
-  },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Ayúdenos a mejorar Sparrow"
-  },
-  "metametricsOptInDescription": {
-    "message": "A Sparrow le gustaría recopilar datos de uso para entender mejor cómo los usuarios interactúan con la extensión. Estos datos se usarán para mejorar de manera continua la usabilidad y la experiencia de usuario de nuestro producto y del ecosistema de Ethereum."
-  },
   "mismatchedChain": {
     "message": "Los detalles de la red de este identificador de cadena no coinciden con nuestros registros. Antes de continuar, le recomendamos que $1.",
     "description": "$1 is a clickable link with text defined by the 'mismatchedChainLinkText' key"
@@ -1259,12 +1228,6 @@
   },
   "parameters": {
     "message": "Parámetros"
-  },
-  "participateInMetaMetrics": {
-    "message": "Participar en MetaMetrics"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Participe en MetaMetrics para ayudarnos a mejorar Sparrow"
   },
   "password": {
     "message": "Contraseña"

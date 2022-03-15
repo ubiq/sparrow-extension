@@ -116,8 +116,6 @@
       },
       "knownMethodData": {},
       "lostIdentities": {},
-      "metaMetricsId": null,
-      "participateInMetaMetrics": false,
       "preferences": {
         "showFiatInTestnets": true,
         "useNativeCurrencyAsPrimaryCurrency": true

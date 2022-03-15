@@ -880,37 +880,6 @@
   "metamaskVersion": {
     "message": "versione di Sparrow"
   },
-  "metametricsCommitmentsAllowOptOut": {
-    "message": "Ti consentirà sempre di rimuovere il consenso tramite Impostazioni"
-  },
-  "metametricsCommitmentsBoldNever": {
-    "message": "Non",
-    "description": "This string is localized separately from some of the commitments so that we can bold it"
-  },
-  "metametricsCommitmentsIntro": {
-    "message": "Sparrow.."
-  },
-  "metametricsCommitmentsNeverCollectIP": {
-    "message": "$1 raccoglierà il tuo indirizzo IP completo",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverCollectKeysEtc": {
-    "message": "$1 raccoglierà chiavi, indirizzi, transazioni, bilanci, hash, o qualsiasi altra informazione personale",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsNeverSellDataForProfit": {
-    "message": "$1 venderà i tuoi dati per profitto. Mai!",
-    "description": "The $1 is the bolded word 'Never', from 'metametricsCommitmentsBoldNever'"
-  },
-  "metametricsCommitmentsSendAnonymizedEvents": {
-    "message": "Invierà click e visualizzazioni di pagina in modo anonimo"
-  },
-  "metametricsHelpImproveMetaMask": {
-    "message": "Aiutaci a Migliorare Sparrow"
-  },
-  "metametricsOptInDescription": {
-    "message": "Sparrow vorrebbe raccogliere dati di utilizzo per capire meglio come gli utenti interagiscono con l'estensione. Questi dati verranno usati continuamente per migliorare l'usabilità e l'esperienza utente dei nostri prodotti e dell'ecosistema Ethereum."
-  },
   "mustSelectOne": {
     "message": "Devi selezionare almeno un token."
   },
@@ -1027,12 +996,6 @@
   },
   "parameters": {
     "message": "Parametri"
-  },
-  "participateInMetaMetrics": {
-    "message": "Participa in MetaMetrics"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "Participa in MetaMetrics per aiutarci a rendere Sparrow migliore"
   },
   "passwordNotLongEnough": {
     "message": "Password non abbastanza lunga"

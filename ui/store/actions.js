@@ -2242,28 +2242,6 @@ export function toggleAccountMenu() {
   };
 }
 
-export function setParticipateInMetaMetrics(val) {
-  return (dispatch) => {
-    log.debug(`background.setParticipateInMetaMetrics`);
-    return new Promise((resolve, reject) => {
-      background.setParticipateInMetaMetrics(val, (err, metaMetricsId) => {
-        log.debug(err);
-        if (err) {
-          dispatch(displayWarning(err.message));
-          reject(err);
-          return;
-        }
-
-        dispatch({
-          type: actionConstants.SET_PARTICIPATE_IN_METAMETRICS,
-          value: val,
-        });
-        resolve([val, metaMetricsId]);
-      });
-    });
-  };
-}
-
 export function setUseBlockie(val) {
   return (dispatch) => {
     dispatch(showLoadingIndication());
@@ -3163,50 +3141,6 @@ export async function closeNotificationPopup() {
   global.platform.closeCurrentWindow();
 }
 
-// MetaMetrics
-/**
- * @typedef {import('../../shared/constants/metametrics').MetaMetricsEventPayload} MetaMetricsEventPayload
- * @typedef {import('../../shared/constants/metametrics').MetaMetricsEventOptions} MetaMetricsEventOptions
- * @typedef {import('../../shared/constants/metametrics').MetaMetricsPagePayload} MetaMetricsPagePayload
- * @typedef {import('../../shared/constants/metametrics').MetaMetricsPageOptions} MetaMetricsPageOptions
- */
-
-/**
- * @param {MetaMetricsEventPayload} payload - details of the event to track
- * @param {MetaMetricsEventOptions} options - options for routing/handling of event
- * @returns {Promise<void>}
- */
-export function trackMetaMetricsEvent(payload, options) {
-  return promisifiedBackground.trackMetaMetricsEvent(payload, options);
-}
-
-export function createEventFragment(options) {
-  return promisifiedBackground.createEventFragment(options);
-}
-
-export function createTransactionEventFragment(transactionId, event) {
-  return promisifiedBackground.createTransactionEventFragment(
-    transactionId,
-    event,
-  );
-}
-
-export function updateEventFragment(id, payload) {
-  return promisifiedBackground.updateEventFragment(id, payload);
-}
-
-export function finalizeEventFragment(id, options) {
-  return promisifiedBackground.finalizeEventFragment(id, options);
-}
-
-/**
- * @param {MetaMetricsPagePayload} payload - details of the page viewed
- * @param {MetaMetricsPageOptions} options - options for handling the page view
- */
-export function trackMetaMetricsPage(payload, options) {
-  return promisifiedBackground.trackMetaMetricsPage(payload, options);
-}
-
 export function updateViewedNotifications(notificationIdViewedStatusMap) {
   return promisifiedBackground.updateViewedNotifications(
     notificationIdViewedStatusMap,
@@ -3227,15 +3161,6 @@ export async function setWeb3ShimUsageAlertDismissed(origin) {
 
 // Smart Transactions Controller
 export async function setSmartTransactionsOptInStatus(optInState) {
-  trackMetaMetricsEvent({
-    event: 'STX OptIn',
-    category: 'swaps',
-    sensitiveProperties: {
-      stx_enabled: true,
-      current_stx_enabled: true,
-      stx_user_opt_in: optInState,
-    },
-  });
   await promisifiedBackground.setSmartTransactionsOptInStatus(optInState);
 }
 

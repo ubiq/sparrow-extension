@@ -658,12 +658,6 @@
   "parameters": {
     "message": "פרמטרים"
   },
-  "participateInMetaMetrics": {
-    "message": "קח/י חלק ב- MetaMetrics"
-  },
-  "participateInMetaMetricsDescription": {
-    "message": "קח/י חלק ב-MetaMetrics כדי לעזור לנו לשפר את Sparrow"
-  },
   "password": {
     "message": "סיסמה"
   },

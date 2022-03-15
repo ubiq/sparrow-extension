@@ -345,7 +345,6 @@ const state = {
         name: 'Approve Tokens',
       },
     },
-    participateInMetaMetrics: true,
     nextNonce: 71,
     connectedStatusPopoverHasBeenShown: true,
     swapsWelcomeMessageHasBeenShown: true,
@@ -995,8 +994,6 @@ const state = {
     infuraBlocked: false,
     migratedPrivacyMode: false,
     selectedAddress: '0x9d0ba4ddac06032527b140912ec808ab9451b788',
-    metaMetricsId:
-      '0xc2377d11fec1c3b7dd88c4854240ee5e3ed0d9f63b00456d98d80320337b827f',
     conversionDate: 1620710825.03,
     conversionRate: 3910.28,
     currentCurrency: 'usd',

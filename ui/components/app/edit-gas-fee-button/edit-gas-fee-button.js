@@ -9,7 +9,6 @@ import { COLORS, TYPOGRAPHY } from '../../../helpers/constants/design-system';
 import { PRIORITY_LEVEL_ICON_MAP } from '../../../helpers/constants/gas';
 import { useGasFeeContext } from '../../../contexts/gasFee';
 import { useI18nContext } from '../../../hooks/useI18nContext';
-import { useTransactionEventFragment } from '../../../hooks/useTransactionEventFragment';
 import { useTransactionModalContext } from '../../../contexts/transaction-modal';
 import InfoTooltip from '../../ui/info-tooltip/info-tooltip';
 import Typography from '../../ui/typography/typography';
@@ -26,7 +25,6 @@ export default function EditGasFeeButton({ userAcknowledgedGasMissing }) {
     supportsEIP1559V2,
     transaction,
   } = useGasFeeContext();
-  const { updateTransactionEventFragment } = useTransactionEventFragment();
   const { openModal } = useTransactionModalContext();
   const editEnabled =
     !hasSimulationError || userAcknowledgedGasMissing === true;
@@ -49,16 +47,10 @@ export default function EditGasFeeButton({ userAcknowledgedGasMissing }) {
   }
 
   const openEditGasFeeModal = () => {
-    updateTransactionEventFragment({
-      gas_edit_attempted: 'basic',
-    });
     openModal('editGasFee');
   };
 
   const openAdvancedGasFeeModal = () => {
-    updateTransactionEventFragment({
-      gas_edit_attempted: 'advanced',
-    });
     openModal('advancedGasFee');
   };
 

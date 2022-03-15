@@ -126,10 +126,6 @@
         }
       }
     },
-    "MetaMetricsController": {
-      "participateInMetaMetrics": false,
-      "metaMetricsId": null
-    },
     "PermissionsController": {
       "permissionsRequests": [],
       "permissionsDescriptions": {},

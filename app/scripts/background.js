@@ -18,10 +18,6 @@ import {
   PLATFORM_FIREFOX,
 } from '../../shared/constants/app';
 import { SECOND } from '../../shared/constants/time';
-import {
-  REJECT_NOTFICIATION_CLOSE,
-  REJECT_NOTFICIATION_CLOSE_SIG,
-} from '../../shared/constants/metametrics';
 import migrations from './migrations';
 import Migrator from './lib/migrator';
 import ExtensionPlatform from './platforms/extension';
@@ -513,44 +509,19 @@ function setupController(initState, initLangCode) {
     );
     controller.messageManager.messages
       .filter((msg) => msg.status === 'unapproved')
-      .forEach((tx) =>
-        controller.messageManager.rejectMsg(
-          tx.id,
-          REJECT_NOTFICIATION_CLOSE_SIG,
-        ),
-      );
+      .forEach((tx) => controller.messageManager.rejectMsg(tx.id));
     controller.personalMessageManager.messages
       .filter((msg) => msg.status === 'unapproved')
-      .forEach((tx) =>
-        controller.personalMessageManager.rejectMsg(
-          tx.id,
-          REJECT_NOTFICIATION_CLOSE_SIG,
-        ),
-      );
+      .forEach((tx) => controller.personalMessageManager.rejectMsg(tx.id));
     controller.typedMessageManager.messages
       .filter((msg) => msg.status === 'unapproved')
-      .forEach((tx) =>
-        controller.typedMessageManager.rejectMsg(
-          tx.id,
-          REJECT_NOTFICIATION_CLOSE_SIG,
-        ),
-      );
+      .forEach((tx) => controller.typedMessageManager.rejectMsg(tx.id));
     controller.decryptMessageManager.messages
       .filter((msg) => msg.status === 'unapproved')
-      .forEach((tx) =>
-        controller.decryptMessageManager.rejectMsg(
-          tx.id,
-          REJECT_NOTFICIATION_CLOSE,
-        ),
-      );
+      .forEach((tx) => controller.decryptMessageManager.rejectMsg(tx.id));
     controller.encryptionPublicKeyManager.messages
       .filter((msg) => msg.status === 'unapproved')
-      .forEach((tx) =>
-        controller.encryptionPublicKeyManager.rejectMsg(
-          tx.id,
-          REJECT_NOTFICIATION_CLOSE,
-        ),
-      );
+      .forEach((tx) => controller.encryptionPublicKeyManager.rejectMsg(tx.id));
 
     // Finally, reject all approvals managed by the ApprovalController
     controller.approvalController.clear(
