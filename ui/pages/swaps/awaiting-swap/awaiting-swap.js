@@ -6,30 +6,19 @@ import isEqual from 'lodash/isEqual';
 import { getBlockExplorerLink } from 'ubiqscan-link';
 import { I18nContext } from '../../../contexts/i18n';
 import { SUPPORT_LINK } from '../../../helpers/constants/common';
-import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
-import { MetaMetricsContext } from '../../../contexts/metametrics.new';
 
 import {
   getCurrentChainId,
-  getCurrentCurrency,
   getRpcPrefsForCurrentProvider,
-  getUSDConversionRate,
-  isHardwareWallet,
-  getHardwareWalletType,
   getSwapsDefaultToken,
 } from '../../../selectors';
 
 import {
-  getUsedQuote,
   getFetchParams,
-  getApproveTxParams,
-  getUsedSwapsGasPrice,
   fetchQuotesAndSetQuoteState,
   navigateBackToBuildQuote,
   prepareForRetryGetQuotes,
   prepareToLeaveSwaps,
-  getSmartTransactionsOptInStatus,
-  getSmartTransactionsEnabled,
   getFromTokenInputValue,
   getMaxSlippage,
   setSwapsFromToken,
@@ -50,7 +39,6 @@ import PulseLoader from '../../../components/ui/pulse-loader';
 import { ASSET_ROUTE, DEFAULT_ROUTE } from '../../../helpers/constants/routes';
 import { stopPollingForQuotes } from '../../../store/actions';
 
-import { getRenderableNetworkFeesForQuote } from '../swaps.util';
 import SwapsFooter from '../swaps-footer';
 
 import SwapFailureIcon from './swap-failure-icon';
@@ -66,19 +54,13 @@ export default function AwaitingSwap({
   submittingSwap,
 }) {
   const t = useContext(I18nContext);
-  const metaMetricsEvent = useContext(MetaMetricsContext);
   const history = useHistory();
   const dispatch = useDispatch();
 
   const fetchParams = useSelector(getFetchParams, isEqual);
-  const { destinationTokenInfo, sourceTokenInfo } = fetchParams?.metaData || {};
+  const { destinationTokenInfo } = fetchParams?.metaData || {};
   const fromTokenInputValue = useSelector(getFromTokenInputValue);
   const maxSlippage = useSelector(getMaxSlippage);
-  const usedQuote = useSelector(getUsedQuote, isEqual);
-  const approveTxParams = useSelector(getApproveTxParams, shallowEqual);
-  const swapsGasPrice = useSelector(getUsedSwapsGasPrice);
-  const currentCurrency = useSelector(getCurrentCurrency);
-  const usdConversionRate = useSelector(getUSDConversionRate);
   const chainId = useSelector(getCurrentChainId);
   const rpcPrefs = useSelector(getRpcPrefsForCurrentProvider, shallowEqual);
   const defaultSwapsToken = useSelector(getSwapsDefaultToken, isEqual);
@@ -86,48 +68,6 @@ export default function AwaitingSwap({
   const [trackedQuotesExpiredEvent, setTrackedQuotesExpiredEvent] = useState(
     false,
   );
-
-  let feeinUnformattedFiat;
-
-  if (usedQuote && swapsGasPrice) {
-    const renderableNetworkFees = getRenderableNetworkFeesForQuote({
-      tradeGas: usedQuote.gasEstimateWithRefund || usedQuote.averageGas,
-      approveGas: approveTxParams?.gas || '0x0',
-      gasPrice: swapsGasPrice,
-      currentCurrency,
-      conversionRate: usdConversionRate,
-      tradeValue: usedQuote?.trade?.value,
-      sourceSymbol: sourceTokenInfo?.symbol,
-      sourceAmount: usedQuote.sourceAmount,
-      chainId,
-    });
-    feeinUnformattedFiat = renderableNetworkFees.rawNetworkFees;
-  }
-
-  const hardwareWalletUsed = useSelector(isHardwareWallet);
-  const hardwareWalletType = useSelector(getHardwareWalletType);
-  const smartTransactionsOptInStatus = useSelector(
-    getSmartTransactionsOptInStatus,
-  );
-  const smartTransactionsEnabled = useSelector(getSmartTransactionsEnabled);
-  const sensitiveProperties = {
-    token_from: sourceTokenInfo?.symbol,
-    token_from_amount: fetchParams?.value,
-    token_to: destinationTokenInfo?.symbol,
-    request_type: fetchParams?.balanceError ? 'Quote' : 'Order',
-    slippage: fetchParams?.slippage,
-    custom_slippage: fetchParams?.slippage === 2,
-    gas_fees: feeinUnformattedFiat,
-    is_hardware_wallet: hardwareWalletUsed,
-    hardware_wallet_type: hardwareWalletType,
-    stx_enabled: smartTransactionsEnabled,
-    stx_user_opt_in: smartTransactionsOptInStatus,
-  };
-  const quotesExpiredEvent = useNewMetricEvent({
-    event: 'Quotes Timed Out',
-    sensitiveProperties,
-    category: 'swaps',
-  });
 
   const baseNetworkUrl =
     rpcPrefs.blockExplorerUrl ??
@@ -184,7 +124,6 @@ export default function AwaitingSwap({
 
     if (!trackedQuotesExpiredEvent) {
       setTrackedQuotesExpiredEvent(true);
-      quotesExpiredEvent();
     }
   } else if (errorKey === ERROR_FETCHING_QUOTES) {
     headerText = t('swapFetchingQuotesErrorTitle');
@@ -286,7 +225,6 @@ export default function AwaitingSwap({
                 history,
                 fromTokenInputValue,
                 maxSlippage,
-                metaMetricsEvent,
               ),
             );
           } else if (errorKey) {

@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { I18nContext } from '../../../contexts/i18n';
 import InfoTooltip from '../../../components/ui/info-tooltip';
-import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
 import {
   MAINNET_CHAIN_ID,
   BSC_CHAIN_ID,
@@ -58,11 +57,6 @@ export default function FeeCard({
     }
   };
 
-  const gasFeesLearnMoreLinkClickedEvent = useNewMetricEvent({
-    category: 'Swaps',
-    event: 'Clicked "Gas Fees: Learn More" Link',
-  });
-
   const tokenApprovalTextComponent = (
     <span key="fee-card-approve-symbol" className="fee-card__bold">
       {t('enableToken', [tokenApprovalSourceTokenSymbol])}
@@ -102,7 +96,6 @@ export default function FeeCard({
                             <a
                               className="fee-card__link"
                               onClick={() => {
-                                gasFeesLearnMoreLinkClickedEvent();
                                 global.platform.openTab({
                                   url: GAS_FEES_LEARN_MORE_URL,
                                 });

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import zxcvbn from 'zxcvbn';
 import { useSelector } from 'react-redux';
-import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import Button from '../../../components/ui/button';
 import Typography from '../../../components/ui/typography';
@@ -47,11 +46,6 @@ export default function CreatePassword({
   const [showPassword, setShowPassword] = useState(false);
   const history = useHistory();
   const firstTimeFlowType = useSelector(getFirstTimeFlowType);
-
-  const submitPasswordEvent = useNewMetricEvent({
-    event: 'Submit Password',
-    category: 'Onboarding',
-  });
 
   const isValid = useMemo(() => {
     if (!password || !confirmPassword || password !== confirmPassword) {
@@ -142,7 +136,6 @@ export default function CreatePassword({
         if (createNewAccount) {
           await createNewAccount(password);
         }
-        submitPasswordEvent();
         history.push(ONBOARDING_SECURE_YOUR_WALLET_ROUTE);
       } catch (error) {
         setPasswordError(error.message);

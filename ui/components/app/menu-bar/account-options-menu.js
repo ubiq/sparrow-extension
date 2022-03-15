@@ -15,10 +15,6 @@ import {
   getSelectedIdentity,
 } from '../../../selectors';
 import { useI18nContext } from '../../../hooks/useI18nContext';
-import {
-  useMetricEvent,
-  useNewMetricEvent,
-} from '../../../hooks/useMetricEvent';
 import { getEnvironmentType } from '../../../../app/scripts/lib/util';
 import { ENVIRONMENT_TYPE_FULLSCREEN } from '../../../../shared/constants/app';
 
@@ -36,39 +32,6 @@ export default function AccountOptionsMenu({ anchorElement, onClose }) {
   const { blockExplorerUrl } = rpcPrefs;
   const blockExplorerUrlSubTitle = getURLHostName(blockExplorerUrl);
 
-  const openFullscreenEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Account Options',
-      name: 'Clicked Expand View',
-    },
-  });
-  const viewAccountDetailsEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Account Options',
-      name: 'Viewed Account Details',
-    },
-  });
-
-  const openConnectedSitesEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Account Options',
-      name: 'Opened Connected Sites',
-    },
-  });
-
-  const blockExplorerLinkClickedEvent = useNewMetricEvent({
-    category: 'Navigation',
-    event: 'Clicked Block Explorer Link',
-    properties: {
-      link_type: 'Account Tracker',
-      action: 'Account Options',
-      block_explorer_domain: getURLHostName(addressLink),
-    },
-  });
-
   const isRemovable = keyring.type !== 'HD Key Tree';
 
   return (
@@ -79,7 +42,6 @@ export default function AccountOptionsMenu({ anchorElement, onClose }) {
     >
       <MenuItem
         onClick={() => {
-          blockExplorerLinkClickedEvent();
           global.platform.openTab({
             url: addressLink,
           });
@@ -101,7 +63,6 @@ export default function AccountOptionsMenu({ anchorElement, onClose }) {
       {getEnvironmentType() === ENVIRONMENT_TYPE_FULLSCREEN ? null : (
         <MenuItem
           onClick={() => {
-            openFullscreenEvent();
             global.platform.openExtensionInBrowser();
             onClose();
           }}
@@ -114,7 +75,6 @@ export default function AccountOptionsMenu({ anchorElement, onClose }) {
         data-testid="account-options-menu__account-details"
         onClick={() => {
           dispatch(showModal({ name: 'ACCOUNT_DETAILS' }));
-          viewAccountDetailsEvent();
           onClose();
         }}
         iconClassName="fas fa-qrcode"
@@ -124,7 +84,6 @@ export default function AccountOptionsMenu({ anchorElement, onClose }) {
       <MenuItem
         data-testid="account-options-menu__connected-sites"
         onClick={() => {
-          openConnectedSitesEvent();
           history.push(CONNECTED_ROUTE);
           onClose();
         }}

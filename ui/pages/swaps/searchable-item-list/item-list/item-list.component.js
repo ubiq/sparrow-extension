@@ -12,7 +12,6 @@ import {
   getRpcPrefsForCurrentProvider,
 } from '../../../../selectors';
 import { SWAPS_CHAINID_DEFAULT_BLOCK_EXPLORER_URL_MAP } from '../../../../../shared/constants/swaps';
-import { useNewMetricEvent } from '../../../../hooks/useMetricEvent';
 import { getURLHostName } from '../../../../helpers/utils/util';
 
 export default function ItemList({
@@ -39,16 +38,6 @@ export default function ItemList({
   const blockExplorerLabel = rpcPrefs.blockExplorerUrl
     ? getURLHostName(blockExplorerLink)
     : t('etherscan');
-
-  const blockExplorerLinkClickedEvent = useNewMetricEvent({
-    category: 'Swaps',
-    event: 'Clicked Block Explorer Link',
-    properties: {
-      link_type: 'Token Tracker',
-      action: 'Verify Contract Address',
-      block_explorer_domain: getURLHostName(blockExplorerLink),
-    },
-  });
 
   // If there is a token for import based on a contract address, it's the only one in the list.
   const hasTokenForImport = results.length === 1 && results[0].notImported;
@@ -162,7 +151,6 @@ export default function ItemList({
                   <a
                     key="searchable-item-list__etherscan-link"
                     onClick={() => {
-                      blockExplorerLinkClickedEvent();
                       global.platform.openTab({
                         url: blockExplorerLink,
                       });

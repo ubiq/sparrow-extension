@@ -8,10 +8,8 @@ import { I18nContext } from '../../../contexts/i18n';
 import SelectQuotePopover from '../select-quote-popover';
 import { useEthFiatAmount } from '../../../hooks/useEthFiatAmount';
 import { useEqualityCheck } from '../../../hooks/useEqualityCheck';
-import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
 import { usePrevious } from '../../../hooks/usePrevious';
 import { useGasFeeInputs } from '../../../hooks/gasFeeInput/useGasFeeInputs';
-import { MetaMetricsContext } from '../../../contexts/metametrics.new';
 import FeeCard from '../fee-card';
 import EditGasPopover from '../../../components/app/edit-gas-popover/edit-gas-popover.component';
 import {
@@ -52,8 +50,6 @@ import {
   getTokenExchangeRates,
   getSwapsDefaultToken,
   getCurrentChainId,
-  isHardwareWallet,
-  getHardwareWalletType,
   checkNetworkAndAccountSupports1559,
   getEIP1559V2Enabled,
 } from '../../../selectors';
@@ -121,7 +117,6 @@ export default function ViewQuote() {
   const history = useHistory();
   const dispatch = useDispatch();
   const t = useContext(I18nContext);
-  const metaMetricsEvent = useContext(MetaMetricsContext);
   const eip1559V2Enabled = useSelector(getEIP1559V2Enabled);
 
   const [dispatchedSafeRefetch, setDispatchedSafeRefetch] = useState(false);
@@ -130,8 +125,6 @@ export default function ViewQuote() {
   const [warningHidden, setWarningHidden] = useState(false);
   const [originalApproveAmount, setOriginalApproveAmount] = useState(null);
   const [showEditGasPopover, setShowEditGasPopover] = useState(false);
-  // We need to have currentTimestamp in state, otherwise it would change with each rerender.
-  const [currentTimestamp] = useState(Date.now());
 
   const [
     acknowledgedPriceDifference,
@@ -502,81 +495,8 @@ export default function ViewQuote() {
   const showInsufficientWarning =
     (balanceError || tokenBalanceNeeded || ethBalanceNeeded) && !warningHidden;
 
-  const hardwareWalletUsed = useSelector(isHardwareWallet);
-  const hardwareWalletType = useSelector(getHardwareWalletType);
-
   const numberOfQuotes = Object.values(quotes).length;
   const bestQuoteReviewedEventSent = useRef();
-  const eventObjectBase = {
-    token_from: sourceTokenSymbol,
-    token_from_amount: sourceTokenValue,
-    token_to: destinationTokenSymbol,
-    token_to_amount: destinationTokenValue,
-    request_type: fetchParams?.balanceError,
-    slippage: fetchParams?.slippage,
-    custom_slippage: fetchParams?.slippage !== 2,
-    response_time: fetchParams?.responseTime,
-    best_quote_source: topQuote?.aggregator,
-    available_quotes: numberOfQuotes,
-    is_hardware_wallet: hardwareWalletUsed,
-    hardware_wallet_type: hardwareWalletType,
-    stx_enabled: currentSmartTransactionsEnabled,
-    current_stx_enabled: currentSmartTransactionsEnabled,
-    stx_user_opt_in: smartTransactionsOptInStatus,
-  };
-
-  const allAvailableQuotesOpened = useNewMetricEvent({
-    event: 'All Available Quotes Opened',
-    category: 'swaps',
-    sensitiveProperties: {
-      ...eventObjectBase,
-      other_quote_selected: usedQuote?.aggregator !== topQuote?.aggregator,
-      other_quote_selected_source:
-        usedQuote?.aggregator === topQuote?.aggregator
-          ? null
-          : usedQuote?.aggregator,
-    },
-  });
-  const quoteDetailsOpened = useNewMetricEvent({
-    event: 'Quote Details Opened',
-    category: 'swaps',
-    sensitiveProperties: {
-      ...eventObjectBase,
-      other_quote_selected: usedQuote?.aggregator !== topQuote?.aggregator,
-      other_quote_selected_source:
-        usedQuote?.aggregator === topQuote?.aggregator
-          ? null
-          : usedQuote?.aggregator,
-    },
-  });
-  const editSpendLimitOpened = useNewMetricEvent({
-    event: 'Edit Spend Limit Opened',
-    category: 'swaps',
-    sensitiveProperties: {
-      ...eventObjectBase,
-      custom_spend_limit_set: originalApproveAmount === approveAmount,
-      custom_spend_limit_amount:
-        originalApproveAmount === approveAmount ? null : approveAmount,
-    },
-  });
-
-  const bestQuoteReviewedEvent = useNewMetricEvent({
-    event: 'Best Quote Reviewed',
-    category: 'swaps',
-    sensitiveProperties: {
-      ...eventObjectBase,
-      network_fees: feeInFiat,
-    },
-  });
-
-  const viewQuotePageLoadedEvent = useNewMetricEvent({
-    event: 'View Quote Page Loaded',
-    category: 'swaps',
-    sensitiveProperties: {
-      ...eventObjectBase,
-      response_time: currentTimestamp - reviewSwapClickedTimestamp,
-    },
-  });
 
   useEffect(() => {
     if (
@@ -593,7 +513,6 @@ export default function ViewQuote() {
       ].every((dep) => dep !== null && dep !== undefined)
     ) {
       bestQuoteReviewedEventSent.current = true;
-      bestQuoteReviewedEvent();
     }
   }, [
     sourceTokenSymbol,
@@ -604,13 +523,11 @@ export default function ViewQuote() {
     topQuote,
     numberOfQuotes,
     feeInFiat,
-    bestQuoteReviewedEvent,
   ]);
 
   const metaMaskFee = usedQuote.fee;
 
   const onFeeCardTokenApprovalClick = () => {
-    editSpendLimitOpened();
     dispatch(
       showModal({
         name: 'EDIT_APPROVAL_PERMISSION',
@@ -789,10 +706,7 @@ export default function ViewQuote() {
   useEffect(() => {
     // Thanks to the next line we will only do quotes polling 3 times before showing a Quote Timeout modal.
     dispatch(setSwapsQuotesPollingLimitEnabled(true));
-    if (reviewSwapClickedTimestamp) {
-      viewQuotePageLoadedEvent();
-    }
-  }, [dispatch, viewQuotePageLoadedEvent, reviewSwapClickedTimestamp]);
+  }, [dispatch, reviewSwapClickedTimestamp]);
 
   useEffect(() => {
     // if smart transaction error is turned off, reset submit clicked boolean
@@ -840,7 +754,6 @@ export default function ViewQuote() {
                 onSubmit={(aggId) => dispatch(swapsQuoteSelected(aggId))}
                 swapToSymbol={destinationTokenSymbol}
                 initialAggId={usedQuote.aggregator}
-                onQuoteDetailsIsOpened={quoteDetailsOpened}
                 hideEstimatedGasFee={
                   smartTransactionsEnabled && smartTransactionsOptInStatus
                 }
@@ -936,7 +849,6 @@ export default function ViewQuote() {
                   metaMaskFee={String(metaMaskFee)}
                   numberOfQuotes={Object.values(quotes).length}
                   onQuotesClick={() => {
-                    allAvailableQuotesOpened();
                     setSelectQuotePopoverShown(true);
                   }}
                   chainId={chainId}
@@ -965,12 +877,11 @@ export default function ViewQuote() {
                   dispatch(
                     signAndSendSwapsSmartTransaction({
                       unsignedTransaction,
-                      metaMetricsEvent,
                       history,
                     }),
                   );
                 } else {
-                  dispatch(signAndSendTransactions(history, metaMetricsEvent));
+                  dispatch(signAndSendTransactions(history));
                 }
               } else if (destinationToken.symbol === defaultSwapsToken.symbol) {
                 history.push(DEFAULT_ROUTE);

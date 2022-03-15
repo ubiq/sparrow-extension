@@ -3,23 +3,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import { I18nContext } from '../../../contexts/i18n';
-import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
 import {
   getFetchParams,
   prepareToLeaveSwaps,
   getCurrentSmartTransactions,
   getSelectedQuote,
   getTopQuote,
-  getSmartTransactionsOptInStatus,
-  getSmartTransactionsEnabled,
-  getCurrentSmartTransactionsEnabled,
   getSwapsRefreshStates,
   cancelSwapsSmartTransaction,
 } from '../../../ducks/swaps/swaps';
-import {
-  isHardwareWallet,
-  getHardwareWalletType,
-} from '../../../selectors/selectors';
 import {
   DEFAULT_ROUTE,
   BUILD_QUOTE_ROUTE,
@@ -60,21 +52,11 @@ export default function SmartTransactionStatus() {
   const fetchParams = useSelector(getFetchParams) || {};
   const { destinationTokenInfo = {}, sourceTokenInfo = {} } =
     fetchParams?.metaData || {};
-  const hardwareWalletUsed = useSelector(isHardwareWallet);
-  const hardwareWalletType = useSelector(getHardwareWalletType);
-  const needsTwoConfirmations = true;
   const selectedQuote = useSelector(getSelectedQuote);
   const topQuote = useSelector(getTopQuote);
   const usedQuote = selectedQuote || topQuote;
   const currentSmartTransactions = useSelector(getCurrentSmartTransactions);
-  const smartTransactionsOptInStatus = useSelector(
-    getSmartTransactionsOptInStatus,
-  );
   const swapsRefreshRates = useSelector(getSwapsRefreshStates);
-  const smartTransactionsEnabled = useSelector(getSmartTransactionsEnabled);
-  const currentSmartTransactionsEnabled = useSelector(
-    getCurrentSmartTransactionsEnabled,
-  );
   let smartTransactionStatus = SMART_TRANSACTION_STATUSES.PENDING;
   let latestSmartTransaction = {};
   let latestSmartTransactionUuid;
@@ -91,22 +73,6 @@ export default function SmartTransactionStatus() {
     swapsRefreshRates.stxStatusDeadline,
   );
 
-  const sensitiveProperties = {
-    needs_two_confirmations: needsTwoConfirmations,
-    token_from: sourceTokenInfo?.symbol,
-    token_from_amount: fetchParams?.value,
-    token_to: destinationTokenInfo?.symbol,
-    request_type: fetchParams?.balanceError ? 'Quote' : 'Order',
-    slippage: fetchParams?.slippage,
-    custom_slippage: fetchParams?.slippage === 2,
-    is_hardware_wallet: hardwareWalletUsed,
-    hardware_wallet_type: hardwareWalletType,
-    stx_uuid: latestSmartTransactionUuid,
-    stx_enabled: smartTransactionsEnabled,
-    current_stx_enabled: currentSmartTransactionsEnabled,
-    stx_user_opt_in: smartTransactionsOptInStatus,
-  };
-
   let destinationValue;
   if (usedQuote?.destinationAmount) {
     destinationValue = calcTokenAmount(
@@ -115,28 +81,11 @@ export default function SmartTransactionStatus() {
     ).toPrecision(8);
   }
 
-  const stxStatusPageLoadedEvent = useNewMetricEvent({
-    event: 'STX Status Page Loaded',
-    category: 'swaps',
-    sensitiveProperties,
-  });
-
-  const cancelSmartTransactionEvent = useNewMetricEvent({
-    event: 'Cancel STX',
-    category: 'swaps',
-    sensitiveProperties,
-  });
-
   const isSmartTransactionPending =
     smartTransactionStatus === SMART_TRANSACTION_STATUSES.PENDING;
   const showCloseButtonOnly =
     isSmartTransactionPending ||
     smartTransactionStatus === SMART_TRANSACTION_STATUSES.SUCCESS;
-
-  useEffect(() => {
-    stxStatusPageLoadedEvent();
-    // eslint-disable-next-line
-  }, []);
 
   useEffect(() => {
     let intervalId;
@@ -236,7 +185,6 @@ export default function SmartTransactionStatus() {
           onClick={(e) => {
             e?.preventDefault();
             setCancelSwapLinkClicked(true); // We want to hide it after a user clicks on it.
-            cancelSmartTransactionEvent();
             dispatch(cancelSwapsSmartTransaction(latestSmartTransactionUuid));
           }}
         >

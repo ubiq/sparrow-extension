@@ -13,8 +13,6 @@ import {
 } from '../../../selectors/selectors';
 import { showModal } from '../../../store/actions';
 import { DEFAULT_ROUTE } from '../../../helpers/constants/routes';
-import { getURLHostName } from '../../../helpers/utils/util';
-import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
 import AssetNavigation from './asset-navigation';
 import AssetOptions from './asset-options';
 
@@ -30,16 +28,6 @@ export default function NativeAsset({ nativeCurrency }) {
   const history = useHistory();
   const accountLink = getAccountLink(address, chainId, rpcPrefs);
 
-  const blockExplorerLinkClickedEvent = useNewMetricEvent({
-    category: 'Navigation',
-    event: 'Clicked Block Explorer Link',
-    properties: {
-      link_type: 'Account Tracker',
-      action: 'Asset Options',
-      block_explorer_domain: getURLHostName(accountLink),
-    },
-  });
-
   return (
     <>
       <AssetNavigation
@@ -51,7 +39,6 @@ export default function NativeAsset({ nativeCurrency }) {
           <AssetOptions
             isNativeAsset
             onClickBlockExplorer={() => {
-              blockExplorerLinkClickedEvent();
               global.platform.openTab({
                 url: accountLink,
               });

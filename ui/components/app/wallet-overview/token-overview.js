@@ -12,10 +12,6 @@ import {
   SEND_ROUTE,
   BUILD_QUOTE_ROUTE,
 } from '../../../helpers/constants/routes';
-import {
-  useMetricEvent,
-  useNewMetricEvent,
-} from '../../../hooks/useMetricEvent';
 import { useTokenTracker } from '../../../hooks/useTokenTracker';
 import { useTokenFiatAmount } from '../../../hooks/useTokenFiatAmount';
 import { ASSET_TYPES, updateSendAsset } from '../../../ducks/send';
@@ -36,13 +32,6 @@ import WalletOverview from './wallet-overview';
 const TokenOverview = ({ className, token }) => {
   const dispatch = useDispatch();
   const t = useContext(I18nContext);
-  const sendTokenEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Home',
-      name: 'Clicked Send: Token',
-    },
-  });
   const history = useHistory();
   const keyring = useSelector(getCurrentKeyring);
   const usingHardwareWallet = isHardwareKeyring(keyring.type);
@@ -55,11 +44,6 @@ const TokenOverview = ({ className, token }) => {
     token.symbol,
   );
   const isSwapsChain = useSelector(getIsSwapsChain);
-  const enteredSwapsEvent = useNewMetricEvent({
-    event: 'Swaps Opened',
-    properties: { source: 'Token View', active_currency: token.symbol },
-    category: 'swaps',
-  });
 
   useEffect(() => {
     if (token.isERC721 && process.env.COLLECTIBLES_V1) {
@@ -95,7 +79,6 @@ const TokenOverview = ({ className, token }) => {
           <IconButton
             className="token-overview__button"
             onClick={async () => {
-              sendTokenEvent();
               try {
                 await dispatch(
                   updateSendAsset({
@@ -121,7 +104,6 @@ const TokenOverview = ({ className, token }) => {
             Icon={SwapIcon}
             onClick={() => {
               if (isSwapsChain) {
-                enteredSwapsEvent();
                 dispatch(
                   setSwapsFromToken({
                     ...token,

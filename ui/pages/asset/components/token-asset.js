@@ -14,9 +14,7 @@ import {
   DEFAULT_ROUTE,
   TOKEN_DETAILS,
 } from '../../../helpers/constants/routes';
-import { getURLHostName } from '../../../helpers/utils/util';
 import { showModal } from '../../../store/actions';
-import { useNewMetricEvent } from '../../../hooks/useMetricEvent';
 import AssetNavigation from './asset-navigation';
 import AssetOptions from './asset-options';
 
@@ -36,16 +34,6 @@ export default function TokenAsset({ token }) {
     rpcPrefs,
   );
 
-  const blockExplorerLinkClickedEvent = useNewMetricEvent({
-    category: 'Navigation',
-    event: 'Clicked Block Explorer Link',
-    properties: {
-      link_type: 'Token Tracker',
-      action: 'Token Options',
-      block_explorer_domain: getURLHostName(tokenTrackerLink),
-    },
-  });
-
   return (
     <>
       <AssetNavigation
@@ -61,7 +49,6 @@ export default function TokenAsset({ token }) {
             }
             isEthNetwork={!rpcPrefs.blockExplorerUrl}
             onClickBlockExplorer={() => {
-              blockExplorerLinkClickedEvent();
               global.platform.openTab({ url: tokenTrackerLink });
             }}
             onViewAccountDetails={() => {
