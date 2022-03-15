@@ -854,7 +854,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Prevent memory leak from selected account copy tooltip ([#9705](https://github.com/MetaMask/metamask-extension/pull/9705))
 - Prevent old fetches from polluting the swap state ([#9671](https://github.com/MetaMask/metamask-extension/pull/9671))
 - Keyboard navigation for swaps dropdowns ([#9702](https://github.com/MetaMask/metamask-extension/pull/9702))
-- Switch from Matomo to Segment ([#9646](https://github.com/MetaMask/metamask-extension/pull/9646))
 - Fix fetching swaps when initial network not Mainnet ([#9745](https://github.com/MetaMask/metamask-extension/pull/9745))
 - Include aggregator fee as part of displayed network fees ([#9621](https://github.com/MetaMask/metamask-extension/pull/9621))
 - Bump eth-contract-metadata from 1.16.0 to 1.17.0 ([#9736](https://github.com/MetaMask/metamask-extension/pull/9736))

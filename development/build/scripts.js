@@ -35,11 +35,6 @@ const metamaskrc = require('rc')('metamask', {
   ONBOARDING_V2: process.env.ONBOARDING_V2,
   COLLECTIBLES_V1: process.env.COLLECTIBLES_V1,
   DARK_MODE_V1: process.env.DARK_MODE_V1,
-  SEGMENT_HOST: process.env.SEGMENT_HOST,
-  SEGMENT_WRITE_KEY: process.env.SEGMENT_WRITE_KEY,
-  SEGMENT_BETA_WRITE_KEY: process.env.SEGMENT_BETA_WRITE_KEY,
-  SEGMENT_FLASK_WRITE_KEY: process.env.SEGMENT_FLASK_WRITE_KEY,
-  SEGMENT_PROD_WRITE_KEY: process.env.SEGMENT_PROD_WRITE_KEY,
 });
 
 const { streamFlatMap } = require('../stream-flat-map.js');
@@ -104,28 +99,6 @@ function getInfuraProjectId({ buildType, environment, testing }) {
     return getConfigValue('INFURA_BETA_PROJECT_ID');
   } else if (buildType === BuildType.flask) {
     return getConfigValue('INFURA_FLASK_PROJECT_ID');
-  }
-  throw new Error(`Invalid build type: '${buildType}'`);
-}
-
-/**
- * Get the appropriate Segment write key.
- *
- * @param {object} options - The Segment write key options.
- * @param {BuildType} options.buildType - The current build type.
- * @param {keyof ENVIRONMENT} options.environment - The current build environment.
- * @returns {string} The Segment write key.
- */
-function getSegmentWriteKey({ buildType, environment }) {
-  if (environment !== ENVIRONMENT.PRODUCTION) {
-    // Skip validation because this is unset on PRs from forks, and isn't necessary for development builds.
-    return metamaskrc.SEGMENT_WRITE_KEY;
-  } else if (buildType === BuildType.main) {
-    return getConfigValue('SEGMENT_PROD_WRITE_KEY');
-  } else if (buildType === BuildType.beta) {
-    return getConfigValue('SEGMENT_BETA_WRITE_KEY');
-  } else if (buildType === BuildType.flask) {
-    return getConfigValue('SEGMENT_FLASK_WRITE_KEY');
   }
   throw new Error(`Invalid build type: '${buildType}'`);
 }
@@ -775,8 +748,6 @@ function getEnvironmentVariables({ buildType, devMode, testing, version }) {
     PUBNUB_PUB_KEY: process.env.PUBNUB_PUB_KEY || '',
     CONF: devMode ? metamaskrc : {},
     INFURA_PROJECT_ID: getInfuraProjectId({ buildType, environment, testing }),
-    SEGMENT_HOST: metamaskrc.SEGMENT_HOST,
-    SEGMENT_WRITE_KEY: getSegmentWriteKey({ buildType, environment }),
     SWAPS_USE_DEV_APIS: process.env.SWAPS_USE_DEV_APIS === '1',
     ONBOARDING_V2: metamaskrc.ONBOARDING_V2 === '1',
     COLLECTIBLES_V1: metamaskrc.COLLECTIBLES_V1 === '1',
