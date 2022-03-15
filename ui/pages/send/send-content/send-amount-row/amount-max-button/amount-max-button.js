@@ -7,23 +7,14 @@ import {
   toggleSendMaxMode,
 } from '../../../../../ducks/send';
 import { useI18nContext } from '../../../../../hooks/useI18nContext';
-import { useMetricEvent } from '../../../../../hooks/useMetricEvent';
 
 export default function AmountMaxButton() {
   const isDraftTransactionInvalid = useSelector(isSendFormInvalid);
   const maxModeOn = useSelector(getSendMaxModeState);
   const dispatch = useDispatch();
-  const trackClickedMax = useMetricEvent({
-    eventOpts: {
-      category: 'Transactions',
-      action: 'Edit Screen',
-      name: 'Clicked "Amount Max"',
-    },
-  });
   const t = useI18nContext();
 
   const onMaxClick = () => {
-    trackClickedMax();
     dispatch(toggleSendMaxMode());
   };
 

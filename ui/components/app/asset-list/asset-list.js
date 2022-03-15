@@ -7,7 +7,6 @@ import TokenList from '../token-list';
 import { IMPORT_TOKEN_ROUTE } from '../../../helpers/constants/routes';
 import AssetListItem from '../asset-list-item';
 import { PRIMARY, SECONDARY } from '../../../helpers/constants/common';
-import { useMetricEvent } from '../../../hooks/useMetricEvent';
 import { useUserPreferencedCurrency } from '../../../hooks/useUserPreferencedCurrency';
 import {
   getCurrentAccountWithSendEtherInfo,
@@ -35,20 +34,6 @@ const AssetList = ({ onClickAsset }) => {
   );
   const nativeCurrency = useSelector(getNativeCurrency);
   const showFiat = useSelector(getShouldShowFiat);
-  const selectTokenEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Token Menu',
-      name: 'Clicked Token',
-    },
-  });
-  const addTokenEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Token Menu',
-      name: 'Clicked "Add Token"',
-    },
-  });
 
   const {
     currency: primaryCurrency,
@@ -94,7 +79,6 @@ const AssetList = ({ onClickAsset }) => {
       <TokenList
         onTokenClick={(tokenAddress) => {
           onClickAsset(tokenAddress);
-          selectTokenEvent();
         }}
       />
       <Box marginTop={4}>
@@ -111,7 +95,6 @@ const AssetList = ({ onClickAsset }) => {
           isMainnet={isMainnet}
           onClick={() => {
             history.push(IMPORT_TOKEN_ROUTE);
-            addTokenEvent();
           }}
         />
       </Box>

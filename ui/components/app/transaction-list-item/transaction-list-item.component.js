@@ -31,7 +31,6 @@ import {
   getEIP1559V2Enabled,
 } from '../../../selectors';
 import { isLegacyTransaction } from '../../../helpers/utils/transactions.util';
-import { useMetricEvent } from '../../../hooks/useMetricEvent';
 import Button from '../../ui/button';
 import AdvancedGasFeePopover from '../advanced-gas-fee-popover';
 import CancelButton from '../cancel-button';
@@ -60,26 +59,9 @@ function TransactionListItemInner({
     primaryTransaction: { err, status },
   } = transactionGroup;
 
-  const speedUpMetricsEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Activity Log',
-      name: 'Clicked "Speed Up"',
-    },
-  });
-
-  const cancelMetricsEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Navigation',
-      action: 'Activity Log',
-      name: 'Clicked "Cancel"',
-    },
-  });
-
   const retryTransaction = useCallback(
     async (event) => {
       event.stopPropagation();
-      speedUpMetricsEvent();
       if (supportsEIP1559V2) {
         setEditGasMode(EDIT_GAS_MODES.SPEED_UP);
         openModal('cancelSpeedUpTransaction');
@@ -87,13 +69,12 @@ function TransactionListItemInner({
         setShowRetryEditGasPopover(true);
       }
     },
-    [openModal, setEditGasMode, speedUpMetricsEvent, supportsEIP1559V2],
+    [openModal, setEditGasMode, supportsEIP1559V2],
   );
 
   const cancelTransaction = useCallback(
     (event) => {
       event.stopPropagation();
-      cancelMetricsEvent();
       if (supportsEIP1559V2) {
         setEditGasMode(EDIT_GAS_MODES.CANCEL);
         openModal('cancelSpeedUpTransaction');
@@ -101,7 +82,7 @@ function TransactionListItemInner({
         setShowCancelEditGasPopover(true);
       }
     },
-    [cancelMetricsEvent, openModal, setEditGasMode, supportsEIP1559V2],
+    [openModal, setEditGasMode, supportsEIP1559V2],
   );
 
   const shouldShowSpeedUp = useShouldShowSpeedUp(

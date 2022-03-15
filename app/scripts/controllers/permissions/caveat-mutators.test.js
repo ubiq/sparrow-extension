@@ -1,4 +1,4 @@
-import { CaveatMutatorOperation } from '@metamask/snap-controllers';
+import { CaveatMutatorOperation } from 'sparrow-controllers';
 import { CaveatTypes } from '../../../../shared/constants/permissions';
 import { CaveatMutatorFactories } from './caveat-mutators';
 

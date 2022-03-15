@@ -36,8 +36,6 @@ import ActionableMessage from '../../ui/actionable-message/actionable-message';
 import { I18nContext } from '../../../contexts/i18n';
 import GasTiming from '../gas-timing';
 
-import { useMetricEvent } from '../../../hooks/useMetricEvent';
-
 export default function EditGasDisplay({
   mode = EDIT_GAS_MODES.MODIFY_IN_PLACE,
   showEducationButton = false,
@@ -132,14 +130,6 @@ export default function EditGasDisplay({
   } else if (estimatesUnavailableWarning) {
     errorKey = 'gasEstimatesUnavailableWarning';
   }
-
-  const clickedAdvancedOptionsMetricsEvent = useMetricEvent({
-    eventOpts: {
-      category: 'Transactions',
-      action: 'Edit Screen',
-      name: 'Clicked "Advanced Options"',
-    },
-  });
 
   return (
     <div className="edit-gas-display">
@@ -286,7 +276,6 @@ export default function EditGasDisplay({
               className="edit-gas-display__advanced-button"
               onClick={() => {
                 setShowAdvancedForm(!showAdvancedForm);
-                clickedAdvancedOptionsMetricsEvent();
               }}
             >
               {t('advancedOptions')}{' '}

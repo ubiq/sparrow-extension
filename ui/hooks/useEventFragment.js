@@ -7,7 +7,6 @@ import {
   createEventFragment,
   updateEventFragment,
 } from '../store/actions';
-import { useMetaMetricsContext } from './useMetricEvent';
 
 /**
  * Retrieves a fragment from memory or initializes new fragment if one does not
@@ -59,24 +58,22 @@ export function useEventFragment(existingId, fragmentOptions = {}) {
     }
   }, [fragment, fragmentOptions]);
 
-  const context = useMetaMetricsContext();
-
   /**
    * trackSuccess is used to close a fragment with the affirmative action. This
    * method is just a thin wrapper around the background method that sets the
    * necessary values.
    */
   const trackSuccess = useCallback(() => {
-    finalizeEventFragment(fragment.id, { context });
-  }, [fragment, context]);
+    finalizeEventFragment(fragment.id);
+  }, [fragment]);
 
   /**
    * trackFailure is used to close a fragment as abandoned. This method is just a
    * thin wrapper around the background method that sets the necessary values.
    */
   const trackFailure = useCallback(() => {
-    finalizeEventFragment(fragment.id, { abandoned: true, context });
-  }, [fragment, context]);
+    finalizeEventFragment(fragment.id, { abandoned: true });
+  }, [fragment]);
 
   /**
    * updateEventFragmentProperties is a thin wrapper around updateEventFragment

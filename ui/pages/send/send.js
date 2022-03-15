@@ -16,7 +16,6 @@ import {
 import { getCurrentChainId, isCustomPriceExcessive } from '../../selectors';
 import { getSendHexDataFeatureFlagState } from '../../ducks/metamask/metamask';
 import { showQrScanner } from '../../store/actions';
-import { useMetricEvent } from '../../hooks/useMetricEvent';
 import SendHeader from './send-header';
 import AddRecipient from './send-content/add-recipient';
 import SendContent from './send-content';
@@ -38,13 +37,6 @@ export default function SendTransactionScreen() {
   const showHexData = useSelector(getSendHexDataFeatureFlagState);
   const userInput = useSelector(getRecipientUserInput);
   const location = useLocation();
-  const trackUsedQRScanner = useMetricEvent({
-    eventOpts: {
-      category: 'Transactions',
-      action: 'Edit Screen',
-      name: 'Used QR scanner',
-    },
-  });
 
   const dispatch = useDispatch();
 
@@ -109,7 +101,6 @@ export default function SendTransactionScreen() {
         onPaste={(text) => updateRecipient({ address: text, nickname: '' })}
         onReset={() => dispatch(resetRecipientInput())}
         scanQrCode={() => {
-          trackUsedQRScanner();
           dispatch(showQrScanner());
         }}
       />

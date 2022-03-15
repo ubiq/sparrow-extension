@@ -1,7 +1,4 @@
-import {
-  constructPermission,
-  PermissionType,
-} from '@metamask/snap-controllers';
+import { constructPermission, PermissionType } from 'sparrow-controllers';
 import {
   CaveatTypes,
   RestrictedMethods,
