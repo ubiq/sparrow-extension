@@ -2,8 +2,8 @@ const path = require('path');
 const BigNumber = require('bignumber.js');
 const mockttp = require('mockttp');
 const createStaticServer = require('../../development/create-static-server');
-const { setupMocking } = require('../../development/mock-e2e');
 const enLocaleMessages = require('../../app/_locales/en/messages.json');
+const { setupMocking } = require('./mock-e2e');
 const Ganache = require('./ganache');
 const FixtureServer = require('./fixture-server');
 const { buildWebDriver } = require('./webdriver');
@@ -33,7 +33,7 @@ async function withFixtures(options, testSuite) {
   const fixtureServer = new FixtureServer();
   const ganacheServer = new Ganache();
   const https = await mockttp.generateCACertificate();
-  const mockServer = mockttp.getLocal({ https });
+  const mockServer = mockttp.getLocal({ https, cors: true });
   let secondaryGanacheServer;
   let dappServer;
 
@@ -220,7 +220,7 @@ const completeImportSRPOnboardingFlow = async (
     await driver.clickElement({ text: 'Import wallet', tag: 'button' });
 
     // Import Secret Recovery Phrase
-    await driver.fill(
+    await driver.pasteIntoField(
       'input[placeholder="Enter your Secret Recovery Phrase"]',
       seedPhrase,
     );

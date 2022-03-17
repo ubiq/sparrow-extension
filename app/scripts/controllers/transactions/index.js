@@ -7,6 +7,7 @@ import Common from '@ethereumjs/common';
 import { TransactionFactory } from '@ethereumjs/tx';
 import NonceTracker from 'nonce-tracker';
 import log from 'loglevel';
+import BigNumber from 'bignumber.js';
 import { merge, pickBy } from 'lodash';
 import cleanErrorStack from '../../lib/cleanErrorStack';
 import {
@@ -17,6 +18,7 @@ import {
   getChainType,
 } from '../../lib/util';
 import { TRANSACTION_NO_CONTRACT_ERROR_KEY } from '../../../../ui/helpers/constants/error-keys';
+import { getSwapsTokensReceivedFromTxMeta } from '../../../../ui/pages/swaps/swaps.util';
 import {
   hexWEIToDecGWEI,
   decimalToHex,
@@ -26,6 +28,7 @@ import {
   TRANSACTION_TYPES,
   TRANSACTION_ENVELOPE_TYPES,
 } from '../../../../shared/constants/transaction';
+import { TRANSACTION_ENVELOPE_TYPE_NAMES } from '../../../../ui/helpers/constants/transactions';
 import { METAMASK_CONTROLLER_EVENTS } from '../../metamask-controller';
 import {
   GAS_LIMITS,
@@ -42,6 +45,7 @@ import {
   CHAIN_ID_TO_GAS_LIMIT_BUFFER_MAP,
 } from '../../../../shared/constants/network';
 import {
+  determineTransactionAssetType,
   determineTransactionType,
   isEIP1559Transaction,
 } from '../../../../shared/modules/transaction.utils';
@@ -56,12 +60,6 @@ const SWAP_TRANSACTION_TYPES = [
   TRANSACTION_TYPES.SWAP,
   TRANSACTION_TYPES.SWAP_APPROVAL,
 ];
-
-/**
- * @typedef {import('../../../../shared/constants/transaction').TransactionMeta} TransactionMeta
- */
-
-const METRICS_STATUS_FAILED = 'failed on-chain';
 
 /**
  * @typedef {Object} CustomGasSettings
@@ -116,10 +114,16 @@ export default class TransactionController extends EventEmitter {
     this.blockTracker = opts.blockTracker;
     this.signEthTx = opts.signTransaction;
     this.inProcessOfSigning = new Set();
+    this._trackMetaMetricsEvent = opts.trackMetaMetricsEvent;
     this._getParticipateInMetrics = opts.getParticipateInMetrics;
     this._getEIP1559GasFeeEstimates = opts.getEIP1559GasFeeEstimates;
+    this.createEventFragment = opts.createEventFragment;
+    this.updateEventFragment = opts.updateEventFragment;
+    this.finalizeEventFragment = opts.finalizeEventFragment;
+    this.getEventFragmentById = opts.getEventFragmentById;
     this.getDeviceModel = opts.getDeviceModel;
     this.getAccountType = opts.getAccountType;
+    this.getTokenStandardAndDetails = opts.getTokenStandardAndDetails;
 
     this.memStore = new ObservableStore({});
     this.query = new EthQuery(this.provider);
@@ -310,7 +314,7 @@ export default class TransactionController extends EventEmitter {
               return reject(
                 cleanErrorStack(
                   ethErrors.provider.userRejectedRequest(
-                    'Sparrow Tx Signature: User denied transaction signature.',
+                    'MetaMask Tx Signature: User denied transaction signature.',
                   ),
                 ),
               );
@@ -324,7 +328,7 @@ export default class TransactionController extends EventEmitter {
               return reject(
                 cleanErrorStack(
                   ethErrors.rpc.internal(
-                    `Sparrow Tx Signature: Unknown problem: ${JSON.stringify(
+                    `MetaMask Tx Signature: Unknown problem: ${JSON.stringify(
                       finishedTxMeta.txParams,
                     )}`,
                   ),
@@ -988,7 +992,7 @@ export default class TransactionController extends EventEmitter {
 
   /**
    * Creates a new approved transaction to attempt to cancel a previously submitted transaction. The
-   * new transaction contains the same nonce as the previous, is a basic UBQ transfer of 0x value to
+   * new transaction contains the same nonce as the previous, is a basic ETH transfer of 0x value to
    * the sender's address, and has a higher gasPrice than that of the previous transaction.
    *
    * @param {number} originalTxId - the id of the txMeta that you want to attempt to cancel
@@ -1364,20 +1368,6 @@ export default class TransactionController extends EventEmitter {
       this.txStateManager.setTxStatusConfirmed(txId);
       this._markNonceDuplicatesDropped(txId);
 
-      const { submittedTime } = txMeta;
-      const metricsParams = { gas_used: gasUsed };
-
-      if (submittedTime) {
-        metricsParams.completion_time = this._getTransactionCompletionTime(
-          submittedTime,
-        );
-      }
-
-      if (txReceipt.status === '0x0') {
-        metricsParams.status = METRICS_STATUS_FAILED;
-        // metricsParams.error = TODO: figure out a way to get the on-chain failure reason
-      }
-
       this.txStateManager.updateTransaction(
         txMeta,
         'transactions#confirmTransaction - add txReceipt',
@@ -1387,12 +1377,18 @@ export default class TransactionController extends EventEmitter {
         const postTxBalance = await this.query.getBalance(txMeta.txParams.from);
         const latestTxMeta = this.txStateManager.getTransaction(txId);
 
+        const approvalTxMeta = latestTxMeta.approvalTxId
+          ? this.txStateManager.getTransaction(latestTxMeta.approvalTxId)
+          : null;
+
         latestTxMeta.postTxBalance = postTxBalance.toString(16);
 
         this.txStateManager.updateTransaction(
           latestTxMeta,
           'transactions#confirmTransaction - add postTxBalance',
         );
+
+        this._trackSwapsMetrics(latestTxMeta, approvalTxMeta);
       }
     } catch (err) {
       log.error(err);
@@ -1424,20 +1420,6 @@ export default class TransactionController extends EventEmitter {
       this.txStateManager.setTxStatusConfirmed(txId);
       this._markNonceDuplicatesDropped(txId);
 
-      const { submittedTime } = txMeta;
-      const metricsParams = { gas_used: gasUsed };
-
-      if (submittedTime) {
-        metricsParams.completion_time = this._getTransactionCompletionTime(
-          submittedTime,
-        );
-      }
-
-      if (txReceipt.status === '0x0') {
-        metricsParams.status = METRICS_STATUS_FAILED;
-        // metricsParams.error = TODO: figure out a way to get the on-chain failure reason
-      }
-
       this.txStateManager.updateTransaction(
         txMeta,
         'transactions#confirmTransaction - add txReceipt',
@@ -1447,12 +1429,18 @@ export default class TransactionController extends EventEmitter {
         const postTxBalance = await this.query.getBalance(txMeta.txParams.from);
         const latestTxMeta = this.txStateManager.getTransaction(txId);
 
+        const approvalTxMeta = latestTxMeta.approvalTxId
+          ? this.txStateManager.getTransaction(latestTxMeta.approvalTxId)
+          : null;
+
         latestTxMeta.postTxBalance = postTxBalance.toString(16);
 
         this.txStateManager.updateTransaction(
           latestTxMeta,
           'transactions#confirmTransaction - add postTxBalance',
         );
+
+        this._trackSwapsMetrics(latestTxMeta, approvalTxMeta);
       }
     } catch (err) {
       log.error(err);
@@ -1701,6 +1689,171 @@ export default class TransactionController extends EventEmitter {
       limit: MAX_MEMSTORE_TX_LIST_SIZE,
     });
     this.memStore.updateState({ unapprovedTxs, currentNetworkTxList });
+  }
+
+  _trackSwapsMetrics(txMeta, approvalTxMeta) {
+    if (this._getParticipateInMetrics() && txMeta.swapMetaData) {
+      if (txMeta.txReceipt.status === '0x0') {
+        this._trackMetaMetricsEvent({
+          event: 'Swap Failed',
+          sensitiveProperties: { ...txMeta.swapMetaData },
+          category: 'swaps',
+        });
+      } else {
+        const tokensReceived = getSwapsTokensReceivedFromTxMeta(
+          txMeta.destinationTokenSymbol,
+          txMeta,
+          txMeta.destinationTokenAddress,
+          txMeta.txParams.from,
+          txMeta.destinationTokenDecimals,
+          approvalTxMeta,
+          txMeta.chainId,
+        );
+
+        const quoteVsExecutionRatio = tokensReceived
+          ? `${new BigNumber(tokensReceived, 10)
+              .div(txMeta.swapMetaData.token_to_amount, 10)
+              .times(100)
+              .round(2)}%`
+          : null;
+
+        const estimatedVsUsedGasRatio =
+          txMeta.txReceipt.gasUsed && txMeta.swapMetaData.estimated_gas
+            ? `${new BigNumber(txMeta.txReceipt.gasUsed, 16)
+                .div(txMeta.swapMetaData.estimated_gas, 10)
+                .times(100)
+                .round(2)}%`
+            : null;
+
+        this._trackMetaMetricsEvent({
+          event: 'Swap Completed',
+          category: 'swaps',
+          sensitiveProperties: {
+            ...txMeta.swapMetaData,
+            token_to_amount_received: tokensReceived,
+            quote_vs_executionRatio: quoteVsExecutionRatio,
+            estimated_vs_used_gasRatio: estimatedVsUsedGasRatio,
+          },
+        });
+      }
+    }
+  }
+
+  async _buildEventFragmentProperties(txMeta, extraParams) {
+    const {
+      type,
+      time,
+      status,
+      chainId,
+      origin: referrer,
+      txParams: {
+        gasPrice,
+        gas: gasLimit,
+        maxFeePerGas,
+        maxPriorityFeePerGas,
+        estimateSuggested,
+        estimateUsed,
+      },
+      defaultGasEstimates,
+      metamaskNetworkId: network,
+    } = txMeta;
+    const source = referrer === 'metamask' ? 'user' : 'dapp';
+
+    const { assetType, tokenStandard } = await determineTransactionAssetType(
+      txMeta,
+      this.query,
+      this.getTokenStandardAndDetails,
+    );
+
+    const gasParams = {};
+
+    if (isEIP1559Transaction(txMeta)) {
+      gasParams.max_fee_per_gas = maxFeePerGas;
+      gasParams.max_priority_fee_per_gas = maxPriorityFeePerGas;
+    } else {
+      gasParams.gas_price = gasPrice;
+    }
+
+    if (defaultGasEstimates) {
+      const { estimateType } = defaultGasEstimates;
+      if (estimateType) {
+        gasParams.default_estimate = estimateType;
+        let defaultMaxFeePerGas = txMeta.defaultGasEstimates.maxFeePerGas;
+        let defaultMaxPriorityFeePerGas =
+          txMeta.defaultGasEstimates.maxPriorityFeePerGas;
+
+        if (
+          [
+            GAS_RECOMMENDATIONS.LOW,
+            GAS_RECOMMENDATIONS.MEDIUM,
+            GAS_RECOMMENDATIONS.MEDIUM.HIGH,
+          ].includes(estimateType)
+        ) {
+          const { gasFeeEstimates } = await this._getEIP1559GasFeeEstimates();
+          if (gasFeeEstimates?.[estimateType]?.suggestedMaxFeePerGas) {
+            defaultMaxFeePerGas =
+              gasFeeEstimates[estimateType]?.suggestedMaxFeePerGas;
+            gasParams.default_max_fee_per_gas = defaultMaxFeePerGas;
+          }
+          if (gasFeeEstimates?.[estimateType]?.suggestedMaxPriorityFeePerGas) {
+            defaultMaxPriorityFeePerGas =
+              gasFeeEstimates[estimateType]?.suggestedMaxPriorityFeePerGas;
+            gasParams.default_max_priority_fee_per_gas = defaultMaxPriorityFeePerGas;
+          }
+        }
+      }
+
+      if (txMeta.defaultGasEstimates.gas) {
+        gasParams.default_gas = txMeta.defaultGasEstimates.gas;
+      }
+      if (txMeta.defaultGasEstimates.gasPrice) {
+        gasParams.default_gas_price = txMeta.defaultGasEstimates.gasPrice;
+      }
+    }
+
+    if (estimateSuggested) {
+      gasParams.estimate_suggested = estimateSuggested;
+    }
+
+    if (estimateUsed) {
+      gasParams.estimate_used = estimateUsed;
+    }
+
+    const gasParamsInGwei = this._getGasValuesInGWEI(gasParams);
+
+    let eip1559Version = '0';
+    if (txMeta.txParams.maxFeePerGas) {
+      const { eip1559V2Enabled } = this.preferencesStore.getState();
+      eip1559Version = eip1559V2Enabled ? '2' : '1';
+    }
+
+    const properties = {
+      chain_id: chainId,
+      referrer,
+      source,
+      network,
+      type,
+      eip_1559_version: eip1559Version,
+      gas_edit_type: 'none',
+      gas_edit_attempted: 'none',
+      account_type: await this.getAccountType(this.getSelectedAddress()),
+      device_model: await this.getDeviceModel(this.getSelectedAddress()),
+      asset_type: assetType,
+      token_standard: tokenStandard,
+    };
+
+    const sensitiveProperties = {
+      status,
+      transaction_envelope_type: isEIP1559Transaction(txMeta)
+        ? TRANSACTION_ENVELOPE_TYPE_NAMES.FEE_MARKET
+        : TRANSACTION_ENVELOPE_TYPE_NAMES.LEGACY,
+      first_seen: time,
+      gas_limit: gasLimit,
+      ...gasParamsInGwei,
+      ...extraParams,
+    };
+
+    return { properties, sensitiveProperties };
   }
 
   _getTransactionCompletionTime(submittedTime) {
