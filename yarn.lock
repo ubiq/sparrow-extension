@@ -24913,10 +24913,10 @@ sparkles@^1.0.0:
   resolved "https://registry.yarnpkg.com/sparkles/-/sparkles-1.0.0.tgz#1acbbfb592436d10bbe8f785b7cc6f82815012c3"
   integrity sha1-Gsu/tZJDbRC76PeFt8xvgoFQEsM=
 
-sparrow-controllers@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/sparrow-controllers/-/sparrow-controllers-27.0.2.tgz#731d87a181736185444a7643fa3503ad50711cb7"
-  integrity sha512-JqlcTsTcE4BDKLg3zlFTXA6M6SeiVnEst8w2mpGetONbD3/RUar4zSNqrip7z6qeC+GTt60Ksc1nAz4tj1yvtA==
+sparrow-controllers@^27.0.3:
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/sparrow-controllers/-/sparrow-controllers-27.0.3.tgz#07dc48d0c01ef9d7da052e0247be6f6fede09864"
+  integrity sha512-6ed3ASp7CQUX7YGvxMr2l8Os3J8WrRNSWrKASEtnuG+WjzRAAHhUEA2GjTjeXBIwpcFVEs52ego8YtWXnrgAIA==
   dependencies:
     "@ethereumjs/common" "^2.3.1"
     "@ethereumjs/tx" "^3.2.1"
@@ -24948,7 +24948,7 @@ sparrow-controllers@^27.0.2:
     nanoid "^3.1.31"
     punycode "^2.1.1"
     single-call-balance-checker-abi "^1.0.0"
-    ubq-contract-metadata "^1.33.0"
+    ubq-contract-metadata "^1.33.1"
     uuid "^8.3.2"
     web3 "^0.20.7"
     web3-provider-engine "^16.0.3"
@@ -26650,10 +26650,10 @@ ubiqscan-link@^2.1.1:
   resolved "https://registry.yarnpkg.com/ubiqscan-link/-/ubiqscan-link-2.1.1.tgz#d9a4c049fa8dc0453f8660e81ceb0aa986260e06"
   integrity sha512-T60QdMLYaDUNYu5NSmg0rRTUHUw8iF4uhX6pdgyUHJqmxs4DeZiP5cnu+adYdMLi/3afkiGU5jofEAba6SCZGg==
 
-ubq-contract-metadata@^1.33.0:
-  version "1.33.0"
-  resolved "https://registry.yarnpkg.com/ubq-contract-metadata/-/ubq-contract-metadata-1.33.0.tgz#0096b872b479af0c8e846b9d7ba382ab1a9523b7"
-  integrity sha512-gveUiJFilAje3PfhbKpfwOfUI/NPKN1WNVk4ur+WMkyNL2iOw6vqaJaA71cJhWPMQ2m93gRrdlnP4pdkbYD57Q==
+ubq-contract-metadata@^1.33.1:
+  version "1.33.1"
+  resolved "https://registry.yarnpkg.com/ubq-contract-metadata/-/ubq-contract-metadata-1.33.1.tgz#0b3974be3aae9f61a9fb76b413928f13c31b8a57"
+  integrity sha512-cQfGKUyW2gAS8vol91k3UvzXPos58EGjwwawnOCgLRCHnJ53EGeekSvDZ1xhAtc1YbAmJmRKFwQSTMmOcz0vGg==
 
 ubq-ledger-bridge-keyring@^0.10.0:
   version "0.10.0"
