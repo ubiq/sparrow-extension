@@ -10,7 +10,7 @@
 
 .onboarding-flow {
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--color-background-default);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
   &__wrapper {
     margin-top: 40px;
     padding: 32px;
-    border: 1px solid var(--Grey-100);
+    border: 1px solid var(--color-border-muted);
     border-radius: 20px;
   }
 

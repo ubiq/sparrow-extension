@@ -108,6 +108,7 @@ const TokenOverview = ({ className, token }) => {
                 dispatch(
                   setSwapsFromToken({
                     ...token,
+                    address: token.address.toLowerCase(),
                     iconUrl: token.image,
                     balance,
                     string: balanceToRender,

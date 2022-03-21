@@ -42,7 +42,7 @@ import {
   ///: BEGIN:ONLY_INCLUDE_IN(flask)
   RateLimitController,
   ///: END:ONLY_INCLUDE_IN
-} from 'sparrow/controllers';
+} from 'sparrow-controllers';
 import SmartTransactionsController from '@metamask/smart-transactions-controller';
 ///: BEGIN:ONLY_INCLUDE_IN(flask)
 import { SnapController } from '@metamask/snap-controllers';
@@ -161,7 +161,7 @@ export default class MetamaskController extends EventEmitter {
       MILLISECOND * 200,
     );
     this.opts = opts;
-    this.extension = opts.extension;
+    this.extension = opts.browser;
     this.platform = opts.platform;
     this.notificationManager = opts.notificationManager;
     const initState = opts.initState || {};
@@ -889,7 +889,7 @@ export default class MetamaskController extends EventEmitter {
     }
 
     // Lazily update the store with the current extension environment
-    this.extension.runtime.getPlatformInfo(({ os }) => {
+    this.extension.runtime.getPlatformInfo().then(({ os }) => {
       this.appStateController.setBrowserEnvironment(
         os,
         // This method is presently only supported by Firefox
@@ -988,10 +988,10 @@ export default class MetamaskController extends EventEmitter {
           params:
             newAccounts.length < 2
               ? // If the length is 1 or 0, the accounts are sorted by definition.
-              newAccounts
+                newAccounts
               : // If the length is 2 or greater, we have to execute
-              // `eth_accounts` vi this method.
-              await this.getPermittedAccounts(origin),
+                // `eth_accounts` vi this method.
+                await this.getPermittedAccounts(origin),
         });
       }
 
@@ -1667,8 +1667,8 @@ export default class MetamaskController extends EventEmitter {
       // DetectCollectibleController
       detectCollectibles: process.env.COLLECTIBLES_V1
         ? collectibleDetectionController.detectCollectibles.bind(
-          collectibleDetectionController,
-        )
+            collectibleDetectionController,
+          )
         : null,
     };
   }
@@ -2178,8 +2178,9 @@ export default class MetamaskController extends EventEmitter {
    */
 
   getAccountLabel(name, index, hdPathDescription) {
-    return `${name[0].toUpperCase()}${name.slice(1)} ${parseInt(index, 10) + 1
-      } ${hdPathDescription || ''}`.trim();
+    return `${name[0].toUpperCase()}${name.slice(1)} ${
+      parseInt(index, 10) + 1
+    } ${hdPathDescription || ''}`.trim();
   }
 
   /**

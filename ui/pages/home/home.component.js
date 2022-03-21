@@ -95,6 +95,8 @@ export default class Home extends PureComponent {
     setConnectedStatusPopoverHasBeenShown: PropTypes.func,
     connectedStatusPopoverHasBeenShown: PropTypes.bool,
     defaultHomeActiveTabName: PropTypes.string,
+    firstTimeFlowType: PropTypes.string,
+    completedOnboarding: PropTypes.bool,
     onTabClick: PropTypes.func.isRequired,
     haveSwapsQuotes: PropTypes.bool.isRequired,
     showAwaitingSwapScreen: PropTypes.bool.isRequired,
@@ -306,10 +308,7 @@ export default class Home extends PureComponent {
             className="home__new-network-notification"
             message={
               <div className="home__new-network-notification-message">
-                <img
-                  src="./images/check_circle.svg"
-                  className="home__new-network-notification-message--image"
-                />
+                <i className="fa fa-check-circle home__new-network-notification-message--icon" />
                 <Typography
                   variant={TYPOGRAPHY.H7}
                   fontWeight={FONT_WEIGHT.NORMAL}
@@ -331,10 +330,7 @@ export default class Home extends PureComponent {
             className="home__new-network-notification"
             message={
               <div className="home__new-network-notification-message">
-                <img
-                  src="./images/check_circle.svg"
-                  className="home__new-network-notification-message--image"
-                />
+                <i className="fa fa-check-circle home__new-network-notification-message--icon" />
                 <Typography
                   variant={TYPOGRAPHY.H7}
                   fontWeight={FONT_WEIGHT.NORMAL}
@@ -493,6 +489,8 @@ export default class Home extends PureComponent {
       hideWhatsNewPopup,
       seedPhraseBackedUp,
       showRecoveryPhraseReminder,
+      firstTimeFlowType,
+      completedOnboarding,
     } = this.props;
 
     if (forgottenPassword) {
@@ -501,7 +499,11 @@ export default class Home extends PureComponent {
       return null;
     }
 
-    const showWhatsNew = notificationsToShow && showWhatsNewPopup;
+    const showWhatsNew =
+      ((completedOnboarding && firstTimeFlowType === 'import') ||
+        !completedOnboarding) &&
+      notificationsToShow &&
+      showWhatsNewPopup;
 
     return (
       <div className="main-container">
