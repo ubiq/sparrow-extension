@@ -30,7 +30,7 @@ export default function reduceMetamask(state = {}, action) {
     contractExchangeRates: {},
     pendingTokens: {},
     customNonceValue: '',
-    useBlockie: false,
+    useBlockie: true,
     featureFlags: {},
     welcomeScreenSeen: false,
     currentLocale: '',
