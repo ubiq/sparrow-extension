@@ -10,7 +10,7 @@ import I18nValue from '../../../ui/i18n-value';
 import { useAdvancedGasFeePopoverContext } from '../context';
 
 const AdvancedGasFeeSaveButton = () => {
-  const { closeAllModals } = useTransactionModalContext();
+  const { closeModal } = useTransactionModalContext();
   const { updateTransaction } = useGasFeeContext();
   const {
     gasLimit,
@@ -26,7 +26,7 @@ const AdvancedGasFeeSaveButton = () => {
       maxPriorityFeePerGas: decGWEIToHexWEI(maxPriorityFeePerGas),
       gasLimit,
     });
-    closeAllModals();
+    closeModal(['advancedGasFee', 'editGasFee']);
   };
 
   return (
