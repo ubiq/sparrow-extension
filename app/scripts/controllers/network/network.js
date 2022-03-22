@@ -16,6 +16,8 @@ import {
   NETWORK_TYPE_TO_ID_MAP,
   MAINNET_CHAIN_ID,
   INFURA_BLOCKED_KEY,
+  MAINNET_RPC_URL,
+  MAINNET_DISPLAY_NAME,
 } from '../../../../shared/constants/network';
 import { SECOND } from '../../../../shared/constants/time';
 import {
@@ -38,7 +40,7 @@ if (process.env.IN_TEST) {
     nickname: 'Localhost 8588',
   };
 } else {
-  defaultProviderConfigOpts = { type: MAINNET, chainId: MAINNET_CHAIN_ID };
+  defaultProviderConfigOpts = { type: MAINNET, chainId: MAINNET_CHAIN_ID, rpcUrl: MAINNET_RPC_URL, nickname: MAINNET_DISPLAY_NAME };
 }
 
 const defaultProviderConfig = {
@@ -272,7 +274,7 @@ export default class NetworkController extends EventEmitter {
       `Invalid chain ID "${chainId}": numerical value greater than max safe value.`,
     );
     this.setProviderConfig({
-      type: NETWORK_TYPE_RPC,
+      type: chainId === '0x8' ? MAINNET : NETWORK_TYPE_RPC,
       rpcUrl,
       chainId,
       ticker,
@@ -287,18 +289,28 @@ export default class NetworkController extends EventEmitter {
       NETWORK_TYPE_RPC,
       `NetworkController - cannot call "setProviderType" with type "${NETWORK_TYPE_RPC}". Use "setRpcTarget"`,
     );
-    assert.ok(
-      INFURA_PROVIDER_TYPES.includes(type),
-      `Unknown Infura provider type "${type}".`,
-    );
+    // assert.ok(
+    //   INFURA_PROVIDER_TYPES.includes(type),
+    //   `Unknown Infura provider type "${type}".`,
+    // );
     const { chainId } = NETWORK_TYPE_TO_ID_MAP[type];
-    this.setProviderConfig({
-      type,
-      rpcUrl: '',
-      chainId,
-      ticker: 'UBQ',
-      nickname: '',
-    });
+    if (type === MAINNET) {
+      this.setProviderConfig({
+        type,
+        rpcUrl: MAINNET_RPC_URL,
+        chainId,
+        ticker: 'UBQ',
+        nickname: '',
+      });
+    } else {
+      this.setProviderConfig({
+        type,
+        rpcUrl: '',
+        chainId,
+        ticker: 'UBQ',
+        nickname: '',
+      });
+    }
   }
 
   resetConnection() {
@@ -389,17 +401,17 @@ export default class NetworkController extends EventEmitter {
 
   _configureProvider({ type, rpcUrl, chainId }) {
     // infura type-based endpoints
-    const isInfura = INFURA_PROVIDER_TYPES.includes(type);
-    if (isInfura) {
-      this._configureInfuraProvider(type, this._infuraProjectId);
-      // url-based rpc endpoints
-    } else if (type === NETWORK_TYPE_RPC) {
-      this._configureStandardProvider(rpcUrl, chainId);
-    } else {
-      throw new Error(
-        `NetworkController - _configureProvider - unknown type "${type}"`,
-      );
-    }
+    // const isInfura = INFURA_PROVIDER_TYPES.includes(type);
+    // if (isInfura) {
+    //   this._configureInfuraProvider(type, this._infuraProjectId);
+    //   // url-based rpc endpoints
+    // } else if (type === NETWORK_TYPE_RPC) {
+    this._configureStandardProvider(rpcUrl, chainId);
+    // } else {
+    //   throw new Error(
+    //     `NetworkController - _configureProvider - unknown type "${type}"`,
+    //   );
+    // }
   }
 
   _configureInfuraProvider(type, projectId) {
