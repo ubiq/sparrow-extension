@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": " $1 এর সাথে সংযোগ করছে"
   },
-  "connectingToGoerli": {
-    "message": "গোয়েরলি টেস্ট নেটওয়ার্কের সাথে সংযোগ করা হচ্ছে"
-  },
-  "connectingToKovan": {
-    "message": "কোভান টেস্ট নেটওয়ার্কের সাথে সংযোগ করছে"
-  },
   "connectingToMainnet": {
     "message": "মুখ্য Ubiq নেটওয়ার্কের সাথে সংযোগ করছে"
-  },
-  "connectingToRinkeby": {
-    "message": "রিঙ্কেবি টেস্ট নেটওয়ার্কের সাথে সংযোগ করছে"
-  },
-  "connectingToRopsten": {
-    "message": "রপস্টেন টেস্ট নেটওয়ার্কের সাথে সংযোগ করছে"
-  },
-  "continueToWyre": {
-    "message": "Wyre এ অবিরত রাখুন"
   },
   "contractDeployment": {
     "message": "কন্ট্র্যাক্ট নিয়োজন"

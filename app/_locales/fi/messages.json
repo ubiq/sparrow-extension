@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Yhdistetään summaan $1 "
   },
-  "connectingToGoerli": {
-    "message": "Yhdistetään Goerlin testiverkostoon"
-  },
-  "connectingToKovan": {
-    "message": "Yhdistetään Kovanin koeverkkoon"
-  },
   "connectingToMainnet": {
-    "message": "Yhdistetään Ethereumin pääverkkoon"
-  },
-  "connectingToRinkeby": {
-    "message": "Yhdistetään Rinkebyn koeverkkoon"
-  },
-  "connectingToRopsten": {
-    "message": "Yhdistetään Ropstenin koeverkkoon"
-  },
-  "continueToWyre": {
-    "message": "Jatka Wyreen"
+    "message": "Yhdistetään Ubiqin pääverkkoon"
   },
   "contractDeployment": {
     "message": "Sopimuksen käyttö"
@@ -329,7 +314,7 @@
     "message": "Lue lisää."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-nimeä ei löytynyt nykyisestä verkosta. Koeta vaihtaa Ethereumin pääverkkoon."
+    "message": "ENS-nimeä ei löytynyt nykyisestä verkosta. Koeta vaihtaa Ubiqin pääverkkoon."
   },
   "ensRegistrationError": {
     "message": "Virhe ENS-nimen rekisteröinnissä"
@@ -555,7 +540,7 @@
     "message": "Viesti"
   },
   "metamaskDescription": {
-    "message": "Sinua yhdistetään Ethereumiin ja hajautettuun verkkoon."
+    "message": "Sinua yhdistetään Ubiqiin ja hajautettuun verkkoon."
   },
   "metamaskVersion": {
     "message": "Sparrow-versio"

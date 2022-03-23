@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Під'єднуємось до $1"
   },
-  "connectingToGoerli": {
-    "message": "Підключення до тестової мережі Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Підключення до тестової мережі Kovan"
-  },
   "connectingToMainnet": {
-    "message": "З'єднуємось з Головною мережею Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Під'єднуємось до тестової мережі Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Під'єднуємось до Тестової мережі Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Продовжити у Wyre"
+    "message": "З'єднуємось з Головною мережею Ubiq"
   },
   "contractDeployment": {
     "message": "Розгортання контракту"
@@ -344,7 +329,7 @@
     "message": "Приблизні часи обробки"
   },
   "ethereumPublicAddress": {
-    "message": "Публічна адреса Ethereum"
+    "message": "Публічна адреса Ubiq"
   },
   "etherscanView": {
     "message": "Переглянути обліковий запис на Ubiqscan"
@@ -540,7 +525,7 @@
     "message": "Вийти"
   },
   "mainnet": {
-    "message": "Головна Мережа Ethereum"
+    "message": "Головна Мережа Ubiq"
   },
   "max": {
     "message": "Максимум"

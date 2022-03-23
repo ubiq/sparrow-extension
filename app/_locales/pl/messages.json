@@ -57,7 +57,7 @@
     "message": "Ilość"
   },
   "appDescription": {
-    "message": "Wtyczka przeglądarki do Ethereum",
+    "message": "Wtyczka przeglądarki do Ubiq",
     "description": "The description of the application"
   },
   "appName": {
@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Łączenie z $1"
   },
-  "connectingToGoerli": {
-    "message": "Łączenie z siecią testową Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Łączenie z siecią testową Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Łączenie z główną siecią Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Łączenie z siecią testową Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Łączenie z siecią testową Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Przejdź do Wyre"
+    "message": "Łączenie z główną siecią Ubiq"
   },
   "contractDeployment": {
     "message": "Uruchomienie kontraktu"
@@ -329,7 +314,7 @@
     "message": "Dowiedz się więcej."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nazwa ENS nie została znaleziona w bieżącej sieci. Spróbuj przełączyć się na Główną sieć Ethereum."
+    "message": "Nazwa ENS nie została znaleziona w bieżącej sieci. Spróbuj przełączyć się na Główną sieć Ubiq."
   },
   "ensRegistrationError": {
     "message": "Błąd w rejestracji nazwy ENS"
@@ -344,7 +329,7 @@
     "message": "Szacunkowy czas przetwarzania"
   },
   "ethereumPublicAddress": {
-    "message": "Adres publiczny Ethereum"
+    "message": "Adres publiczny Ubiq"
   },
   "etherscanView": {
     "message": "Zobacz konto na Ubiqscan"
@@ -540,7 +525,7 @@
     "message": "Wyloguj się"
   },
   "mainnet": {
-    "message": "Główna sieć Ethereum"
+    "message": "Główna sieć Ubiq"
   },
   "max": {
     "message": "Maks."
@@ -552,7 +537,7 @@
     "message": "Wiadomość"
   },
   "metamaskDescription": {
-    "message": "Sparrow to bezpieczny portfel dla Ethereum."
+    "message": "Sparrow to bezpieczny portfel dla Ubiq."
   },
   "metamaskVersion": {
     "message": "Wersja Sparrow"

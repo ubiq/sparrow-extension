@@ -198,23 +198,8 @@
   "connectingTo": {
     "message": "جارِ الاتصال بـ $1"
   },
-  "connectingToGoerli": {
-    "message": "الاتصال بشبكة اختبار Goerli"
-  },
-  "connectingToKovan": {
-    "message": "الاتصال بشبكة اختبار Kovan"
-  },
   "connectingToMainnet": {
     "message": "جارِ الاتصال بشبكة إيثيريوم الرئيسية"
-  },
-  "connectingToRinkeby": {
-    "message": "جارِ الاتصال بشبكة اختبار Rinkeby "
-  },
-  "connectingToRopsten": {
-    "message": "جارِ الاتصال بشبكة اختبار Ropsten "
-  },
-  "continueToWyre": {
-    "message": "الاستمرار إلى Wyre"
   },
   "contractDeployment": {
     "message": "نشر العقد"

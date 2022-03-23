@@ -187,23 +187,8 @@
   "connectingTo": {
     "message": "Povezuje se na $1"
   },
-  "connectingToGoerli": {
-    "message": "Povezuje se sa test mrežom Goerli "
-  },
-  "connectingToKovan": {
-    "message": "Povezuje se na test mrežu Kovan"
-  },
   "connectingToMainnet": {
     "message": "Povezuje se na glavnu Ubiq mrežu"
-  },
-  "connectingToRinkeby": {
-    "message": "Poezivanje na Rinkeby Test mrežu"
-  },
-  "connectingToRopsten": {
-    "message": "Povezuje se na Ropsten Test mrežu"
-  },
-  "continueToWyre": {
-    "message": "Nastavite ka Wyre"
   },
   "contractDeployment": {
     "message": "Primena ugovora"

@@ -184,23 +184,8 @@
   "connectingTo": {
     "message": "ከ $1ጋር መገናኘት"
   },
-  "connectingToGoerli": {
-    "message": "ከ Goerli የሙከራ አውታረ መረብ ጋር መገናኘት"
-  },
-  "connectingToKovan": {
-    "message": "ከ Kovan የሙከራ አውታረ መረብ መገናኘት"
-  },
   "connectingToMainnet": {
     "message": "ከዋናው የ Ubiq አውታረ መረብ ጋር መገናኘት"
-  },
-  "connectingToRinkeby": {
-    "message": "ከ Rinkeby የሙከራ አውታረ መረብ ጋር በመገናኘት ላይ"
-  },
-  "connectingToRopsten": {
-    "message": "ከ Ropsten የሙከራ አውታረ መረብ ጋር በመገናኘት ላይ"
-  },
-  "continueToWyre": {
-    "message": "ወደ Wyre ይቀጥሉ"
   },
   "contractDeployment": {
     "message": "የኮንትራት ስምሪት"

@@ -57,7 +57,7 @@
     "message": "Sum"
   },
   "appDescription": {
-    "message": "En Ethereum-lommebok i nettleseren din",
+    "message": "En Ubiq-lommebok i nettleseren din",
     "description": "The description of the application"
   },
   "appName": {
@@ -187,23 +187,8 @@
   "connectingTo": {
     "message": "Forbinder til $1 "
   },
-  "connectingToGoerli": {
-    "message": "Oppretter forbindelse med Goerli Test Network"
-  },
-  "connectingToKovan": {
-    "message": "Kobler til Kovan testnettverk"
-  },
   "connectingToMainnet": {
     "message": "Forbinder med hoved-Ethereumnettverk "
-  },
-  "connectingToRinkeby": {
-    "message": "Kobler til Rinkeby Test Network "
-  },
-  "connectingToRopsten": {
-    "message": "Kobler til Ropsten testnettverk"
-  },
-  "continueToWyre": {
-    "message": "Fortsett til Wyre "
   },
   "contractDeployment": {
     "message": "Distribusjon av kontrakten"
@@ -326,7 +311,7 @@
     "message": "Finn ut mer."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-navn ikke funnet i det gjeldende nettverket. Prøv å bytte til hovednettverket for Ethereum."
+    "message": "ENS-navn ikke funnet i det gjeldende nettverket. Prøv å bytte til hovednettverket for Ubiq."
   },
   "ensRegistrationError": {
     "message": "Feil i ENS-navneregistrering"

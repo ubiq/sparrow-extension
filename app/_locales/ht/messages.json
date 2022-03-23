@@ -39,7 +39,7 @@
     "message": "Kantite lajan"
   },
   "appDescription": {
-    "message": "Ekstansyon Navigatè Ethereum",
+    "message": "Ekstansyon Navigatè Ubiq",
     "description": "The description of the application"
   },
   "appName": {
@@ -108,17 +108,8 @@
   "connectHardwareWallet": {
     "message": "Konekte Materyèl Wallet"
   },
-  "connectingToKovan": {
-    "message": "Konekte nan Kovan Tès Rezo a"
-  },
   "connectingToMainnet": {
     "message": "Konekte ak Prensipal Ubiq Rezo a"
-  },
-  "connectingToRinkeby": {
-    "message": "Konekte nan Rinkeby Tès Rezo a"
-  },
-  "connectingToRopsten": {
-    "message": "Konekte ak Ropsten Tès Rezo a"
   },
   "contractDeployment": {
     "message": "Kontra Deplwaman"
@@ -332,7 +323,7 @@
     "message": "Mesaje"
   },
   "metamaskDescription": {
-    "message": "Sparrow sekirize idantite pou Ethereum."
+    "message": "Sparrow sekirize idantite pou Ubiq."
   },
   "metamaskVersion": {
     "message": "Sparrow Vèsyon"

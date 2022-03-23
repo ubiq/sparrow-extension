@@ -57,7 +57,7 @@
     "message": "Belopp"
   },
   "appDescription": {
-    "message": "En Ethereum-plånbok i din webbläsare",
+    "message": "En Ubiq-plånbok i din webbläsare",
     "description": "The description of the application"
   },
   "appName": {
@@ -184,23 +184,8 @@
   "connectingTo": {
     "message": "Ansluter till $1"
   },
-  "connectingToGoerli": {
-    "message": "Ansluter till Goerli Test Network"
-  },
-  "connectingToKovan": {
-    "message": "Ansluter till Kovans testnätverk"
-  },
   "connectingToMainnet": {
-    "message": "Koppla till Ethereums huvudnätverk"
-  },
-  "connectingToRinkeby": {
-    "message": "Ansluter till Rinkeby Test Network"
-  },
-  "connectingToRopsten": {
-    "message": "Ansluter till Ropsten Test Network"
-  },
-  "continueToWyre": {
-    "message": "Fortsätt till Wyre"
+    "message": "Koppla till Ubiqs huvudnätverk"
   },
   "contractDeployment": {
     "message": "Kontraktplacering"

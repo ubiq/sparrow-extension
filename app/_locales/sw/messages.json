@@ -184,23 +184,8 @@
   "connectingTo": {
     "message": "Inaunganisha kwenye $1"
   },
-  "connectingToGoerli": {
-    "message": "Inaunganisha kwenye Mtandao wa Majaribio wa Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Inaunganisha kwenye Mtandao wa Majaribio wa Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Inaunganisha kwenye Mtandao Mkuu wa Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Inaunganisha kwenye Mtandao wa Majaribio wa Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Inaunganisha kwenye Mtandao wa Majaribio wa Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Endelea kwenye Wyre"
+    "message": "Inaunganisha kwenye Mtandao Mkuu wa Ubiq"
   },
   "contractDeployment": {
     "message": "Kutoa Mkataba"
@@ -323,7 +308,7 @@
     "message": "Jifunze zaidi."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Jina la ENS halipatikani kwenye mtandao wa sasa. Jaribu kuhamia kwenye Mtandao Mkuu wa Ethereum."
+    "message": "Jina la ENS halipatikani kwenye mtandao wa sasa. Jaribu kuhamia kwenye Mtandao Mkuu wa Ubiq."
   },
   "ensRegistrationError": {
     "message": "Hitilafu imetokea kwenye usajili wa jina la ENS"
@@ -338,7 +323,7 @@
     "message": "Muda wa Kuchakata Uliokadiriwa"
   },
   "ethereumPublicAddress": {
-    "message": "Anwani ya Umma ya Ethereum"
+    "message": "Anwani ya Umma ya Ubiq"
   },
   "etherscanView": {
     "message": "Tazama akaunti kwenye Ubiqscan"
@@ -524,7 +509,7 @@
     "message": "Toka kwenye akaunti"
   },
   "mainnet": {
-    "message": "Mtandao Mkuu wa Ethereum"
+    "message": "Mtandao Mkuu wa Ubiq"
   },
   "memorizePhrase": {
     "message": "Kariri kirai hiki"

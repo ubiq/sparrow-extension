@@ -57,7 +57,7 @@
     "message": "Beløb"
   },
   "appDescription": {
-    "message": "En Ethereum-pung i din browser",
+    "message": "En Ubiq-pung i din browser",
     "description": "The description of the application"
   },
   "appName": {
@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Forbinder til $1"
   },
-  "connectingToGoerli": {
-    "message": "Opretter forbindelse til Goerli Testnetværk"
-  },
-  "connectingToKovan": {
-    "message": "Forbinder til Kovan Testnetværk"
-  },
   "connectingToMainnet": {
     "message": "Forbinder til dit Primære Ubiq Netværk"
-  },
-  "connectingToRinkeby": {
-    "message": "Forbinder til Rinkeby-testnetværk"
-  },
-  "connectingToRopsten": {
-    "message": "Forbinder til Ropsten-testnetværk"
-  },
-  "continueToWyre": {
-    "message": "Fortsæt til Wyre"
   },
   "contractDeployment": {
     "message": "Kontraktanvendelse"
@@ -329,7 +314,7 @@
     "message": "Lær mere. "
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-navn ikke fundet for det nuværende netværk. Prøv at skifte til Ethereums hovednetværk."
+    "message": "ENS-navn ikke fundet for det nuværende netværk. Prøv at skifte til Ubiqs hovednetværk."
   },
   "ensRegistrationError": {
     "message": "Fejl i ENS-navneregistrering"
@@ -344,7 +329,7 @@
     "message": "Estimerede behandlingstider"
   },
   "ethereumPublicAddress": {
-    "message": "Offentlig Ethereum-adresse"
+    "message": "Offentlig Ubiq-adresse"
   },
   "etherscanView": {
     "message": "Se konto på Ubiqscan"
@@ -527,7 +512,7 @@
     "message": "Log ud"
   },
   "mainnet": {
-    "message": "Hovednetværk for Ethereum"
+    "message": "Hovednetværk for Ubiq"
   },
   "max": {
     "message": "Maks"

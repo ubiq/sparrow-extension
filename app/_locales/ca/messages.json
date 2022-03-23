@@ -187,23 +187,8 @@
   "connectingTo": {
     "message": "Connectant a $1 "
   },
-  "connectingToGoerli": {
-    "message": "Connectant a Xarxa de Prova Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Conectant a la xarxa de Kovan Test"
-  },
   "connectingToMainnet": {
-    "message": "Connectant a Xarxa Principal Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Connectant a la Xarxa de Prova Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Connectant a la xarxa de test Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Continua a Wyre"
+    "message": "Connectant a Xarxa Principal Ubiq"
   },
   "contractDeployment": {
     "message": "Desplegament de Contracte"

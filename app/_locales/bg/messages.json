@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Свързване с $1"
   },
-  "connectingToGoerli": {
-    "message": "Свързване с тестова мрежа на Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Свързване с тестовата мрежа на Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Свързване с главната мрежа Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Свързване с тестова мрежа на Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Свързване с тестова мрежа Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Продължете към Wyre"
+    "message": "Свързване с главната мрежа Ubiq"
   },
   "contractDeployment": {
     "message": "Разгръщане на договор"

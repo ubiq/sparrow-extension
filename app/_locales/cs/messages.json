@@ -63,17 +63,8 @@
   "confirmed": {
     "message": "Potvrzeno"
   },
-  "connectingToKovan": {
-    "message": "Připojuji se k Kovan Test Network"
-  },
   "connectingToMainnet": {
     "message": "Připojuji se k Ubiq Mainnet"
-  },
-  "connectingToRinkeby": {
-    "message": "Připojuji se k Rinkeby Test Network"
-  },
-  "connectingToRopsten": {
-    "message": "Připojuji se k Ropsten Test Network"
   },
   "contractDeployment": {
     "message": "Nasazení kontraktu"
@@ -226,7 +217,7 @@
     "message": "Zpráva"
   },
   "metamaskDescription": {
-    "message": "Sparrow je bezpečný osobní trezor pro Ethereum."
+    "message": "Sparrow je bezpečný osobní trezor pro Ubiq."
   },
   "mustSelectOne": {
     "message": "Musíte zvolit aspoň 1 token."

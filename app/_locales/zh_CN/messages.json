@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "找不到代币？您可以通过粘贴地址手动添加任何代币。代币合同地址可以在$1上找到。",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "这将允许在MetaMask中使用此网络。"
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "正在连接 $1"
   },
-  "connectingToGoerli": {
-    "message": "正在连接 Goerli 测试网络"
-  },
-  "connectingToKovan": {
-    "message": "正在连接到 Kovan 测试网络"
-  },
   "connectingToMainnet": {
     "message": "正在连接到以太坊 Ubiq 主网"
-  },
-  "connectingToRinkeby": {
-    "message": "正在连接到 Rinkeby 测试网络"
-  },
-  "connectingToRopsten": {
-    "message": "正在连接到 Ropsten 测试网络"
   },
   "contactUs": {
     "message": "联系我们"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "继续"
-  },
-  "continueToTransak": {
-    "message": "继续到Transak"
-  },
-  "continueToWyre": {
-    "message": "继续前往 Wyre"
   },
   "contract": {
     "message": "合同"

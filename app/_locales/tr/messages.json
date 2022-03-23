@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Bir tokeni bulamadınız mı? Adresini yapıştırarak dilediğiniz tokeni manuel olarak ekleyebilirsiniz. Token sözleşme adreslerini $1 alanında bulabilirsiniz.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Bu, bu ağın MetaMas dahilinde kullanılmasına olanak tanıyacaktır."
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "Şuna bağlanılıyor: $1"
   },
-  "connectingToGoerli": {
-    "message": "Goerli Test Ağına Bağlanıyor"
-  },
-  "connectingToKovan": {
-    "message": "Kovan Test Ağına bağlanıyor"
-  },
   "connectingToMainnet": {
     "message": "Ethereum Mainnet ağına bağlanıyor"
-  },
-  "connectingToRinkeby": {
-    "message": "Rinkeby Test Ağına bağlanıyor"
-  },
-  "connectingToRopsten": {
-    "message": "Ropsten Test Ağına bağlanıyor"
   },
   "contactUs": {
     "message": "Bize ulaşın"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "Devam et"
-  },
-  "continueToTransak": {
-    "message": "Transak'a Devam Et"
-  },
-  "continueToWyre": {
-    "message": "Wyre'a Devam Et"
   },
   "contract": {
     "message": "Sözleşme"

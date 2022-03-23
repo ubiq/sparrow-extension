@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Pieslēdzas $1"
   },
-  "connectingToGoerli": {
-    "message": "Pieslēdzas Goerli testa tīklam"
-  },
-  "connectingToKovan": {
-    "message": "Savienojas ar Kovan testa tīklu"
-  },
   "connectingToMainnet": {
     "message": "Savienojas ar galveno Ubiq tīklu"
-  },
-  "connectingToRinkeby": {
-    "message": "Pieslēdzas Rinkeby testa tīklam"
-  },
-  "connectingToRopsten": {
-    "message": "Pieslēdzas Ropsten testa tīklam"
-  },
-  "continueToWyre": {
-    "message": "Pāriet uz Wyre"
   },
   "contractDeployment": {
     "message": "Līgumu pielietošana"

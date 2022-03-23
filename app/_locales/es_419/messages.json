@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "¿No encuentra un token? Para agregar un token, copie su dirección. Puede encontrar la dirección de contrato del token en $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Esto permitirá que la red se utilice en Sparrow."
@@ -520,20 +520,8 @@
   "connectingTo": {
     "message": "Estableciendo conexión a $1"
   },
-  "connectingToGoerli": {
-    "message": "Estableciendo conexión a la red de prueba Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Estableciendo conexión a la red de prueba Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Estableciendo conexión a la red principal de Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Estableciendo conexión a la red de prueba Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Estableciendo conexión a la red de prueba Ropsten"
+    "message": "Estableciendo conexión a la red principal de Ubiq"
   },
   "contactUs": {
     "message": "Contáctenos"
@@ -543,12 +531,6 @@
   },
   "continue": {
     "message": "Continuar"
-  },
-  "continueToTransak": {
-    "message": "Continuar a Transak"
-  },
-  "continueToWyre": {
-    "message": "Continuar a Wyre"
   },
   "contract": {
     "message": "Contrato"
@@ -965,7 +947,7 @@
     "message": "Caracter ilegal para ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "El nombre de ENS no se encuentra en la red actual. Intente cambiar a la red principal de Ethereum."
+    "message": "El nombre de ENS no se encuentra en la red actual. Intente cambiar a la red principal de Ubiq."
   },
   "ensNotSupportedOnNetwork": {
     "message": "La red no admite ENS"
@@ -1024,7 +1006,7 @@
     "message": "Se muestra el precio del gas de respaldo, ya que el servicio para calcular el precio del gas principal no se encuentra disponible en este momento."
   },
   "ethereumPublicAddress": {
-    "message": "Dirección pública de Ethereum"
+    "message": "Dirección pública de Ubiq"
   },
   "etherscan": {
     "message": "Ubiqscan"
@@ -1489,7 +1471,7 @@
     "message": "Habilite el uso de Ledger Live en Configuración > Avanzada"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "Conecte su dispositivo Ledger y seleccione la aplicación Ethereum"
+    "message": "Conecte su dispositivo Ledger y seleccione la aplicación Ubiq"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Abra y desbloquee la aplicación Ledger Live"
@@ -1562,7 +1544,7 @@
     "message": "baja"
   },
   "mainnet": {
-    "message": "Red principal de Ethereum"
+    "message": "Red principal de Ubiq"
   },
   "makeAnotherSwap": {
     "message": "Crear un nuevo swap"
@@ -1883,7 +1865,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Para llevar a cabo transacciones en el Mainnet de Ethereum, asegúrese de que su dispositivo Ledger tenga el último firmware.",
+    "message": "Para llevar a cabo transacciones en el Mainnet de Ubiq, asegúrese de que su dispositivo Ledger tenga el último firmware.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -2575,7 +2557,7 @@
     "message": "Conectar la cartera Ledger"
   },
   "step2LedgerWalletMsg": {
-    "message": "Conecte la cartera directamente al equipo.  Desbloquee su Ledger y abra la aplicación de Ethereum. Para más información sobre el uso de su dispositivo de cartera de hardware, $1.",
+    "message": "Conecte la cartera directamente al equipo.  Desbloquee su Ledger y abra la aplicación de Ubiq. Para más información sobre el uso de su dispositivo de cartera de hardware, $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -3219,7 +3201,7 @@
     "message": "Usar detección de phishing"
   },
   "usePhishingDetectionDescription": {
-    "message": "Mostrar una advertencia respecto de los dominios de phishing dirigidos a los usuarios de Ethereum"
+    "message": "Mostrar una advertencia respecto de los dominios de phishing dirigidos a los usuarios de Ubiq"
   },
   "useTokenDetection": {
     "message": "Usar detección de token"

@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Bạn không tìm thấy token? Bạn có thể dán địa chỉ của bất kỳ token nào để thêm token đó theo cách thủ công. Bạn có thể tìm thấy địa chỉ hợp đồng token trên $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Thao tác này sẽ cho phép sử dụng mạng này trong Sparrow."
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "Đang kết nối với $1"
   },
-  "connectingToGoerli": {
-    "message": "Đang kết nối với mạng thử nghiệm Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Đang kết nối với mạng thử nghiệm Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Đang kết nối với mạng chính thức của Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Đang kết nối với mạng thử nghiệm Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Đang kết nối với mạng thử nghiệm Ropsten"
+    "message": "Đang kết nối với mạng chính thức của Ubiq"
   },
   "contactUs": {
     "message": "Liên hệ với chúng tôi"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "Tiếp tục"
-  },
-  "continueToTransak": {
-    "message": "Tiếp tục đến Transak"
-  },
-  "continueToWyre": {
-    "message": "Tiếp tục chuyển đến Wyre"
   },
   "contract": {
     "message": "Hợp đồng"
@@ -935,7 +917,7 @@
     "message": "Ký Tự Không Hợp Lệ đối với ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Không tìm thấy tên ENS trên mạng hiện tại. Đang chuyển sang mạng chính thức của Ethereum."
+    "message": "Không tìm thấy tên ENS trên mạng hiện tại. Đang chuyển sang mạng chính thức của Ubiq."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Mạng không hỗ trợ ENS"
@@ -994,7 +976,7 @@
     "message": "Giá gas dự phòng được cung cấp vì dịch vụ ước tính giá gas chính hiện không hoạt động."
   },
   "ethereumPublicAddress": {
-    "message": "Địa chỉ công khai trên Ethereum"
+    "message": "Địa chỉ công khai trên Ubiq"
   },
   "etherscan": {
     "message": "Ubiqscan"
@@ -1440,7 +1422,7 @@
     "message": "Bật Sử Dụng Ledger Live trong Cài Đặt > Nâng Cao"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "Cắm thiết bị Ledger và chọn ứng dụng Ethereum"
+    "message": "Cắm thiết bị Ledger và chọn ứng dụng Ubiq"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Mở và mở khóa Ứng Dụng Ledger Live"
@@ -1460,7 +1442,7 @@
     "message": "Ứng dụng Ledger Live"
   },
   "ledgerLocked": {
-    "message": "Không thể kết nối với thiết bị Ledger. Vui lòng đảm bảo bạn đã mở khóa thiết bị và mở ứng dụng Ethereum."
+    "message": "Không thể kết nối với thiết bị Ledger. Vui lòng đảm bảo bạn đã mở khóa thiết bị và mở ứng dụng Ubiq."
   },
   "ledgerTimeout": {
     "message": "Ledger Live mất quá nhiều thời gian để phản hồi hoặc đã hết thời gian chờ kết nối. Hãy đảm bảo bạn đã mở ứng dụng Ledger Live và đã mở khóa thiết bị."
@@ -1516,7 +1498,7 @@
     "message": "Các giao dịch trong tương lai sẽ được xếp sau giao dịch này. Mức giá này được nhìn thấy lần cuối cách đây một thời gian."
   },
   "mainnet": {
-    "message": "Mạng chính thức của Ethereum"
+    "message": "Mạng chính thức của Ubiq"
   },
   "makeAnotherSwap": {
     "message": "Tạo một giao dịch hoán đổi mới"
@@ -1837,7 +1819,7 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
-    "message": "Để hoàn thành các giao dịch trên Mạng chính thức của Ethereum, hãy chắc chắn thiết bị Ledger của bạn đã được cập nhật lên phiên bản phần mềm mới nhất.",
+    "message": "Để hoàn thành các giao dịch trên Mạng chính thức của Ubiq, hãy chắc chắn thiết bị Ledger của bạn đã được cập nhật lên phiên bản phần mềm mới nhất.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the need to update ledger firmware."
   },
   "notifications7Title": {
@@ -2523,7 +2505,7 @@
     "message": "Cắm ví Ledger"
   },
   "step2LedgerWalletMsg": {
-    "message": "Kết nối ví của bạn trực tiếp với máy tính.  Mở khóa Ledger của bạn và mở ứng dụng Ethereum. Để biết thêm thông tin về cách sử dụng thiết bị ví cứng của bạn, $1.",
+    "message": "Kết nối ví của bạn trực tiếp với máy tính.  Mở khóa Ledger của bạn và mở ứng dụng Ubiq. Để biết thêm thông tin về cách sử dụng thiết bị ví cứng của bạn, $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -3161,7 +3143,7 @@
     "message": "Sử dụng tính năng Phát hiện lừa đảo"
   },
   "usePhishingDetectionDescription": {
-    "message": "Hiển thị cảnh báo đối với các tên miền lừa đảo nhắm đến người dùng Ethereum"
+    "message": "Hiển thị cảnh báo đối với các tên miền lừa đảo nhắm đến người dùng Ubiq"
   },
   "useTokenDetection": {
     "message": "Sử Dụng Phát Hiện Token"

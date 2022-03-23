@@ -193,23 +193,8 @@
   "connectingTo": {
     "message": "連線到$1"
   },
-  "connectingToGoerli": {
-    "message": "連接至 Goerli 測試網路"
-  },
-  "connectingToKovan": {
-    "message": "連線到 Kovan 測試網路"
-  },
   "connectingToMainnet": {
     "message": "連線到主 Ubiq 網路"
-  },
-  "connectingToRinkeby": {
-    "message": "連線到 Rinkeby 測試網路"
-  },
-  "connectingToRopsten": {
-    "message": "連線到 Ropsten 測試網路"
-  },
-  "continueToWyre": {
-    "message": "繼續至 Wyre"
   },
   "contractDeployment": {
     "message": "部署合約"

@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Hindi makahanap ng token? Maaari kang manu-manong magdagdag ng anumang token sa pamamagitan ng pag-paste ng address nito. Ang mga address ng token contract ay matatagpuan sa $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Magpapahintulot ito sa network na ito na gamitin sa loob ng Sparrow."
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "Kumokonekta sa $1"
   },
-  "connectingToGoerli": {
-    "message": "Kumokonekta sa Goerli Test Network"
-  },
-  "connectingToKovan": {
-    "message": "Kumokonekta sa Kovan Test Network"
-  },
   "connectingToMainnet": {
     "message": "Kumokonekta sa Ubiq Mainnet"
-  },
-  "connectingToRinkeby": {
-    "message": "Kumokonekta sa Rinkeby Test Network"
-  },
-  "connectingToRopsten": {
-    "message": "Kumokonekta sa Ropsten Test Network"
   },
   "contactUs": {
     "message": "Makipag-ugnayan sa amin"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "Magpatuloy"
-  },
-  "continueToTransak": {
-    "message": "Magpatuloy sa Transak"
-  },
-  "continueToWyre": {
-    "message": "Magpatuloy sa Wyre"
   },
   "contract": {
     "message": "Contract"
@@ -994,7 +976,7 @@
     "message": "Ang backup gas price ay inilalaan dahil ang pangunahing pagtantiya ng presyo ng gas ay hindi available sa ngayon."
   },
   "ethereumPublicAddress": {
-    "message": "Pampublikong Address ng Ethereum"
+    "message": "Pampublikong Address ng Ubiq"
   },
   "etherscan": {
     "message": "Ubiqscan"
@@ -1460,7 +1442,7 @@
     "message": "Ledger Live App"
   },
   "ledgerLocked": {
-    "message": "Hindi makakonekta sa Ledger device. Siguruhin na ang device mo ay naka-unlock at bukas ang Ethereum."
+    "message": "Hindi makakonekta sa Ledger device. Siguruhin na ang device mo ay naka-unlock at bukas ang Ubiq."
   },
   "ledgerTimeout": {
     "message": "Masyadong natatagalan ang Ledger Live upang tumugon o mag-timeout ng koneksyon. Tiyaking nakabukas ang Ledger Live app at naka-unlock ang iyong device."
@@ -3161,7 +3143,7 @@
     "message": "Gumamit ng Pag-detect ng Phishing"
   },
   "usePhishingDetectionDescription": {
-    "message": "Magpakita ng babala para sa mga phishing domain na nagta-target sa mga user ng Ethereum"
+    "message": "Magpakita ng babala para sa mga phishing domain na nagta-target sa mga user ng Ubiq"
   },
   "useTokenDetection": {
     "message": "Gamitin ang Pag-detect ng Token"

@@ -78,15 +78,6 @@
   "connectingTo": {
     "message": "เชื่อมต่อกับ $1"
   },
-  "connectingToMainnet": {
-    "message": "เชื่อมต่อกับเครือข่าย Ubiq หลัก"
-  },
-  "connectingToRopsten": {
-    "message": "เชื่อมต่อกับเครือข่ายทดสอบ Ropsten"
-  },
-  "continueToWyre": {
-    "message": "ไปที่ Wyre"
-  },
   "contractDeployment": {
     "message": "การติดตั้งสัญญา"
   },

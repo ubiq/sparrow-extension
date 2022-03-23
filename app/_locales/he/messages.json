@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "מתחבר ל- $1 "
   },
-  "connectingToGoerli": {
-    "message": "מתחבר ל-Goerli Test Network"
-  },
-  "connectingToKovan": {
-    "message": "מתחבר ל-Kovan Test Network"
-  },
   "connectingToMainnet": {
     "message": "מתחבר לרשת אתריום הראשית"
-  },
-  "connectingToRinkeby": {
-    "message": "מתחבר ל- Rinkeby Test Network  "
-  },
-  "connectingToRopsten": {
-    "message": "מתחבר אל רשת בדיקה Ropsten "
-  },
-  "continueToWyre": {
-    "message": "המשך ל-Wyre"
   },
   "contractDeployment": {
     "message": "שליחת חוזה (Contract Deployment)"

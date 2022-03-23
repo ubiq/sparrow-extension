@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Vous ne trouvez pas de jeton ? Vous pouvez ajouter manuellement n’importe quel jeton avec son adresse par copier-coller. Les adresses des contrats de jetons sont disponibles sur $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Cela permettra d’utiliser ce réseau dans Sparrow."
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "Connexion à $1"
   },
-  "connectingToGoerli": {
-    "message": "Connexion au réseau de test Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Connexion au réseau de test Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Connexion au réseau principal Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Connexion au réseau de test Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Connexion au réseau de test Ropsten"
+    "message": "Connexion au réseau principal Ubiq"
   },
   "contactUs": {
     "message": "Nous contacter"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "Continuer"
-  },
-  "continueToTransak": {
-    "message": "Continuer vers Transak"
-  },
-  "continueToWyre": {
-    "message": "Continuer vers Wyre"
   },
   "contract": {
     "message": "Contrat"
@@ -1440,7 +1422,7 @@
     "message": "Activez l’option « Utiliser Ledger Live » sous Paramètres > Avancés"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "Branchez votre dispositif Ledger et sélectionnez l’application Ethereum"
+    "message": "Branchez votre dispositif Ledger et sélectionnez l’application Ubiq"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Ouvrez et déverrouillez l’application Ledger Live"
@@ -1516,7 +1498,7 @@
     "message": "Les transactions ultérieures seront placées en file d’attente après celle-ci. Ce prix a été observé pour la dernière fois il y a un certain temps."
   },
   "mainnet": {
-    "message": "Réseau principal Ethereum"
+    "message": "Réseau principal Ubiq"
   },
   "makeAnotherSwap": {
     "message": "Créer un nouveau swap"
@@ -1563,7 +1545,7 @@
     "message": "Le bouton d’état de connexion indique si le site Web que vous visitez est connecté à votre compte actuellement sélectionné."
   },
   "metamaskDescription": {
-    "message": "Sparrow est un coffre sécurisé pour votre identité sur Ethereum."
+    "message": "Sparrow est un coffre sécurisé pour votre identité sur Ubiq."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "Sparrow Swaps est en cours de maintenance. Nous vous invitons à revenir plus tard."
@@ -2523,7 +2505,7 @@
     "message": "Brancher le portefeuille Ledger"
   },
   "step2LedgerWalletMsg": {
-    "message": "Connectez votre portefeuille directement à votre ordinateur. Déverrouillez votre Ledger et ouvrez l’application Ethereum. Pour en savoir plus sur l’utilisation de votre portefeuille matériel, $1.",
+    "message": "Connectez votre portefeuille directement à votre ordinateur. Déverrouillez votre Ledger et ouvrez l’application Ubiq. Pour en savoir plus sur l’utilisation de votre portefeuille matériel, $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {

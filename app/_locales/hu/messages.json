@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Kapcsolódás: $1"
   },
-  "connectingToGoerli": {
-    "message": "Csatlakozás a Goerli teszthálózathoz"
-  },
-  "connectingToKovan": {
-    "message": "Csatlakozás a Kovan teszthálózathoz"
-  },
   "connectingToMainnet": {
     "message": "Csatlakozás a fő Ubiq hálózathoz"
-  },
-  "connectingToRinkeby": {
-    "message": "Kapcsolódás a Rinkeby Teszthálózathoz"
-  },
-  "connectingToRopsten": {
-    "message": "Csatlakozás a Ropsten teszthálózathoz"
-  },
-  "continueToWyre": {
-    "message": "Tovább a Wyre-re"
   },
   "contractDeployment": {
     "message": "Szerződés alkalmazása"
@@ -548,7 +533,7 @@
     "message": "Üzenet"
   },
   "metamaskDescription": {
-    "message": "Csatlakozás az Ethereumhoz és a decentralizált hálózathoz."
+    "message": "Csatlakozás az Ubiqhoz és a decentralizált hálózathoz."
   },
   "metamaskVersion": {
     "message": "Sparrow verzió"

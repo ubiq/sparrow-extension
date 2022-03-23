@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Se conectează la $1"
   },
-  "connectingToGoerli": {
-    "message": "Se conectează la rețeaua de test Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Se conectează la rețeaua de test Kovan"
-  },
   "connectingToMainnet": {
     "message": "Se conectează la rețeaua Ubiq principală"
-  },
-  "connectingToRinkeby": {
-    "message": "Se conectează la Rețeaua de test Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Se conectează la rețeaua de test Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Continuați la Wyre"
   },
   "contractDeployment": {
     "message": "Implementarea contractului"
@@ -344,7 +329,7 @@
     "message": "Timpi estimativi de procesare"
   },
   "ethereumPublicAddress": {
-    "message": "Adresa publică Ethereum"
+    "message": "Adresa publică Ubiq"
   },
   "etherscanView": {
     "message": "Vizualizare cont pe Ubiqscan"

@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "टोकन नहीं मिल रहा है? आप किसी भी टोकन का पता पेस्ट करके उसे मैन्युअल रूप से भी जोड़ सकते हैं। टोकन अनुबंध पते $1 पर मिल सकते हैं।",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "इससे इस नेटवर्क को Sparrow के अंदर उपयोग करने की अनुमति मिलेगी।"
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "$1 से कनेक्ट किया जा रहा है"
   },
-  "connectingToGoerli": {
-    "message": "Goerli टेस्ट नेटवर्क से कनेक्ट हो रहा है"
-  },
-  "connectingToKovan": {
-    "message": "Kovan टेस्ट नेटवर्क से कनेक्ट हो रहा है"
-  },
   "connectingToMainnet": {
-    "message": "Ethereum Mainnet से कनेक्ट हो रहा है"
-  },
-  "connectingToRinkeby": {
-    "message": "Rinkeby टेस्ट नेटवर्क से कनेक्ट हो रहा है"
-  },
-  "connectingToRopsten": {
-    "message": "Ropsten टेस्ट नेटवर्क से कनेक्ट हो रहा है"
+    "message": "Ubiq Mainnet से कनेक्ट हो रहा है"
   },
   "contactUs": {
     "message": "हमसे संपर्क करें"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "जारी रखें"
-  },
-  "continueToTransak": {
-    "message": "Transak के लिए जारी रखें"
-  },
-  "continueToWyre": {
-    "message": "Wyre पर जारी रखें"
   },
   "contract": {
     "message": "अनुबंध"

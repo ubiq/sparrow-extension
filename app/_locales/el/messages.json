@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Αδυναμία εύρεσης token; Μπορείτε να προσθέσετε χειροκίνητα οποιοδήποτε διακριτικό επικολλώντας τη διεύθυνσή του. Οι διευθύνσεις συμβολαίων Token μπορούν να βρεθούν στο $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Αυτό θα επιτρέψει σε αυτό το δίκτυο να χρησιμοποιηθεί στο Sparrow."
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "Σύνδεση με $1"
   },
-  "connectingToGoerli": {
-    "message": "Σύνδεση στο Δίκτυο Δοκιμής Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Σύνδεση στο Δοκιμαστικό Δίκτυο Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Σύνδεση στο Κύριο Δίκτυο Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Σύνδεση στο Δίκτυο Δοκιμών Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Σύνδεση με το Δίκτυο Δοκιμών Ropsten"
+    "message": "Σύνδεση στο Κύριο Δίκτυο Ubiq"
   },
   "contactUs": {
     "message": "Επικοινωνήστε μαζί μας"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "Συνέχεια"
-  },
-  "continueToTransak": {
-    "message": "Συνεχίστε στο Transak"
-  },
-  "continueToWyre": {
-    "message": "Συνεχίστε στο Wyre"
   },
   "contract": {
     "message": "Συμβόλαιο"
@@ -935,7 +917,7 @@
     "message": "Μη έγκυρος χαρακτήρας για το ENS."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Το όνομα ENS δεν βρέθηκε στο τρέχον δίκτυο. Δοκιμάστε να μεταβείτε στο Κύριο Δίκτυο Ethereum."
+    "message": "Το όνομα ENS δεν βρέθηκε στο τρέχον δίκτυο. Δοκιμάστε να μεταβείτε στο Κύριο Δίκτυο Ubiq."
   },
   "ensNotSupportedOnNetwork": {
     "message": "Το δίκτυο δεν υποστηρίζει ENS"
@@ -994,7 +976,7 @@
     "message": "Το εφεδρικό τέλος συναλλαγής που παρέχεται ως η κύρια υπηρεσία εκτίμησης τελών συναλλαγής, δεν είναι διαθέσιμο αυτή τη στιγμή."
   },
   "ethereumPublicAddress": {
-    "message": "Δημόσια Διεύθυνση Ethereum"
+    "message": "Δημόσια Διεύθυνση Ubiq"
   },
   "etherscan": {
     "message": "Ubiqscan"
@@ -1440,7 +1422,7 @@
     "message": "Ενεργοποίηση χρήσης Ledger Live κάτω από τις Ρυθμίσεις > Για προχωρημένους"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "Συνδέστε τη συσκευή Ledger και επιλέξτε την εφαρμογή Ethereum"
+    "message": "Συνδέστε τη συσκευή Ledger και επιλέξτε την εφαρμογή Ubiq"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Άνοιγμα και ξεκλείδωμα εφαρμογής Ledger Live"
@@ -1516,7 +1498,7 @@
     "message": "Οι μελλοντικές συναλλαγές θα περιμένουν σε αναμονή μετά από αυτή. Αυτή ήταν η τελευταία τιμή που είδαμε."
   },
   "mainnet": {
-    "message": "Κύριο Δίκτυο Ethereum"
+    "message": "Κύριο Δίκτυο Ubiq"
   },
   "makeAnotherSwap": {
     "message": "Δημιουργία νέας ανταλλαγής"
@@ -2523,7 +2505,7 @@
     "message": "Συνδέστε το πορτοφόλι Ledger"
   },
   "step2LedgerWalletMsg": {
-    "message": "Συνδέστε το πορτοφόλι σας απευθείας στον υπολογιστή σας. Ξεκλειδώστε το Ledger και ανοίξτε την εφαρμογή Ethereum. Για περισσότερες πληροφορίες σχετικά με τη χρήση της συσκευής πορτοφολιού σας, $1.",
+    "message": "Συνδέστε το πορτοφόλι σας απευθείας στον υπολογιστή σας. Ξεκλειδώστε το Ledger και ανοίξτε την εφαρμογή Ubiq. Για περισσότερες πληροφορίες σχετικά με τη χρήση της συσκευής πορτοφολιού σας, $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -3161,7 +3143,7 @@
     "message": "Χρήση Ανίχνευσης Απάτης Ηλεκτρονικού Ψαρέματος"
   },
   "usePhishingDetectionDescription": {
-    "message": "Εμφάνιση μιας προειδοποίησης για τομείς Απάτης Ηλεκτρονικού Ψαρέματος που στοχεύουν χρήστες του Ethereum"
+    "message": "Εμφάνιση μιας προειδοποίησης για τομείς Απάτης Ηλεκτρονικού Ψαρέματος που στοχεύουν χρήστες του Ubiq"
   },
   "useTokenDetection": {
     "message": "Χρήση Ανίχνευσης Token"

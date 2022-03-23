@@ -51,7 +51,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "¿No encuentra un token? Puede agregar cualquier token si copia su dirección. Puede encontrar la dirección de contrato del token en $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Esto permitirá que la red se utilice en Sparrow."
@@ -358,20 +358,8 @@
   "connectingTo": {
     "message": "Estableciendo conexión a $1"
   },
-  "connectingToGoerli": {
-    "message": "Estableciendo conexión a la red de prueba Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Estableciendo conexión a la red de prueba Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Estableciendo conexión a la red principal de Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Estableciendo conexión a la red de prueba Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Estableciendo conexión a la red de prueba Ropsten"
+    "message": "Estableciendo conexión a la red principal de Ubiq"
   },
   "contactUs": {
     "message": "Contáctenos"
@@ -381,9 +369,6 @@
   },
   "continue": {
     "message": "Continuar"
-  },
-  "continueToWyre": {
-    "message": "Continuar a Wyre"
   },
   "contract": {
     "message": "Contrato"
@@ -601,7 +586,7 @@
     "description": "$1 is the return value of eth_chainId from an RPC endpoint"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "El nombre de ENS no se encuentra en la red actual. Intente cambiar a la red principal de Ethereum."
+    "message": "El nombre de ENS no se encuentra en la red actual. Intente cambiar a la red principal de Ubiq."
   },
   "ensRegistrationError": {
     "message": "Error en el registro del nombre de ENS"
@@ -654,7 +639,7 @@
     "message": "Se muestra el precio del gas de respaldo, ya que el servicio para calcular el precio del gas principal no se encuentra disponible en este momento."
   },
   "ethereumPublicAddress": {
-    "message": "Dirección pública de Ethereum"
+    "message": "Dirección pública de Ubiq"
   },
   "etherscanView": {
     "message": "Ver cuenta en Ubiqscan"
@@ -970,7 +955,7 @@
     "message": "El tiempo de bloqueo es demasiado largo"
   },
   "mainnet": {
-    "message": "Red principal de Ethereum"
+    "message": "Red principal de Ubiq"
   },
   "makeAnotherSwap": {
     "message": "Crear un nuevo canje"
@@ -1641,7 +1626,7 @@
     "message": "Conectar la cartera Ledger"
   },
   "step2LedgerWalletMsg": {
-    "message": "Conecte la cartera directamente al equipo.  Desbloquee su Ledger y abra la aplicación de Ethereum. Para más información sobre el uso de su dispositivo de cartera de hardware, $1.",
+    "message": "Conecte la cartera directamente al equipo.  Desbloquee su Ledger y abra la aplicación de Ubiq. Para más información sobre el uso de su dispositivo de cartera de hardware, $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -2123,7 +2108,7 @@
     "message": "Usar detección de phishing"
   },
   "usePhishingDetectionDescription": {
-    "message": "Mostrar una advertencia respecto de los dominios de phishing dirigidos a los usuarios de Ethereum"
+    "message": "Mostrar una advertencia respecto de los dominios de phishing dirigidos a los usuarios de Ubiq"
   },
   "usedByClients": {
     "message": "Usado por una variedad de clientes distintos"

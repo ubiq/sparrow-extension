@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Povezivanje na $1"
   },
-  "connectingToGoerli": {
-    "message": "Povezivanje na testnu mrežu Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Povezivanje na testnu mrežu Kovan"
-  },
   "connectingToMainnet": {
-    "message": "Povezivanje na glavnu mrežu Ethereum"
-  },
-  "connectingToRinkeby": {
-    "message": "Povezivanje na testnu mrežu Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Povezivanje na testnu mrežu Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Nastavi na uslugu Wyre"
+    "message": "Povezivanje na glavnu mrežu Ubiq"
   },
   "contractDeployment": {
     "message": "Primjena ugovora"
@@ -329,7 +314,7 @@
     "message": "Saznajte više."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Naziv ENS nije pronađen na trenutačnoj mreži. Pokušajte prebaciti na glavnu mrežu Ethereum."
+    "message": "Naziv ENS nije pronađen na trenutačnoj mreži. Pokušajte prebaciti na glavnu mrežu Ubiq."
   },
   "ensRegistrationError": {
     "message": "Greška u registraciji naziva ENS"
@@ -344,7 +329,7 @@
     "message": "Procijenjeno vrijeme obrade"
   },
   "ethereumPublicAddress": {
-    "message": "Javna adresa Ethereum"
+    "message": "Javna adresa Ubiq"
   },
   "etherscanView": {
     "message": "Prikaži račun na Etherscanu"
@@ -533,7 +518,7 @@
     "message": "Odjava"
   },
   "mainnet": {
-    "message": "Glavna mreža Ethereum"
+    "message": "Glavna mreža Ubiq"
   },
   "max": {
     "message": "Najviše"

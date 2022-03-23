@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Povezovanje na $1"
   },
-  "connectingToGoerli": {
-    "message": "Povezovanje na testno omrežje Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Povezovanje na testno omrežje Kovan"
-  },
   "connectingToMainnet": {
     "message": "Povezovanje na glavno omrežje"
-  },
-  "connectingToRinkeby": {
-    "message": "Povezovanje na testno omrežje Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Povezovanje na testno omrežje Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Nadaljuj na Wyre"
   },
   "contractDeployment": {
     "message": "Ustvarjanje pogodbe"
@@ -329,7 +314,7 @@
     "message": "Več o tem"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Imena ENS v trenutnem omrežju ni mogoče najti. Poskusite preklopiti na glavno omrežje Ethereum."
+    "message": "Imena ENS v trenutnem omrežju ni mogoče najti. Poskusite preklopiti na glavno omrežje Ubiq."
   },
   "ensRegistrationError": {
     "message": "Napaka pri registraciji imena ENS"
@@ -344,7 +329,7 @@
     "message": "Predviden čas obdelave"
   },
   "ethereumPublicAddress": {
-    "message": "Javni naslov Ethereum"
+    "message": "Javni naslov Ubiq"
   },
   "etherscanView": {
     "message": "Poglej račun na Ubiqscan"
@@ -543,7 +528,7 @@
     "message": "Sporočilo"
   },
   "metamaskDescription": {
-    "message": "Sparrow je varen identitetni sklad za Ethereum."
+    "message": "Sparrow je varen identitetni sklad za Ubiq."
   },
   "metamaskVersion": {
     "message": "Različica"

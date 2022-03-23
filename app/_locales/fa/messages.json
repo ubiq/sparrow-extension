@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "در حال اتصال به 1$1"
   },
-  "connectingToGoerli": {
-    "message": "در حال اتصال به شبکه آزمایشی Goerli "
-  },
-  "connectingToKovan": {
-    "message": "در حال اتصال به شبکه آزمایشی Kovan"
-  },
   "connectingToMainnet": {
     "message": "در حال اتصال به شبکه اصلی ایتریم"
-  },
-  "connectingToRinkeby": {
-    "message": "در حال اتصال به شبکه آزمایشی Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "در حال اتصال به شبکه آزمایشی Ropsten"
-  },
-  "continueToWyre": {
-    "message": "ادامه به Wyre"
   },
   "contractDeployment": {
     "message": "تطبیق قرارداد"

@@ -301,20 +301,8 @@
   "connectingTo": {
     "message": "Connessione in corso a $1"
   },
-  "connectingToGoerli": {
-    "message": "Connessione alla Rete di Test Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Connessione alla Rete di test Kovan"
-  },
   "connectingToMainnet": {
     "message": "Connessione alla Rete Ubiq Principale"
-  },
-  "connectingToRinkeby": {
-    "message": "Connessione alla Rete di test Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Connessione alla Rete di test Ropsten"
   },
   "contactUs": {
     "message": "Contattaci!"
@@ -324,9 +312,6 @@
   },
   "continue": {
     "message": "Continua"
-  },
-  "continueToWyre": {
-    "message": "Continua su Wyre"
   },
   "contractDeployment": {
     "message": "Distribuzione Contratto"
@@ -516,7 +501,7 @@
     "description": "$1 is the return value of eth_chainId from an RPC endpoint"
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "Nome ENS non trovato sulla rete attuale. Prova a passare alla rete principale di Ethereum."
+    "message": "Nome ENS non trovato sulla rete attuale. Prova a passare alla rete principale di Ubiq."
   },
   "ensRegistrationError": {
     "message": "Errore nella registrazione del nome ENS"
@@ -863,7 +848,7 @@
     "message": "Il bottone di stato della connessione mostra se il sito che stai visitando è connesso all'account corrente"
   },
   "metamaskDescription": {
-    "message": "Sparrow è una cassaforte sicura per identità su Ethereum."
+    "message": "Sparrow è una cassaforte sicura per identità su Ubiq."
   },
   "metamaskSwapsOfflineDescription": {
     "message": "Sparrow Swaps è in manutenzione. Prova più tardi."
@@ -1711,7 +1696,7 @@
     "message": "Rilevamento del Phishing"
   },
   "usePhishingDetectionDescription": {
-    "message": "Visualizza un avvertimento sui domini di phishing rivolto a utenti di Ethereum"
+    "message": "Visualizza un avvertimento sui domini di phishing rivolto a utenti di Ubiq"
   },
   "usedByClients": {
     "message": "Usato da una varietà di clients diversi"

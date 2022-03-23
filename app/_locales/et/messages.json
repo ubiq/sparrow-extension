@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Ühenduse loomine $1"
   },
-  "connectingToGoerli": {
-    "message": "Ühendamine Goerli testvõrguga"
-  },
-  "connectingToKovan": {
-    "message": "Ühendamine Kovani testvõrguga"
-  },
   "connectingToMainnet": {
     "message": "Ühenduse loomine peamise Etherumi võrguga"
-  },
-  "connectingToRinkeby": {
-    "message": "Ühendamine Rinkeby testvõrguga"
-  },
-  "connectingToRopsten": {
-    "message": "Ühendamine Ropsteni testvõrguga"
-  },
-  "continueToWyre": {
-    "message": "Ava Wyre"
   },
   "contractDeployment": {
     "message": "Lepingu juurutamine"
@@ -329,7 +314,7 @@
     "message": "Lisateave."
   },
   "ensNotFoundOnCurrentNetwork": {
-    "message": "ENS-i nime ei leitud praegusest võrgust. Proovige lülituda peamisele Ethereumi võrgule."
+    "message": "ENS-i nime ei leitud praegusest võrgust. Proovige lülituda peamisele Ubiqi võrgule."
   },
   "ensRegistrationError": {
     "message": "Tõrge ENS-i nime registreerimisel"
@@ -545,7 +530,7 @@
     "message": "Sõnum"
   },
   "metamaskDescription": {
-    "message": "Teid ühendatakse Ethereumi ja detsentraliseeritud võrguga."
+    "message": "Teid ühendatakse Ubiqi ja detsentraliseeritud võrguga."
   },
   "metamaskVersion": {
     "message": "MetaMaski versioon"

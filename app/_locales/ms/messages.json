@@ -190,23 +190,8 @@
   "connectingTo": {
     "message": "Menyambungkan kepada $1"
   },
-  "connectingToGoerli": {
-    "message": "Menyambung kepada Rangkaian Ujian Goerli"
-  },
-  "connectingToKovan": {
-    "message": "Menyambungkan kepada Rangkaian Ujian Kovan"
-  },
   "connectingToMainnet": {
     "message": "Menyambung kepada Rangkaian Ubiq Utama"
-  },
-  "connectingToRinkeby": {
-    "message": "Menyambung kepada Rangkaian Ujian Rinkeby"
-  },
-  "connectingToRopsten": {
-    "message": "Menyambungkan kepada Rangkaian Ujian Ropsten"
-  },
-  "continueToWyre": {
-    "message": "Teruskan ke Wyre"
   },
   "contractDeployment": {
     "message": "Penyusunan Kontrak"
@@ -341,7 +326,7 @@
     "message": "Masa Pemprosesan yang Dijangka"
   },
   "ethereumPublicAddress": {
-    "message": "Alamat Awam Ethereum"
+    "message": "Alamat Awam Ubiq"
   },
   "etherscanView": {
     "message": "Lihat akaun di Ubiqscan"

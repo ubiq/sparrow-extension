@@ -112,7 +112,7 @@
   },
   "addCustomTokenByContractAddress": {
     "message": "Не можете найти токен? Можно вручную добавить любой токен, вставив его адрес. Адреса контракта токена можно найти на $1.",
-    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ethereum"
+    "description": "$1 is a blockchain explorer for a specific network, e.g. Ubiqscan for Ubiq"
   },
   "addEthereumChainConfirmationDescription": {
     "message": "Это позволит использовать эту сеть в Sparrow."
@@ -512,20 +512,8 @@
   "connectingTo": {
     "message": "Подключение к $1"
   },
-  "connectingToGoerli": {
-    "message": "Подключение к тестовой сети Goerli..."
-  },
-  "connectingToKovan": {
-    "message": "Подключение к тестовой сети Kovan..."
-  },
   "connectingToMainnet": {
     "message": "Подключение к сети Ubiq Mainnet..."
-  },
-  "connectingToRinkeby": {
-    "message": "Подключение к тестовой сети Rinkeby..."
-  },
-  "connectingToRopsten": {
-    "message": "Подключение к тестовой сети Ropsten..."
   },
   "contactUs": {
     "message": "Свяжитесь с нами"
@@ -535,12 +523,6 @@
   },
   "continue": {
     "message": "Продолжить"
-  },
-  "continueToTransak": {
-    "message": "Перейти в Transak"
-  },
-  "continueToWyre": {
-    "message": "Перейти к Wyre"
   },
   "contract": {
     "message": "Контракт"
@@ -994,7 +976,7 @@
     "message": "Указана резервная цена газа, поскольку основной сервис определения цены газа сейчас недоступен."
   },
   "ethereumPublicAddress": {
-    "message": "Открытый адрес Ethereum"
+    "message": "Открытый адрес Ubiq"
   },
   "etherscan": {
     "message": "Ubiqscan"
@@ -1440,7 +1422,7 @@
     "message": "Включите «Использовать Ledger Live» в разделе «Настройки» > «Дополнительно»"
   },
   "ledgerConnectionInstructionStepThree": {
-    "message": "Подключите леджер и выберите приложение Ethereum"
+    "message": "Подключите леджер и выберите приложение Ubiq"
   },
   "ledgerConnectionInstructionStepTwo": {
     "message": "Откройте и разблокируйте приложение Ledger Live"
@@ -2523,7 +2505,7 @@
     "message": "Подключите кошелек-леджер"
   },
   "step2LedgerWalletMsg": {
-    "message": "Подключите кошелек напрямую к компьютеру. Разблокируйте леджер и откройте приложение Ethereum. Для получения дополнительной информации об использовании аппаратного кошелька $1.",
+    "message": "Подключите кошелек напрямую к компьютеру. Разблокируйте леджер и откройте приложение Ubiq. Для получения дополнительной информации об использовании аппаратного кошелька $1.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "storePhrase": {
@@ -3161,7 +3143,7 @@
     "message": "Использовать обнаружение фишинга"
   },
   "usePhishingDetectionDescription": {
-    "message": "Показывать предупреждение для фишинговых доменов, нацеленных на пользователей Ethereum"
+    "message": "Показывать предупреждение для фишинговых доменов, нацеленных на пользователей Ubiq"
   },
   "useTokenDetection": {
     "message": "Использовать обнаружение токенов"

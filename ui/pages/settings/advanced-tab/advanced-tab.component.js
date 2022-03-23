@@ -45,6 +45,8 @@ export default class AdvancedTab extends PureComponent {
     setDismissSeedBackUpReminder: PropTypes.func.isRequired,
     dismissSeedBackUpReminder: PropTypes.bool.isRequired,
     userHasALedgerAccount: PropTypes.bool.isRequired,
+    useTokenDetection: PropTypes.bool.isRequired,
+    setUseTokenDetection: PropTypes.func.isRequired,
   };
 
   state = {
@@ -507,6 +509,49 @@ export default class AdvancedTab extends PureComponent {
     );
   }
 
+  renderTokenDetectionToggle() {
+    if (!process.env.TOKEN_DETECTION_V2) {
+      return null;
+    }
+
+    const { t } = this.context;
+    const { useTokenDetection, setUseTokenDetection } = this.props;
+
+    return (
+      <div
+        ref={this.settingsRefs[13]}
+        className="settings-page__content-row"
+        data-testid="advanced-setting-token-detection"
+      >
+        <div className="settings-page__content-item">
+          <span>{t('tokenDetection')}</span>
+          <div className="settings-page__content-description">
+            {t('tokenDetectionToggleDescription')}
+          </div>
+        </div>
+        <div className="settings-page__content-item">
+          <div className="settings-page__content-item-col">
+            <ToggleButton
+              value={useTokenDetection}
+              onToggle={(value) => {
+                this.context.metricsEvent({
+                  eventOpts: {
+                    category: 'Settings',
+                    action: 'Token Detection',
+                    name: 'Token Detection',
+                  },
+                });
+                setUseTokenDetection(!value);
+              }}
+              offLabel={t('off')}
+              onLabel={t('on')}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   render() {
     const { warning } = this.props;
 
@@ -518,6 +563,7 @@ export default class AdvancedTab extends PureComponent {
         {this.renderStateLogs()}
         {this.renderResetAccount()}
         {this.renderAdvancedGasInputInline()}
+        {this.renderTokenDetectionToggle()}
         {this.renderHexDataOptIn()}
         {this.renderUseNonceOptIn()}
         {this.renderAutoLockTimeLimit()}
