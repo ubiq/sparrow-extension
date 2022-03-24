@@ -20,6 +20,9 @@ const initialState = {
       },
     ],
   },
+  CurrencyController: {
+    nativeCurrency: 'UBQ',
+  },
 };
 
 export default initialState;

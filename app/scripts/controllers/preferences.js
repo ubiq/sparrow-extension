@@ -31,7 +31,7 @@ export default class PreferencesController {
   constructor(opts = {}) {
     const initState = {
       frequentRpcListDetail: [],
-      useBlockie: false,
+      useBlockie: true,
       useNonceField: false,
       usePhishDetect: true,
       dismissSeedBackUpReminder: false,
@@ -48,7 +48,7 @@ export default class PreferencesController {
       // for convenient testing of pre-release features, and should never
       // perform sensitive operations.
       featureFlags: {
-        showIncomingTransactions: true,
+        showIncomingTransactions: false,
       },
       knownMethodData: {},
       currentLocale: opts.initLangCode,

@@ -2,10 +2,10 @@ export const MAINNET = 'mainnet';
 export const LOCALHOST = 'localhost';
 export const NETWORK_TYPE_RPC = 'rpc';
 
-export const MAINNET_NETWORK_ID = '1';
+export const MAINNET_NETWORK_ID = '8';
 export const LOCALHOST_NETWORK_ID = '1337';
 
-export const MAINNET_CHAIN_ID = '0x1';
+export const MAINNET_CHAIN_ID = '0x8';
 export const LOCALHOST_CHAIN_ID = '0x539';
 export const OPTIMISM_CHAIN_ID = '0xa';
 export const OPTIMISM_TESTNET_CHAIN_ID = '0x45';
@@ -23,17 +23,17 @@ const infuraProjectId = process.env.INFURA_PROJECT_ID;
 export const getRpcUrl = ({ network, excludeProjectId = false }) =>
   `https://${network}.infura.io/v3/${excludeProjectId ? '' : infuraProjectId}`;
 
-export const MAINNET_RPC_URL = getRpcUrl({ network: MAINNET });
+export const MAINNET_RPC_URL = 'https://rpc.octano.dev'
 export const LOCALHOST_RPC_URL = 'http://localhost:8588';
 
 export const ETH_SYMBOL = 'UBQ';
 export const WETH_SYMBOL = 'WUBQ';
 export const TEST_ETH_SYMBOL = 'TESTETH';
 
-export const ETH_TOKEN_IMAGE_URL = './images/eth_logo.svg';
+export const ETH_TOKEN_IMAGE_URL = './images/ubq_logo.svg';
 export const TEST_ETH_TOKEN_IMAGE_URL = './images/black-eth-logo.svg';
 
-export const INFURA_PROVIDER_TYPES = [MAINNET];
+export const INFURA_PROVIDER_TYPES = [];
 
 export const TEST_CHAINS = [LOCALHOST_CHAIN_ID];
 
