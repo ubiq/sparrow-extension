@@ -79,6 +79,7 @@ import {
   fetchTopAssets,
   getSwapsTokensReceivedFromTxMeta,
   fetchAggregatorMetadata,
+  stxErrorTypes,
 } from './swaps.util';
 import AwaitingSignatures from './awaiting-signatures';
 import SmartTransactionStatus from './smart-transaction-status';
@@ -255,7 +256,9 @@ export default function Swap() {
   }
 
   const isStxNotEnoughFundsError =
-    currentSmartTransactionsError === 'not_enough_funds';
+    currentSmartTransactionsError === stxErrorTypes.NOT_ENOUGH_FUNDS;
+  const isStxRegularTxPendingError =
+    currentSmartTransactionsError === stxErrorTypes.REGULAR_TX_PENDING;
 
   return (
     <div className="swaps">
@@ -309,10 +312,20 @@ export default function Swap() {
                   </div>
                 ) : (
                   <div className="build-quote__token-verification-warning-message">
-                    <div className="build-quote__bold">
+                    <button
+                      onClick={() => {
+                        dispatch(dismissCurrentSmartTransactionsErrorMessage());
+                      }}
+                      className="swaps__notification-close-button"
+                    />
+                    <div className="swaps__notification-title">
                       {t('stxUnavailable')}
                     </div>
-                    <div>{t('stxFallbackToNormal')}</div>
+                    <div>
+                      {isStxRegularTxPendingError
+                        ? t('stxFallbackPendingTx')
+                        : t('stxFallbackUnavailable')}
+                    </div>
                   </div>
                 )
               }
@@ -321,16 +334,6 @@ export default function Swap() {
                   ? 'swaps__error-message'
                   : 'actionable-message--left-aligned actionable-message--warning swaps__error-message'
               }
-              primaryAction={
-                isStxNotEnoughFundsError
-                  ? null
-                  : {
-                      label: t('dismiss'),
-                      onClick: () =>
-                        dispatch(dismissCurrentSmartTransactionsErrorMessage()),
-                    }
-              }
-              withRightButton
             />
           )}
           <Switch>

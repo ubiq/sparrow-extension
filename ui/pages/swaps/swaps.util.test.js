@@ -2,24 +2,13 @@ import nock from 'nock';
 import { MOCKS } from '../../../test/jest';
 import {
   MAINNET_CHAIN_ID,
-  BSC_CHAIN_ID,
-  POLYGON_CHAIN_ID,
   LOCALHOST_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
-  KOVAN_CHAIN_ID,
-  AVALANCHE_CHAIN_ID,
 } from '../../../shared/constants/network';
 import {
   SWAPS_CHAINID_CONTRACT_ADDRESS_MAP,
   SWAPS_CHAINID_DEFAULT_TOKEN_MAP,
   WETH_CONTRACT_ADDRESS,
-  WBNB_CONTRACT_ADDRESS,
-  WMATIC_CONTRACT_ADDRESS,
   ETHEREUM,
-  POLYGON,
-  BSC,
-  RINKEBY,
-  AVALANCHE,
 } from '../../../shared/constants/swaps';
 import {
   TOKENS,
@@ -227,27 +216,6 @@ describe('Swaps Util', () => {
       ).toBe(true);
     });
 
-    it('returns true if "to" is WBNB contract address on BSC mainnet', () => {
-      usedTradeTxParams.to = WBNB_CONTRACT_ADDRESS;
-      expect(isContractAddressValid(usedTradeTxParams.to, BSC_CHAIN_ID)).toBe(
-        true,
-      );
-    });
-
-    it('returns true if "to" is WMATIC contract address on Polygon mainnet', () => {
-      usedTradeTxParams.to = WMATIC_CONTRACT_ADDRESS;
-      expect(
-        isContractAddressValid(usedTradeTxParams.to, POLYGON_CHAIN_ID),
-      ).toBe(true);
-    });
-
-    it('returns false if "to" is BSC contract address on ETH mainnet', () => {
-      usedTradeTxParams.to = SWAPS_CHAINID_CONTRACT_ADDRESS_MAP[BSC_CHAIN_ID];
-      expect(
-        isContractAddressValid(usedTradeTxParams.to, MAINNET_CHAIN_ID),
-      ).toBe(false);
-    });
-
     it('returns false if contractAddress is null', () => {
       expect(isContractAddressValid(null, LOCALHOST_CHAIN_ID)).toBe(false);
     });
@@ -256,29 +224,6 @@ describe('Swaps Util', () => {
       expect(
         isContractAddressValid(usedTradeTxParams.to, 'incorrectChainId'),
       ).toBe(false);
-    });
-
-    it('returns true if "to" is BSC contract address on BSC network', () => {
-      usedTradeTxParams.to = SWAPS_CHAINID_CONTRACT_ADDRESS_MAP[BSC_CHAIN_ID];
-      expect(isContractAddressValid(usedTradeTxParams.to, BSC_CHAIN_ID)).toBe(
-        true,
-      );
-    });
-
-    it('returns true if "to" is Polygon contract address on Polygon network', () => {
-      usedTradeTxParams.to =
-        SWAPS_CHAINID_CONTRACT_ADDRESS_MAP[POLYGON_CHAIN_ID];
-      expect(
-        isContractAddressValid(usedTradeTxParams.to, POLYGON_CHAIN_ID),
-      ).toBe(true);
-    });
-
-    it('returns true if "to" is Rinkeby contract address on Rinkeby network', () => {
-      usedTradeTxParams.to =
-        SWAPS_CHAINID_CONTRACT_ADDRESS_MAP[RINKEBY_CHAIN_ID];
-      expect(
-        isContractAddressValid(usedTradeTxParams.to, RINKEBY_CHAIN_ID),
-      ).toBe(true);
     });
 
     it('returns true if "to" is testnet contract address', () => {
@@ -295,38 +240,11 @@ describe('Swaps Util', () => {
         isContractAddressValid(usedTradeTxParams.to, LOCALHOST_CHAIN_ID),
       ).toBe(true);
     });
-
-    it('returns false if "to" has mismatch with current chainId', () => {
-      usedTradeTxParams.to = SWAPS_CHAINID_CONTRACT_ADDRESS_MAP[BSC_CHAIN_ID];
-      expect(
-        isContractAddressValid(usedTradeTxParams.to, LOCALHOST_CHAIN_ID),
-      ).toBe(false);
-    });
   });
 
   describe('getNetworkNameByChainId', () => {
     it('returns "ethereum" for mainnet chain ID', () => {
       expect(getNetworkNameByChainId(MAINNET_CHAIN_ID)).toBe(ETHEREUM);
-    });
-
-    it('returns "bsc" for mainnet chain ID', () => {
-      expect(getNetworkNameByChainId(BSC_CHAIN_ID)).toBe(BSC);
-    });
-
-    it('returns "polygon" for mainnet chain ID', () => {
-      expect(getNetworkNameByChainId(POLYGON_CHAIN_ID)).toBe(POLYGON);
-    });
-
-    it('returns "rinkeby" for Rinkeby chain ID', () => {
-      expect(getNetworkNameByChainId(RINKEBY_CHAIN_ID)).toBe(RINKEBY);
-    });
-
-    it('returns "avalanche" for Avalanche chain ID', () => {
-      expect(getNetworkNameByChainId(AVALANCHE_CHAIN_ID)).toBe(AVALANCHE);
-    });
-
-    it('returns an empty string for an unsupported network', () => {
-      expect(getNetworkNameByChainId(KOVAN_CHAIN_ID)).toBe('');
     });
   });
 
@@ -339,30 +257,6 @@ describe('Swaps Util', () => {
         getSwapsLivenessForNetwork(
           MOCKS.createFeatureFlagsResponse(),
           LOCALHOST_CHAIN_ID,
-        ),
-      ).toMatchObject(expectedSwapsLiveness);
-    });
-
-    it('returns info that Swaps are enabled and cannot use API v2 for Rinkeby chain ID', () => {
-      const expectedSwapsLiveness = {
-        swapsFeatureIsLive: true,
-      };
-      expect(
-        getSwapsLivenessForNetwork(
-          MOCKS.createFeatureFlagsResponse(),
-          RINKEBY_CHAIN_ID,
-        ),
-      ).toMatchObject(expectedSwapsLiveness);
-    });
-
-    it('returns info that Swaps are disabled and cannot use API v2 if network name is not found', () => {
-      const expectedSwapsLiveness = {
-        swapsFeatureIsLive: false,
-      };
-      expect(
-        getSwapsLivenessForNetwork(
-          MOCKS.createFeatureFlagsResponse(),
-          KOVAN_CHAIN_ID,
         ),
       ).toMatchObject(expectedSwapsLiveness);
     });
@@ -465,66 +359,6 @@ describe('Swaps Util', () => {
         shouldEnableDirectWrapping(
           MAINNET_CHAIN_ID,
           SWAPS_CHAINID_DEFAULT_TOKEN_MAP[MAINNET_CHAIN_ID]?.address,
-          randomTokenAddress,
-        ),
-      ).toBe(false);
-    });
-
-    it('returns true if swapping from BNB to WBNB', () => {
-      expect(
-        shouldEnableDirectWrapping(
-          BSC_CHAIN_ID,
-          SWAPS_CHAINID_DEFAULT_TOKEN_MAP[BSC_CHAIN_ID]?.address,
-          WBNB_CONTRACT_ADDRESS,
-        ),
-      ).toBe(true);
-    });
-
-    it('returns true if swapping from WBNB to BNB', () => {
-      expect(
-        shouldEnableDirectWrapping(
-          BSC_CHAIN_ID,
-          WBNB_CONTRACT_ADDRESS,
-          SWAPS_CHAINID_DEFAULT_TOKEN_MAP[BSC_CHAIN_ID]?.address,
-        ),
-      ).toBe(true);
-    });
-
-    it('returns false if swapping from BNB to a non-WBNB token', () => {
-      expect(
-        shouldEnableDirectWrapping(
-          BSC_CHAIN_ID,
-          SWAPS_CHAINID_DEFAULT_TOKEN_MAP[BSC_CHAIN_ID]?.address,
-          randomTokenAddress,
-        ),
-      ).toBe(false);
-    });
-
-    it('returns true if swapping from MATIC to WMATIC', () => {
-      expect(
-        shouldEnableDirectWrapping(
-          POLYGON_CHAIN_ID,
-          SWAPS_CHAINID_DEFAULT_TOKEN_MAP[POLYGON_CHAIN_ID]?.address,
-          WMATIC_CONTRACT_ADDRESS,
-        ),
-      ).toBe(true);
-    });
-
-    it('returns true if swapping from WMATIC to MATIC', () => {
-      expect(
-        shouldEnableDirectWrapping(
-          POLYGON_CHAIN_ID,
-          WMATIC_CONTRACT_ADDRESS,
-          SWAPS_CHAINID_DEFAULT_TOKEN_MAP[POLYGON_CHAIN_ID]?.address,
-        ),
-      ).toBe(true);
-    });
-
-    it('returns false if swapping from MATIC to a non-WMATIC token', () => {
-      expect(
-        shouldEnableDirectWrapping(
-          POLYGON_CHAIN_ID,
-          SWAPS_CHAINID_DEFAULT_TOKEN_MAP[POLYGON_CHAIN_ID]?.address,
           randomTokenAddress,
         ),
       ).toBe(false);

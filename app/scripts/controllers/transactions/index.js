@@ -42,7 +42,6 @@ import {
   HARDFORKS,
   MAINNET,
   NETWORK_TYPE_RPC,
-  CHAIN_ID_TO_GAS_LIMIT_BUFFER_MAP,
 } from '../../../../shared/constants/network';
 import {
   determineTransactionAssetType,
@@ -875,7 +874,6 @@ export default class TransactionController extends EventEmitter {
    */
   async _getDefaultGasLimit(txMeta, getCodeResponse) {
     const chainId = this._getCurrentChainId();
-    const customNetworkGasBuffer = CHAIN_ID_TO_GAS_LIMIT_BUFFER_MAP[chainId];
     const chainType = getChainType(chainId);
 
     if (txMeta.txParams.gas) {
@@ -912,7 +910,6 @@ export default class TransactionController extends EventEmitter {
     const gasLimit = this.txGasUtil.addGasBuffer(
       addHexPrefix(estimatedGasHex),
       blockGasLimit,
-      customNetworkGasBuffer,
     );
     return { gasLimit, simulationFails };
   }

@@ -1,14 +1,6 @@
 import { cloneDeep } from 'lodash';
-import {
-  KOVAN_CHAIN_ID,
-  MAINNET_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
-  GOERLI_CHAIN_ID,
-} from '../../../shared/constants/network';
-import {
-  TRANSACTION_TYPES,
-  TRANSACTION_STATUSES,
-} from '../../../shared/constants/transaction';
+import { MAINNET_CHAIN_ID } from '../../../shared/constants/network';
+import { TRANSACTION_TYPES } from '../../../shared/constants/transaction';
 import migration59 from './059';
 
 const SENT_ETHER = 'sentEther'; // a legacy transaction type replaced now by TRANSACTION_TYPES.SIMPLE_SEND
@@ -30,30 +22,6 @@ const ERRONEOUS_TRANSACTION_STATE = {
       nonce: '0x1',
     },
   },
-  2: {
-    type: SENT_ETHER,
-    id: 2,
-    chainId: KOVAN_CHAIN_ID,
-    txParams: {
-      nonce: '0x2',
-    },
-  },
-  3: {
-    type: SENT_ETHER,
-    id: 3,
-    chainId: RINKEBY_CHAIN_ID,
-    txParams: {
-      nonce: '0x3',
-    },
-  },
-  4: {
-    type: SENT_ETHER,
-    id: 4,
-    chainId: RINKEBY_CHAIN_ID,
-    txParams: {
-      nonce: '0x4',
-    },
-  },
   5: {
     type: SENT_ETHER,
     id: 5,
@@ -61,36 +29,6 @@ const ERRONEOUS_TRANSACTION_STATE = {
     txParams: {
       nonce: '0x5',
     },
-  },
-  6: {
-    type: SENT_ETHER,
-    id: 6,
-    chainId: KOVAN_CHAIN_ID,
-    txParams: {
-      nonce: '0x6',
-    },
-  },
-  7: {
-    type: SENT_ETHER,
-    id: 7,
-    chainId: RINKEBY_CHAIN_ID,
-    txParams: {
-      nonce: '0x7',
-    },
-  },
-  8: {
-    type: SENT_ETHER,
-    id: 8,
-    chainId: RINKEBY_CHAIN_ID,
-    txParams: {
-      nonce: '0x8',
-    },
-  },
-  9: {
-    type: SENT_ETHER,
-    id: 9,
-    chainId: RINKEBY_CHAIN_ID,
-    status: TRANSACTION_STATUSES.UNAPPROVED,
   },
 };
 
@@ -159,38 +97,6 @@ describe('migration #59', () => {
     });
   });
 
-  it('should drop orphaned cancel transactions even if a nonce exists on another network that is confirmed', async () => {
-    const oldStorage = {
-      meta: {},
-      data: {
-        TransactionController: {
-          transactions: {
-            ...ERRONEOUS_TRANSACTION_STATE,
-            11: {
-              ...ERRONEOUS_TRANSACTION_STATE['0'],
-              id: 11,
-              chainId: GOERLI_CHAIN_ID,
-              type: SENT_ETHER,
-            },
-          },
-        },
-        foo: 'bar',
-      },
-    };
-
-    const newStorage = await migration59.migrate(oldStorage);
-    const EXPECTED = cloneDeep(
-      oldStorage.data.TransactionController.transactions,
-    );
-    delete EXPECTED['0'];
-    expect(newStorage.data).toStrictEqual({
-      TransactionController: {
-        transactions: EXPECTED,
-      },
-      foo: 'bar',
-    });
-  });
-
   it('should not drop cancel transactions with matching non cancel or retry in same network and nonce', async () => {
     const oldStorage = {
       meta: {},
@@ -231,38 +137,6 @@ describe('migration #59', () => {
 
     const newStorage = await migration59.migrate(oldStorage);
     const EXPECTED = cloneDeep(ERRONEOUS_TRANSACTION_STATE_RETRY);
-    delete EXPECTED['0'];
-    expect(newStorage.data).toStrictEqual({
-      TransactionController: {
-        transactions: EXPECTED,
-      },
-      foo: 'bar',
-    });
-  });
-
-  it('should drop orphaned retry transactions even if a nonce exists on another network that is confirmed', async () => {
-    const oldStorage = {
-      meta: {},
-      data: {
-        TransactionController: {
-          transactions: {
-            ...ERRONEOUS_TRANSACTION_STATE_RETRY,
-            11: {
-              ...ERRONEOUS_TRANSACTION_STATE_RETRY['0'],
-              id: 11,
-              chainId: GOERLI_CHAIN_ID,
-              type: SENT_ETHER,
-            },
-          },
-        },
-        foo: 'bar',
-      },
-    };
-
-    const newStorage = await migration59.migrate(oldStorage);
-    const EXPECTED = cloneDeep(
-      oldStorage.data.TransactionController.transactions,
-    );
     delete EXPECTED['0'];
     expect(newStorage.data).toStrictEqual({
       TransactionController: {

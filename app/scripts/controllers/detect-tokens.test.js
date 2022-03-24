@@ -8,7 +8,7 @@ import {
   TokenListController,
   TokensController,
 } from 'sparrow-controllers';
-import { MAINNET, ROPSTEN } from '../../../shared/constants/network';
+import { MAINNET } from '../../../shared/constants/network';
 import { toChecksumHexAddress } from '../../../shared/modules/hexstring-utils';
 import DetectTokensController from './detect-tokens';
 import NetworkController from './network';
@@ -173,7 +173,6 @@ describe('DetectTokensController', function () {
 
   it('should not check tokens while on test network', async function () {
     sandbox.useFakeTimers();
-    network.setProviderType(ROPSTEN);
     const tokenListMessengerRopsten = new ControllerMessenger().getRestricted({
       name: 'TokenListController',
     });

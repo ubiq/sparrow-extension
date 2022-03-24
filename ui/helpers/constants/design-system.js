@@ -47,19 +47,8 @@ export const COLORS = {
   INFO_INVERSE: 'info-inverse',
   INFO_DISABLED: 'info-disabled',
   MAINNET: 'mainnet',
-  ROPSTEN: 'ropsten',
-  KOVAN: 'kovan',
-  RINKEBY: 'rinkeby',
-  GOERLI: 'goerli',
   TRANSPARENT: 'transparent',
   LOCALHOST: 'localhost',
-  /**
-   * !!! DEPRECATED DO NOT USE!!!
-   */
-  PRIMARY1: 'primary-1',
-  PRIMARY3: 'primary-3',
-  SECONDARY1: 'secondary-1',
-  SECONDARY3: 'secondary-3',
 };
 
 export const TYPOGRAPHY = {

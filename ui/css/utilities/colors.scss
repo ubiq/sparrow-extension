@@ -1,14 +1,11 @@
 :root {
   // Accents
   // Everything below this line is part of the new color system
-  --primary-1: #037dd6;
   --secondary-1: #f66a0a;
   --secondary-3: #c65507;
-  --error-1: #d73a49;
   --alert-1: #ffd33d;
   --success-1: #4cd964;
   --success-3: #219e37;
-  --ui-black: #24292e;
   --ui-grey: #d6d9dc;
   --ui-white: #fff;
   --ui-1: #f2f3f4;
@@ -30,7 +27,6 @@
   --white: #fff;
   --black: #000;
   --orange: #ffa500;
-  --red: #f00;
   --gray: #808080;
 
   /*
@@ -45,9 +41,7 @@
   --tundora: #4d4d4d;
   --scorpion: #5d5d5d;
   --silver: #cdcdcd;
-  --monzo: #d0021b;
   --malibu-blue: #b8cbd8;
   --athens-grey: #e9edf0;
   --geyser: #d2d8dd;
-  --mid-gray: #5b5d67;
 }

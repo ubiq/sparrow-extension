@@ -10,10 +10,7 @@ import {
   KNOWN_RECIPIENT_ADDRESS_WARNING,
   NEGATIVE_ETH_ERROR,
 } from '../../pages/send/send.constants';
-import {
-  MAINNET_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
-} from '../../../shared/constants/network';
+import { MAINNET_CHAIN_ID } from '../../../shared/constants/network';
 import { GAS_ESTIMATE_TYPES, GAS_LIMITS } from '../../../shared/constants/gas';
 import {
   ASSET_TYPES,
@@ -1949,9 +1946,7 @@ describe('Send Slice', () => {
             },
           },
           metamask: {
-            provider: {
-              chainId: RINKEBY_CHAIN_ID,
-            },
+            provider: {},
           },
         };
 
@@ -1994,9 +1989,7 @@ describe('Send Slice', () => {
             },
           },
           metamask: {
-            provider: {
-              chainId: RINKEBY_CHAIN_ID,
-            },
+            provider: {},
           },
         };
         const store = mockStore(sendMaxModeState);
@@ -2090,13 +2083,7 @@ describe('Send Slice', () => {
       it('should set up the appropriate state for editing a native asset transaction', async () => {
         const editTransactionState = {
           metamask: {
-            provider: {
-              chainId: RINKEBY_CHAIN_ID,
-            },
             tokens: [],
-            addressBook: {
-              [RINKEBY_CHAIN_ID]: {},
-            },
             identities: {},
             unapprovedTxs: {
               1: {
@@ -2169,13 +2156,7 @@ describe('Send Slice', () => {
           metamask: {
             blockGasLimit: '0x3a98',
             selectedAddress: '',
-            provider: {
-              chainId: RINKEBY_CHAIN_ID,
-            },
             tokens: [],
-            addressBook: {
-              [RINKEBY_CHAIN_ID]: {},
-            },
             identities: {},
             unapprovedTxs: {
               1: {
@@ -2305,13 +2286,7 @@ describe('Send Slice', () => {
         metamask: {
           blockGasLimit: '0x3a98',
           selectedAddress: '',
-          provider: {
-            chainId: RINKEBY_CHAIN_ID,
-          },
           tokens: [],
-          addressBook: {
-            [RINKEBY_CHAIN_ID]: {},
-          },
           identities: {},
           unapprovedTxs: {
             1: {

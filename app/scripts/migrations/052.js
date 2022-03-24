@@ -1,16 +1,8 @@
 import { cloneDeep } from 'lodash';
 import {
-  GOERLI,
-  GOERLI_CHAIN_ID,
-  KOVAN,
-  KOVAN_CHAIN_ID,
   MAINNET,
   MAINNET_CHAIN_ID,
   NETWORK_TYPE_RPC,
-  RINKEBY,
-  RINKEBY_CHAIN_ID,
-  ROPSTEN,
-  ROPSTEN_CHAIN_ID,
 } from '../../../shared/constants/network';
 
 const version = 52;
@@ -58,22 +50,6 @@ function transformState(state = {}) {
               newAccountTokens[address][MAINNET_CHAIN_ID] =
                 accountTokens[address][MAINNET];
               break;
-            case ROPSTEN:
-              newAccountTokens[address][ROPSTEN_CHAIN_ID] =
-                accountTokens[address][ROPSTEN];
-              break;
-            case RINKEBY:
-              newAccountTokens[address][RINKEBY_CHAIN_ID] =
-                accountTokens[address][RINKEBY];
-              break;
-            case GOERLI:
-              newAccountTokens[address][GOERLI_CHAIN_ID] =
-                accountTokens[address][GOERLI];
-              break;
-            case KOVAN:
-              newAccountTokens[address][KOVAN_CHAIN_ID] =
-                accountTokens[address][KOVAN];
-              break;
             default:
               break;
           }
@@ -96,22 +72,6 @@ function transformState(state = {}) {
             case MAINNET:
               newAccountHiddenTokens[address][MAINNET_CHAIN_ID] =
                 accountHiddenTokens[address][MAINNET];
-              break;
-            case ROPSTEN:
-              newAccountHiddenTokens[address][ROPSTEN_CHAIN_ID] =
-                accountHiddenTokens[address][ROPSTEN];
-              break;
-            case RINKEBY:
-              newAccountHiddenTokens[address][RINKEBY_CHAIN_ID] =
-                accountHiddenTokens[address][RINKEBY];
-              break;
-            case GOERLI:
-              newAccountHiddenTokens[address][GOERLI_CHAIN_ID] =
-                accountHiddenTokens[address][GOERLI];
-              break;
-            case KOVAN:
-              newAccountHiddenTokens[address][KOVAN_CHAIN_ID] =
-                accountHiddenTokens[address][KOVAN];
               break;
             default:
               break;

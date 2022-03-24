@@ -6,9 +6,6 @@ import {
   ALLOWED_CONTRACT_ADDRESSES,
   SWAPS_WRAPPED_TOKENS_ADDRESSES,
   ETHEREUM,
-  POLYGON,
-  BSC,
-  AVALANCHE,
   SWAPS_API_V2_BASE_URL,
   SWAPS_DEV_API_V2_BASE_URL,
   GAS_API_BASE_URL,
@@ -22,11 +19,8 @@ import {
 } from '../../../shared/modules/swaps.utils';
 import {
   MAINNET_CHAIN_ID,
-  BSC_CHAIN_ID,
-  POLYGON_CHAIN_ID,
   LOCALHOST_CHAIN_ID,
   ETH_SYMBOL,
-  AVALANCHE_CHAIN_ID,
 } from '../../../shared/constants/network';
 import { SECOND } from '../../../shared/constants/time';
 import {
@@ -53,6 +47,7 @@ const TOKEN_TRANSFER_LOG_TOPIC_HASH =
   '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef';
 
 const CACHE_REFRESH_FIVE_MINUTES = 300000;
+const USD_CURRENCY_CODE = 'usd';
 
 const clientIdHeader = { 'X-Client-Id': SWAPS_CLIENT_ID };
 
@@ -512,12 +507,25 @@ export const getFeeForSmartTransaction = ({
     conversionRate,
     numberOfDecimals: 2,
   });
+  let feeInUsd;
+  if (currentCurrency === USD_CURRENCY_CODE) {
+    feeInUsd = rawNetworkFees;
+  } else {
+    feeInUsd = getValueFromWeiHex({
+      value: feeInWeiHex,
+      toCurrency: USD_CURRENCY_CODE,
+      conversionRate,
+      numberOfDecimals: 2,
+    });
+  }
   const formattedNetworkFee = formatCurrency(rawNetworkFees, currentCurrency);
   const chainCurrencySymbolToUse =
     nativeCurrencySymbol || SWAPS_CHAINID_DEFAULT_TOKEN_MAP[chainId].symbol;
   return {
+    feeInUsd,
     feeInFiat: formattedNetworkFee,
     feeInEth: `${ethFee} ${chainCurrencySymbolToUse}`,
+    rawEthFee: ethFee,
   };
 };
 
@@ -562,11 +570,24 @@ export function getRenderableNetworkFeesForQuote({
   });
   const formattedNetworkFee = formatCurrency(rawNetworkFees, currentCurrency);
 
+  let feeInUsd;
+  if (currentCurrency === USD_CURRENCY_CODE) {
+    feeInUsd = rawNetworkFees;
+  } else {
+    feeInUsd = getValueFromWeiHex({
+      value: totalWeiCost,
+      toCurrency: USD_CURRENCY_CODE,
+      conversionRate,
+      numberOfDecimals: 2,
+    });
+  }
+
   const chainCurrencySymbolToUse =
     nativeCurrencySymbol || SWAPS_CHAINID_DEFAULT_TOKEN_MAP[chainId].symbol;
 
   return {
     rawNetworkFees,
+    feeInUsd,
     rawEthFee: ethFee,
     feeInFiat: formattedNetworkFee,
     feeInEth: `${ethFee} ${chainCurrencySymbolToUse}`,
@@ -835,12 +856,6 @@ export const getNetworkNameByChainId = (chainId) => {
   switch (chainId) {
     case MAINNET_CHAIN_ID:
       return ETHEREUM;
-    case BSC_CHAIN_ID:
-      return BSC;
-    case POLYGON_CHAIN_ID:
-      return POLYGON;
-    case AVALANCHE_CHAIN_ID:
-      return AVALANCHE;
     default:
       return '';
   }
@@ -899,18 +914,22 @@ export const showRemainingTimeInMinAndSec = (remainingTimeInSec) => {
   return `${minutes}:${seconds.toString().padStart(2, '0')}`;
 };
 
-export const stxErrorTypes = ['unavailable', 'not_enough_funds'];
-
-const smartTransactionsErrorMap = {
-  unavailable: 'Smart Transactions are temporarily unavailable.',
-  not_enough_funds: 'Not enough funds for a smart transaction.',
+export const stxErrorTypes = {
+  UNAVAILABLE: 'unavailable',
+  NOT_ENOUGH_FUNDS: 'not_enough_funds',
+  REGULAR_TX_PENDING: 'regular_tx_pending',
 };
 
-export const smartTransactionsErrorMessages = (errorType) => {
-  return (
-    smartTransactionsErrorMap[errorType] ||
-    smartTransactionsErrorMap.unavailable
-  );
+export const getTranslatedStxErrorMessage = (errorType, t) => {
+  switch (errorType) {
+    case stxErrorTypes.UNAVAILABLE:
+    case stxErrorTypes.REGULAR_TX_PENDING:
+      return t('stxErrorUnavailable');
+    case stxErrorTypes.NOT_ENOUGH_FUNDS:
+      return t('stxErrorNotEnoughFunds');
+    default:
+      return t('stxErrorUnavailable');
+  }
 };
 
 export const parseSmartTransactionsError = (errorMessage) => {

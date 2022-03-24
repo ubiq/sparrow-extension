@@ -4,10 +4,7 @@ import { I18nContext } from '../../../contexts/i18n';
 import InfoTooltip from '../../../components/ui/info-tooltip';
 import {
   MAINNET_CHAIN_ID,
-  BSC_CHAIN_ID,
   LOCALHOST_CHAIN_ID,
-  POLYGON_CHAIN_ID,
-  AVALANCHE_CHAIN_ID,
 } from '../../../../shared/constants/network';
 import TransactionDetail from '../../../components/app/transaction-detail/transaction-detail.component';
 import TransactionDetailItem from '../../../components/app/transaction-detail-item/transaction-detail-item.component';
@@ -44,14 +41,8 @@ export default function FeeCard({
     switch (chainId) {
       case MAINNET_CHAIN_ID:
         return t('networkNameEthereum');
-      case BSC_CHAIN_ID:
-        return t('networkNameBSC');
-      case POLYGON_CHAIN_ID:
-        return t('networkNamePolygon');
       case LOCALHOST_CHAIN_ID:
         return t('networkNameTestnet');
-      case AVALANCHE_CHAIN_ID:
-        return t('networkNameAvalanche');
       default:
         throw new Error('This network is not supported for token swaps');
     }

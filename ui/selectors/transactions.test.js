@@ -1,10 +1,6 @@
-import {
-  KOVAN_CHAIN_ID,
-  MAINNET_CHAIN_ID,
-} from '../../shared/constants/network';
+import { MAINNET_CHAIN_ID } from '../../shared/constants/network';
 import { TRANSACTION_STATUSES } from '../../shared/constants/transaction';
 import {
-  unapprovedMessagesSelector,
   transactionsSelector,
   nonceSortedTransactionsSelector,
   nonceSortedPendingTransactionsSelector,
@@ -13,99 +9,6 @@ import {
 } from './transactions';
 
 describe('Transaction Selectors', () => {
-  describe('unapprovedMessagesSelector', () => {
-    it('returns eth sign msg from unapprovedMsgs', () => {
-      const msg = {
-        id: 1,
-        msgParams: {
-          from: '0xAddress',
-          data: '0xData',
-          origin: 'origin',
-        },
-        time: 1,
-        status: TRANSACTION_STATUSES.UNAPPROVED,
-        type: 'eth_sign',
-      };
-
-      const state = {
-        metamask: {
-          unapprovedMsgs: {
-            1: msg,
-          },
-          provider: {
-            chainId: KOVAN_CHAIN_ID,
-          },
-        },
-      };
-
-      const msgSelector = unapprovedMessagesSelector(state);
-
-      expect(Array.isArray(msgSelector)).toStrictEqual(true);
-      expect(msgSelector).toStrictEqual([msg]);
-    });
-
-    it('returns personal sign from unapprovedPersonalMsgsSelector', () => {
-      const msg = {
-        id: 1,
-        msgParams: {
-          from: '0xAddress',
-          data: '0xData',
-          origin: 'origin',
-        },
-        time: 1,
-        status: TRANSACTION_STATUSES.UNAPPROVED,
-        type: 'personal_sign',
-      };
-
-      const state = {
-        metamask: {
-          unapprovedPersonalMsgs: {
-            1: msg,
-          },
-          provider: {
-            chainId: KOVAN_CHAIN_ID,
-          },
-        },
-      };
-
-      const msgSelector = unapprovedMessagesSelector(state);
-
-      expect(Array.isArray(msgSelector)).toStrictEqual(true);
-      expect(msgSelector).toStrictEqual([msg]);
-    });
-
-    it('returns typed message from unapprovedTypedMessagesSelector', () => {
-      const msg = {
-        id: 1,
-        msgParams: {
-          data: '0xData',
-          from: '0xAddress',
-          version: 'V3',
-          origin: 'origin',
-        },
-        time: 1,
-        status: TRANSACTION_STATUSES.UNAPPROVED,
-        type: 'eth_signTypedData',
-      };
-
-      const state = {
-        metamask: {
-          unapprovedTypedMessages: {
-            1: msg,
-          },
-          provider: {
-            chainId: KOVAN_CHAIN_ID,
-          },
-        },
-      };
-
-      const msgSelector = unapprovedMessagesSelector(state);
-
-      expect(Array.isArray(msgSelector)).toStrictEqual(true);
-      expect(msgSelector).toStrictEqual([msg]);
-    });
-  });
-
   describe('transactionsSelector', () => {
     it('selects the currentNetworkTxList', () => {
       const state = {

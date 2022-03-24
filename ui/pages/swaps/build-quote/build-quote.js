@@ -166,11 +166,11 @@ export default function BuildQuote({
 
   const onCloseSmartTransactionsOptInPopover = (e) => {
     e?.preventDefault();
-    setSmartTransactionsOptInStatus(false);
+    setSmartTransactionsOptInStatus(false, smartTransactionsOptInStatus);
   };
 
   const onEnableSmartTransactionsClick = () =>
-    setSmartTransactionsOptInStatus(true);
+    setSmartTransactionsOptInStatus(true, smartTransactionsOptInStatus);
 
   const fetchParamsFromToken = isSwapsDefaultTokenSymbol(
     sourceTokenInfo?.symbol,
@@ -327,9 +327,7 @@ export default function BuildQuote({
     null, // no holderAddress
     {
       blockExplorerUrl:
-        rpcPrefs.blockExplorerUrl ??
-        SWAPS_CHAINID_DEFAULT_BLOCK_EXPLORER_URL_MAP[chainId] ??
-        null,
+        SWAPS_CHAINID_DEFAULT_BLOCK_EXPLORER_URL_MAP[chainId] ?? null,
     },
   );
 
@@ -678,12 +676,8 @@ export default function BuildQuote({
               onFromSelect(selectedToToken);
             }}
           >
-            <img
-              src="./images/icons/swap2.svg"
-              alt={t('swapSwapSwitch')}
-              width="12"
-              height="16"
-            />
+            <i className="fa fa-arrow-up" title={t('swapSwapSwitch')} />
+            <i className="fa fa-arrow-down" title={t('swapSwapSwitch')} />
           </button>
         </div>
         <div className="build-quote__dropdown-swap-to-header">

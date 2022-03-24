@@ -91,7 +91,6 @@ import {
   isBurnAddress,
   isValidHexAddress,
 } from '../../../shared/modules/hexstring-utils';
-import { CHAIN_ID_TO_GAS_LIMIT_BUFFER_MAP } from '../../../shared/constants/network';
 import {
   ERC20,
   ERC721,
@@ -191,7 +190,6 @@ async function estimateGasLimitForSend({
   to,
   data,
   isNonStandardEthChain,
-  chainId,
   ...options
 }) {
   let isSimpleSendOnNonStandardNetwork = false;
@@ -294,8 +292,6 @@ async function estimateGasLimitForSend({
   let bufferMultiplier = 1.5;
   if (isSimpleSendOnNonStandardNetwork) {
     bufferMultiplier = 1;
-  } else if (CHAIN_ID_TO_GAS_LIMIT_BUFFER_MAP[chainId]) {
-    bufferMultiplier = CHAIN_ID_TO_GAS_LIMIT_BUFFER_MAP[chainId];
   }
 
   try {

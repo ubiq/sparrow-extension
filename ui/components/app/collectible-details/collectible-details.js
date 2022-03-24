@@ -33,10 +33,7 @@ import {
   checkAndUpdateSingleCollectibleOwnershipStatus,
   removeAndIgnoreCollectible,
 } from '../../../store/actions';
-import {
-  MAINNET_CHAIN_ID,
-  POLYGON_CHAIN_ID,
-} from '../../../../shared/constants/network';
+import { MAINNET_CHAIN_ID } from '../../../../shared/constants/network';
 import { getEnvironmentType } from '../../../../app/scripts/lib/util';
 import { ENVIRONMENT_TYPE_POPUP } from '../../../../shared/constants/app';
 import CollectibleOptions from '../collectible-options/collectible-options';
@@ -97,8 +94,6 @@ export default function CollectibleDetails({ collectible }) {
     switch (currentNetwork) {
       case MAINNET_CHAIN_ID:
         return `https://opensea.io/assets/${address}/${tokenId}`;
-      case POLYGON_CHAIN_ID:
-        return `https://opensea.io/assets/matic/${address}/${tokenId}`;
       default:
         return null;
     }

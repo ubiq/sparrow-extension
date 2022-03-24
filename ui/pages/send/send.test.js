@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom';
 import { initialState, SEND_STAGES } from '../../ducks/send';
 import { ensInitialState } from '../../ducks/ens';
 import { renderWithProvider } from '../../../test/jest';
-import { RINKEBY_CHAIN_ID } from '../../../shared/constants/network';
 import { GAS_ESTIMATE_TYPES } from '../../../shared/constants/gas';
 import Send from './send';
 
@@ -62,18 +61,9 @@ const baseStore = {
       useNativeCurrencyAsPrimaryCurrency: false,
     },
     currentCurrency: 'USD',
-    provider: {
-      chainId: RINKEBY_CHAIN_ID,
-    },
     nativeCurrency: 'UBQ',
     featureFlags: {
       sendHexData: false,
-    },
-    addressBook: {
-      [RINKEBY_CHAIN_ID]: [],
-    },
-    cachedBalances: {
-      [RINKEBY_CHAIN_ID]: {},
     },
     accounts: {
       '0x0': { balance: '0x0', address: '0x0' },

@@ -3,18 +3,14 @@ import nock from 'nock';
 import { MOCKS, createSwapsMockStore } from '../../../test/jest';
 import { setSwapsLiveness, setSwapsFeatureFlags } from '../../store/actions';
 import { setStorageItem } from '../../helpers/utils/storage-helpers';
-import {
-  MAINNET_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
-  BSC_CHAIN_ID,
-  POLYGON_CHAIN_ID,
-} from '../../../shared/constants/network';
+import { MAINNET_CHAIN_ID } from '../../../shared/constants/network';
 import * as swaps from './swaps';
 
 jest.mock('../../store/actions.js', () => ({
   setSwapsLiveness: jest.fn(),
   setSwapsFeatureFlags: jest.fn(),
   fetchSmartTransactionsLiveness: jest.fn(),
+  getTransactions: jest.fn(),
 }));
 
 const providerState = {
@@ -259,24 +255,6 @@ describe('Ducks - Swaps', () => {
       const state = createSwapsMockStore();
       state.metamask.keyrings[0].type = 'Trezor Hardware';
       expect(swaps.getSmartTransactionsEnabled(state)).toBe(false);
-    });
-
-    it('returns false if feature flag is enabled, not a HW and is Polygon network', () => {
-      const state = createSwapsMockStore();
-      state.metamask.provider.chainId = POLYGON_CHAIN_ID;
-      expect(swaps.getSmartTransactionsEnabled(state)).toBe(false);
-    });
-
-    it('returns false if feature flag is enabled, not a HW and is BSC network', () => {
-      const state = createSwapsMockStore();
-      state.metamask.provider.chainId = BSC_CHAIN_ID;
-      expect(swaps.getSmartTransactionsEnabled(state)).toBe(false);
-    });
-
-    it('returns true if feature flag is enabled, not a HW and is Rinkeby network', () => {
-      const state = createSwapsMockStore();
-      state.metamask.provider.chainId = RINKEBY_CHAIN_ID;
-      expect(swaps.getSmartTransactionsEnabled(state)).toBe(true);
     });
 
     it('returns false if feature flag is missing', () => {

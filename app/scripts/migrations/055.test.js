@@ -1,15 +1,4 @@
-import {
-  GOERLI,
-  GOERLI_CHAIN_ID,
-  KOVAN,
-  KOVAN_CHAIN_ID,
-  MAINNET,
-  MAINNET_CHAIN_ID,
-  RINKEBY,
-  RINKEBY_CHAIN_ID,
-  ROPSTEN,
-  ROPSTEN_CHAIN_ID,
-} from '../../../shared/constants/network';
+import { MAINNET, MAINNET_CHAIN_ID } from '../../../shared/constants/network';
 import migration55 from './055';
 
 describe('migration #55', () => {
@@ -42,10 +31,6 @@ describe('migration #55', () => {
           },
           incomingTxLastFetchedBlocksByNetwork: {
             [MAINNET]: 1,
-            [ROPSTEN]: 2,
-            [RINKEBY]: 3,
-            [GOERLI]: 4,
-            [KOVAN]: 5,
           },
         },
         foo: 'bar',
@@ -59,10 +44,6 @@ describe('migration #55', () => {
           oldStorage.data.IncomingTransactionsController.incomingTransactions,
         incomingTxLastFetchedBlockByChainId: {
           [MAINNET_CHAIN_ID]: 1,
-          [ROPSTEN_CHAIN_ID]: 2,
-          [RINKEBY_CHAIN_ID]: 3,
-          [GOERLI_CHAIN_ID]: 4,
-          [KOVAN_CHAIN_ID]: 5,
         },
       },
       foo: 'bar',

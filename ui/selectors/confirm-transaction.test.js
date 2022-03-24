@@ -1,8 +1,4 @@
-import {
-  KOVAN_CHAIN_ID,
-  KOVAN_NETWORK_ID,
-  MAINNET_CHAIN_ID,
-} from '../../shared/constants/network';
+import { MAINNET_CHAIN_ID } from '../../shared/constants/network';
 import { TRANSACTION_TYPES } from '../../shared/constants/transaction';
 import {
   unconfirmedTransactionsCountSelector,
@@ -25,9 +21,7 @@ describe('Confirm Transaction Selector', () => {
     const state = {
       metamask: {
         unapprovedTxs: {
-          1: {
-            metamaskNetworkId: KOVAN_NETWORK_ID,
-          },
+          1: {},
           2: {
             chainId: MAINNET_CHAIN_ID,
           },
@@ -35,10 +29,7 @@ describe('Confirm Transaction Selector', () => {
         unapprovedMsgCount: 1,
         unapprovedPersonalMsgCount: 1,
         unapprovedTypedMessagesCount: 1,
-        network: KOVAN_NETWORK_ID,
-        provider: {
-          chainId: KOVAN_CHAIN_ID,
-        },
+        provider: {},
       },
     };
 
