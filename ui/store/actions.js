@@ -672,8 +672,9 @@ const updateMetamaskStateFromBackground = () => {
 
 export function updateSwapApprovalTransaction(txId, txSwapApproval) {
   return async (dispatch) => {
+    let updatedTransaction;
     try {
-      await promisifiedBackground.updateSwapApprovalTransaction(
+      updatedTransaction = await promisifiedBackground.updateSwapApprovalTransaction(
         txId,
         txSwapApproval,
       );
@@ -684,14 +685,18 @@ export function updateSwapApprovalTransaction(txId, txSwapApproval) {
       throw error;
     }
 
-    return txSwapApproval;
+    return updatedTransaction;
   };
 }
 
 export function updateEditableParams(txId, editableParams) {
   return async (dispatch) => {
+    let updatedTransaction;
     try {
-      await promisifiedBackground.updateEditableParams(txId, editableParams);
+      updatedTransaction = await promisifiedBackground.updateEditableParams(
+        txId,
+        editableParams,
+      );
     } catch (error) {
       dispatch(txError(error));
       dispatch(goHome());
@@ -699,14 +704,18 @@ export function updateEditableParams(txId, editableParams) {
       throw error;
     }
 
-    return editableParams;
+    return updatedTransaction;
   };
 }
 
 export function updateTransactionGasFees(txId, txGasFees) {
   return async (dispatch) => {
+    let updatedTransaction;
     try {
-      await promisifiedBackground.updateTransactionGasFees(txId, txGasFees);
+      updatedTransaction = await promisifiedBackground.updateTransactionGasFees(
+        txId,
+        txGasFees,
+      );
     } catch (error) {
       dispatch(txError(error));
       dispatch(goHome());
@@ -714,14 +723,18 @@ export function updateTransactionGasFees(txId, txGasFees) {
       throw error;
     }
 
-    return txGasFees;
+    return updatedTransaction;
   };
 }
 
 export function updateSwapTransaction(txId, txSwap) {
   return async (dispatch) => {
+    let updatedTransaction;
     try {
-      await promisifiedBackground.updateSwapTransaction(txId, txSwap);
+      updatedTransaction = await promisifiedBackground.updateSwapTransaction(
+        txId,
+        txSwap,
+      );
     } catch (error) {
       dispatch(txError(error));
       dispatch(goHome());
@@ -729,7 +742,7 @@ export function updateSwapTransaction(txId, txSwap) {
       throw error;
     }
 
-    return txSwap;
+    return updatedTransaction;
   };
 }
 
@@ -1565,6 +1578,7 @@ export function rejectWatchAsset(suggestedAssetID) {
     dispatch(showLoadingIndication());
     try {
       await promisifiedBackground.rejectWatchAsset(suggestedAssetID);
+      await forceUpdateMetamaskState(dispatch);
     } catch (error) {
       log.error(error);
       dispatch(displayWarning(error.message));
@@ -1581,6 +1595,7 @@ export function acceptWatchAsset(suggestedAssetID) {
     dispatch(showLoadingIndication());
     try {
       await promisifiedBackground.acceptWatchAsset(suggestedAssetID);
+      await forceUpdateMetamaskState(dispatch);
     } catch (error) {
       log.error(error);
       dispatch(displayWarning(error.message));
