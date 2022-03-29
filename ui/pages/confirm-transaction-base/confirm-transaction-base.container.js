@@ -33,7 +33,6 @@ import {
   getTokenList,
   getIsMultiLayerFeeNetwork,
   getEIP1559V2Enabled,
-  getIsBuyableChain,
 } from '../../selectors';
 import { getMostRecentOverviewPage } from '../../ducks/history/history';
 import {
@@ -77,7 +76,6 @@ const mapStateToProps = (state, ownProps) => {
 
   const isGasEstimatesLoading = getIsGasEstimatesLoading(state);
   const gasLoadingAnimationIsShowing = getGasLoadingAnimationIsShowing(state);
-  const isBuyableChain = getIsBuyableChain(state);
   const { confirmTransaction, metamask } = state;
   const {
     ensResolutionsByAddress,
@@ -254,7 +252,6 @@ const mapStateToProps = (state, ownProps) => {
     isMultiLayerFeeNetwork,
     chainId,
     eip1559V2Enabled,
-    isBuyableChain,
   };
 };
 

@@ -15,7 +15,6 @@ import { TRANSACTION_TYPES } from '../../../../shared/constants/transaction';
 const TransactionAlerts = ({
   userAcknowledgedGasMissing,
   setUserAcknowledgedGasMissing,
-  isBuyableChain,
   nativeCurrency,
   networkName,
   type,
@@ -97,29 +96,12 @@ const TransactionAlerts = ({
         <ActionableMessage
           className="actionable-message--warning"
           message={
-            isBuyableChain ? (
-              <Typography variant={TYPOGRAPHY.H7} align="left">
-                {t('insufficientCurrencyBuyOrDeposit', [
-                  nativeCurrency,
-                  networkName,
-                  <Button
-                    type="inline"
-                    className="confirm-page-container-content__link"
-                    onClick={showBuyModal}
-                    key={`${nativeCurrency}-buy-button`}
-                  >
-                    {t('buyAsset', [nativeCurrency])}
-                  </Button>,
-                ])}
-              </Typography>
-            ) : (
-              <Typography variant={TYPOGRAPHY.H7} align="left">
-                {t('insufficientCurrencyDeposit', [
-                  nativeCurrency,
-                  networkName,
-                ])}
-              </Typography>
-            )
+            <Typography variant={TYPOGRAPHY.H7} align="left">
+              {t('insufficientCurrencyDeposit', [
+                nativeCurrency,
+                networkName,
+              ])}
+            </Typography>
           }
           useIcon
           iconFillColor="var(--color-error-default)"
@@ -171,7 +153,6 @@ TransactionAlerts.propTypes = {
   nativeCurrency: PropTypes.string,
   networkName: PropTypes.string,
   type: PropTypes.string,
-  isBuyableChain: PropTypes.bool,
 };
 
 export default TransactionAlerts;

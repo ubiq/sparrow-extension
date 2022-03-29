@@ -54,7 +54,6 @@ export default class ConfirmPageContainerContent extends Component {
     networkName: PropTypes.string,
     toAddress: PropTypes.string,
     transactionType: PropTypes.string,
-    isBuyableChain: PropTypes.bool,
   };
 
   renderContent() {
@@ -129,7 +128,6 @@ export default class ConfirmPageContainerContent extends Component {
       networkName,
       toAddress,
       transactionType,
-      isBuyableChain,
     } = this.props;
 
     const primaryAction = hideUserAcknowledgedGasMissing
@@ -197,30 +195,12 @@ export default class ConfirmPageContainerContent extends Component {
             <ActionableMessage
               className="actionable-message--warning"
               message={
-                isBuyableChain ? (
-                  <Typography variant={TYPOGRAPHY.H7} align="left">
-                    {t('insufficientCurrencyBuyOrDeposit', [
-                      nativeCurrency,
-                      networkName,
-
-                      <Button
-                        type="inline"
-                        className="confirm-page-container-content__link"
-                        onClick={showBuyModal}
-                        key={`${nativeCurrency}-buy-button`}
-                      >
-                        {t('buyAsset', [nativeCurrency])}
-                      </Button>,
-                    ])}
-                  </Typography>
-                ) : (
-                  <Typography variant={TYPOGRAPHY.H7} align="left">
-                    {t('insufficientCurrencyDeposit', [
-                      nativeCurrency,
-                      networkName,
-                    ])}
-                  </Typography>
-                )
+                <Typography variant={TYPOGRAPHY.H7} align="left">
+                  {t('insufficientCurrencyDeposit', [
+                    nativeCurrency,
+                    networkName,
+                  ])}
+                </Typography>
               }
               useIcon
               iconFillColor="var(--color-error-default)"

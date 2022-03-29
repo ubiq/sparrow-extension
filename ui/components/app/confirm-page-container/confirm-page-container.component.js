@@ -251,36 +251,18 @@ export default class ConfirmPageContainer extends Component {
               networkName={networkName}
               toAddress={toAddress}
               transactionType={currentTransaction.type}
-              isBuyableChain={isBuyableChain}
             />
           )}
           {shouldDisplayWarning && errorKey === INSUFFICIENT_FUNDS_ERROR_KEY && (
             <div className="confirm-approve-content__warning">
               <ActionableMessage
                 message={
-                  isBuyableChain ? (
-                    <Typography variant={TYPOGRAPHY.H7} align="left">
-                      {t('insufficientCurrencyBuyOrDeposit', [
-                        nativeCurrency,
-                        networkName,
-                        <Button
-                          type="inline"
-                          className="confirm-page-container-content__link"
-                          onClick={showBuyModal}
-                          key={`${nativeCurrency}-buy-button`}
-                        >
-                          {t('buyAsset', [nativeCurrency])}
-                        </Button>,
-                      ])}
-                    </Typography>
-                  ) : (
-                    <Typography variant={TYPOGRAPHY.H7} align="left">
-                      {t('insufficientCurrencyDeposit', [
-                        nativeCurrency,
-                        networkName,
-                      ])}
-                    </Typography>
-                  )
+                  <Typography variant={TYPOGRAPHY.H7} align="left">
+                    {t('insufficientCurrencyDeposit', [
+                      nativeCurrency,
+                      networkName,
+                    ])}
+                  </Typography>
                 }
                 useIcon
                 iconFillColor="var(--color-error-default)"
