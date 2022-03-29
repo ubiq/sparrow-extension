@@ -37,7 +37,6 @@ import { SMART_TRANSACTION_STATUSES } from '../../../../shared/constants/transac
 import SwapsFooter from '../swaps-footer';
 import { calcTokenAmount } from '../../../helpers/utils/token-util';
 import { showRemainingTimeInMinAndSec } from '../swaps.util';
-import { MetaMetricsContext } from '../../../contexts/metametrics.new';
 import SuccessIcon from './success-icon';
 import RevertedIcon from './reverted-icon';
 import CanceledIcon from './canceled-icon';
