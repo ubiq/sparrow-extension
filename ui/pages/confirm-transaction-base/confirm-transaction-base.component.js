@@ -560,10 +560,10 @@ export default class ConfirmTransactionBase extends Component {
             this.setUserAcknowledgedGasMissing()
           }
           userAcknowledgedGasMissing={userAcknowledgedGasMissing}
-          chainId={txData.chainId}
           nativeCurrency={nativeCurrency}
           networkName={networkName}
           type={txData.type}
+          isBuyableChain={isBuyableChain}
         />
         <TransactionDetail
           disabled={isDisabled()}
@@ -821,7 +821,7 @@ export default class ConfirmTransactionBase extends Component {
         value={hexTransactionAmount}
         type={PRIMARY}
         showEthLogo
-        ethLogoHeight="28"
+        ethLogoHeight={24}
         hideLabel
       />
     );

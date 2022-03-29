@@ -273,6 +273,7 @@ describe('Sparrow', function () {
       await gasPriceInput.fill('20');
       await driver.delay(veryLargeDelayMs);
       await driver.clickElement({ text: 'Save', tag: 'button' });
+      await driver.delay(veryLargeDelayMs);
       await driver.clickElement({ text: 'Confirm', tag: 'button' });
 
       await driver.delay(regularDelayMs);
@@ -388,6 +389,7 @@ describe('Sparrow', function () {
       await gasPriceInput.fill('100');
       await driver.delay(veryLargeDelayMs);
       await driver.clickElement({ text: 'Save', tag: 'button' });
+      await driver.delay(veryLargeDelayMs);
     });
 
     it('submits the transaction', async function () {
@@ -464,6 +466,7 @@ describe('Sparrow', function () {
       await gasPriceInput.fill('10');
       await driver.delay(veryLargeDelayMs);
       await driver.clickElement({ text: 'Save', tag: 'button' });
+      await driver.delay(veryLargeDelayMs);
       await driver.findElement({ tag: 'span', text: '0.0006' });
     });
 
@@ -590,6 +593,7 @@ describe('Sparrow', function () {
       await driver.delay(veryLargeDelayMs);
 
       await driver.clickElement({ text: 'Save', tag: 'button' });
+      await driver.delay(veryLargeDelayMs);
 
       const gasFeeInEth = await driver.findElement(
         '.confirm-approve-content__transaction-details-content__secondary-fee',
@@ -614,6 +618,7 @@ describe('Sparrow', function () {
       await driver.delay(regularDelayMs);
 
       await driver.clickElement({ text: 'Save', tag: 'button' });
+      await driver.delay(veryLargeDelayMs);
 
       // wait for permission modal to be removed from DOM.
       await permissionModal.waitForElementState('hidden');

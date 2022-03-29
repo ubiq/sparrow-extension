@@ -1,4 +1,10 @@
-import React, { useState, useContext, useMemo, useEffect, useRef } from 'react';
+import React, {
+  useState,
+  useContext,
+  useMemo,
+  useEffect,
+  useRef
+} from 'react';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import BigNumber from 'bignumber.js';
@@ -503,10 +509,6 @@ export default function ViewQuote() {
       bestQuoteReviewedEventSent.current = true;
     }
   }, [
-    sourceTokenSymbol,
-    sourceTokenValue,
-    destinationTokenSymbol,
-    destinationTokenValue,
     fetchParams,
     topQuote,
     numberOfQuotes,

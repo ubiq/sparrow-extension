@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import zxcvbn from 'zxcvbn';
@@ -29,6 +29,7 @@ import {
 import ZENDESK_URLS from '../../../helpers/constants/zendesk-url';
 import { getFirstTimeFlowType } from '../../../selectors';
 import { FIRST_TIME_FLOW_TYPES } from '../../../helpers/constants/onboarding';
+import { MetaMetricsContext } from '../../../contexts/metametrics.new';
 
 export default function CreatePassword({
   createNewAccount,

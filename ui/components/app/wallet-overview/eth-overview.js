@@ -6,7 +6,10 @@ import { useHistory } from 'react-router-dom';
 
 import Identicon from '../../ui/identicon';
 import { I18nContext } from '../../../contexts/i18n';
-import { SEND_ROUTE } from '../../../helpers/constants/routes';
+import {
+  SEND_ROUTE,
+  BUILD_QUOTE_ROUTE,
+} from '../../../helpers/constants/routes';
 import Tooltip from '../../ui/tooltip';
 import UserPreferencedCurrencyDisplay from '../user-preferenced-currency-display';
 import { PRIMARY, SECONDARY } from '../../../helpers/constants/common';

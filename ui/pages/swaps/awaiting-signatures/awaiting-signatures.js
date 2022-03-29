@@ -25,6 +25,7 @@ import {
   DISPLAY,
 } from '../../../helpers/constants/design-system';
 import SwapsFooter from '../swaps-footer';
+import { MetaMetricsContext } from '../../../contexts/metametrics.new';
 import SwapStepIcon from './swap-step-icon';
 
 export default function AwaitingSignatures() {

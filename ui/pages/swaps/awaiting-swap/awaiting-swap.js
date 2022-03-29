@@ -69,6 +69,47 @@ export default function AwaitingSwap({
     false,
   );
 
+  let feeinUnformattedFiat;
+
+  if (usedQuote && swapsGasPrice) {
+    const renderableNetworkFees = getRenderableNetworkFeesForQuote({
+      tradeGas: usedQuote.gasEstimateWithRefund || usedQuote.averageGas,
+      approveGas: approveTxParams?.gas || '0x0',
+      gasPrice: swapsGasPrice,
+      currentCurrency,
+      conversionRate: usdConversionRate,
+      tradeValue: usedQuote?.trade?.value,
+      sourceSymbol: sourceTokenInfo?.symbol,
+      sourceAmount: usedQuote.sourceAmount,
+      chainId,
+    });
+    feeinUnformattedFiat = renderableNetworkFees.rawNetworkFees;
+  }
+
+  const hardwareWalletUsed = useSelector(isHardwareWallet);
+  const hardwareWalletType = useSelector(getHardwareWalletType);
+  const smartTransactionsOptInStatus = useSelector(
+    getSmartTransactionsOptInStatus,
+  );
+  const smartTransactionsEnabled = useSelector(getSmartTransactionsEnabled);
+  const currentSmartTransactionsEnabled = useSelector(
+    getCurrentSmartTransactionsEnabled,
+  );
+  const sensitiveProperties = {
+    token_from: sourceTokenInfo?.symbol,
+    token_from_amount: fetchParams?.value,
+    token_to: destinationTokenInfo?.symbol,
+    request_type: fetchParams?.balanceError ? 'Quote' : 'Order',
+    slippage: fetchParams?.slippage,
+    custom_slippage: fetchParams?.slippage === 2,
+    gas_fees: feeinUnformattedFiat,
+    is_hardware_wallet: hardwareWalletUsed,
+    hardware_wallet_type: hardwareWalletType,
+    stx_enabled: smartTransactionsEnabled,
+    current_stx_enabled: currentSmartTransactionsEnabled,
+    stx_user_opt_in: smartTransactionsOptInStatus,
+  };
+
   const baseNetworkUrl =
     rpcPrefs.blockExplorerUrl ??
     SWAPS_CHAINID_DEFAULT_BLOCK_EXPLORER_URL_MAP[chainId] ??
