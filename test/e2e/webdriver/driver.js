@@ -274,9 +274,7 @@ class Driver {
     await this.executeScript(
       `navigator.clipboard.writeText("${contentToPaste}")`,
     );
-    const modifierKey =
-      process.platform === 'darwin' ? Key.COMMAND : Key.CONTROL;
-    await this.fill(element, Key.chord(modifierKey, 'v'));
+    await this.fill(element, Key.chord(Key.CONTROL, 'v'));
   }
 
   // Navigation

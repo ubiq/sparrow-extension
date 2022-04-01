@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useContext } from 'react';
+import React, { useEffect, useRef, useContext, useState } from 'react';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import {
   Switch,
@@ -102,6 +102,7 @@ export default function Swap() {
     pathname === SMART_TRANSACTION_STATUS_ROUTE;
   const isViewQuoteRoute = pathname === VIEW_QUOTE_ROUTE;
 
+  const [currentStxErrorTracked, setCurrentStxErrorTracked] = useState(false);
   const fetchParams = useSelector(getFetchParams, isEqual);
   const { destinationTokenInfo = {} } = fetchParams?.metaData || {};
 

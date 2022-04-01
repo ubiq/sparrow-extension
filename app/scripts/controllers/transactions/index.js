@@ -401,8 +401,6 @@ export default class TransactionController extends EventEmitter {
    * @param {string} editableParams.from
    * @param {string} editableParams.to
    * @param {string} editableParams.value
-   * @param {string} editableParams.gas
-   * @param {string} editableParams.gasPrice
    * @returns {TransactionMeta} the txMeta of the updated transaction
    */
   updateEditableParams(txId, { data, from, to, value, gas, gasPrice }) {
@@ -444,8 +442,6 @@ export default class TransactionController extends EventEmitter {
    * @param {string} txGasFees.defaultGasEstimates
    * @param {string} txGasFees.gas
    * @param {string} txGasFees.originalGasEstimate
-   * @param {string} txGasFees.userEditedGasLimit
-   * @param {string} txGasFees.userFeeLevel
    * @returns {TransactionMeta} the txMeta of the updated transaction
    */
   updateTransactionGasFees(

@@ -102,6 +102,19 @@
 
     padding: 3.5px 5px;
     width: 59px;
+
+    &:hover {
+      background-color: rgba(#9b9b9b, 0.05);
+    }
+
+    &:active {
+      background-color: rgba(#9b9b9b, 0.1);
+    }
+  }
+
+  &__item-icon {
+    width: 16px;
+    height: 16px;
   }
 
   &__accounts-container {

@@ -1,6 +1,6 @@
 {
   "name": "sparrow-crx",
-  "version": "10.11.4",
+  "version": "10.12.2",
   "private": true,
   "repository": {
     "type": "git",
@@ -14,10 +14,10 @@
     "dist": "yarn build prod",
     "build": "yarn lavamoat:build",
     "build:dev": "node development/build/index.js",
-    "start:test": "yarn build testDev",
+    "start:test": "SEGMENT_HOST='https://api.segment.io' SEGMENT_WRITE_KEY='FAKE' yarn build testDev",
     "benchmark:chrome": "SELENIUM_BROWSER=chrome node test/e2e/benchmark.js",
     "benchmark:firefox": "SELENIUM_BROWSER=firefox node test/e2e/benchmark.js",
-    "build:test": "yarn build test",
+    "build:test": "SEGMENT_HOST='https://api.segment.io' SEGMENT_WRITE_KEY='FAKE' yarn build test",
     "build:test:flask": "yarn build test --build-type flask",
     "test": "yarn lint && yarn test:unit && yarn test:unit:jest",
     "dapp": "node development/static-server.js node_modules/@metamask/test-dapp/dist --port 8080",
