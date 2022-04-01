@@ -232,12 +232,12 @@ export default class TransactionController extends EventEmitter {
     // type will be one of our default network names or 'rpc'. the default
     // network names are sufficient configuration, simply pass the name as the
     // chain argument in the constructor.
-    if (type !== NETWORK_TYPE_RPC) {
-      return new Common({
-        chain: type,
-        hardfork,
-      });
-    }
+    // if (type !== NETWORK_TYPE_RPC) {
+    //   return new Common({
+    //     chain: type,
+    //     hardfork,
+    //   });
+    // }
 
     // For 'rpc' we need to use the same basic configuration as mainnet,
     // since we only support EVM compatible chains, and then override the
