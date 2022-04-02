@@ -89,7 +89,7 @@ import { useTransactionFunctions } from './useTransactionFunctions';
  * ).GasEstimates} gas fee input state and the GasFeeEstimates object
  */
 export function useGasFeeInputs(
-  defaultEstimateToUse = GAS_RECOMMENDATIONS.MEDIUM,
+  defaultEstimateToUse = GAS_RECOMMENDATIONS.LOW,
   transaction,
   minimumGasLimit = '0x5208',
   editGasMode = EDIT_GAS_MODES.MODIFY_IN_PLACE,
