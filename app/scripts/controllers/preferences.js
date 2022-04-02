@@ -42,6 +42,7 @@ export default class PreferencesController {
       useCollectibleDetection: false,
       openSeaEnabled: false,
       advancedGasFee: null,
+      eip1559V2Enabled: true,
 
       // WARNING: Do not use feature flags for security-sensitive things.
       // Feature flag toggling is available in the global namespace
