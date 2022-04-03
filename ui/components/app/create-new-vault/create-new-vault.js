@@ -9,7 +9,6 @@ import SrpInput from '../srp-input';
 
 export default function CreateNewVault({
   disabled = false,
-  includeTerms = false,
   onSubmit,
   submitText,
 }) {
@@ -18,7 +17,6 @@ export default function CreateNewVault({
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [seedPhrase, setSeedPhrase] = useState('');
-  const [termsChecked, setTermsChecked] = useState(false);
 
   const t = useI18nContext();
 
@@ -62,7 +60,6 @@ export default function CreateNewVault({
     confirmPassword &&
     password === confirmPassword &&
     seedPhrase &&
-    (!includeTerms || termsChecked) &&
     !passwordError &&
     !confirmPasswordError;
 
@@ -122,22 +119,6 @@ export default function CreateNewVault({
           largeLabel
         />
       </div>
-      {includeTerms ? (
-        <div className="create-new-vault__terms">
-          <CheckBox
-            id="create-new-vault__terms-checkbox"
-            dataTestId="create-new-vault__terms-checkbox"
-            checked={termsChecked}
-            onClick={toggleTermsCheck}
-          />
-          <label
-            className="create-new-vault__terms-label"
-            htmlFor="create-new-vault__terms-checkbox"
-          >
-            <Typography tag="span">{termsOfUse}</Typography>
-          </label>
-        </div>
-      ) : null}
       <Button
         className="create-new-vault__submit-button"
         type="primary"
@@ -152,7 +133,6 @@ export default function CreateNewVault({
 
 CreateNewVault.propTypes = {
   disabled: PropTypes.bool,
-  includeTerms: PropTypes.bool,
   onSubmit: PropTypes.func.isRequired,
   submitText: PropTypes.string.isRequired,
 };
