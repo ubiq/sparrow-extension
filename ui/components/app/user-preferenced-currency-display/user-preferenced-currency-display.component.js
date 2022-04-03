@@ -6,7 +6,7 @@ import { useUserPreferencedCurrency } from '../../../hooks/useUserPreferencedCur
 
 export default function UserPreferencedCurrencyDisplay({
   'data-testid': dataTestId,
-  ethLogoHeight = 14,
+  ethLogoHeight = 24,
   ethNumberOfDecimals,
   fiatNumberOfDecimals,
   numberOfDecimals: propsNumberOfDecimals,
@@ -23,13 +23,7 @@ export default function UserPreferencedCurrencyDisplay({
     return (
       currency === ETH &&
       showEthLogo && (
-        <i
-          className="fab fa-ethereum"
-          style={{
-            color: 'var(--color-icon-default)',
-            fontSize: ethLogoHeight,
-          }}
-        />
+        <img src="./images/eth.svg" height={ethLogoHeight} style={{height: "24px", marginTop: "8px"}} alt="" />
       )
     );
   }, [currency, showEthLogo, ethLogoHeight]);
