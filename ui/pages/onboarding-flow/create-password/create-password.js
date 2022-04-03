@@ -42,7 +42,6 @@ export default function CreatePassword({
   const [passwordStrength, setPasswordStrength] = useState('');
   const [passwordStrengthText, setPasswordStrengthText] = useState('');
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
-  const [termsChecked, setTermsChecked] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const history = useHistory();
   const firstTimeFlowType = useSelector(getFirstTimeFlowType);
@@ -204,34 +203,6 @@ export default function CreatePassword({
               )
             }
           />
-          <Box
-            alignItems={ALIGN_ITEMS.CENTER}
-            justifyContent={JUSTIFY_CONTENT.SPACE_BETWEEN}
-            marginBottom={4}
-          >
-            <label className="create-password__form__terms-label">
-              <CheckBox
-                dataTestId="create-password-terms"
-                onClick={() => setTermsChecked(!termsChecked)}
-                checked={termsChecked}
-              />
-              <Typography variant={TYPOGRAPHY.H5} boxProps={{ marginLeft: 3 }}>
-                {t('passwordTermsWarning', [
-                  <a
-                    onClick={(e) => e.stopPropagation()}
-                    key="create-password__link-text"
-                    href={ZENDESK_URLS.PASSWORD_ARTICLE}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="create-password__link-text">
-                      {t('learnMoreUpperCase')}
-                    </span>
-                  </a>,
-                ])}
-              </Typography>
-            </label>
-          </Box>
           <Button
             data-testid={
               secretRecoveryPhrase &&
@@ -241,7 +212,7 @@ export default function CreatePassword({
             }
             type="primary"
             className="create-password__form--submit-button"
-            disabled={!isValid || !termsChecked}
+            disabled={!isValid}
             onClick={handleCreate}
           >
             {secretRecoveryPhrase &&

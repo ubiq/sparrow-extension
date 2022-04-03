@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../../../../components/ui/button';
 import {
-  INITIALIZE_SEED_PHRASE_INTRO_ROUTE,
+  INITIALIZE_BACKUP_SEED_PHRASE_ROUTE,
   INITIALIZE_SELECT_ACTION_ROUTE,
 } from '../../../../helpers/constants/routes';
 import TextField from '../../../../components/ui/text-field';
@@ -23,7 +23,6 @@ export default class NewAccount extends PureComponent {
     confirmPassword: '',
     passwordError: '',
     confirmPasswordError: '',
-    termsChecked: true,
   };
 
   isValid() {
@@ -100,16 +99,10 @@ export default class NewAccount extends PureComponent {
     try {
       await onSubmit(password);
 
-      history.push(INITIALIZE_SEED_PHRASE_INTRO_ROUTE);
+      history.push(INITIALIZE_BACKUP_SEED_PHRASE_ROUTE);
     } catch (error) {
       this.setState({ passwordError: error.message });
     }
-  };
-
-  toggleTermsCheck = () => {
-    this.setState((prevState) => ({
-      termsChecked: !prevState.termsChecked,
-    }));
   };
 
   onTermsKeyPress = ({ key }) => {
@@ -125,7 +118,6 @@ export default class NewAccount extends PureComponent {
       confirmPassword,
       passwordError,
       confirmPasswordError,
-      termsChecked,
     } = this.state;
 
     return (
@@ -175,7 +167,7 @@ export default class NewAccount extends PureComponent {
           <Button
             type="primary"
             className="first-time-flow__button"
-            disabled={!this.isValid() || !termsChecked}
+            disabled={!this.isValid()}
             onClick={this.handleCreate}
           >
             {t('create')}

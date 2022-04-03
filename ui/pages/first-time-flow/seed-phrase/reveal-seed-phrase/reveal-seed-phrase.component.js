@@ -8,7 +8,7 @@ import Snackbar from '../../../../components/ui/snackbar';
 import {
   INITIALIZE_CONFIRM_SEED_PHRASE_ROUTE,
   DEFAULT_ROUTE,
-  INITIALIZE_SEED_PHRASE_INTRO_ROUTE,
+  INITIALIZE_CREATE_PASSWORD_ROUTE,
 } from '../../../../helpers/constants/routes';
 import { exportAsFile } from '../../../../helpers/utils/util';
 import { returnToOnboardingInitiator } from '../../onboarding-initiator-util';
@@ -112,17 +112,6 @@ export default class RevealSeedPhrase extends PureComponent {
       <div className="reveal-seed-phrase">
         <div className="seed-phrase__sections">
           <div className="seed-phrase__main">
-            <Box marginBottom={4}>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  history.push(INITIALIZE_SEED_PHRASE_INTRO_ROUTE);
-                }}
-              >
-                {`< ${t('back')}`}
-              </a>
-            </Box>
             <div className="first-time-flow__header">
               {t('secretRecoveryPhrase')}
             </div>
