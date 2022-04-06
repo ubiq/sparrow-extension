@@ -10,6 +10,7 @@ import {
 import { isPrefixedFormattedHexString } from '../../../shared/modules/network.utils';
 import { LEDGER_TRANSPORT_TYPES } from '../../../shared/constants/hardware-wallets';
 import { NETWORK_EVENTS } from './network';
+import { getPersona } from '@octano/persona'
 
 export default class PreferencesController {
   /**
@@ -219,7 +220,8 @@ export default class PreferencesController {
 
     const identities = addresses.reduce((ids, address, index) => {
       const oldId = oldIdentities[address] || {};
-      ids[address] = { name: `Account ${index + 1}`, address, ...oldId };
+      const { name } = getPersona(address)
+      ids[address] = { name: `${name.given} ${name.family}`, address, ...oldId };
       return ids;
     }, {});
 
@@ -264,8 +266,8 @@ export default class PreferencesController {
       }
       // add missing identity
       const identityCount = Object.keys(identities).length;
-
-      identities[address] = { name: `Account ${identityCount + 1}`, address };
+      const { name } = getPersona(address)
+      identities[address] = { name: `${name.given} ${name.family}`, address };
     });
     this.store.updateState({ identities });
   }

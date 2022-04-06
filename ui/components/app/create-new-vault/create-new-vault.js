@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import TextField from '../../ui/text-field';
 import Button from '../../ui/button';
-import CheckBox from '../../ui/check-box';
-import Typography from '../../ui/typography';
 import SrpInput from '../srp-input';
 
 export default function CreateNewVault({
@@ -75,22 +73,6 @@ export default function CreateNewVault({
     },
     [isValid, onSubmit, password, seedPhrase],
   );
-
-  const toggleTermsCheck = useCallback(() => {
-    setTermsChecked((currentTermsChecked) => !currentTermsChecked);
-  }, []);
-
-  const termsOfUse = t('acceptTermsOfUse', [
-    <a
-      className="create-new-vault__terms-link"
-      key="create-new-vault__link-text"
-      href="https://metamask.io/terms.html"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {t('terms')}
-    </a>,
-  ]);
 
   return (
     <form className="create-new-vault__form" onSubmit={onImport}>

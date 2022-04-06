@@ -10,13 +10,16 @@ export default class NewAccountCreateForm extends Component {
 
   state = {
     newAccountName: '',
+    usePersona: true,
     defaultAccountName: this.context.t('newAccountNumberName', [
       this.props.newAccountNumber,
     ]),
   };
 
   render() {
-    const { newAccountName, defaultAccountName } = this.state;
+
+    const { defaultAccountName, newAccountName } = this.state;
+    
     const {
       history,
       createAccount,
@@ -39,53 +42,72 @@ export default class NewAccountCreateForm extends Component {
     const existingAccountName = accountNameExists(accounts, newAccountName);
 
     return (
-      <div className="new-account-create-form">
-        <div className="new-account-create-form__input-label">
-          {this.context.t('accountName')}
-        </div>
-        <div>
-          <input
-            className={classnames('new-account-create-form__input', {
-              'new-account-create-form__input__error': existingAccountName,
-            })}
-            value={newAccountName}
-            placeholder={defaultAccountName}
-            onChange={(event) =>
-              this.setState({ newAccountName: event.target.value })
-            }
-            autoFocus
-          />
-          {existingAccountName ? (
-            <div
-              className={classnames(
-                ' new-account-create-form__error',
-                ' new-account-create-form__error-amount',
-              )}
+      <>
+        <div className="page-container__header">
+          <div className="page-container__title">{this.context.t('createAccount')}</div>
+          <div className="page-container__subtitle">
+            {this.context.t('createAccountMsg')}
+            <span
+              className="new-account-info-link"
+              onClick={() => {
+                global.platform.openTab({
+                  url:
+                    'https://blog.ubiqsmart.com/introducing-persona-a-new-way-to-web3-b44ffc2d6f66',
+                });
+              }}
             >
-              {this.context.t('accountNameDuplicate')}
-            </div>
-          ) : null}
-          <div className="new-account-create-form__buttons">
-            <Button
-              type="secondary"
-              large
-              className="new-account-create-form__button"
-              onClick={() => history.push(mostRecentOverviewPage)}
-            >
-              {this.context.t('cancel')}
-            </Button>
-            <Button
-              type="primary"
-              large
-              className="new-account-create-form__button"
-              onClick={createClick}
-              disabled={existingAccountName}
-            >
-              {this.context.t('create')}
-            </Button>
+              {this.context.t('here')}
+            </span>
           </div>
         </div>
-      </div>
+        <div className="new-account-create-form">
+          {/* <div className="new-account-create-form__input-label">
+            {this.context.t('accountName')}
+          </div> */}
+          <div>
+            {/* <input
+              className={classnames('new-account-create-form__input', {
+                'new-account-create-form__input__error': existingAccountName,
+              })}
+              value={newAccountName}
+              placeholder={defaultAccountName}
+              onChange={(event) =>
+                this.setState({ newAccountName: event.target.value })
+              }
+              autoFocus
+            />
+            {existingAccountName ? (
+              <div
+                className={classnames(
+                  ' new-account-create-form__error',
+                  ' new-account-create-form__error-amount',
+                )}
+              >
+                {this.context.t('accountNameDuplicate')}
+              </div>
+            ) : null} */}
+            <div className="new-account-create-form__buttons">
+              <Button
+                type="secondary"
+                large
+                className="new-account-create-form__button"
+                onClick={() => history.push(mostRecentOverviewPage)}
+              >
+                {this.context.t('cancel')}
+              </Button>
+              <Button
+                type="primary"
+                large
+                className="new-account-create-form__button"
+                onClick={createClick}
+                disabled={existingAccountName}
+              >
+                {this.context.t('create')}
+              </Button>
+            </div>
+          </div>
+        </div>
+        </>
     );
   }
 }

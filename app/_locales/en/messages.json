@@ -647,6 +647,9 @@
   "createAccount": {
     "message": "Create Account"
   },
+  "createAccountMsg": {
+    "message": "A human-friendly name will be generated for your new account using Persona. Learn more about Persona"
+  },
   "createNewWallet": {
     "message": "Create a new wallet"
   },

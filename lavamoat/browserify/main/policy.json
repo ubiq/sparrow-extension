@@ -737,6 +737,12 @@
         "sha.js": true
       }
     },
+    "@octano/persona": {
+      "packages": {
+        "ethereumjs-util": true,
+        "bitcoin-address-validation": true
+      }
+    },
     "@popperjs/core": {
       "globals": {
         "Element": true,

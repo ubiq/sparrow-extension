@@ -66,8 +66,8 @@
 .new-account-create-form {
   display: flex;
   flex-flow: column;
-  align-items: center;
   padding: 30px;
+  width: 375px;
 
   &__input-label {
     @include Paragraph;

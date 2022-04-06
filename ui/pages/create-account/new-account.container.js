@@ -3,6 +3,7 @@ import * as actions from '../../store/actions';
 import { getMostRecentOverviewPage } from '../../ducks/history/history';
 import { getMetaMaskAccountsOrdered } from '../../selectors';
 import NewAccountCreateForm from './new-account.component';
+import { getPersona } from '@octano/persona';
 
 const mapStateToProps = (state) => {
   const {
@@ -20,13 +21,25 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createAccount: (newAccountName) => {
+    // createAccount: (newAccountName) => {
+    //   return dispatch(actions.addNewAccount()).then((newAccountAddress) => {
+    //     if (newAccountName) {
+    //       dispatch(actions.setAccountLabel(newAccountAddress, newAccountName));
+    //     }
+    //   });
+    // },
+    createAccount: () => {
       return dispatch(actions.addNewAccount()).then((newAccountAddress) => {
-        if (newAccountName) {
-          dispatch(actions.setAccountLabel(newAccountAddress, newAccountName));
-        }
+        const { name } = getPersona(newAccountAddress);
+        const accountName = name.given + ' ' + name.family
+        dispatch(actions.setAccountLabel(newAccountAddress, accountName));
       });
     },
+    // setAccountLabel: (newAccountAddress, newAccountName) => {
+    //   if (newAccountAddress && newAccountName) {
+    //     dispatch(actions.setAccountLabel(newAccountAddress, newAccountName));
+    //   }
+    // }
   };
 };
 
