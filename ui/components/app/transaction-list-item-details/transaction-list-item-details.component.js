@@ -57,20 +57,13 @@ export default class TransactionListItemDetails extends PureComponent {
       transactionGroup: { primaryTransaction },
       rpcPrefs,
     } = this.props;
+
+
+
     const blockExplorerLink = getBlockExplorerLink(
       primaryTransaction,
       rpcPrefs,
     );
-
-    this.context.trackEvent({
-      category: 'Transactions',
-      event: 'Clicked Block Explorer Link',
-      properties: {
-        link_type: 'Transaction Block Explorer',
-        action: 'Transaction Details',
-        block_explorer_domain: getURLHostName(blockExplorerLink),
-      },
-    });
 
     global.platform.openTab({
       url: blockExplorerLink,
