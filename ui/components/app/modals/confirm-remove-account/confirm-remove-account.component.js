@@ -16,7 +16,6 @@ export default class ConfirmRemoveAccount extends Component {
 
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   handleRemove = () => {
@@ -59,15 +58,6 @@ export default class ConfirmRemoveAccount extends Component {
                 chainId,
                 rpcPrefs,
               );
-              this.context.trackEvent({
-                category: 'Accounts',
-                event: 'Clicked Block Explorer Link',
-                properties: {
-                  link_type: 'Account Tracker',
-                  action: 'Remove Account',
-                  block_explorer_domain: getURLHostName(accountLink),
-                },
-              });
               global.platform.openTab({
                 url: accountLink,
               });

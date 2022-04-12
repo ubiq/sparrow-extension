@@ -22,7 +22,6 @@ export default class AccountDetailsModal extends Component {
 
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   render() {
@@ -75,15 +74,6 @@ export default class AccountDetailsModal extends Component {
           className="account-details-modal__button"
           onClick={() => {
             const accountLink = getAccountLink(address, chainId, rpcPrefs);
-            this.context.trackEvent({
-              category: 'Navigation',
-              event: 'Clicked Block Explorer Link',
-              properties: {
-                link_type: 'Account Tracker',
-                action: 'Account Details Modal',
-                block_explorer_domain: getURLHostName(accountLink),
-              },
-            });
             global.platform.openTab({
               url: accountLink,
             });

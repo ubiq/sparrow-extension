@@ -12,7 +12,6 @@ import { CUSTOM_GAS_ESTIMATE } from '../../../../shared/constants/gas';
 export default class GasModalPageContainer extends Component {
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static propTypes = {
@@ -255,19 +254,6 @@ export default class GasModalPageContainer extends Component {
               customGasLimit,
               customGasPrice,
             );
-
-            this.context.trackEvent({
-              event: 'Gas Fees Changed',
-              category: 'swaps',
-              properties: {
-                speed_set: this.state.gasSpeedType,
-                gas_fees: sumHexWEIsToUnformattedFiat(
-                  [newSwapGasTotal, this.props.customTotalSupplement],
-                  'usd',
-                  this.props.usdConversionRate,
-                )?.slice(1),
-              },
-            });
             onSubmit(customGasLimit, customGasPrice);
           }}
           submitText={this.context.t('save')}

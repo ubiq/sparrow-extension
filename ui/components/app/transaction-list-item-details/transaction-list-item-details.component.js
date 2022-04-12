@@ -20,7 +20,6 @@ export default class TransactionListItemDetails extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
     metricsEvent: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static defaultProps = {

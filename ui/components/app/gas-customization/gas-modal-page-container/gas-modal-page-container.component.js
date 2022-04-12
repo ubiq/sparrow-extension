@@ -15,7 +15,6 @@ export default class GasModalPageContainer extends Component {
   static contextTypes = {
     t: PropTypes.func,
     metricsEvent: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static propTypes = {

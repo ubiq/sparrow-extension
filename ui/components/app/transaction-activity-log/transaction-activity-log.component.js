@@ -14,7 +14,6 @@ import { CONFIRMED_STATUS } from './transaction-activity-log.constants';
 export default class TransactionActivityLog extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static propTypes = {
@@ -34,17 +33,6 @@ export default class TransactionActivityLog extends PureComponent {
   handleActivityClick = (activity) => {
     const { rpcPrefs } = this.props;
     const etherscanUrl = getBlockExplorerLink(activity, rpcPrefs);
-
-    this.context.trackEvent({
-      category: 'Transactions',
-      event: 'Clicked Block Explorer Link',
-      properties: {
-        link_type: 'Transaction Block Explorer',
-        action: 'Activity Details',
-        block_explorer_domain: getURLHostName(etherscanUrl),
-      },
-    });
-
     global.platform.openTab({ url: etherscanUrl });
   };
 

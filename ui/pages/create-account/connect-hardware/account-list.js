@@ -135,15 +135,6 @@ class AccountList extends Component {
                     chainId,
                     rpcPrefs,
                   );
-                  this.context.trackEvent({
-                    category: 'Account',
-                    event: 'Clicked Block Explorer Link',
-                    properties: {
-                      actions: 'Hardware Connect',
-                      link_type: 'Account Tracker',
-                      block_explorer_domain: getURLHostName(accountLink),
-                    },
-                  });
                   global.platform.openTab({
                     url: accountLink,
                   });
@@ -260,7 +251,6 @@ AccountList.propTypes = {
 
 AccountList.contextTypes = {
   t: PropTypes.func,
-  trackEvent: PropTypes.func,
 };
 
 export default AccountList;
