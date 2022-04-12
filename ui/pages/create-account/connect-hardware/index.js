@@ -369,14 +369,12 @@ const mapDispatchToProps = (dispatch) => {
       indexes,
       deviceName,
       hdPath,
-      hdPathDescription,
     ) => {
       return dispatch(
         actions.unlockHardwareWalletAccounts(
           indexes,
           deviceName,
           hdPath,
-          hdPathDescription,
         ),
       );
     },

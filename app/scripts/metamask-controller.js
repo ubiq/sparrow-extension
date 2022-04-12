@@ -2179,31 +2179,17 @@ export default class MetamaskController extends EventEmitter {
   }
 
   /**
-   * get hardware account label
-   *
-   * @returns string label
-   */
-
-  getAccountLabel(name, index, hdPathDescription) {
-    return `${name[0].toUpperCase()}${name.slice(1)} ${
-      parseInt(index, 10) + 1
-    } ${hdPathDescription || ''}`.trim();
-  }
-
-  /**
    * Imports an account from a Trezor or Ledger device.
    *
    * @param index
    * @param deviceName
    * @param hdPath
-   * @param hdPathDescription
    * @returns {} keyState
    */
   async unlockHardwareWalletAccount(
     index,
     deviceName,
     hdPath,
-    hdPathDescription,
   ) {
     const keyring = await this.getKeyringForDevice(deviceName, hdPath);
 

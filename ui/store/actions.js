@@ -459,14 +459,12 @@ export function unlockHardwareWalletAccounts(
   indexes,
   deviceName,
   hdPath,
-  hdPathDescription,
 ) {
   log.debug(
     `background.unlockHardwareWalletAccount`,
     indexes,
     deviceName,
     hdPath,
-    hdPathDescription,
   );
   return async (dispatch) => {
     dispatch(showLoadingIndication());
@@ -477,7 +475,6 @@ export function unlockHardwareWalletAccounts(
           index,
           deviceName,
           hdPath,
-          hdPathDescription,
         );
       } catch (e) {
         log.error(e);
