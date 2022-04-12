@@ -48,7 +48,7 @@ import SmartTransactionsController from '@metamask/smart-transactions-controller
 import { SnapController } from '@metamask/snap-controllers';
 import { IframeExecutionService } from '@metamask/iframe-execution-environment-service';
 ///: END:ONLY_INCLUDE_IN
-
+import { getPersona } from '@octano/persona';
 import {
   TRANSACTION_STATUSES,
   TRANSACTION_TYPES,
@@ -2214,12 +2214,9 @@ export default class MetamaskController extends EventEmitter {
     this.preferencesController.setAddresses(newAccounts);
     newAccounts.forEach((address) => {
       if (!oldAccounts.includes(address)) {
-        const label = this.getAccountLabel(
-          deviceName === DEVICE_NAMES.QR ? keyring.getName() : deviceName,
-          index,
-          hdPathDescription,
-        );
-        // Set the account label to Trezor 1 /  Ledger 1 / QR Hardware 1, etc
+        const { name } = getPersona(address)
+        const label = name.given + ' ' + name.family
+        // Set the account label to Persona
         this.preferencesController.setAccountLabel(address, label);
         // Select the account
         this.preferencesController.setSelectedAddress(address);
