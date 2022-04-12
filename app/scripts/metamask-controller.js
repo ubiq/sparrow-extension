@@ -2200,8 +2200,8 @@ export default class MetamaskController extends EventEmitter {
     this.preferencesController.setAddresses(newAccounts);
     newAccounts.forEach((address) => {
       if (!oldAccounts.includes(address)) {
-        const { name } = getPersona(address)
-        const label = name.given + ' ' + name.family
+        const { name } = getPersona(address);
+        const label = `${name.given} ${name.family}`
         // Set the account label to Persona
         this.preferencesController.setAccountLabel(address, label);
         // Select the account
