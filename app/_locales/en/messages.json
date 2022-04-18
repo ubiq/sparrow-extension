@@ -405,26 +405,12 @@
   "buy": {
     "message": "Buy"
   },
-  "buyCryptoWithTransak": {
-    "message": "Buy $1 with Transak",
-    "description": "$1 represents the cypto symbol to be purchased"
-  },
-  "buyCryptoWithTransakDescription": {
-    "message": "Transak supports credit & debit cards, Apple Pay, MobiKwik, and bank transfers (depending on location) in 100+ countries. $1 deposits directly into your MetaMask account.",
-    "description": "$1 represents the crypto symbol to be purchased"
-  },
   "buyEth": {
     "message": "Buy UBQ"
   },
   "buyOther": {
     "message": "Buy $1 or deposit from another account.",
     "description": "$1 is a token symbol"
-  },
-  "buyWithWyre": {
-    "message": "Buy ETH with Wyre"
-  },
-  "buyWithWyreDescription": {
-    "message": "Wyre lets you use a debit card to deposit ETH right in to your MetaMask account."
   },
   "bytes": {
     "message": "Bytes"
@@ -3420,7 +3406,7 @@
     "message": "Theme"
   },
   "themeDescription": {
-    "message": "Choose your preferred MetaMask theme."
+    "message": "Choose your preferred Sparrow theme."
   },
   "thisWillCreate": {
     "message": "This will create a new wallet and Secret Recovery Phrase"

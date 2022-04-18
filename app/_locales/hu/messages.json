@@ -136,12 +136,6 @@
   "browserNotSupported": {
     "message": "Az ön böngészője nem támogatott..."
   },
-  "buyWithWyre": {
-    "message": "Vásároljon UBQ-t a Wyre-rel"
-  },
-  "buyWithWyreDescription": {
-    "message": "A Wyre segítségével egyensen a MetaMaks fiókjában tehet letétbe UBQ-t."
-  },
   "bytes": {
     "message": "Bájtok"
   },
@@ -1045,7 +1039,7 @@
     "message": "Látogass el weboldalunkra"
   },
   "welcome": {
-    "message": "Üdvözöljük a MetaMaskban"
+    "message": "Üdvözöljük a Sparrowban"
   },
   "welcomeBack": {
     "message": "Üdvözöljük újra!"
