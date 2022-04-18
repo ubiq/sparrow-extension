@@ -210,7 +210,7 @@
     "ses": "^0.12.4",
     "single-call-balance-checker-abi": "^1.0.0",
     "sparrow-controllers": "^27.0.3",
-    "sparrow-providers": "^8.1.1",
+    "sparrow-providers": "^8.1.2",
     "swappable-obj-proxy": "^1.1.0",
     "textarea-caret": "^3.0.1",
     "ubiqscan-link": "^2.1.1",

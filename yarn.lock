@@ -25011,10 +25011,10 @@ sparrow-controllers@^27.0.3:
     web3 "^0.20.7"
     web3-provider-engine "^16.0.3"
 
-sparrow-providers@^8.1.1:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/sparrow-providers/-/sparrow-providers-8.1.1.tgz#b70fe0a12cf51dff7038df602a18ae12395820d9"
-  integrity sha512-4GTS9UVwVoQ9VT1Cm2T5bg5xtTKvPRqhcPmA+SjoDWaSZ6dY36da5gCiGjH4kIOirgTkoQlsSdrCzRku/MfLwg==
+sparrow-providers@^8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/sparrow-providers/-/sparrow-providers-8.1.2.tgz#fd299b402f25fe808d30e486968969ef2b820c9c"
+  integrity sha512-PrvxcpIkEg77jEBSOMEiw8I2s5s3+/Jaf/IwnR89B+b/yJG62kxae8rDxhFCxQqvffhMdstUmJyPZjIIin7Q3g==
   dependencies:
     "@metamask/object-multiplex" "^1.1.0"
     "@metamask/safe-event-emitter" "^2.0.0"
