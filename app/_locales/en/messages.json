@@ -2953,17 +2953,11 @@
   "stxDescription": {
     "message": "Sparrow Swaps just got a whole lot smarter! Enabling Smart Transactions will allow Sparrow to programmatically optimize your Swap to help:"
   },
-  "stxErrorNotEnoughFunds": {
-    "message": "Not enough funds for a smart transaction."
-  },
   "stxErrorUnavailable": {
     "message": "Smart Transactions are temporarily unavailable."
   },
   "stxErrorNotEnoughFunds": {
     "message": "Not enough funds for a smart transaction."
-  },
-  "stxErrorUnavailable": {
-    "message": "Smart Transactions are temporarily unavailable."
   },
   "stxFailure": {
     "message": "Swap failed"
