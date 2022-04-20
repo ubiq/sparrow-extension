@@ -26718,10 +26718,10 @@ ubq-contract-metadata@^1.33.1:
   resolved "https://registry.yarnpkg.com/ubq-contract-metadata/-/ubq-contract-metadata-1.33.1.tgz#0b3974be3aae9f61a9fb76b413928f13c31b8a57"
   integrity sha512-cQfGKUyW2gAS8vol91k3UvzXPos58EGjwwawnOCgLRCHnJ53EGeekSvDZ1xhAtc1YbAmJmRKFwQSTMmOcz0vGg==
 
-ubq-ledger-bridge-keyring@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/ubq-ledger-bridge-keyring/-/ubq-ledger-bridge-keyring-0.10.0.tgz#0d35cf09537b62098e350f392bda2ba6939d397c"
-  integrity sha512-1JNwHf1hiat3UqT2eOSolNSPwu7+Yz7nhUb1JVzG81GCHcUpUf+TS/N141CQn9XzVY5LaVAoBwbs/xtVlU9apQ==
+ubq-ledger-bridge-keyring@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/ubq-ledger-bridge-keyring/-/ubq-ledger-bridge-keyring-0.11.0.tgz#2ea448e1b0c5ccc07c101aa6564f094f43c00b5c"
+  integrity sha512-3BXiUrvCsWo/LLPDilV6FSeI7GKoA2wuBQlYJVPTUompCJy+vfZ9CWlUnvbuUZoTp85WQ6b+7X+7+GLH/xpL6w==
   dependencies:
     "@ethereumjs/tx" "^3.2.0"
     eth-sig-util "^2.0.0"
