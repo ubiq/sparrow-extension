@@ -10,7 +10,7 @@ import LogoDepositEth from '../../../ui/logo/logo-deposit-eth';
 export default class DepositEtherModal extends Component {
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func.isRequired,
+    trackEvent: PropTypes.func.isRequired,
   };
 
   static propTypes = {

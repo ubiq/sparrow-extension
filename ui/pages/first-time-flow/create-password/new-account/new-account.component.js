@@ -9,7 +9,7 @@ import TextField from '../../../../components/ui/text-field';
 
 export default class NewAccount extends PureComponent {
   static contextTypes = {
-    metricsEvent: PropTypes.func,
+    trackEvent: PropTypes.func,
     t: PropTypes.func,
   };
 

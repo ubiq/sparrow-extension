@@ -24,7 +24,7 @@ export default class SendFooter extends Component {
 
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func,
+    trackEvent: PropTypes.func,
   };
 
   onCancel() {

@@ -165,7 +165,7 @@ const mapDispatchToProps = (dispatch) => {
 
 JsonImportSubview.contextTypes = {
   t: PropTypes.func,
-  metricsEvent: PropTypes.func,
+  trackEvent: PropTypes.func,
 };
 
 export default compose(

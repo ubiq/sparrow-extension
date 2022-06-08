@@ -17,7 +17,7 @@ import { TYPOGRAPHY, COLORS } from '../../helpers/constants/design-system';
 class RestoreVaultPage extends Component {
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func,
+    trackEvent: PropTypes.func,
   };
 
   static propTypes = {

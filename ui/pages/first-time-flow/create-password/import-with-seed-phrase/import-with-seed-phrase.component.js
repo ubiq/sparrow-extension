@@ -9,7 +9,7 @@ import CreateNewVault from '../../../../components/app/create-new-vault';
 export default class ImportWithSeedPhrase extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func,
+    trackEvent: PropTypes.func,
   };
 
   static propTypes = {

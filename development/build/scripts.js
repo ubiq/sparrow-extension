@@ -34,6 +34,7 @@ const metamaskrc = require('rc')('metamask', {
   INFURA_PROD_PROJECT_ID: process.env.INFURA_PROD_PROJECT_ID,
   ONBOARDING_V2: process.env.ONBOARDING_V2,
   COLLECTIBLES_V1: process.env.COLLECTIBLES_V1,
+  PHISHING_WARNING_PAGE_URL: process.env.PHISHING_WARNING_PAGE_URL,
   TOKEN_DETECTION_V2: process.env.TOKEN_DETECTION_V2,
 });
 
@@ -101,6 +102,70 @@ function getInfuraProjectId({ buildType, environment, testing }) {
     return getConfigValue('INFURA_FLASK_PROJECT_ID');
   }
   throw new Error(`Invalid build type: '${buildType}'`);
+}
+
+/**
+ * Get the appropriate Segment write key.
+ *
+ * @param {object} options - The Segment write key options.
+ * @param {BuildType} options.buildType - The current build type.
+ * @param {keyof ENVIRONMENT} options.environment - The current build environment.
+ * @returns {string} The Segment write key.
+ */
+function getSegmentWriteKey({ buildType, environment }) {
+  if (environment !== ENVIRONMENT.PRODUCTION) {
+    // Skip validation because this is unset on PRs from forks, and isn't necessary for development builds.
+    return metamaskrc.SEGMENT_WRITE_KEY;
+  } else if (buildType === BuildType.main) {
+    return getConfigValue('SEGMENT_PROD_WRITE_KEY');
+  } else if (buildType === BuildType.beta) {
+    return getConfigValue('SEGMENT_BETA_WRITE_KEY');
+  } else if (buildType === BuildType.flask) {
+    return getConfigValue('SEGMENT_FLASK_WRITE_KEY');
+  }
+  throw new Error(`Invalid build type: '${buildType}'`);
+}
+
+/**
+ * Get the URL for the phishing warning page, if it has been set.
+ *
+ * @param {object} options - The phishing warning page options.
+ * @param {boolean} options.testing - Whether this is a test build or not.
+ * @returns {string} The URL for the phishing warning page, or `undefined` if no URL is set.
+ */
+function getPhishingWarningPageUrl({ testing }) {
+  let phishingWarningPageUrl = metamaskrc.PHISHING_WARNING_PAGE_URL;
+
+  if (!phishingWarningPageUrl) {
+    phishingWarningPageUrl = testing
+      ? 'http://localhost:9999/'
+      : 'https://metamask.github.io/phishing-warning/v1.1.0/';
+  }
+
+  // We add a hash/fragment to the URL dynamically, so we need to ensure it
+  // has a valid pathname to append a hash to.
+  const normalizedUrl = phishingWarningPageUrl.endsWith('/')
+    ? phishingWarningPageUrl
+    : `${phishingWarningPageUrl}/`;
+
+  let phishingWarningPageUrlObject;
+  try {
+    // eslint-disable-next-line no-new
+    phishingWarningPageUrlObject = new URL(normalizedUrl);
+  } catch (error) {
+    throw new Error(
+      `Invalid phishing warning page URL: '${normalizedUrl}'`,
+      error,
+    );
+  }
+  if (phishingWarningPageUrlObject.hash) {
+    // The URL fragment must be set dynamically
+    throw new Error(
+      `URL fragment not allowed in phishing warning page URL: '${normalizedUrl}'`,
+    );
+  }
+
+  return normalizedUrl;
 }
 
 const noopWriteStream = through.obj((_file, _fileEncoding, callback) =>
@@ -180,11 +245,6 @@ function createScriptTasks({
       createTaskForBundleDisableConsole({ devMode, testing }),
     );
 
-    const phishingDetectSubtask = createTask(
-      `${taskPrefix}:phishing-detect`,
-      createTaskForBundlePhishingDetect({ devMode, testing }),
-    );
-
     // task for initiating browser livereload
     const initiateLiveReload = async () => {
       if (devMode) {
@@ -206,7 +266,6 @@ function createScriptTasks({
       standardSubtask,
       contentscriptSubtask,
       disableConsoleSubtask,
-      phishingDetectSubtask,
     ].map((subtask) =>
       runInChildProcess(subtask, {
         buildType,
@@ -236,11 +295,11 @@ function createScriptTasks({
     });
   }
 
-  function createTaskForBundlePhishingDetect({ devMode, testing }) {
-    const label = 'phishing-detect';
+  function createTaskForBundleSentry({ devMode, testing }) {
+    const label = 'sentry-install';
     return createNormalBundle({
-      buildType,
       browserPlatforms,
+      buildType,
       destFilepath: `${label}.js`,
       devMode,
       entryFilepath: `./app/scripts/${label}.js`,
@@ -571,6 +630,7 @@ function setupBundlerDefaults(
   },
 ) {
   const { bundlerOpts } = buildConfiguration;
+  const extensions = ['.js', '.ts', '.tsx'];
 
   Object.assign(bundlerOpts, {
     // Source transforms
@@ -578,10 +638,16 @@ function setupBundlerDefaults(
       // Remove code that should be excluded from builds of the current type
       createRemoveFencedCodeTransform(buildType, shouldLintFenceFiles),
       // Transpile top-level code
-      babelify,
+      [
+        babelify,
+        // Run TypeScript files through Babel
+        { extensions },
+      ],
       // Inline `fs.readFileSync` files
       brfs,
     ],
+    // Look for TypeScript files when walking the dependency tree
+    extensions,
     // Use entryFilepath for moduleIds, easier to determine origin file
     fullPaths: devMode,
     // For sourcemaps
@@ -754,6 +820,7 @@ function getEnvironmentVariables({ buildType, devMode, testing, version }) {
     METAMASK_BUILD_TYPE: buildType,
     NODE_ENV: devMode ? ENVIRONMENT.DEVELOPMENT : ENVIRONMENT.PRODUCTION,
     IN_TEST: testing,
+    PHISHING_WARNING_PAGE_URL: getPhishingWarningPageUrl({ testing }),
     PUBNUB_SUB_KEY: process.env.PUBNUB_SUB_KEY || '',
     PUBNUB_PUB_KEY: process.env.PUBNUB_PUB_KEY || '',
     CONF: devMode ? metamaskrc : {},

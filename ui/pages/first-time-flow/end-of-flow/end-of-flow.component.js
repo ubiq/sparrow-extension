@@ -9,7 +9,7 @@ import { returnToOnboardingInitiator } from '../onboarding-initiator-util';
 export default class EndOfFlowScreen extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func,
+    trackEvent: PropTypes.func,
   };
 
   static propTypes = {

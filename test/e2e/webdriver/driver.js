@@ -274,7 +274,9 @@ class Driver {
     await this.executeScript(
       `navigator.clipboard.writeText("${contentToPaste}")`,
     );
-    await this.fill(element, Key.chord(Key.CONTROL, 'v'));
+    const modifierKey =
+      process.platform === 'darwin' ? Key.COMMAND : Key.CONTROL;
+    await this.fill(element, Key.chord(modifierKey, 'v'));
   }
 
   // Navigation
@@ -299,6 +301,10 @@ class Driver {
 
   async switchToWindow(handle) {
     await this.driver.switchTo().window(handle);
+  }
+
+  async switchToFrame(element) {
+    await this.driver.switchTo().frame(element);
   }
 
   async getAllWindowHandles() {

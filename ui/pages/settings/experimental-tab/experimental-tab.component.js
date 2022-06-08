@@ -12,7 +12,7 @@ import { THEME_TYPE } from './experimental-tab.constant';
 export default class ExperimentalTab extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func,
+    trackEvent: PropTypes.func,
   };
 
   static propTypes = {
@@ -212,6 +212,17 @@ export default class ExperimentalTab extends PureComponent {
       },
     ];
 
+    const onChange = (newTheme) => {
+      this.context.trackEvent({
+        category: 'Settings',
+        event: 'Theme Changed',
+        properties: {
+          theme_selected: newTheme,
+        },
+      });
+      setTheme(newTheme);
+    };
+
     return (
       <div className="settings-page__content-row">
         <div className="settings-page__content-item">
@@ -226,7 +237,7 @@ export default class ExperimentalTab extends PureComponent {
               id="select-theme"
               options={themesOptions}
               selectedOption={theme}
-              onChange={async (newTheme) => setTheme(newTheme)}
+              onChange={onChange}
             />
           </div>
         </div>

@@ -97,6 +97,7 @@
       "packages": {
         "@babel/core": true,
         "@babel/helper-annotate-as-pure": true,
+        "@babel/helper-environment-visitor": true,
         "@babel/helper-function-name": true,
         "@babel/helper-member-expression-to-functions": true,
         "@babel/helper-optimise-call-expression": true,
@@ -127,6 +128,11 @@
         "@babel/helper-plugin-utils": true,
         "lodash.debounce": true,
         "resolve": true
+      }
+    },
+    "@babel/helper-environment-visitor": {
+      "packages": {
+        "@babel/types": true
       }
     },
     "@babel/helper-explode-assignable-expression": {
@@ -195,6 +201,7 @@
     },
     "@babel/helper-replace-supers": {
       "packages": {
+        "@babel/helper-environment-visitor": true,
         "@babel/helper-member-expression-to-functions": true,
         "@babel/helper-optimise-call-expression": true,
         "@babel/traverse": true,
@@ -420,6 +427,11 @@
       }
     },
     "@babel/plugin-syntax-top-level-await": {
+      "packages": {
+        "@babel/helper-plugin-utils": true
+      }
+    },
+    "@babel/plugin-syntax-typescript": {
       "packages": {
         "@babel/helper-plugin-utils": true
       }
@@ -672,6 +684,20 @@
         "@babel/helper-plugin-utils": true
       }
     },
+    "@babel/plugin-transform-typescript": {
+      "builtin": {
+        "assert": true
+      },
+      "globals": {
+        "console.warn": true
+      },
+      "packages": {
+        "@babel/core": true,
+        "@babel/helper-create-class-features-plugin": true,
+        "@babel/helper-plugin-utils": true,
+        "@babel/plugin-syntax-typescript": true
+      }
+    },
     "@babel/plugin-transform-unicode-escapes": {
       "packages": {
         "@babel/core": true,
@@ -777,6 +803,13 @@
         "@babel/plugin-transform-react-pure-annotations": true
       }
     },
+    "@babel/preset-typescript": {
+      "packages": {
+        "@babel/helper-plugin-utils": true,
+        "@babel/helper-validator-option": true,
+        "@babel/plugin-transform-typescript": true
+      }
+    },
     "@babel/template": {
       "packages": {
         "@babel/code-frame": true,
@@ -792,6 +825,7 @@
       "packages": {
         "@babel/code-frame": true,
         "@babel/generator": true,
+        "@babel/helper-environment-visitor": true,
         "@babel/helper-function-name": true,
         "@babel/helper-hoist-variables": true,
         "@babel/helper-split-export-declaration": true,
@@ -1053,17 +1087,7 @@
         "ansi-wrap": true
       }
     },
-    "ansi-cyan": {
-      "packages": {
-        "ansi-wrap": true
-      }
-    },
     "ansi-gray": {
-      "packages": {
-        "ansi-wrap": true
-      }
-    },
-    "ansi-red": {
       "packages": {
         "ansi-wrap": true
       }
@@ -1096,8 +1120,7 @@
     },
     "arr-diff": {
       "packages": {
-        "arr-flatten": true,
-        "array-slice": true
+        "arr-flatten": true
       }
     },
     "arr-filter": {
@@ -2239,8 +2262,7 @@
     "extend-shallow": {
       "packages": {
         "assign-symbols": true,
-        "is-extendable": true,
-        "kind-of": true
+        "is-extendable": true
       }
     },
     "extglob": {
@@ -2506,10 +2528,14 @@
     },
     "get-stream": {
       "builtin": {
+        "buffer.constants.MAX_LENGTH": true,
         "stream.PassThrough": true
       },
       "globals": {
         "Buffer.concat": true
+      },
+      "packages": {
+        "pump": true
       }
     },
     "glob": {
@@ -2762,6 +2788,11 @@
         "vinyl-sourcemaps-apply": true
       }
     },
+    "gulp-sort": {
+      "packages": {
+        "through2": true
+      }
+    },
     "gulp-sourcemaps": {
       "builtin": {
         "path.dirname": true,
@@ -2840,6 +2871,7 @@
     },
     "gulp-zip": {
       "builtin": {
+        "buffer.constants.MAX_LENGTH": true,
         "path.join": true
       },
       "packages": {
@@ -3830,8 +3862,6 @@
       },
       "packages": {
         "ansi-colors": true,
-        "ansi-cyan": true,
-        "ansi-red": true,
         "arr-diff": true,
         "arr-union": true,
         "extend-shallow": true

@@ -29,8 +29,27 @@ import IconCaretLeft from './icon-caret-left';
 import IconCaretRight from './icon-caret-right';
 import IconCaretDown from './icon-caret-down';
 import IconCaretUp from './icon-caret-up';
+import IconCheck from './icon-check';
+import IconCog from './icon-cog';
+import IconConnect from './icon-connect';
+import IconImport from './icon-import';
+import IconSpeechBubbles from './icon-speech-bubbles';
+import IconPlus from './icon-plus';
 import IconEye from './icon-eye';
 import IconEyeSlash from './icon-eye-slash';
+import IconTokenSearch from './icon-token-search';
+
+const validColors = [
+  'var(--color-icon-default)',
+  'var(--color-icon-muted)',
+  'var(--color-overlay-inverse)',
+  'var(--color-primary-default)',
+  'var(--color-secondary-default)',
+  'var(--color-error-default)',
+  'var(--color-warning-default)',
+  'var(--color-success-default)',
+  'var(--color-info-default)',
+];
 
 export default {
   title: 'Components/UI/Icon',
@@ -139,10 +158,6 @@ export const DefaultStory = (args) => (
         <IconItem Component={<SwapIconComponent {...args} />} />
         <IconItem Component={<CopyIcon {...args} />} />
         <IconItem Component={<Preloader {...args} />} />
-        <IconItem Component={<IconCaretLeft {...args} />} />
-        <IconItem Component={<IconCaretRight {...args} />} />
-        <IconItem Component={<IconCaretDown {...args} />} />
-        <IconItem Component={<IconCaretUp {...args} />} />
         <IconItem Component={<IconEye {...args} />} />
         <IconItem Component={<IconEyeSlash {...args} />} />
       </div>

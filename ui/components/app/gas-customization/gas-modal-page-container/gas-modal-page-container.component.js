@@ -14,7 +14,6 @@ import BasicTabContent from './basic-tab-content';
 export default class GasModalPageContainer extends Component {
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func,
   };
 
   static propTypes = {

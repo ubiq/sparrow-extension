@@ -19,7 +19,6 @@ import TransactionDecoding from '../transaction-decoding';
 export default class TransactionListItemDetails extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
-    metricsEvent: PropTypes.func,
   };
 
   static defaultProps = {

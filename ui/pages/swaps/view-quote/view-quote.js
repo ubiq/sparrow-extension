@@ -834,7 +834,7 @@ export default function ViewQuote() {
             <div className="view-quote__countdown-timer-container">
               <CountdownTimer
                 timeStarted={quotesLastFetched}
-                warningTime="0:30"
+                warningTime="0:10"
                 labelKey="swapNewQuoteIn"
               />
             </div>

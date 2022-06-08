@@ -405,12 +405,9 @@
   "buy": {
     "message": "Buy"
   },
-  "buyEth": {
-    "message": "Buy UBQ"
-  },
-  "buyOther": {
-    "message": "Buy $1 or deposit from another account.",
-    "description": "$1 is a token symbol"
+  "buyAsset": {
+    "message": "Buy $1",
+    "description": "$1 is the ticker symbol of a an asset the user is being prompted to purchase"
   },
   "bytes": {
     "message": "Bytes"
@@ -1241,6 +1238,9 @@
   "gasEstimatesUnavailableWarning": {
     "message": "Our low, medium and high estimates are not available."
   },
+  "gasFee": {
+    "message": "Gas Fee"
+  },
   "gasLimit": {
     "message": "Gas Limit"
   },
@@ -1586,9 +1586,6 @@
   },
   "lastConnected": {
     "message": "Last Connected"
-  },
-  "layer1Fees": {
-    "message": "Layer 1 fees"
   },
   "learmMoreAboutGas": {
     "message": "Want to $1 about gas?"
@@ -2730,9 +2727,6 @@
   "signed": {
     "message": "Signed"
   },
-  "simulationErrorMessage": {
-    "message": "This transaction is expected to fail. Trying to execute it is expected to be expensive but fail, and is not recommended."
-  },
   "simulationErrorMessageV2": {
     "message": "We were not able to estimate gas. There might be an error in the contract and this transaction may fail."
   },
@@ -3597,9 +3591,6 @@
   },
   "tryAgain": {
     "message": "Try again"
-  },
-  "tryAnywayOption": {
-    "message": "I will try anyway"
   },
   "turnOnTokenDetection": {
     "message": "Turn on enhanced token detection"
