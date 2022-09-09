@@ -137,10 +137,10 @@
     "message": "Jūsų naršyklė neatpažįstama..."
   },
   "buyWithWyre": {
-    "message": "Pirkti UBQ su „Wyre“"
+    "message": "Pirkti $1 su „Wyre“"
   },
   "buyWithWyreDescription": {
-    "message": "„Wyre“ leidžia naudotis kreditine kortele norint įnešti UBQ tiesiai į jūsų „Sparrow“ paskyrą."
+    "message": "„Wyre“ leidžia naudotis kreditine kortele norint įnešti $1 tiesiai į jūsų „Sparrow“ paskyrą."
   },
   "bytes": {
     "message": "Baitai"

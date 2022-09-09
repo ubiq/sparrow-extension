@@ -99,7 +99,7 @@ export default class NewAccount extends PureComponent {
     try {
       await onSubmit(password);
 
-      history.push(INITIALIZE_BACKUP_SEED_PHRASE_ROUTE);
+      history.push(INITIALIZE_SEED_PHRASE_INTRO_ROUTE);
     } catch (error) {
       this.setState({ passwordError: error.message });
     }

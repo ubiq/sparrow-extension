@@ -1,3 +1,5 @@
+import { capitalize } from 'lodash';
+
 export const MAINNET = 'mainnet';
 export const LOCALHOST = 'localhost';
 export const NETWORK_TYPE_RPC = 'rpc';
@@ -7,8 +9,6 @@ export const LOCALHOST_NETWORK_ID = '1337';
 
 export const MAINNET_CHAIN_ID = '0x8';
 export const LOCALHOST_CHAIN_ID = '0x539';
-export const OPTIMISM_CHAIN_ID = '0xa';
-export const OPTIMISM_TESTNET_CHAIN_ID = '0x45';
 
 /**
  * The largest possible chain ID we can handle.
@@ -37,8 +37,15 @@ export const INFURA_PROVIDER_TYPES = [];
 
 export const TEST_CHAINS = [LOCALHOST_CHAIN_ID];
 
+export const TEST_NETWORK_TICKER_MAP = {
+  [ROPSTEN]: `${capitalize(ROPSTEN)}${ETH_SYMBOL}`,
+  [RINKEBY]: `${capitalize(RINKEBY)}${ETH_SYMBOL}`,
+  [KOVAN]: `${capitalize(KOVAN)}${ETH_SYMBOL}`,
+  [GOERLI]: `${capitalize(GOERLI)}${ETH_SYMBOL}`,
+};
+
 /**
- * Map of all build-in Infura networks to their network and chain IDs.
+ * Map of all build-in Infura networks to their network, ticker and chain IDs.
  */
 export const NETWORK_TYPE_TO_ID_MAP = {
   [MAINNET]: { networkId: MAINNET_NETWORK_ID, chainId: MAINNET_CHAIN_ID },
@@ -66,6 +73,19 @@ export const CHAIN_ID_TO_TYPE_MAP = Object.entries(
 export const CHAIN_ID_TO_RPC_URL_MAP = {
   [MAINNET_CHAIN_ID]: MAINNET_RPC_URL,
   [LOCALHOST_CHAIN_ID]: LOCALHOST_RPC_URL,
+};
+
+export const CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP = {
+  [MAINNET_CHAIN_ID]: ETH_TOKEN_IMAGE_URL,
+  [AVALANCHE_CHAIN_ID]: AVAX_TOKEN_IMAGE_URL,
+  [BSC_CHAIN_ID]: BNB_TOKEN_IMAGE_URL,
+  [POLYGON_CHAIN_ID]: MATIC_TOKEN_IMAGE_URL,
+  [ARBITRUM_CHAIN_ID]: AETH_TOKEN_IMAGE_URL,
+  [BSC_CHAIN_ID]: BNB_TOKEN_IMAGE_URL,
+  [FANTOM_CHAIN_ID]: FTM_TOKEN_IMAGE_URL,
+  [HARMONY_CHAIN_ID]: HARMONY_ONE_TOKEN_IMAGE_URL,
+  [OPTIMISM_CHAIN_ID]: OPTIMISM_TOKEN_IMAGE_URL,
+  [PALM_CHAIN_ID]: PALM_TOKEN_IMAGE_URL,
 };
 
 export const CHAIN_ID_TO_NETWORK_ID_MAP = Object.values(
@@ -123,5 +143,98 @@ export const BUYABLE_CHAINS_MAP = {
   [MAINNET_CHAIN_ID]: {
     nativeCurrency: ETH_SYMBOL,
     network: BUYABLE_CHAIN_ETHEREUM_NETWORK_NAME,
+    transakCurrencies: [ETH_SYMBOL, 'USDT', 'USDC', 'DAI'],
+    moonPay: {
+      defaultCurrencyCode: 'ubq',
+      showOnlyCurrencies: 'ubq,usdt,usdc,dai',
+    },
+    wyre: {
+      srn: 'ubiq',
+      currencyCode: ETH_SYMBOL,
+    },
+    coinbasePayCurrencies: [ETH_SYMBOL, 'USDC', 'DAI'],
   },
 };
+
+export const FEATURED_RPCS = [
+  {
+    chainId: ARBITRUM_CHAIN_ID,
+    nickname: ARBITRUM_DISPLAY_NAME,
+    rpcUrl: `https://arbitrum-mainnet.infura.io/v3/${infuraProjectId}`,
+    ticker: ARBITRUM_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://explorer.arbitrum.io',
+      imageUrl: AETH_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: AVALANCHE_CHAIN_ID,
+    nickname: AVALANCHE_DISPLAY_NAME,
+    rpcUrl: 'https://api.avax.network/ext/bc/C/rpc',
+    ticker: AVALANCHE_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://snowtrace.io/',
+      imageUrl: AVAX_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: BSC_CHAIN_ID,
+    nickname: BNB_DISPLAY_NAME,
+    rpcUrl: 'https://bsc-dataseed.binance.org/',
+    ticker: BNB_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://bscscan.com/',
+      imageUrl: BNB_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: FANTOM_CHAIN_ID,
+    nickname: FANTOM_DISPLAY_NAME,
+    rpcUrl: 'https://rpc.ftm.tools/',
+    ticker: FANTOM_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://ftmscan.com/',
+      imageUrl: FTM_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: HARMONY_CHAIN_ID,
+    nickname: HARMONY_DISPLAY_NAME,
+    rpcUrl: 'https://api.harmony.one/',
+    ticker: HARMONY_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://explorer.harmony.one/',
+      imageUrl: HARMONY_ONE_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: OPTIMISM_CHAIN_ID,
+    nickname: OPTIMISM_DISPLAY_NAME,
+    rpcUrl: `https://optimism-mainnet.infura.io/v3/${infuraProjectId}`,
+    ticker: ETH_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://optimistic.etherscan.io/',
+      imageUrl: OPTIMISM_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: PALM_CHAIN_ID,
+    nickname: PALM_DISPLAY_NAME,
+    rpcUrl: `https://palm-mainnet.infura.io/v3/${infuraProjectId}`,
+    ticker: PALM_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://explorer.palm.io/',
+      imageUrl: PALM_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: POLYGON_CHAIN_ID,
+    nickname: `${POLYGON_DISPLAY_NAME} ${capitalize(MAINNET)}`,
+    rpcUrl: `https://polygon-mainnet.infura.io/v3/${infuraProjectId}`,
+    ticker: MATIC_SYMBOL,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://polygonscan.com/',
+      imageUrl: MATIC_TOKEN_IMAGE_URL,
+    },
+  },
+];

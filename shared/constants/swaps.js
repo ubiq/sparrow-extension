@@ -53,10 +53,15 @@ export const GAS_DEV_API_BASE_URL =
 
 const MAINNET_DEFAULT_BLOCK_EXPLORER_URL = 'https://ubiqscan.io/';
 
-export const ALLOWED_SWAPS_CHAIN_IDS = {
-  [MAINNET_CHAIN_ID]: true,
-  [SWAPS_TESTNET_CHAIN_ID]: true,
-};
+export const ALLOWED_PROD_SWAPS_CHAIN_IDS = [
+  MAINNET_CHAIN_ID,
+  SWAPS_TESTNET_CHAIN_ID,
+];
+
+export const ALLOWED_DEV_SWAPS_CHAIN_IDS = [
+  ...ALLOWED_PROD_SWAPS_CHAIN_IDS,
+  RINKEBY_CHAIN_ID,
+];
 
 export const ALLOWED_SMART_TRANSACTIONS_CHAIN_IDS = [MAINNET_CHAIN_ID];
 
@@ -93,3 +98,13 @@ export const SWAPS_CHAINID_DEFAULT_BLOCK_EXPLORER_URL_MAP = {
 export const ETHEREUM = 'ethereum';
 
 export const SWAPS_CLIENT_ID = 'extension';
+
+export const TOKEN_BUCKET_PRIORITY = {
+  OWNED: 'owned',
+  TOP: 'top',
+};
+
+export const SLIPPAGE = {
+  DEFAULT: 2,
+  HIGH: 3,
+};

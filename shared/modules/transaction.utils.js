@@ -8,11 +8,11 @@ import { readAddressAsContract } from './contract-utils';
 import { isEqualCaseInsensitive } from './string-utils';
 
 /**
- * @typedef { 'transfer' | 'approve' | 'transferfrom' | 'contractInteraction'| 'simpleSend' } InferrableTransactionTypes
+ * @typedef { 'transfer' | 'approve' | 'setapprovalforall' | 'transferfrom' | 'contractInteraction'| 'simpleSend' } InferrableTransactionTypes
  */
 
 /**
- * @typedef {Object} InferTransactionTypeResult
+ * @typedef {object} InferTransactionTypeResult
  * @property {InferrableTransactionTypes} type - The type of transaction
  * @property {string} getCodeResponse - The contract code, in hex format if
  *  it exists. '0x0' or '0x' are also indicators of non-existent contract
@@ -135,7 +135,7 @@ export function parseStandardTokenTransactionData(data) {
  * represent specific events that we control from the extension and are added manually
  * at transaction creation.
  *
- * @param {Object} txParams - Parameters for the transaction
+ * @param {object} txParams - Parameters for the transaction
  * @param {EthQuery} query - EthQuery instance
  * @returns {InferTransactionTypeResult}
  */
@@ -148,32 +148,35 @@ export async function determineTransactionType(txParams, query) {
     log.debug('Failed to parse transaction data.', error, data);
   }
 
-  const tokenMethodName = [
-    TRANSACTION_TYPES.TOKEN_METHOD_APPROVE,
-    TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER,
-    TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER_FROM,
-    TRANSACTION_TYPES.TOKEN_METHOD_SAFE_TRANSFER_FROM,
-  ].find((methodName) => isEqualCaseInsensitive(methodName, name));
-
   let result;
-  if (data && tokenMethodName) {
-    result = tokenMethodName;
-  } else if (data && !to) {
-    result = TRANSACTION_TYPES.DEPLOY_CONTRACT;
-  }
-
   let contractCode;
 
-  if (!result) {
+  if (data && !to) {
+    result = TRANSACTION_TYPES.DEPLOY_CONTRACT;
+  } else {
     const {
       contractCode: resultCode,
       isContractAddress,
     } = await readAddressAsContract(query, to);
 
     contractCode = resultCode;
-    result = isContractAddress
-      ? TRANSACTION_TYPES.CONTRACT_INTERACTION
-      : TRANSACTION_TYPES.SIMPLE_SEND;
+
+    if (isContractAddress) {
+      const tokenMethodName = [
+        TRANSACTION_TYPES.TOKEN_METHOD_APPROVE,
+        TRANSACTION_TYPES.TOKEN_METHOD_SET_APPROVAL_FOR_ALL,
+        TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER,
+        TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER_FROM,
+        TRANSACTION_TYPES.TOKEN_METHOD_SAFE_TRANSFER_FROM,
+      ].find((methodName) => isEqualCaseInsensitive(methodName, name));
+
+      result =
+        data && tokenMethodName
+          ? tokenMethodName
+          : TRANSACTION_TYPES.CONTRACT_INTERACTION;
+    } else {
+      result = TRANSACTION_TYPES.SIMPLE_SEND;
+    }
   }
 
   return { type: result, getCodeResponse: contractCode };
@@ -181,6 +184,7 @@ export async function determineTransactionType(txParams, query) {
 
 const INFERRABLE_TRANSACTION_TYPES = [
   TRANSACTION_TYPES.TOKEN_METHOD_APPROVE,
+  TRANSACTION_TYPES.TOKEN_METHOD_SET_APPROVAL_FOR_ALL,
   TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER,
   TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER_FROM,
   TRANSACTION_TYPES.CONTRACT_INTERACTION,
@@ -220,6 +224,7 @@ export async function determineTransactionAssetType(
   // method to get the asset type.
   const isTokenMethod = [
     TRANSACTION_TYPES.TOKEN_METHOD_APPROVE,
+    TRANSACTION_TYPES.TOKEN_METHOD_SET_APPROVAL_FOR_ALL,
     TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER,
     TRANSACTION_TYPES.TOKEN_METHOD_TRANSFER_FROM,
   ].find((methodName) => methodName === inferrableType);

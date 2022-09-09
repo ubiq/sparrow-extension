@@ -137,10 +137,10 @@
     "message": "Vaš brskalnik ni podptrt ..."
   },
   "buyWithWyre": {
-    "message": "Kupi UBQ z Wyre"
+    "message": "Kupi $1 z Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vam omogoča, da s kreditno kartico nakažete UBQ neposredno na svoj račun Sparrow."
+    "message": "Wyre vam omogoča, da s kreditno kartico nakažete $1 neposredno na svoj račun Sparrow."
   },
   "bytes": {
     "message": "Bajti"

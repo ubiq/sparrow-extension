@@ -131,10 +131,10 @@
     "message": "Váš prehliadač nie je podporovaný..."
   },
   "buyWithWyre": {
-    "message": "Kúpte UBQ s Wyre"
+    "message": "Kúpte $1 s Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vám umožňuje použiť kreditnú kartu na vloženie depozitu UBQ priamo na váš účet Sparrow."
+    "message": "Wyre vám umožňuje použiť kreditnú kartu na vloženie depozitu $1 priamo na váš účet Sparrow."
   },
   "bytes": {
     "message": "Bajty"

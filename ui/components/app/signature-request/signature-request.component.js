@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Identicon from '../../ui/identicon';
 import LedgerInstructionField from '../ledger-instruction-field';
 import { sanitizeMessage } from '../../../helpers/utils/util';
+import SiteOrigin from '../../ui/site-origin';
 import Header from './signature-request-header';
 import Footer from './signature-request-footer';
 import Message from './signature-request-message';
@@ -41,7 +42,6 @@ export default class SignatureRequest extends PureComponent {
 
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   state = {
@@ -101,7 +101,10 @@ export default class SignatureRequest extends PureComponent {
           <div className="signature-request-content__info--bolded">
             {domain.name}
           </div>
-          <div className="signature-request-content__info">{origin}</div>
+          <SiteOrigin
+            className="signature-request-content__info"
+            siteOrigin={origin}
+          />
           <div className="signature-request-content__info">
             {this.formatWallet(fromAddress)}
           </div>

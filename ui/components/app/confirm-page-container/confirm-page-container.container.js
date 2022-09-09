@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import {
   getAccountsWithLabels,
   getAddressBookEntry,
+  getNetworkIdentifier,
 } from '../../../selectors';
 import { showModal } from '../../../store/actions';
 import ConfirmPageContainer from './confirm-page-container.component';
@@ -9,6 +10,7 @@ import ConfirmPageContainer from './confirm-page-container.component';
 function mapStateToProps(state, ownProps) {
   const to = ownProps.toAddress;
   const contact = getAddressBookEntry(state, to);
+  const networkIdentifier = getNetworkIdentifier(state);
   return {
     contact,
     toName: contact?.name || ownProps.toName,
@@ -16,6 +18,7 @@ function mapStateToProps(state, ownProps) {
       .map((accountWithLabel) => accountWithLabel.address)
       .includes(to),
     to,
+    networkIdentifier,
   };
 }
 

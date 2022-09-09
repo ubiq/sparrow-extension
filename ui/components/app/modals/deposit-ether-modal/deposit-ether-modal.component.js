@@ -5,6 +5,10 @@ import {
   BUYABLE_CHAINS_MAP,
 } from '../../../../../shared/constants/network';
 import Button from '../../../ui/button';
+import LogoMoonPay from '../../../ui/logo/logo-moonpay';
+import LogoWyre from '../../../ui/logo/logo-wyre';
+import LogoTransak from '../../../ui/logo/logo-transak';
+import LogoCoinbasePay from '../../../ui/logo/logo-coinbasepay';
 import LogoDepositEth from '../../../ui/logo/logo-deposit-eth';
 
 export default class DepositEtherModal extends Component {
@@ -16,6 +20,15 @@ export default class DepositEtherModal extends Component {
   static propTypes = {
     chainId: PropTypes.string.isRequired,
     isTestnet: PropTypes.bool.isRequired,
+    isBuyableTransakChain: PropTypes.bool.isRequired,
+    isBuyableMoonPayChain: PropTypes.bool.isRequired,
+    isBuyableWyreChain: PropTypes.bool.isRequired,
+    isBuyableCoinbasePayChain: PropTypes.bool.isRequired,
+    toWyre: PropTypes.func.isRequired,
+    toTransak: PropTypes.func.isRequired,
+    toMoonPay: PropTypes.func.isRequired,
+    toCoinbasePay: PropTypes.func.isRequired,
+    address: PropTypes.string.isRequired,
     toFaucet: PropTypes.func.isRequired,
     hideWarning: PropTypes.func.isRequired,
     hideModal: PropTypes.func.isRequired,
@@ -85,7 +98,20 @@ export default class DepositEtherModal extends Component {
   }
 
   render() {
-    const { chainId, toFaucet, isTestnet } = this.props;
+    const {
+      chainId,
+      toWyre,
+      toTransak,
+      toMoonPay,
+      toCoinbasePay,
+      address,
+      toFaucet,
+      isTestnet,
+      isBuyableTransakChain,
+      isBuyableMoonPayChain,
+      isBuyableWyreChain,
+      isBuyableCoinbasePayChain,
+    } = this.props;
     const { t } = this.context;
     const networkName = NETWORK_TO_NAME_MAP[chainId];
     const symbol = BUYABLE_CHAINS_MAP[chainId].nativeCurrency;
@@ -109,6 +135,46 @@ export default class DepositEtherModal extends Component {
         </div>
         <div className="page-container__content">
           <div className="deposit-ether-modal__buy-rows">
+            {this.renderRow({
+              logo: <LogoCoinbasePay className="deposit-ether-modal__logo" />,
+              title: t('buyCryptoWithCoinbasePay', [symbol]),
+              text: t('buyCryptoWithCoinbasePayDescription', [symbol]),
+              buttonLabel: t('continueToCoinbasePay'),
+              onButtonClick: () => {
+                toCoinbasePay(address, chainId);
+              },
+              hide: !isBuyableCoinbasePayChain,
+            })}
+            {this.renderRow({
+              logo: <LogoTransak className="deposit-ether-modal__logo" />,
+              title: t('buyCryptoWithTransak', [symbol]),
+              text: t('buyCryptoWithTransakDescription', [symbol]),
+              buttonLabel: t('continueToTransak'),
+              onButtonClick: () => {
+                toTransak(address, chainId);
+              },
+              hide: !isBuyableTransakChain,
+            })}
+            {this.renderRow({
+              logo: <LogoMoonPay className="deposit-ether-modal__logo" />,
+              title: t('buyCryptoWithMoonPay', [symbol]),
+              text: t('buyCryptoWithMoonPayDescription', [symbol]),
+              buttonLabel: t('continueToMoonPay'),
+              onButtonClick: () => {
+                toMoonPay(address, chainId);
+              },
+              hide: !isBuyableMoonPayChain,
+            })}
+            {this.renderRow({
+              logo: <LogoWyre className="deposit-ether-modal__logo" />,
+              title: t('buyWithWyre', [symbol]),
+              text: t('buyWithWyreDescription', [symbol]),
+              buttonLabel: t('continueToWyre'),
+              onButtonClick: () => {
+                toWyre(address, chainId);
+              },
+              hide: !isBuyableWyreChain,
+            })}
             {this.renderRow({
               logo: (
                 <LogoDepositEth className="deposit-ether-modal__logo--lg" />

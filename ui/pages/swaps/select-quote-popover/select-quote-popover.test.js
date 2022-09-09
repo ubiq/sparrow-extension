@@ -10,6 +10,7 @@ const createProps = (customProps = {}) => {
     swapToSymbol: 'UBQ',
     initialAggId: 'initialAggId',
     onQuoteDetailsIsOpened: jest.fn(),
+    hideEstimatedGasFee: false,
     ...customProps,
   };
 };

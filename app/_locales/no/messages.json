@@ -137,10 +137,10 @@
     "message": "Nettleseren din støttes ikke ..."
   },
   "buyWithWyre": {
-    "message": "Kjøp UBQ med Wyre"
+    "message": "Kjøp $1 med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lar deg bruke et kredittkort for å sette inn UBQ rett på Sparrow-kontoen din."
+    "message": "Wyre lar deg bruke et kredittkort for å sette inn $1 rett på Sparrow-kontoen din."
   },
   "cancel": {
     "message": "Avbryt"

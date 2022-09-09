@@ -70,7 +70,6 @@ const renderHeartBeatIfNotInTest = () =>
 export default class ConfirmTransactionBase extends Component {
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static propTypes = {
@@ -311,6 +310,7 @@ export default class ConfirmTransactionBase extends Component {
     };
 
     const hasSimulationError = Boolean(txData.simulationFails);
+
     const renderSimulationFailureWarning =
       hasSimulationError && !userAcknowledgedGasMissing;
     const networkName = NETWORK_TO_NAME_MAP[txData.chainId];
@@ -390,7 +390,7 @@ export default class ConfirmTransactionBase extends Component {
           <div className="custom-nonce-input">
             <TextField
               type="number"
-              min="0"
+              min={0}
               placeholder={
                 typeof nextNonce === 'number' ? nextNonce.toString() : null
               }
@@ -519,10 +519,10 @@ export default class ConfirmTransactionBase extends Component {
                   maxPriorityFeePerGas={hexWEIToDecGWEI(
                     maxPriorityFeePerGas ||
                       txData.txParams.maxPriorityFeePerGas,
-                  )}
+                  ).toString()}
                   maxFeePerGas={hexWEIToDecGWEI(
                     maxFeePerGas || txData.txParams.maxFeePerGas,
-                  )}
+                  ).toString()}
                 />
               )}
             </>
@@ -811,12 +811,15 @@ export default class ConfirmTransactionBase extends Component {
   }
 
   renderTitleComponent() {
-    const { title, hexTransactionAmount } = this.props;
+    const { title, hexTransactionAmount, txData } = this.props;
 
     // Title string passed in by props takes priority
     if (title) {
       return null;
     }
+
+    const isContractInteraction =
+      txData.type === TRANSACTION_TYPES.CONTRACT_INTERACTION;
 
     return (
       <UserPreferencedCurrencyDisplay
@@ -824,7 +827,8 @@ export default class ConfirmTransactionBase extends Component {
         type={PRIMARY}
         showEthLogo
         ethLogoHeight={24}
-        hideLabel
+        hideLabel={!isContractInteraction}
+        showCurrencySuffix={isContractInteraction}
       />
     );
   }
@@ -976,7 +980,10 @@ export default class ConfirmTransactionBase extends Component {
     } = this.getNavigateTxData();
 
     let functionType;
-    if (txData.type === TRANSACTION_TYPES.CONTRACT_INTERACTION) {
+    if (
+      txData.type === TRANSACTION_TYPES.CONTRACT_INTERACTION &&
+      txData.origin !== 'metamask'
+    ) {
       functionType = getMethodName(name);
     }
 

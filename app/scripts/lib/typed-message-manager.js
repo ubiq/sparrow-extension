@@ -14,12 +14,12 @@ import { isValidHexAddress } from '../../../shared/modules/hexstring-utils';
  * Represents, and contains data about, an 'eth_signTypedData' type signature request. These are created when a
  * signature for an eth_signTypedData call is requested.
  *
- * @typedef {Object} TypedMessage
+ * @typedef {object} TypedMessage
  * @property {number} id An id to track and identify the message object
- * @property {Object} msgParams The parameters to pass to the eth_signTypedData method once the signature request is
+ * @property {object} msgParams The parameters to pass to the eth_signTypedData method once the signature request is
  * approved.
- * @property {Object} msgParams.metamaskId Added to msgParams for tracking and identification within Sparrow.
- * @property {Object} msgParams.from The address that is making the signature request.
+ * @property {object} msgParams.metamaskId Added to msgParams for tracking and identification within Sparrow.
+ * @property {object} msgParams.from The address that is making the signature request.
  * @property {string} msgParams.data A hex string conversion of the raw buffer data of the signature request
  * @property {number} time The epoch time at which the this message was created
  * @property {string} status Indicates whether the signature request is 'unapproved', 'approved', 'signed', 'rejected', or 'errored'
@@ -58,7 +58,7 @@ export default class TypedMessageManager extends EventEmitter {
   /**
    * A getter for the 'unapproved' TypedMessages in this.messages
    *
-   * @returns {Object} An index of TypedMessage ids to TypedMessages, for all 'unapproved' TypedMessages in
+   * @returns {object} An index of TypedMessage ids to TypedMessages, for all 'unapproved' TypedMessages in
    * this.messages
    */
   getUnapprovedMsgs() {
@@ -75,8 +75,8 @@ export default class TypedMessageManager extends EventEmitter {
    * the new TypedMessage to this.messages, and to save the unapproved TypedMessages from that list to
    * this.memStore. Before any of this is done, msgParams are validated
    *
-   * @param {Object} msgParams - The params for the eth_sign call to be made after the message is approved.
-   * @param {Object} [req] - The original request object possibly containing the origin
+   * @param {object} msgParams - The params for the eth_sign call to be made after the message is approved.
+   * @param {object} [req] - The original request object possibly containing the origin
    * @param version
    * @returns {promise} When the message has been signed or rejected
    */
@@ -115,8 +115,8 @@ export default class TypedMessageManager extends EventEmitter {
    * the new TypedMessage to this.messages, and to save the unapproved TypedMessages from that list to
    * this.memStore. Before any of this is done, msgParams are validated
    *
-   * @param {Object} msgParams - The params for the eth_sign call to be made after the message is approved.
-   * @param {Object} [req] - The original request object possibly containing the origin
+   * @param {object} msgParams - The params for the eth_sign call to be made after the message is approved.
+   * @param {object} [req] - The original request object possibly containing the origin
    * @param version
    * @returns {number} The id of the newly created TypedMessage.
    */
@@ -151,7 +151,7 @@ export default class TypedMessageManager extends EventEmitter {
   /**
    * Helper method for this.addUnapprovedMessage. Validates that the passed params have the required properties.
    *
-   * @param {Object} params - The params to validate
+   * @param {object} params - The params to validate
    */
   validateParams(params) {
     assert.ok(
@@ -283,7 +283,7 @@ export default class TypedMessageManager extends EventEmitter {
   /**
    * Removes the metamaskId property from passed msgParams and returns a promise which resolves the updated msgParams
    *
-   * @param {Object} msgParams - The msgParams to modify
+   * @param {object} msgParams - The msgParams to modify
    * @returns {Promise<object>} Promises the msgParams with the metamaskId property removed
    */
   prepMsgForSigning(msgParams) {

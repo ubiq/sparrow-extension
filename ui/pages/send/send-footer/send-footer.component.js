@@ -5,6 +5,7 @@ import {
   CONFIRM_TRANSACTION_ROUTE,
   DEFAULT_ROUTE,
 } from '../../../helpers/constants/routes';
+import { EVENT } from '../../../../shared/constants/metametrics';
 import { SEND_STAGES } from '../../../ducks/send';
 
 export default class SendFooter extends Component {
@@ -17,6 +18,7 @@ export default class SendFooter extends Component {
     to: PropTypes.string,
     toAccounts: PropTypes.array,
     sendStage: PropTypes.string,
+    sendErrors: PropTypes.object,
     mostRecentOverviewPage: PropTypes.string.isRequired,
     cancelTx: PropTypes.func,
     draftTransactionID: PropTypes.string,

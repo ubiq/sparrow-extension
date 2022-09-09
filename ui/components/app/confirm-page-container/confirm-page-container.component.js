@@ -69,6 +69,7 @@ export default class ConfirmPageContainer extends Component {
     unapprovedTxCount: PropTypes.number,
     origin: PropTypes.string.isRequired,
     ethGasPriceWarning: PropTypes.string,
+    networkIdentifier: PropTypes.string,
     // Navigation
     totalTx: PropTypes.number,
     positionOfCurrentTx: PropTypes.number,
@@ -146,6 +147,7 @@ export default class ConfirmPageContainer extends Component {
       isOwnedAccount,
       supportsEIP1559V2,
       nativeCurrency,
+      networkIdentifier,
     } = this.props;
 
     const showAddToAddressDialog =
@@ -159,7 +161,8 @@ export default class ConfirmPageContainer extends Component {
         currentTransaction.type === TRANSACTION_TYPES.DEPLOY_CONTRACT) &&
       currentTransaction.txParams?.value === '0x0';
 
-    const networkName = NETWORK_TO_NAME_MAP[currentTransaction.chainId];
+    const networkName =
+      NETWORK_TO_NAME_MAP[currentTransaction.chainId] || networkIdentifier;
 
     const { t } = this.context;
 

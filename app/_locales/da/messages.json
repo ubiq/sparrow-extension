@@ -137,10 +137,10 @@
     "message": "Din browser er ikke understøttet..."
   },
   "buyWithWyre": {
-    "message": "Køb UBQ med Wyre"
+    "message": "Køb $1 med Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lader dig bruge et kreditkort til at indbetale UBQ på din Sparrow-konto."
+    "message": "Wyre lader dig bruge et kreditkort til at indbetale $1 på din Sparrow-konto."
   },
   "bytes": {
     "message": "Byte"

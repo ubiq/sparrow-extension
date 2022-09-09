@@ -6,8 +6,6 @@ import Button from '../../../components/ui/button';
 import Checkbox from '../../../components/ui/check-box';
 import Dropdown from '../../../components/ui/dropdown';
 
-import { getURLHostName } from '../../../helpers/utils/util';
-
 import { DEVICE_NAMES } from '../../../../shared/constants/hardware-wallets';
 
 class AccountList extends Component {

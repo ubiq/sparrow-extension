@@ -140,10 +140,10 @@
     "message": "買"
   },
   "buyWithWyre": {
-    "message": "用 Wyre 購買 UBQ"
+    "message": "用 Wyre 購買 $1"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre 讓你使用信用卡在 Sparrow 帳號中直接存入 UBQ。"
+    "message": "Wyre 讓你使用信用卡在 Sparrow 帳號中直接存入 $1 。"
   },
   "bytes": {
     "message": "位元組"

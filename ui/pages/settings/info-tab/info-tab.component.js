@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from '../../../components/ui/button';
 import { isBeta } from '../../../helpers/utils/build-types';
 import {
-  getSettingsSectionNumber,
+  getNumberOfSettingsInSection,
   handleSettingsRefs,
 } from '../../../helpers/utils/settings-search';
 
@@ -17,7 +17,7 @@ export default class InfoTab extends PureComponent {
   };
 
   settingsRefs = Array(
-    getSettingsSectionNumber(this.context.t, this.context.t('about')),
+    getNumberOfSettingsInSection(this.context.t, this.context.t('about')),
   )
     .fill(undefined)
     .map(() => {

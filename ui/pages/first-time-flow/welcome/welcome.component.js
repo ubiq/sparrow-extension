@@ -13,6 +13,7 @@ export default class Welcome extends PureComponent {
   static propTypes = {
     history: PropTypes.object,
     welcomeScreenSeen: PropTypes.bool,
+    isInitialized: PropTypes.bool,
   };
 
   static contextTypes = {
@@ -20,10 +21,19 @@ export default class Welcome extends PureComponent {
   };
 
   componentDidMount() {
-    const { history, welcomeScreenSeen } = this.props;
+    const {
+      history,
+      welcomeScreenSeen,
+      isInitialized,
+    } = this.props;
 
-    if (welcomeScreenSeen) {
+    if (
+      welcomeScreenSeen &&
+      isInitialized 
+    ) {
       history.push(INITIALIZE_CREATE_PASSWORD_ROUTE);
+    } else if (welcomeScreenSeen) {
+      history.push(INITIALIZE_SELECT_ACTION_ROUTE);
     }
   }
 

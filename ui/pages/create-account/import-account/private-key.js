@@ -11,7 +11,6 @@ import { getMostRecentOverviewPage } from '../../../ducks/history/history';
 class PrivateKeyImportView extends Component {
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static propTypes = {

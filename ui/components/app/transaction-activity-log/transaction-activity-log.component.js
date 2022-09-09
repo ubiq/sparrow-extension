@@ -7,7 +7,7 @@ import {
   getEthConversionFromWeiHex,
   getValueFromWeiHex,
 } from '../../../helpers/utils/conversions.util';
-import { formatDate, getURLHostName } from '../../../helpers/utils/util';
+import { formatDate } from '../../../helpers/utils/util';
 import TransactionActivityLogIcon from './transaction-activity-log-icon';
 import { CONFIRMED_STATUS } from './transaction-activity-log.constants';
 

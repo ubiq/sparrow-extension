@@ -99,6 +99,11 @@ describe('Sparrow', function () {
       await driver.delay(largeDelayMs);
     });
 
+    it('clicks the "No thanks" option on the metametrics opt-in screen', async function () {
+      await driver.clickElement('.btn-secondary');
+      await driver.delay(largeDelayMs);
+    });
+
     it('clicks the "Create New Wallet" option', async function () {
       await driver.clickElement({ text: 'Create a Wallet', tag: 'button' });
       await driver.delay(largeDelayMs);
@@ -550,11 +555,6 @@ describe('Sparrow', function () {
     });
 
     it('displays the token approval data', async function () {
-      await driver.clickElement(
-        '.confirm-approve-content__view-full-tx-button',
-      );
-      await driver.delay(regularDelayMs);
-
       const functionType = await driver.findElement(
         '.confirm-approve-content__data .confirm-approve-content__small-text',
       );
@@ -745,11 +745,6 @@ describe('Sparrow', function () {
     });
 
     it('shows the correct recipient', async function () {
-      await driver.clickElement(
-        '.confirm-approve-content__view-full-tx-button',
-      );
-      await driver.delay(regularDelayMs);
-
       const permissionInfo = await driver.findElements(
         '.confirm-approve-content__medium-text',
       );

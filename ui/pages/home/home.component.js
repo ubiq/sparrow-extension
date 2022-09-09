@@ -10,6 +10,7 @@ import TransactionList from '../../components/app/transaction-list';
 import MenuBar from '../../components/app/menu-bar';
 import Popover from '../../components/ui/popover';
 import Button from '../../components/ui/button';
+import Box from '../../components/ui/box';
 import ConnectedSites from '../connected-sites';
 import ConnectedAccounts from '../connected-accounts';
 import { Tabs, Tab } from '../../components/ui/tabs';
@@ -21,9 +22,8 @@ import Typography from '../../components/ui/typography/typography';
 import {
   TYPOGRAPHY,
   FONT_WEIGHT,
-  ///: BEGIN:ONLY_INCLUDE_IN(flask)
+  DISPLAY,
   COLORS,
-  ///: END:ONLY_INCLUDE_IN
 } from '../../helpers/constants/design-system';
 
 import {
@@ -109,7 +109,7 @@ export default class Home extends PureComponent {
     infuraBlocked: PropTypes.bool.isRequired,
     showWhatsNewPopup: PropTypes.bool.isRequired,
     hideWhatsNewPopup: PropTypes.func.isRequired,
-    notificationsToShow: PropTypes.bool.isRequired,
+    announcementsToShow: PropTypes.bool.isRequired,
     ///: BEGIN:ONLY_INCLUDE_IN(flask)
     errorsToShow: PropTypes.object.isRequired,
     shouldShowErrors: PropTypes.bool.isRequired,
@@ -118,7 +118,16 @@ export default class Home extends PureComponent {
     showRecoveryPhraseReminder: PropTypes.bool.isRequired,
     setRecoveryPhraseReminderHasBeenShown: PropTypes.func.isRequired,
     setRecoveryPhraseReminderLastShown: PropTypes.func.isRequired,
-    seedPhraseBackedUp: PropTypes.bool.isRequired,
+    seedPhraseBackedUp: (props) => {
+      if (
+        props.seedPhraseBackedUp !== null &&
+        typeof props.seedPhraseBackedUp !== 'boolean'
+      ) {
+        throw new Error(
+          `seedPhraseBackedUp is required to be null or boolean. Received ${props.seedPhraseBackedUp}`,
+        );
+      }
+    },
     newNetworkAdded: PropTypes.string,
     setNewNetworkAdded: PropTypes.func.isRequired,
     // This prop is used in the `shouldCloseNotificationPopup` function
@@ -127,6 +136,11 @@ export default class Home extends PureComponent {
     newCollectibleAddedMessage: PropTypes.string,
     setNewCollectibleAddedMessage: PropTypes.func.isRequired,
     closeNotificationPopup: PropTypes.func.isRequired,
+    newTokensImported: PropTypes.string,
+    setNewTokensImported: PropTypes.func.isRequired,
+    newCustomNetworkAdded: PropTypes.object,
+    setNewCustomNetworkAdded: PropTypes.func,
+    setRpcTarget: PropTypes.func,
   };
 
   state = {
@@ -262,6 +276,11 @@ export default class Home extends PureComponent {
       setNewNetworkAdded,
       newCollectibleAddedMessage,
       setNewCollectibleAddedMessage,
+      newTokensImported,
+      setNewTokensImported,
+      newCustomNetworkAdded,
+      setNewCustomNetworkAdded,
+      setRpcTarget,
     } = this.props;
     return (
       <MultipleNotifications>
@@ -276,14 +295,14 @@ export default class Home extends PureComponent {
                     descriptionText={
                       <>
                         <Typography
-                          color={COLORS.TEXT_MUTED}
+                          color={COLORS.TEXT_ALTERNATIVE}
                           variant={TYPOGRAPHY.H5}
                           fontWeight={FONT_WEIGHT.NORMAL}
                         >
                           {t('somethingWentWrong')}
                         </Typography>
                         <Typography
-                          color={COLORS.TEXT_MUTED}
+                          color={COLORS.TEXT_ALTERNATIVE}
                           variant={TYPOGRAPHY.H7}
                           fontWeight={FONT_WEIGHT.NORMAL}
                         >
@@ -307,8 +326,8 @@ export default class Home extends PureComponent {
             type="success"
             className="home__new-network-notification"
             message={
-              <div className="home__new-network-notification-message">
-                <i className="fa fa-check-circle home__new-network-notification-message--icon" />
+              <Box display={DISPLAY.INLINE_FLEX}>
+                <i className="fa fa-check-circle home__new-nft-notification-icon" />
                 <Typography
                   variant={TYPOGRAPHY.H7}
                   fontWeight={FONT_WEIGHT.NORMAL}
@@ -316,11 +335,11 @@ export default class Home extends PureComponent {
                   {t('newCollectibleAddedMessage')}
                 </Typography>
                 <button
-                  className="fas fa-times home__close"
+                  className="fas fa-times home__new-nft-notification-close"
                   title={t('close')}
                   onClick={() => setNewCollectibleAddedMessage('')}
                 />
-              </div>
+              </Box>
             }
           />
         ) : null}
@@ -329,8 +348,8 @@ export default class Home extends PureComponent {
             type="success"
             className="home__new-network-notification"
             message={
-              <div className="home__new-network-notification-message">
-                <i className="fa fa-check-circle home__new-network-notification-message--icon" />
+              <Box display={DISPLAY.INLINE_FLEX}>
+                <i className="fa fa-check-circle home__new-network-notification-icon" />
                 <Typography
                   variant={TYPOGRAPHY.H7}
                   fontWeight={FONT_WEIGHT.NORMAL}
@@ -338,11 +357,43 @@ export default class Home extends PureComponent {
                   {t('newNetworkAdded', [newNetworkAdded])}
                 </Typography>
                 <button
-                  className="fas fa-times home__close"
+                  className="fas fa-times home__new-network-notification-close"
                   title={t('close')}
                   onClick={() => setNewNetworkAdded('')}
                 />
-              </div>
+              </Box>
+            }
+          />
+        ) : null}
+        {newTokensImported ? (
+          <ActionableMessage
+            type="success"
+            className="home__new-tokens-imported-notification"
+            message={
+              <Box display={DISPLAY.INLINE_FLEX}>
+                <i className="fa fa-check-circle home__new-tokens-imported-notification-icon" />
+                <Box>
+                  <Typography
+                    className="home__new-tokens-imported-notification-title"
+                    variant={TYPOGRAPHY.H6}
+                    fontWeight={FONT_WEIGHT.BOLD}
+                  >
+                    {t('newTokensImportedTitle')}
+                  </Typography>
+                  <Typography
+                    className="home__new-tokens-imported-notification-message"
+                    variant={TYPOGRAPHY.H7}
+                    fontWeight={FONT_WEIGHT.NORMAL}
+                  >
+                    {t('newTokensImportedMessage', [newTokensImported])}
+                  </Typography>
+                </Box>
+                <button
+                  className="fas fa-times home__new-tokens-imported-notification-close"
+                  title={t('close')}
+                  onClick={() => setNewTokensImported('')}
+                />
+              </Box>
             }
           />
         ) : null}
@@ -429,6 +480,53 @@ export default class Home extends PureComponent {
             key="home-infuraBlockedNotification"
           />
         ) : null}
+        {Object.keys(newCustomNetworkAdded).length !== 0 && (
+          <Popover className="home__new-network-added">
+            <i className="fa fa-check-circle fa-2x home__new-network-added__check-circle" />
+            <Typography
+              variant={TYPOGRAPHY.H4}
+              margin={[5, 9, 0, 9]}
+              fontWeight={FONT_WEIGHT.BOLD}
+            >
+              {t('networkAddedSuccessfully')}
+            </Typography>
+            <Box margin={[8, 8, 5, 8]}>
+              <Button
+                type="primary"
+                className="home__new-network-added__switch-to-button"
+                onClick={() => {
+                  setRpcTarget(
+                    newCustomNetworkAdded.rpcUrl,
+                    newCustomNetworkAdded.chainId,
+                    newCustomNetworkAdded.ticker,
+                    newCustomNetworkAdded.chainName,
+                  );
+                  setNewCustomNetworkAdded();
+                }}
+              >
+                <Typography
+                  variant={TYPOGRAPHY.H6}
+                  fontWeight={FONT_WEIGHT.NORMAL}
+                  color={COLORS.PRIMARY_INVERSE}
+                >
+                  {t('switchToNetwork', [newCustomNetworkAdded.chainName])}
+                </Typography>
+              </Button>
+              <Button
+                type="secondary"
+                onClick={() => setNewCustomNetworkAdded()}
+              >
+                <Typography
+                  variant={TYPOGRAPHY.H6}
+                  fontWeight={FONT_WEIGHT.NORMAL}
+                  color={COLORS.PRIMARY_DEFAULT}
+                >
+                  {t('dismiss')}
+                </Typography>
+              </Button>
+            </Box>
+          </Popover>
+        )}
       </MultipleNotifications>
     );
   }
@@ -484,7 +582,7 @@ export default class Home extends PureComponent {
       history,
       connectedStatusPopoverHasBeenShown,
       isPopup,
-      notificationsToShow,
+      announcementsToShow,
       showWhatsNewPopup,
       hideWhatsNewPopup,
       seedPhraseBackedUp,
@@ -502,9 +600,8 @@ export default class Home extends PureComponent {
     const showWhatsNew =
       ((completedOnboarding && firstTimeFlowType === 'import') ||
         !completedOnboarding) &&
-      notificationsToShow &&
+      announcementsToShow &&
       showWhatsNewPopup;
-
     return (
       <div className="main-container">
         <Route path={CONNECTED_ROUTE} component={ConnectedSites} exact />

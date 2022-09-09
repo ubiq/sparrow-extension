@@ -15,7 +15,6 @@ import { conversionUtil } from '../../../shared/modules/conversion.utils';
 export default class ConfirmDecryptMessage extends Component {
   static contextTypes = {
     t: PropTypes.func.isRequired,
-    trackEvent: PropTypes.func.isRequired,
   };
 
   static propTypes = {

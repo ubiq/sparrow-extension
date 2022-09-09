@@ -40,18 +40,23 @@ const props = {
 
 describe('ConfirmApproveContent Component', () => {
   it('should render Confirm approve page correctly', () => {
-    const { queryByText, getByText, getAllByText } = renderComponent(props);
+    const {
+      queryByText,
+      getByText,
+      getAllByText,
+      getByTestId,
+    } = renderComponent(props);
     expect(queryByText('metamask.github.io')).toBeInTheDocument();
-    expect(
-      queryByText('Give permission to access your TST?'),
-    ).toBeInTheDocument();
+    expect(getByTestId('confirm-approve-title').textContent).toBe(
+      ' Give permission to access your TST? ',
+    );
     expect(
       queryByText(
         'By granting permission, you are allowing the following contract to access your funds',
       ),
     ).toBeInTheDocument();
     expect(queryByText('0x9bc5...fef4')).toBeInTheDocument();
-    expect(queryByText('View full transaction details')).toBeInTheDocument();
+    expect(queryByText('Hide full transaction details')).toBeInTheDocument();
 
     expect(queryByText('Edit Permission')).toBeInTheDocument();
     const editPermission = getByText('Edit Permission');
@@ -73,14 +78,15 @@ describe('ConfirmApproveContent Component', () => {
     fireEvent.click(editButtons[1]);
     expect(props.showCustomizeNonceModal).toHaveBeenCalledTimes(1);
 
-    const showHideTxDetails = getByText('View full transaction details');
-    expect(queryByText('Permission request')).not.toBeInTheDocument();
-    expect(queryByText('Approved amount:')).not.toBeInTheDocument();
-    expect(queryByText('Granted to:')).not.toBeInTheDocument();
-    fireEvent.click(showHideTxDetails);
+    const showHideTxDetails = getByText('Hide full transaction details');
     expect(getByText('Permission request')).toBeInTheDocument();
     expect(getByText('Approved amount:')).toBeInTheDocument();
     expect(getByText('Granted to:')).toBeInTheDocument();
+    fireEvent.click(showHideTxDetails);
+    expect(getByText('View full transaction details')).toBeInTheDocument();
+    expect(queryByText('Permission request')).not.toBeInTheDocument();
+    expect(queryByText('Approved amount:')).not.toBeInTheDocument();
+    expect(queryByText('Granted to:')).not.toBeInTheDocument();
     expect(getByText('0x9bc5...fef4')).toBeInTheDocument();
   });
 });

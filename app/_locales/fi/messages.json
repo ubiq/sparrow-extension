@@ -136,6 +136,12 @@
   "browserNotSupported": {
     "message": "Selaintasi ei tueta..."
   },
+  "buyWithWyre": {
+    "message": "Osta $1 :ta Wyrella"
+  },
+  "buyWithWyreDescription": {
+    "message": "Wyre antaa sinun käyttää luottokorttia, jotta voit tallettaa $1 :ta suoraan Sparrow-tilillesi."
+  },
   "bytes": {
     "message": "Tavua"
   },

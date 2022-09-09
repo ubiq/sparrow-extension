@@ -137,10 +137,10 @@
     "message": "Vaš pregledač nije podržan..."
   },
   "buyWithWyre": {
-    "message": "Kupite UBQ preko servisa Wyre"
+    "message": "Kupite $1 preko servisa Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vam dozvoljava da koristite kreditnu karticu kako biste deponovali UBQ pravo na vaš Sparrow nalog."
+    "message": "Wyre vam dozvoljava da koristite kreditnu karticu kako biste deponovali $1 pravo na vaš Sparrow nalog."
   },
   "bytes": {
     "message": "Bajtovi"

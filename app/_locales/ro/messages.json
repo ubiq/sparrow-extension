@@ -137,10 +137,10 @@
     "message": "Browserul dvs. nu este compatibil..."
   },
   "buyWithWyre": {
-    "message": "Cumpărați UBQ cu Wyre"
+    "message": "Cumpărați $1 cu Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre vă permite să folosiți un card de credit pentru a depune UBQ direct în contul dvs. Sparrow."
+    "message": "Wyre vă permite să folosiți un card de credit pentru a depune $1 direct în contul dvs. Sparrow."
   },
   "bytes": {
     "message": "Octeți"

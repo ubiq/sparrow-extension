@@ -137,10 +137,10 @@
     "message": "Vaš se preglednik ne podržava..."
   },
   "buyWithWyre": {
-    "message": "Kupi UBQ Wyerom"
+    "message": "Kupi $1 Wyerom"
   },
   "buyWithWyreDescription": {
-    "message": "Wyreom vam se omogućava korištenje kreditnom karticom za polaganje UBQ-a izravno na vaš račun za Sparrow."
+    "message": "Wyreom vam se omogućava korištenje kreditnom karticom za polaganje $1 -a izravno na vaš račun za Sparrow."
   },
   "bytes": {
     "message": "Bajtovi"

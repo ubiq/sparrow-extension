@@ -29,7 +29,7 @@ class FirefoxDriver {
   /**
    * Builds a {@link FirefoxDriver} instance
    *
-   * @param {Object} options - the options for the build
+   * @param {object} options - the options for the build
    * @param options.responsive
    * @param options.port
    * @param options.type
@@ -40,6 +40,11 @@ class FirefoxDriver {
     const options = new firefox.Options().setProfile(templateProfile);
     options.setProxy(proxy.manual({ https: HTTPS_PROXY_HOST }));
     options.setAcceptInsecureCerts(true);
+    options.setPreference('browser.download.folderList', 2);
+    options.setPreference(
+      'browser.download.dir',
+      `${process.cwd()}/test-artifacts/downloads`,
+    );
     const builder = new Builder()
       .forBrowser('firefox')
       .setFirefoxOptions(options);

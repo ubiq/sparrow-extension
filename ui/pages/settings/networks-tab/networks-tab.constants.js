@@ -1,7 +1,7 @@
 import {
   MAINNET,
   MAINNET_CHAIN_ID,
-  MAINNET_RPC_URL,
+  ETH_SYMBOL,
 } from '../../../../shared/constants/network';
 
 const defaultNetworksData = [
@@ -11,7 +11,7 @@ const defaultNetworksData = [
     providerType: MAINNET,
     rpcUrl: MAINNET_RPC_URL,
     chainId: MAINNET_CHAIN_ID,
-    ticker: 'UBQ',
+    ticker: ETH_SYMBOL,
     blockExplorerUrl: 'https://ubiqscan.io',
   },
 ];

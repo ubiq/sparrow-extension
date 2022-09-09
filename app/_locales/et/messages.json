@@ -136,6 +136,12 @@
   "browserNotSupported": {
     "message": "Teie lehitsejat ei toetata..."
   },
+  "buyWithWyre": {
+    "message": "Ostke $1 -d Wyre'iga"
+  },
+  "buyWithWyreDescription": {
+    "message": "Wyre võimaldab kasutada krediitkaarti, et teha $1 sissemakse otse Sparrow kontole."
+  },
   "bytes": {
     "message": "Baidid"
   },

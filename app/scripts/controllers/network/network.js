@@ -18,11 +18,13 @@ import {
   // INFURA_BLOCKED_KEY,
   MAINNET_RPC_URL,
   MAINNET_DISPLAY_NAME,
-  NETWORK_TO_NAME_MAP,
+  // NETWORK_TO_NAME_MAP,
   CHAIN_ID_TO_RPC_URL_MAP,
   LOCALHOST_CHAIN_ID,
   LOCALHOST_DISPLAY_NAME,
-  LOCALHOST_RPC_URL
+  LOCALHOST_RPC_URL,
+  RINKEBY_CHAIN_ID,
+  TEST_NETWORK_TICKER_MAP
 } from '../../../../shared/constants/network';
 import { SECOND } from '../../../../shared/constants/time';
 import {
@@ -43,6 +45,12 @@ if (process.env.IN_TEST) {
     rpcUrl: LOCALHOST_RPC_URL,
     chainId: LOCALHOST_CHAIN_ID,
     nickname: LOCALHOST_DISPLAY_NAME,
+  };
+} else if (process.env.METAMASK_DEBUG || env === 'test') {
+  defaultProviderConfigOpts = {
+    type: RINKEBY,
+    chainId: RINKEBY_CHAIN_ID,
+    ticker: TEST_NETWORK_TICKER_MAP.rinkeby,
   };
 } else {
   defaultProviderConfigOpts = { type: MAINNET, chainId: MAINNET_CHAIN_ID, rpcUrl: MAINNET_RPC_URL, nickname: MAINNET_DISPLAY_NAME };
@@ -141,7 +149,7 @@ export default class NetworkController extends EventEmitter {
   /**
    * Method to return the latest block for the current network
    *
-   * @returns {Object} Block header
+   * @returns {object} Block header
    */
   getLatestBlock() {
     return new Promise((resolve, reject) => {
@@ -271,6 +279,11 @@ export default class NetworkController extends EventEmitter {
     return NETWORK_TYPE_TO_ID_MAP[type]?.chainId || configChainId;
   }
 
+  getCurrentRpcUrl() {
+    const { rpcUrl } = this.getProviderConfig();
+    return rpcUrl;
+  }
+
   setRpcTarget(rpcUrl, chainId, ticker = 'UBQ', nickname = '', rpcPrefs) {
     assert.ok(
       isPrefixedFormattedHexString(chainId),
@@ -296,20 +309,14 @@ export default class NetworkController extends EventEmitter {
       NETWORK_TYPE_RPC,
       `NetworkController - cannot call "setProviderType" with type "${NETWORK_TYPE_RPC}". Use "setRpcTarget"`,
     );
-    // assert.ok(
-    //   INFURA_PROVIDER_TYPES.includes(type),
-    //   `Unknown Infura provider type "${type}".`,
-    // );
-    const { chainId } = NETWORK_TYPE_TO_ID_MAP[type];
+    const { chainId, ticker } = NETWORK_TYPE_TO_ID_MAP[type];
     const rpcUrl = CHAIN_ID_TO_RPC_URL_MAP[chainId];
-    const nickname = NETWORK_TO_NAME_MAP[type];
-
     this.setProviderConfig({
       type,
       rpcUrl,
       chainId,
-      ticker: 'UBQ',
-      nickname,
+      ticker: ticker ?? 'UBQ',
+      nickname: '',
     });
   }
 

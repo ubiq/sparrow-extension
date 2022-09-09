@@ -13,6 +13,7 @@ import { CONFIRM_TRANSACTION_ROUTE } from '../../../helpers/constants/routes';
 import { useShouldShowSpeedUp } from '../../../hooks/useShouldShowSpeedUp';
 import TransactionStatus from '../transaction-status/transaction-status.component';
 import TransactionIcon from '../transaction-icon';
+import { EVENT } from '../../../../shared/constants/metametrics';
 import {
   TRANSACTION_GROUP_CATEGORIES,
   TRANSACTION_STATUSES,
@@ -37,6 +38,7 @@ import CancelButton from '../cancel-button';
 import CancelSpeedupPopover from '../cancel-speedup-popover';
 import EditGasFeePopover from '../edit-gas-fee-popover';
 import EditGasPopover from '../edit-gas-popover';
+import SiteOrigin from '../../ui/site-origin';
 
 function TransactionListItemInner({
   transactionGroup,
@@ -171,16 +173,13 @@ function TransactionListItemInner({
               date={date}
               status={displayedStatusKey}
             />
-            <span
-              className={
-                subtitleContainsOrigin
-                  ? 'transaction-list-item__origin'
-                  : 'transaction-list-item__address'
-              }
-              title={subtitle}
-            >
-              {subtitle}
-            </span>
+            {subtitleContainsOrigin ? (
+              <SiteOrigin siteOrigin={subtitle} />
+            ) : (
+              <span className="transaction-list-item__address" title={subtitle}>
+                {subtitle}
+              </span>
+            )}
           </h3>
         }
         rightContent={

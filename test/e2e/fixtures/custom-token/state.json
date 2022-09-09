@@ -66,6 +66,9 @@
       "notifications": {
         "8": {
           "isShown": true
+        },
+        "12": {
+          "isShown": true
         }
       }
     },
@@ -118,10 +121,6 @@
       "useNonceField": false,
       "usePhishDetect": true,
       "useStaticTokenList": false
-    },
-    "TokenListController": {
-      "tokenList": {},
-      "tokensChainsCache": {}
     },
     "TokensController": {
       "allTokens": {

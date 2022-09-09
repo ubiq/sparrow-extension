@@ -13,8 +13,8 @@ import CancelButton from '../cancel-button';
 import Popover from '../../ui/popover';
 import { SECOND } from '../../../../shared/constants/time';
 import { TRANSACTION_TYPES } from '../../../../shared/constants/transaction';
-import { getURLHostName } from '../../../helpers/utils/util';
 import TransactionDecoding from '../transaction-decoding';
+import { NETWORKS_ROUTE } from '../../../helpers/constants/routes';
 
 export default class TransactionListItemDetails extends PureComponent {
   static contextTypes = {
@@ -44,6 +44,9 @@ export default class TransactionListItemDetails extends PureComponent {
     senderNickname: PropTypes.string.isRequired,
     recipientNickname: PropTypes.string,
     transactionStatus: PropTypes.func,
+    isCustomNetwork: PropTypes.bool,
+    history: PropTypes.object,
+    blockExplorerLinkText: PropTypes.object,
   };
 
   state = {
@@ -54,6 +57,9 @@ export default class TransactionListItemDetails extends PureComponent {
     const {
       transactionGroup: { primaryTransaction },
       rpcPrefs,
+      isCustomNetwork,
+      history,
+      onClose,
     } = this.props;
 
 
@@ -63,9 +69,14 @@ export default class TransactionListItemDetails extends PureComponent {
       rpcPrefs,
     );
 
-    global.platform.openTab({
-      url: blockExplorerLink,
-    });
+    if (!rpcPrefs.blockExplorerUrl && isCustomNetwork) {
+      onClose();
+      history.push(`${NETWORKS_ROUTE}#blockExplorerUrl`);
+    } else {
+      global.platform.openTab({
+        url: blockExplorerLink,
+      });
+    }
   };
 
   handleCancel = (event) => {
@@ -117,6 +128,7 @@ export default class TransactionListItemDetails extends PureComponent {
       recipientNickname,
       showCancel,
       transactionStatus: TransactionStatus,
+      blockExplorerLinkText,
     } = this.props;
     const {
       primaryTransaction: transaction,
@@ -172,7 +184,9 @@ export default class TransactionListItemDetails extends PureComponent {
                   onClick={this.handleBlockExplorerClick}
                   disabled={!hash}
                 >
-                  {t('viewOnBlockExplorer')}
+                  {blockExplorerLinkText.firstPart === 'addBlockExplorer'
+                    ? t('addBlockExplorer')
+                    : t('viewOnBlockExplorer')}
                 </Button>
               </div>
               <div>
@@ -212,7 +226,10 @@ export default class TransactionListItemDetails extends PureComponent {
             <div className="transaction-list-item-details__cards-container">
               <TransactionBreakdown
                 nonce={transactionGroup.initialTransaction.txParams.nonce}
-                isTokenApprove={type === TRANSACTION_TYPES.TOKEN_METHOD_APPROVE}
+                isTokenApprove={
+                  type === TRANSACTION_TYPES.TOKEN_METHOD_APPROVE ||
+                  type === TRANSACTION_TYPES.TOKEN_METHOD_SET_APPROVAL_FOR_ALL
+                }
                 transaction={transaction}
                 primaryCurrency={primaryCurrency}
                 className="transaction-list-item-details__transaction-breakdown"

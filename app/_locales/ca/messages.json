@@ -137,10 +137,10 @@
     "message": "El teu navegador no és suportat..."
   },
   "buyWithWyre": {
-    "message": "Compra UBQ amb Wyre"
+    "message": "Compra $1 amb Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre et permet utilitzar una targeta de crèdit per dipositar UBQ directe al teu compte Sparrow."
+    "message": "Wyre et permet utilitzar una targeta de crèdit per dipositar $1 directe al teu compte Sparrow."
   },
   "cancel": {
     "message": "Cancel·la"

@@ -1,22 +1,19 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Box from '../../../../components/ui/box';
 import LockIcon from '../../../../components/ui/lock-icon';
 import Button from '../../../../components/ui/button';
 import Snackbar from '../../../../components/ui/snackbar';
 import {
   INITIALIZE_CONFIRM_SEED_PHRASE_ROUTE,
   DEFAULT_ROUTE,
-  INITIALIZE_CREATE_PASSWORD_ROUTE,
 } from '../../../../helpers/constants/routes';
 import { exportAsFile } from '../../../../helpers/utils/util';
-import { returnToOnboardingInitiator } from '../../onboarding-initiator-util';
+import { returnToOnboardingInitiatorTab } from '../../onboarding-initiator-util';
 
 export default class RevealSeedPhrase extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static propTypes = {
@@ -60,7 +57,7 @@ export default class RevealSeedPhrase extends PureComponent {
     await Promise.all([setCompletedOnboarding(), setSeedPhraseBackedUp(false)]);
 
     if (onboardingInitiator) {
-      await returnToOnboardingInitiator(onboardingInitiator);
+      await returnToOnboardingInitiatorTab(onboardingInitiator);
     }
     history.replace(DEFAULT_ROUTE);
   };
@@ -106,7 +103,7 @@ export default class RevealSeedPhrase extends PureComponent {
   render() {
     const { t } = this.context;
     const { isShowingSeedPhrase } = this.state;
-    const { history, onboardingInitiator } = this.props;
+    const { onboardingInitiator } = this.props;
 
     return (
       <div className="reveal-seed-phrase">

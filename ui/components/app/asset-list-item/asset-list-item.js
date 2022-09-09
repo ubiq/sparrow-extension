@@ -9,7 +9,7 @@ import Tooltip from '../../ui/tooltip';
 import InfoIcon from '../../ui/icon/info-icon.component';
 import Button from '../../ui/button';
 import { useI18nContext } from '../../../hooks/useI18nContext';
-import { updateSendAsset } from '../../../ducks/send';
+import { startNewDraftTransaction } from '../../../ducks/send';
 import { SEND_ROUTE } from '../../../helpers/constants/routes';
 import { SEVERITIES } from '../../../helpers/constants/design-system';
 import { INVALID_ASSET_TYPE } from '../../../helpers/constants/error-keys';
@@ -63,7 +63,7 @@ const AssetListItem = ({
           e.stopPropagation();
           try {
             await dispatch(
-              updateSendAsset({
+              startNewDraftTransaction({
                 type: ASSET_TYPES.TOKEN,
                 details: {
                   address: tokenAddress,

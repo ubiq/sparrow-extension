@@ -13,7 +13,6 @@ const EMPTY_SEEDS = Array(12).fill(null);
 
 export default class ConfirmSeedPhrase extends PureComponent {
   static contextTypes = {
-    trackEvent: PropTypes.func,
     t: PropTypes.func,
   };
 

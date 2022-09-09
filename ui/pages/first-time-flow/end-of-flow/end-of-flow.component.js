@@ -4,12 +4,11 @@ import Button from '../../../components/ui/button';
 import Snackbar from '../../../components/ui/snackbar';
 import MetaFoxLogo from '../../../components/ui/metafox-logo';
 import { DEFAULT_ROUTE } from '../../../helpers/constants/routes';
-import { returnToOnboardingInitiator } from '../onboarding-initiator-util';
+import { returnToOnboardingInitiatorTab } from '../onboarding-initiator-util';
 
 export default class EndOfFlowScreen extends PureComponent {
   static contextTypes = {
     t: PropTypes.func,
-    trackEvent: PropTypes.func,
   };
 
   static propTypes = {
@@ -40,7 +39,7 @@ export default class EndOfFlowScreen extends PureComponent {
     this._removeBeforeUnload();
     await this._onOnboardingComplete();
     if (onboardingInitiator) {
-      await returnToOnboardingInitiator(onboardingInitiator);
+      await returnToOnboardingInitiatorTab(onboardingInitiator);
     }
     history.push(DEFAULT_ROUTE);
   };

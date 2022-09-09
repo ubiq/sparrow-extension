@@ -137,10 +137,10 @@
     "message": "Twoja przeglądarka nie jest obsługiwana..."
   },
   "buyWithWyre": {
-    "message": "Kup UBQ poprzez Wyre"
+    "message": "Kup $1 poprzez Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Dzięki Wyre możesz użyć karty kredytowej, aby wpłacić UBQ bezpośrednio na swoje konto Sparrow."
+    "message": "Dzięki Wyre możesz użyć karty kredytowej, aby wpłacić $1 bezpośrednio na swoje konto Sparrow."
   },
   "bytes": {
     "message": "Bajty"

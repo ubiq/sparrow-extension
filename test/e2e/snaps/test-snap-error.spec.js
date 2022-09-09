@@ -1,6 +1,7 @@
 const { strict: assert } = require('assert');
 const { withFixtures } = require('../helpers');
 const { PAGES } = require('../webdriver/driver');
+const { TEST_SNAPS_WEBSITE_URL } = require('./enums');
 
 describe('Test Snap Error', function () {
   it('can pop up a snap error and see the error', async function () {
@@ -28,12 +29,9 @@ describe('Test Snap Error', function () {
         await driver.press('#password', driver.Key.ENTER);
 
         // navigate to test snaps page and connect
-        await driver.driver.get('https://metamask.github.io/test-snaps/');
-        await driver.fill('.snapId2', 'npm:@metamask/test-snap-error');
-        await driver.clickElement({
-          text: 'Connect Error Snap',
-          tag: 'button',
-        });
+        await driver.driver.get(TEST_SNAPS_WEBSITE_URL);
+        await driver.fill('#snapId2', 'npm:@metamask/test-snap-error');
+        await driver.clickElement('#connectError');
 
         // switch to metamask extension and click connect
         await driver.waitUntilXWindowHandles(2, 5000, 10000);
@@ -67,10 +65,7 @@ describe('Test Snap Error', function () {
         await driver.waitUntilXWindowHandles(1, 5000, 10000);
         windowHandles = await driver.getAllWindowHandles();
         await driver.switchToWindowWithTitle('Test Snaps', windowHandles);
-        await driver.clickElement({
-          text: 'Send Test to Error Snap',
-          tag: 'button',
-        });
+        await driver.clickElement('#sendError');
 
         await driver.navigate(PAGES.HOME);
 
