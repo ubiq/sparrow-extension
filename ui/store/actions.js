@@ -39,7 +39,6 @@ import {
   LEDGER_TRANSPORT_TYPES,
   LEDGER_USB_VENDOR_ID,
 } from '../../shared/constants/hardware-wallets';
-import { EVENT } from '../../shared/constants/metametrics';
 import { parseSmartTransactionsError } from '../pages/swaps/swaps.util';
 import { isEqualCaseInsensitive } from '../../shared/modules/string-utils';
 ///: BEGIN:ONLY_INCLUDE_IN(flask)

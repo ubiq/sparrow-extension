@@ -6,7 +6,6 @@ import {
   handleSettingsRefs,
 } from '../../../helpers/utils/settings-search';
 import Dropdown from '../../../components/ui/dropdown';
-import { EVENT } from '../../../../shared/constants/metametrics';
 import { THEME_TYPE } from './experimental-tab.constant';
 
 export default class ExperimentalTab extends PureComponent {
@@ -222,13 +221,6 @@ export default class ExperimentalTab extends PureComponent {
     ];
 
     const onChange = (newTheme) => {
-      this.context.trackEvent({
-        category: EVENT.CATEGORIES.SETTINGS,
-        event: 'Theme Changed',
-        properties: {
-          theme_selected: newTheme,
-        },
-      });
       setTheme(newTheme);
     };
 
@@ -274,14 +266,6 @@ export default class ExperimentalTab extends PureComponent {
             <ToggleButton
               value={customNetworkListEnabled}
               onToggle={(value) => {
-                this.context.trackEvent({
-                  category: EVENT.CATEGORIES.SETTINGS,
-                  event: 'Enabled/Disable CustomNetworkList',
-                  properties: {
-                    action: 'Enabled/Disable CustomNetworkList',
-                    legacy_event: true,
-                  },
-                });
                 setCustomNetworkListEnabled(!value);
               }}
               offLabel={t('off')}

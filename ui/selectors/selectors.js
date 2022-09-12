@@ -8,16 +8,8 @@ import {
   TEST_CHAINS,
   NETWORK_TYPE_RPC,
   NATIVE_CURRENCY_TOKEN_IMAGE_MAP,
-  OPTIMISM_CHAIN_ID,
-  OPTIMISM_TESTNET_CHAIN_ID,
   BUYABLE_CHAINS_MAP,
   MAINNET_DISPLAY_NAME,
-  BSC_CHAIN_ID,
-  POLYGON_CHAIN_ID,
-  AVALANCHE_CHAIN_ID,
-  BSC_DISPLAY_NAME,
-  POLYGON_DISPLAY_NAME,
-  AVALANCHE_DISPLAY_NAME,
   CHAIN_ID_TO_RPC_URL_MAP,
 } from '../../shared/constants/network';
 import {
@@ -967,11 +959,8 @@ export function getFrequentRpcListDetail(state) {
   return state.metamask.frequentRpcListDetail;
 }
 
-export function getIsOptimism(state) {
-  return (
-    getCurrentChainId(state) === OPTIMISM_CHAIN_ID ||
-    getCurrentChainId(state) === OPTIMISM_TESTNET_CHAIN_ID
-  );
+export function getIsOptimism() {
+  return false
 }
 
 export function getNetworkSupportsSettingGasFees(state) {
@@ -1017,12 +1006,6 @@ export const getTokenDetectionSupportNetworkByChainId = (state) => {
   switch (chainId) {
     case MAINNET_CHAIN_ID:
       return MAINNET_DISPLAY_NAME;
-    case BSC_CHAIN_ID:
-      return BSC_DISPLAY_NAME;
-    case POLYGON_CHAIN_ID:
-      return POLYGON_DISPLAY_NAME;
-    case AVALANCHE_CHAIN_ID:
-      return AVALANCHE_DISPLAY_NAME;
     default:
       return '';
   }
@@ -1038,9 +1021,6 @@ export function getIsTokenDetectionSupported(state) {
   const chainId = getCurrentChainId(state);
   return [
     MAINNET_CHAIN_ID,
-    BSC_CHAIN_ID,
-    POLYGON_CHAIN_ID,
-    AVALANCHE_CHAIN_ID,
   ].includes(chainId);
 }
 

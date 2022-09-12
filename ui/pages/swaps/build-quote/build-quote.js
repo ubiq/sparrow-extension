@@ -5,7 +5,7 @@ import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import classnames from 'classnames';
 import { uniqBy, isEqual } from 'lodash';
 import { useHistory } from 'react-router-dom';
-import { getTokenTrackerLink } from '@metamask/etherscan-link';
+import { getTokenTrackerLink } from 'ubiqscan-link';
 import {
   useTokensToSearch,
   getRenderableTokenData,
@@ -82,7 +82,6 @@ import {
   isSwapsDefaultTokenAddress,
   isSwapsDefaultTokenSymbol,
 } from '../../../../shared/modules/swaps.utils';
-import { EVENT } from '../../../../shared/constants/metametrics';
 import {
   SWAPS_CHAINID_DEFAULT_BLOCK_EXPLORER_URL_MAP,
   SWAPS_CHAINID_DEFAULT_TOKEN_MAP,

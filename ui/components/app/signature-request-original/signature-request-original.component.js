@@ -6,7 +6,6 @@ import { ObjectInspector } from 'react-inspector';
 import LedgerInstructionField from '../ledger-instruction-field';
 
 import { MESSAGE_TYPE } from '../../../../shared/constants/app';
-import { EVENT } from '../../../../shared/constants/metametrics';
 import { getURLHostName } from '../../../helpers/utils/util';
 import Identicon from '../../ui/identicon';
 import AccountListItem from '../account-list-item';

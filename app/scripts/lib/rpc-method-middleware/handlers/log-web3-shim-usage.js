@@ -1,5 +1,4 @@
 import { MESSAGE_TYPE } from '../../../../../shared/constants/app';
-import { EVENT } from '../../../../../shared/constants/metametrics';
 
 /**
  * This RPC method is called by the inpage provider whenever it detects the

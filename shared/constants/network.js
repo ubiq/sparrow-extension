@@ -77,15 +77,6 @@ export const CHAIN_ID_TO_RPC_URL_MAP = {
 
 export const CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP = {
   [MAINNET_CHAIN_ID]: ETH_TOKEN_IMAGE_URL,
-  [AVALANCHE_CHAIN_ID]: AVAX_TOKEN_IMAGE_URL,
-  [BSC_CHAIN_ID]: BNB_TOKEN_IMAGE_URL,
-  [POLYGON_CHAIN_ID]: MATIC_TOKEN_IMAGE_URL,
-  [ARBITRUM_CHAIN_ID]: AETH_TOKEN_IMAGE_URL,
-  [BSC_CHAIN_ID]: BNB_TOKEN_IMAGE_URL,
-  [FANTOM_CHAIN_ID]: FTM_TOKEN_IMAGE_URL,
-  [HARMONY_CHAIN_ID]: HARMONY_ONE_TOKEN_IMAGE_URL,
-  [OPTIMISM_CHAIN_ID]: OPTIMISM_TOKEN_IMAGE_URL,
-  [PALM_CHAIN_ID]: PALM_TOKEN_IMAGE_URL,
 };
 
 export const CHAIN_ID_TO_NETWORK_ID_MAP = Object.values(
@@ -156,85 +147,4 @@ export const BUYABLE_CHAINS_MAP = {
   },
 };
 
-export const FEATURED_RPCS = [
-  {
-    chainId: ARBITRUM_CHAIN_ID,
-    nickname: ARBITRUM_DISPLAY_NAME,
-    rpcUrl: `https://arbitrum-mainnet.infura.io/v3/${infuraProjectId}`,
-    ticker: ARBITRUM_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://explorer.arbitrum.io',
-      imageUrl: AETH_TOKEN_IMAGE_URL,
-    },
-  },
-  {
-    chainId: AVALANCHE_CHAIN_ID,
-    nickname: AVALANCHE_DISPLAY_NAME,
-    rpcUrl: 'https://api.avax.network/ext/bc/C/rpc',
-    ticker: AVALANCHE_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://snowtrace.io/',
-      imageUrl: AVAX_TOKEN_IMAGE_URL,
-    },
-  },
-  {
-    chainId: BSC_CHAIN_ID,
-    nickname: BNB_DISPLAY_NAME,
-    rpcUrl: 'https://bsc-dataseed.binance.org/',
-    ticker: BNB_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://bscscan.com/',
-      imageUrl: BNB_TOKEN_IMAGE_URL,
-    },
-  },
-  {
-    chainId: FANTOM_CHAIN_ID,
-    nickname: FANTOM_DISPLAY_NAME,
-    rpcUrl: 'https://rpc.ftm.tools/',
-    ticker: FANTOM_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://ftmscan.com/',
-      imageUrl: FTM_TOKEN_IMAGE_URL,
-    },
-  },
-  {
-    chainId: HARMONY_CHAIN_ID,
-    nickname: HARMONY_DISPLAY_NAME,
-    rpcUrl: 'https://api.harmony.one/',
-    ticker: HARMONY_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://explorer.harmony.one/',
-      imageUrl: HARMONY_ONE_TOKEN_IMAGE_URL,
-    },
-  },
-  {
-    chainId: OPTIMISM_CHAIN_ID,
-    nickname: OPTIMISM_DISPLAY_NAME,
-    rpcUrl: `https://optimism-mainnet.infura.io/v3/${infuraProjectId}`,
-    ticker: ETH_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://optimistic.etherscan.io/',
-      imageUrl: OPTIMISM_TOKEN_IMAGE_URL,
-    },
-  },
-  {
-    chainId: PALM_CHAIN_ID,
-    nickname: PALM_DISPLAY_NAME,
-    rpcUrl: `https://palm-mainnet.infura.io/v3/${infuraProjectId}`,
-    ticker: PALM_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://explorer.palm.io/',
-      imageUrl: PALM_TOKEN_IMAGE_URL,
-    },
-  },
-  {
-    chainId: POLYGON_CHAIN_ID,
-    nickname: `${POLYGON_DISPLAY_NAME} ${capitalize(MAINNET)}`,
-    rpcUrl: `https://polygon-mainnet.infura.io/v3/${infuraProjectId}`,
-    ticker: MATIC_SYMBOL,
-    rpcPrefs: {
-      blockExplorerUrl: 'https://polygonscan.com/',
-      imageUrl: MATIC_TOKEN_IMAGE_URL,
-    },
-  },
-];
+export const FEATURED_RPCS = [];

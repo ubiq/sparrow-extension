@@ -72,7 +72,6 @@ import {
 
 import { useGasFeeEstimates } from '../../hooks/useGasFeeEstimates';
 import FeatureToggledRoute from '../../helpers/higher-order-components/feature-toggled-route';
-import { EVENT } from '../../../shared/constants/metametrics';
 import { TRANSACTION_STATUSES } from '../../../shared/constants/transaction';
 import ActionableMessage from '../../components/ui/actionable-message';
 import {

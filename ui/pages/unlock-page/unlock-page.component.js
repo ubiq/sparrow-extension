@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Button from '../../components/ui/button';
 import TextField from '../../components/ui/text-field';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
-import { EVENT } from '../../../shared/constants/metametrics';
 
 export default class UnlockPage extends Component {
   static contextTypes = {

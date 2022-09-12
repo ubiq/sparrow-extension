@@ -6,7 +6,6 @@ import log from 'loglevel';
 import { MESSAGE_TYPE } from '../../../shared/constants/app';
 import { METAMASK_CONTROLLER_EVENTS } from '../metamask-controller';
 import createId from '../../../shared/modules/random-id';
-import { EVENT } from '../../../shared/constants/metametrics';
 import { addHexPrefix } from './util';
 
 const hexRe = /^[0-9A-Fa-f]+$/gu;

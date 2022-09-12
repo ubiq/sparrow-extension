@@ -19,13 +19,11 @@ import {
 } from '../../shared/constants/app';
 import { SECOND } from '../../shared/constants/time';
 import { isManifestV3 } from '../../shared/modules/mv3.utils';
-import { maskObject } from '../../shared/modules/object.utils';
 import migrations from './migrations';
 import Migrator from './lib/migrator';
 import ExtensionPlatform from './platforms/extension';
 import LocalStore from './lib/local-store';
 import ReadOnlyNetworkStore from './lib/network-store';
-import { SENTRY_STATE } from './lib/setupSentry';
 
 import createStreamSink from './lib/createStreamSink';
 import NotificationManager, {
@@ -337,8 +335,6 @@ function setupController(initState, initLangCode, remoteSourcePort) {
       log.error('Sparrow - Persistence pipeline failed', error);
     },
   );
-
-  setupSentryGetStateGlobal(controller);
 
   /**
    * Assigns the given state to the versioned object (with metadata), and returns that.
@@ -716,15 +712,3 @@ browser.runtime.onInstalled.addListener(({ reason }) => {
     platform.openExtensionInBrowser();
   }
 });
-
-function setupSentryGetStateGlobal(store) {
-  global.sentryHooks.getSentryState = function () {
-    const fullState = store.getState();
-    const debugState = maskObject({ metamask: fullState }, SENTRY_STATE);
-    return {
-      browser: window.navigator.userAgent,
-      store: debugState,
-      version: platform.getVersion(),
-    };
-  };
-}

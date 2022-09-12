@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import Button from '../../components/ui/button';
-import { EVENT } from '../../../shared/constants/metametrics';
 
 export default class NewAccountCreateForm extends Component {
   static defaultProps = {

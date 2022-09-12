@@ -84,7 +84,6 @@ import {
   POLLING_TOKEN_ENVIRONMENT_TYPES,
   SUBJECT_TYPES,
 } from '../../shared/constants/app';
-import { EVENT } from '../../shared/constants/metametrics';
 
 import { hexToDecimal } from '../../ui/helpers/utils/conversions.util';
 import {
@@ -145,7 +144,6 @@ import {
   buildSnapRestrictedMethodSpecifications,
   ///: END:ONLY_INCLUDE_IN
 } from './controllers/permissions';
-import createRPCMethodTrackingMiddleware from './lib/createRPCMethodTrackingMiddleware';
 
 export const METAMASK_CONTROLLER_EVENTS = {
   // Fired after state changes that impact the extension badge (unapproved msg count)
@@ -3396,17 +3394,6 @@ export default class MetamaskController extends EventEmitter {
     // logging
     engine.push(createLoggerMiddleware({ origin }));
     engine.push(this.permissionLogController.createMiddleware());
-
-    engine.push(
-      createRPCMethodTrackingMiddleware({
-        trackEvent: this.metaMetricsController.trackEvent.bind(
-          this.metaMetricsController,
-        ),
-        getMetricsState: this.metaMetricsController.store.getState.bind(
-          this.metaMetricsController.store,
-        ),
-      }),
-    );
 
     // onboarding
     if (subjectType === SUBJECT_TYPES.WEBSITE) {

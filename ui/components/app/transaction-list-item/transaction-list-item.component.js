@@ -13,7 +13,6 @@ import { CONFIRM_TRANSACTION_ROUTE } from '../../../helpers/constants/routes';
 import { useShouldShowSpeedUp } from '../../../hooks/useShouldShowSpeedUp';
 import TransactionStatus from '../transaction-status/transaction-status.component';
 import TransactionIcon from '../transaction-icon';
-import { EVENT } from '../../../../shared/constants/metametrics';
 import {
   TRANSACTION_GROUP_CATEGORIES,
   TRANSACTION_STATUSES,

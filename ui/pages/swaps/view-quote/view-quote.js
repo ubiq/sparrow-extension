@@ -103,7 +103,6 @@ import CountdownTimer from '../countdown-timer';
 import SwapsFooter from '../swaps-footer';
 import PulseLoader from '../../../components/ui/pulse-loader'; // TODO: Replace this with a different loading component.
 import Box from '../../../components/ui/box';
-import { EVENT } from '../../../../shared/constants/metametrics';
 import { isEqualCaseInsensitive } from '../../../../shared/modules/string-utils';
 import { parseStandardTokenTransactionData } from '../../../../shared/modules/transaction.utils';
 import ViewQuotePriceDifference from './view-quote-price-difference';

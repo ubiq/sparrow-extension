@@ -70,7 +70,6 @@ import {
   checkNetworkAndAccountSupports1559,
 } from '../../selectors';
 
-import { EVENT } from '../../../shared/constants/metametrics';
 import {
   ERROR_FETCHING_QUOTES,
   QUOTES_NOT_AVAILABLE_ERROR,

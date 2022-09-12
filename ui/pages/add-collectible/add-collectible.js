@@ -24,9 +24,6 @@ import FormField from '../../components/ui/form-field';
 import { getIsMainnet, getUseCollectibleDetection } from '../../selectors';
 import { getCollectiblesDetectionNoticeDismissed } from '../../ducks/metamask/metamask';
 import CollectiblesDetectionNotice from '../../components/app/collectibles-detection-notice';
-import { MetaMetricsContext } from '../../contexts/metametrics';
-import { ASSET_TYPES } from '../../../shared/constants/transaction';
-import { EVENT, EVENT_NAMES } from '../../../shared/constants/metametrics';
 
 export default function AddCollectible() {
   const t = useI18nContext();
@@ -50,7 +47,6 @@ export default function AddCollectible() {
   const [tokenId, setTokenId] = useState('');
   const [disabled, setDisabled] = useState(true);
   const [collectibleAddFailed, setCollectibleAddFailed] = useState(false);
-  const trackEvent = useContext(MetaMetricsContext);
 
   const handleAddCollectible = async () => {
     try {
@@ -67,25 +63,6 @@ export default function AddCollectible() {
       );
     }
     dispatch(setNewCollectibleAddedMessage('success'));
-
-    const tokenDetails = await getTokenStandardAndDetails(
-      address,
-      null,
-      tokenId.toString(),
-    );
-
-    trackEvent({
-      event: EVENT_NAMES.TOKEN_ADDED,
-      category: 'Wallet',
-      sensitiveProperties: {
-        token_contract_address: address,
-        token_symbol: tokenDetails?.symbol,
-        tokenId: tokenId.toString(),
-        asset_type: ASSET_TYPES.COLLECTIBLE,
-        token_standard: tokenDetails?.standard,
-        source: EVENT.SOURCE.TOKEN.CUSTOM,
-      },
-    });
 
     history.push(DEFAULT_ROUTE);
   };

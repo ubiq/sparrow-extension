@@ -5,7 +5,6 @@ import {
   CONFIRM_TRANSACTION_ROUTE,
   DEFAULT_ROUTE,
 } from '../../../helpers/constants/routes';
-import { EVENT } from '../../../../shared/constants/metametrics';
 import { SEND_STAGES } from '../../../ducks/send';
 
 export default class SendFooter extends Component {

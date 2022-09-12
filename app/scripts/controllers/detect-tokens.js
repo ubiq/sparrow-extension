@@ -6,9 +6,6 @@ import { MINUTE } from '../../../shared/constants/time';
 import { MAINNET_CHAIN_ID } from '../../../shared/constants/network';
 import { isTokenDetectionEnabledForNetwork } from '../../../shared/modules/network.utils';
 import { isEqualCaseInsensitive } from '../../../shared/modules/string-utils';
-import { TOKEN_STANDARDS } from '../../../ui/helpers/constants/common';
-import { ASSET_TYPES } from '../../../shared/constants/transaction';
-import { EVENT, EVENT_NAMES } from '../../../shared/constants/metametrics';
 
 // By default, poll every 3 minutes
 const DEFAULT_INTERVAL = MINUTE * 3;
@@ -192,15 +189,6 @@ export default class DetectTokensController {
           }
 
           if (tokensWithBalance.length > 0) {
-            this._trackMetaMetricsEvent({
-              event: EVENT_NAMES.TOKEN_DETECTED,
-              category: EVENT.CATEGORIES.WALLET,
-              properties: {
-                tokens: eventTokensDetails,
-                token_standard: TOKEN_STANDARDS.ERC20,
-                asset_type: ASSET_TYPES.TOKEN,
-              },
-            });
             await this.tokensController.addDetectedTokens(tokensWithBalance);
           }
         }

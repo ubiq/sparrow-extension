@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { getAccountLink } from 'ubiqscan-link';
 import Modal from '../../modal';
-import { addressSummary, getURLHostName } from '../../../../helpers/utils/util';
+import { addressSummary } from '../../../../helpers/utils/util';
 import Identicon from '../../../ui/identicon';
-import { EVENT } from '../../../../../shared/constants/metametrics';
 
 export default class ConfirmRemoveAccount extends Component {
   static propTypes = {

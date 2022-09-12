@@ -6,9 +6,7 @@ import AccountModalContainer from '../account-modal-container';
 import QrView from '../../../ui/qr-code';
 import EditableLabel from '../../../ui/editable-label';
 import Button from '../../../ui/button';
-import { getURLHostName } from '../../../../helpers/utils/util';
 import { isHardwareKeyring } from '../../../../helpers/utils/hardware';
-import { EVENT } from '../../../../../shared/constants/metametrics';
 import { NETWORKS_ROUTE } from '../../../../helpers/constants/routes';
 
 export default class AccountDetailsModal extends Component {
@@ -67,15 +65,6 @@ export default class AccountDetailsModal extends Component {
 
     const openBlockExplorer = () => {
       const accountLink = getAccountLink(address, chainId, rpcPrefs);
-      this.context.trackEvent({
-        category: EVENT.CATEGORIES.NAVIGATION,
-        event: 'Clicked Block Explorer Link',
-        properties: {
-          link_type: 'Account Tracker',
-          action: 'Account Details Modal',
-          block_explorer_domain: getURLHostName(accountLink),
-        },
-      });
       global.platform.openTab({
         url: accountLink,
       });

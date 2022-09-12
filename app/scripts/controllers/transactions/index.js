@@ -40,11 +40,9 @@ import {
 } from '../../../../shared/constants/gas';
 import { decGWEIToHexWEI } from '../../../../shared/modules/conversion.utils';
 import { isSwapsDefaultTokenAddress } from '../../../../shared/modules/swaps.utils';
-import { EVENT } from '../../../../shared/constants/metametrics';
 import {
   HARDFORKS,
   MAINNET,
-  NETWORK_TYPE_RPC,
 } from '../../../../shared/constants/network';
 import {
   determineTransactionAssetType,
@@ -1842,13 +1840,7 @@ export default class TransactionController extends EventEmitter {
 
   _trackSwapsMetrics(txMeta, approvalTxMeta) {
     if (this._getParticipateInMetrics() && txMeta.swapMetaData) {
-      if (txMeta.txReceipt.status === '0x0') {
-        this._trackMetaMetricsEvent({
-          event: 'Swap Failed',
-          sensitiveProperties: { ...txMeta.swapMetaData },
-          category: EVENT.CATEGORIES.SWAPS,
-        });
-      } else {
+      if (txMeta.txReceipt.status !== '0x0') {
         const tokensReceived = getSwapsTokensReceivedFromTxMeta(
           txMeta.destinationTokenSymbol,
           txMeta,
@@ -1878,21 +1870,6 @@ export default class TransactionController extends EventEmitter {
           txMeta,
           approvalTxMeta,
         );
-
-        this._trackMetaMetricsEvent({
-          event: 'Swap Completed',
-          category: EVENT.CATEGORIES.SWAPS,
-          sensitiveProperties: {
-            ...txMeta.swapMetaData,
-            token_to_amount_received: tokensReceived,
-            quote_vs_executionRatio: quoteVsExecutionRatio,
-            estimated_vs_used_gasRatio: estimatedVsUsedGasRatio,
-            approval_gas_cost_in_eth: transactionsCost.approvalGasCostInEth,
-            trade_gas_cost_in_eth: transactionsCost.tradeGasCostInEth,
-            trade_and_approval_gas_cost_in_eth:
-              transactionsCost.tradeAndApprovalGasCostInEth,
-          },
-        });
       }
     }
   }
